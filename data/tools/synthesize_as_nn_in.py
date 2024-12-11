@@ -37,21 +37,9 @@ if __name__ == "__main__":
     SAVE_DIR="malorca"
 
     # load the metadata
-    meta_data = json.load(open(META_FILE, mode='r'))
-
-    # load the wav files to the metadata
-    for i, rec in tqdm(enumerate(meta_data[:700])):
-        # apimod
-        # sampling_rate, wav_data = wavfile.read(os.path.join(RECORDINGS_DIR, os.path.basename(rec['file'])))
-        
-        # malorca
-        sampling_rate, wav_data = wavfile.read(os.path.join(RECORDINGS_DIR, rec['file']))
-        meta_data[i]['audio'] = {
-            # you have to store normalized audio (-1;1) to make Audio class work
-            "array" : np.array(normalize_audio(wav_data), dtype=np.float32).tolist(),
-            "sampling_rate" : sampling_rate
-        }
-
+    # meta_data = json.load(open(META_FILE, mode='r'))
+    dataset = load_dataset("json", data_files=META_FILE, split="train")
+    
     # load it to the dataset and split to test and train
     dd = Dataset.from_list(meta_data[:700]).cast_column("audio",Audio(sampling_rate=16000))
     

@@ -14,6 +14,7 @@ from tqdm import tqdm
 import json
 import time
 
+
 number_map = {
     # English
     "zero": "0", "one": "1", "two": "2", "three": "3",
@@ -230,9 +231,7 @@ def get_fullts(wav_full_path_current_disk) -> str | Exception:
     else:
         raise Exception(f"File {cor_file} does not exist")
 
-def makemetadata():
-    PATH_TO_LISTINGS_OF_FILES = "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/MALORCA/DATA_ATC/VIENNA/DATA/dev1/wav.scp"
-    DISK_PATH="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38"
+def makemetadata(PATH_TO_LISTINGS_OF_FILES, DISK_PATH, SAVE_PATH):
     out_data = []
     with open(PATH_TO_LISTINGS_OF_FILES, "r") as f:
         for line in tqdm(f.readlines()):
@@ -246,26 +245,34 @@ def makemetadata():
             # if the full ts is not available, skip the file
             try:
                 fullts = get_fullts(wav_full_path_current_disk)
+                shortts = get_shortts(wav_full_path_current_disk, fullts)
             except Exception as e:
                 print(e)
                 continue
             
             out_data.append({
-                "file": wav_file_path,
+                "audio": wav_file_path,
                 "full_ts": fullts,
-                "short_ts": get_shortts(wav_full_path_current_disk, fullts),
+                "short_ts": shortts,
+                "prompt":None,
             })
                 
-    # save the metadata
+    # save the metadata  
+    # choose file name
     out=json.dumps(out_data,indent=4,ensure_ascii=False)
-    if (os.path.exists("metadata.json")):
-        name = f"metadata{time.time()}.json"
+    if (os.path.exists(SAVE_PATH)):
+        name = f"{SAVE_PATH}{time.time()}.json"
     else:
-        name = "metadata.json"
-        
+        name = SAVE_PATH
+    
+    # save the file
     with open(name,"w") as f:
         f.write(out)
     
 if __name__ == "__main__":
-    makemetadata()
+    PATH_TO_LISTINGS_OF_FILES = "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/MALORCA/DATA_ATC/VIENNA/DATA/test/wav.scp"
+    DISK_PATH="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38"
+    SAVE_PATH="./metadata_test.json"
+    
+    makemetadata(PATH_TO_LISTINGS_OF_FILES, DISK_PATH, SAVE_PATH)
     
