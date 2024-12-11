@@ -8,6 +8,7 @@
 import sys
 import glob as glob
 import os
+from unittest import result
 from bs4 import BeautifulSoup
 from rapidfuzz import process
 import re
@@ -205,8 +206,11 @@ def get_fullts(xml_data):
         fullts += get_plain_text_from_segment(text_tag.get_text(separator=" ", strip=True))
         fullts += "\n"
     return fullts
-    
-def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str):
+
+def get_prompt(xml_file):
+    return None
+
+def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, out_file_name : str):
     out_data = []
     
     for wav_file_path in tqdm(wav_listings_path):
@@ -221,7 +225,6 @@ def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str):
         
         with open(xml_file, "r") as f:  
             xml_data = f.read()
-            soup = BeautifulSoup(xml_data, features="xml")
             # extract the full ts            
             full_ts = get_fullts(xml_data)
             if (full_ts.strip() == ""):
@@ -230,33 +233,58 @@ def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str):
             
             short_ts = get_shortts(wav_full_path_current_disk, xml_data)
 
+            prompt = get_prompt(xml_file)
+            
             out_data.append({
-                "file": wav_file_path, # just want the path on the disk, not whole on the pc
+                "audio": wav_file_path, # just want the path on the disk, not whole on the pc
                 "full_ts": full_ts,
-                "short_ts": short_ts
+                "short_ts": short_ts,
+                "prompt": prompt,
             })
     
     # save the metadata, ensure no overwriting of previously created metadata
     out=json.dumps(out_data,indent=4,ensure_ascii=False)
-    name = "metadata.json"
-    if (os.path.exists(os.path.join('atco',"metadata.json"))):
-        print("metadata.json already exists, creating a new one with a timestamp")
-        name = f"metadata{time.time()}.json"
-    with open(os.path.join('atco',name),"w") as f:
+    name = out_file_name
+    if (os.path.exists(name)):
+        print(f"{name} already exists, creating a new one with a timestamp")
+        name = f"{name}{time.time()}.json"
+    with open(name,"w") as f:
         f.write(out) 
         f.close()
 
-def get_wav_file_names(root : str) -> list:
-    result = []
+def split_wav_files_en(root : str) -> list:
+    # counts for datasets ruzyne and stefanik - from each is used for test 350 files
+    # and whole LZSH_Zurich is used for test
+    
+    count_test_ruzyne = 0
+    count_test_stefanik = 0
+    
+    result_test_stefanik = []
+    result_test_ruzyne = []
+    result_test_zurich = []
+    result_train = []
     for file in glob.glob(root +"/*.wav"):
-        result.append(file)
-    return result
+        if (count_test_ruzyne < 350 and "LKPR_RUZYNE" in file):
+            result_test_ruzyne.append(file)
+            count_test_ruzyne += 1
+        elif (count_test_stefanik < 350 and "LZIB_STEFANIK" in file):
+            result_test_stefanik.append(file)
+            count_test_stefanik += 1
+        elif ("LSZH_ZURICH" in file):
+            result_test_zurich.append(file)
+        else:
+            result_train.append(file)
+    return [result_train, result_test_ruzyne,result_test_stefanik,result_test_zurich]
 
 if __name__ == "__main__":
     ROOT_DIR_EN="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA"
-    wav_files_en = get_wav_file_names(ROOT_DIR_EN)
-    ROOT_DIR_NONEN="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN"
-    wav_files_nonen = get_wav_file_names(ROOT_DIR_NONEN)
-    makemetadata(wav_files_en, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38")
+    files_train, files_test_ruzyne,files_test_stefanik,files_test_zurich = split_wav_files_en(ROOT_DIR_EN)
+    makemetadata(files_train, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38", out_file_name="metadata_en_train.json")
+    makemetadata(files_test_ruzyne, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_ruzyne_test.json")
+    makemetadata(files_test_stefanik, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_stefanik_test.json")
+    makemetadata(files_test_zurich, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_zurich_test.json")
+    # print(len(files_train), len(files_test_ruzyne), len(files_test_stefanik), len(files_test_zurich))
+    # ROOT_DIR_NONEN="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN"
+    # wav_files_nonen = get_wav_file_names(ROOT_DIR_NONEN)
    
     

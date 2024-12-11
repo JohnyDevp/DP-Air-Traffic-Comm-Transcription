@@ -1,0 +1,530 @@
+[
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_151430.wav",
+        "full_ts": "Oscar Echo Golf Tango Echo taxi to holding point runway one three via delta foxtrot\nvia delta foxtrot holding point runway one three      Oscar   Tango Echo\n",
+        "short_ts": "OEGTE taxi to holding . runway 13 via DF\nvia DF holding . runway 13 O TE\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210421_174745.wav",
+        "full_ts": "Oscar Mike Golf ohláste finále radšej\nfinále radšej ohlásim Oscar Mike Golf\n",
+        "short_ts": "OMG ohláste finále radšej\nfinále radšej ohlásim OMG\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_163630.wav",
+        "full_ts": " šesť sedem tri štyri Oscar Mike Alpha Dva Echo\n",
+        "short_ts": "šesť sedem tri štyri OMA2E\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_172604.wav",
+        "full_ts": "   dobry vecer  Stefanik Tower Galileo Three Four  Six  Papa ILS established  runway three one  DME seven point five\n Galileo  Three  Four  Six  Papa Stefanik Tower  dobry  vecer  wind  one three zero degrees four knots runway three one cleared to land\ncleared to land runway three one is copying Galileo  Three  Four  Six  Papa\nOscar Mike  Charlie  Mike  Juliett     dopocutia \n\n",
+        "short_ts": "dobry vecer Stefanik Tower Galileo 34 6 P ILS established runway 31 DME 7.5\nGalileo 3 4 6 P Stefanik Tower dobry vecer wind 130 degrees 4 knots runway 31 cleared to land\ncleared to land runway 31 is copying Galileo 3 4 6 P\nOM C M J dopocutia\n\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_143155.wav",
+        "full_ts": "stefanik tower Oscar Mike Charlie India Alpha final runway one three Oscar Mike Charlie India Alpha\nOscar Mike Charlie India Alpha runway one three cleared to land wind    one three zero degrees  eight knots\n",
+        "short_ts": "stefanik tower OMCIA final runway 13 OMCIA\nOMCIA runway 13 cleared to land wind 130 degrees 8 knots\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_171652.wav",
+        "full_ts": "Krišof Nula Tri štefánik veža dobrý deň\nŠtefánik veža  sto deväť  mali by sme spustiť a bude to  let cez charlie do Popradu\n",
+        "short_ts": "Krišof 0 Tri štefánik veža dobrý deň\nŠtefánik veža 00 deväť mali by sme spustiť a bude to let cez C do Popradu\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_120635.wav",
+        "full_ts": "November Four Niner X-ray Lima taxi via delta line up zero four report ready\nvia delta line up zero four call you when ready November Four Niner X-ray Lima\n",
+        "short_ts": "N4 Niner XL taxi via D line up 04 report ready\nvia D line up 04 call you when ready N4 Niner XL\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_203102.wav",
+        "full_ts": "two zero three six thanks for your help  one three juliett start and push and start call you for taxi\nroger squawk four four zero four\n",
+        "short_ts": "2036 thanks for your help 13 J start and push and start call you for taxi\nroger squawk 4404\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_181207.wav",
+        "full_ts": "Oscar Golf Echo roger descend to traffic altitude one thousand five hundred feet\nstart descending one thousand five hundred feet altitude Oscar Mike Alpha Golf Echo\n",
+        "short_ts": "OGE roger descend to traffic altitude 1500 feet\nstart descending 1000500 feet altitude OMAGE\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210422_142821.wav",
+        "full_ts": "i would like request  airborn on runway zero four exit alpha  Foxtrot\n",
+        "short_ts": "i would like request airborn on runway 04 exit AF\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_132814.wav",
+        "full_ts": "stefanik tower Top Jet Four Zero One   dobrý deň  apron charlie in front of the hangar ready for startup cleared destination Ostrava  lima  on board  QNH one zero one seven\n",
+        "short_ts": "stefanik tower Top Jet 401 dobrý deň apron C 9 front of the hangar ready for startup cleared 10 Ostrava L on board QNH 1017\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_130418.wav",
+        "full_ts": "QNH one zero  one eight  after keep the proceeding to victor\n",
+        "short_ts": "QNH 10 18 after keep the proceeding to V\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_151209.wav",
+        "full_ts": "Stefanik tower  dobrý deň  Burg Six Nine Two Lima stop established runway three one six point five DME\nAir Hamburg Six Niner Two Lima Stefanik tower  dobrý deň \nwind    two two zero degrees  five knots          variable between one seven zero and two three zero degrees     maximum one zero minimum three  runway three one cleared to land\n",
+        "short_ts": "Stefanik tower dobrý deň Burg 692L stop established runway 316.5 DME\nAir Hamburg 6 Niner 2L Stefanik tower dobrý deň\nwind 220 degrees 5 knots variable between 170000230 degrees maximum 10 minimum 3 runway 31 cleared to land\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210423_120826.wav",
+        "full_ts": "Slovak Airforce  Seven Four Four Five frequency change approved  dopočutia pekný let \n",
+        "short_ts": "Slovak Airforce 7445 frequency change approved dopočutia pekný let\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_073318.wav",
+        "full_ts": "Bratislava tower      dobrý den   Five Four Romeo visual approach runway three one runway in sight\n",
+        "short_ts": "Bratislava tower dobrý den 54R visual approach runway 31 runway 98\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_205033.wav",
+        "full_ts": "Eurotrans One Three Juliett request push and start\ngood evening Eurotrans One Three Juliett startup and push back approved position to Foxtrot squawk four four two five\n squawk four four two five and start and push pre- approved position foxtrot(fox-) two foxtrot\n",
+        "short_ts": "BCS13J request push and start\ngood evening BCS13J startup and push back approved position 00 F squawk 4425\nsquawk 4425 and start and push pre- approved position foxtrot(fox-) 2F\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_144950.wav",
+        "full_ts": "Stefanik Tower Trans Europe Three Eight Five Two    pekne odpoludnie   established ILS three one\n",
+        "short_ts": "Stefanik Tower Trans Europe 3852 pekne odpoludnie established ILS 31\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210423_115253.wav",
+        "full_ts": " Four Four Five Stefanik tower  dobrý \n",
+        "short_ts": "445 Stefanik tower dobrý\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210423_115901.wav",
+        "full_ts": " Kryštof Nula Jedna budete chcieť palivo? \n áno pane ďakujeme poprosíme \n",
+        "short_ts": "Kryštof 01 budete chcieť palivo?\náno pane ďakujeme poprosíme\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_093636.wav",
+        "full_ts": "Oscar Golf Echo squawk sedem tisíc dopočutia\nsedem tisíc dopočutia Oscar Golf\n",
+        "short_ts": "OGE squawk sedem 000 dopočutia\nsedem 000 dopočutia OG\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_195343.wav",
+        "full_ts": " X-ray One Three if you prefer\nthank you and then that's witch departure again\n",
+        "short_ts": "X13 if you prefer\nthank you and then that's witch departure again\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_225241.wav",
+        "full_ts": "Elite Jet Seven Zero Four taxi via Delta to apron Charlie\n",
+        "short_ts": "ELJ704 taxi via D 00 apron C\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_175622.wav",
+        "full_ts": " potvrdzujem keby bola dáká zmena dáme vedieť \n jasné \n",
+        "short_ts": "potvrdzujem keby bola dáká zmena dáme vedieť\njasné\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210428_092625.wav",
+        "full_ts": "Time Air Three Niner Seven Foxtrot call me on tower frequency please\nroger\n",
+        "short_ts": "Time Air 3 Niner 7F call me on tower frequency please\nroger\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210422_145928.wav",
+        "full_ts": " prevádzka je tu zmena na päť alfou čakajte budeme mať pristátie \n",
+        "short_ts": "prevádzka je tu zmena na päť alfou čakajte budeme mať pristátie\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203029.wav",
+        "full_ts": "no actually the  one alpha was planned for us but i see now as well the one kilo is going ya is by ATC and going straight ahead to  that's correct Eurotrans One Three Juliett\naffirm and if you are able to  comply with the restrictions you can choose to one kilo\nalright just give us five seconds discuss with a colleague Eurotrans One Three Juliett thank you\n",
+        "short_ts": "no actually the 1A was planned for us but i see now as well the 1K is going ya is by ATC and going straight ahead to that's correct Eurotrans 13J\naffirm and if you are able to comply with the restrictions you can choose to 1K\nalright just give us 5 seconds discuss with a colleague Eurotrans 13J thank you\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_150258.wav",
+        "full_ts": "squawk four four one seven\n squawk four four one seven \n",
+        "short_ts": "squawk 4417\nsquawk 4417\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_160326.wav",
+        "full_ts": " díki\nOscar Mike Kilo Lima Lima rolujte medzi hangáre cez alpha\n",
+        "short_ts": "díki\nOMKLL rolujte medzi hangáre cez A\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_163922.wav",
+        "full_ts": "looking out for a traffic Oscar Mike Kilo Lima Lima\nroger just traffic is    on your eleven o'clock  one mile\n",
+        "short_ts": "looking out for a traffic OMKLL\nroger just traffic is 1 your 11 o'clock 1 mile\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_143012.wav",
+        "full_ts": "stefanik tower Oscar Mike Charlie India Alpha request\nyes go ahead\n",
+        "short_ts": "stefanik tower OMCIA request\nyes go ahead\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_202823.wav",
+        "full_ts": "Eurotrans One Three Juliett startup approved own discretion\nstartup own discretion Eurotrans One Three Juliett\n",
+        "short_ts": "BCS13J startup approved own discretion\nstartup own discretion BCS13J\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_075711.wav",
+        "full_ts": "Stefanik tower Slovak Government Zero Zero Four  dobré ráno \nSlovak Government Zero Zero Four Stefanik tower  dobré ráno \nour stand information lima one zero zero seven ready for startup clearance destination Kosice\nSlovak Government Zero Zero Four information Mike time five seven QNH one zero zero eight cleared to  Kosice         from runway one three via Nitra one yankee departure initially climb altitude five thousand feet startup approved squawk six seven four six\n",
+        "short_ts": "Stefanik tower SSG004 dobré ráno\nSSG004 Stefanik tower dobré ráno\nour stand information L 1007 ready for startup clearance destination Kosice\nSSG004 information M time 57 QNH 1008 cleared to Kosice from runway 13 via Nitra 1 Y departure initially climb altitude 5000 feet startup approved squawk 6746\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210421_121412.wav",
+        "full_ts": "Stefanik tower good day Three Alpha Mike Charlie Golf\nThree Alpha Mike Charlie Golf Stefanik tower good day\nHelicopter Alpha One  ready to  start   only one pesron on board two hours over \n",
+        "short_ts": "Stefanik tower good day 3AMCG\n3AMCG Stefanik tower good day\nHelicopter A1 ready to start only 1 pesron on board 2 hours over\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_155946.wav",
+        "full_ts": "Oscar Kilo Alpha Golf Lima squad four six seven four six\nsix seven four six\n",
+        "short_ts": "OKAGL squad 46746\n6746\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_190550.wav",
+        "full_ts": "dakujem Oscar Lima Lima to budete mat dost silne takze potom povedzte ked vam ju budem moct  stlmit\n",
+        "short_ts": "dakujem OLL to budete mat dost silne takze potom povedzte ked vam ju budem moct stlmit\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_202836.wav",
+        "full_ts": "Stefanik tower good evening Eurotrans One Three Juliett information zulu is copied request KLM two \n",
+        "short_ts": "Stefanik tower good evening Eurotrans 13J information Z is copied request KLM 2\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210428_092638.wav",
+        "full_ts": " tower Time Air Three Niner Seven Foxtrot  dobrý den \n dobrý deň opäť  Time Air Three Niner Seven Foxtrot tower goahead\nTime Air Three Niner Seven Foxtrot  waypoint charlie stand four five different information yankee QNH one zero one one request technical startup\n",
+        "short_ts": "tower Time Air 3 Niner 7F dobrý den\ndobrý deň opäť Time Air 3 Niner 7F tower goahead\nTime Air 3 Niner 7F waypoint C stand 45 different information Y QNH 1011 request technical startup\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_101342.wav",
+        "full_ts": "  Oscar India Alpha and contact Stefanik Radar one three four decimal nine two five   ahoj \n contacting radar one three four decimal(dec-) decimal nine two five    Oscar Mike Charlie India Alpha thank you bye\n",
+        "short_ts": "OIA and contact Stefanik Radar 134.925 ahoj\ncontacting radar 134 decimal(dec-) .925 OMCIA thank you bye\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_163524.wav",
+        "full_ts": " Tower hello Dream Team Zero One Five November established on ILS three one\nDream Team Zero One Five November Stefanik Tower  dobry den  wind one nine zero degrees nine knots runway three one cleared to land\nrunway three one cleared land      Dream Team Zero One Five November and  dobry den \n",
+        "short_ts": "Tower hello GAC015N established on ILS 31\nDream Team 015N Stefanik Tower dobry den wind 190 degrees 9 knots runway 31 cleared to land\nrunway 31 cleared land GAC015N and dobry den\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210424_151420.wav",
+        "full_ts": "  dobré popoludnie  Stefanik tower Bair Niner Four One ILS three one\nBair Nine Four One Stefanik tower   pekné popoludnie  wind three one zero  degrees  eight knots          variable between two seven zero and three three zero degrees   runway three one cleared to land\n runway three one cleared to land Bair Niner Four One\n",
+        "short_ts": "dobré popoludnie Stefanik tower Bair Niner 41 ILS 31\nABP941 Stefanik tower pekné popoludnie wind 310 degrees 8 knots variable between 270000330 degrees runway 31 cleared to land\nrunway 31 cleared to land Bair Niner 41\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_173822.wav",
+        "full_ts": "cleared to land runway three one and please say again the wind\ntwo eight zero degrees   one one knots   maximum one eight   minimum six knots\n",
+        "short_ts": "cleared to land runway 31 and please say again the wind\n280 degrees 11 knots maximum 18 minimum 6 knots\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_130351.wav",
+        "full_ts": "Stefanik tower Oscar Mike Echo Lima Echo good day\nOscar Mike Echo Lima Echo Stefanik tower good day\nStefanik tower Oscar Mike Echo Lima Echo  actual position  inbound keep  descending to two thousand feet altitude and requesting exit point victor Oscar Mike Echo Lima Echo\nOscar Lima Echo QNH one zero one eight after  proceed to Victor\n",
+        "short_ts": "Stefanik tower OMELE good day\nOMELE Stefanik tower good day\nStefanik tower OMELE actual position inbound keep descending to 2000 feet altitude and requesting exit .V OMELE\nOLE QNH 1018 after proceed to V\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_121412.wav",
+        "full_ts": "Elite Jet Two Zero One and via foxtrot line up three one report ready\n",
+        "short_ts": "ELJ201 000 via F line up 31 report ready\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_181535.wav",
+        "full_ts": "Oscar Golf Echo continue to final runway two two traffic is just now before shortly before landing\n",
+        "short_ts": "OGE continue to final runway 22 traffic 30 just now before shortly before landing\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_164905.wav",
+        "full_ts": "Oscar Mike Sierra  dva jedna päť rolujte na  apron charlie  po golf foxtrot delta križujte dráhu nula štyri \n",
+        "short_ts": "OMS21 päť rolujte na apron C po GFD križujte dráhu 0 štyri\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_093554.wav",
+        "full_ts": "Oscar Mike Romeo Whiskey India wind one seven zero degrees six knots variable between one four zero and two four zero degrees runway three one cleared to land\n\n",
+        "short_ts": "OMRWI wind 170 degrees 6 knots variable between 140 and 240 degrees runway 31 cleared to land\n\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_204845.wav",
+        "full_ts": "Eurotrans One Three Juliett taxi to holding point runway zero four via alpha delta\nalpha delta    holding point zero four Eurotrans One Three Juliett\n",
+        "short_ts": "BCS13J taxi to holding . runway 04 via AD\nAD holding .04 BCS13J\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_171541.wav",
+        "full_ts": " opakujte volaciu značku \n tower Oscar Mike Charlie Mike Juliett  dobrý deň \nOscar Mike Charlie Mike Juliett  štefánikovo dobrý deň \nOscar Mike Charlie Mike Juliett  flight plan  position  bound charlie one thousand three hundred feet QNH one zero zero seven information golf four one six\n",
+        "short_ts": "opakujte volaciu značku\ntower OMCMJ dobrý deň\nOMCMJ štefánikovo dobrý deň\nOMCMJ flight plan position bound C1000300 feet QNH 1007 information G416\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203133.wav",
+        "full_ts": "right so then yeah Tovka one kilo would be much better Eurotrans  One Three Juliett thank you\nEurotrans One Three Juliett roger so recleared via Tovka one kilo departure of runway three one initial climb five thousand feet\nrecleared at Tovka one kilo departure runway three initial climb five thousand feet and request push and start Eurotrans One Three Juliett\nEurotrans One Three Juliett push and start approved facing foxtrot and squawk four four zero three\n",
+        "short_ts": "right so then yeah Tovka 1 K would be much better Eurotrans 13J thank you\nBCS13J roger so recleared via Tovka 1 K departure of runway 31 initial climb 5000 feet\nrecleared at Tovka 1 K departure runway 3 initial climb 5000 feet and request push and start BCS13J\nBCS13J push and start approved facing F and squawk 4403\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_230611.wav",
+        "full_ts": "Stefanik Tower good morning      Eurotrans Five Three Three  Four established on the final inbound three one\ngood morning     Eurotrans Five Three Three Four    Stefanik    Tower wind variable three knots runway three one cleared to land\ncleared to land three one        Eurotrans  Five  Three   Three   Four\n",
+        "short_ts": "Stefanik Tower good morning Eurotrans 533 4 established on the final inbound 31\ngood morning Eurotrans 5334 Stefanik Tower wind variable 3 knots runway 31 cleared to land\ncleared to land 31 Eurotrans 5 3 3 4\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_202859.wav",
+        "full_ts": " One Two Juliett any chance to send a ready message\nwill do\nthanks\n",
+        "short_ts": "12J any chance to send a ready message\nwill do\nthanks\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_103144.wav",
+        "full_ts": "Double Dot Four Zero One line up runway one three wind variable two knots  runway one three cleared for takeoff  dopo \nvia foxtrot line up run- runway one three and run- runway runway one three cleared for takeoff \n",
+        "short_ts": "Double Dot 401 line up runway 13 wind variable 2 knots runway 13 cleared for takeoff dopo\nvia F line up run- runway 13 and run- runway runway 13 cleared for takeoff\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_203652.wav",
+        "full_ts": "holding point   runway three one  via foxtrot and cross runway zero four Eurotrans Two One correction One Three Juliett thank you\n",
+        "short_ts": "holding . runway 31 via F and cross runway 04 BCS21 correction 13J thank you\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210502_141218.wav",
+        "full_ts": "Stefanik tower   pekné popoludnie  Tatra Six One Three establish ILS three one\nTatra Six One Three   dobré popoludnie  Stefanik tower runway three one cleared to land wind three zero zero degrees one niner knots maximum three three knots\nrunway  three one clear to land Tatra Six One Three\n and after landing vacate via delta\nafter landing  via delta Six One Three\n",
+        "short_ts": "Stefanik tower pekné popoludnie Tatra 613 establish ILS 31\nTatra 613 dobré popoludnie Stefanik tower runway 31 cleared to land wind 300 degrees 19 knots maximum 33 knots\nrunway 31 clear to land Tatra 613\nand after landing vacate via D\nafter landing via D 613\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_202731.wav",
+        "full_ts": "Stefanik tower Oscar Mike Echo Lima Echo altitude six thousand feet and descending to two thousand feet \nwe would be   at about Victor    in  fourty seconds and  requesting approach information information quebec QNH one zero two zero\n",
+        "short_ts": "Stefanik tower OMELE altitude 6000 feet and descending to 2000 feet\nwe would be 15 about V 9 40 seconds and requesting approach information information Q QNH 1020\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_135310.wav",
+        "full_ts": "Bair Seven Five One we're rolling runway three one\n pekný let dopo \n ďakujeme pekný deň \n",
+        "short_ts": "Bair 751 we're rolling runway 31\npekný let dopo\nďakujeme pekný deň\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_104342.wav",
+        "full_ts": "Stefanik tower good day Austrian One Four One One ILS three one\n",
+        "short_ts": "Stefanik tower good day AUA1411 ILS 31\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_203710.wav",
+        "full_ts": "Oscar Mike Echo Lima Echo taxi between anchors via foxtrot\ntaxi between anchors via foxtrot Oscar Mike Echo Lima Echo\n",
+        "short_ts": "OMELE taxi between anchors via F\ntaxi between anchors via F OMELE\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_224858.wav",
+        "full_ts": "runway three one cleared to land we copied Topjet  Seven Zero Four\n",
+        "short_ts": "runway 31 cleared to land we copied Topjet 704\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_192342.wav",
+        "full_ts": "Oscar Kilo Romeo Lima Victor taxi via delta foxtrot holding one three\nvia delta foxtrot holding one three     Oscar Kilo Romeo Lima Victor\n",
+        "short_ts": "OKRLV taxi via DF holding 13\nvia DF holding 13 OKRLV\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_115915.wav",
+        "full_ts": "Oscar Mike Delta Bravo Victor  Štefánik veža dobrý deň \nStefanik tower Oscar Mike Delta Bravo Victor be reported there've been hazards  on board on a VFR flight to Senica over Devin with information charlie QNH one zero zero nine requesting departure instructions\n",
+        "short_ts": "OMDBV Štefánik veža dobrý deň\nStefanik tower OMDBV be reported there've been hazards on board on a VFR flight to Senica over Devin with information C QNH 1009 requesting departure instructions\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_120250.wav",
+        "full_ts": "Tatra Six Zero  Tatra Šesť Nula Nula vyčkávajte pred levelovacou delta\nbudeme vyčkávať pred rolovacou(rolovac-) rolovacou delta a dáme im prednosť týmto chlapom Tatra Šesť Nula Nula\n",
+        "short_ts": "Tatra 60 Tatra Šesť 00 vyčkávajte pred levelovacou D\nbudeme vyčkávať pred rolovacou(rolovac-) rolovacou D a dáme im prednosť týmto chlapom Tatra Šesť 00\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_120446.wav",
+        "full_ts": "taxi holding point three one via Foxtrot  cross   runway zero four Slovak Government Zero Zero Four\n",
+        "short_ts": "taxi holding .31 via F cross runway 04 SSG004\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210424_140755.wav",
+        "full_ts": "Stefanik Tower     ahoj    Top Jet Seven Zero One  established ILS three one\nTop Jet Seven Zero One Stefanik Tower   ahojte  wind two three zero degrees seven knots variable between one nine zero and two eight zero degrees runway three one cleared to land\nrunway three one cleared to land Top Jet Seven Zero One\n",
+        "short_ts": "Stefanik Tower ahoj Top Jet 701 established ILS 31\nTop Jet 701 Stefanik Tower ahojte wind 230 degrees 7 knots variable between 190 and 280 degrees runway 31 cleared to land\nrunway 31 cleared to land Top Jet 701\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_150028.wav",
+        "full_ts": "roger position start approved position five Foxtrot and squawk four four two three for Wizzair Six Two Seven Six\n",
+        "short_ts": "roger position start approved position 5 F and squawk 4423 for WZZ6276\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_174836.wav",
+        "full_ts": " Stefanik  Tower    dobry  den  Oscar Kilo  Alpha Lima  Foxtrot established on ILS approach runway three one\n  Oscar  Kilo Alpha Lima Foxtrot  Stefanik  Tower    dobry  vecer  wind zero nine zero degrees three knots runway three one cleared to land\nrunway three one cleared to land   Oscar Kilo Alpha Lima Foxtrot\n",
+        "short_ts": "Stefanik Tower dobry den OK AL F established on ILS approach runway 31\nO KALF Stefanik Tower dobry vecer wind 090 degrees 3 knots runway 31 cleared to land\nrunway 31 cleared to land OKALF\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_224842.wav",
+        "full_ts": " Stefanik  Tower Topjet Seven Zero  Four    pekny  vecer  fully established ILS runway three one\n dobry vecer   Topjet  Sever  Zero  Four  Stefanik  Tower wind variable two knots runway three one cleared to land\n",
+        "short_ts": "Stefanik Tower Topjet 70 4 pekny vecer fully established ILS runway 31\ndobry vecer Topjet Sever 0 4 Stefanik Tower wind variable 2 knots runway 31 cleared to land\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_120036.wav",
+        "full_ts": " Stefanik tower  pekne dobrý deň  Slovak Government Zero Zero Four our stand information zulu on board QNH one zero one eight request startup and clearance to Granada if possible request Tovka one kilo\nSlovak Government Zero Zero Four Stefanik tower  dobrý deň \ninformation Zulu QNH one zero one eight\ncleared from runway three one      via Tovka one alpha to Granada climb altitude five thousand feet squawk four four zero six\ncorrection Tovka one kilo departure and  QNH one zero one eight\n",
+        "short_ts": "Stefanik tower pekne dobrý deň SSG004 our stand information Z on board QNH 1018 request startup and clearance to Granada if possible request Tovka 1 K\nSSG004 Stefanik tower dobrý deň\ninformation Z QNH 1018\ncleared from runway 31 via Tovka 1 A 00 Granada climb altitude 5000 feet squawk 4406\ncorrection Tovka 1 K departure and QNH 1018\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_073328.wav",
+        "full_ts": "Dark Blue Five Four Romeo Stefanik tower  dobré ráno  runway three one cleared to land wind    zero eight zero degrees  six knots\nright three one cleared to land Dark Blue Five Four Romeo\n",
+        "short_ts": "Dark Blue 54R Stefanik tower dobré ráno runway 31 cleared to land wind 080 degrees 6 knots\n831 cleared to land Dark Blue 54R\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_095835.wav",
+        "full_ts": " Oscar  Mike  India  Victor  India taxi between hangars via golf foxtrot cross runway zero four\nvia golf foxtrot crossing runway zero four between hangars      Oscar  Mike  India  Victor  India\n",
+        "short_ts": "O M I V I taxi between hangars via GF cross runway 04\nvia GF crossing runway 04 between hangars O M I V I\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_203034.wav",
+        "full_ts": "push and start approved on position three Foxtrot on squawk four four zero two Eurotrans One Three Juliett\n",
+        "short_ts": "push and start approved on position 3 F on squawk 4402 BCS13J\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_090055.wav",
+        "full_ts": "Oscar Mike Charlie Mike Juliett Stefanik tower hello\n Oscar Mike Charlie Mike Juliett  operated by  we're going to departure from Bratislava  point charlie not above one thousand five hundred QNH one zero one zero  on board\n",
+        "short_ts": "OMCMJ Stefanik tower hello\nOMCMJ operated by we're going to departure from Bratislava .C not above 1000500 QNH 1010 on board\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_093242.wav",
+        "full_ts": "Stefanik tower      dobrý deň  Elite Jet Eight Zero One crossing two right base runway one three\n",
+        "short_ts": "Stefanik tower dobrý deň ELJ801 crossing 28 base runway 13\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_145115.wav",
+        "full_ts": "Topjet Four Zero Two via delta foxtrot ten three three\ndelta foxtrot ten three three Topjet Four Zero Two\n",
+        "short_ts": "Topjet 402 via DF 1033\nDF 1033 Topjet 402\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_122209.wav",
+        "full_ts": "Stefanik tower  ahoj  Topjet Two Zero Two established final track RNP three one\nTopjet Two Zero Two Stefanik tower  dobrý deň  wind    three one zero degrees   two one knots   runway three one clear to land\nrunway three one cleared to land Topjet Two Zero Two\n",
+        "short_ts": "Stefanik tower ahoj Topjet 202 established final track RNP 31\nTopjet 202 Stefanik tower dobrý deň wind 310 degrees 21 knots runway 31 clear to land\nrunway 31 cleared to land Topjet 202\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_203041.wav",
+        "full_ts": "One Three Juliett correction position two foxtrot\ntwo foxtrot Eurotrans One Three Juliett\n",
+        "short_ts": "13J correction position 2 F\n2 F BCS13J\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210502_163226.wav",
+        "full_ts": "cleared to land runway three one and wind copied  Top Jet Seven Zero Four\n",
+        "short_ts": "cleared to land runway 31 and wind copied Top Jet 704\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_202623.wav",
+        "full_ts": "roger  four six and we have information bravo QNH one zero one five cleared to land  one after departure runway two one and climb initially five thousand feet Eurotrans One Three Juliett\n",
+        "short_ts": "roger 46 and we have information B QNH 1015 cleared to land 1 after departure runway 21 and climb initially 5000 feet Eurotrans 13J\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_131815.wav",
+        "full_ts": "Delta Bravo Bravo line up runway three one report ready for departure\nDelta Bravo Bravo lining up runway three one we are ready for departure\nroger\n",
+        "short_ts": "DBB line up runway 31 report ready for departure\nDBB lining up runway 31 we are ready for departure\nroger\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_160938.wav",
+        "full_ts": " Tango Oscar Papa Foxtrot  hello we are fully established ILS three one\n",
+        "short_ts": "TOPF hello we are fully established ILS 31\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_202558.wav",
+        "full_ts": "november one alpha would be more affordable Eurotrans One Three Juliett thank you\n",
+        "short_ts": "N 1 A would be more affordable BCS13J thank you\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_120840.wav",
+        "full_ts": " Oscar  Echo  Lima  Zulu  Delta   Stefanik  Tower hello\nI would like to have  on position runway twenty two exit delta\n",
+        "short_ts": "O E L Z D Stefanik Tower hello\nI would like to have on position runway 202 exit D\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_112126.wav",
+        "full_ts": "spravne a budu to touch and go\nbudu to touch and go ano tymze ctvrte bude plne plne touch and go  plne pristatie Tatra Sest Nula\n",
+        "short_ts": "spravne a budu to touch and go\nbudu to touch and go ano tymze ctvrte bude plne plne touch and go plne pristatie Tatra Sest 0\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210428_203205.wav",
+        "full_ts": "startup push back approved position to Foxtrot squawk four four zero seven Eurotrans One Three Juliett\n",
+        "short_ts": "startup push back approved position 00 F squawk 4407 BCS13J\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_162200.wav",
+        "full_ts": "Bair Seven One Two taxi via delta line up runway zero four\nvia delta line up zero four Bair Seven One Two\n",
+        "short_ts": "ABP712 taxi via D line up runway 04\nvia D line up 04 ABP712\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_120242.wav",
+        "full_ts": "Hotel(-tel) Six Zero Three taxi to  holding point   runway one three   via delta foxtrot\n",
+        "short_ts": "Hotel(-tel) 603 taxi to holding . runway 13 via DF\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_042401.wav",
+        "full_ts": "start and push approved one zero foxtrot Galileo  One Zero Papa\n",
+        "short_ts": "start and push approved 10 F Galileo 10P\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_000651.wav",
+        "full_ts": "Eurotrans Five Three Three Five approaching fox one six ready for departure\n",
+        "short_ts": "BCS5335 approaching F 16 ready for departure\n",
+        "prompt": null
+    }
+]

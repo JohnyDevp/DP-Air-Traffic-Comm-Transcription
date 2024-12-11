@@ -1,0 +1,470 @@
+[
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_161349.wav",
+        "full_ts": "Radar CSA One Delta Zulu established\nCSA One Delta Zulu roger contact Ruzyne Tower one three four decimal five six zero\n\nthree four five six zero CSA One Delta Zulu  pekný deň\n",
+        "short_ts": "Radar CSA 1DZ established\nCSA 1DZ roger contact Ruzyne Tower 134.560\n\n34560 CSA 1DZ pekný deň\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_121714.wav",
+        "full_ts": "Oscar Kilo Uniform Tango Charlie re- release from frequency flying information service available at one two six decimal one Praha Information   dobrý den \n",
+        "short_ts": "OKUTC re- release from frequency flying information service available at 126.1 Praha Information dobrý den\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_130708.wav",
+        "full_ts": "Air France One Zero Eight Zulu standby now descend to  descend flight level seven zero\nAir France One Zero Eight Zulu\n",
+        "short_ts": "AFR108Z standby now descend to descend flight level 70\nAFR108Z\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_131433.wav",
+        "full_ts": "Praha Radar Oscar Kilo Uniform Tango Charlie   dobrý den   passing three thousand nine hundred climbing flight level seven zero inbound Vlasim ready for IFR\nOscar Kilo Uniform Tango Charlie   dobrý den  Praha Radar identified\nclimb flight level seven zero and cleared to   destination Benesov    via flight plan route\nIFR flight starts now time one three one four\n",
+        "short_ts": "Praha Radar OKUTC dobrý den passing 3000900 climbing flight level 70 inbound Vlasim ready for IFR\nOKUTC dobrý den Praha Radar identified\nclimb flight level 70 and cleared to 10 Benesov via flight plan route\nIFR flight starts now time 1314\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_114352.wav",
+        "full_ts": "Oscar Kilo Papa Romeo Mike turn right heading zero six zero\nzero six zero right turn Oscar Papa Romeo Mike\n",
+        "short_ts": "OKPRM turn right heading 060\n060 right turn OPRM\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_105855.wav",
+        "full_ts": "Skytravel Three Five Juliett turn right heading one eight zero vectoring for spacing\n turning right heading one eight zero Skytravel Three Five Juliett\n",
+        "short_ts": "Skytravel 35J turn right heading 180 vectoring for spacing\nturning right heading 180 Skytravel 35J\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_131046.wav",
+        "full_ts": "Air France One Zero Eight Zulu descend to flight level seven zero reduce two four zero knots or less\n or less and descend flight level seven zero Air France  One Zero Eight Zulu\nCzech Air Four Six Seven Five descend to four thousand feet QNH one zero one two and contact Kbely Tower one two zero decimal eight eight zero\ndescending four thousand feet  one zero one two and changing Kbely one two zero eight eight zero bye\n naslysenou(-slysenou) \n",
+        "short_ts": "Air France 108Z descend to flight level 70 reduce 240 knots or less\nor less and descend flight level 70 Air France 108Z\nCzech Air 4675 descend to 4000 feet QNH 1012 and contact Kbely Tower 120.880\ndescending 4000 feet 1012 and changing Kbely 120880 bye\nnaslysenou(-slysenou)\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_160035.wav",
+        "full_ts": "Silesia Seven Six Two continue     Charlie Lima Quebec Quebec Five       behind follow me stand mike one bravo\n",
+        "short_ts": "Silesia 762 continue CLQQ 5 behind follow me 000 M 1 B\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_092519.wav",
+        "full_ts": "Ruzyne Tower Oscar Victor Kilo  alpha\naffirm and continue whiskey two departure\ncontinue whiskey two departure Oscar Victor Kilo\n",
+        "short_ts": "Ruzyne Tower OVKA\naffirm and continue W2 departure\ncontinue W2 departure OVK\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_091331.wav",
+        "full_ts": " Ruzyne tower Oscar Kilo Alpha Victor Kilo two thousand three hundred feet QNH one zero one four inbound tango and we will hold on tango\nOscar Kilo Alpha Victor Kilo Ruzyne tower  dobry den  roger continue Tango and hold\n",
+        "short_ts": "Ruzyne tower OKAVK 2000300 feet QNH 1014 inbound T and we will hold on T\nOKAVK Ruzyne tower dobry den roger continue T and hold\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_174652.wav",
+        "full_ts": " good evening Lufthansa Eight Hotel Romeo passing two thousand five hundred climbing five thousand\nLufthansa Eight Hotel Romeo  Praha Radar good evening identified\nclimb to flight level one six zero\nLufthansa Eight Hotel Romeo climb flight level one six zero\n",
+        "short_ts": "good evening DLH8HR passing 2000500 climbing 5000\nDLH8HR Praha Radar good evening identified\nclimb to flight level 160\nDLH8HR climb flight level 160\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_143027.wav",
+        "full_ts": "Dream Team Four Zero Four Kilo  descend four thousand feet QNH one zero zero four\n one zero zero four  Dream Team Four Zero Four Kilo\n",
+        "short_ts": "GAC404K descend 4000 feet QNH 1004\n1004 GAC404K\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_212419.wav",
+        "full_ts": " Zero Four Two Two taxi holding point runway two four via taxiway quebec lima golf bravo\n",
+        "short_ts": "0422 taxi holding . runway 24 via taxiway QLGB\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_213836.wav",
+        "full_ts": "Skytravel Two Eight Two Seven and there is closed echo airspace below flight level one hundred so  if you wish to avoid class echo airspace next descend in two zero miles\n",
+        "short_ts": "Skytravel 2827 and there is closed E airspace below flight level 100 so if you wish to avoid class E airspace next descend in 20 miles\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_084648.wav",
+        "full_ts": "Oscar Kilo Tango Uniform Romeo approaching to Victor Lima Mike start holding there and  remain my frequency and  report when ready for come back to Prague\nremain on frequency and hold as published at Victor Lima Mike and we report   Tango Uniform Romeo\nok\n",
+        "short_ts": "OKTUR approaching to VLM start holding there and remain my frequency and report when ready for come back to Prague\nremain on frequency and hold as published at VLM and we report TUR\nok\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201024_221711.wav",
+        "full_ts": "Oscar Kilo Foxtrot  Charlie   Alpha you are leaving TMA Praha switch to Praha info one two six decimal one   naslysenou \n one two six decimal  one   naslysenou dekuji \n",
+        "short_ts": "OKF C A you are leaving TMA Praha switch to Praha info 126.1 naslysenou\n126.1 naslysenou dekuji\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_151332.wav",
+        "full_ts": "Oscar Kilo Mike Charlie Charlie Praha Radar   dobry den  you are identified    flight level seven zero  after Baltu proceed to Benesov\n",
+        "short_ts": "OKMCC Praha Radar dobry den you are identified flight level 70 after Baltu proceed to Benesov\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_161808.wav",
+        "full_ts": "Oscar Mike Papa turn right heading zero two zero cleared ILS approach runway zero six speed maximum one six zero knots\nright heading zero two zero cleared ILS approach zero six and maximum one six zero speed confirm\nI do confirm\n",
+        "short_ts": "OMP turn right heading 020 cleared ILS approach runway 06 speed maximum 160 knots\nright heading 020 cleared ILS approach 06 and maximum 160 speed confirm\nI do confirm\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_111817.wav",
+        "full_ts": "Qatari    Qatari Six Bravo Lima just confirm we are cleared to land\nQatari Six Bravo Lima affirm runway two four cleared to land wind one nine zero deegres seven knots\ncleared to land    Qatari Six Bravo Lima\n",
+        "short_ts": "Qatari QTR6BL just confirm we are cleared to land\nQTR6BL affirm runway 24 cleared to land wind 190 deegres 7 knots\ncleared to land QTR6BL\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_143955.wav",
+        "full_ts": "Dream Team Four Zero Four Kilo taxi charlie lima and quebec    behind follow me car    to stand Sierra three\n\n",
+        "short_ts": "GAC404K taxi CL 000 Q behind follow me car 00000 S 3\n\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_103443.wav",
+        "full_ts": "CSA Nine One Eight  taxi holding point runway two four to the right via Delta Bravo\ntaxi Delta Bravo    holding point two four CSA Nine One Eight\n",
+        "short_ts": "CSA 918 taxi holding . runway 2400 the 8 via DB\ntaxi DB holding .24 CSA 918\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_122911.wav",
+        "full_ts": "say again  Oscar  Kilo  Bravo  Alpha Lima\n Oscar  Kilo  Bravo   Alpha  Lima descend to four thousand feet QNH one zero one two\ndescending four thousand feet QNH one zero one two     Oscar  Kilo Bravo  Alpha  Lima\n",
+        "short_ts": "say again O K B AL\nO K B A L descend to 4000 feet QNH 1012\ndescending 4000 feet QNH 1012 O KB A L\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav",
+        "full_ts": "and  Oscar Oscar Echo released from my frequency flight information services available on one two six decimal one   naslysenou \none zero Oscar Kilo Zero Oscar Kilo Yankee  diky naslysenou \nOscar Kilo Alpha Charlie Tango Praha\ngo ahead Oscar Kilo Alpha Charlie Tango\ncontact Ostrava one one nine decimal three seven five   naslysenou \none one nine decimal three seven five Oscar Kilo Alpha Charlie Tango\ncan you confirm Oscar Kilo Alpha Charlie Tango Ostrava one one nine three seven five\naffirm correct\nOscar Kilo Alpha Charlie Tango\nTimeair Eight Zero Four Papa contact Praha one two zero decimal two seven five   naslysenou \none two zero decimal two seven five     Timeair Eight Zero Four  Papa   naslys \n",
+        "short_ts": "and OOE released from my frequency flight information services available on 126.1 naslysenou\n10OK0OKY diky naslysenou\nOKACT Praha\ngo ahead OKACT\ncontact Ostrava 119.375 naslysenou\n119.375 OKACT\ncan you confirm OKACT Ostrava 119375\naffirm correct\nOKACT\nTimeair 804P contact Praha 120.275 naslysenou\n120.275 Timeair 804 P naslys\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_051226.wav",
+        "full_ts": "KLM One Three Five Zero\nsorry go ahead\nyeah contact radar one two zero two seven five  ahoj\none two zero two seven five  ahoj KLM One Three Five Zero\n",
+        "short_ts": "KLM 1350\nsorry go ahead\nyeah contact radar 120275 ahoj\n120275 ahoj KLM 1350\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_121325.wav",
+        "full_ts": "Ryanair Seven Three Alpha Hotel turn left heading three six zero\nRyanair Seven Three Alpha Hotel\n",
+        "short_ts": "Ryanair 73AH turn left heading 360\nRyanair 73AH\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_221550.wav",
+        "full_ts": " heading to three one eight\nroger continue on present heading vectoring for ILS approach runway two four\nheading and  vectoring for ILS two four thank you\nQuality Four Zero Nine One proceed to Rapet\nRapet Quality Four Zero Nine One\n",
+        "short_ts": "heading to 318\nroger continue on present heading vectoring for ILS approach runway 24\nheading and vectoring for ILS 24 thank you\nQuality 4091 proceed to Rapet\nRapet Quality 4091\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_152306.wav",
+        "full_ts": "Ruzyne Tower CSA One Delta Zulu    dobrý podvečer  established localizer two four\n   dobrý den  CSA One Delta Zulu Ruzyne Tower runway two four cleared to land wind    two two zero degrees   one four knots\nare cleared to land runway two four CSA One Delta Zulu\n",
+        "short_ts": "Ruzyne Tower CSA 1DZ dobrý podvečer established localizer 24\ndobrý den CSA 1DZ Ruzyne Tower runway 24 cleared to land wind 220 degrees 14 knots\nare cleared to land runway 24 CSA 1DZ\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_052456.wav",
+        "full_ts": "Quality Four Zero Eight Nine turn right heading two one zero cleared ILS approach runway two four report established\nyes two one zero cleared ILS two four report established Quality   \n",
+        "short_ts": "Quality 4089 turn right heading 210 cleared ILS approach runway 24 report established\nyes 210 cleared ILS 24 report established Quality\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_113144.wav",
+        "full_ts": "i'd suggest deviation to south i'd say but my weather radar is not very precise\n",
+        "short_ts": "i'd suggest deviation to south i'd say but my weather radar is not very precise\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_205125.wav",
+        "full_ts": "and KLM Seven Three Whiskey reduce speed    one six zero knots  till four DME\nsixty to four DME KLM Seven Three Whiskey\n",
+        "short_ts": "and KLM73W reduce speed 160 knots till 4 DME\n60004 DME KLM73W\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201029_164604.wav",
+        "full_ts": "Tower good day KLM Four Six Alfa\ngood day KLM Four Six Alfa Ruzyne Tower\n\nKLM Four Six Alfa QNH one zero one eight time check four six cleared to Amsterdam departure route Baltu four Alfa initial climb to five thousand feet squawk one thousand\nthe QNH is one zero one eight to destination via Baltu four Alfa departure five thousand feet and squawk one thousand \ncorrect\n",
+        "short_ts": "Tower good day KLM 46 Alfa\ngood day KLM 46 Alfa Ruzyne Tower\n\nKLM 46 Alfa QNH 1018 time check 46 cleared to Amsterdam departure route Baltu 4 Alfa initial climb to 5000 feet squawk 1000\nthe QNH is 1018 to destination via Baltu 4 Alfa departure 5000 feet and squawk 1000\ncorrect\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_145941.wav",
+        "full_ts": "Oscar Kilo Triple Hotel please confirm one more holding\nOscar Kilo Hotel Hotel Hotel affirm one holding and then it should be possible to follow ILS runway zero six\nroger thank you\n",
+        "short_ts": "OK Triple H please confirm 1 more holding\nOKHHH affirm 1 holding and then it should be possible to follow ILS runway 06\nroger thank you\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_130407.wav",
+        "full_ts": "Oscar Kilo Kilo Uniform November proceed direct Baltu\nproceed direct Baltu Oscar Kilo Kilo Uniform November\n",
+        "short_ts": "OKKUN proceed direct Baltu\nproceed direct Baltu OKKUN\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_120512.wav",
+        "full_ts": "Oscar Kilo Kilo Echo Alfa Praha Radar identified climb flight level one hundred IFR flight starts  now time zero five cleared to destination via flight plan route\n",
+        "short_ts": "OKKE Alfa Praha Radar identified climb flight level 100 IFR flight starts now time 05 cleared to destination via flight plan route\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_090915.wav",
+        "full_ts": "  Skytravel  Four  Three  Seven  Eight\nroger call Tower one three four decimal five six zero   naslysenou  \nfive six zero  Skytravel Four Three Seven  Eight   hezky  den \n    taky hezky diky \n",
+        "short_ts": "Skytravel 4 3 7 8\nroger call Tower 134.560 naslysenou\n560 Skytravel 437 8 hezky den\ntaky hezky diky\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_175333.wav",
+        "full_ts": "Qatari Eight Two Three Two request taxi\nQatari Eight Two Three Two taxi  via zulu tango alfa to holding point runway two four\nvia zulu tango alfa to holding point runway two four Qatari Eight Two Three Two\nsorry you are on the othe way so continue straight ahead via only via zulu to holding point runway two four\nokay yeah via zulu and holding point runway two four Qatari Eight Two Three Two\n",
+        "short_ts": "Qatari 8232 request taxi\nQatari 8232 taxi via ZT alfa to holding . runway 24\nvia ZT alfa to holding . runway 24 Qatari 8232\nsorry you are on the othe way so continue straight ahead via only via Z to holding . runway 24\nokay yeah via Z and holding . runway 24 Qatari 8232\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201029_140101.wav",
+        "full_ts": " Air France One Zero Bravo Echo we are on stand one eight Embraer one seventy  to Paris \nAir France One Zero Bravo Echo good day Ruzyne Tower time zero one information lima QNH one zero one seven\ncleared to Paris Charles de Gaule Baltu Four Alpha departure initial climb five thousand feet and squawk one thousand\n",
+        "short_ts": "Air France 10BE we are on stand 18 Embraer 170 to Paris\nAir France 10BE good day Ruzyne Tower time 01 information L QNH 1017\ncleared to Paris Charles de Gaule Baltu 4A departure initial climb 5000 feet and squawk 1000\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_104523.wav",
+        "full_ts": "Belavia Eight Six One now descend four thousand feet QNH one zero one two and via Papa Romeo Five Three Two cleared ILS approach runway two four\n thousand feet nosig QNH one zero one two proceed Papa Romeo Five Three Two cleared ILS runway two four Belavia  eight six one\n",
+        "short_ts": "Belavia 861 now descend 4000 feet QNH 1012 and via PR532 cleared ILS approach runway 24\n000 feet nosig QNH 1012 proceed PR532 cleared ILS runway 24 Belavia 861\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_090116.wav",
+        "full_ts": " Sky  Travel  Four  Three Seven Eight  descend flight level seven  zero\n flight  level  seven  zero      Sky Travel Four Three Seven Eight\n",
+        "short_ts": "Sky Travel 4 378 descend flight level 7 0\nflight level 7 0 TVS4378\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_161709.wav",
+        "full_ts": "Timeair Six Niner Zero Juliett contact Ruzyne Tower one three four decimal five six zero   hezký večer ahoj \none three four five six zero Timeair Six Niner Zero Juliett bye   díky \n",
+        "short_ts": "Timeair 6 Niner 0J contact Ruzyne Tower 134.560 hezký večer ahoj\n134560 Timeair 6 Niner 0J bye díky\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_142311.wav",
+        "full_ts": "Ryanair Nine Two Bravo Quebec turn right heading zero nine zero\nnine zero degrees Ryanair Nine Two Bravo Quebec\n",
+        "short_ts": "Ryanair 92BQ turn right heading 090\n90 degrees Ryanair 92BQ\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav",
+        "full_ts": "hi Tower good morning Fraction One Five Zero Whiskey\nmorning Fraction One Five Zero Whiskey Ruzyne Tower go ahead\ngood morning we tried to call Ground while at the lobby  no reply\n squawk for us to Vienna\ninform that frequencies are closed so just Tower and Fraction One Five Zero Whiskey time check is two zero information Oscar with QNH one zero one three and you are cleared to Vienna Schwechat Vozice three alfa departure initial climb to five thousand feet and squawk is one thousand\n",
+        "short_ts": "hi Tower good morning Fraction 150W\nmorning Fraction 150W Ruzyne Tower go ahead\ngood morning we tried to call Ground while at the lobby no reply\nsquawk for us to Vienna\ninform that frequencies are closed so just Tower and Fraction 150W time check is 20 information O with QNH 1013 and you are cleared to Vienna Schwechat Vozice 3 alfa departure initial climb to 5000 feet and squawk is 1000\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_140929.wav",
+        "full_ts": "Eurowings Seven Alfa Bravo turn right heading two one zero cleared ILS approach runway two four report established\nheading(-ding)  two one zero cleared for the ILS two four report established Eurowings Seven Alpha Bravo\n",
+        "short_ts": "Eurowings 7 Alfa B turn right heading 210 cleared ILS approach runway 24 report established\nheading(-ding) 210 cleared for the ILS 24 report established EWG7AB\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav",
+        "full_ts": "Oscar Kilo India Alpha Fox hello\n Oscar Kilo India Alpha Fox Tecnam two zero eight  two thousand  ECA Echo two five up to two thousand five hundred feet with info Oscar QNH one zero one two  requesting the Echo Two arrival and November Two departure\nroger set squawk three three one seven and say again the type of aircraft please\nTecnam two zero eight and squawk three three one seven Oscar Kilo India Alpha Fox\nall is correct and traffic information  twelve o'clock distance half a mile same level unverified unknown traffic probably ultralight traffic\ncopy traffic information we are visual Oscar Kilo India Alpha Fox\nthank you\n",
+        "short_ts": "OKIAF hello\nOKIAF Tecnam 2082000 ECA E25 up to 2000500 feet with info O QNH 1012 requesting the E2 arrival and N2 departure\nroger set squawk 3317 and say again the type of aircraft please\nTecnam 208 and squawk 3317OKIAF\nall is correct and traffic information 12 o'clock distance half a mile same level unverified unknown traffic probably ultralight traffic\ncopy traffic information we are visual OKIAF\nthank you\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_072404.wav",
+        "full_ts": "Oscar Kilo Tango Oscar Papa proceed direct Lanux\n direct Lanux Oscar Kilo Tango Oscar Papa\n",
+        "short_ts": "OKTOP proceed direct Lanux\ndirect Lanux OKTOP\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_144339.wav",
+        "full_ts": "Radar   dobre odpoledne  Sky Travel Four Three Two Papa passing nineteen hundred climbing to five thousand\nSky Travel Four Three Two Papa   dobre odpoledne  Praha Radar identified climb flight level one six zero\nclimb to flight level one six zero Sky Travel Four Three Two Papa\n",
+        "short_ts": "Radar dobre odpoledne TVS432P passing 1900 climbing to 5000\nTVS432P dobre odpoledne Praha Radar identified climb flight level 160\nclimb to flight level 160 TVS432P\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201027_135214.wav",
+        "full_ts": "Ryanair One Bravo Alfa stand five seven QNH one zero one two request engine start\n",
+        "short_ts": "Ryanair 1B Alfa stand 57 QNH 1012 request engine start\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_110119.wav",
+        "full_ts": "Tower good afternoon Emirates One Three Nine runway two four twelve miles out\n Emirates One Three Nine Heavy Ruzyne Tower continue approach wind one eight zero degrees five knots\ncontinue approach Emirates One Three Nine\n",
+        "short_ts": "Tower good afternoon Emirates 139 runway 2412 miles out\nEmirates 139 Heavy Ruzyne Tower continue approach wind 180 degrees 5 knots\ncontinue approach Emirates 139\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_125731.wav",
+        "full_ts": "one one eight decimal one  Six Five Zero\nthat's it bye bye\n děkujem na slyšenou\n  na slyšenou\n",
+        "short_ts": "118.1 650\nthat's it bye bye\nděkujem na slyšenou\nna slyšenou\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_091112.wav",
+        "full_ts": "Oscar Kilo Papa Mike Bravo descend flight level one hundred\nlevel one hundred Oscar Kilo Papa Mike Bravo\n",
+        "short_ts": "OKPMB descend flight level 100\nlevel 100 OKPMB\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_150242.wav",
+        "full_ts": " Tower Alpha Delta Bravo Five Nine Zero Foxtrot good afternoon\nparking Echo seven information Romeo destination is Kabul now ready for push (to-) start request and push starting clearance\nAlpha Bravo Five Niner Zero Foxtrot good afternoon Ruzyne Tower information Romeo QNH one zero one four time check zero three\ncleared to Kabul  departure Victor Oscar Zulu three Alfa climb to five thousand feet squawk one four three four\n",
+        "short_ts": "Tower ADB590F good afternoon\nparking E7 information R destination is Kabul now ready for push (to-) start request and push starting clearance\nAB5 Niner 0F good afternoon Ruzyne Tower information R QNH 1014 time check 03\ncleared to Kabul departure VOZ3 Alfa climb to 5000 feet squawk 1434\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201027_213741.wav",
+        "full_ts": "okay Quality Four Zero Nine One    Ruzyne Tower information lima  QNH one zero one four time check three seven cleared to Liege Baltu four alpha departure initial climb five thousand feet and squawk one thousand\n",
+        "short_ts": "okay Quality 4091 Ruzyne Tower information L QNH 1014 time check 37 cleared to Liege Baltu 4 A departure initial climb 5000 feet and squawk 1000\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_104711.wav",
+        "full_ts": "Speedbird Eight Five Five fully established\nSpeedbird Eight Five Five roger taxiway point runway two four exit via hotel alpha if you prefer also bravo intersection is available\ni will  and ready for Bravo we will take hotel alpha holding point runway two four Speedbird Eight Five Five\nroger\n",
+        "short_ts": "Speedbird 855 fully established\nSpeedbird 855 roger taxiway . runway 24 exit via HA if you prefer also B intersection is available\ni will and ready for B we will take HA holding . runway 24 Speedbird 855\nroger\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_170710.wav",
+        "full_ts": " CSA  Nine  Five  Delta  descend  four  thousand  feet  altitude  QNH  one  zero  zero  eight  cleared  ils  approach  runway  two  four\n descending  four  thousand  feet  one  zero  zero  eight  cleared  for  ils  two  four  CSA  Nine  Five  Delta\n",
+        "short_ts": "CSA 9 5 D descend 4 000 feet altitude QNH 1 0 0 8 cleared ils approach runway 2 4\ndescending 4 000 feet 1 0 0 8 cleared for ils 2 4 CSA 9 5 D\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_134139.wav",
+        "full_ts": " Praha Radar     Oscar Kilo Tango Oscar Delta dobrý den\n",
+        "short_ts": "Praha Radar OKTOD dobrý den\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_090544.wav",
+        "full_ts": "Skytravel Four Three Seven Eight fly heading zero eight zero vectors for the ILS approach runway two four\n eight zero vectors ILS two four Skytravel Four Three Seven Eight\n",
+        "short_ts": "Skytravel 4378 fly heading 080 vectors for the ILS approach runway 24\n80 vectors ILS 24 Skytravel 4378\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_105217.wav",
+        "full_ts": "Speedbird Eight Five Five Praha Radar identified climb flight level one six zero\none six zero Speedbird Eight Five Five\n",
+        "short_ts": "BAW855 Praha Radar identified climb flight level 160\n160 BAW855\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201029_205008.wav",
+        "full_ts": "Ruzyne Tower UPS Two Nine Five ILS two four nine miles\ngood evening UPS Two Nine Five Ruzyne Tower runway two four cleared to land wind    two three zero degrees   one three knots\nrunway two four cleared to land UPS Two Nine Five\n",
+        "short_ts": "Ruzyne Tower UPS295 ILS 249 miles\ngood evening UPS295 Ruzyne Tower runway 24 cleared to land wind 230 degrees 13 knots\nrunway 24 cleared to land UPS295\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_092412.wav",
+        "full_ts": "Oscar Uniform Romeo turn left heading two seven zero cleared for ILS approach runway two four\nturn left to seven zero cleared for ILS runway two four Oscar Uniform Romeo\n",
+        "short_ts": "OUR turn left heading 270 cleared for ILS approach runway 24\nturn left to 70 cleared for ILS runway 24 OUR\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_155203.wav",
+        "full_ts": "Oscar Kilo Papa Romeo Mike to confirm full stop landing at Ruzyne\n we will do a full stop landing Oscar Kilo Papa Romeo Mike\nroger\n",
+        "short_ts": "OKPRM to confirm full stop landing at Ruzyne\nwe will do a full stop landing OKPRM\nroger\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_103148.wav",
+        "full_ts": "\nand your next activity\n",
+        "short_ts": "\nand your next activity\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_095055.wav",
+        "full_ts": "Lufthansa Niner Tango Papa contact Praha Radar one two zero decimal two seven five bye bye\nLufthansa Nine Tango Papa two zero two seven five bye\n",
+        "short_ts": "Lufthansa Niner TP contact Praha Radar 120.275 bye bye\nLufthansa 9TP 20275 bye\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_215915.wav",
+        "full_ts": " Ryan  Air  Four  Zulu   descend  to altitude four thousand feet QNH one zero zero eight\n descend four thousand feet QNH one zero zero eight  Ryan  Air  Four  Zulu\n",
+        "short_ts": "Ryan Air 4 Z descend to altitude 4000 feet QNH 1008\ndescend 4000 feet QNH 1008 Ryan Air 4 Z\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_111034.wav",
+        "full_ts": "Emirates One Three Nine taxi via foxtrot cross runway one two golf juliett stand one four alpha\ntaxi via foxtrot cross runway one two  golf juliett stand one four alpha Emirates One Three Nine\n",
+        "short_ts": "UAE139 taxi via F cross runway 12 GJ stand 14 A\ntaxi via F cross runway 12 GJ stand 14 A UAE139\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_151125.wav",
+        "full_ts": "CSA One Delta Zulu descend flight level one hundred no speed restrictions\ndescending flight level one hundred  free speed CSA One Delta Zulu\n",
+        "short_ts": "CSA 1DZ descend flight level 100 no speed restrictions\ndescending flight level 100 free speed CSA 1DZ\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_144043.wav",
+        "full_ts": "Ruzyne Tower hello again Eurowings One Tango Kilo\nEurowings One Tango Kilo Ruzyne Tower good afternoon go ahead\n just a question do you think there any chance to get runway two four for departure\nunfortunately with delay because there are five aircraft on runway zero six landing\nokay copy thank you\n",
+        "short_ts": "Ruzyne Tower hello again Eurowings 1TK\nEurowings 1TK Ruzyne Tower good afternoon go ahead\njust a question do you think there any chance to get runway 24 for departure\nunfortunately with delay because there are 5 aircraft on runway 06 landing\nokay copy thank you\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_090055.wav",
+        "full_ts": " Aegean  Four  Romeo  Golf descend four thousand feet via papa romeo five three two cleared ILS approach runway two four\ndescend four thousand feet QNH one zero one one and  five  papa romeo five  three two cleared ILS approach runway two four     Aegean  Four  Romeo  Golf\ncorrect\n",
+        "short_ts": "Aegean 4 R G descend 4000 feet via PR532 cleared ILS approach runway 24\ndescend 4000 feet QNH 1011 and 5PR532 cleared ILS approach runway 24 Aegean 4 R G\ncorrect\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_154615.wav",
+        "full_ts": "Oscar Kilo  Tango Oscar Papa confirmed localizer established\n(-firmed) established  Oscar  Kilo  Tango  Oscar  Papa\nOscar Kilo Tango Oscar Papa  contact  Ruzyne Tower one three four decimal five six zero     naslysenou \nthree four decimal five six zero  naslysenou   Oscar Kilo Tango Oscar  Papa\n",
+        "short_ts": "OK TOP confirmed localizer established\n(-firmed) established O K T O P\nOKTOP contact Ruzyne Tower 134.560 naslysenou\n34.560 naslysenou OKTO P\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201027_123658.wav",
+        "full_ts": " Oscar  Kilo  Bravo  Alpha  Lima  runway  two  four  cleared  for  low  pass  wind   two   three   zero   degrees   nine   knots\n cleared  for  low  pass runway  two  four  Oscar  Kilo  Bravo  Alpha  Lima\n",
+        "short_ts": "O K B A L runway 2 4 cleared for low pass wind 2 3 0 degrees 9 knots\ncleared for low pass runway 2 4 O K B A L\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_135258.wav",
+        "full_ts": " Oscar  Kilo  Bravo  India  Kilo so proceed now to position tango  departing traffic starting rolling\nclear traffic in sight proceeding to tango  Oscar  Kilo  Bravo  Yankee  Kilo\ncorrect\n",
+        "short_ts": "O K B I K so proceed now to position T departing traffic starting rolling\nclear traffic in sight proceeding to T O K B Y K\ncorrect\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_090915.wav",
+        "full_ts": "say again the departure we for us\nit is Baltu four alfa to climb  five thousand feet\n",
+        "short_ts": "say again the departure we for us\nit is Baltu 4 alfa to climb 5000 feet\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_153504.wav",
+        "full_ts": "Oscar Kilo Alpha Oscar Alpha taxi via foxtrot cross runway one two\n foxtrot and cross runway one two Oscar Kilo Alpha Oscar Alpha\n",
+        "short_ts": "OKAOA taxi via F cross runway 12\nF and cross runway 12OKAOA\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_153940.wav",
+        "full_ts": "Oscar Kilo Tango Oscar Papa  descend four thousand feet QNH one zero zero four\nfour thousand QNH one zero zero four     Oscar Kilo Tango Oscar Papa\n  Oscar Kilo Tango Oscar Papa and cleared ILS approach runway two four papa romeo five three two\npapa romeo five three two cleared ILS approach two four Oscar Kilo Tango Oscar Papa\n",
+        "short_ts": "OKTOP descend 4000 feet QNH 1004\n4000 QNH 1004 OKTOP\nOKTOP and cleared ILS approach runway 24PR532\nPR532 cleared ILS approach 24 OKTOP\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_153217.wav",
+        "full_ts": "\nOscar Kilo Charlie Tango Papa line up runway two four and wait\nline up runway two four and wait Oscar Kilo Charlie Tango Papa\n",
+        "short_ts": "\nOKCTP line up runway 24 and wait\nline up runway 24 and wait OKCTP\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_075824.wav",
+        "full_ts": " Time Air Seven Nine Three Fox right to \n right direct       Time Air Seven Nine Three Foxtrot \nAir Malta Five Three Eight left heading three two zero\nAir Malta Five Three Eight\n",
+        "short_ts": "TIE793F right to\nright direct TIE793F\nAMC538 left heading 320\nAMC538\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_075414.wav",
+        "full_ts": "Oscar Kilo Tango Uniform Romeo Praha Radar hello identified climb to flight level seven zero and standby for IFR\nclimbing to flight level seven zero Oscar Kilo Tango Uniform Romeo\n",
+        "short_ts": "OKTUR Praha Radar hello identified climb to flight level 70 and standby for IFR\nclimbing to flight level 70 OKTUR\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_094626.wav",
+        "full_ts": "Lufthansa Nine Tango Papa contact Praha radar one two zero decimal two seven five good bye\none two zero two seventy five bye-bye Nine Tango Papa\n",
+        "short_ts": "Lufthansa 9TP contact Praha radar 120.275 good bye\n1202705 bye-bye 9TP\n",
+        "prompt": null
+    },
+    {
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_191641.wav",
+        "full_ts": "Timeair Seven Four Five Yankee  descend to four thousand feet QNH one zero zero seven\nfour thousand feet QNH one zero zero seven Timeair Seven Four Five Yankee\n",
+        "short_ts": "Timeair 745Y descend to 4000 feet QNH 1007\n4000 feet QNH 1007 Timeair 745Y\n",
+        "prompt": null
+    }
+]
