@@ -1,10 +1,3 @@
-# {
-#   "filepath":str,
-#   "full_ts":str,
-#   "short_ts":str,
-#   "language":str     
-# }
-
 import sys
 import glob as glob
 import os
@@ -62,7 +55,7 @@ number_map = {
     # the rest....
     "hundred": "00", "thousand": "000",
     "hundert": "00", "tausend": "000",
-    "sto": "00", "tisíc": "000",
+    "sto": "00", "set":"00", "tisíc": "000",
     
     "decimal": ".", "point": "."
 }
@@ -208,7 +201,22 @@ def get_fullts(xml_data):
     return fullts
 
 def get_prompt(xml_file):
-    return None
+    info_file = xml_file.replace(".xml", ".info")
+    if (not os.path.exists(info_file)):
+        return None
+    
+    with open(info_file, "r") as f:
+        data = f.read()
+        # Extract waypoints
+        waypoints_match = re.search(r"waypoints nearby: (.+)", data)
+        waypoints_array = waypoints_match.group(1).split() if waypoints_match else []
+
+        # Extract callsign shorts and long forms
+        callsigns_match = re.findall(r"(\S+)\s+:\s+(.*)", data)
+        call_sign_shorts = [match[0] for match in callsigns_match]
+        call_sign_longs = [match[1] for match in callsigns_match]
+        
+    return waypoints_array, call_sign_shorts, call_sign_longs
 
 def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, out_file_name : str):
     out_data = []
@@ -233,13 +241,17 @@ def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, out_file_
             
             short_ts = get_shortts(wav_full_path_current_disk, xml_data)
 
-            prompt = get_prompt(xml_file)
+            prompt_waypoints, prompt_short_callsigns, prompt_long_callsigns = get_prompt(xml_file)
             
             out_data.append({
-                "audio": wav_file_path, # just want the path on the disk, not whole on the pc
+                "audio": wav_file_path.removeprefix(disk_path_tb_excluded).removeprefix('/'), # just want the path on the disk, not whole on the pc
                 "full_ts": full_ts,
                 "short_ts": short_ts,
-                "prompt": prompt,
+                "prompt": {
+                    "waypoints": prompt_waypoints,
+                    "short_callsigns": prompt_short_callsigns,
+                    "long_callsigns": prompt_long_callsigns
+                    }
             })
     
     # save the metadata, ensure no overwriting of previously created metadata
@@ -276,6 +288,12 @@ def split_wav_files_en(root : str) -> list:
             result_train.append(file)
     return [result_train, result_test_ruzyne,result_test_stefanik,result_test_zurich]
 
+def split_wav_files_nonen(root : str) -> list:
+    result = []
+    for file in glob.glob(root +"/*.wav"):
+        result.append(file)
+    return result
+
 if __name__ == "__main__":
     ROOT_DIR_EN="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA"
     files_train, files_test_ruzyne,files_test_stefanik,files_test_zurich = split_wav_files_en(ROOT_DIR_EN)
@@ -283,8 +301,10 @@ if __name__ == "__main__":
     makemetadata(files_test_ruzyne, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_ruzyne_test.json")
     makemetadata(files_test_stefanik, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_stefanik_test.json")
     makemetadata(files_test_zurich, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_zurich_test.json")
-    # print(len(files_train), len(files_test_ruzyne), len(files_test_stefanik), len(files_test_zurich))
+    
+    
     # ROOT_DIR_NONEN="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN"
     # wav_files_nonen = get_wav_file_names(ROOT_DIR_NONEN)
+
    
     
