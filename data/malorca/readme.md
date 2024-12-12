@@ -1,8 +1,14 @@
-### Description
+## SPLIT
+- TEST
+    - TEST dir (1557)
+- TRAIN
+    - DEV_1 dir (3987)
+    - DEV_2 dir (2348)
 
-In metadata\_\* files are transcriptist and paths to wav files, these files are made by _makemetadata.py_ script.
-It is ready to be used by _makedataset.py_ script, which loads the audio data and stores them in metafiles
+- ALL 
+    - 7892 wavs used
+    - more 8037 wavs remains without ts in DEV_3 dir
 
-### Notes
 
--   dev_3 malorca dataset is not used yet - maybe do it later
+## NOTES
+-   dev_3 malorca dataset is not used yet - maybe use it later

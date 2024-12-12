@@ -1,3 +1,4 @@
+from calendar import c
 import sys
 import glob as glob
 import os
@@ -57,7 +58,7 @@ number_map = {
     "hundert": "00", "tausend": "000",
     "sto": "00", "set":"00", "tisíc": "000",
     
-    "decimal": ".", "point": "."
+    "decimal": ".", "point": ".", "dot": ".", "coma": ".",
 }
 
 aviation_map = {
@@ -71,7 +72,7 @@ aviation_map = {
 }
 leave_untouch_words = ["and", "on", "or"]
 
-def process_tag_content(text, what : str ="alphanum",cutoff=None):
+def get_shortts(text, what : str ="alphanum",cutoff=None):
     # what : str = "alphanum" | "num" | "alpha"
     match what:
         case "alphanum":
@@ -109,149 +110,20 @@ def process_tag_content(text, what : str ="alphanum",cutoff=None):
         
     return ' '.join(result)
 
-def make_vocab(info_path):
-    vocab = {}
-    with open(info_path, "r") as f:
-        lines = f.readlines()[8:] # first 8 lines are not needed
-        for line in lines:
-            line_split = line.split(':')
-            if (len(line_split) != 2 or line_split[0].strip().__len__() < 4 or line_split[1].split(' ').__len__() > 10):
-                continue
-            code = line.split(":")[0].lower().strip()
-            full = line.split(":")[1].lower().strip()
-            words = full.split(' ')
-            
-            if (words[0] in aviation_map.keys() or words[0] in number_map.keys()):
-                # it means the code consists just of normal airtraffic alphabet
-                continue
-            words_of_airport_icao = ' '.join(words[0:int(len(words) - (len(code)-3))]).strip()
-            vocab[words_of_airport_icao] = code[0:3] 
-    return vocab
-
-def process_callsign_from_info(callsign_plain : str, airport_vocab : dict):
-    partly_processed_callsign = process_tag_content(callsign_plain, "alphanum")
-    # we assume that the last word is now built from numbers and letters recognized 
-    # from air traffic alphabet and numbers
-    
-    # we will try to find the airport code in the info file
-    airport_name = ' '.join(partly_processed_callsign.strip().lower().split(' ')[0:-1]).strip()
-    if (airport_name in airport_vocab and airport_name.strip() != ""):
-        airport_code = airport_vocab[airport_name]
-        return (airport_code + partly_processed_callsign.split(' ')[-1]).upper()
-    else:
-        return partly_processed_callsign.strip()
-
-vocab_global = {}
-def get_shortts(wav_full_path_current_disk, xml_data) -> str:
-    # get short ts
-    soup = BeautifulSoup(xml_data, "xml")
-    shortts = ""
-    for segment in soup.find_all("segment"):
-        # obtain the text tag amd remove the <text> tag from it
-        text_w_tag = segment.find("text")
-        seg_text = text_w_tag.get_text(separator=" ", strip=True)
-        
-        # ensure tags contains everything they can (meaning, multiple same tags going one after another are merged)
-        pattern = r'\[\/#(\w+)\]\s*\[#\1\]'
-        seg_text = re.sub(pattern, ' ', seg_text)
-        
-        # go through tags callsign and value and shorten them
-        searched_tags = ['callsign', 'value']
-        for tag in searched_tags:
-            pattern = rf"\[#({tag})\](.*?)\[/#{tag}\]"
-            if tag == "callsign":
-                info_path = wav_full_path_current_disk.replace(".wav", ".info")
-                vocab = {}
-                if (os.path.exists(info_path)):
-                    vocab = make_vocab(info_path)
-                    vocab_global = vocab # just to give vocab for the wavs that do not have info file
-                else:
-                    vocab = vocab_global 
-                seg_text=re.sub(pattern, lambda x: process_callsign_from_info(x.group(2), vocab),seg_text)
-                
-            elif tag == "value":
-                seg_text=re.sub(pattern, lambda x: process_tag_content(x.group(2), "num",cutoff=80),seg_text)
-        
-        # now replace remove all other still existing tags
-        # and multiple spaces
-        pattern = r'\[[^\]]*\]'
-        seg_text = re.sub(pattern,"",seg_text)
-        pattern = r'\s+'
-        seg_text = re.sub(pattern," ",seg_text)
-        
-        # finnaly go again with alphanum processing
-        seg_text = process_tag_content(seg_text, "alphanum")
-        
-        # append
-        shortts += seg_text + '\n'
-
-    return shortts
-
-def get_plain_text_from_segment(tag_text):
-    pattern = r'\[[^\]]*\]'
-    return re.sub(pattern,"",tag_text)
-
-def get_fullts(xml_data):
-    soup = BeautifulSoup(xml_data, "xml")
-    fullts = ""
-    for segment in soup.find_all("segment"):
-        text_tag = segment.find("text")
-        fullts += get_plain_text_from_segment(text_tag.get_text(separator=" ", strip=True))
-        fullts += "\n"
-    return fullts
-
-def get_prompt(xml_file):
-    info_file = xml_file.replace(".xml", ".info")
-    if (not os.path.exists(info_file)):
-        return None
-    
-    with open(info_file, "r") as f:
-        data = f.read()
-        # Extract waypoints
-        waypoints_match = re.search(r"waypoints nearby: (.+)", data)
-        waypoints_array = waypoints_match.group(1).split() if waypoints_match else []
-
-        # Extract callsign shorts and long forms
-        callsigns_match = re.findall(r"(\S+)\s+:\s+(.*)", data)
-        call_sign_shorts = [match[0] for match in callsigns_match]
-        call_sign_longs = [match[1] for match in callsigns_match]
-        
-    return waypoints_array, call_sign_shorts, call_sign_longs
-
-def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, out_file_name : str):
+def makemetadata(audio_ts_doubles_dict : str, disk_path_tb_excluded : str, out_file_name : str):
     out_data = []
     
-    for wav_file_path in tqdm(wav_listings_path):
-        wav_full_path_current_disk = os.path.join(disk_path_tb_excluded, wav_file_path)               
-        
-        # obtain the xml file (check if it exists) with the transcription
-        xml_file = wav_full_path_current_disk.replace(".wav", ".xml")
-        
-        if (not os.path.exists(xml_file)):
-            print(f"File {xml_file} does not exist")
-            continue
-        
-        with open(xml_file, "r") as f:  
-            xml_data = f.read()
-            # extract the full ts            
-            full_ts = get_fullts(xml_data)
-            if (full_ts.strip() == ""):
-                print(f"File {xml_file} has empty transcription, skipping", file=sys.stderr)
-                continue
-            
-            short_ts = get_shortts(wav_full_path_current_disk, xml_data)
+    for double in tqdm(audio_ts_doubles_dict):
+        wav_full_path_current_disk = double['audio']
+        full_ts = double['transcription']
+ 
+        short_ts = get_shortts(full_ts, "alphanum")
 
-            prompt_waypoints, prompt_short_callsigns, prompt_long_callsigns = get_prompt(xml_file)
-            
-            out_data.append({
-                "audio": wav_file_path.removeprefix(disk_path_tb_excluded).removeprefix('/'), # just want the path on the disk, not whole on the pc
+        out_data.append({
+                "audio": wav_full_path_current_disk.removeprefix(disk_path_tb_excluded).removeprefix('/'), # just want the path on the disk, not whole on the pc
                 "full_ts": full_ts,
                 "short_ts": short_ts,
-                "prompt": {
-                    "waypoints": prompt_waypoints,
-                    "short_callsigns": prompt_short_callsigns,
-                    "long_callsigns": prompt_long_callsigns
-                    }
+                "prompt": None,
             })
     
     # save the metadata, ensure no overwriting of previously created metadata
@@ -267,8 +139,14 @@ def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, out_file_
 def split_wav_files(root : str) -> list:
     # counts for datasets ruzyne and stefanik - from each is used for test 350 files
     # and whole LZSH_Zurich is used for test
+    test_dirs_sp = ["SJJM","SLGF","SMCM"]
+    test_dirs_fr = ["FMHF","FMKF","FOMF","FSVF","FSHM","FSPM","FTEM","FVCM"]
+    test_dirs_gr = ["GTAM","GVPM","GVSF","GNSF"]
     
     result_train = []
+    result_test_fr = []
+    result_test_gr = []
+    result_test_sp = []
     main_file = os.path.join(root, "hiwire.mlf")
     with open(main_file, "r") as f:
         lines = f.readlines()
@@ -276,10 +154,30 @@ def split_wav_files(root : str) -> list:
         
         current_file = ""
         current_file_transcription = []
+        
+        def append_wav_to_result(current_file, current_file_transcription):
+            if (current_file != ""):
+                # check for file existence
+                if (not os.path.exists(current_file)):
+                    print(f"File {current_file} does not exist, skipping")
+                    return
+                file_spec = os.path.basename(current_file).split('_')[0]
+                if file_spec in test_dirs_fr:
+                    result_test_fr.append({"audio":current_file, "transcription": ' '.join(current_file_transcription)})
+                elif file_spec in test_dirs_gr:
+                    result_test_gr.append({"audio":current_file, "transcription": ' '.join(current_file_transcription)})
+                elif file_spec in test_dirs_sp:
+                    result_test_sp.append({"audio":current_file, "transcription": ' '.join(current_file_transcription)})
+                else:
+                    result_train.append({"audio":current_file, "transcription": ' '.join(current_file_transcription)})
+            
         for line in lines:
             if (re.match(pattern, line.strip())):
                 if (current_file != ""):
-                    result_train.append({"audio":current_file, "transcription":' '.join(current_file_transcription)})
+                    append_wav_to_result(current_file, current_file_transcription)
+                    current_file = ""
+                    current_file_transcription = []
+                    
                 # build the wav file path
                 current_file = line.replace('"','').strip().removesuffix(".lab").removeprefix("*/") + '_LN.wav'
                 # possible dirs
@@ -289,9 +187,10 @@ def split_wav_files(root : str) -> list:
                 for dir in dirs: # check for the first letter to decide the directory
                     if (file_spec[0].__eq__(dir[0])):
                         current_file = os.path.join(root, mezzo_path, dir, file_spec, current_file)
+                        
                         break
             elif (line.strip() == "."):
-                result_train.append({"audio":current_file, "transcription":' '.join(current_file_transcription)})
+                append_wav_to_result(current_file, current_file_transcription)
                 current_file = ""
                 current_file_transcription = []
             else: 
@@ -300,19 +199,22 @@ def split_wav_files(root : str) -> list:
         
         # append the last possible processed file
         if (current_file != ""):
-            result_train.append({"audio":current_file, "transcription":' '.join(current_file_transcription)})
+            append_wav_to_result(current_file, current_file_transcription)
+            current_file = ""
+            current_file_transcription = []
     
-    return result_train
+    return result_train, result_test_fr, result_test_gr, result_test_sp
     
 if __name__ == "__main__":
     ROOT_DIR="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/HIWIRE_ELDA_S0293/"
     
-    split_wav_files(ROOT_DIR)
-    
+    files_train, files_test_fr, files_test_gr, files_test_sp = split_wav_files(ROOT_DIR)
+ 
     # files_train, files_test_ruzyne,files_test_stefanik,files_test_zurich = split_wav_files(ROOT_DIR_EN)
-    # makemetadata(files_train, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38", out_file_name="metadata_en_train.json")
-    # makemetadata(files_test_ruzyne, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_ruzyne_test.json")
-    # makemetadata(files_test_stefanik, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_stefanik_test.json")
+    makemetadata(files_train, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38", out_file_name="metadata_hwir_train.json")
+    makemetadata(files_test_fr, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_hwir_fr_test.json")
+    makemetadata(files_test_gr, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_hwir_gr_test.json")
+    makemetadata(files_test_sp, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_hwir_sp_test.json")
 
    
     

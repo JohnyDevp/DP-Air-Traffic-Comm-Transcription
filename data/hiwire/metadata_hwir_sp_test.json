@@ -1,0 +1,1802 @@
+[
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_008_LN.wav",
+        "full_ts": "speed two dot one three",
+        "short_ts": "speed 2.13",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_018_LN.wav",
+        "full_ts": "arc mode",
+        "short_ts": "arc mode",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_028_LN.wav",
+        "full_ts": "select VHF3 one eight nine decimal nine nine",
+        "short_ts": "select VHF3 189.99",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_038_LN.wav",
+        "full_ts": "request descent to six eight five due to performance",
+        "short_ts": "request descent to 685 due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_048_LN.wav",
+        "full_ts": "vertical",
+        "short_ts": "vertical",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_058_LN.wav",
+        "full_ts": "standby",
+        "short_ts": "standby",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_068_LN.wav",
+        "full_ts": "mayday mayday",
+        "short_ts": "mayday mayday",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_078_LN.wav",
+        "full_ts": "VHF1 one seven four point seven eight",
+        "short_ts": "VHF1 174.78",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_088_LN.wav",
+        "full_ts": "AOC",
+        "short_ts": "AOC",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_098_LN.wav",
+        "full_ts": "wilco",
+        "short_ts": "wilco",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_108_LN.wav",
+        "full_ts": "metar",
+        "short_ts": "metar",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_118_LN.wav",
+        "full_ts": "range one hundred sixty",
+        "short_ts": "range 10060",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_128_LN.wav",
+        "full_ts": "airport nav",
+        "short_ts": "airport nav",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_138_LN.wav",
+        "full_ts": "activate",
+        "short_ts": "activate",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_148_LN.wav",
+        "full_ts": "request climb to plus three",
+        "short_ts": "request climb to plus 3",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_158_LN.wav",
+        "full_ts": "range forty",
+        "short_ts": "range 40",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_168_LN.wav",
+        "full_ts": "FD disengage",
+        "short_ts": "FD disengage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_178_LN.wav",
+        "full_ts": "FD engage",
+        "short_ts": "FD engage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_188_LN.wav",
+        "full_ts": "preferred level nine zero two",
+        "short_ts": "preferred level 902",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_198_LN.wav",
+        "full_ts": "range eighty",
+        "short_ts": "range 80",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_208_LN.wav",
+        "full_ts": "switch frequency",
+        "short_ts": "switch frequency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_218_LN.wav",
+        "full_ts": "free text",
+        "short_ts": "free text",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_228_LN.wav",
+        "full_ts": "last",
+        "short_ts": "last",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_238_LN.wav",
+        "full_ts": "airport map",
+        "short_ts": "airport map",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_248_LN.wav",
+        "full_ts": "previous",
+        "short_ts": "previous",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_258_LN.wav",
+        "full_ts": "ND",
+        "short_ts": "ND",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_268_LN.wav",
+        "full_ts": "cannot accept",
+        "short_ts": "cannot accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_278_LN.wav",
+        "full_ts": "FMS",
+        "short_ts": "FMS",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_288_LN.wav",
+        "full_ts": "modify",
+        "short_ts": "modify",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_298_LN.wav",
+        "full_ts": "cancel emergency",
+        "short_ts": "cancel emergency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_308_LN.wav",
+        "full_ts": "TAF",
+        "short_ts": "TAF",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_318_LN.wav",
+        "full_ts": "report",
+        "short_ts": "report",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_328_LN.wav",
+        "full_ts": "list",
+        "short_ts": "list",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_338_LN.wav",
+        "full_ts": "message",
+        "short_ts": "message",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_348_LN.wav",
+        "full_ts": "approach",
+        "short_ts": "approach",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_358_LN.wav",
+        "full_ts": "historic",
+        "short_ts": "historic",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_368_LN.wav",
+        "full_ts": "transfer",
+        "short_ts": "transfer",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_378_LN.wav",
+        "full_ts": "ILS on",
+        "short_ts": "ILS on",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_388_LN.wav",
+        "full_ts": "select HF2 two eight three two",
+        "short_ts": "select HF2 2832",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_398_LN.wav",
+        "full_ts": "assigned level eight eight nine",
+        "short_ts": "assigned level 889",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_408_LN.wav",
+        "full_ts": "send",
+        "short_ts": "send",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_418_LN.wav",
+        "full_ts": "time zero eight nine minutes",
+        "short_ts": "time 089 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_428_LN.wav",
+        "full_ts": "we cannot accept one six six eight eight",
+        "short_ts": "we cannot accept 16688",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_438_LN.wav",
+        "full_ts": "undo",
+        "short_ts": "undo",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_448_LN.wav",
+        "full_ts": "change",
+        "short_ts": "change",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_458_LN.wav",
+        "full_ts": "SID",
+        "short_ts": "SID",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_468_LN.wav",
+        "full_ts": "rose",
+        "short_ts": "rose",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_478_LN.wav",
+        "full_ts": "can accept",
+        "short_ts": "can accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_488_LN.wav",
+        "full_ts": "pan pan",
+        "short_ts": "pan pan",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_498_LN.wav",
+        "full_ts": "close",
+        "short_ts": "close",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_508_LN.wav",
+        "full_ts": "route",
+        "short_ts": "route",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_518_LN.wav",
+        "full_ts": "print",
+        "short_ts": "print",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_528_LN.wav",
+        "full_ts": "select VHF3",
+        "short_ts": "select VHF3",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_538_LN.wav",
+        "full_ts": "ETA zulu india zulu alpha sierra at two six zero minutes",
+        "short_ts": "ETA ZIZAS at 260 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_548_LN.wav",
+        "full_ts": "position uniform echo mike victor oscar",
+        "short_ts": "position UEMVO",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_558_LN.wav",
+        "full_ts": "request direct to romeo xray delta four zero due to performance",
+        "short_ts": "request direct to RXD40 due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_568_LN.wav",
+        "full_ts": "range eighty",
+        "short_ts": "range 80",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_578_LN.wav",
+        "full_ts": "position three fox kilo four",
+        "short_ts": "position 3FK4",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_588_LN.wav",
+        "full_ts": "position yankee three two yankee november",
+        "short_ts": "position Y32YN",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_598_LN.wav",
+        "full_ts": "position foxtrot one fox oscar lima",
+        "short_ts": "position F1FOL",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_608_LN.wav",
+        "full_ts": "route",
+        "short_ts": "route",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_618_LN.wav",
+        "full_ts": "select HF2 two zero seven eight five",
+        "short_ts": "select HF2 20785",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_628_LN.wav",
+        "full_ts": "request level minus six due to performance",
+        "short_ts": "request level minus 6 due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_638_LN.wav",
+        "full_ts": "unable",
+        "short_ts": "unable",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_648_LN.wav",
+        "full_ts": "pan pan",
+        "short_ts": "pan pan",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_658_LN.wav",
+        "full_ts": "request level plus zero three due to aircraft performance",
+        "short_ts": "request level plus 03 due to aircraft performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_668_LN.wav",
+        "full_ts": "request speed zero point seven due to performance",
+        "short_ts": "request speed 0.7 due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_678_LN.wav",
+        "full_ts": "SID",
+        "short_ts": "SID",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_688_LN.wav",
+        "full_ts": "airport nav",
+        "short_ts": "airport nav",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_698_LN.wav",
+        "full_ts": "ETA zulu one golf foxtrot romeo at two three hours four one minutes",
+        "short_ts": "ETA Z1GFR at 23 hours 41 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_708_LN.wav",
+        "full_ts": "ETA echo romeo quebec echo nine at three seven minutes",
+        "short_ts": "ETA ERQE9 at 37 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_718_LN.wav",
+        "full_ts": "can accept",
+        "short_ts": "can accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_728_LN.wav",
+        "full_ts": "AOC",
+        "short_ts": "AOC",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_738_LN.wav",
+        "full_ts": "request descent to zero two due to aircraft performance",
+        "short_ts": "request descent to 02 due to aircraft performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_748_LN.wav",
+        "full_ts": "last",
+        "short_ts": "last",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_758_LN.wav",
+        "full_ts": "range one hundred sixty",
+        "short_ts": "range 10060",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_768_LN.wav",
+        "full_ts": "VHF1",
+        "short_ts": "VHF1",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_778_LN.wav",
+        "full_ts": "weather off",
+        "short_ts": "weather off",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_788_LN.wav",
+        "full_ts": "preferred level eight four nine",
+        "short_ts": "preferred level 849",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_798_LN.wav",
+        "full_ts": "speed four dot zero",
+        "short_ts": "speed 4.0",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_808_LN.wav",
+        "full_ts": "rose",
+        "short_ts": "rose",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_818_LN.wav",
+        "full_ts": "range three hundred twenty",
+        "short_ts": "range 30020",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_828_LN.wav",
+        "full_ts": "ok",
+        "short_ts": "ok",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_838_LN.wav",
+        "full_ts": "we can accept eight seven one at eight zero one minutes",
+        "short_ts": "we can accept 871 at 801 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_848_LN.wav",
+        "full_ts": "TAF",
+        "short_ts": "TAF",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_858_LN.wav",
+        "full_ts": "request climb to seven nine due to weather",
+        "short_ts": "request climb to 79 due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_868_LN.wav",
+        "full_ts": "HF1 one one zero three six",
+        "short_ts": "HF1 11036",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_878_LN.wav",
+        "full_ts": "next",
+        "short_ts": "next",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_888_LN.wav",
+        "full_ts": "we cannot accept eight three nine",
+        "short_ts": "we cannot accept 839",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_898_LN.wav",
+        "full_ts": "add",
+        "short_ts": "add",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_908_LN.wav",
+        "full_ts": "select VHF2 one eight seven",
+        "short_ts": "select VHF2 187",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_918_LN.wav",
+        "full_ts": "cancel emergency",
+        "short_ts": "cancel emergency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_928_LN.wav",
+        "full_ts": "cannot accept",
+        "short_ts": "cannot accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_938_LN.wav",
+        "full_ts": "print",
+        "short_ts": "print",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_948_LN.wav",
+        "full_ts": "modify",
+        "short_ts": "modify",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_958_LN.wav",
+        "full_ts": "change frequency",
+        "short_ts": "change frequency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_968_LN.wav",
+        "full_ts": "FD engage",
+        "short_ts": "FD engage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_978_LN.wav",
+        "full_ts": "VOR",
+        "short_ts": "VOR",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_988_LN.wav",
+        "full_ts": "assigned level one three six five three",
+        "short_ts": "assigned level 13653",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_998_LN.wav",
+        "full_ts": "VHF1 one one four decimal five three",
+        "short_ts": "VHF1 114.53",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_000_LN.wav",
+        "full_ts": "position hotel fox kilo whiskey quebec",
+        "short_ts": "position HFKWQ",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_010_LN.wav",
+        "full_ts": "we cannot accept plus zero one five nine one",
+        "short_ts": "we cannot accept plus 01591",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_020_LN.wav",
+        "full_ts": "speed one dot three three eight",
+        "short_ts": "speed 1.338",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_030_LN.wav",
+        "full_ts": "ETA echo romeo yankee at four two",
+        "short_ts": "ETA ERY at 42",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_040_LN.wav",
+        "full_ts": "speed zero decimal nine two four",
+        "short_ts": "speed 0.924",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_050_LN.wav",
+        "full_ts": "we can accept plus five at zero one seven minutes",
+        "short_ts": "we can accept plus 5 at 017 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_060_LN.wav",
+        "full_ts": "position nine four victor six oscar",
+        "short_ts": "position 94V6O",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_070_LN.wav",
+        "full_ts": "request direct to one charlie sierra two five due to weather",
+        "short_ts": "request direct to 1CS25 due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_080_LN.wav",
+        "full_ts": "airport map",
+        "short_ts": "airport map",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_090_LN.wav",
+        "full_ts": "approach",
+        "short_ts": "approach",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_100_LN.wav",
+        "full_ts": "preferred level seven nine two",
+        "short_ts": "preferred level 792",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_110_LN.wav",
+        "full_ts": "position foxtrot whiskey two seven zero",
+        "short_ts": "position FW270",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_120_LN.wav",
+        "full_ts": "position juliet golf november foxtrot november",
+        "short_ts": "position JGNFN",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_130_LN.wav",
+        "full_ts": "position tango quebec papa golf fox",
+        "short_ts": "position TQPGF",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_140_LN.wav",
+        "full_ts": "ETA seven zulu kilo juliet xray at zero hours five eight",
+        "short_ts": "ETA 7ZKJX at 0 hours 58",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_150_LN.wav",
+        "full_ts": "select VHF2 one eight seven",
+        "short_ts": "select VHF2 187",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_160_LN.wav",
+        "full_ts": "VHF1 one five zero point seven zero",
+        "short_ts": "VHF1 150.70",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_170_LN.wav",
+        "full_ts": "request direct to victor lima bravo romeo due to aircraft performance",
+        "short_ts": "request direct to VLBR due to aircraft performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_180_LN.wav",
+        "full_ts": "FD engage",
+        "short_ts": "FD engage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_190_LN.wav",
+        "full_ts": "range one hundred sixty",
+        "short_ts": "range 10060",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_200_LN.wav",
+        "full_ts": "position delta mike papa alpha four",
+        "short_ts": "position DMPA4",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_210_LN.wav",
+        "full_ts": "maintaining zero three five one five",
+        "short_ts": "maintaining 03515",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_220_LN.wav",
+        "full_ts": "transfer",
+        "short_ts": "transfer",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_230_LN.wav",
+        "full_ts": "request descent to minus two due to performance",
+        "short_ts": "request descent to minus 2 due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_240_LN.wav",
+        "full_ts": "ETA seven papa two india tango at zero six eight minutes",
+        "short_ts": "ETA 7P2IT at 068 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_250_LN.wav",
+        "full_ts": "time nine hours two one minutes",
+        "short_ts": "time 9 hours 21 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_260_LN.wav",
+        "full_ts": "HF1",
+        "short_ts": "HF1",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_270_LN.wav",
+        "full_ts": "FD disengage",
+        "short_ts": "FD disengage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_280_LN.wav",
+        "full_ts": "cannot accept",
+        "short_ts": "cannot accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_290_LN.wav",
+        "full_ts": "FD on",
+        "short_ts": "FD on",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_300_LN.wav",
+        "full_ts": "pan pan",
+        "short_ts": "pan pan",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_310_LN.wav",
+        "full_ts": "route",
+        "short_ts": "route",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_320_LN.wav",
+        "full_ts": "range twenty",
+        "short_ts": "range 20",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_330_LN.wav",
+        "full_ts": "position two uniform sierra charlie seven",
+        "short_ts": "position 2USC7",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_340_LN.wav",
+        "full_ts": "vertical",
+        "short_ts": "vertical",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_350_LN.wav",
+        "full_ts": "weather radar",
+        "short_ts": "weather radar",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_360_LN.wav",
+        "full_ts": "free text",
+        "short_ts": "free text",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_370_LN.wav",
+        "full_ts": "wilco",
+        "short_ts": "wilco",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_380_LN.wav",
+        "full_ts": "range forty",
+        "short_ts": "range 40",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_390_LN.wav",
+        "full_ts": "weather off",
+        "short_ts": "weather off",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_400_LN.wav",
+        "full_ts": "request level minus three zero",
+        "short_ts": "request level minus 30",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_410_LN.wav",
+        "full_ts": "assigned level three four two",
+        "short_ts": "assigned level 342",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_420_LN.wav",
+        "full_ts": "VHF3",
+        "short_ts": "VHF3",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_430_LN.wav",
+        "full_ts": "arc mode",
+        "short_ts": "arc mode",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_440_LN.wav",
+        "full_ts": "print",
+        "short_ts": "print",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_450_LN.wav",
+        "full_ts": "can accept",
+        "short_ts": "can accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_460_LN.wav",
+        "full_ts": "undo",
+        "short_ts": "undo",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_470_LN.wav",
+        "full_ts": "TAF",
+        "short_ts": "TAF",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_480_LN.wav",
+        "full_ts": "switch",
+        "short_ts": "switch",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_490_LN.wav",
+        "full_ts": "cancel emergency",
+        "short_ts": "cancel emergency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_500_LN.wav",
+        "full_ts": "add",
+        "short_ts": "add",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_510_LN.wav",
+        "full_ts": "HF2 two one five zero three",
+        "short_ts": "HF2 21503",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_520_LN.wav",
+        "full_ts": "SID",
+        "short_ts": "SID",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_530_LN.wav",
+        "full_ts": "message",
+        "short_ts": "message",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_540_LN.wav",
+        "full_ts": "ok",
+        "short_ts": "ok",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_550_LN.wav",
+        "full_ts": "last",
+        "short_ts": "last",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_560_LN.wav",
+        "full_ts": "activate",
+        "short_ts": "activate",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_570_LN.wav",
+        "full_ts": "ND",
+        "short_ts": "ND",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_580_LN.wav",
+        "full_ts": "report",
+        "short_ts": "report",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_590_LN.wav",
+        "full_ts": "range eighty",
+        "short_ts": "range 80",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_600_LN.wav",
+        "full_ts": "previous",
+        "short_ts": "previous",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_610_LN.wav",
+        "full_ts": "list",
+        "short_ts": "list",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_620_LN.wav",
+        "full_ts": "close",
+        "short_ts": "close",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_630_LN.wav",
+        "full_ts": "airport nav",
+        "short_ts": "airport nav",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_640_LN.wav",
+        "full_ts": "send",
+        "short_ts": "send",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_650_LN.wav",
+        "full_ts": "roger",
+        "short_ts": "roger",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_660_LN.wav",
+        "full_ts": "VOR",
+        "short_ts": "VOR",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_670_LN.wav",
+        "full_ts": "climb to",
+        "short_ts": "climb to",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_680_LN.wav",
+        "full_ts": "AOC",
+        "short_ts": "AOC",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_690_LN.wav",
+        "full_ts": "constraints",
+        "short_ts": "constraints",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_700_LN.wav",
+        "full_ts": "PFD",
+        "short_ts": "PFD",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_710_LN.wav",
+        "full_ts": "metar",
+        "short_ts": "metar",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_720_LN.wav",
+        "full_ts": "mayday mayday",
+        "short_ts": "mayday mayday",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_730_LN.wav",
+        "full_ts": "next",
+        "short_ts": "next",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_740_LN.wav",
+        "full_ts": "FMS",
+        "short_ts": "FMS",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_750_LN.wav",
+        "full_ts": "change frequency",
+        "short_ts": "change frequency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_760_LN.wav",
+        "full_ts": "rose mode",
+        "short_ts": "rose mode",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_770_LN.wav",
+        "full_ts": "historic",
+        "short_ts": "historic",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_780_LN.wav",
+        "full_ts": "unable",
+        "short_ts": "unable",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_790_LN.wav",
+        "full_ts": "modify",
+        "short_ts": "modify",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_800_LN.wav",
+        "full_ts": "ILS",
+        "short_ts": "ILS",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_810_LN.wav",
+        "full_ts": "standby",
+        "short_ts": "standby",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_820_LN.wav",
+        "full_ts": "request direct to lima foxtrot uniform bravo nine due to aircraft performance",
+        "short_ts": "request direct to LFUB9 due to aircraft performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_830_LN.wav",
+        "full_ts": "can accept",
+        "short_ts": "can accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_840_LN.wav",
+        "full_ts": "request direct to yankee due to weather",
+        "short_ts": "request direct to Y due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_850_LN.wav",
+        "full_ts": "mayday mayday",
+        "short_ts": "mayday mayday",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_860_LN.wav",
+        "full_ts": "ETA sierra three bravo zulu alpha at zero five zero minutes",
+        "short_ts": "ETA S3BZA at 050 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_870_LN.wav",
+        "full_ts": "cancel emergency",
+        "short_ts": "cancel emergency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_880_LN.wav",
+        "full_ts": "request direct to mike victor seven delta delta due to performance",
+        "short_ts": "request direct to MV7DD due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_890_LN.wav",
+        "full_ts": "ILS on",
+        "short_ts": "ILS on",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_900_LN.wav",
+        "full_ts": "position echo echo five echo three",
+        "short_ts": "position EE5E3",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_910_LN.wav",
+        "full_ts": "weather radar",
+        "short_ts": "weather radar",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_920_LN.wav",
+        "full_ts": "ETA mike sierra eight oscar five at five four four",
+        "short_ts": "ETA MS8O5 at 544",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_930_LN.wav",
+        "full_ts": "ILS off",
+        "short_ts": "ILS off",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_940_LN.wav",
+        "full_ts": "range eighty",
+        "short_ts": "range 80",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_950_LN.wav",
+        "full_ts": "select VHF3 one eight nine",
+        "short_ts": "select VHF3 189",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_960_LN.wav",
+        "full_ts": "request speed zero decimal nine seven due to performance",
+        "short_ts": "request speed 0.97 due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_970_LN.wav",
+        "full_ts": "select VHF2 one six five",
+        "short_ts": "select VHF2 165",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_980_LN.wav",
+        "full_ts": "close",
+        "short_ts": "close",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_990_LN.wav",
+        "full_ts": "speed four point zero",
+        "short_ts": "speed 4.0",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_006_LN.wav",
+        "full_ts": "route",
+        "short_ts": "route",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_016_LN.wav",
+        "full_ts": "VHF1",
+        "short_ts": "VHF1",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_026_LN.wav",
+        "full_ts": "emergency",
+        "short_ts": "emergency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_036_LN.wav",
+        "full_ts": "request level six due to performance",
+        "short_ts": "request level 6 due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_046_LN.wav",
+        "full_ts": "assigned level three two four",
+        "short_ts": "assigned level 324",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_056_LN.wav",
+        "full_ts": "list",
+        "short_ts": "list",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_066_LN.wav",
+        "full_ts": "range one hundred sixty",
+        "short_ts": "range 10060",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_076_LN.wav",
+        "full_ts": "add",
+        "short_ts": "add",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_086_LN.wav",
+        "full_ts": "airport nav",
+        "short_ts": "airport nav",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_096_LN.wav",
+        "full_ts": "HF1 six three six one",
+        "short_ts": "HF1 6361",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_106_LN.wav",
+        "full_ts": "airport map",
+        "short_ts": "airport map",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_116_LN.wav",
+        "full_ts": "VOR",
+        "short_ts": "VOR",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_126_LN.wav",
+        "full_ts": "previous",
+        "short_ts": "previous",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_136_LN.wav",
+        "full_ts": "metar",
+        "short_ts": "metar",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_146_LN.wav",
+        "full_ts": "wilco",
+        "short_ts": "wilco",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_156_LN.wav",
+        "full_ts": "undo",
+        "short_ts": "undo",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_166_LN.wav",
+        "full_ts": "FD disengage",
+        "short_ts": "FD disengage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_176_LN.wav",
+        "full_ts": "maintaining eight two five",
+        "short_ts": "maintaining 825",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_186_LN.wav",
+        "full_ts": "preferred level nine five three",
+        "short_ts": "preferred level 953",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_196_LN.wav",
+        "full_ts": "message",
+        "short_ts": "message",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_206_LN.wav",
+        "full_ts": "transfer",
+        "short_ts": "transfer",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_216_LN.wav",
+        "full_ts": "activate",
+        "short_ts": "activate",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_226_LN.wav",
+        "full_ts": "approach",
+        "short_ts": "approach",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_236_LN.wav",
+        "full_ts": "vertical",
+        "short_ts": "vertical",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_246_LN.wav",
+        "full_ts": "FD engage",
+        "short_ts": "FD engage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_256_LN.wav",
+        "full_ts": "cancel emergency",
+        "short_ts": "cancel emergency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_266_LN.wav",
+        "full_ts": "time zero four eight minutes",
+        "short_ts": "time 048 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_276_LN.wav",
+        "full_ts": "request direct to charlie india whiskey due to weather",
+        "short_ts": "request direct to CIW due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_286_LN.wav",
+        "full_ts": "request direct to six oscar india whiskey november due to weather",
+        "short_ts": "request direct to 6OIWN due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_296_LN.wav",
+        "full_ts": "print",
+        "short_ts": "print",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_306_LN.wav",
+        "full_ts": "position victor nine sierra fox romeo",
+        "short_ts": "position V9SFR",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_316_LN.wav",
+        "full_ts": "metar",
+        "short_ts": "metar",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_326_LN.wav",
+        "full_ts": "request direct to victor nine delta foxtrot golf due to weather",
+        "short_ts": "request direct to V9DFG due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_336_LN.wav",
+        "full_ts": "ETA juliet echo india tango at six seven",
+        "short_ts": "ETA JEIT at 67",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_346_LN.wav",
+        "full_ts": "request direct to oscar lima alpha golf romeo due to weather",
+        "short_ts": "request direct to OLAGR due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_356_LN.wav",
+        "full_ts": "wilco",
+        "short_ts": "wilco",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_366_LN.wav",
+        "full_ts": "historic",
+        "short_ts": "historic",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_376_LN.wav",
+        "full_ts": "arc mode",
+        "short_ts": "arc mode",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_386_LN.wav",
+        "full_ts": "speed four dot zero",
+        "short_ts": "speed 4.0",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_396_LN.wav",
+        "full_ts": "request level four due to weather",
+        "short_ts": "request level 4 due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_406_LN.wav",
+        "full_ts": "approach",
+        "short_ts": "approach",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_416_LN.wav",
+        "full_ts": "preferred level minus seven",
+        "short_ts": "preferred level minus 7",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_426_LN.wav",
+        "full_ts": "request direct to whiskey november bravo hotel yankee due to weather",
+        "short_ts": "request direct to WNBHY due to weather",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_436_LN.wav",
+        "full_ts": "weather radar on",
+        "short_ts": "weather radar on",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_446_LN.wav",
+        "full_ts": "ETA november xray two india juliet at eight four seven minutes",
+        "short_ts": "ETA NX2IJ at 847 minutes",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_456_LN.wav",
+        "full_ts": "range three hundred twenty",
+        "short_ts": "range 30020",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_466_LN.wav",
+        "full_ts": "cannot accept",
+        "short_ts": "cannot accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_476_LN.wav",
+        "full_ts": "modify",
+        "short_ts": "modify",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_486_LN.wav",
+        "full_ts": "roger",
+        "short_ts": "roger",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_496_LN.wav",
+        "full_ts": "add",
+        "short_ts": "add",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_506_LN.wav",
+        "full_ts": "pan pan",
+        "short_ts": "pan pan",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_516_LN.wav",
+        "full_ts": "we can accept plus three three at one five hours nine",
+        "short_ts": "we can accept plus 33 at 15 hours 9",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_526_LN.wav",
+        "full_ts": "speed four point zero",
+        "short_ts": "speed 4.0",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_536_LN.wav",
+        "full_ts": "FD engage",
+        "short_ts": "FD engage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_546_LN.wav",
+        "full_ts": "nav",
+        "short_ts": "nav",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_556_LN.wav",
+        "full_ts": "ILS off",
+        "short_ts": "ILS off",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_566_LN.wav",
+        "full_ts": "we cannot accept six eight four",
+        "short_ts": "we cannot accept 684",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_576_LN.wav",
+        "full_ts": "undo",
+        "short_ts": "undo",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_586_LN.wav",
+        "full_ts": "select HF2 seven zero seven six",
+        "short_ts": "select HF2 7076",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_596_LN.wav",
+        "full_ts": "send",
+        "short_ts": "send",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_606_LN.wav",
+        "full_ts": "list",
+        "short_ts": "list",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_616_LN.wav",
+        "full_ts": "transfer",
+        "short_ts": "transfer",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_626_LN.wav",
+        "full_ts": "activate",
+        "short_ts": "activate",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_636_LN.wav",
+        "full_ts": "HF1 six three eight five",
+        "short_ts": "HF1 6385",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_646_LN.wav",
+        "full_ts": "request climb to one one due to performance",
+        "short_ts": "request climb to 11 due to performance",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_656_LN.wav",
+        "full_ts": "route",
+        "short_ts": "route",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_666_LN.wav",
+        "full_ts": "SID",
+        "short_ts": "SID",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_676_LN.wav",
+        "full_ts": "last",
+        "short_ts": "last",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_686_LN.wav",
+        "full_ts": "can accept",
+        "short_ts": "can accept",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_696_LN.wav",
+        "full_ts": "message",
+        "short_ts": "message",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_706_LN.wav",
+        "full_ts": "select VHF2",
+        "short_ts": "select VHF2",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_716_LN.wav",
+        "full_ts": "change",
+        "short_ts": "change",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_726_LN.wav",
+        "full_ts": "switch frequency",
+        "short_ts": "switch frequency",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_736_LN.wav",
+        "full_ts": "rose mode",
+        "short_ts": "rose mode",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_746_LN.wav",
+        "full_ts": "maintaining seven four eight",
+        "short_ts": "maintaining 748",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_756_LN.wav",
+        "full_ts": "unable",
+        "short_ts": "unable",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_766_LN.wav",
+        "full_ts": "time eight eight",
+        "short_ts": "time 88",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_776_LN.wav",
+        "full_ts": "FMS",
+        "short_ts": "FMS",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_786_LN.wav",
+        "full_ts": "standby",
+        "short_ts": "standby",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_796_LN.wav",
+        "full_ts": "VHF1",
+        "short_ts": "VHF1",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_806_LN.wav",
+        "full_ts": "next",
+        "short_ts": "next",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_816_LN.wav",
+        "full_ts": "FD disengage",
+        "short_ts": "FD disengage",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_826_LN.wav",
+        "full_ts": "mayday mayday",
+        "short_ts": "mayday mayday",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_836_LN.wav",
+        "full_ts": "range forty",
+        "short_ts": "range 40",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_846_LN.wav",
+        "full_ts": "report",
+        "short_ts": "report",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_856_LN.wav",
+        "full_ts": "range one hundred sixty",
+        "short_ts": "range 10060",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_866_LN.wav",
+        "full_ts": "descent to",
+        "short_ts": "descent to",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_876_LN.wav",
+        "full_ts": "ND",
+        "short_ts": "ND",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_886_LN.wav",
+        "full_ts": "VOR",
+        "short_ts": "VOR",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_896_LN.wav",
+        "full_ts": "close",
+        "short_ts": "close",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_906_LN.wav",
+        "full_ts": "TAF",
+        "short_ts": "TAF",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_916_LN.wav",
+        "full_ts": "assigned level six zero",
+        "short_ts": "assigned level 60",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_926_LN.wav",
+        "full_ts": "vertical",
+        "short_ts": "vertical",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_936_LN.wav",
+        "full_ts": "PFD",
+        "short_ts": "PFD",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_946_LN.wav",
+        "full_ts": "AOC",
+        "short_ts": "AOC",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_956_LN.wav",
+        "full_ts": "constraints",
+        "short_ts": "constraints",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_966_LN.wav",
+        "full_ts": "free text",
+        "short_ts": "free text",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_976_LN.wav",
+        "full_ts": "previous",
+        "short_ts": "previous",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_986_LN.wav",
+        "full_ts": "ok",
+        "short_ts": "ok",
+        "prompt": null
+    },
+    {
+        "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_996_LN.wav",
+        "full_ts": "cancel emergency",
+        "short_ts": "cancel emergency",
+        "prompt": null
+    }
+]

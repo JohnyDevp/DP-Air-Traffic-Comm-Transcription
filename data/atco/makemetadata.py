@@ -276,10 +276,10 @@ def split_wav_files_en(root : str) -> list:
     result_test_zurich = []
     result_train = []
     for file in glob.glob(root +"/*.wav"):
-        if (count_test_ruzyne < 350 and "LKPR_RUZYNE" in file):
+        if (count_test_ruzyne < 50 and "LKPR_RUZYNE" in file):
             result_test_ruzyne.append(file)
             count_test_ruzyne += 1
-        elif (count_test_stefanik < 350 and "LZIB_STEFANIK" in file):
+        elif (count_test_stefanik < 50 and "LZIB_STEFANIK" in file):
             result_test_stefanik.append(file)
             count_test_stefanik += 1
         elif ("LSZH_ZURICH" in file):

@@ -4,8 +4,8 @@ import json,os
 
 # the path to the disk with datasets of wavs and etc..
 DISK_DIR="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
-METADATA_PATH       =   ["./metadata_en_ruzyne_test.json","./metadata_en_stefanik_test.json",'./metadata_en_zurich_test.json','./metadata_en_train.json']
-DATASET_SAVE_PATH   =   ["./en_ruzyne_test_ds",'./en_stefanik_test_ds','./en_zurich_test_ds','./en_train_ds']
+METADATA_PATH       =   ["./metadata_hwir_fr_test.json","./metadata_hwir_gr_test.json",'./metadata_hwir_sp_test.json','./metadata_hwir_train.json']
+DATASET_SAVE_PATH   =   ["./hwir_fr_test_ds","./hwir_gr_test_ds","./hwir_sp_test_ds","./hwir_train_ds"]
 
 for i in range(len(METADATA_PATH)):
     dataset = load_dataset("json", data_files=METADATA_PATH[i])
