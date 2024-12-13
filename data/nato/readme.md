@@ -15,4 +15,7 @@
 
 
 ## NOTES
--   dev_3 malorca dataset is not used yet - maybe use it later
+-   .sph files to .wav files converted through **sox** using command 
+```bash
+$ for file in */*/*; do if [[ "${file##*.}" == "sph" ]]; then sox $file ${file%.*}.wav; fi; done
+```
