@@ -41,9 +41,9 @@ if __name__ == "__main__":
     dataset = load_dataset("json", data_files=META_FILE, split="train")
     
     # load it to the dataset and split to test and train
-    dd = Dataset.from_list(meta_data[:700]).cast_column("audio",Audio(sampling_rate=16000))
+    # dd = Dataset..from_json(dataset)
     
-    dd_dsdict = DatasetDict({"train": dd})
+    dd_dsdict = DatasetDict({"train": dataset})
     # dd_dsdict['train'].train_test_split(test_size=0.2,seed=42)
     
     # ensure 16000 sampling rate
