@@ -1,0 +1,14 @@
+[
+    {
+        "audio": "audio/UK_001_0.wav",
+        "full_ts": "alfa seven zulu this is zulu eight uniform. bravo bravo tack charlie oscar two, tack eight, time zero eight two eight, uniform six victor, over",
+        "short_ts": "alfa 7Z this is Z8UBB tack CO two, tack eight, time 082 eight, U6 victor, over",
+        "prompt": null
+    },
+    {
+        "audio": "audio/UK_001_1.wav",
+        "full_ts": "this is uniform six victor, roger out",
+        "short_ts": "this is U6 victor, roger out",
+        "prompt": null
+    }
+]
