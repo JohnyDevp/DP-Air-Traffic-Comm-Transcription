@@ -1,11 +1,22 @@
+from calendar import c
+import math
 import os
+import random
 from librosa import ex
+from numpy import short
+from openai import audio
 from pydub import AudioSegment 
 import re
 from bs4 import BeautifulSoup
 from scipy.io import wavfile
 import json
 from rapidfuzz import process
+from glob import glob
+from time import time
+from tqdm import tqdm
+
+from sklearn import tests
+from sklearn.model_selection import train_test_split
 
 number_map = {
     # English
@@ -69,7 +80,7 @@ aviation_map = {
 }
 leave_untouch_words = ["and", "on", "or"]
 
-def get_shortts(full_ts, what : str ="alphanum"):
+def get_shortts(full_ts : str, what : str ="alphanum"):
     # what : str = "alphanum" | "num" | "alpha"
     match what:
         case "alphanum":
@@ -86,7 +97,13 @@ def get_shortts(full_ts, what : str ="alphanum"):
     result = []
     current_transcript = ""
     
-    words : list[str] = full_ts.strip().split(' ')
+    # remove everything between [ ], if present
+    reg = re.compile(r"\[[^\]]*\]")
+    full_ts = reg.sub("", full_ts)
+    
+    reg = re.compile(r"\w+|[.,!?]")
+    words : list[str] = reg.findall(full_ts)
+    
     for word in words:
         # Find the closest match from the combined_map keys
             bestmatch = process.extractOne(word.lower(), combined_map.keys(), score_cutoff=score_cutoff)
@@ -101,18 +118,22 @@ def get_shortts(full_ts, what : str ="alphanum"):
     # append the last chunk, if exists
     if current_transcript:
         result.append(current_transcript)
-        
-    return ' '.join(result)
 
-def extract_short_segments(input_file, output_file, max_duration=30):
+    result = ' '.join(result)
+    result = re.sub(r'\s+([.,!?])', r'\1', result)
+    return result
+
+def extract_short_segments(ts_file, audio_in, wav_out_path, max_duration=30):
     """
     Extracts segments from the input file where the duration between <Sync> tags is less than max_duration.
     
-    :param input_file: Path to the input file.
+    :param ts_file: Path to the input file.
     :param output_file: Path to save the filtered content.
     :param max_duration: Maximum duration in seconds between <Sync> tags to retain content.
     """
-    with open(input_file, "r", encoding="utf-8") as file:
+    audio = AudioSegment.from_file(audio_in)
+    
+    with open(ts_file, "r", encoding="utf-8",errors='ignore') as file:
         content = file.read()
     
     # Regex to match <Sync time="..."/> and capture timestamps
@@ -122,15 +143,42 @@ def extract_short_segments(input_file, output_file, max_duration=30):
     split_content = re.split(sync_pattern, content)
     text_segments = split_content[1:-1]  # Skip the first and last split as it precedes and lasts the first <Sync>
     
+    # extract all speakers 
+    speakers_dict = {}
+    pattern = r'<Speaker\s+[^>]*id="(.*?)"\s+[^>]*name="(.*?)"(?:\s+[^>]*type="(.*?)")?'
+    suma = 0
+    for match in re.finditer(pattern, split_content[0]):
+        speakers_dict[match.group(1)] = {
+            "sign":match.group(2).split('_')[-1],
+            "type":match.group(3)
+        }
+        
     short_segments = []
+    
+    #extract the very first speaker (from split_content[0]) and set the "last_speaker"
+    first_speaker = re.findall(r'speaker="(.*?)"', split_content[0])
+    if (first_speaker == []):
+        current_speaker = None
+    else:
+        current_speaker = first_speaker[-1]
+        
     # Process pairs of Sync timestamps and their corresponding text
+    audio_files_counter = 0
     for i in range(0, len(text_segments),2):
         if (i+2) >= len(text_segments):
             break
+        
         current_time = float(text_segments[i])
         next_time = float(text_segments[i + 2])
         text = text_segments[i + 1]
         
+         # get speaker for the next segment
+        next_speaker = re.findall(r'speaker="(.*?)"', text)
+        if (next_speaker != []):
+            next_speaker = next_speaker[-1]
+        else:
+            next_speaker = current_speaker
+            
         # if the duration is lower than 30s (max input for whisper)
         duration = next_time - current_time
         if duration < max_duration:
@@ -145,48 +193,134 @@ def extract_short_segments(input_file, output_file, max_duration=30):
             text = re.sub(r'(\s*\.\s*)+$', '', text)
             # and also from the begginning
             text = re.sub(r'^(\s*\.\s*)+', '', text)
-            short_segments.append({
-                "start": current_time,
-                "end": next_time,
-                "text": text
-            })
-
-    return short_segments[:2]
-
-def split_audio(short_segments,input_file):
-    if (not os.path.exists(input_file)):
-        return
-    
-    audio = AudioSegment.from_file(input_file)
-    bsnm = os.path.basename(input_file).replace(".wav", "")
-    metadata = []
-    for idx,segment in enumerate(short_segments):
-        start = segment["start"]
-        end = segment["end"]
-        text = segment["text"]
-        # Load the audio file
-        # Extract the segment
-        segment = audio[start*1000:end*1000]
-        # Save the segment
-        newaudiofilename = f"audio/{bsnm}_{idx}.wav"
-        segment.export(newaudiofilename, format="wav")
+            
+            speaker_sign = speakers_dict[current_speaker]["sign"] if speakers_dict.get(current_speaker) else "unk"
+            gender = speakers_dict[current_speaker]["type"] if speakers_dict.get(current_speaker) else "unk"
+            speech_audio_file = get_audio_split(current_time,next_time,audio,wav_out_path,f"{audio_files_counter}_{speaker_sign}_{gender}.wav")
+            # add segment only if it is not empty
+            if (text != ""):
+                short_segments.append({
+                    "start": current_time,
+                    "end": next_time,
+                    "audio": speech_audio_file,
+                    "speakers": speaker_sign,
+                    "type": gender,
+                    "text": text
+                })
         
-        short_ts = get_shortts(text)
-        metadata.append({
-            "audio":newaudiofilename,
-            "full_ts":text,
-            "short_ts":short_ts,
-            "prompt": None
-        })
+        # set the last speaker for the next segment
+        current_speaker = next_speaker
+        
+    return short_segments
+
+def get_audio_split(start_in_s,stop_in_s,audio,outdir,name:str) -> str:
+    segment = audio[start_in_s*1000:stop_in_s*1000]
+    i = 0
+    newname = name
+    while os.path.exists(os.path.join(outdir,newname)):
+        newname = name.removesuffix('.wav') + '_' + str(i) + '.wav'
+        i += 1
+    segment.export(os.path.join(outdir,newname), format="wav")
+    return os.path.join(outdir,newname)
     
-    with open("metadata.json", "w") as file:
-        json.dump(metadata, file, indent=4)
+def make_metadata(short_segments,set_lang,out_file_path="metadata.json"):
+    test_set_uk = ['L0H','H7V','O6N']    
+    test_set_ca = ['CB','RT','AW','M2D']
+    test_set_nl = ['AMAA','31','PAVO','PAFF']
+    test_set_de = ['2EZ','B6J','Y4B','A2W','7KD','V1Q','L2F']
+    
+    metadata_test = []
+    metadata_train = []
+    
+    match set_lang:
+        case "UK":
+            test_set = test_set_uk
+        case "CA":
+            test_set = test_set_ca
+        case "NL":
+            test_set = test_set_nl
+        case "DE":
+            test_set = test_set_de
+
+    tests_written = 0
+    train_written = 0
+    
+    for segment in tqdm(short_segments):
+        audio_path = segment["audio"]
+        full_ts = segment["text"]
+        short_ts = get_shortts(full_ts)
+        
+        if (segment["speakers"] in test_set):
+            metadata_test.append({
+                "audio":audio_path,
+                "full_ts":full_ts,
+                "short_ts":short_ts,
+                "prompt": None
+            })
+            tests_written += 1
+        else:
+            metadata_train.append({
+                "audio":audio_path,
+                "full_ts":full_ts,
+                "short_ts":short_ts,
+                "prompt": None
+            })
+            train_written += 1
+    
+    test_file_path = out_file_path.replace(".json","_test.json")
+    train_file_path = out_file_path.replace(".json","_train.json")
+    if (os.path.exists(out_file_path)):
+        bsname = os.path.basename(out_file_path).removesuffix(".json")
+        out_file_path = out_file_path.replace(bsname,bsname+str(time()))
+    with open(test_file_path, "w") as file:
+        json.dump(metadata_test, file, indent=4)
+    with open(train_file_path, "w") as file:
+        json.dump(metadata_train, file, indent=4)
+    
+    print(f"** SET: {set_lang} **")
+    print(f"Test set: {tests_written} segments;", f"Train set: {train_written} segments")
+
+def speakers_split(short_segments):
+    speaker_groups = []
+    suma = 0
+    recordings_length = 0
+    for segment in short_segments:
+        speakers = segment["speakers"]
+        found = False
+        for gr in speaker_groups:
+            if (gr['speakers'] == speakers):
+                gr['count'] += 1
+                found = True
+                break
+        if (not found):
+            speaker_groups.append({
+                "speakers": speakers,
+                "type": segment["type"],
+                "count": 1
+            })
+        recordings_length += segment["end"]-segment["start"]
+        suma += 1
+    print("SUMA:",suma, " RECORDINGS LENGTH:", recordings_length / 60)
+    print(speaker_groups)
         
 if __name__ == "__main__":
-    # Example Usage
-    input_file = "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Trans/UK_001.TRS"
-    output_file = "test.txt"
-    short_segments=extract_short_segments(input_file, output_file, max_duration=30)
-    input_file = "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Sphere/UK_001.wav"
-    split_audio(short_segments, input_file)
-    
+    inputs = [
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_",
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_",
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_",
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/DE/DE_",
+    ]
+    langs = ["UK","CA","NL","DE"]
+    for idx,file in enumerate(inputs):
+        all_short_segments = []
+        for audio_file in glob(file+"Audio_Sphere/*.wav"):
+            ts_file = inputs[idx]+'Trans/'+os.path.basename(audio_file).replace('wav','TRS')
+            wav_out_path = file + 'Audio_Speech_Segments'
+            short_segments=extract_short_segments(ts_file, audio_file, wav_out_path, max_duration=30)   
+            all_short_segments.extend(short_segments)    
+        
+        make_metadata(all_short_segments,langs[idx],out_file_path=f"metadata_{langs[idx]}.json")
+        
+        # speakers_split(all_short_segments) #! USED for counting and splitting speakers according to the gender and count for test and train set
+        
+        
