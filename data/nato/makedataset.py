@@ -3,16 +3,15 @@ import json
 
 # the path to the disk with datasets of wavs and etc..
 DISK_DIR="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
-METADATA_PATH="./metadata_test.json"
-DATASET_SAVE_PATH="./malorca_test_ds"
+METADATA_PATH_TRAIN=["./metadata_CA_train.json","./metadata_DE_train.json","./metadata_NL_train.json","./metadata_UK_train.json"]
+METADATA_PATH_TEST=["./metadata_CA_test.json","./metadata_DE_test.json","./metadata_NL_test.json","./metadata_UK_test.json"]
 
-dataset = load_dataset("json", data_files=METADATA_PATH)
+DATASET_SAVE_PATH_TRAIN="./malorca_train_ds"
+DATASET_SAVE_PATH_TEST="./malorca_test_ds"
 
-# set properly path to the recordings according to the current disk path
-dataset = dataset.map(lambda x: {"audio": DISK_DIR + x["audio"]}, remove_columns=["audio"])
-
-# load the audio (from disk)
-dataset = dataset.cast_column("audio", Audio(sampling_rate=16000))
-
-# save the dataset
-dataset.save_to_disk(DATASET_SAVE_PATH)
+for meta,out in zip([METADATA_PATH_TRAIN, METADATA_PATH_TEST],[DATASET_SAVE_PATH_TRAIN, DATASET_SAVE_PATH_TEST]):
+    dataset = load_dataset("json", data_files=meta,split="train")
+    dataset = dataset.map(lambda x: {"audio": DISK_DIR + x["audio"]}, remove_columns=["audio"])
+    dataset = dataset.cast_column("audio", Audio(sampling_rate=16000))
+    dataset.save_to_disk(out)
+    

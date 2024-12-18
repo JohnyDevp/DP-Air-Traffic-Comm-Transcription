@@ -1,19 +1,22 @@
-# {
-#   "filepath":str,
-#   "full_ts":str,
-#   "short_ts":str,
-#   "language":str     
-# }
-
-import glob as glob
+from calendar import c
+import math
 import os
-from bs4 import BeautifulSoup
-from rapidfuzz import process
+import random
+from librosa import ex
+from numpy import short
+from openai import audio
+from pydub import AudioSegment 
 import re
-from tqdm import tqdm
+from bs4 import BeautifulSoup
+from scipy.io import wavfile
 import json
-import time
+from rapidfuzz import process
+from glob import glob
+from time import time
+from tqdm import tqdm
 
+from sklearn import tests
+from sklearn.model_selection import train_test_split
 
 number_map = {
     # English
@@ -77,51 +80,7 @@ aviation_map = {
 }
 leave_untouch_words = ["and", "on", "or"]
 
-def contains_numbers_and_letters(text):
-    has_letter = any(char.isalpha() for char in text)
-    has_number = any(char.isdigit() for char in text)
-    return has_letter and has_number
-
-# Replace specific tags and their content
-def replace_tag_with_word(text, tag, replacement):
-    pattern = fr"<{tag}.*?>.*?</{tag}>"
-    return re.sub(pattern, replacement, text)
-
-def airtraffic_transcript_to_code_(transcript : str):
-    # Combine both maps
-    combined_map = {**number_map, **aviation_map}
-
-    # Process the words
-    result = []
-    current_transcript = ""
-
-    for line in transcript.splitlines():
-        current_transcript = ""
-        for word in line.split():
-            # Find the closest match from the combined_map keys
-            bestmatch = process.extractOne(word.lower(), combined_map.keys(), score_cutoff=93)
-            # print(bestmatch)
-            if bestmatch and word.lower() not in leave_untouch_words:
-                current_transcript += combined_map[bestmatch[0]]  # Add the matched transcription
-            else:
-                if current_transcript:  # If there is an ongoing transcription chunk
-                    result.append(current_transcript)
-                    current_transcript = ""
-                result.append(word)  # Append the normal word as-is
-        
-        
-        # Append any leftover transcription chunk
-        if current_transcript:
-            result.append(current_transcript)
-            
-        # Append a newline character for each line
-        result.append("\n") 
-                
-
-    # Join the result with spaces to maintain the sentence structure
-    return ' '.join(result)
-
-def process_tag_content(text, what : str ="alphanum"):
+def get_shortts(full_ts : str, what : str ="alphanum"):
     # what : str = "alphanum" | "num" | "alpha"
     match what:
         case "alphanum":
@@ -138,8 +97,14 @@ def process_tag_content(text, what : str ="alphanum"):
     result = []
     current_transcript = ""
     
-    tagwords = text.strip().split(' ')
-    for word in tagwords:
+    # remove everything between [ ], if present
+    reg = re.compile(r"\[[^\]]*\]")
+    full_ts = reg.sub("", full_ts)
+    
+    reg = re.compile(r"\w+|[.,!?]")
+    words : list[str] = reg.findall(full_ts)
+    
+    for word in words:
         # Find the closest match from the combined_map keys
             bestmatch = process.extractOne(word.lower(), combined_map.keys(), score_cutoff=score_cutoff)
             if bestmatch:
@@ -153,126 +118,209 @@ def process_tag_content(text, what : str ="alphanum"):
     # append the last chunk, if exists
     if current_transcript:
         result.append(current_transcript)
-        
-    return ' '.join(result)
 
-def get_shortts_from_tra(fullpath_tra : str):
-    with open(fullpath_tra, "r") as f:
-        all_text = f.read()
+    result = ' '.join(result)
+    result = re.sub(r'\s+([.,!?])', r'\1', result)
+    return result
 
-        # check if cmd exists - if so, obtain the CALLSIGN from it
-        cmd_path = fullpath_tra.replace(".tra", ".cmd")
-        if os.path.exists(cmd_path):    
-            with open(cmd_path, "r") as f:
-                callsign = f.readline().split(' ')[0]
-                
-                # check whether the callsign is really a callsign
-                if (not contains_numbers_and_letters(callsign)):
-                    callsign = ""
-        else:
-            callsign = ""
-        
-        tags_tobe_replaced = ["degree_absolute", "runway", "altitude", "speed", "distance"]
-        # replace the callsign in the text
-        if callsign:
-            all_text = replace_tag_with_word(all_text, "callsign", callsign)
-        else:
-            tags_tobe_replaced.append("callsign")
-            
-        # list of tags to be replaced 
-        for tag in tags_tobe_replaced:
-            # Create the regex pattern for the current tag
-            pattern = rf"<{tag}.*?>(.*?)</{tag}>"
-            
-            # Define the replacement function
-            def replace_match(match):
-                # Extract the content inside the tag
-                tag_content = match.group(1)
-                # Process the content using the function
-                if tag == "callsign":
-                    processed_content = process_tag_content(tag_content, "alphanum")
-                else:
-                    processed_content = process_tag_content(tag_content, "num")
-                    
-                # Replace the tag and its content with the processed content
-                return processed_content
-            
-            # Use re.sub to replace all matches for the current tag
-            all_text = re.sub(pattern, replace_match, all_text)
-        
-        # after all remove the rest of tags, that hasnt been replaced
-        # Parse the text
-        soup = BeautifulSoup(all_text, "html.parser")
-        # Extract plain text
-        plain_text = soup.get_text(separator=" ", strip=True)
-        
-        return plain_text
-        
-def get_shortts(wav_full_path_current_disk, fullts) -> str:
-    # get short ts
+def extract_short_segments(ts_file, audio_in, wav_out_path, max_duration=30):
+    """
+    Extracts segments from the input file where the duration between <Sync> tags is less than max_duration.
     
-    # check whether the .tra file exists
-    tra_path = wav_full_path_current_disk.replace(".wav", ".tra")
-    if (os.path.exists(tra_path)):
-        # 1. check whether .tra - if it does, check for the .cmd file with callsign
-        shortenedts= get_shortts_from_tra(tra_path)
-        # still pass it to my function for short ts, because some numbers might not be tagged
-        return airtraffic_transcript_to_code_(shortenedts)
+    :param ts_file: Path to the input file.
+    :param output_file: Path to save the filtered content.
+    :param max_duration: Maximum duration in seconds between <Sync> tags to retain content.
+    """
+    audio = AudioSegment.from_file(audio_in)
+    
+    with open(ts_file, "r", encoding="utf-8",errors='ignore') as file:
+        content = file.read()
+    
+    # Regex to match <Sync time="..."/> and capture timestamps
+    sync_pattern = r'<Sync time="([\d.]+)"/>'
+    
+    # Extract text between Sync tags
+    split_content = re.split(sync_pattern, content)
+    text_segments = split_content[1:-1]  # Skip the first and last split as it precedes and lasts the first <Sync>
+    
+    # extract all speakers 
+    speakers_dict = {}
+    pattern = r'<Speaker\s+[^>]*id="(.*?)"\s+[^>]*name="(.*?)"(?:\s+[^>]*type="(.*?)")?'
+    suma = 0
+    for match in re.finditer(pattern, split_content[0]):
+        speakers_dict[match.group(1)] = {
+            "sign":match.group(2).split('_')[-1],
+            "type":match.group(3)
+        }
+        
+    short_segments = []
+    
+    #extract the very first speaker (from split_content[0]) and set the "last_speaker"
+    first_speaker = re.findall(r'speaker="(.*?)"', split_content[0])
+    if (first_speaker == []):
+        current_speaker = None
     else:
-        # 2. if it does not, use the fullts shortened by function
-        return airtraffic_transcript_to_code_(fullts)
-
-def get_fullts(wav_full_path_current_disk) -> str | Exception:
-    # get the full ts from the .cor file, otherwise raise an exception
-    cor_file = wav_full_path_current_disk.replace(".wav", ".cor")
-    if (os.path.exists(cor_file)):
-        with open(cor_file, "r") as f:
-            return f.read()
-    else:
-        raise Exception(f"File {cor_file} does not exist")
-
-def makemetadata(PATH_TO_LISTINGS_OF_FILES, DISK_PATH, SAVE_PATH):
-    out_data = []
-    with open(PATH_TO_LISTINGS_OF_FILES, "r") as f:
-        for line in tqdm(f.readlines()):
-            # append path for the wavfile
-            #! path prefix leading to root of my disk, where the data are stored, to LOWWXX, from where the path is unique for the file
-            #! this is done because the path in the wav.scp is wrong
-            path_prefix = "MALORCA/DATA_ATC/VIENNA/WAV_FILES"
-            wav_file_path=os.path.join(path_prefix, line.split('/VIENNA/')[1].strip())
-            wav_full_path_current_disk = os.path.join(DISK_PATH, wav_file_path)               
+        current_speaker = first_speaker[-1]
+        
+    # Process pairs of Sync timestamps and their corresponding text
+    audio_files_counter = 0
+    for i in range(0, len(text_segments),2):
+        if (i+2) >= len(text_segments):
+            break
+        
+        current_time = float(text_segments[i])
+        next_time = float(text_segments[i + 2])
+        text = text_segments[i + 1]
+        
+         # get speaker for the next segment
+        next_speaker = re.findall(r'speaker="(.*?)"', text)
+        if (next_speaker != []):
+            next_speaker = next_speaker[-1]
+        else:
+            next_speaker = current_speaker
             
-            # if the full ts is not available, skip the file
-            try:
-                fullts = get_fullts(wav_full_path_current_disk)
-                shortts = get_shortts(wav_full_path_current_disk, fullts)
-            except Exception as e:
-                print(e)
-                continue
+        # if the duration is lower than 30s (max input for whisper)
+        duration = next_time - current_time
+        if duration < max_duration:
+            # remove all tags from the text
+            text = re.sub(r'<(?!Turn\b)[^>]*>', '', text).strip()
+            text = re.sub(r'\n+', ' ', text)
+            text = re.sub(r'\s+', ' ', text)
+            # now i have left only Turn tags, each is meaning, that there is another speaker, so put a new line on that places
+            # and strip then - beacuse there can be a new line at the end or beggining of the text
+            text = re.sub(r'<*Turn[^>]*>', '\n', text).strip()
+            # and remove trailing dots from the end
+            text = re.sub(r'(\s*\.\s*)+$', '', text)
+            # and also from the begginning
+            text = re.sub(r'^(\s*\.\s*)+', '', text)
             
-            out_data.append({
-                "audio": wav_file_path,
-                "full_ts": fullts,
-                "short_ts": shortts,
-                "prompt":None,
+            speaker_sign = speakers_dict[current_speaker]["sign"] if speakers_dict.get(current_speaker) else "unk"
+            gender = speakers_dict[current_speaker]["type"] if speakers_dict.get(current_speaker) else "unk"
+            speech_audio_file = get_audio_split(current_time,next_time,audio,wav_out_path,f"{audio_files_counter}_{speaker_sign}_{gender}.wav")
+            # add segment only if it is not empty
+            if (text != ""):
+                short_segments.append({
+                    "start": current_time,
+                    "end": next_time,
+                    "audio": speech_audio_file,
+                    "speakers": speaker_sign,
+                    "type": gender,
+                    "text": text
+                })
+        
+        # set the last speaker for the next segment
+        current_speaker = next_speaker
+        
+    return short_segments
+
+def get_audio_split(start_in_s,stop_in_s,audio,outdir,name:str) -> str:
+    segment = audio[start_in_s*1000:stop_in_s*1000]
+    i = 0
+    newname = name
+    while os.path.exists(os.path.join(outdir,newname)):
+        newname = name.removesuffix('.wav') + '_' + str(i) + '.wav'
+        i += 1
+    segment.export(os.path.join(outdir,newname), format="wav")
+    return os.path.join(outdir,newname)
+    
+def make_metadata(short_segments,set_lang,out_file_path="metadata.json"):
+    test_set_uk = ['L0H','H7V','O6N']    
+    test_set_ca = ['CB','RT','AW','M2D']
+    test_set_nl = ['AMAA','31','PAVO','PAFF']
+    test_set_de = ['2EZ','B6J','Y4B','A2W','7KD','V1Q','L2F']
+    
+    metadata_test = []
+    metadata_train = []
+    
+    match set_lang:
+        case "UK":
+            test_set = test_set_uk
+        case "CA":
+            test_set = test_set_ca
+        case "NL":
+            test_set = test_set_nl
+        case "DE":
+            test_set = test_set_de
+
+    tests_written = 0
+    train_written = 0
+    
+    for segment in tqdm(short_segments):
+        audio_path = segment["audio"]
+        full_ts = segment["text"]
+        short_ts = get_shortts(full_ts)
+        
+        if (segment["speakers"] in test_set):
+            metadata_test.append({
+                "audio":audio_path,
+                "full_ts":full_ts,
+                "short_ts":short_ts,
+                "prompt": None
             })
-                
-    # save the metadata  
-    # choose file name
-    out=json.dumps(out_data,indent=4,ensure_ascii=False)
-    if (os.path.exists(SAVE_PATH)):
-        name = f"{SAVE_PATH}{time.time()}.json"
-    else:
-        name = SAVE_PATH
+            tests_written += 1
+        else:
+            metadata_train.append({
+                "audio":audio_path,
+                "full_ts":full_ts,
+                "short_ts":short_ts,
+                "prompt": None
+            })
+            train_written += 1
     
-    # save the file
-    with open(name,"w") as f:
-        f.write(out)
+    test_file_path = out_file_path.replace(".json","_test.json")
+    train_file_path = out_file_path.replace(".json","_train.json")
+    if (os.path.exists(out_file_path)):
+        bsname = os.path.basename(out_file_path).removesuffix(".json")
+        out_file_path = out_file_path.replace(bsname,bsname+str(time()))
+    with open(test_file_path, "w") as file:
+        json.dump(metadata_test, file, indent=4)
+    with open(train_file_path, "w") as file:
+        json.dump(metadata_train, file, indent=4)
     
+    print(f"** SET: {set_lang} **")
+    print(f"Test set: {tests_written} segments;", f"Train set: {train_written} segments")
+
+def speakers_split(short_segments):
+    speaker_groups = []
+    suma = 0
+    recordings_length = 0
+    for segment in short_segments:
+        speakers = segment["speakers"]
+        found = False
+        for gr in speaker_groups:
+            if (gr['speakers'] == speakers):
+                gr['count'] += 1
+                found = True
+                break
+        if (not found):
+            speaker_groups.append({
+                "speakers": speakers,
+                "type": segment["type"],
+                "count": 1
+            })
+        recordings_length += segment["end"]-segment["start"]
+        suma += 1
+    print("SUMA:",suma, " RECORDINGS LENGTH:", recordings_length / 60)
+    print(speaker_groups)
+        
 if __name__ == "__main__":
-    # PATH_TO_LISTINGS_OF_FILES = "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/MALORCA/DATA_ATC/VIENNA/DATA/test/wav.scp"
-    # DISK_PATH="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38"
-    # SAVE_PATH="./metadata_test.json"
-    
-    # makemetadata(PATH_TO_LISTINGS_OF_FILES, DISK_PATH, SAVE_PATH)
-    
+    inputs = [
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_",
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_",
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_",
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/DE/DE_",
+    ]
+    langs = ["UK","CA","NL","DE"]
+    for idx,file in enumerate(inputs):
+        all_short_segments = []
+        for audio_file in glob(file+"Audio_Sphere/*.wav"):
+            ts_file = inputs[idx]+'Trans/'+os.path.basename(audio_file).replace('wav','TRS')
+            wav_out_path = file + 'Audio_Speech_Segments'
+            short_segments=extract_short_segments(ts_file, audio_file, wav_out_path, max_duration=30)   
+            all_short_segments.extend(short_segments)    
+        
+        make_metadata(all_short_segments,langs[idx],out_file_path=f"metadata_{langs[idx]}.json")
+        
+        # speakers_split(all_short_segments) #! USED for counting and splitting speakers according to the gender and count for test and train set
+        
+        

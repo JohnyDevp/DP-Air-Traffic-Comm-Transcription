@@ -1,1554 +1,1554 @@
 [
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female.wav",
         "full_ts": "flash, this is nine hotel delta. agavey two one zero, out",
         "short_ts": "flash, this is 9HD. agavey 210, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_0.wav",
         "full_ts": "flash , this is nine hotel delta. serano two one zero, out",
         "short_ts": "flash, this is 9HD. serano 210, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_1.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. immediate execute, callsign oscar five lima, turn juliett. I say again, oscar five lima, turn juliett. standby, execute. foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is T1L. immediate execute, callsign O5L, turn J. I say again, O5L, turn J. standby, execute. F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_None.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_None.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_1.wav",
         "full_ts": "flash, this is nine hotel delta. serano, acquisition two one zero, out",
         "short_ts": "flash, this is 9HD. serano, acquisition 210, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_2.wav",
         "full_ts": "flash, this is nine hotel delta. serano lock-on two one zero, out",
         "short_ts": "flash, this is 9HD. serano lock on 210, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. alfa alfa one, tack three , desig two two seven two , time one zero three six, lima zero hotel, over",
         "short_ts": "alfa 7Z, this is U6V. alfa alfa 1, tack 3, desig 2272, time 1036, L0H, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_1.wav",
         "full_ts": "this is uniform six victor, roger out",
         "short_ts": "this is U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_3.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. seven sierra, time",
         "short_ts": "alfa 7Z, this is U6V. 7S, time",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_4.wav",
         "full_ts": "this is uniform six victor, roger out",
         "short_ts": "this is U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_3.wav",
         "full_ts": "alfa seven zulu this is tango one lima, callsign oscar five lima, turn starboard one three five, time one zero four three, foxtrot three juliett, over",
         "short_ts": "alfa 7Z this is T1L, callsign O5L, turn starboard 135, time 1043, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_5.wav",
         "full_ts": "lima zero hotel this is uniform six victor. sugar, november one three, time one zero four four, over",
         "short_ts": "L0H this is U6V. sugar, N13, time 1044, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_None.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_None.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_0.wav",
         "full_ts": "alfa seven zulu, this is kilo nine delta. bravo bravo, tack charlie oscar two, tack eight, time one zero five zero, mike nine juliett, over",
         "short_ts": "alfa 7Z, this is K9D. BB, tack CO2, tack 8, time 1050, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_5.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_unk_unk.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_unk_unk.wav",
         "full_ts": "this is nine hotel delta, roger out. this is eight victor lima, roger out",
         "short_ts": "this is 9HD, roger out. this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female.wav",
         "full_ts": "this is zulu eight uniform, roger out",
         "short_ts": "this is Z8U, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_None_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_None_1.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_0.wav",
         "full_ts": "zulu eight uniform, roger out",
         "short_ts": "Z8U, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_1.wav",
         "full_ts": "tango one lima, this is zulu eight uniform. interrogative correct one one eight foxtrot, time one one zero two, over",
         "short_ts": "T1L, this is Z8U. interrogative correct 118F, time 1102, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_6.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_7.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. correct my one zero five nine, tack one one eight foxtrot to tack romeo sierra one zero, tack one one one foxtrot, tack romeo sierra one zero, time one zero five nine, zulu eight uniform, over",
         "short_ts": "alfa 7Z, this is T1L. correct my 1059, tack 118F to tack RS10, tack 111F, tack RS10, time 1059, Z8U, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_2.wav",
         "full_ts": "is zulu eight uniform, roger out",
         "short_ts": "is Z8U, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_0.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_None_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_None_2.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_1.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_8.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. callsign foxtrot three juliett , corpan alfa one three five, tack speed hotel one two, time one one one seven, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is T1L. callsign F3J, corpan alfa 135, tack speed H12, time 1117, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_None_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_None_1.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_2.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_None_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_None_3.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_9.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. negat time one one two four, eight victor lima, over",
         "short_ts": "alfa 7Z, this is T1L. negat time 1124, 8VL, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_3.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_6.wav",
         "full_ts": "this is uniform six victor , roger out",
         "short_ts": "this is U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_10.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. echo xray three, tack five, tack seven one charlie, time one one two seven, eight victor lima, mike nine juliett, over",
         "short_ts": "alfa 7Z, this is T1L. EX3, tack 5, tack 71C, time 1127, 8VL, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_unk_unk_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_unk_unk_0.wav",
         "full_ts": "mike nine juliett roger out. this is eight victor lima roger out. this is eight victor lima roger out",
         "short_ts": "M9J roger out. this is 8VL roger out. this is 8VL roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_3.wav",
         "full_ts": "flash, this is zulu eight uniform. agabey one five zero, out",
         "short_ts": "flash, this is Z8U. agabey 150, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_5.wav",
         "full_ts": "flash, this is zulu eight uniform. serano, one five zero, out",
         "short_ts": "flash, this is Z8U. serano, 150, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_7.wav",
         "full_ts": "flash, this is zulu eight uniform. serano acquisition, one four five, out",
         "short_ts": "flash, this is Z8U. serano acquisition, 145, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_9.wav",
         "full_ts": "flash, this is zulu eight uniform. serano lock-on, one four five, out",
         "short_ts": "flash, this is Z8U. serano lock on, 145, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_11.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_11.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_1.wav",
         "full_ts": "alfa seven zulu, this is kilo nine delta. alfa alfa one, tack three , desig two two eight one, tack two two eight two, time one one three six, lima zero hotel, over",
         "short_ts": "alfa 7Z, this is K9D. alfa alfa 1, tack 3, desig 2281, tack 2282, time 1136, L0H, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_3.wav",
         "full_ts": "lima zero hotel, this is kilo nine delta. interrogative roger my one one three six, over",
         "short_ts": "L0H, this is K9D. interrogative roger my 1136, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_4.wav",
         "full_ts": "tango one lima, this is kilo nine delta. romeo echo one one, tack hotel five, time one one three eight, over",
         "short_ts": "T1L, this is K9D. RE11, tack H5, time 1138, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_male.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_0.wav",
         "full_ts": "foxtrot three juliett, over",
         "short_ts": "F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_1.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. callsign nine hotel delta, alfa victor three five, tack two, tack five, tack five eight victor, time one zero three three, nine hotel delta, over",
         "short_ts": "alfa 7Z, this is T1L. callsign 9HD, alfa V35, tack 2, tack 5, tack 58V, time 1033, 9HD, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_4.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_2.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. speed one four, time one zero three four, uniform six victor, over",
         "short_ts": "alfa 7Z, this is T1L. speed 14, time 1034, U6V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_7.wav",
         "full_ts": "this is uniform six victor, roger out",
         "short_ts": "this is U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_3.wav",
         "full_ts": "foxtrot three juliett, this is tango one lima. interrogative, romeo sierra one five, time one zero three six, over",
         "short_ts": "F3J, this is T1L. interrogative, RS15, time 1036, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_5.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_5.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_6.wav",
         "full_ts": "alfa seven zulu, this is kilo nine delta. echo whiskey one three, desig victor, tack charlie nine eight tango, tack juliett nine eight tango, desig victor one, time one zero four zero, tango one lima, over",
         "short_ts": "alfa 7Z, this is K9D. EW13, desig V, tack C98T, tack J98T, desig V1, time 1040, T1L, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_6.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female.wav",
         "full_ts": "roger out",
         "short_ts": "roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_4.wav",
         "full_ts": "eight victor lima, roger out",
         "short_ts": "8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_0.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_7.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_6.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_9.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_7.wav",
         "full_ts": "alfa seven zulu this is tango one lima, standby, execute, nine hotel delta, kilo nine delta, over",
         "short_ts": "alfa 7Z this is T1L, standby, execute, 9HD, K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_10.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_7.wav",
         "full_ts": "nine hotel..hotel delta, roger out",
         "short_ts": "9H.. HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_0.wav",
         "full_ts": "alfa seven zulu, this is charlie eight golf. standby, execute, nine hotel delta, over",
         "short_ts": "alfa 7Z, this is C8G. standby, execute, 9HD, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_9.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_5.wav",
         "full_ts": "hotel seven victor, this is eight victor lima. bravo hotel, tack tango alfa eight eight , tack two, desig ahead, time one one zero one, over",
         "short_ts": "H7V, this is 8VL. BH, tack T alfa 88, tack 2, desig ahead, time 1101, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_10.wav",
         "full_ts": "charlie eight golf, this is nine hotel delta. verify callsign kilo nine delta, screen papa two bravo, time one one zero five, over",
         "short_ts": "C8G, this is 9HD. verify callsign K9D, screen P2B, time 1105, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_1.wav",
         "full_ts": "this is charlie eight golf, roger out",
         "short_ts": "this is C8G, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_11.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_11.wav",
         "full_ts": "charlie eight golf , this is kilo nine delta. interrogative correct callsign kilo nine delta, screen papa two, four alfa bravo, time one one zero six, over",
         "short_ts": "C8G, this is K9D. interrogative correct callsign K9D, screen P2, 4 alfa B, time 1106, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_2.wav",
         "full_ts": "this is charlie eight golf, roger out",
         "short_ts": "this is C8G, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_11.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_11.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_13.wav",
         "full_ts": "this is kilo nine delta, roger out",
         "short_ts": "this is K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_12.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_12.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_6.wav",
         "full_ts": "tango one lima, this is eight victor lima. interrogative correct word before tack bravo xray , four alfa, time one one two zero, over",
         "short_ts": "T1L, this is 8VL. interrogative correct word before tack BX, 4 alfa, time 1120, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_9.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_7.wav",
         "full_ts": "hotel seven victor, this is eight victor lima. I say again my one one two zero. tango one lima this is eight victor lima. interrogative correct word before tack bravo xray, four alfa, time one one two zero, over",
         "short_ts": "H7V, this is 8VL. I say again my 1120. T1L this is 8VL. interrogative correct word before tack BX, 4 alfa, time 1120, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_13.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_1.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_14.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_14.wav",
         "full_ts": "alfa seven zulu, this is kilo nine delta. echo whiskey one one, desig victor one, time one one two four, tango one lima, over",
         "short_ts": "alfa 7Z, this is K9D. EW11, desig V1, time 1124, T1L, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_11.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_11.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_12.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_12.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. execute to follow, corpan november three one five, starboard, answer, kilo nine delta, over",
         "short_ts": "alfa 7Z, this is T1L. execute to follow, corpan N315, starboard, answer, K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_15.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_15.wav",
         "full_ts": "this is kilo nine delta, roger out",
         "short_ts": "this is K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_13.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. november alfa one four, tack bravo, time one one two eight, kilo nine delta, over",
         "short_ts": "alfa 7Z, this is T1L. N alfa 14, tack B, time 1128, K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_16.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_16.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_14.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_14.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_15.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_15.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. standby, execute, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is T1L. standby, execute, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_16.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_16.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_18.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_18.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_None.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_None.wav",
         "full_ts": "hotel seven victor, this is zulu eight uniform. emergency six, time one one four six, over",
         "short_ts": "H7V, this is Z8U. emergency 6, time 1146, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_3.wav",
         "full_ts": "alfa seven zulu, this is charlie eight golf. screen alfa, time one one four seven, over",
         "short_ts": "alfa 7Z, this is C8G. screen alfa, time 1147, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_None_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_None_0.wav",
         "full_ts": "zulu eight uniform, roger out",
         "short_ts": "Z8U, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_19.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_19.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_17.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_17.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_8.wav",
         "full_ts": "eight victor lima, roger out",
         "short_ts": "8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_8.wav",
         "full_ts": "uniform six victor, roger out",
         "short_ts": "U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_14.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_14.wav",
         "full_ts": "nine hotel delta, roger out",
         "short_ts": "9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_20.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_20.wav",
         "full_ts": "flash, this is tango one lima. zippo charlie, based on bruiser raid, zippo one, disregard this transmission, out",
         "short_ts": "flash, this is T1L. zippo C, based on bruiser raid, zippo 1, disregard this transmission, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_male_1.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_18.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_18.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_10.wav",
         "full_ts": "eight victor lima, roger out",
         "short_ts": "8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_20.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_20.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_22.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_22.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. flag golf, tack callsign foxtrot three juliett, tack corpan papa zero nine zero, tack speed one two, time zero eight four zero, hotel seven victor over",
         "short_ts": "alfa 7Z, this is T1L. flag G, tack callsign F3J, tack corpan P090, tack speed 12, time 0840, H7V over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_10.wav",
         "full_ts": "this is uniform six victor, roger out",
         "short_ts": "this is U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_21.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_21.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_23.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_23.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_24.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_24.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. execute to follow, callsign foxtrot three juliett , turn zulu, one five sierra, tack zero nine zero, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is T1L. execute to follow, callsign F3J, turn Z, 15S, tack 090, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_26.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_26.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. execute to follow, tango zero eight five four, kilo nine delta, over",
         "short_ts": "alfa 7Z, this is T1L. execute to follow, T0854, K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_22.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_22.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male.wav",
         "full_ts": "this is quebec eight",
         "short_ts": "this is Q8",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_1.wav",
         "full_ts": "alfa seven zulu, this is quebec eight echo. alfa sierra nine three, tack one, tack two, time zero eight five four, uniform six victor, over",
         "short_ts": "alfa 7Z, this is Q8E. alfa S93, tack 1, tack 2, time 0854, U6V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_11.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_11.wav",
         "full_ts": "uniform six victor, roger out",
         "short_ts": "U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_27.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_27.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. tango zero eight five four, standby, execute, hotel seven victor, over",
         "short_ts": "alfa 7Z, this is T1L. T0854, standby, execute, H7V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_28.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_28.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. standby, execute, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is T1L. standby, execute, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_2.wav",
         "full_ts": "alfa seven victor this is quebec eight echo. flash, emergency, quebec two four zero, tack three six, out",
         "short_ts": "alfa 7V this is Q8E. flash, emergency, Q240, tack 36, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_3.wav",
         "full_ts": "flash, this is quebec eight echo",
         "short_ts": "flash, this is Q8E",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_4.wav",
         "full_ts": "flash, this is quebec eight echo. emergency",
         "short_ts": "flash, this is Q8E. emergency",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_6.wav",
         "full_ts": "testing one two three four five, five four three two one",
         "short_ts": "testing 12345, 54321",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_8.wav",
         "full_ts": "one two three four five, five four three two one",
         "short_ts": "12345, 54321",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_11.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_11.wav",
         "full_ts": "flash, this is eight victor lima, emergency, romeo two two, desig one seven three, out",
         "short_ts": "flash, this is 8VL, emergency, R22, desig 173, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_30.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_30.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. callsign foxtrot, correction nine juliett foxtrot, tango alfa nine two, tack alfa victor two eight, tack six, tack two five victor, time zero nine zero zero, mike nine juliett, over",
         "short_ts": "alfa 7Z, this is T1L. callsign F, correction 9JF, T alfa 92, tack alfa V28, tack 6, tack 25V, time 0900, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_male_3.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_13.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima. echo november three four, tack charlie one, time zero nine zero one, oscar six november, over",
         "short_ts": "alfa 7Z, this is 8VL. EN34, tack C1, time 0901, O6N, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_31.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_31.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_10.wav",
         "full_ts": "quebec eight echo, roger out",
         "short_ts": "Q8E, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_4.wav",
         "full_ts": "this is charlie eight golf, roger out",
         "short_ts": "this is C8G, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_14.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_14.wav",
         "full_ts": "eight victor lima, roger out",
         "short_ts": "8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_15.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_15.wav",
         "full_ts": "unknown station, this is nine hotel delta. say again your last, over",
         "short_ts": "unknown station, this is 9HD. say again your last, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_16.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_16.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_33.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_33.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. callsign oscar five lima, charlie mike five, tack four, desig xray three two nine alfa, time zero nine one one, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is T1L. callsign O5L, CM5, tack 4, desig X329 alfa, time 0911, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_2.wav",
         "full_ts": "foxtrot three juliett",
         "short_ts": "F3J",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_17.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_17.wav",
         "full_ts": "charlie eight golf , this is nine hotel delta. say again your last , over",
         "short_ts": "C8G, this is 9HD. say again your last, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_15.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_15.wav",
         "full_ts": "flash, this is eight victor lima. snootray , zero , out",
         "short_ts": "flash, this is 8VL. snootray, 0, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_19.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_19.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_17.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_17.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima. one romeo one, time zero nine one six, kilo nine delta, over",
         "short_ts": "alfa 7Z, this is 8VL. 1R1, time 0916, K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_23.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_23.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_18.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_18.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima. one papa, tack two four zero, tack negat, tack three zero zero, tack zero four zero, time zero nine one eight, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is 8VL. 1P, tack 240, tack negat, tack 300, tack 040, time 0918, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_4.wav",
         "full_ts": "three juliett, roger out",
         "short_ts": "3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_20.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_20.wav",
         "full_ts": "alfa seven victor, this is eight victor lima, one papa, tack two four zero, tack two six zero, tack negat, tack negat, tack slow, time zero nine two two, foxtrot three juliett, over",
         "short_ts": "alfa 7V, this is 8VL, 1P, tack 240, tack 260, tack negat, tack negat, tack slow, time 0922, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_5.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_12.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_12.wav",
         "full_ts": "quebec eight echo, roger out",
         "short_ts": "Q8E, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_35.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_35.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_6.wav",
         "full_ts": "charlie eight golf, roger out",
         "short_ts": "C8G, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_36.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_36.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. alfa sierra eight five, tack one, tack two four zero, zulu zulu one nine, time zero nine two four, kilo nine delta, over",
         "short_ts": "alfa 7Z, this is T1L. alfa S85, tack 1, tack 240, ZZ19, time 0924, K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_24.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_24.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_21.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_21.wav",
         "full_ts": "alfa seven victor, this is eight victor lima. one yankee, tack two four zero, time zero nine two four, kilo nine delta over",
         "short_ts": "alfa 7V, this is 8VL. 1Y, tack 240, time 0924, K9D over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_26.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_26.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_27.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_27.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_22.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_22.wav",
         "full_ts": "flash, this is eight victor lima, emergency, quebec two four zero, tack two four zero, out",
         "short_ts": "flash, this is 8VL, emergency, Q240, tack 240, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_23.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_23.wav",
         "full_ts": "alfa seven victor, this is eight victor lima. one romeo one, time zero nine three zero, hotel seven victor, over",
         "short_ts": "alfa 7V, this is 8VL. 1R1, time 0930, H7V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_24.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_24.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima. one papa, tack two four zero, tack two two zero, tack negat, tack zero four zero, tack slow, time zero nine three one, hotel seven victor, over",
         "short_ts": "alfa 7Z, this is 8VL. 1P, tack 240, tack 220, tack negat, tack 040, tack slow, time 0931, H7V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_25.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_25.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima. one papa, tack two four zero, tack two zero zero, tack negat, tack zero one zero, tack slow, time zero nine three two, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is 8VL. 1P, tack 240, tack 200, tack negat, tack 010, tack slow, time 0932, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_7.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_26.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_26.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima. one delta two, callsign nine juliett foxtrot, time zero nine three three, hotel seven victor, over",
         "short_ts": "alfa 7Z, this is 8VL. 1D2, callsign 9JF, time 0933, H7V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_27.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_27.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima. alfa sierra six, tack one, time zero nine three six, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is 8VL. alfa S6, tack 1, time 0936, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_9.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_37.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_37.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. callsign nine juliett foxtrot, alfa victor two eight, tack one zero, tack two five victor, time zero nine three nine, nine juliett foxtrot, over",
         "short_ts": "alfa 7Z, this is T1L. callsign 9JF, alfa V28, tack 10, tack 25V, time 0939, 9JF, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_28.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_28.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima . execute to follow, formation one, callsign eight callsign hotel",
         "short_ts": "alfa 7Z, this is 8VL. execute to follow, formation 1, callsign 8 callsign H",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_30.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_30.wav",
         "full_ts": "alfa seven zulu, this is eight victor lima. standby , execute",
         "short_ts": "alfa 7Z, this is 8VL. standby, execute",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_32.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_32.wav",
         "full_ts": "hotel seven victor, this is eight victor lima. charlie mike five, tack four three nine bravo, disregard this transmission out",
         "short_ts": "H7V, this is 8VL. CM5, tack 439B, disregard this transmission out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_34.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_34.wav",
         "full_ts": "hotel seven victor, this is eight victor lima. charlie mike five, tack four, tack xray three two nine bravo, time zero nine four three, over",
         "short_ts": "H7V, this is 8VL. CM5, tack 4, tack X329B, time 0943, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_39.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_39.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_male_13.wav",
         "full_ts": "alfa seven zulu, this is quebec eight echo. echo november three four, tack charlie two, time zero nine four nine, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is Q8E. EN34, tack C2, time 0949, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_female_10.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_40.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_40.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_unk_unk_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_unk_unk_3.wav",
         "full_ts": "this is hotel seven victor, roger out. eight victor lima, roger out. eight victor lima, roger out",
         "short_ts": "this is H7V, roger out. 8VL, roger out. 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_10.wav",
         "full_ts": "tango one lima, this is zulu eight uniform. romeo echo four zero, tack four, tack five zero, tack romeo sierra four, tack four, tack one seven five charlie, tack two one, time zero nine five five, over",
         "short_ts": "T1L, this is Z8U. RE40, tack 4, tack 50, tack RS4, tack 4, tack 175C, tack 21, time 0955, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_42.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_male_42.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_20.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_20.wav",
         "full_ts": "zulu eight uniform, this is nine hotel delta, say again your last, over",
         "short_ts": "Z8U, this is 9HD, say again your last, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_11.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_11.wav",
         "full_ts": "nine hotel delta, this is zulu eight uniform. I say again my zero nine five five. tango one lima this is zulu eight uniform. romeo echo four zero, tack four, tack five zero, tack romeo sierra four, tack four, tack one seven five charlie, tack two one, time zero nine five five, nine hotel delta over",
         "short_ts": "9HD, this is Z8U. I say again my 0955. T1L this is Z8U. RE40, tack 4, tack 50, tack RS4, tack 4, tack 175C, tack 21, time 0955, 9HD over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_22.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_22.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_35.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_35.wav",
         "full_ts": "eight victor lima, roger out",
         "short_ts": "8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_male_4.wav",
         "full_ts": "alfa seven zulu, this is mike nine juliett. bravo, bravo, tack charlie oscar two, tack eight, tack bravo golf, tack romeo sierra eight, tack nine eight foxtrot, time zero nine five eight, eight victor lima, over",
         "short_ts": "alfa 7Z, this is M9J. B, B, tack CO2, tack 8, tack BG, tack RS8, tack 98F, time 0958, 8VL, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_36.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_36.wav",
         "full_ts": "eight victor lima, roger out",
         "short_ts": "8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_female_8.wav",
         "full_ts": "eight victor lima, this is charlie eight golf, station time one zero two six, over",
         "short_ts": "8VL, this is C8G, station time 1026, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_37.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_37.wav",
         "full_ts": "eight victor lima, roger out",
         "short_ts": "8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_12.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Z8U_female_12.wav",
         "full_ts": "alfa seven zulu this is zulu eight uniform. bravo bravo tack charlie oscar two, tack eight, time zero eight two eight, uniform six victor, over",
         "short_ts": "alfa 7Z this is Z8U. BB tack CO2, tack 8, time 0828, U6V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_12.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_12.wav",
         "full_ts": "this is uniform six victor, roger out",
         "short_ts": "this is U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_38.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_38.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_23.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_23.wav",
         "full_ts": "this is nine hotel delta, say again your zero eight three four, over",
         "short_ts": "this is 9HD, say again your 0834, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_25.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_25.wav",
         "full_ts": "this is nine hotel delta, roger out",
         "short_ts": "this is 9HD, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. echo delta one eight, time zero eight three nine. hotel seven victor, over",
         "short_ts": "alfa 7Z, this is T1L. ED18, time 0839. H7V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_13.wav",
         "full_ts": "this is uniform six victor, roger out",
         "short_ts": "this is U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_0.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. bravo echo, tack tango alfa eight eight, time zero eight five four. hotel seven victor, over",
         "short_ts": "alfa 7Z, this is T1L. BE, tack T alfa 88, time 0854. H7V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_39.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_39.wav",
         "full_ts": "tango one lima, this is eight victor lima. bravo foxtrot, time zero eight five five, over",
         "short_ts": "T1L, this is 8VL. BF, time 0855, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_1.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_29.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_29.wav",
         "full_ts": "tango one lima, this is kilo nine delta. bravo foxtrot, time zero eight five six, over",
         "short_ts": "T1L, this is K9D. BF, time 0856, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_2.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_3.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_14.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_14.wav",
         "full_ts": "tango one lima, this is uniform six victor. bravo foxtrot, time zero eight five six, over",
         "short_ts": "T1L, this is U6V. BF, time 0856, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_4.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_5.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female.wav",
         "full_ts": "tango one lima, this is mike nine juliett. bravo foxtrot, time zero eight five eight, over",
         "short_ts": "T1L, this is M9J. BF, time 0858, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_6.wav",
         "full_ts": "tango one lima, roger out",
         "short_ts": "T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_8.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. standby, execute. uniform six victor, over",
         "short_ts": "alfa 7Z, this is T1L. standby, execute. U6V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_15.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_15.wav",
         "full_ts": "uniform six victor, roger out",
         "short_ts": "U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male.wav",
         "full_ts": "this is charlie eight golf, roger out",
         "short_ts": "this is C8G, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_9.wav",
         "full_ts": "this is tango one lima, cancel my zero nine zero three, charlie eight golf, over",
         "short_ts": "this is T1L, cancel my 0903, C8G, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male_1.wav",
         "full_ts": "this is charlie eight golf, roger out",
         "short_ts": "this is C8G, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_10.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. callsign charlie eight golf, screen hotel, tack callsign foxtrot three juliett, tack one three five, tack one two, tack mike screen eight, tack two hotel, time zero nine zero four, charlie eight golf, over",
         "short_ts": "alfa 7Z, this is T1L. callsign C8G, screen H, tack callsign F3J, tack 135, tack 12, tack M screen 8, tack 2H, time 0904, C8G, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male_3.wav",
         "full_ts": "this is charlie eight golf, roger out",
         "short_ts": "this is C8G, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_16.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_16.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. disregard this transmission, out",
         "short_ts": "alfa 7Z, this is U6V. disregard this transmission, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_18.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_18.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. xray corpan , port two two five, tack speed five, time zero nine zero five, mike nine juliett over",
         "short_ts": "alfa 7Z, this is U6V. X corpan, port 225, tack speed 5, time 0905, M9J over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_0.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_40.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_40.wav",
         "full_ts": "flash, this is eight victor lima, mine zero two zero, desig xray three, out",
         "short_ts": "flash, this is 8VL, mine 020, desig X3, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_19.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_19.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. mike corpan one seven zero, tack five, time zero nine zero eight, mike nine juliett, over",
         "short_ts": "alfa 7Z, this is U6V. M corpan 170, tack 5, time 0908, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_1.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_26.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_26.wav",
         "full_ts": "alfa seven zulu this is nine hotel delta . echo whiskey one three, desig victor, tack charlie one eight four sierra, desig victor one , time zero nine zero nine, uniform six victor, over",
         "short_ts": "alfa 7Z this is 9HD. EW13, desig V, tack C184S, desig V1, time 0909, U6V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_20.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_20.wav",
         "full_ts": "this is uniform six victor, roger out",
         "short_ts": "this is U6V, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_21.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_21.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. mike speed one zero, time zero nine one one, mike nine juliett, over",
         "short_ts": "alfa 7Z, this is U6V. M speed 10, time 0911, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_3.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_22.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_22.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. xray corpan starboard one seven five, time zero nine one four, mike nine juliett, over",
         "short_ts": "alfa 7Z, this is U6V. X corpan starboard 175, time 0914, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_4.wav",
         "full_ts": "this is mike nine juliett, say again your last, over",
         "short_ts": "this is M9J, say again your last, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_23.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_23.wav",
         "full_ts": "mike nine juliett this is uniform six victor, say again my zero nine one four, alfa seven zulu this is uniform six victor, xray corpan starboard one seven five, time zero nine one four, over",
         "short_ts": "M9J this is U6V, say again my 0914, alfa 7Z this is U6V, X corpan starboard 175, time 0914, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_5.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_12.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_12.wav",
         "full_ts": "alfa seven zulu this is tango one lima. callsign mike nine juliett, tango alfa one one five, tack two one zero, time zero nine one five, mike nine juliett, over",
         "short_ts": "alfa 7Z this is T1L. callsign M9J, T alfa 115, tack 210, time 0915, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_6.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_30.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_30.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_Q8E_female_0.wav",
         "full_ts": "alfa seven zulu this is quebec eight echo. echo november three four, tack charlie two, time zero nine one six, oscar six november, over",
         "short_ts": "alfa 7Z this is Q8E. EN34, tack C2, time 0916, O6N, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_24.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_24.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. xray corpan starboard one seven zero, time zero nine one six , eight victor lima, over",
         "short_ts": "alfa 7Z, this is U6V. X corpan starboard 170, time 0916, 8VL, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_41.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_41.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male_5.wav",
         "full_ts": "alfa seven zulu this is charlie eight golf, standby, execute, kilo nine delta, over",
         "short_ts": "alfa 7Z this is C8G, standby, execute, K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_31.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_31.wav",
         "full_ts": "one, kilo nine delta, roger out",
         "short_ts": "1, K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_32.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_32.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_25.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_25.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. tango alfa one one seven, tack two, callsign foxtrot three juliett, time zero nine two two, tango one lima, over",
         "short_ts": "alfa 7Z, this is U6V. T alfa 117, tack 2, callsign F3J, time 0922, T1L, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_13.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_27.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_9HD_female_27.wav",
         "full_ts": "alfa seven zulu, this is nine hotel delta. echo whiskey one one, desig victor one , time zero nine two three, kilo nine delta, over",
         "short_ts": "alfa 7Z, this is 9HD. EW11, desig V1, time 0923, K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_34.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_34.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_15.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_15.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. flag golf, tack callsign foxtrot three juliett, tack corpan papa one three five, tack speed one two, time zero nine two four, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is T1L. flag G, tack callsign F3J, tack corpan P135, tack speed 12, time 0924, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_None_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_F3J_None_3.wav",
         "full_ts": "foxtrot three juliett, roger out",
         "short_ts": "F3J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_C8G_male_6.wav",
         "full_ts": "alfa seven zulu, this is charlie eight golf . standby, execute, hotel seven victor, over",
         "short_ts": "alfa 7Z, this is C8G. standby, execute, H7V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_8.wav",
         "full_ts": "tango one lima this is mike nine juliett. tango alfa one one seven, tack two, callsign foxtrot three juliett, tack tango alfa three two, tack two, tack two zero zero, time zero nine two six, over",
         "short_ts": "T1L this is M9J. T alfa 117, tack 2, callsign F3J, tack T alfa 32, tack 2, tack 200, time 0926, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_16.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_16.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_17.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_None_17.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. callsign mike nine juliett, charlie oscar two, tack 8, time zero nine two seven, mike nine juliett, over",
         "short_ts": "alfa 7Z, this is T1L. callsign M9J, CO2, tack 8, time 0927, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_9.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_26.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_26.wav",
         "full_ts": "alfa seven zulu, this is uniform six victor. xray corpan port, zero two zero, time zero nine two eight, mike nine juliett, over",
         "short_ts": "alfa 7Z, this is U6V. X corpan port, 020, time 0928, M9J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_10.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_02N_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_02N_male.wav",
         "full_ts": "uniform six victor, this is oscar two november, disregard this transmission, out",
         "short_ts": "U6V, this is O2N, disregard this transmission, out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_02N_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_02N_male_1.wav",
         "full_ts": "uniform six victor, this is oscar two november. say again all after port , over",
         "short_ts": "U6V, this is O2N. say again all after port, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_27.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_U6V_male_27.wav",
         "full_ts": "oscar six november, this is uniform six victor. I say again all after port, zero two zero, break, oscar six november, over",
         "short_ts": "O6N, this is U6V. I say again all after port, 020, break, O6N, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_35.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_35.wav",
         "full_ts": "tango one lima this is kilo nine delta. romeo echo three one, tack one, tack desig uniform alfa alfa two , tack romeo echo three three, tack two, tack tango one zero three zero, time zero nine three six, over",
         "short_ts": "T1L this is K9D. RE31, tack 1, tack desig U alfa alfa 2, tack RE33, tack 2, tack T1030, time 0936, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_37.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_37.wav",
         "full_ts": "tango one lima, this is kilo nine delta. interrogative roger my zero nine three six, over",
         "short_ts": "T1L, this is K9D. interrogative roger my 0936, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_13.wav",
         "full_ts": "this is tango one lima, say again your last, over",
         "short_ts": "this is T1L, say again your last, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_39.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_39.wav",
         "full_ts": "tango one lima, this is kilo nine delta. I say again my zero nine three six, tango one lima this is kilo nine delta, romeo echo three one, tack one, desig uniform alfa alfa two, tack romeo echo three three, tack two, tack tango one zero three zero, time zero nine three six, over",
         "short_ts": "T1L, this is K9D. I say again my 0936, T1L this is K9D, RE31, tack 1, desig U alfa alfa 2, tack RE33, tack 2, tack T1030, time 0936, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_14.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_14.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_42.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_42.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_15.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_15.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. execute to follow, callsign oscar five lima, turn zulu one three sierra, tack one three five, foxtrot three juliett, over",
         "short_ts": "alfa 7Z, this is T1L. execute to follow, callsign O5L, turn Z13S, tack 135, F3J, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_44.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_44.wav",
         "full_ts": "tango one lima, this is eight victor lima. say again your last, over",
         "short_ts": "T1L, this is 8VL. say again your last, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_16.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_16.wav",
         "full_ts": "eight victor lima, this is tango one lima. I say again my last, alfa seven zulu, this is tango one lima. execute to follow, callsign oscar five lima, turn zulu one three sierra, tack one three five, over",
         "short_ts": "8VL, this is T1L. I say again my last, alfa 7Z, this is T1L. execute to follow, callsign O5L, turn Z13S, tack 135, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_45.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_45.wav",
         "full_ts": "this is eight victor lima, roger out",
         "short_ts": "this is 8VL, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_17.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_17.wav",
         "full_ts": "this is tango one lima, roger out",
         "short_ts": "this is T1L, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_18.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_18.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. execute to follow , tango zero nine four five, hotel seven victor, over",
         "short_ts": "alfa 7Z, this is T1L. execute to follow, T0945, H7V, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_12.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_M9J_female_12.wav",
         "full_ts": "this is mike nine juliett, roger out",
         "short_ts": "this is M9J, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_19.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_T1L_female_19.wav",
         "full_ts": "alfa seven zulu, this is tango one lima. standby , execute. kilo nine delta, over",
         "short_ts": "alfa 7Z, this is T1L. standby, execute. K9D, over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_40.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_K9D_female_40.wav",
         "full_ts": "kilo nine delta, roger out",
         "short_ts": "K9D, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O2N_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O2N_male.wav",
         "full_ts": "Name Gunny Thwaite, cubicle is the Edinburgh , the callsign is oscar two november, the date is the sixteenth , the time is zero eight one five, and this is a passage from the North wind",
         "short_ts": "Name Gunny Thwaite, cubicle is the Edinburgh, the callsign is O2N, the date is the sixteenth, the time is 0815, and this is a passage from the North wind",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_46.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_8VL_male_46.wav",
         "full_ts": "My name is Mark Smith, my cubicle number is H.M.S. Argyl, callsign eight victor lima. The date",
         "short_ts": "My name is Mark Smith, my cubicle number is H. M. S. Argyl, callsign 8VL. The date",
         "prompt": null
