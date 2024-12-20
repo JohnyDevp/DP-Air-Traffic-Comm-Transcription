@@ -68,7 +68,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_118_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -452,7 +452,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_758_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -488,7 +488,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SJJM/SJJM_818_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -716,7 +716,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SLGF/SLGF_190_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -1238,7 +1238,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_066_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -1472,7 +1472,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_456_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -1712,7 +1712,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/SP/SMCM/SMCM_856_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {

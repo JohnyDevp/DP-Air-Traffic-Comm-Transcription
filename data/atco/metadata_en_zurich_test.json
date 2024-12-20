@@ -106512,7 +106512,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210414_121525.wav",
         "full_ts": "Jet Management Six One Three  hello   startup is approved  confirm parking  set course seven\n",
-        "short_ts": "IJM613 hello startup is approved confirm parking set course 7\n",
+        "short_ts": "IJM613 hello startup is approved confirm parking 100 course 7\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",

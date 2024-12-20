@@ -72,7 +72,7 @@ number_map = {
     # the rest....
     "hundred": "00", "thousand": "000",
     "hundert": "00", "tausend": "000",
-    "sto": "00", "tisíc": "000",
+    "sto": "00", "set":"00", "tisíc": "000",
     
     "decimal": ".", "point": "."
 }

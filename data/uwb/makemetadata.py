@@ -131,10 +131,9 @@ def get_shortts(full_ts : str, what : str ="alphanum"):
     # split the words and also punctuation separately
     reg = re.compile(r"\w+|[.,!?]")
     words : list[str] = reg.findall(full_ts)
-    print(words)
+    
     idx = 0
     while idx < len(words):
-        print(result)
         word = words[idx]
         # Find the closest match from the combined_map keys
         bestmatch = process.extractOne(word.lower(), combined_map.keys(), score_cutoff=score_cutoff)

@@ -8,7 +8,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/GR/GNSF/GNSF_014_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -272,7 +272,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/GR/GNSF/GNSF_454_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -1076,7 +1076,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/GR/GTAM/GTAM_799_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -1448,7 +1448,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/GR/GVPM/GVPM_413_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -1466,7 +1466,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/GR/GVPM/GVPM_443_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -1970,7 +1970,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/GR/GVSF/GVSF_287_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -2006,7 +2006,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/GR/GVSF/GVSF_347_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {

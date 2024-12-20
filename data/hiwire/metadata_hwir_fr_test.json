@@ -122,7 +122,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_202_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -506,7 +506,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_842_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -590,7 +590,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_982_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -668,7 +668,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_118_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -1052,7 +1052,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_758_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -1088,7 +1088,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_818_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -1316,7 +1316,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_190_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -1922,7 +1922,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_202_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -2306,7 +2306,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_842_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -2390,7 +2390,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_982_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -2876,7 +2876,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_799_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -3116,7 +3116,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_195_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -3494,7 +3494,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_825_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -4076,7 +4076,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_799_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {
@@ -4208,7 +4208,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_014_LN.wav",
         "full_ts": "range three hundred twenty",
-        "short_ts": "range 30020",
+        "short_ts": "range 320",
         "prompt": null
     },
     {
@@ -4472,7 +4472,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_454_LN.wav",
         "full_ts": "range one hundred sixty",
-        "short_ts": "range 10060",
+        "short_ts": "range 160",
         "prompt": null
     },
     {

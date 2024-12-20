@@ -3578,7 +3578,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav",
         "full_ts": "Oscar Kilo India Alpha Fox hello\n Oscar Kilo India Alpha Fox Tecnam two zero eight  two thousand  ECA Echo two five up to two thousand five hundred feet with info Oscar QNH one zero one two  requesting the Echo Two arrival and November Two departure\nroger set squawk three three one seven and say again the type of aircraft please\nTecnam two zero eight and squawk three three one seven Oscar Kilo India Alpha Fox\nall is correct and traffic information  twelve o'clock distance half a mile same level unverified unknown traffic probably ultralight traffic\ncopy traffic information we are visual Oscar Kilo India Alpha Fox\nthank you\n",
-        "short_ts": "OKIAF hello\nOKIAF Tecnam 208 2000 ECA E25 up to 2500 feet with info O QNH 1012 requesting the E2 arrival and N2 departure\nroger set squawk 3317 and say again the type of aircraft please\nTecnam 208 and squawk 3317OKIAF\nall is correct and traffic information 12 o clock distance half a mile same level unverified unknown traffic probably ultralight traffic\ncopy traffic information we are visual OKIAF\nthank you\n",
+        "short_ts": "OKIAF hello\nOKIAF Tecnam 208 2000 ECA E25 up to 2500 feet with info O QNH 1012 requesting the E2 arrival and N2 departure\nroger 100 squawk 3317 and say again the type of aircraft please\nTecnam 208 and squawk 3317OKIAF\nall is correct and traffic information 12 o clock distance half a mile same level unverified unknown traffic probably ultralight traffic\ncopy traffic information we are visual OKIAF\nthank you\n",
         "prompt": {
             "waypoints": [],
             "short_callsigns": [],
