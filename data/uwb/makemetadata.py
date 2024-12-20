@@ -1,7 +1,7 @@
 import re
 
 from arrow import get
-from numpy import number
+from numpy import number, short
 from rapidfuzz import process
 
 units = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -54,9 +54,9 @@ number_map = {
     # the rest....
     "hundred": "00", "thousand": "000",
     "hundert": "00", "tausend": "000",
-    "sto": "00", "tisíc": "000",
+    "sto": "00", "set":"00", "tisíc": "000",
     
-    "decimal": ".", "point": "."
+    "decimal": ".", "point": ".", "dot":"."
 }
 
 aviation_map = {
@@ -69,6 +69,46 @@ aviation_map = {
     "x-ray": "X", "xray":"X", "yankee": "Y", "yanke": "Y", "zulu": "Z", "zoulou": "Z"
 }
 leave_untouch_words = ["and", "on", "or"]
+
+digit_reverse_map = {
+                     "0": "zero", "1": "one", "2": "two", "3": "three",
+                     "4": "four", "5": "five", "6": "six", "7": "seven",
+                     "8": "eight", "9": "nine",
+                     
+                     "10": "ten", "11": "eleven", "12": "twelve", "13": "thirteen",
+                     "14": "fourteen", "15": "fifteen", "16": "sixteen",
+                     "17": "seventeen", "18": "eighteen", "19": "nineteen",
+                     
+                     "20": "twenty", "30": "thirty", "40": "forty",
+                     "50": "fifty", "60": "sixty", "70": "seventy",
+                     "80": "eighty", "90": "ninety"
+                     }
+
+unit_reverse_map = {
+    "0": "zero", "1": "one", "2": "two", "3": "three",
+                     "4": "four", "5": "five", "6": "six", "7": "seven",
+                     "8": "eight", "9": "nine",
+}
+tens_reverse_map = {
+    "20": "twenty", "30": "thirty", "40": "forty",
+                     "50": "fifty", "60": "sixty", "70": "seventy",
+                     "80": "eighty", "90": "ninety"
+}
+teens_reverse_map = {
+    "10": "ten", "11": "eleven", "12": "twelve", "13": "thirteen",
+                     "14": "fourteen", "15": "fifteen", "16": "sixteen",
+                     "17": "seventeen", "18": "eighteen", "19": "nineteen"
+}
+
+aviation_reverse_map = {
+    "A": "alpha", "B": "bravo", "C": "charlie", "D": "delta",
+    "E": "echo", "F": "foxtrot", "G": "golf", "H": "hotel",
+    "I": "india", "J": "juliet", "K": "kilo", "L": "lima",
+    "M": "mike", "N": "november", "O": "oscar", "P": "papa",
+    "Q": "quebec", "R": "romeo", "S": "sierra", "T": "tango",
+    "U": "uniform", "V": "victor", "W": "whiskey",
+    "X": "x-ray", "Y": "yankee", "Z": "zulu"
+}
 
 def parse_forward(words,idx):
     wtbp = []
@@ -170,10 +210,15 @@ def get_shortts(full_ts : str, what : str ="alphanum"):
     result = re.sub(r'\s+([.,!?])', r'\1', result) # remove spaces before punctuation
     return result
 
-def makeCorrectFullTs(ts) -> str:
-    for item in re.finditer(r'\b[A-Z0-9]\b', ts):
-        print(item)
-        
+def alphaToAviation(ts : str) -> str:
+    result = []
+    for word in ts.split(" "):
+        if word.upper() in aviation_reverse_map:
+            result.append(aviation_reverse_map[word])
+        else:
+            result.append(word)
+    return " ".join(result)
+
 def getFullTs(ts) -> None|str:
     
     ts = ts.strip()
@@ -183,47 +228,125 @@ def getFullTs(ts) -> None|str:
     
     
     # remove the tags
-    ts = re.sub(r'\[[^\]]*\]', '', ts)
+    ts = re.sub(r'\[[^\]]*\]', ' ', ts)
+    # parse the pronountiation (e.g. "(9(najn))" to '9')
+    ts = re.sub(r'\(([^\)]+)\([^\)]+\)\)', r' \1 ', ts)
     # remove double spaces
     ts = re.sub(r'\s+', ' ', ts)
-    # parse the pronountiation (e.g. "(9(najn))" to '9')
-    ts = re.sub(r'\(([^\)]+)\([^\)]+\)\)', r'\1', ts)
     
-    # makeCorrectFullTs(ts)
+    # put floats together
+    ts = re.sub(r'(?<=\d)\s+\.\s+(?=\d)', '.', ts) # 1 . 2 -> 1.2
+    
+    # now parse all the numbers back to spoken form
+    ts = numbersToWords(ts)
+    ts = alphaToAviation(ts)
+    return ts
 
     #put the digits and letters together without spaces
-    ts = re.sub(r'(?<=\d)\s+(?=\d)', '', ts) # 1 2 3 -> 123
-    ts = re.sub(r'(?<=\d)\s+\.\s+(?=\d)', '.', ts) # 1 . 2 -> 1.2
-    ts = re.sub(r'(?<=[A-Z0-9])\s+(?=[A-Z0-9])', '', ts) # A B -> AB
+    # ts = re.sub(r'(?<=\d)\s+(?=\d)', '', ts) # 1 2 3 -> 123
+    # ts = re.sub(r'(?<=\d)\s+\.\s+(?=\d)', '.', ts) # 1 . 2 -> 1.2
+    # ts = re.sub(r'(?<=[A-Z0-9])\s+(?=[A-Z0-9])', '', ts) # A B -> AB
     # resplit some possible unwanted combinations like 123Ahoj -> 123 Ahoj
-    ts = re.sub(r'([A-Z][a-z]+)', r' \1', ts) # A B -> AB
+    # ts = re.sub(r'([A-Z][a-z]+)', r' \1', ts) # A B -> AB
     # remove double spaces again
-    ts = re.sub(r'\s+', ' ', ts)
+    # ts = re.sub(r'\s+', ' ', ts)
+
+def complexNumberToWords(number : str) -> str:
+    # we assume the number is kind 1523 ... less or more
+    #! we assume, that numbers spoken as digits were separated by space and so are converted to digits and not get there
+    # we KNOW the max length of the number is 4
+    result = []
+    for i in range(len(number)-2, -1, -1):
+        if i == len(number)-2: # tens and units
+            if number[i] == "0" and number[i+1] == "0": # units and tens are zeros , 00, SKIP
+                continue
+            elif number[i] == "0" and number[i+1] != "0": # meaning the units stands alone .. 01, 02, 03, ...
+                result.insert(0,unit_reverse_map[number[i+1]])
+            elif number[i] != "0" and number[i+1] == "0": # 10,20,30,....
+                result.insert(0,tens_reverse_map[number[i] + "0"])
+            elif number[i] != "0" and number[i+1] != "0":
+                if number[i] == "1":
+                    result.insert(0,teens_reverse_map[number[i] + number[i+1]])
+                else:
+                    result.insert(0,unit_reverse_map[number[i+1]])
+                    result.insert(0,tens_reverse_map[number[i] + "0"])
+        elif i == len(number)-3: # hundreds
+            if number[i] != "0":
+                result.insert(0,"hundred")
+                result.insert(0,unit_reverse_map[number[i]])
+        elif i == len(number)-4: # thousands and ten-thousands
+            #! beware, i am using -1, because in the first if statement i look backward (according to the i (index)), but now i am looking for potential next number
+            #! also according to the, which means i need to go -1
+            if i-1 == 0: # 11000, etc.
+                if number[i-1] != "0" and number[i] == "0": # 10 000,20 000,30 000,....
+                    result.insert(0,tens_reverse_map[number[i-1] + "0"])
+                elif number[i-1] != "0" and number[i] != "0": # 11 000, 12 000, 13 000, 23 000, 43 000...
+                    result.insert(0,"thousand")
+                    if number[i-1] == "1":
+                        result.insert(0,teens_reverse_map[number[i-1] + number[i]])
+                    else:
+                        result.insert(0,unit_reverse_map[number[i]])
+                        result.insert(0,tens_reverse_map[number[i-1] + "0"])
+                    
+            else:
+                result.insert(0,"thousand")
+                result.insert(0,unit_reverse_map[number[i]]) # 1000, 2000, 3000, ...
     
+    return ' '.join(result)
+
+def numbersToWords(ts : str) -> str:
+    result = []
+    for word in ts.split(" "):
+        # either the number is right in the reverse map
+        if word in digit_reverse_map:
+            result.append(digit_reverse_map[word])
+        elif word.isnumeric(): # this IF need to be before the next one, because the next can catch these
+            number_as_words = complexNumberToWords(word).split(" ")
+            result.extend(number_as_words)
+        elif word.replace(".", "").isnumeric():
+            # if the number is float
+            for digit in word:
+                if digit == ".":
+                    result.append("point")
+                    continue
+                result.append(digit_reverse_map[digit])
+        else:
+            result.append(word)
+            
+    return " ".join(result)     
 
 def parseStm(path):
+    result = []
     with open(path, "r") as f:
         lines = f.readlines()
+        i = 0
         for line in lines:
             line = line.split('<,,,>')
             wav_desc = line[0].split(" ")
-            ts = line[1]
+            ts = line[1] # this is unprocessed transcription as is in the stm file
             wavname = wav_desc[0]
             wav_start_time = wav_desc[3]
             wav_end_time = wav_desc[4]
-            print(wavname, wav_start_time, wav_end_time, ts)
-            break
-            if line == "":
+            
+            full_ts = getFullTs(ts)
+            if full_ts is None:
                 continue
-            parts = line.split(" ")
-            if len(parts) != 4:
-                print("Error: ", line)
-                continue
-            print(parts[0], parts[1], parts[2], parts[3])
+            
+            short_ts = get_shortts(full_ts)
 
+            result.append({
+                # "audio": wavname,
+                "full_ts": full_ts,
+                "short_ts": short_ts,
+                "prompt": ""
+            })
+            i += 1
+            if i == 5:
+                break
+    
+    for res in result:
+        print(res)
 if __name__ == "__main__":
-    # parseStm('/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/stm/stm')
-    text = '5 A Z 5 3 del. Position must be 1 2 3 Hello  ahoj 1 2 7 . 5 6'
-    # getFullTs(text)
-    text = 'Radar CSA 1DZ established\nCSA 1DZ roger contact Ruzyne Tower 134.560\n\n34560 CSA 1DZ pekný deň\n'
-    print(get_shortts(text, "alphanum"))
+    parseStm('/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/stm/stm')
+    
+   
