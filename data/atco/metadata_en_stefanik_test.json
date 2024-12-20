@@ -2,7 +2,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_151430.wav",
         "full_ts": "Oscar Echo Golf Tango Echo taxi to holding point runway one three via delta foxtrot\nvia delta foxtrot holding point runway one three      Oscar   Tango Echo\n",
-        "short_ts": "OEGTE taxi to holding . runway 13 via DF\nvia DF holding . runway 13 O TE\n",
+        "short_ts": "OEGTE taxi to holding. runway 13 via DF\nvia DF holding. runway 13 OTE\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -227,7 +227,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_172604.wav",
         "full_ts": "   dobry vecer  Stefanik Tower Galileo Three Four  Six  Papa ILS established  runway three one  DME seven point five\n Galileo  Three  Four  Six  Papa Stefanik Tower  dobry  vecer  wind  one three zero degrees four knots runway three one cleared to land\ncleared to land runway three one is copying Galileo  Three  Four  Six  Papa\nOscar Mike  Charlie  Mike  Juliett     dopocutia \n\n",
-        "short_ts": "dobry vecer Stefanik Tower Galileo 34 6 P ILS established runway 31 DME 7.5\nGalileo 3 4 6 P Stefanik Tower dobry vecer wind 130 degrees 4 knots runway 31 cleared to land\ncleared to land runway 31 is copying Galileo 3 4 6 P\nOM C M J dopocutia\n\n",
+        "short_ts": "dobry vecer Stefanik Tower AXE346P ILS established runway 31 DME 7.5\nAXE346P Stefanik Tower dobry vecer wind 130 degrees 4 knots runway 31 cleared to land\ncleared to land runway 31 is copying AXE346P\nOMC MJ dopocutia\n\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -385,7 +385,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_171652.wav",
         "full_ts": "Krišof Nula Tri štefánik veža dobrý deň\nŠtefánik veža  sto deväť  mali by sme spustiť a bude to  let cez charlie do Popradu\n",
-        "short_ts": "Krišof 0 Tri štefánik veža dobrý deň\nŠtefánik veža 00 deväť mali by sme spustiť a bude to let cez C do Popradu\n",
+        "short_ts": "Krišof 0 Tri štefánik veža dobrý deň\nŠtefánik veža 100 deväť mali by sme spustiť a bude to let cez C do Popradu\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -456,7 +456,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_120635.wav",
         "full_ts": "November Four Niner X-ray Lima taxi via delta line up zero four report ready\nvia delta line up zero four call you when ready November Four Niner X-ray Lima\n",
-        "short_ts": "N4 Niner XL taxi via D line up 04 report ready\nvia D line up 04 call you when ready N4 Niner XL\n",
+        "short_ts": "N4 Niner X ray L taxi via D line up 04 report ready\nvia D line up 04 call you when ready N4 Niner X ray L\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -630,7 +630,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_181207.wav",
         "full_ts": "Oscar Golf Echo roger descend to traffic altitude one thousand five hundred feet\nstart descending one thousand five hundred feet altitude Oscar Mike Alpha Golf Echo\n",
-        "short_ts": "OGE roger descend to traffic altitude 1000500 feet\nstart descending 1000500 feet altitude OMAGE\n",
+        "short_ts": "OGE roger descend to traffic altitude 1500 feet\nstart descending 1500 feet altitude OMAGE\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -770,7 +770,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_132814.wav",
         "full_ts": "stefanik tower Top Jet Four Zero One   dobrý deň  apron charlie in front of the hangar ready for startup cleared destination Ostrava  lima  on board  QNH one zero one seven\n",
-        "short_ts": "stefanik tower Top Jet 401 dobrý deň apron C 9 front of the hangar ready for startup cleared 10 Ostrava L on board QNH 1017\n",
+        "short_ts": "stefanik tower Top Jet 401 dobrý deň apron C 9 front of the hangar ready for startup cleared 10 Ostrava hes L on board QNH 1017\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -855,7 +855,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_130418.wav",
         "full_ts": "QNH one zero  one eight  after keep the proceeding to victor\n",
-        "short_ts": "QNH 10 18 after keep the proceeding to V\n",
+        "short_ts": "QNH 10 hes 18 after keep the proceeding to V\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -1059,7 +1059,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210423_120826.wav",
         "full_ts": "Slovak Airforce  Seven Four Four Five frequency change approved  dopočutia pekný let \n",
-        "short_ts": "Slovak Airforce 7445 frequency change approved dopočutia pekný let\n",
+        "short_ts": "Slovak Airforce hes 7445 frequency change approved dopočutia pekný let\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -1219,7 +1219,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_205033.wav",
         "full_ts": "Eurotrans One Three Juliett request push and start\ngood evening Eurotrans One Three Juliett startup and push back approved position to Foxtrot squawk four four two five\n squawk four four two five and start and push pre- approved position foxtrot(fox-) two foxtrot\n",
-        "short_ts": "BCS13J request push and start\ngood evening BCS13J startup and push back approved position 00 F squawk 4425\nsquawk 4425 and start and push pre- approved position foxtrot(fox-) 2F\n",
+        "short_ts": "BCS13J request push and start\ngood evening BCS13J startup and push back approved position 100 F squawk 4425\nsquawk 4425 and start and push pre approved position FF2F\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -1541,7 +1541,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_093636.wav",
         "full_ts": "Oscar Golf Echo squawk sedem tisíc dopočutia\nsedem tisíc dopočutia Oscar Golf\n",
-        "short_ts": "OGE squawk sedem 000 dopočutia\nsedem 000 dopočutia OG\n",
+        "short_ts": "OGE squawk sedem 1000 dopočutia\nsedem 1000 dopočutia OG\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -1616,7 +1616,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_195343.wav",
         "full_ts": " X-ray One Three if you prefer\nthank you and then that's witch departure again\n",
-        "short_ts": "X13 if you prefer\nthank you and then that's witch departure again\n",
+        "short_ts": "X ray 13 if you prefer\nthank you and then that s witch departure again\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -1677,7 +1677,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_225241.wav",
         "full_ts": "Elite Jet Seven Zero Four taxi via Delta to apron Charlie\n",
-        "short_ts": "ELJ704 taxi via D 00 apron C\n",
+        "short_ts": "ELJ704 taxi via D 100 apron C\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -1939,7 +1939,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203029.wav",
         "full_ts": "no actually the  one alpha was planned for us but i see now as well the one kilo is going ya is by ATC and going straight ahead to  that's correct Eurotrans One Three Juliett\naffirm and if you are able to  comply with the restrictions you can choose to one kilo\nalright just give us five seconds discuss with a colleague Eurotrans One Three Juliett thank you\n",
-        "short_ts": "no actually the 1A was planned for us but i see now as well the 1K is going ya is by ATC and going straight ahead to that's correct Eurotrans 13J\naffirm and if you are able to comply with the restrictions you can choose to 1K\nalright just give us 5 seconds discuss with a colleague Eurotrans 13J thank you\n",
+        "short_ts": "no actually the 1A was planned for us but i see now as well the 1K is going ya is by ATC and going straight ahead to that s correct Eurotrans 13J\naffirm and if you are able to comply with the restrictions you can choose to 1K\nalright just give us 5 seconds discuss with a colleague Eurotrans 13J thank you\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -2178,7 +2178,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_163922.wav",
         "full_ts": "looking out for a traffic Oscar Mike Kilo Lima Lima\nroger just traffic is    on your eleven o'clock  one mile\n",
-        "short_ts": "looking out for a traffic OMKLL\nroger just traffic is 1 your 11 o'clock 1 mile\n",
+        "short_ts": "looking out for a traffic OMKLL\nroger just traffic is 1 your 110 clock 1 mile\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -2897,7 +2897,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_101342.wav",
         "full_ts": "  Oscar India Alpha and contact Stefanik Radar one three four decimal nine two five   ahoj \n contacting radar one three four decimal(dec-) decimal nine two five    Oscar Mike Charlie India Alpha thank you bye\n",
-        "short_ts": "OIA and contact Stefanik Radar 134.925 ahoj\ncontacting radar 134 decimal(dec-) .925 OMCIA thank you bye\n",
+        "short_ts": "OIA and contact Stefanik Radar 134.925 ahoj\ncontacting radar 134. dec.925 OMCIA thank you bye\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -3213,7 +3213,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_130351.wav",
         "full_ts": "Stefanik tower Oscar Mike Echo Lima Echo good day\nOscar Mike Echo Lima Echo Stefanik tower good day\nStefanik tower Oscar Mike Echo Lima Echo  actual position  inbound keep  descending to two thousand feet altitude and requesting exit point victor Oscar Mike Echo Lima Echo\nOscar Lima Echo QNH one zero one eight after  proceed to Victor\n",
-        "short_ts": "Stefanik tower OMELE good day\nOMELE Stefanik tower good day\nStefanik tower OMELE actual position inbound keep descending to 2000 feet altitude and requesting exit .V OMELE\nOLE QNH 1018 after proceed to V\n",
+        "short_ts": "Stefanik tower OMELE good day\nOMELE Stefanik tower good day\nStefanik tower OMELE actual position inbound keep descending to 2000 feet altitude and requesting exit.V OMELE\nOLE QNH 1018 after proceed to V\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -3618,7 +3618,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_204845.wav",
         "full_ts": "Eurotrans One Three Juliett taxi to holding point runway zero four via alpha delta\nalpha delta    holding point zero four Eurotrans One Three Juliett\n",
-        "short_ts": "BCS13J taxi to holding . runway 04 via AD\nAD holding .04 BCS13J\n",
+        "short_ts": "BCS13J taxi to holding. runway 04 via AD\nAD holding. 04 BCS13J\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -3689,7 +3689,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_171541.wav",
         "full_ts": " opakujte volaciu značku \n tower Oscar Mike Charlie Mike Juliett  dobrý deň \nOscar Mike Charlie Mike Juliett  štefánikovo dobrý deň \nOscar Mike Charlie Mike Juliett  flight plan  position  bound charlie one thousand three hundred feet QNH one zero zero seven information golf four one six\n",
-        "short_ts": "opakujte volaciu značku\ntower OMCMJ dobrý deň\nOMCMJ štefánikovo dobrý deň\nOMCMJ flight plan position bound C1000300 feet QNH 1007 information G416\n",
+        "short_ts": "opakujte volaciu značku\ntower OMCMJ dobrý deň\nOMCMJ štefánikovo dobrý deň\nOMCMJ flight plan position bound C 1300 feet QNH 1007 information G416\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -3756,7 +3756,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203133.wav",
         "full_ts": "right so then yeah Tovka one kilo would be much better Eurotrans  One Three Juliett thank you\nEurotrans One Three Juliett roger so recleared via Tovka one kilo departure of runway three one initial climb five thousand feet\nrecleared at Tovka one kilo departure runway three initial climb five thousand feet and request push and start Eurotrans One Three Juliett\nEurotrans One Three Juliett push and start approved facing foxtrot and squawk four four zero three\n",
-        "short_ts": "right so then yeah Tovka 1 K would be much better Eurotrans 13J thank you\nBCS13J roger so recleared via Tovka 1 K departure of runway 31 initial climb 5000 feet\nrecleared at Tovka 1 K departure runway 3 initial climb 5000 feet and request push and start BCS13J\nBCS13J push and start approved facing F and squawk 4403\n",
+        "short_ts": "right so then yeah Tovka 1 K would be much better Eurotrans hes 13J thank you\nBCS13J roger so recleared via Tovka 1 K departure of runway 31 initial climb 5000 feet\nrecleared at Tovka 1 K departure runway 3 initial climb 5000 feet and request push and start BCS13J\nBCS13J push and start approved facing F and squawk 4403\n",
         "prompt": {
             "waypoints": [
                 "ABETI",
@@ -3817,7 +3817,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_230611.wav",
         "full_ts": "Stefanik Tower good morning      Eurotrans Five Three Three  Four established on the final inbound three one\ngood morning     Eurotrans Five Three Three Four    Stefanik    Tower wind variable three knots runway three one cleared to land\ncleared to land three one        Eurotrans  Five  Three   Three   Four\n",
-        "short_ts": "Stefanik Tower good morning Eurotrans 533 4 established on the final inbound 31\ngood morning Eurotrans 5334 Stefanik Tower wind variable 3 knots runway 31 cleared to land\ncleared to land 31 Eurotrans 5 3 3 4\n",
+        "short_ts": "Stefanik Tower good morning BCS5334 established on the final inbound 31\ngood morning Eurotrans 5334 Stefanik Tower wind variable 3 knots runway 31 cleared to land\ncleared to land 31 BCS5334\n",
         "prompt": {
             "waypoints": [
                 "ABETI",

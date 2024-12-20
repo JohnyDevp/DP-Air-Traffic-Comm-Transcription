@@ -1456,7 +1456,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_181703.wav",
         "full_ts": " Zurich  Tower     Rega  One  departed   via   back  to  Dubendorf\n Rega  One  Tower  hello  again  QNH  is  one  zero  two  seven  routing  approved  and   you  may  leave  the  frequency   bis  spaeter(spaet-)    \n one  zero  two  seven  routing  approved  leaving  frequency      schoenen  abend  ciao \n\n",
-        "short_ts": "Zurich Tower Rega 1 departed via back to Dubendorf\nRega 1 Tower hello again QNH is 1027 routing approved and you may leave the frequency bis spaeter(spaet-)\n1027 routing approved leaving frequency schoenen abend ciao\n\n",
+        "short_ts": "Zurich Tower Rega 1 departed via back to Dubendorf\nRega 1 Tower hello again QNH is 1027 routing approved and you may leave the frequency bis spaeter spaet\n1027 routing approved leaving frequency schoenen abend ciao\n\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -1658,7 +1658,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_151347.wav",
         "full_ts": "Delta India Victor contact apron one two one decimal seven five five   tschuss_(bye) \n",
-        "short_ts": "DIV contact apron 121.755 tschuss_(bye)\n",
+        "short_ts": "DIV contact apron 121.755 tschuss_ bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -2206,7 +2206,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_154652.wav",
         "full_ts": "zero five degrees  seven knots  runway(run-) cleared for takeoff\n three four three ready for takeoff three two thousand\n",
-        "short_ts": "05 degrees 7 knots runway(run-) cleared for takeoff\n343 ready for takeoff 32000\n",
+        "short_ts": "05 degrees 7 knots runway run cleared for takeoff\n343 ready for takeoff 3 2000\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -2500,7 +2500,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_132505.wav",
         "full_ts": " Hotel  Quebec  India  did  you  phone  in  today  or  few  days  ago\n",
-        "short_ts": "H Q I did you phone in today or few days ago\n",
+        "short_ts": "HQI did you phone in today or few days ago\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -2784,7 +2784,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_152700.wav",
         "full_ts": " Swiss  One  Eight  Heavy  holding  short   one  zero   windcheck  please\n",
-        "short_ts": "Swiss 1 8 Heavy holding short 1 0 windcheck please\n",
+        "short_ts": "Swiss 18 Heavy holding short 10 windcheck please\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -3314,7 +3314,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_064705.wav",
         "full_ts": " Delta    well  the  last  one  is  at  thirteen  miles  if  you  wait  for   two  minutes  it's  gonnabe   possible\n",
-        "short_ts": "D well the last 1 is at 13 miles if you wait for 2 minutes it's gonnabe possible\n",
+        "short_ts": "D well the last 1 is at 13 miles if you wait for 2 minutes it s gonnabe possible\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -3622,7 +3622,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_075552.wav",
         "full_ts": " Tango  Three  Five  Eight  Tower   guten  morgen   corridor   four  approved  corridor  five  sorry  QNH  one  zero  two  six\n QNH  one  zero  two  six  corridor  five  approved  Tango  Three  Five  Eight\n",
-        "short_ts": "T 3 5 8 Tower guten morgen corridor 4 approved corridor 5 sorry QNH 1026\nQNH 1026 corridor 5 approved T 3 5 8\n",
+        "short_ts": "T358 Tower guten morgen corridor 4 approved corridor 5 sorry QNH 1026\nQNH 1026 corridor 5 approved T358\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -3922,7 +3922,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210422_074345.wav",
         "full_ts": " Hotel  Quebec  India  opposite   Cessna  eleven  o'clock  three  miles  indicating  three  thousand  six  hundred  feet \n",
-        "short_ts": "H Q I opposite Cessna 11 o'clock 3 miles indicating 3000600 feet\n",
+        "short_ts": "HQI opposite Cessna 11 o clock 3 miles indicating 3600 feet\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -4256,7 +4256,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_093543.wav",
         "full_ts": " Swiss  One  Eight  Eight  Tower   Gruezi   line  up  runway  one  zero\n",
-        "short_ts": "Swiss 1 8 8 Tower Gruezi line up runway 1 0\n",
+        "short_ts": "Swiss 188 Tower Gruezi line up runway 10\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -4942,7 +4942,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_114440.wav",
         "full_ts": "Hotel Bravo Victor you're leaving CTR shortly frequency change  approved \nleaving frequency thank you and good bye   Hotel Bravo Victor\n",
-        "short_ts": "HBV you're leaving CTR shortly frequency change approved\nleaving frequency thank you and good bye HBV\n",
+        "short_ts": "HBV you re leaving CTR shortly frequency change approved\nleaving frequency thank you and good bye HBV\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -5654,7 +5654,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_055752.wav",
         "full_ts": "  Tower  very  good  morning  Singapore  Three  Four  Six  again  approaching  runway  two  eight\n Singapore  Three  Four  Six  Tower  hello  again  taxiway  juliett  cross  runway  two  eight  and  contact  apron  one  two  one  decimal  seven  five  five  bye  bye\n cross  runway  two  eight  juliett  one  two  one  seven  five  five  bye  bye  Singapore  Three  Four  Six\n",
-        "short_ts": "Tower very good morning Singapore 3 4 6 again approaching runway 2 8\nSingapore 3 4 6 Tower hello again taxiway J cross runway 2 8 and contact apron 1 2 1 . 7 5 5 bye bye\ncross runway 2 8 J 1 2 1 7 5 5 bye bye Singapore 3 4 6\n",
+        "short_ts": "Tower very good morning SIA346 again approaching runway 28\nSingapore 346 Tower hello again taxiway J cross runway 28 and contact apron 121.755 bye bye\ncross runway 28 J 121755 bye bye SIA346\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -5902,7 +5902,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_194804.wav",
         "full_ts": " Arrival   guten  abend   Swiss  Three  One  Yankee  Heavy  level  one  nine  zero  descending  one  three  zero  inbound zulu hotel two six eight  information  lima  Airbus  Three  Thirty\n",
-        "short_ts": "Arrival guten abend Swiss 3 1 Y Heavy level 190 descending 130 inbound ZH268 information L Airbus 330\n",
+        "short_ts": "Arrival guten abend Swiss 31Y Heavy level 190 descending 130 inbound ZH268 information L Airbus 330\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -6734,7 +6734,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_060737.wav",
         "full_ts": " Eurocat  Four  Zero  One   midpoint  seven  five  zero  meters  wind  zero  one  zero  degrees  two  knots  runway  two  eight  cleared  for  takeoff\n",
-        "short_ts": "Eurocat 4 0 1 . 7 5 0 meters wind 010 degrees 2 knots runway 2 8 cleared for takeoff\n",
+        "short_ts": "CAZ401.750 meters wind 010 degrees 2 knots runway 28 cleared for takeoff\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -6990,7 +6990,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_203526.wav",
         "full_ts": " Swiss  One  Six  Zero  wind  zero  five  zero  degrees  two knots runway  three two  cleared takeoff\n runway  three  two  cleared  for(f-)  takeoff  Swiss  One  Six  Zero \n",
-        "short_ts": "Swiss 1 6 0 wind 050 degrees 2 knots runway 32 cleared takeoff\nrunway 3 2 cleared for(f-) takeoff Swiss 1 6 0\n",
+        "short_ts": "SWR160 wind 050 degrees 2 knots runway 32 cleared takeoff\nrunway 32 cleared for f takeoff SWR160\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -7408,7 +7408,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_153107.wav",
         "full_ts": "Swiss Air Force Five Two One tower grutzi and runway three four and taxi left via lima holding point runway one zero\n",
-        "short_ts": "SUI521 tower grutzi and runway 34 and taxi left via L holding . runway 10\n",
+        "short_ts": "SUI521 tower grutzi and runway 34 and taxi left via L holding. runway 10\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -8226,7 +8226,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_113545.wav",
         "full_ts": " Jetset  Four  Three  Seven  Delivery  cleared  Athens  runway  one  zero  Albix Two  Echo  departure five  thousand  feet  squawk  three  zero  four  one\n",
-        "short_ts": "Jetset 4 3 7 Delivery cleared Athens runway 1 0 Albix 2 E departure 5 000 feet squawk 3 0 4 1\n",
+        "short_ts": "Jetset 437 Delivery cleared Athens runway 10 Albix 2 E departure 5000 feet squawk 3041\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -8520,7 +8520,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_194240.wav",
         "full_ts": " Swiss  One  Five  Zero  Yankee  turn  right  heading  one  seven  zero\n",
-        "short_ts": "Swiss 1 5 0 Y turn 8 heading 1 7 0\n",
+        "short_ts": "SWR150Y turn 8 heading 170\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -8708,7 +8708,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_173543.wav",
         "full_ts": "  Air  Nostrum  Eight  Seven  Whiskey  Bravo  just  to  confirm  your  clearance  vebit  three  whiskey  departure  and  initial  climb  to  five  thousand  feet\n  three  whiskey  departure \n thank you\n",
-        "short_ts": "Air Nostrum 8 7 W B just to confirm your clearance vebit 3 W departure and initial climb to 5 000 feet\n3 W departure\nthank you\n",
+        "short_ts": "ANE87WB just to confirm your clearance vebit 3 W departure and initial climb to 5000 feet\n3 W departure\nthank you\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -8928,7 +8928,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_090910.wav",
         "full_ts": " Sunturk  Nine  Four  Seven  via  hotel  to  apron  one  two  one  decimal  eight  five  five\n",
-        "short_ts": "Sunturk 9 4 7 via H 00 apron 1 2 1 . 8 5 5\n",
+        "short_ts": "PGT947 via H 100 apron 121.855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -9488,7 +9488,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_174145.wav",
         "full_ts": " Lot  Four  Two  Zero  contact  departure  goodbye\n contact  departure  goodbye  Lot  Four  Two  Zero\n",
-        "short_ts": "Lot 4 2 0 contact departure goodbye\ncontact departure goodbye Lot 4 2 0\n",
+        "short_ts": "Lot 420 contact departure goodbye\ncontact departure goodbye Lot 420\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -10008,7 +10008,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_204541.wav",
         "full_ts": " Saxonian  Seven  Nine  Two  Nine  direct  to  goxli  climb  to(t-)  flight  level  three  two  zero\n",
-        "short_ts": "Saxonian 7 9 2 9 direct to goxli climb to(t-) flight level 3 2 0\n",
+        "short_ts": "Saxonian 7929 direct to goxli climb to t flight level 320\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -10176,7 +10176,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_161111.wav",
         "full_ts": "wind six knots runway one four   cleared to land    vacated at your convenience\nokay cleared to land  runway one four vacate on convenience  Foxtrot \n unk \n",
-        "short_ts": "wind 6 knots runway 14 cleared to land vacated at your convenience\nokay cleared to land runway 14 vacate on convenience F\nunk\n",
+        "short_ts": "wind 6 knots runway 14 cleared to land vacated at your convenience\nokay cleared to land runway 14 vacate on convenience F unk\nunk\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -10952,7 +10952,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_091532.wav",
         "full_ts": " affirm  one  two  one  decimal  seven  five  five  Turkish  Three  Whiskey  Quebec  have  a  nice \n thank  you  thank  you\n",
-        "short_ts": "affirm 1 2 1 . 7 5 5 Turkish 3 W Q have a nice\nthank you thank you\n",
+        "short_ts": "affirm 121.755 THY3WQ have a nice\nthank you thank you\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -11800,7 +11800,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_104539.wav",
         "full_ts": " Yankee  Uniform  Papa  Bravo  Bravo  Delivery  hello  go  ahead\n Yankee  Bravo  Bravo  on  general  aviation  xero  x-ray  on  board  destination  Budapest  ready  to  copy AT  clearence\n Yankee  Bravo  Bravo  roger  cleared  Budapest  runway  one  zero  for  departure  deges  one  echo  climb  five  thousand  feet  and  squawk  one  thousand\n",
-        "short_ts": "Y U P B B Delivery hello go ahead\nY B B on general aviation xero X on board destination Budapest ready to copy AT clearence\nY B B roger cleared Budapest runway 1 0 40 departure deges 1 E climb 5 000 feet and squawk 1 000\n",
+        "short_ts": "YUPBB Delivery hello go ahead\nYBB on general aviation xero x ray on board destination Budapest ready to copy AT clearence\nYBB roger cleared Budapest runway 1040 departure deges 1 E climb 5000 feet and squawk 1000\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -12650,7 +12650,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_105801.wav",
         "full_ts": " That's  copy  we  will  vacate  via  the  end  and  cleared  to  land  runway  one  four  Swiss  Ambulance  Six  Two  Eight\n",
-        "short_ts": "That's copy we will vacate via the 000 and cleared to land runway 1 4 Swiss Ambulance 6 2 8\n",
+        "short_ts": "That s copy we will vacate via the 000 and cleared to land runway 14 SAZ628\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -12952,7 +12952,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_171831.wav",
         "full_ts": " Finnair  Six  Kilo  Papa  Tower  good  evening  line  up  runway  two  eight  report  ready\n",
-        "short_ts": "Finnair 6 K P Tower good evening line up runway 2 8 report ready\n",
+        "short_ts": "Finnair 6KP Tower good evening line up runway 28 report ready\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -13168,7 +13168,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210422_091033.wav",
         "full_ts": " and  Hotel  Lima  Papa            the  helicopter  is  now  between whiskey one  and whiskey two  inbound\n",
-        "short_ts": "and H L P the helicopter is now between W1 and W2 inbound\n",
+        "short_ts": "and HLP the helicopter is now between W1 and W2 inbound\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -13792,7 +13792,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_113949.wav",
         "full_ts": " Hotel  Bravo  Victor  approaching  Sierra  at  three  thousand  three  hundred  feet\n Hotel(-tel)  Bravo  Victor  roger  report  Whiskey\n",
-        "short_ts": "H B V approaching S at 3000300 feet\nHotel(-tel) B V roger report W\n",
+        "short_ts": "HBV approaching S at 3300 feet\nH tel BV roger report W\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -14078,7 +14078,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_060609.wav",
         "full_ts": " Eurocat  Four  Zero  One  line  up  and  wait  runway  two  eight\n line  up  and  wait  runway  two  eight  Eurocat  Four  Zero  One\n",
-        "short_ts": "Eurocat 4 0 1 line up and wait runway 2 8\nline up and wait runway 2 8 Eurocat 4 0 1\n",
+        "short_ts": "CAZ401 line up and wait runway 28\nline up and wait runway 28 CAZ401\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -15160,7 +15160,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_185617.wav",
         "full_ts": "  Hotel  Bravo  Kilo Hotel  Romeo  roger  expect  RNP  two  eight  and  about  five  five  miles  to  go\n",
-        "short_ts": "H B KH R roger expect RNP 2 8 and about 55 miles to go\n",
+        "short_ts": "HBKHR roger expect RNP 28 and about 55 miles to go\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -15380,7 +15380,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_165621.wav",
         "full_ts": " Two One tower hello again on kilo cross runway one zero  connect apron     one two one seven five five good bye\n",
-        "short_ts": "21 tower hello again 1 K cross runway 10 connect apron 121755 good bye\n",
+        "short_ts": "unk 21 tower hello again 1 K cross runway 10 connect apron 121755 good bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -15644,7 +15644,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_084744.wav",
         "full_ts": "Time  Air  Three  Zero  Seven  Foxtrot  wind  zero  four  zero  degrees  one  four  knots  runway  two  eight  cleared  takeoff\n",
-        "short_ts": "Time Air 3 0 7 F wind 040 degrees 14 knots runway 2 8 cleared takeoff\n",
+        "short_ts": "TIE307F wind 040 degrees 14 knots runway 28 cleared takeoff\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -15948,7 +15948,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_071043.wav",
         "full_ts": " Eurowings  Six  November  Lima  wind  zero  three  zero  degrees  eight  knots  runway  two  eight  cleared  takeoff\n cleared  for  takeoff  runway  two  eight  Eurowings  Six  November  Lima\n",
-        "short_ts": "Eurowings 6 N L wind 0 3 0 degrees 8 knots runway 2 8 cleared takeoff\ncleared for takeoff runway 2 8 Eurowings 6 N L\n",
+        "short_ts": "EWG6NL wind 030 degrees 8 knots runway 28 cleared takeoff\ncleared for takeoff runway 28 EWG6NL\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -17072,7 +17072,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_094114.wav",
         "full_ts": " Sunturk  Three  One  Hotel  Ground  taxiway  echo  seven  cross  runway  one  six  taxiway  taxiway  lima  to  hold  short  runway  one  zero\n",
-        "short_ts": "Sunturk 3 1 H Ground taxiway E 7 cross runway 1 6 taxiway taxiway L to hold short runway 1 0\n",
+        "short_ts": "Sunturk 31H Ground taxiway E 7 cross runway 16 taxiway taxiway L to hold short runway 10\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -17382,7 +17382,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_094320.wav",
         "full_ts": "  Sunturk  Three  One Hotel Tower  hello  line  up  runway  one  zero  report  ready\n",
-        "short_ts": "Sunturk 3 1H Tower hello line up runway 1 0 report ready\n",
+        "short_ts": "Sunturk 31H Tower hello line up runway 10 report ready\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -17692,7 +17692,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_174835.wav",
         "full_ts": " cleared  to  Zagreb  runway  one  zero  deges one echo  five  thousand  one  thousand  squawk  Croatia  Four  Six  Five\n read  back  correct  report  ready\n\n",
-        "short_ts": "cleared to Zagreb runway 1 0 deges 1 E 5 000 1 000 squawk Croatia 4 6 5\nread back correct report ready\n\n",
+        "short_ts": "cleared to Zagreb runway 10 deges 1 E 5000 1000 squawk CTN465\nread back correct report ready\n\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -18246,7 +18246,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_112452.wav",
         "full_ts": " Air  Portugal  Nine  Three  One  Charlie  wind  zero  five  zero  degrees  one  four  gusting  one  nine  knots  runway  one  zero  cleared  for  takeoff\n cleared  for  takeoff runway  one  zero Air Portugal  \n",
-        "short_ts": "Air Portugal 9 3 1 C wind 050 degrees 14 gusting 19 knots runway 1 0 cleared for takeoff\ncleared for takeoff runway 1 0 Air Portugal\n",
+        "short_ts": "TAP931C wind 050 degrees 14 gusting 19 knots runway 10 cleared for takeoff\ncleared for takeoff runway 10 Air Portugal\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -18542,7 +18542,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_084612.wav",
         "full_ts": "ready to touchdown \n(-er) Four Seven on juliett\nSunturk Niner Four Seven tower taxiway Juliett cross runway two eight contact  apron one two one decimal seven five  five bye\n",
-        "short_ts": "ready to touchdown\n(-er) 47 1 J\nSunturk Niner 47 tower taxiway J cross runway 28 contact apron 121.75 5 bye\n",
+        "short_ts": "ready to touchdown\ner 47 1 J\nSunturk Niner 47 tower taxiway J cross runway 28 contact apron 121.75 5 bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -19800,7 +19800,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_161217.wav",
         "full_ts": "November Charlie Golf  taxiway  kilo  cross runway one zero  contact  apron      one two one seven five five \n",
-        "short_ts": "NCG taxiway K cross 10 contact apron 121755\n",
+        "short_ts": "NCG taxiway K cross runway 10 contact apron 121755\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -20082,7 +20082,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_132735.wav",
         "full_ts": "Hotel Hotel X-ray request to proceed now through \nHotel Hotel X-ray  approved\n",
-        "short_ts": "HHX request to proceed now through\nHHX approved\n",
+        "short_ts": "HH X ray request to proceed now through\nHH X ray approved\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -20364,7 +20364,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210423_162828.wav",
         "full_ts": "  stand  by  and  holding  over  Whiskey  Two  for  the  moment  Hotel  Hotel  Zulu\n",
-        "short_ts": "stand by and holding over W2 for the moment H H Z\n",
+        "short_ts": "stand by and holding over W2 for the moment HHZ\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -21096,7 +21096,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_201955.wav",
         "full_ts": " Tui  Jet  Nine  Yankee  direct  to  delta  mike  four  five  eight  be  level  within the  next  four  five  miles\n",
-        "short_ts": "Tui Jet 9 Y direct to DM 4 5 8 be level within the next 4 5 miles\n",
+        "short_ts": "Tui Jet 9Y direct to DM 458 be level within the next 45 miles\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -21508,7 +21508,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_152615.wav",
         "full_ts": " Hotel  Bravo  Charlie  Hotel  X-ray  you  may  leave  the  frequency \n frequency  change  approved \n",
-        "short_ts": "H B C H X you may leave the frequency\nfrequency change approved\n",
+        "short_ts": "HBCH X ray you may leave the frequency\nfrequency change approved\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -21816,7 +21816,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_195703.wav",
         "full_ts": " inbound  zulu  hotel  two  six  six  and  then  the  join  the  amiki   two  eight  transition  runway  two  eight  KLM  Seven  One  Quebec\n",
-        "short_ts": "inbound ZH 2 6 6 and then the join the amiki 2 8 transition runway 2 8 KLM 7 1 Q\n",
+        "short_ts": "inbound ZH 266 and then the join the amiki 28 transition runway 28 KLM71Q\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -22006,7 +22006,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_111025.wav",
         "full_ts": "thanks very much cleared to land runway one four  vacate   eight seven\n",
-        "short_ts": "thanks very much cleared to land runway 14 vacate 87\n",
+        "short_ts": "thanks very much cleared to land runway 14 vacate unk 87\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -22308,7 +22308,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_193928.wav",
         "full_ts": " Swiss  One  Five  Zero  Yankee  descend  to  five  thousand  feet  QNH  one  zero  two  five\n descending  five  thousand  feet  QNH  one  zero  two  five  Swissair  One  Five  Zero  Yankee\n",
-        "short_ts": "Swiss 1 5 0 Y descend to 5 000 feet QNH 1025\ndescending 5 000 feet QNH 1025 Swissair 1 5 0 Y\n",
+        "short_ts": "SWR150Y descend to 5000 feet QNH 1025\ndescending 5000 feet QNH 1025 Swissair 150Y\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -23042,7 +23042,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210417_093637.wav",
         "full_ts": "\n  Hotel  Hotel  Whiskey  roger  traffic  just  now  at  whiskey  inbound  route  whiskey\n okay(-kay)  roger  we're  looking  for  the  traffic Hotel  Oscar Whiskey\n",
-        "short_ts": "\nH H W roger traffic just now at W inbound route W\nokay(-kay) roger we're looking for the traffic H OW\n",
+        "short_ts": "\nHHW roger traffic just now at W inbound route W\nokay kay roger we re looking for the traffic HOW\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -23430,7 +23430,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_131053.wav",
         "full_ts": "Hotel Hotel X-ray     proceeding now north of   landing\n",
-        "short_ts": "HHX proceeding now north of landing\n",
+        "short_ts": "HH X ray proceeding now north of landing\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -24478,7 +24478,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210426_122135.wav",
         "full_ts": " Delta  Whiskey  Lima  via  intersection  echo  line  up  runway  one  zero\n",
-        "short_ts": "D W L via intersection E line up runway 1 0\n",
+        "short_ts": "DWL via intersection E line up runway 10\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -25334,7 +25334,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_203052.wav",
         "full_ts": " Eiger  Six  Three  One  descend  to  flight  level  nine  zero\n descend   Eiger  Six  Three \n",
-        "short_ts": "Eiger 6 3 1 descend to flight level 9 0\ndescend Eiger 6 3\n",
+        "short_ts": "Eiger 631 descend to flight level 90\ndescend Eiger 63\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -26416,7 +26416,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_160641.wav",
         "full_ts": "Swiss One Zero One X-ray  contact  departure bye bye\n departure     Swiss One Zero One X-ray \n",
-        "short_ts": "SWR101X contact departure bye bye\ndeparture SWR101X\n",
+        "short_ts": "Swiss 101 X ray contact departure bye bye\ndeparture Swiss 101 X ray\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -27118,7 +27118,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_125308.wav",
         "full_ts": " left  towards  Whiskey  Two  and  then  outbound Route Whiskey  Hotel  Golf  Romeo\n",
-        "short_ts": "left towards W 2 000 10 outbound Route W H G R\n",
+        "short_ts": "left towards W 200010 outbound Route W HGR\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -28186,7 +28186,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_100356.wav",
         "full_ts": "\nmorning Speedbird Seven One Two six nine miles IL four four\nSpeedbird Seven   One   Two   tower hello  wind zero six zero degrees one five knots runway one four cleared to land\nrunway one four  Speedbird Seven   One   Two\n",
-        "short_ts": "\nmorning BAW712 69 miles IL 44\nSpeedbird 7 1 2 tower hello wind 060 degrees 15 knots runway 14 cleared to land\nrunway 14 Speedbird 7 1 2\n",
+        "short_ts": "\nmorning BAW712 69 miles IL 44\nBAW712 tower hello wind 060 degrees 15 knots runway 14 cleared to land\nrunway 14 BAW712\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -28498,7 +28498,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_081654.wav",
         "full_ts": "  Tower  good  day  Turkish  Two  Seven  X-ray  hold  before  runway  two  eight\n  hello  again  Turkish  Two  Seven  X-ray  Tower  taxiway  juliett  cross  runway  two  eight  contact  Apron  again  this  time  one  two  one  decimal  seven  five  five  ciao\n",
-        "short_ts": "Tower good day Turkish 2 7 X hold before runway 2 8\nhello again Turkish 2 7 X Tower taxiway J cross runway 2 8 contact Apron again this time 1 2 1 . 7 5 5 ciao\n",
+        "short_ts": "Tower good day Turkish 27 X ray hold before runway 28\nhello again Turkish 27 X ray Tower taxiway J cross runway 28 contact Apron again this time 121.755 ciao\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -28798,7 +28798,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_092648.wav",
         "full_ts": "Hotel Delta Charlie your're at the CTR frequency change approved bye bye\n",
-        "short_ts": "HDC your're at the CTR frequency change approved bye bye\n",
+        "short_ts": "HDC your re at the CTR frequency change approved bye bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -29510,7 +29510,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_152513.wav",
         "full_ts": " lining  up  runway  one  six  Edelweis  Two  Four   guten  tag \n",
-        "short_ts": "lining up runway 1 6 Edelweis 2 4 guten tag\n",
+        "short_ts": "lining up runway 16 Edelweis 24 guten tag\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -29764,7 +29764,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_143141.wav",
         "full_ts": " Zurich  Tower  Echo  Romeo   established  on  the  ILS  runway  one  four\n  Romeo  Quebec  Tower     and  after go-around  fly  over  runway  one  four  to  join  directly  the  outbound  track  the  climbout  area  runway  one  zero  for  the  Zurich east one delta  SID\n",
-        "short_ts": "Zurich Tower E R established on the ILS runway 14\nR Q Tower and after go-around fly over runway 1 4 to join directly the outbound track the climbout area runway 1 0 40 the Zurich east 1 D SID\n",
+        "short_ts": "Zurich Tower ER established on the ILS runway 14\nRQ Tower and after go around fly over runway 14 to join directly the outbound track the climbout area runway 1040 the Zurich east 1 D SID\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -30052,7 +30052,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_082217.wav",
         "full_ts": " Delta(-ta)  Kilo  Whiskey  we  have  quebec  on  board  vebit  three  whiskey  departure  and  initially  five  thousand  feet  going  one  thousand\n Delta  Kilo  Whiskey  report  ready  for  startup\n",
-        "short_ts": "Delta(-ta) K W we have Q on board vebit 3 W departure and initially 5 000 feet going 1 000\nD K W report ready 40 startup\n",
+        "short_ts": "D ta KW we have Q on board vebit 3 W departure and initially 5000 feet going 1000\nDKW report ready 40 startup\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -31246,7 +31246,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210414_080706.wav",
         "full_ts": "Turkish Six Foxtrot Lima is in hello taxi second right     via inner foxtrot and mike     to stand bravo three two\n",
-        "short_ts": "THY6FL is in hello taxi second 8 via inner F 000 M 00000 B 32\n",
+        "short_ts": "THY6FL is in hello taxi second 8 via inner F 000 M 00 1000 B 32\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -31542,7 +31542,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_205458.wav",
         "full_ts": " Two  Seven  Two  Six  wind  zero  four  zero  degrees  five  knots  runway  three  two  for  takeoff\n cleared  takeoff  runway  three  two  United  Twenty  Seven  Twenty  Six\n",
-        "short_ts": "2 7 2 6 wind 040 degrees 5 knots runway 3 2 for takeoff\ncleared takeoff runway 3 2 United 20 7 20 6\n",
+        "short_ts": "2726 wind 040 degrees 5 knots runway 32 for takeoff\ncleared takeoff runway 32 United 207 26\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -32274,7 +32274,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_064348.wav",
         "full_ts": " Oscar  Charlie  Kilo  wind  zero  three  zero  degrees  five  knots  runway  two  eight  cleared  for  takeoff\n",
-        "short_ts": "O C K wind 0 3 0 degrees 5 knots runway 2 8 cleared for takeoff\n",
+        "short_ts": "OCK wind 030 degrees 5 knots runway 28 cleared for takeoff\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -33118,7 +33118,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_170342.wav",
         "full_ts": " Tower  hello  again  Two  Zero  Eight  November  on  juliett\n Swiss  Two  Zero  Eight  November  Tower  hello  again  taxiway  juliett  cross  runway \n",
-        "short_ts": "Tower hello again 2 0 8 N on J\nSwiss 2 0 8 N Tower hello again taxiway J cross runway\n",
+        "short_ts": "Tower hello again 208N on J\nSwiss 208N Tower hello again taxiway J cross runway\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -33640,7 +33640,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210418_102439.wav",
         "full_ts": "Hotel Bravo Yankee Juliett Golf good afternoon behind you lining up PG Twenty Four line up runway two eight behind\n",
-        "short_ts": "HBYJG good afternoon behind you lining up PG 204 line up runway 28 behind\n",
+        "short_ts": "HBYJG good afternoon behind you lining up PG 24 line up runway 28 behind\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -33972,7 +33972,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_193006.wav",
         "full_ts": "   direct  zulu  hotel  two  six  six  and  we  continue  to  amiki  two  eight  transition  and  we  request  RNV  approach  for  runway  two  eight  Swiss  One  Five  Zero  Yankee\n Swiss  One  Five  Zero  Yankee  roger  RNV  approach  descen to flight  level  one  two  zero\n descending  flight  level  one  two  zero   danke   Swiss  One  Five  Zero  Yankee\n",
-        "short_ts": "direct ZH 2 6 6 and we continue to amiki 2 8 transition and we request RNV approach 40 runway 2 8 Swiss 1 5 0 Y\nSwiss 1 5 0 Y roger RNV approach descen to flight level 1 2 0\ndescending flight level 1 2 0 danke Swiss 1 5 0 Y\n",
+        "short_ts": "direct ZH 266 and we continue to amiki 28 transition and we request RNV approach 40 runway 28 SWR150Y\nSWR150Y roger RNV approach descen to flight level 120\ndescending flight level 120 danke SWR150Y\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -34174,7 +34174,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_135308.wav",
         "full_ts": " Hotel  Hotel  X-ray  request  long  landing\n Hotel  Hotel  X-ray  long  landing  is  approved\n long  landing  approved  Hotel  Hotel  X-ray\n Swiss  Air  Force  Five  Two  One  contact  apron  one  two  one  decimal  eight  five  five\n",
-        "short_ts": "H H X request long landing\nH H X long landing 30 approved\nlong landing approved H H X\nSwiss Air Force 5 2 1 contact apron 1 2 1 . 8 5 5\n",
+        "short_ts": "HH X ray request long landing\nHH X ray long landing 30 approved\nlong landing approved HH X ray\nSUI521 contact apron 121.855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -34458,7 +34458,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210420_112539.wav",
         "full_ts": "  roger  looking  out  Hotel  Yankee  Hotel  and  we're  approaching   Whiskey  Two\n",
-        "short_ts": "roger looking out H Y H and we're approaching W2\n",
+        "short_ts": "roger looking out HYH and we re approaching W2\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -34766,7 +34766,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_115909.wav",
         "full_ts": " Speedbird  Seven  One  Three  ready\n affirm  Speedbird  Seven  One  Three\n Speedbird  Seven  One  Three  roger  wind  zero  two  zero  degrees  one  zero  gusting  one  five  knots  runway  one  zero  cleared  for  takeoff\n  cleared  takeoff one  zero Speedbird  Seven  One  Three\n",
-        "short_ts": "Speedbird 7 1 3 ready\naffirm Speedbird 7 1 3\nSpeedbird 7 1 3 roger wind 020 degrees 10 gusting 15 knots runway 1 0 cleared for takeoff\ncleared takeoff 1 0 Speedbird 7 1 3\n",
+        "short_ts": "BAW713 ready\naffirm BAW713\nBAW713 roger wind 020 degrees 10 gusting 15 knots runway 10 cleared for takeoff\ncleared takeoff 10 BAW713\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -35618,7 +35618,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_101747.wav",
         "full_ts": " line  up  and  wait  runway  two  eight  and  report  ready \n",
-        "short_ts": "line up and wait runway 2 8 000 report ready\n",
+        "short_ts": "line up and wait runway 28000 report ready\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -36240,7 +36240,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210414_045047.wav",
         "full_ts": " KLM  Five  Zero  Golf  Apron  good  morning  pushback startup  approved\n good  morning  pushback  and(-nd) startup  approved  KLM  Five  Zero  Golf\n",
-        "short_ts": "KLM 5 0 G Apron good morning pushback startup approved\ngood morning pushback and(-nd) startup approved KLM 5 0 G\n",
+        "short_ts": "KLM 50G Apron good morning pushback startup approved\ngood morning pushback and nd startup approved KLM50G\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -36426,7 +36426,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_110843.wav",
         "full_ts": " runway  one  zero  cleared  for  takeoff  Swiss  One  Nine  Six\n",
-        "short_ts": "runway 1 0 cleared for takeoff Swiss 1 9 6\n",
+        "short_ts": "runway 10 cleared for takeoff SWR196\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -37718,7 +37718,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_122604.wav",
         "full_ts": " Hotel  India  Victor  Whiskey  three  thousand  five  hundred  feet\n Hotel  India  Victor  roger  expect  landing  runway  one  zero\n runway  one \n",
-        "short_ts": "H I V W3000500 feet\nH I V roger expect landing runway 1 0\nrunway 1\n",
+        "short_ts": "HIV W 3500 feet\nHIV roger expect landing runway 10\nrunway 1\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -37996,7 +37996,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210426_123419.wav",
         "full_ts": " Hotel  Zulu  Charlie  wind  zero   eight  cleared  for  lowpass  left  turn  after  Rumlang  to  whiskey  two outbound   route  whiskey\n",
-        "short_ts": "H Z C wind 08 cleared for lowpass left turn after Rumlang 00 W 2 outbound route W\n",
+        "short_ts": "HZC wind 08 cleared for lowpass left turn after Rumlang 100 W 2 outbound route W\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -38276,7 +38276,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_195743.wav",
         "full_ts": " KLM  Seven  One  Quebec  expect  inbound  turn  within  six  miles  from  now  and  in  total  distance  thirty  four(fo-)\n",
-        "short_ts": "KLM 7 1 Q expect inbound turn within 6 miles from now and in total distance 30 four(fo-)\n",
+        "short_ts": "KLM71Q expect inbound turn within 6 miles from now and in total distance 304 fo\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -39312,7 +39312,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210420_184852.wav",
         "full_ts": " Hotel  Delta  Lima  turn  left  for  base\n turning  left  for  base  Hotel  Delta  Lima\n",
-        "short_ts": "H D L turn left for base\nturning left for base H D L\n",
+        "short_ts": "HDL turn left for base\nturning left for base HDL\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -39522,7 +39522,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_160722.wav",
         "full_ts": "Sierra Papa Foxtrot Bravo Alpha tower hello hold position i'll call you back\n",
-        "short_ts": "SPFBA tower hello hold position i'll call you back\n",
+        "short_ts": "SPFBA tower hello hold position i ll call you back\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -39794,7 +39794,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_203700.wav",
         "full_ts": " Tui  Jet  Seven  Three  Mike  rate  of  descent  two  thousand  or  more\n",
-        "short_ts": "Tui Jet 7 3 M rate of descent 2 000 40 more\n",
+        "short_ts": "Tui Jet 73M rate of descent 2040 more\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -39970,7 +39970,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_113303.wav",
         "full_ts": " that's  maximum  three  thousand  five  hundred  and  report  Sierra  point\n",
-        "short_ts": "that's maximum 3 000 5 00 and report S .\n",
+        "short_ts": "that s maximum 3500 and report S.\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -40264,7 +40264,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_092907.wav",
         "full_ts": " Turkish  Three  Whiskey  Quebec  contact  Departure bye\n contact Departure   have  a  nice  day  Turkish  Three  Whiskey  Quebec\n you  too\n",
-        "short_ts": "Turkish 3 W Q contact Departure bye\ncontact Departure have a nice day Turkish 3 W Q\nyou too\n",
+        "short_ts": "THY3WQ contact Departure bye\ncontact Departure have a nice day THY3WQ\nyou too\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -40578,7 +40578,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_082227.wav",
         "full_ts": " Delta Kilo  Whiskey  we  are  ready  for  start\n roger  please   update  the  TOBT  via  your  handling  agent\n",
-        "short_ts": "DK W we are ready for start\nroger please update the TOBT via your handling agent\n",
+        "short_ts": "DKW we are ready for start\nroger please update the TOBT via your handling agent\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -40880,7 +40880,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210426_124247.wav",
         "full_ts": "Hotel Zulu Charlie again hello  I didn't hear the last part say again please\n",
-        "short_ts": "HZC again hello I didn't hear the last part say again please\n",
+        "short_ts": "HZC again hello I didn t hear the last part say again please\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -41162,7 +41162,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_073809.wav",
         "full_ts": "  Red  Lion  Two  Foxtrot  contact  Apron  one  two  one  decimal  eight  five  five   ciao \n",
-        "short_ts": "Red Lion 2 F contact Apron 1 2 1 . 8 5 5 ciao\n",
+        "short_ts": "Red Lion 2F contact Apron 121.855 ciao\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -41686,7 +41686,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_165305.wav",
         "full_ts": " Abelag  Four  Nine  Two  contact  apron  one  two  one  decimal  eight  five  five\n one  two  one  eight  five  five \n",
-        "short_ts": "Abelag 4 9 2 contact apron 1 2 1 . 8 5 5\n1 2 1 8 5 5\n",
+        "short_ts": "Abelag 492 contact apron 121.855\n121855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -41908,7 +41908,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_181554.wav",
         "full_ts": "Lot Four Two Zero  wind zero one zero three four knots runway one zero   cleared for takeoff\n",
-        "short_ts": "Lot 420 wind 0034 knots runway 10 cleared for takeoff\n",
+        "short_ts": "Lot 420 wind 01034 knots runway 10 cleared for takeoff\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -42140,7 +42140,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_194841.wav",
         "full_ts": " Fraction  Two  Five  Zero  Foxtrot  turn  left  heading  zero  six  five\n",
-        "short_ts": "Fraction 2 5 0 F turn left heading 0 6 5\n",
+        "short_ts": "NJE250F turn left heading 065\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -42324,7 +42324,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_142917.wav",
         "full_ts": " Swiss  Two One Eight Romeo  contact apron one two one decimal eight five five\none two one eight four five   Two One  Eight  Romeo\n",
-        "short_ts": "SWR218R contact apron 121.855\n121845 21 8 R\n",
+        "short_ts": "SWR218R contact apron 121.855\n121845 218R\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -42610,7 +42610,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210423_072413.wav",
         "full_ts": " Hotel  Bravo  Charlie  Zulu  Zulu  passing  whiskey  two  thousand  five  hundred\n Hotel  Zulu  Zulu\n",
-        "short_ts": "H B C Z Z passing W2000500\nH Z Z\n",
+        "short_ts": "HBCZZ passing W 2500\nHZZ\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -42952,7 +42952,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_083206.wav",
         "full_ts": " Lima Hotel\nLima Hotel  should be around twelve two o'clock make a right turn now to  whiskey  two\n",
-        "short_ts": "LH\nLH should be around 122 o'clock make a right turn now to W 2\n",
+        "short_ts": "LH\nLH should be around 1220 clock make a right turn now to W 2\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -43252,7 +43252,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_150617.wav",
         "full_ts": " uniform  on  board  one  two  one  seven  five  five   wunderschoenen  nachmittag   Edelweiss  Two  Four\n thank  you  bye(b-)\n",
-        "short_ts": "U on board 1 2 1 7 5 5 wunderschoenen nachmittag Edelweiss 2 4\nthank you bye(b-)\n",
+        "short_ts": "U on board 121755 wunderschoenen nachmittag EDW24\nthank you bye b\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -43538,7 +43538,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_161324.wav",
         "full_ts": " Hotel  Lima  Hotel wind zero four degrees \nXT\n",
-        "short_ts": "H L H wind 04 degrees\nXT\n",
+        "short_ts": "HLH wind 04 degrees\nXT\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -43822,7 +43822,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_184418.wav",
         "full_ts": " Five Five  correction Five Eight Four Papa takes a kilo cross runway one zero and contact apron    one two one decimal   seven five five\n",
-        "short_ts": "55 correction 584P takes a K cross runway 10 and contact apron 121.755\n",
+        "short_ts": "unk 55 correction 584P takes a K cross runway 10 and contact apron 121.755\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -44038,7 +44038,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_092122.wav",
         "full_ts": " Delivery  good  day  Sunturk  Three  One  Hotel  stand  number  bravo  three  one  information  uniform  destination lima  tango foxtrot juliett  Boeing  seven  three  eight  ready  to  copy  clearance\n Sunturk  Three  One  Hotel  Delivery  good  morning  information  victor  is  now  current  cleared  to  Istanbul  runway  one  zero  deges  one  echo  departure  climb(cl-)  five  thousand  feet  squawk  three  zero  two  four\n",
-        "short_ts": "Delivery good day Sunturk 3 1 H stand number B31 information U destination LTFJ Boeing 738 ready to copy clearance\nSunturk 3 1 H Delivery good morning information V is now current cleared to Istanbul runway 1 0 deges 1 E departure climb(cl-) 5 000 feet squawk 3 0 2 4\n",
+        "short_ts": "Delivery good day PGT31H stand number B31 information U destination LTFJ Boeing 738 ready to copy clearance\nSunturk 31H Delivery good morning information V is now current cleared to Istanbul runway 10 deges 1 E departure climb cl 5000 feet squawk 3024\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -44348,7 +44348,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_200735.wav",
         "full_ts": " established   nine  two  eight  KLM  Seven   One  Quebec\n KLM  Seven  One  Quebec  roger  contact  Tower  one  one  eight  one   tschuess \n  schoenen  dank  tschuess   one  one  eight  decimal  one  KLM  Seven  One  Quebec\n",
-        "short_ts": "established 928 KLM7 1 Q\nKLM 7 1 Q roger contact Tower 1 1 8 1 tschuess\nschoenen dank tschuess 1 1 8 . 1 KLM 7 1 Q\n",
+        "short_ts": "established 928 KLM7 1Q\nKLM71Q roger contact Tower 1181 tschuess\nschoenen dank tschuess 118.1 KLM71Q\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -44528,7 +44528,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210413_101308.wav",
         "full_ts": "okay cleared to push after seven three seven passes behind is cleared to start  is fifty two\n",
-        "short_ts": "okay cleared to push after 737 passes behind is cleared to start is 502\n",
+        "short_ts": "okay cleared to push after 737 passes behind is cleared to start is 52\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -45280,7 +45280,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_123449.wav",
         "full_ts": " Delta  India  Hotel  Kilo  Whiskey  Tower  hello  again  hold  short  of  runway  one  zero\n",
-        "short_ts": "D I H K W Tower hello again hold short of runway 1 0\n",
+        "short_ts": "DIHKW Tower hello again hold short of runway 10\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -45558,7 +45558,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_110700.wav",
         "full_ts": "  tower     line up and wait runway three four departure in around \n",
-        "short_ts": "tower line up and wait runway 34 departure in around\n",
+        "short_ts": "unk tower line up and wait runway 34 departure in around hes\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -46280,7 +46280,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronN_121_85MHz_20210414_055618.wav",
         "full_ts": " Singapore  Three  Four  Six  Apron  hello  taxi  on  juliett  hold  short  runway  two  eight\n taxi  on  juliett  hold  short  runway  two  eight  Singapore(-apore)  Three  Four  Six\n",
-        "short_ts": "Singapore 3 4 6 Apron hello taxi on J hold short runway 2 8\ntaxi on J hold short runway 2 8 Singapore(-apore) 3 4 6\n",
+        "short_ts": "Singapore 346 Apron hello taxi on J hold short runway 28\ntaxi on J hold short runway 28 Singapore apore 346\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -46512,7 +46512,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_202738.wav",
         "full_ts": " Eurotrans  Four  Five  Victor  contact  Rhein  one  two  zero  decimal  nine  three  zero  bye\n",
-        "short_ts": "Eurotrans 4 5 V contact Rhein 1 2 0 . 9 3 0 bye\n",
+        "short_ts": "BCS45V contact Rhein 120.930 bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -46976,7 +46976,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_095149.wav",
         "full_ts": "Hotel India Victor Whiskey three thousand five hundred feet\nHotel India Victor   danke \n",
-        "short_ts": "HIVW 3000500 feet\nHIV danke\n",
+        "short_ts": "HIVW 3500 feet\nHIV danke\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -47532,7 +47532,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_064821.wav",
         "full_ts": " Zurich  Tower  the  Hotel  Bravo  Victor  Tango  Sierra   guten  morgen    now  established  ILS  runway  three  four \n Zurich(-ich)  Tower   guten  morgen   Victor  Tango  Sierra   number  two  continue\n continue  Tango  Sierra  danke \n",
-        "short_ts": "Zurich Tower the H B V T S guten morgen now established ILS runway 3 4\nZurich(-ich) Tower guten morgen V T S number 2 continue\ncontinue T S danke\n",
+        "short_ts": "Zurich Tower the HBVTS guten morgen now established ILS runway 34\nZurich ich Tower guten morgen VTS number 2 continue\ncontinue TS danke\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -48148,7 +48148,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_190724.wav",
         "full_ts": " Hotel  Hotel  Romeo  when  ready  descend  six  thousand  feet  QNH  one  zero  two  five\n",
-        "short_ts": "H H R when ready descend 6 000 feet QNH 1025\n",
+        "short_ts": "HHR when ready descend 6000 feet QNH 1025\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -48654,7 +48654,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_150537.wav",
         "full_ts": " Eiger  Four  Four  Five  holding  short  runway  one  zero\n Eiger  Four  Four   Five  taxi  juliett  cross  runway  one  zero  contact  apron  one  two  one  seven  five  five  bye  bye\n on  juliett  cross  runway  one  zero  one  two  one  seven  five  five  Eiger  Four  Four  Five bye by\n",
-        "short_ts": "Eiger 4 4 5 holding short runway 1 0\nEiger 4 4 5 taxi J cross runway 1 0 contact apron 1 2 1 7 5 5 bye bye\n1 J cross runway 1 0 1 2 1 7 5 5 Eiger 4 4 5 bye by\n",
+        "short_ts": "Eiger 445 holding short runway 10\nEiger 445 taxi J cross runway 10 contact apron 121755 bye bye\n1 J cross runway 10121755 Eiger 445 bye by\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -49188,7 +49188,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_163637.wav",
         "full_ts": " hello  good  day  this  is  Air  Nostrum  Seven  Eight  Juliett  Mike  nine  miles  final  one  four  fully  established\n",
-        "short_ts": "hello good day this is Air Nostrum 7 8 J M 9 miles final 14 fully established\n",
+        "short_ts": "hello good day this is ANE78JM 9 miles final 14 fully established\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -49694,7 +49694,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_122454.wav",
         "full_ts": " Jet  Management  Six  One  Three  climb  to  flight  level  one  two  zero\n",
-        "short_ts": "Jet Management 6 1 3 climb to flight level 1 2 0\n",
+        "short_ts": "IJM613 climb to flight level 120\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -49972,7 +49972,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210416_130649.wav",
         "full_ts": "Hotel Bravo Papa Hotel Delta unknown VFR traffic without altitude indications twelve o'clock two miles crossing left to right\n",
-        "short_ts": "HBPHD unknown VFR traffic without altitude indications 12 o'clock 2 miles crossing left 008\n",
+        "short_ts": "HBPHD unknown VFR traffic without altitude indications 120 clock 2 miles crossing left 108\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -50646,7 +50646,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_180536.wav",
         "full_ts": " hello  Apron  Lot   Four  Two  Zero  fully  ready\n Lot  Four  Two  Zero  roger  then  for   push  and  start stand  by for  apron  one  two  one  decimal   seven  five  five\n",
-        "short_ts": "hello Apron Lot 4 2 0 fully ready\nLot 4 2 0 roger then for push and start stand by for apron 1 2 1 . 7 5 5\n",
+        "short_ts": "hello Apron Lot 420 fully ready\nLOT420 roger then for push and start stand by for apron 121.755\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -50888,7 +50888,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_145103.wav",
         "full_ts": " Delta  Foxtrot  Juliett  Tango  Tango  Tower   hallo   line  up  and  wait  runway  one  zero\n",
-        "short_ts": "D F J T T Tower hallo line up and wait runway 1 0\n",
+        "short_ts": "DFJTT Tower hallo line up and wait runway 10\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -51176,7 +51176,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_204421.wav",
         "full_ts": " Qatari  Eight  Two  Six  Eight  Swiss  Radar  identified  climb  to  flight  level  two  nine  zero\n",
-        "short_ts": "Qatari 8 2 6 8 Swiss Radar identified climb to flight level 2 9 0\n",
+        "short_ts": "Qatari 8268 Swiss Radar identified climb to flight level 290\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -51344,7 +51344,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_204814.wav",
         "full_ts": " Sprintair  Six  Two  Six  One  Swiss  Radar  identified  confirm  requested  level\n",
-        "short_ts": "Sprintair 6 2 6 1 Swiss Radar identified confirm requested level\n",
+        "short_ts": "Sprintair 6261 Swiss Radar identified confirm requested level\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -51512,7 +51512,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_164641.wav",
         "full_ts": " yes  looks  good  wind  check  zero  three  zero  degrees  one  zero  knots  head  wind  of  about  six  knots  runway  three  four  so  after  whiskey  two  turn  left  base  three  four\n",
-        "short_ts": "yes looks good wind check 030 degrees 10 knots head wind of about 6 knots runway 34 so after W 2 turn left base 34\n",
+        "short_ts": "yes looks good wind check 030 degrees 10 knots head wind of about 6 knots runway 3 400 after W 2 turn left base 34\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -51782,7 +51782,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210416_121853.wav",
         "full_ts": "Delta Foxtrot the  helicopter twelve correction   eleven   it's  about one oclock one   miles  out\n",
-        "short_ts": "DF the helicopter 12 correction 11 it's about 1 oclock 1 miles out\n",
+        "short_ts": "DF the helicopter 12 correction 11 it s about 1 oclock 1 unk miles out\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -52488,7 +52488,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_194825.wav",
         "full_ts": " continue  as  cleared  descending  level  one  two  zero  and  expecting  vectors  ILS  two  eight  Swiss  Three  One  Yankee\n",
-        "short_ts": "continue as cleared descending level 1 2 0 and expecting vectors ILS 2 8 Swiss 3 1 Y\n",
+        "short_ts": "continue as cleared descending level 120 and expecting vectors ILS 28 SWR31Y\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -53582,7 +53582,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_180548.wav",
         "full_ts": "  for  push  one  two  one  seven  five  five  Lot  Four  Two  Zero  bye\n",
-        "short_ts": "for push 1 2 1 7 5 5 Lot 4 2 0 bye\n",
+        "short_ts": "for push 121755 LOT420 bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -54110,7 +54110,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_155145.wav",
         "full_ts": " Tower     Twenty  One  Three  Delta  four  miles  on  one  four\n Swiss  Two  One  Three  Delta  Tower  hello  wind  one  two  zero  degrees  six  knots  runway  one  four  cleared  to  land  hotel  two  available\n cleared  to  land  with  hotel  two  Swiss  Two  One  Three  Delta  cleared  to  land  one  four\n",
-        "short_ts": "Tower 20 1 3 D 4 miles on 14\nSwiss 2 1 3 D Tower hello wind 120 degrees 6 knots runway 1 4 cleared to land H2 available\ncleared to land with H2 Swiss 2 1 3 D cleared to land 1 4\n",
+        "short_ts": "Tower 2013D 4 miles on 14\nSwiss 213D Tower hello wind 120 degrees 6 knots runway 14 cleared to land H2 available\ncleared to land with H2 SWR213D cleared to land 14\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -54890,7 +54890,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_084119.wav",
         "full_ts": " Tower  Swiss  Two  Five  Seven  juliett \n Two  Five  Seven  cross  two  eight  apron  one  two  one  decimal  seven  five  five   schoenen  tag  chau \n",
-        "short_ts": "Tower Swiss 2 5 7 J\n2 5 7 cross 2 8 apron 1 2 1 . 7 5 5 schoenen tag chau\n",
+        "short_ts": "Tower Swiss 257 J\n257 cross 28 apron 121.755 schoenen tag chau\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -55450,7 +55450,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_122239.wav",
         "full_ts": "November Tango X-ray contact apron one two one decimal eight five five\none eight five five\n",
-        "short_ts": "NTX contact apron 121.855\n1855\n",
+        "short_ts": "NT X ray contact apron 121.855\n1855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -55914,7 +55914,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_064001.wav",
         "full_ts": "Hotel Uniform Uniform  contact departure and schone_tag_(bye)\ndeparture  Hotel Uniform Uniform schone_tag_(bye)\n",
-        "short_ts": "HUU contact departure and schone_tag_(bye)\ndeparture HUU schone_tag_(bye)\n",
+        "short_ts": "HUU contact departure and schone_tag_ bye\ndeparture HUU schone_tag_ bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -56494,7 +56494,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_110632.wav",
         "full_ts": "XT\n  Seven  Tower  hello\n  taxi  juliett  cross  runway  two  eight  when  crossing  contact  apron  one  two  one  decimal  seven  five  five  good  day\n",
-        "short_ts": "XT\n7 Tower hello\ntaxi J cross runway 2 8 when crossing contact apron 1 2 1 . 7 5 5 good day\n",
+        "short_ts": "XT\n7 Tower hello\ntaxi J cross runway 28 when crossing contact apron 121.755 good day\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -56766,7 +56766,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_144649.wav",
         "full_ts": " Tower  good  afternoon  Qatari  Six  Hotel  Mike  we  are  alpha  two  we  are  ready  for  departure\n hello  Qatari  Six  Hotel  Mike  Zurich  Tower  line  up  and  wait  runway  two  eight\n line  up\n   Romeo\n",
-        "short_ts": "Tower good afternoon Qatari 6 H M we are A2 we are ready for departure\nhello Qatari 6 H M Zurich Tower line up and wait runway 2 8\nline up\nR\n",
+        "short_ts": "Tower good afternoon QTR6HM we are A2 we are ready for departure\nhello Qatari 6HM Zurich Tower line up and wait runway 28\nline up\nR\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -57332,7 +57332,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210418_125055.wav",
         "full_ts": " Hotel  Zulu  Papa  after  whiskey  two  proceed  via  threshold  runway \n",
-        "short_ts": "H Z P after W 2 proceed via 3 runway\n",
+        "short_ts": "HZP after W 2 proceed via 3 runway\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -57892,7 +57892,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_140037.wav",
         "full_ts": " Hotel  Whiskey  Whiskey  wind  zero  five  zero  degrees  nine  knots  gusting  one  five  runway  one  four  cleared  to  land\n cleared  to  land  one  four  Hotel  Whiskey\n",
-        "short_ts": "H W W wind 050 degrees 9 knots gusting 15 runway 1 4 cleared to land\ncleared to land 1 4 H W\n",
+        "short_ts": "HWW wind 050 degrees 9 knots gusting 15 runway 14 cleared to land\ncleared to land 14 HW\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -58182,7 +58182,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_142943.wav",
         "full_ts": " Tower  Amex  Two  Whiskey   good  afternoon  established  on  ILS  runway  one  four\nXT\nzero degrees six knots  runway  one  four  cleared  to  land\n runway  one  four  cleared  to  land  Amex  Two\n",
-        "short_ts": "Tower Amex 2 W good afternoon established on ILS runway 14\nXT\n0 degrees 6 knots runway 1 4 cleared to land\nrunway 1 4 cleared to land AMQ2\n",
+        "short_ts": "Tower Amex 2W good afternoon established on ILS runway 14\nXT\n0 degrees 6 knots runway 14 cleared to land\nrunway 14 cleared to land AMQ2\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -58444,7 +58444,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_174059.wav",
         "full_ts": " Nostrum  Eight  Seven  Whiskey  Bravo  contact  tower  one  one  eight  decimal  one  good  bye\n",
-        "short_ts": "Nostrum 8 7 W B contact tower 1 1 8 . 1 good bye\n",
+        "short_ts": "Nostrum 87WB contact tower 118.1 good bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -58992,7 +58992,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_071605.wav",
         "full_ts": " Hotel  Bravo  Juliett  Sierra  Kilo  Tower   guten  morgen   line  up  runway  two  eight\n line  up  and  wait  two  eight  Sierra  Kilo\n",
-        "short_ts": "H B J S K Tower guten morgen line up runway 2 8\nline up and wait 2 8 S K\n",
+        "short_ts": "HBJSK Tower guten morgen line up runway 28\nline up and wait 28 SK\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -59274,7 +59274,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_123314.wav",
         "full_ts": "Hotel(-tel) Kilo  Golf  traffic  is  a  helicopter  approaching  Whiskey  One opposite\n looking  out  Hotel  Kilo  Golf\n",
-        "short_ts": "Hotel(-tel) K G traffic is a helicopter approaching W1 opposite\nlooking out H K G\n",
+        "short_ts": "H tel KG traffic is a helicopter approaching W1 opposite\nlooking out HKG\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -60580,7 +60580,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210421_053515.wav",
         "full_ts": " hello  you  may  vacate  the  runway  later  on  not  via  the  first  but  via  the  second  for  faster  taxi  and  the  second  exit  is  called Hotel Two\n okay  we'll  do  the   we'll  go  to  the  end  thanks\n",
-        "short_ts": "hello you may vacate the runway later on not via the first but via the second for faster taxi and the second exit is called H2\nokay we'll do the we'll go to the end thanks\n",
+        "short_ts": "hello you may vacate the runway later on not via the first but via the second for faster taxi and the second exit is called H2\nokay we ll do the we ll go to the end thanks\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -60814,7 +60814,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210417_041400.wav",
         "full_ts": " Eiger  Six  Hundred  Zurich  Tower   schoenen  guten  morgen   line  up  runway  three  four\n",
-        "short_ts": "Eiger 6 00 Zurich Tower schoenen guten morgen line up runway 3 4\n",
+        "short_ts": "Eiger 600 Zurich Tower schoenen guten morgen line up runway 34\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -61598,7 +61598,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_055739.wav",
         "full_ts": "  Tower  Singapore  Three  Four  Six  holding  short  runway  two  eight\n Singapore  Three  Four  Six  Tower  hello  again  taxiway  juliett  cross  runway  two  eight\n",
-        "short_ts": "Tower Singapore 3 4 6 holding short runway 2 8\nSingapore 3 4 6 Tower hello again taxiway J cross runway 2 8\n",
+        "short_ts": "Tower Singapore 346 holding short runway 28\nSingapore 346 Tower hello again taxiway J cross runway 28\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -62202,7 +62202,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_200621.wav",
         "full_ts": " cleared  ILS  runway  two  eight   cal you  established  KLM  Seven  One  Quebec\n",
-        "short_ts": "cleared ILS runway 2 8 cal you established KLM 7 1 Q\n",
+        "short_ts": "cleared ILS runway 28 cal you established KLM71Q\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -64474,7 +64474,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_182848.wav",
         "full_ts": " Swiss  One  Three  Two  Seven  apron  one  two  one  decimal  eight  five  five\n one  two  one  decimal  eight  five  five\n",
-        "short_ts": "Swiss 1 3 2 7 apron 1 2 1 . 8 5 5\n1 2 1 . 8 5 5\n",
+        "short_ts": "SWR1327 apron 121.855\n121.855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -64676,7 +64676,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210418_111112.wav",
         "full_ts": " Delta(-ta)  Lima  frequency  change  approved   bis  spaeter \n leaving  frequency   bis  spaeter   Hotel  Delta  Lima\n",
-        "short_ts": "Delta(-ta) L frequency change approved bis spaeter\nleaving frequency bis spaeter H D L\n",
+        "short_ts": "D ta L frequency change approved bis spaeter\nleaving frequency bis spaeter HDL\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -64986,7 +64986,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_194226.wav",
         "full_ts": "  Swiss  One  Five  Zero  Yankee  established  RNP  runway  two  eight\n Swiss  One  Five  Zero  Yankee  roger  contact  Tower  one  one  eight  one   tschuess \n one  one  eight  decimal  one   Swiss  One  Five  Zero  Yankee\n",
-        "short_ts": "Swiss 1 5 0 Y established RNP runway 28\nSwiss 1 5 0 Y roger contact Tower 1 1 8 1 tschuess\n1 1 8 . 1 Swiss 1 5 0 Y\n",
+        "short_ts": "SWR150Y established RNP runway 28\nSWR150Y roger contact Tower 1181 tschuess\n118.1 SWR150Y\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -65186,7 +65186,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_105635.wav",
         "full_ts": " Ascot  One  Nine  One  Four  Zurich  Tower  hello  again  on  taxiway  juliett  cross  runway  one  zero  contact Apron  one  two  one  decimal  seven  five  five  cheerio\n",
-        "short_ts": "Ascot 1 9 1 4 Zurich Tower hello again 1 taxiway J cross runway 1 0 contact Apron 1 2 1 . 7 5 5 cheerio\n",
+        "short_ts": "Ascot 1914 Zurich Tower hello again 1 taxiway J cross runway 10 contact Apron 121.755 cheerio\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -65488,7 +65488,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_132724.wav",
         "full_ts": " Tango  Kilo  Alpha  contact  apron  one  two  one  decimal  eight  five  five\n",
-        "short_ts": "T K A contact apron 1 2 1 . 8 5 5\n",
+        "short_ts": "TKA contact apron 121.855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -66322,7 +66322,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_063630.wav",
         "full_ts": " Foxtrot  Sierra  Foxtrot  Five  Eight  Four  Papa  Tower  good  morning  for  shorter  taxi  you  may  vacate  at  the  very  end  hotel  three  wind  zero  four  zero  degrees  eight  knots  runway  one  four  cleared  to  land\n",
-        "short_ts": "F S F 5 8 4 P Tower good morning for shorter taxi you may vacate at the very 000 H 3 wind 040 degrees 8 knots runway 1 4 cleared to land\n",
+        "short_ts": "FSF584P Tower good morning for shorter taxi you may vacate at the very 1000 H 3 wind 040 degrees 8 knots runway 14 cleared to land\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -66862,7 +66862,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_150057.wav",
         "full_ts": "Fly  Tyrol  Eight  wind  zero  five  zero   five  knots  runway  one  zero  cleared  for  takeoff\n  Roger  one  zero  for  takeoff  Fly  Tyrol  Eight\n Eiger  Four  Four  Five  calling\n",
-        "short_ts": "Fly Tyrol 8 wind 0 5 0 5 knots runway 1 0 cleared for takeoff\nRoger 1 0 for takeoff Fly Tyrol 8\nEiger 4 4 5 calling\n",
+        "short_ts": "FTY8 wind 050 5 knots runway 10 cleared for takeoff\nRoger 10 for takeoff FTY8\nEiger 445 calling\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -67148,7 +67148,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_140002.wav",
         "full_ts": " Hotel  Victor  Charlie  vacate  first  right  and  to  hotel  one  and  contact  apron  one  two  one  decimal  eight  five  five\n",
-        "short_ts": "H V C vacate first 8 000 00 H 1 and contact apron 1 2 1 . 8 5 5\n",
+        "short_ts": "HVC vacate first 800 H 1 and contact apron 121.855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -67436,7 +67436,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_162402.wav",
         "full_ts": "Zurrich tower hello Air Nostrum Seven Eight Juliett Mike on  ILS one one \nAir Nostrum Seven Eight Juliett Mike tower hello  wind zero one three degrees one zero knots about   five knots   tailwind   runway one four   cleared to land\n",
-        "short_ts": "Zurrich tower hello ANE78JM on ILS 11\nANE78JM tower hello wind 013 degrees 10 knots about 5 knots tailwind runway 14 cleared to land\n",
+        "short_ts": "Zurrich tower hello ANE78JM on ILS 11 unk\nANE78JM tower hello wind 013 degrees 10 knots about 5 knots tailwind runway 14 cleared to land\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -67718,7 +67718,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronN_121_85MHz_20210419_045746.wav",
         "full_ts": " turning  to  the  right  Charlie  to  de-icing  lane  number  three  Edelweiss  One  Two  Papa\n",
-        "short_ts": "turning to the 8 C to de-icing lane number 3 Edelweiss 1 2 P\n",
+        "short_ts": "turning to the 8 C to 9 icing lane number 3 EDW12P\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -67984,7 +67984,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210420_194619.wav",
         "full_ts": "  KLM  Seven  One  Quebec  just  to  be sure   which  position  you  want  us  to  fly  because  we  are  now inbound  Zulu  Hotel  Two Six Six\n",
-        "short_ts": "KLM 7 1 Q just to be sure which position you want us to fly because we are now inbound ZH266\n",
+        "short_ts": "KLM71Q just to be sure which position you want us to fly because we are now inbound ZH266\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -68176,7 +68176,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_072632.wav",
         "full_ts": " Hotel  Delta  Lima  contact  Departure   \n Departure     Delta  Lima\n",
-        "short_ts": "H D L contact Departure\nDeparture D L\n",
+        "short_ts": "HDL contact Departure\nDeparture DL\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -68514,7 +68514,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_163200.wav",
         "full_ts": " Hotel  Bravo  Zulu  November  Charlie  Zurich  Tower  cleared   VFR  routing  is  approved  QNH  one  zero  two  seven\n",
-        "short_ts": "H B Z N C Zurich Tower cleared VFR routing is approved QNH 1027\n",
+        "short_ts": "HBZNC Zurich Tower cleared VFR routing is approved QNH 1027\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -68964,7 +68964,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210414_140631.wav",
         "full_ts": "Hotel Bravo Lima Whiskey Whiskey apron cleared speed taxi behind  inbound x-ray yankee to jersey vector three\n",
-        "short_ts": "HBLWW apron cleared speed taxi behind inbound XY to jersey vector 3\n",
+        "short_ts": "HBLWW apron cleared speed taxi behind inbound x ray Y to jersey vector 3\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -69256,7 +69256,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210420_072533.wav",
         "full_ts": " after  Whiskey  Two  proceed  via  overhead  to  Echo  Two  Hotel  Bravo  Lima  Uniform(-form)  Juliett\n",
-        "short_ts": "after W 2 proceed via overhead 00 E 2 H B L Uniform(-form) J\n",
+        "short_ts": "after W 2 proceed via overhead 100 E 2 HBLU form J\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -69838,7 +69838,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_094834.wav",
         "full_ts": " Prince  Aviation  Nine  Charlie  Juliett  line  up  and  wait  runway  two  eight\n",
-        "short_ts": "Prince Aviation 9 C J line up and wait runway 2 8\n",
+        "short_ts": "Prince Aviation 9CJ line up and wait runway 28\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -70150,7 +70150,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210423_055030.wav",
         "full_ts": " Hotel  Yankee  Delta  you're  reaching   Whiskey you  may  change  the  frequency  bye  bye\n  guten  morgen   Yankee  Delta\n",
-        "short_ts": "H Y D you're reaching W you may change the frequency bye bye\nguten morgen Y D\n",
+        "short_ts": "HYD you re reaching W you may change the frequency bye bye\nguten morgen YD\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -70418,7 +70418,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_194605.wav",
         "full_ts": " established  RNP two  eight  Swiss  Nine  Eight  Romeo\n Nine  Eight  Romeo roger contact  Tower  one  one  eight  one   tschuess \n eightteen  one   schoenen  abend   Swiss  Nine  Eight  Romeo\n bye by  danke \n",
-        "short_ts": "established RNP 2 8 Swiss 9 8 R\n9 8 R roger contact Tower 1 1 8 1 tschuess\n18 1 schoenen abend Swiss 9 8 R\nbye by danke\n",
+        "short_ts": "established RNP 28 SWR98R\n98R roger contact Tower 1181 tschuess\n181 schoenen abend SWR98R\nbye by danke\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -70616,7 +70616,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronN_121_85MHz_20210414_140149.wav",
         "full_ts": " Hotel  Victor  Charlie  give  way  to  the  Diamond  from  the  left\n",
-        "short_ts": "H V C give way to the Diamond from the left\n",
+        "short_ts": "HVC give way to the Diamond from the left\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -70906,7 +70906,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_171938.wav",
         "full_ts": " Turkish  Three  Hotel  Sierra  wind  zero  three  zero  degrees  one  zero  knots  runway  one  zero  cleared  for  takeoff\n",
-        "short_ts": "Turkish 3 H S wind 030 degrees 10 knots runway 1 0 cleared for takeoff\n",
+        "short_ts": "THY3HS wind 030 degrees 10 knots runway 10 cleared for takeoff\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -71162,7 +71162,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_160840.wav",
         "full_ts": " Fraction  Four  Nine  Eight  Alpha  line  up  and  wait  runway  one  zero\n",
-        "short_ts": "Fraction 4 9 8 A line up and wait runway 1 0\n",
+        "short_ts": "NJE498A line up and wait runway 10\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -71448,7 +71448,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_054949.wav",
         "full_ts": " yes  sir   we're  cleared  to  cross  two  eight  and  will  go  to  Apron  twenty  one  seven  five  five  on  the  other  side  thanks\n fine\n",
-        "short_ts": "yes sir we're cleared to cross 2 8 and will go to Apron 20 1 7 5 5 1 the other side thanks\nfine\n",
+        "short_ts": "yes sir we re cleared to cross 28 and will go to Apron 2017551 the other side thanks\nfine\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -71690,7 +71690,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210422_153126.wav",
         "full_ts": " Zurich  Tower  Police  Helicopter  Hotel  Bravo  Zulu  November  Charlie  approaching  Kollbrunn  three  thousand  feet  for  landing  Dubendorf\n",
-        "short_ts": "Zurich Tower Police Helicopter H B Z N C approaching Kollbrunn 3000 feet for landing Dubendorf\n",
+        "short_ts": "Zurich Tower Police Helicopter HBZNC approaching Kollbrunn 3000 feet for landing Dubendorf\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -71992,7 +71992,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_080623.wav",
         "full_ts": " Hotel  Yankee  Hotel  leave  control  zone  via  route  whiskey  wind  is  calm  runway  two  eight  cleared  for  takeoff\n runway  two  eight  cleared  takeoff  leaving  route  whiskey  Hotel  Yankee  Hotel\n",
-        "short_ts": "H Y H leave control 1 via route W wind is calm runway 2 8 cleared for takeoff\nrunway 2 8 cleared takeoff leaving route W H Y H\n",
+        "short_ts": "HYH leave control 1 via route W wind is calm runway 28 cleared for takeoff\nrunway 28 cleared takeoff leaving route W HYH\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -72368,7 +72368,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_200111.wav",
         "full_ts": " Swiss  Three  One  Yankee  turn  right  heading  two  five  zero  cleared  ILS  approach  runway  two  eight  report  established\n right  heading  two  five  zero  cleared  ILS  approach  runway  two  eight  wilco  Swiss  Three  One  Yankee\n",
-        "short_ts": "Swiss 3 1 Y turn 8 heading 2 5 0 cleared ILS approach runway 2 8 report established\n8 heading 2 5 0 cleared ILS approach runway 2 8 wilco Swiss 3 1 Y\n",
+        "short_ts": "SWR31Y turn 8 heading 250 cleared ILS approach runway 28 report established\n8 heading 250 cleared ILS approach runway 28 wilco SWR31Y\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -72550,7 +72550,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_161024.wav",
         "full_ts": " Swissair  Six  Seven   may  we   vacate  hotel  two\n Swiss  Two  Zero  Six  Seven  affirm  hotel  two  is  available\n",
-        "short_ts": "Swissair 6 7 may we vacate H2\nSwiss 2 0 6 7 affirm H2 is available\n",
+        "short_ts": "Swissair 67 may we vacate H2\nSWR2067 affirm H2 is available\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -73078,7 +73078,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_153653.wav",
         "full_ts": " Swiss  Three  Six  Alpha  standby  apron  one  two  one  decimal  seven  five  five\n one  two  one  seven  five  five     Swiss  Three  Six  Alpha\n  \n",
-        "short_ts": "Swiss 3 6 A standby apron 1 2 1 . 7 5 5\n1 2 1 7 5 5 Swiss 3 6 A\n\n",
+        "short_ts": "SWR36A standby apron 121.755\n121755 SWR36A\n\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -73380,7 +73380,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210414_155909.wav",
         "full_ts": "i guess X-ray Zero Eight  startup is approved\nhello push and start approved \nFraction Four Nine Eight Alpha startup is approved\n",
-        "short_ts": "i guess X08 startup is approved\nhello push and start approved\nFraction 498A startup is approved\n",
+        "short_ts": "i guess X ray 08 startup is approved\nhello push and start approved\nFraction 498A startup is approved\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -74248,7 +74248,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_092632.wav",
         "full_ts": " Hotel  Golf  Romeo  echo  two  two  thousand  eight  hundred  feet\n  Hotel  Golf  Romeo  roger\n",
-        "short_ts": "H G R E22000800 feet\nH G R roger\n",
+        "short_ts": "HGR E2 2800 feet\nHGR roger\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -74562,7 +74562,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_194815.wav",
         "full_ts": " Swiss  Three  One  Yankee  good  evening  continue  inbound  to  zulu hotel two  six  eight  expect  ILS  approach  runway  two  eight  descend to flight  level  one  two  zero  vectors  via  righthand  downwind\n",
-        "short_ts": "Swiss 3 1 Y good evening continue inbound to ZH 2 6 8 expect ILS approach runway 2 8 descend to flight level 1 2 0 vectors via righthand downwind\n",
+        "short_ts": "SWR31Y good evening continue inbound to ZH 268 expect ILS approach runway 28 descend to flight level 120 vectors via righthand downwind\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -75072,7 +75072,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_084919.wav",
         "full_ts": " we  are  ready  Finnair  Eight  Papa  Yankee \n roger  then  stand  by  on  one  two  one  decimal  seven  five  five call Apron\n one  two  one  seven  five  five  standing  by  Finnair  Eight  Papa  Yankee\n",
-        "short_ts": "we are ready Finnair 8 P Y\nroger then stand by on 1 2 1 . 7 5 5 call Apron\n1 2 1 7 5 5 standing by Finnair 8 P Y\n",
+        "short_ts": "we are ready FIN8PY\nroger then stand by on 121.755 call Apron\n121755 standing by FIN8PY\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -75376,7 +75376,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210413_163628.wav",
         "full_ts": " request  to  taxi  back  to  the  gate   we  can  not  finish  our  toubleshooting  without  maintenance\n roger  are  you  able  to  taxi  by  yourself\n",
-        "short_ts": "request to taxi back 00 the gate we can not finish our toubleshooting without maintenance\nroger are you able to taxi by yourself\n",
+        "short_ts": "request to taxi back 100 the gate we can not finish our toubleshooting without maintenance\nroger are you able to taxi by yourself\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -75602,7 +75602,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210422_092523.wav",
         "full_ts": "Hotel Yankee Delta  we'll do that and you may leave the frequency alright\nleaving the frequency  Hotel Yankee Delta\n",
-        "short_ts": "HYD we'll do that and you may leave the frequency alright\nleaving the frequency HYD\n",
+        "short_ts": "HYD we ll do that and you may leave the frequency alright\nleaving the frequency HYD\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -75964,7 +75964,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_163856.wav",
         "full_ts": " Europa  Nine  Four  Kilo  Mike  contact  Tower  one  one  eight  decimal  one\n",
-        "short_ts": "Europa 9 4 K M contact Tower 1 1 8 . 1\n",
+        "short_ts": "AEA94KM contact Tower 118.1\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -76240,7 +76240,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_053629.wav",
         "full_ts": " India  Whiskey  Lima  Foxtrot  X-ray  Tower  good  morning  wind  three  five  zero  degrees  two  knots  runway  one  four  cleared  to  land \n",
-        "short_ts": "I W L F X Tower good morning wind 350 degrees 2 knots runway 1 4 cleared to land\n",
+        "short_ts": "IWLF X ray Tower good morning wind 350 degrees 2 knots runway 14 cleared to land\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -76696,7 +76696,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_174322.wav",
         "full_ts": "   Whiskey  Bravo  contact  departure  bye  bye\n departure  bye  bye  thank  you  very  much\n",
-        "short_ts": "W B contact departure bye bye\ndeparture bye bye thank you very much\n",
+        "short_ts": "WB contact departure bye bye\ndeparture bye bye thank you very much\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -76904,7 +76904,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronN_121_85MHz_20210414_124259.wav",
         "full_ts": "Ground hello Royalair Maroc Three Five Two stand echo four six fully ready\n",
-        "short_ts": "Ground hello RAM352 000 E 46 fully ready\n",
+        "short_ts": "Ground hello RAM352 1000 E 46 fully ready\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -77182,7 +77182,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210425_143421.wav",
         "full_ts": " Hotel  Quebec  Sierra  after  whiskey  two  via  overhead to  echo  two  outbound  route  echo\n",
-        "short_ts": "H Q S after W 2 via overhead 00 E 2 outbound route E\n",
+        "short_ts": "HQS after W 2 via overhead 100 E 2 outbound route E\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -78078,7 +78078,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_084234.wav",
         "full_ts": " Swissair  One  Nine  Seven  holding  short  runway  two  eight  three  juliett\n  Swiss  One  Nine  Seven  Tower  taxiway  juliett  cross  runway  two  eight  contact  one  two  one  seven  five  five   addio \n via  juliett  crossing  runway  two  eight  one  two  one  decimal  seven  five  five   schoenen  tag   Swiss  One  Nine  Seven\n   merci  ebenso  \n",
-        "short_ts": "Swissair 1 9 7 holding short runway 2 8 3 J\nSwiss 1 9 7 Tower taxiway J cross runway 2 8 contact 1 2 1 7 5 5 addio\nvia J crossing runway 2 8 1 2 1 . 7 5 5 schoenen tag Swiss 1 9 7\nmerci ebenso\n",
+        "short_ts": "Swissair 197 holding short runway 283 J\nSwiss 197 Tower taxiway J cross runway 28 contact 121755 addio\nvia J crossing runway 28121.755 schoenen tag SWR197\nmerci ebenso\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -78844,7 +78844,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_203948.wav",
         "full_ts": " Swiss  One  Six  Zero  with  own  navigation  direct  to  xebix\n direct  xebix Swiss  One  Six  Zero  thank  you\n",
-        "short_ts": "Swiss 1 6 0 with own navigation direct to xebix\ndirect xebix Swiss 1 6 0 thank you\n",
+        "short_ts": "SWR160 with own navigation direct to xebix\ndirect xebix SWR160 thank you\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -79984,7 +79984,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210422_075445.wav",
         "full_ts": " Hotel Quebec  you're outside of CTR frequency  change  approved   schoenen tag \n",
-        "short_ts": "HQ you're outside of CTR frequency change approved schoenen tag\n",
+        "short_ts": "HQ unk you re outside of CTR frequency change approved schoenen tag\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -80324,7 +80324,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_161435.wav",
         "full_ts": " runway  one  four  cleared  to  land  Turkish  One  Nine  Zero  Nine\n",
-        "short_ts": "runway 1 4 cleared to land Turkish 1 9 0 9\n",
+        "short_ts": "runway 14 cleared to land THY1909\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -80560,7 +80560,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_100339.wav",
         "full_ts": "  Whiskey  India   danke  schoen   you  may  leave  bye  bye\n leave  frequency   Whiskey  India\n",
-        "short_ts": "W I danke schoen you may leave bye bye\nleave frequency W I\n",
+        "short_ts": "WI danke schoen you may leave bye bye\nleave frequency WI\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -80992,7 +80992,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_170719.wav",
         "full_ts": " Delivery(deliver-)  hello  Turkish  Three  Hotel  Sierra  stand  bravo  three  eight  information  yankee  destination  lima  tango  foxtrot  mike  request  ATC  clearance\n Turkish  Three  Hotel  Sierra  Delivery  hello  you're  cleared  Istanbul  runway  one  zero  deges  one  echo  departure  climb  five  thousand  feet  squawk  three  zero  six  one\n",
-        "short_ts": "Delivery(deliver-) hello Turkish 3 H S stand B38 information Y destination LTFM request ATC clearance\nTurkish 3 H S Delivery hello you're cleared Istanbul runway 1 0 deges 1 E departure climb 5 000 feet squawk 3 0 6 1\n",
+        "short_ts": "Delivery deliver hello THY3HS stand B38 information Y destination LTFM request ATC clearance\nTurkish 3HS Delivery hello you re cleared Istanbul runway 10 deges 1 E departure climb 5000 feet squawk 3061\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -82440,7 +82440,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronN_121_85MHz_20210414_161954.wav",
         "full_ts": "Hotel Delta Lima  contact tower one  one eight decimal one \n",
-        "short_ts": "HDL contact tower 1 18.1\n",
+        "short_ts": "HDL contact tower 118.1\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -83028,7 +83028,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_141537.wav",
         "full_ts": " Tower   guten  tag   Eurocat  Four  Zero  Two  established  RNP  one  four   ten  miles\n",
-        "short_ts": "Tower guten tag Eurocat 4 0 2 established RNP 1 4 10 miles\n",
+        "short_ts": "Tower guten tag CAZ402 established RNP 14 10 miles\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -83662,7 +83662,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_200614.wav",
         "full_ts": " KLM  Seven  One  Quebec   you're  cleared  ILS  approach  runway  two  eight  report  established\n",
-        "short_ts": "KLM 7 1 Q you're cleared ILS approach runway 2 8 report established\n",
+        "short_ts": "KLM71Q you re cleared ILS approach runway 28 report established\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -84130,7 +84130,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210414_162243.wav",
         "full_ts": "Hotel Bravo Kilo Hotel Romeo apron hello QNH one zero two four taxi to holding position papa one\nand report ready for departure once your're clear after inbound Hotel Delta Lima\n",
-        "short_ts": "HBKHR apron hello QNH 1024 taxi to holding position P 1\nand report ready for departure 1 your're clear after inbound HDL\n",
+        "short_ts": "HBKHR apron hello QNH 1024 taxi to holding position P 1\nand report ready for departure 1 your 3 clear after inbound HDL\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -84412,7 +84412,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_104044.wav",
         "full_ts": "tower good afternoon  Bravo established localizer  three one  four\n",
-        "short_ts": "tower good afternoon B established localizer 31 4\n",
+        "short_ts": "tower good afternoon unk B established localizer 314\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -84722,7 +84722,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_070215.wav",
         "full_ts": "Hotel Golf Delta contact departure one two five decimal niner five  five   tschuess \none two five \n",
-        "short_ts": "HGD contact departure 125.95 5 tschuess\n125\n",
+        "short_ts": "HGD contact departure 125.955 tschuess\n125\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -85014,7 +85014,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_083526.wav",
         "full_ts": " Delta  Kilo  Whiskey  roger  wind  zero  seven  zero  degrees  one  zero  knots  runway  two  eight  cleared  takeoff\n",
-        "short_ts": "D K W roger wind 070 degrees 10 knots runway 2 8 cleared takeoff\n",
+        "short_ts": "DKW roger wind 070 degrees 10 knots runway 28 cleared takeoff\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -86204,7 +86204,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_125023.wav",
         "full_ts": " Hotel  Hotel  X-ray  Wiskey  Two  two  thousand  eight  hundred  feet  request  to  start  photo  mission  at  Regensburg\n Hotel  Hotel  X-ray  photo  mission  Regensburg  approved\n Hotel  Hotel  X-ray\nXT\n",
-        "short_ts": "H H X Wiskey 22000800 feet request 00 start photo mission 15 Regensburg\nH H X photo mission Regensburg approved\nH H X\nXT\n",
+        "short_ts": "HH X ray Wiskey 2 2800 feet request 100 start photo mission 15 Regensburg\nHH X ray photo mission Regensburg approved\nHH X ray\nXT\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -86794,7 +86794,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210422_072411.wav",
         "full_ts": " Hotel  Golf  November  whiskey  three  thousand  three  hundred  feet\n Hotel  Golf  November\n",
-        "short_ts": "H G N W3000300 feet\nH G N\n",
+        "short_ts": "HGN W 3300 feet\nHGN\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -87668,7 +87668,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_072550.wav",
         "full_ts": "  Finnair  Six  Alpha  Papa  contact  Apron  one  two  one  decimal  eight  five  five\n",
-        "short_ts": "Finnair 6 A P contact Apron 1 2 1 . 8 5 5\n",
+        "short_ts": "FIN6AP contact Apron 121.855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -89100,7 +89100,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_112350.wav",
         "full_ts": " Tower  hello  Royalair  Maroc  Three  Five  Three  Three  Five  Two\n Royalair  Maroc  Three  Five  Two  Zurich  Tower  good  afternoon  wind  zero  five  zero  degrees  one  two  knots  runway  one  four  cleared  to  land\n",
-        "short_ts": "Tower hello Royalair Maroc 3 5 3 3 5 2\nRoyalair Maroc 3 5 2 Zurich Tower good afternoon wind 050 degrees 12 knots runway 1 4 cleared to land\n",
+        "short_ts": "Tower hello RAM353352\nRoyalair Maroc 352 Zurich Tower good afternoon wind 050 degrees 12 knots runway 14 cleared to land\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -89700,7 +89700,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_133203.wav",
         "full_ts": "Emirates Eight Eight wind       zero four zero three is niner knots   runway one zero cleared for takeoff\ncleared for takeoff one zero Emirates Eight Eight\n",
-        "short_ts": "UAE88 wind 0403309 knots runway 10 cleared for takeoff\ncleared for takeoff 10 UAE88\n",
+        "short_ts": "UAE88 wind 0403 39 knots runway 10 cleared for takeoff\ncleared for takeoff 10 UAE88\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -89980,7 +89980,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_161917.wav",
         "full_ts": " Finnair  Five  Delta  Lima  contact  apron  one  two  one  decimal  eight  five  five\n and  apron  one  two  one  eight  five  five    bye\n",
-        "short_ts": "Finnair 5 D L contact apron 1 2 1 . 8 5 5\nand apron 1 2 1 8 5 5 bye\n",
+        "short_ts": "FIN5DL contact apron 121.855\nand apron 121855 bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -90214,7 +90214,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_065825.wav",
         "full_ts": " Delta  Kilo  Whiskey  contact  apron  one  two  one  decimal  eight  five  five\n",
-        "short_ts": "D K W contact apron 1 2 1 . 8 5 5\n",
+        "short_ts": "DKW contact apron 121.855\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -90490,7 +90490,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_191240.wav",
         "full_ts": " left  heading  three  one  zero  then  cleared  RNP  two  eight    Hotel  Hotel  Romeo\n",
-        "short_ts": "left heading 3 1 0 then cleared RNP 2 8 H H R\n",
+        "short_ts": "left heading 310 then cleared RNP 28 HHR\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -90996,7 +90996,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_202539.wav",
         "full_ts": " Eiger  Six  Three  One  Arrival  good  evening  continue  inbound  to  Zulu  Hotel  Two  Eight  One  and  expect  ILS  approach  runway  two  eight\n",
-        "short_ts": "Eiger 6 3 1 Arrival good evening continue inbound to ZH 2 8 1 and expect ILS approach runway 2 8\n",
+        "short_ts": "Eiger 631 Arrival good evening continue inbound to ZH 281 and expect ILS approach runway 28\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -91164,7 +91164,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210418_075050.wav",
         "full_ts": "well there's marchall on it's way and  in Zurich it is handled like this all the time but it's any second with you\n",
-        "short_ts": "well there's marchall on it's way and in Zurich it is handled like this all the time but it's any second with you\n",
+        "short_ts": "well there s marchall on it s way and in Zurich it is handled like this all the time but it s any second with you\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -91746,7 +91746,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronN_121_85MHz_20210414_081643.wav",
         "full_ts": "Turkish Two Seven X-ray Tower one one eight one bye bye\n",
-        "short_ts": "THY27X Tower 1181 bye bye\n",
+        "short_ts": "Turkish 27 X ray Tower 1181 bye bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -92046,7 +92046,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_055025.wav",
         "full_ts": " and  Tower  United  Five  Two  we  broke  out   about  two  hundred  and  fifty  feet   at  least  we  got  the  approach  lights  at  two  hundred  and  fifty  feet\n thanks  United  Five  Two  for  the  info\n",
-        "short_ts": "and Tower United 5 2 we broke out about 200 and 50 feet at least we got the approach lights at 200 and 50 feet\nthanks United 5 2 for the info\n",
+        "short_ts": "and Tower United 52 we broke out about 250 feet at least we got the approach lights at 250 feet\nthanks UAL52 for the info\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -92470,7 +92470,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_104612.wav",
         "full_ts": " Yankee  Bravo  readback  is  correct  report  ready  for  startup  and  if  you  want  a  departure  from  intersection  echo  is  available  is  up  to  you\n",
-        "short_ts": "Y B readback is correct report ready 40 startup and if you want a departure from intersection E is available is up to you\n",
+        "short_ts": "YB readback is correct report ready 40 startup and if you want a departure from intersection E is available is up to you\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -92770,7 +92770,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_093914.wav",
         "full_ts": " Swiss  One  Eight  Eight  wind  zero  six  zero  degrees  one  three  knots  gusting  twenty  runway  one  zero  cleared  takeoff\n cleared  for  takeoff  runway  one  zero  Swiss  One  Eight  Eight\n",
-        "short_ts": "Swiss 1 8 8 wind 060 degrees 13 knots gusting 20 runway 1 0 cleared takeoff\ncleared for takeoff runway 1 0 Swiss 1 8 8\n",
+        "short_ts": "SWR188 wind 060 degrees 13 knots gusting 20 runway 10 cleared takeoff\ncleared for takeoff runway 10 SWR188\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -93354,7 +93354,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_070039.wav",
         "full_ts": " Hotel  Golf  Delta via  mid  point  one  thousand  five  hundred  meters  the  wind  three  four  zero  degrees  three  knots  runway  two  eight  cleared  for  takeoff\n",
-        "short_ts": "H G D via mid . 1 000 5 00 meters the wind 340 degrees 3 knots runway 2 8 cleared for takeoff\n",
+        "short_ts": "H GD via mid. 1500 meters the wind 340 degrees 3 knots runway 28 cleared for takeoff\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -93646,7 +93646,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210413_103203.wav",
         "full_ts": " Apron   guten  tag   Swiss  One  Three  Eight   we  are  ready  for  startup\n Swiss  One  Three  Eight  Apron   guten  tag   push  startup  approved\n push  and  startup  approved  Swiss  One  Three  Eight\n",
-        "short_ts": "Apron guten tag Swiss 1 3 8 we are ready for startup\nSwiss 1 3 8 Apron guten tag push startup approved\npush and startup approved Swiss 1 3 8\n",
+        "short_ts": "Apron guten tag SWR138 we are ready for startup\nSwiss 138 Apron guten tag push startup approved\npush and startup approved SWR138\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -93940,7 +93940,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_055336.wav",
         "full_ts": " Singapore  Three  Four  Six  RVR  touchdown  zone  above  two  thousand  meters  wind  zero  one  zero  degrees  two  knots  runway  one  four  cleared  to  land\n",
-        "short_ts": "Singapore 3 4 6 RVR touchdown zone above 2000 meters wind 010 degrees 2 knots runway 1 4 cleared to land\n",
+        "short_ts": "SIA346 RVR touchdown zone above 2000 meters wind 010 degrees 2 knots runway 14 cleared to land\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -94184,7 +94184,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_103424.wav",
         "full_ts": " Dagobert  One  Five  Five  Three   wind  zero  five  zero  degrees  one  one  gusting  one  nine  knots  runway  one  zero  intersection  echo  cleared  for  takeoff\n Dagobert  One  Five  Five  Three  cleared  for  takeoff  runway  one  zero  intersection  echo\n",
-        "short_ts": "Dagobert 1 5 5 3 wind 050 degrees 11 gusting 19 knots runway 1 0 intersection E cleared for takeoff\nDagobert 1 5 5 3 cleared for takeoff runway 1 0 intersection E\n",
+        "short_ts": "QAJ1553 wind 050 degrees 11 gusting 19 knots runway 10 intersection E cleared for takeoff\nQAJ1553 cleared for takeoff runway 10 intersection E\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -94496,7 +94496,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_124702.wav",
         "full_ts": "Zurich tower Hotel Bravo Sierra Hotel Romeo two nautical miles  north of   before crossing CTR via \n",
-        "short_ts": "Zurich tower HBS HR 2 nautical miles north of before crossing CTR via\n",
+        "short_ts": "Zurich tower HBSHR 2 nautical miles north of before crossing CTR via\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -94994,7 +94994,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_083404.wav",
         "full_ts": "  Delta  India  Hotel  Kilo  Whiskey  Tower   gruezie   line  up  runway  two  eight  report  ready\n",
-        "short_ts": "D I H K W Tower gruezie line up runway 2 8 report ready\n",
+        "short_ts": "DIHKW Tower gruezie line up runway 28 report ready\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -95298,7 +95298,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_145330.wav",
         "full_ts": " Delta  India  Hotel  Kilo  Whiskey  Ground  hello  again on  taxiway echo  six  cross  runway  one  six  taxi  via  taxiway  lima  to  holding  point  runway  one  zero\n",
-        "short_ts": "D I H K W Ground hello again 1 taxiway E 6 cross runway 1 6 taxi via taxiway L 00 holding . runway 1 0\n",
+        "short_ts": "DIHKW Ground hello again 1 taxiway E 6 cross runway 16 taxi via taxiway L 100 holding. runway 10\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -95970,7 +95970,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_092250.wav",
         "full_ts": "  One  Nine  Romeo  contact  Apron  one  two  one  decimal  eight  five  five\n one  two  one  eight  five  five  Swiss  One  Nine  Romeo   ade \n",
-        "short_ts": "1 9 R contact Apron 1 2 1 . 8 5 5\n1 2 1 8 5 5 Swiss 1 9 R ade\n",
+        "short_ts": "19R contact Apron 121.855\n121855 SWR19R ade\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -96280,7 +96280,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_204513.wav",
         "full_ts": " Eurotrans  One  One  Eight  One  would  you  prefer  three  two  or  three  four  zero\n",
-        "short_ts": "Eurotrans 1 1 8 1 would you prefer 32 or 340\n",
+        "short_ts": "BCS1181 would you prefer 32 or 340\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -96448,7 +96448,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210416_071002.wav",
         "full_ts": " Hotel  Lima  Hotel  whiskey  three thousand  five  hundred  feet\n Hotel  Lima  Hotel   danke  schoen   you  may  leave   wiederhoeren \n",
-        "short_ts": "H L H W3000500 feet\nH L H danke schoen you may leave wiederhoeren\n",
+        "short_ts": "HLH W 3500 feet\nHLH danke schoen you may leave wiederhoeren\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -97264,7 +97264,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_195727.wav",
         "full_ts": " KLM  Seven  One  Quebec  descend  to  flight  level  one  two  zero\n",
-        "short_ts": "KLM 7 1 Q descend to flight level 1 2 0\n",
+        "short_ts": "KLM71Q descend to flight level 120\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -98532,7 +98532,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_122347.wav",
         "full_ts": " Jet  Management  Six  One  Three  contact  departure   servus \n departure   Ciao   Jet  Management  Six  One  Three\n",
-        "short_ts": "Jet Management 6 1 3 contact departure servus\ndeparture Ciao Jet Management 6 1 3\n",
+        "short_ts": "IJM613 contact departure servus\ndeparture Ciao IJM613\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -99108,7 +99108,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_165627.wav",
         "full_ts": " cross kilo one two one seven five five   bye bye\n",
-        "short_ts": "cross K 121755 bye bye\n",
+        "short_ts": "cross K 121755 unk bye bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -99680,7 +99680,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_120346.wav",
         "full_ts": " cleared  to  land  runway  one  four I will  call  Vista  Four  Two  Six\n",
-        "short_ts": "cleared to land runway 1 4 I will call Vista 4 2 6\n",
+        "short_ts": "cleared to land runway 14 I will call Vista 426\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -100394,7 +100394,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_194655.wav",
         "full_ts": " Delta  Whiskey  Oscar  turn  left  own  navigation  rotos\n left  own  navigation  rotos  Delta \n",
-        "short_ts": "D W O turn left own navigation rotos\nleft own navigation rotos D\n",
+        "short_ts": "DWO turn left own navigation rotos\nleft own navigation rotos D\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -100564,7 +100564,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_194500.wav",
         "full_ts": " approaching  Kempttal  level  seven  zero  Swiss  Nine  Eight  Romeo\n Swiss  Nine  Eight  Romeo  descend  five  thousand  feet  QNH  one  zero  two  five  cleared  RNP  approach  runway  two  eight  report  established\n",
-        "short_ts": "approaching Kempttal level 70 Swiss 9 8 R\nSwiss 9 8 R descend 5 000 feet QNH 1025 cleared RNP approach runway 2 8 report established\n",
+        "short_ts": "approaching Kempttal level 70 SWR98R\nSWR98R descend 5000 feet QNH 1025 cleared RNP approach runway 28 report established\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -101316,7 +101316,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_175006.wav",
         "full_ts": " Swiss  Three  Six  Alpha  Tower   gruezi   line  up  runway  two  eight\n",
-        "short_ts": "Swiss 3 6 A Tower gruezi line up runway 2 8\n",
+        "short_ts": "Swiss 36A Tower gruezi line up runway 28\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -102030,7 +102030,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_153417.wav",
         "full_ts": " Vistajet  Four  Nine  Two  contact  apron  one  two  one  decimal  eight  five  five\n one  two  one  eight  five   five  Vistajet  Four  Nine  Two\n",
-        "short_ts": "Vistajet 4 9 2 contact apron 1 2 1 . 8 5 5\n1 2 1 8 5 5 Vistajet 4 9 2\n",
+        "short_ts": "Vistajet 492 contact apron 121.855\n121855 Vistajet 492\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -102336,7 +102336,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210426_154437.wav",
         "full_ts": "Hotel Hotel X-ray is on the ground do you want me right on juliett\nDelta X-ray  you may be get  to the right alpha one\n",
-        "short_ts": "HHX is on the ground do you want me right on J\nDX you may be get to the right A1\n",
+        "short_ts": "HH X ray is on the ground do you want me right on J\nD X ray you may be get to the right A1\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -102592,7 +102592,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_053020.wav",
         "full_ts": "tower   guten morgen  Air Canada Seven Two One Six heavy with you ]we're established six miles one four\nAir Canada Seven Two One Six tower good morning wind three five zero degrees three knots runway one four cleared to land\n",
-        "short_ts": "tower guten morgen Air Canada 7216 heavy with you ]we're established 6 miles 14\nACA7216 tower good morning wind 350 degrees 3 knots runway 14 cleared to land\n",
+        "short_ts": "tower guten morgen Air Canada 7216 heavy with you we re established 6 miles 14\nACA7216 tower good morning wind 350 degrees 3 knots runway 14 cleared to land\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -103068,7 +103068,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_185922.wav",
         "full_ts": " Sunturk  Six  Five  Five  descend  to  five  thousand  feet  QNH  one  zero  two  eight  cleared  ILS  approach  runway  two  eight  report  established\n",
-        "short_ts": "Sunturk 6 5 5 descend to 5 000 feet QNH 1028 cleared ILS approach runway 2 8 report established\n",
+        "short_ts": "Sunturk 655 descend to 5000 feet QNH 1028 cleared ILS approach runway 28 report established\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -103264,7 +103264,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210420_112435.wav",
         "full_ts": " Hotel  Bravo  Lima  Hotel  Whiskey  Tower   grütsie   line  up  and  wait  runway  two  eight  and  to  confirm  outbound  route  is  echo\n",
-        "short_ts": "H B L H W Tower grütsie line up and wait runway 2 8 and to confirm outbound route is E\n",
+        "short_ts": "HBLHW Tower grütsie line up and wait runway 28 and to confirm outbound route is E\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -103838,7 +103838,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_085203.wav",
         "full_ts": " Tower  good  day  the  KLM  Five  Seven  Charlie  is  established   on  the  RNP  one  four\n KLM  Five  Seven  Charlie  Tower  hello  wind  zero  five  zero  degrees  one  two  knots  gusting  one  eight  runway  one  four  cleared  to  land  expedite  to  vacate\n one  four  cleared  to  land  and   wilco  KLM   Five  Seven  Charlie\n",
-        "short_ts": "Tower good day the KLM 5 7 C is established 1 the RNP 1 4\nKLM 5 7 C Tower hello wind 050 degrees 12 knots gusting 18 runway 1 4 cleared to land expedite 00 vacate\n1 4 cleared to land and wilco KLM 5 7 C\n",
+        "short_ts": "Tower good day the KLM57C is established 1 the RNP 14\nKLM 57C Tower hello wind 050 degrees 12 knots gusting 18 runway 14 cleared to land expedite 100 vacate\n14 cleared to land and wilco KLM 57C\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -104140,7 +104140,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_195848.wav",
         "full_ts": " Alpine  Five  Eight  Echo  Zulu  turn  left  from  present  own  navigation  direct  waypoint  rotos\n",
-        "short_ts": "Alpine 5 8 E Z turn left from present own navigation direct . rotos\n",
+        "short_ts": "EJU58EZ turn left from present own navigation direct. rotos\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -104324,7 +104324,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_092028.wav",
         "full_ts": " Turkish  Nine  Papa  Kilo  Ground  taxiway  echo  seven  cross  runway  one  six  taxi  via  taxiway  lima  to  hold  short  lima  nine\n",
-        "short_ts": "Turkish 9PK Ground taxiway E 7 cross runway 1 6 taxi via taxiway L to hold short L 9\n",
+        "short_ts": "Turkish 9PK Ground taxiway E 7 cross runway 16 taxi via taxiway L to hold short L 9\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -104938,7 +104938,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_174929.wav",
         "full_ts": " Rega(drega)  One  you  may  leave  frequency   bis  spaeter \n leaving  frequency   bis spaeter(spaet-)     Rega  One\n",
-        "short_ts": "Rega(drega) 1 you may leave frequency bis spaeter\nleaving frequency bis spaeter(spaet-) Rega 1\n",
+        "short_ts": "Rega drega 1 you may leave frequency bis spaeter\nleaving frequency bis spaeter spaet Rega 1\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -105160,7 +105160,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_112623.wav",
         "full_ts": " Legend  One  Four  One  Two  Zurich  Tower  hello  line  up  and  wait  runway  one  zero  report  ready\n",
-        "short_ts": "Legend 1 4 1 2 Zurich Tower hello line up and wait runway 1 0 report ready\n",
+        "short_ts": "Legend 1412 Zurich Tower hello line up and wait runway 10 report ready\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -105458,7 +105458,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_073120.wav",
         "full_ts": "  Foxtrot  Sierra  Foxtrot  Five  Eight  Four  Papa  behind  the  Falcon  on  the  runway  line  up  runway  two  eight  behind\n",
-        "short_ts": "F S F 5 8 4 P behind the Falcon 1 the runway line up runway 2 8 behind\n",
+        "short_ts": "FSF584P behind the Falcon 1 the runway line up runway 28 behind\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -105744,7 +105744,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_161826.wav",
         "full_ts": "  Seven  Three  Tower  hello  line   up  runway  two  eight\n",
-        "short_ts": "7 3 Tower hello line up runway 2 8\n",
+        "short_ts": "73 Tower hello line up runway 28\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -105978,7 +105978,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210413_160339.wav",
         "full_ts": "XT\n Lima  established   one  four\n Swiss  Two  Two  Lima  Tower  the  wind  zero  four  zero  degrees  one  four  knots  runway  one  four  cleared  to  land\nXT\n",
-        "short_ts": "XT\nL established 14\nSwiss 2 2 L Tower the wind 040 degrees 14 knots runway 1 4 cleared to land\nXT\n",
+        "short_ts": "XT\nL established 14\nSwiss 22L Tower the wind 040 degrees 14 knots runway 14 cleared to land\nXT\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -106212,7 +106212,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_104957.wav",
         "full_ts": "  Swiss  One  Nine  Six   able  for  departure  runway  one  zero\n affirm  Swiss  One  Nine  Six\n  One  Nine  Six  roger  cleared  to\n  Peking   runway  one  zero  deges  one  echo  climb  five  thousand  feet  squawk  three  zero  three  four\n",
-        "short_ts": "Swiss 1 9 6 able for departure runway 10\naffirm Swiss 1 9 6\n1 9 6 roger cleared to\nPeking runway 1 0 deges 1 E climb 5 000 feet squawk 3 0 3 4\n",
+        "short_ts": "SWR196 able for departure runway 10\naffirm SWR196\n196 roger cleared to\nPeking runway 10 deges 1 E climb 5000 feet squawk 3034\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -106512,7 +106512,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210414_121525.wav",
         "full_ts": "Jet Management Six One Three  hello   startup is approved  confirm parking  set course seven\n",
-        "short_ts": "IJM613 hello startup is approved confirm parking 00 course 7\n",
+        "short_ts": "IJM613 hello startup is approved confirm parking set course 7\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -106790,7 +106790,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_093327.wav",
         "full_ts": " Delivery  Sunturk  Three  One  Hotel  stand  number  bravo  three  one  ready  for  push  and  start\n",
-        "short_ts": "Delivery Sunturk 3 1 H stand number B31 ready for push and start\n",
+        "short_ts": "Delivery Sunturk 31H stand number B31 ready for push and start\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -107682,7 +107682,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_202351.wav",
         "full_ts": " Ryanair  Seven  November  Whiskey  squawk  two  seven six  six confirm  requested  level\n",
-        "short_ts": "Ryanair 7 N W squawk 2 76 6 confirm requested level\n",
+        "short_ts": "Ryanair 7NW squawk 2766 confirm requested level\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -108424,7 +108424,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Ground_121_905MHz_20210414_191102.wav",
         "full_ts": " Hotel  Hotel  Romeo  turn  left  heading  zero  one  zero  for  base\n",
-        "short_ts": "H H R turn left heading 0 1 0 for base\n",
+        "short_ts": "HHR turn left heading 010 for base\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -108646,7 +108646,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_135448.wav",
         "full_ts": "Hotel Hotel X-ray  vacacated at zero and to the right and contact apron one two one decimal seven five five bye bye\n",
-        "short_ts": "HHX vacacated at 000000 the 8 and contact apron 121.755 bye bye\n",
+        "short_ts": "HH X ray vacacated at 000 the 8 and contact apron 121.755 bye bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -108930,7 +108930,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210420_085732.wav",
         "full_ts": " Air  Nostrum  Eight  Zero  Quebec  Yankee  you  may  vacate  second  right  hotel  two\n second  right  hotel  two  Zero \n",
-        "short_ts": "Air Nostrum 8 0 Q Y you may vacate second 8 H 2\nsecond 8 H 2 0\n",
+        "short_ts": "ANE80QY you may vacate second 8 H 2\nsecond 8 H 2 0\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -109222,7 +109222,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210418_120230.wav",
         "full_ts": " Hotel  Delta  Lima  Whiskey  helicopter  is   your  right  four  o'clock  trailing  by  two  miles \n",
-        "short_ts": "H D L W helicopter is your right 4 o'clock trailing by 2 miles\n",
+        "short_ts": "HDLW helicopter is your right 4 o clock trailing by 2 miles\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -109522,7 +109522,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ApronS_121_75MHz_20210414_080433.wav",
         "full_ts": "Hotel Bravo Charlie Hotel X-ray   grutlzi  hold position call you back\n",
-        "short_ts": "HBCHX grutlzi hold position call you back\n",
+        "short_ts": "HBCH X ray grutlzi hold position call you back\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -111120,7 +111120,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_162909.wav",
         "full_ts": " Lot  Four  One  Nine  Tower  hello(he-)  hello  again  cross  runway  two  eight  on  juliett contact  apron  one  two  one  seven  five  five  good  evening\n",
-        "short_ts": "Lot 4 1 9 Tower hello(he-) hello again cross runway 2 8 1 J contact apron 1 2 1 7 5 5 good evening\n",
+        "short_ts": "Lot 419 Tower hello he hello again cross runway 281 J contact apron 121755 good evening\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -111346,7 +111346,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_ARR_Approach_118_0MHz_20210412_205621.wav",
         "full_ts": " Eurotrans  One  One  Eight  One  contact  Rhein  one  two  zero  nine  three  zero  bye(b-)  bye\n",
-        "short_ts": "Eurotrans 1 1 8 1 contact Rhein 1 2 0 9 3 0 bye(b-) bye\n",
+        "short_ts": "BCS1181 contact Rhein 120930 bye b bye\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -111514,7 +111514,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210414_135639.wav",
         "full_ts": "Zurich tower Hotel Bravo Lima Victor Charlie  established on the Argev approach runway one five one  four four mike\nHotel Bravo Lima Victor Charlie tower hello  continue approach\n",
-        "short_ts": "Zurich tower HBLVC established on the Argev approach runway 151 44 M\nHBLVC tower hello continue approach\n",
+        "short_ts": "Zurich tower HBLVC established on the Argev approach runway 151 hes 44 M\nHBLVC tower hello continue approach\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -111798,7 +111798,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210412_155514.wav",
         "full_ts": " Tower  hello  again  Swiss   Two  One  Three  Delta  juliett  hold  short  two  eight\n Swiss  One  Three  Delta  Tower  cross  runway  two  eight  on  Juliett  contact  apron  one  two  one  decimal  seven  five  five   schoenen  abend [/NE}\n crossing  juliett  via   crossing  two  eight  via  juliett  one  two  one  seven  five  five  five  Swiss  Two  One  Three  Delta\n",
-        "short_ts": "Tower hello again Swiss 2 1 3 D J hold short 2 8\nSwiss 1 3 D Tower cross runway 2 8 on J contact apron 1 2 1 . 7 5 5 schoenen abend [/NE}\ncrossing J via crossing 28 via J 1 2 1 7 5 5 5 Swiss 2 1 3 D\n",
+        "short_ts": "Tower hello again Swiss 213D J hold short 28\nSwiss 13D Tower cross runway 28 on J contact apron 121.755 schoenen abend NE\ncrossing J via crossing 28 via J 1217555 SWR213D\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -112040,7 +112040,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210424_110305.wav",
         "full_ts": "  Six  Three  Delta  hello  hold  short  of  runway  two  eight\n",
-        "short_ts": "6 3 D hello hold short of runway 2 8\n",
+        "short_ts": "63D hello hold short of runway 28\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
@@ -112452,7 +112452,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LSZH_ZURICH_Tower_118_1MHz_20210420_112850.wav",
         "full_ts": " Hotel  Hotel  Whiskey  confirm  you  have  the  cessnik   Cessna  on  sight  your  twelve  oclock  one  mile  turning  northwest\n",
-        "short_ts": "H H W confirm you have the cessnik Cessna 1 8 your 12 oclock 1 mile turning northwest\n",
+        "short_ts": "HHW confirm you have the cessnik Cessna 18 your 12 oclock 1 mile turning northwest\n",
         "prompt": {
             "waypoints": [
                 "AFOLT",
