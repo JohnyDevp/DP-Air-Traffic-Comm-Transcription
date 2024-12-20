@@ -18,6 +18,10 @@ from tqdm import tqdm
 from sklearn import tests
 from sklearn.model_selection import train_test_split
 
+units = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+tens = ['20', '30', '40', '50', '60', '70', '80', '90'] 
+teens = ['11', '12', '13', '14', '15', '16', '17', '18', '19']
+
 number_map = {
     # English
     "zero": "0", "one": "1", "two": "2", "three": "3",
@@ -64,22 +68,59 @@ number_map = {
     # the rest....
     "hundred": "00", "thousand": "000",
     "hundert": "00", "tausend": "000",
-    "sto": "00", "tisíc": "000",
+    "sto": "00", "set":"00", "tisíc": "000",
     
-    "decimal": ".", "point": "."
+    "decimal": ".", "point": ".", "dot":"."
 }
 
 aviation_map = {
-    "alpha": "A", "bravo": "B", "charlie": "C", "charly":"C", "delta": "D",
+    "alpha": "A", "alfa": "A", "bravo": "B", "charlie": "C", "charly":"C", "delta": "D",
     "echo": "E", "foxtrot": "F", "fox":"F", "golf": "G", "hotel": "H",
     "india": "I", "juliet": "J", "juliett":"J", "kilo": "K", "lima": "L",
     "mike": "M", "november": "N", "oscar": "O", "papa": "P",
-    "quebec": "Q", "romeo": "R", "sierra": "S", "tango": "T",
-    "uniform": "U", "victor": "V", "whiskey": "W", "whisky": "W",
-    "x-ray": "X", "xray":"X", "yankee": "Y", "zulu": "Z", "zoulou": "Z"
+    "quebec": "Q", "romeo": "R", "sierra": "S", "siera": "S", "tango": "T",
+    "uniform": "U", "victor": "V", "viktor": "V", "whiskey": "W", "whisky": "W",
+    "x-ray": "X", "xray":"X", "yankee": "Y", "yanke": "Y", "zulu": "Z", "zoulou": "Z"
 }
 leave_untouch_words = ["and", "on", "or"]
 
+def parse_forward(words,idx):
+    wtbp = []
+    myidx = 0
+    while idx + myidx < len(words):
+        word = process.extractOne(words[idx + myidx].lower(), number_map.keys(), score_cutoff=80)
+        if words[idx + myidx] == 'and': #skip
+            myidx += 1
+        elif word and number_map[word[0]] != '.':
+            wtbp.append(number_map[word[0]])
+            myidx += 1
+        else:
+            break
+    
+    # check for little chance, that we have only "hundred" instead of "one hundred"
+    if len(wtbp) >= 1 and wtbp[0] in ['00','000']:
+        wtbp = ['1'] + wtbp
+    
+    l = len(wtbp)
+    if l == 0:
+        return False, "", idx
+    elif l == 2 and wtbp[0] in tens and wtbp[1] in units: # 20 1 -> 21
+        return True, str(int(wtbp[0]) + int(wtbp[1])), idx + myidx
+    elif l == 2 and wtbp[0] in [*units,*tens,*teens,'10'] and wtbp[1] in ['00','000']: # 2000
+        return True, str(wtbp[0] + wtbp[1]), idx + myidx
+    elif l == 3 and wtbp[0] in units and wtbp[1] in ['00','000'] and (wtbp[2] in [*units,*tens,*teens,'10']): # one [thousand, hundred] one => 1001 (101)
+        return True, str(int(wtbp[0]+wtbp[1]) + int(wtbp[2])), idx + myidx
+    elif l == 4 and wtbp[0] in units and wtbp[1] in ['00','000'] and wtbp[2] in tens and wtbp[3] in units: # one [thousand, hundred] twenty one => 1021
+        return True, str(int(wtbp[0]+wtbp[1]) + int(wtbp[2]) + int(wtbp[3])), idx + myidx
+    elif l == 4 and wtbp[0] in [*units,'10'] and wtbp[1] in ['000'] and wtbp[2] in units and wtbp[3] in ['00']:
+        return True, str(int(wtbp[0]+wtbp[1]) + int(wtbp[2]+wtbp[3])), idx + myidx
+    elif l == 5 and wtbp[0] in [*units,'10'] and wtbp[1] in ['000'] and wtbp[2] in units and wtbp[3] in ['00'] and wtbp[4] in [*units,*tens,*teens,'10']:
+        return True, str(int(wtbp[0]+wtbp[1]) + int(wtbp[2]+wtbp[3]) + int(wtbp[4])), idx + myidx
+    elif l == 6 and wtbp[0] in [*units,'10',*teens,*tens] and wtbp[1] in ['000'] and wtbp[2] in units and wtbp[3] in ['00'] and wtbp[4] in tens and wtbp[5] in units:
+        return True, str(int(wtbp[0]+wtbp[1]) + int(wtbp[2]+wtbp[3]) + int(wtbp[4]) + int(wtbp[5])), idx + myidx
+    else:
+        return False, "", idx
+  
 def get_shortts(full_ts : str, what : str ="alphanum"):
     # what : str = "alphanum" | "num" | "alpha"
     match what:
@@ -104,23 +145,42 @@ def get_shortts(full_ts : str, what : str ="alphanum"):
     reg = re.compile(r"\w+|[.,!?]")
     words : list[str] = reg.findall(full_ts)
     
-    for word in words:
+    idx = 0
+    while idx < len(words):
+        word = words[idx]
         # Find the closest match from the combined_map keys
-            bestmatch = process.extractOne(word.lower(), combined_map.keys(), score_cutoff=score_cutoff)
-            if bestmatch:
-                current_transcript += combined_map[bestmatch[0]]  # Add the matched transcription
-            else:
+        bestmatch = process.extractOne(word.lower(), combined_map.keys(), score_cutoff=score_cutoff)
+    
+        if idx + 1 < len(words) and bestmatch and what in ["alphanum", "num"]:
+            is_parsed, to_add, next_idx = parse_forward(words, idx)
+            if is_parsed:
                 if current_transcript:  # If there is an ongoing transcription chunk
                     result.append(current_transcript)
                     current_transcript = ""
-                result.append(word)  # Append the normal word as-is
+                result.append(to_add)  # append the parsed number
+                idx = next_idx
+                continue          
+        
+        if bestmatch:
+            current_transcript += combined_map[bestmatch[0]]  # Add the matched transcription
+            idx += 1
+            continue
+            
+        if current_transcript:  # If there is an ongoing transcription chunk
+            result.append(current_transcript)
+            current_transcript = ""
+        result.append(word)  # Append the normal word as-is
+        idx += 1
     
     # append the last chunk, if exists
     if current_transcript:
         result.append(current_transcript)
 
     result = ' '.join(result)
-    result = re.sub(r'\s+([.,!?])', r'\1', result)
+    # remove potential spaces between decimal points
+    result = re.sub(r'(?<=\d)\s+\.\s+(?=\d)', '.', result) # 1 . 2 -> 1.2
+    
+    result = re.sub(r'\s+([.,!?])', r'\1', result) # remove spaces before punctuation
     return result
 
 def extract_short_segments(ts_file, audio_in, wav_out_path, max_duration=30):
@@ -316,6 +376,9 @@ if __name__ == "__main__":
         for audio_file in glob(file+"Audio_Sphere/*.wav"):
             ts_file = inputs[idx]+'Trans/'+os.path.basename(audio_file).replace('wav','TRS')
             wav_out_path = file + 'Audio_Speech_Segments'
+            if os.path.exists(wav_out_path):
+                os.system(f"rm -rf {wav_out_path}")
+            os.mkdir(wav_out_path)
             short_segments=extract_short_segments(ts_file, audio_file, wav_out_path, max_duration=30)   
             all_short_segments.extend(short_segments)    
         

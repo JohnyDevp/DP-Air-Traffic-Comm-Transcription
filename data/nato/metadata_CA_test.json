@@ -1,1422 +1,1422 @@
 [
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female.wav",
         "full_ts": "alfa whiskey, roger out",
-        "short_ts": "alfa W, roger out",
+        "short_ts": "AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_1.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_1.wav",
         "full_ts": "alfa whiskey, roger out",
-        "short_ts": "alfa W, roger out",
+        "short_ts": "AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_0.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female.wav",
         "full_ts": "romeo two golf, this is ah mike two delta . kick prelude molson , I say again kick prelude molson",
         "short_ts": "R2G, this is ah M2D. kick prelude molson, I say again kick prelude molson",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_1.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_0.wav",
         "full_ts": "this is mike two delta, roger. authentication uh sierra, authenticate alfa delta foxtrot, over",
-        "short_ts": "this is M2D, roger. authentication uh S, authenticate alfa DF, over",
+        "short_ts": "this is M2D, roger. authentication uh S, authenticate ADF, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_3.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_2.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male.wav",
         "full_ts": "whiskey, this is charlie bravo. new air unknown one two three four, zeros two zero molson fifty. new air contact one two three four. Whisk- whiskey uniform, over",
         "short_ts": "W, this is CB. new air unknown 1234, zeros 20 molson 50. new air contact 1234. Whisk WU, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_1.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_1.wav",
         "full_ts": "whiskey, this is charlie bravo. air unknown two three four zero, zero two zero molson fifty, tracking west, speed fast. transiting the airlane, squawking mode three. recommend make, assume friend based on squawk and transiting the airlane. whiskey uniform, over",
         "short_ts": "W, this is CB. air unknown 2340, 020 molson 50, tracking west, speed fast. transiting the airlane, squawking mode 3. recommend make, assume friend based on squawk and transiting the airlane. WU, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_3.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_3.wav",
         "full_ts": "whiskey, this is charlie bravo. air assume friend one two three four, zero two zero molson fifty loss. whiskey uniform, over",
         "short_ts": "W, this is CB. air assume friend 1234, 020 molson 50 loss. WU, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_5.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_4.wav",
         "full_ts": "romeo two golf, this is ah mike two delta. music my charlie papa one fan three two zero tack three four zero. Tango six mike, over",
         "short_ts": "R2G, this is ah M2D. music my CP1 fan 320 tack 340. T6M, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_7.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_6.wav",
         "full_ts": "romeo two golf, this is mike two delta . reckon exocet three two zero, reckon twenty five, out",
-        "short_ts": "R2G, this is M2D. reckon exocet 320, reckon 205, out",
+        "short_ts": "R2G, this is M2D. reckon exocet 320, reckon 25, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male.wav",
         "full_ts": "ah whiskey, this is alfa whiskey, radio check over",
-        "short_ts": "ah W, this is alfa W, radio check over",
+        "short_ts": "ah W, this is AW, radio check over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male.wav",
         "full_ts": "ah this is romeo tango, roger over",
         "short_ts": "ah this is RT, roger over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_female.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_female.wav",
         "full_ts": "charlie bravo, over",
         "short_ts": "CB, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_2.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_2.wav",
         "full_ts": "Mike delta, this is ah alfa whiskey ah. confirm you hold this ah new air unknown on your ah gadget, over",
-        "short_ts": "MD, this is ah alfa W ah. confirm you hold this ah new air unknown on your ah gadget, over",
+        "short_ts": "MD, this is ah AW ah. confirm you hold this ah new air unknown on your ah gadget, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_4.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_4.wav",
         "full_ts": "ah this is ah alfa whiskey, roger. report one three two zero, over",
-        "short_ts": "ah this is ah alfa W, roger. report 1320, over",
+        "short_ts": "ah this is ah AW, roger. report 1320, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_6.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_6.wav",
         "full_ts": "(thi)s is alfa whiskey, roger",
-        "short_ts": "thi s is alfa W, roger",
+        "short_ts": "thi s is AW, roger",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_1.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_1.wav",
         "full_ts": "ah whiskey, this is ah romeo tango. New air know(n) unknown one one zero one. three four zero clay seventy-six. orbiting new unknown one one zero one. charlie bravo, over",
-        "short_ts": "ah W, this is ah RT. New air know n unknown 1101. 340 clay 706. orbiting new unknown 1101. CB, over",
+        "short_ts": "ah W, this is ah RT. New air know n unknown 1101.340 clay 76. orbiting new unknown 1101. CB, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_female_1.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_female_1.wav",
         "full_ts": "this is charlie bravo, roger out",
         "short_ts": "this is CB, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_3.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_3.wav",
         "full_ts": "alfa whiskey, this is romeo tango. air unknown one three two zero, recommend ah make suspect, no squawking ah modes or codes, and ah closing the force. alfa whiskey, over",
-        "short_ts": "alfa W, this is RT. air unknown 1320, recommend ah make suspect, no squawking ah modes or codes, and ah closing the force. alfa W, over",
+        "short_ts": "AW, this is RT. air unknown 1320, recommend ah make suspect, no squawking ah modes or codes, and ah closing the force. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_8.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_8.wav",
         "full_ts": "this is ah alfa whiskey ah roger report",
-        "short_ts": "this is ah alfa W ah roger report",
+        "short_ts": "this is ah AW ah roger report",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_5.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_5.wav",
         "full_ts": "ah this is romeo tango, roger out",
         "short_ts": "ah this is RT, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_10.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_10.wav",
         "full_ts": "ah whiskey, this is alfa whiskey ah. I make ah air unknown one three two zero now suspect one three two zero based on negative squawking and flight profile . ah now tracking north west, speed ah fast ah. suspect one three two zero. ah mike delta, over",
-        "short_ts": "ah W, this is alfa W ah. I make ah air unknown 1320 now suspect 1320 based on negative squawking and flight profile. ah now tracking north west, speed ah fast ah. suspect 1320. ah MD, over",
+        "short_ts": "ah W, this is AW ah. I make ah air unknown 1320 now suspect 1320 based on negative squawking and flight profile. ah now tracking north west, speed ah fast ah. suspect 1320. ah MD, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_12.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_12.wav",
         "full_ts": "ah whiskey, this is alfa whiskey. ah new air unknown one three zero one three ah four six ah two hundred twenty-four nautical miles tracking uh north east, speed medium. ah negative squawking uh, new air unknown one three zero one. ah bravo zulu, over",
-        "short_ts": "ah W, this is alfa W. ah new air unknown 13013 ah 46 ah 200204 nautical miles tracking uh north east, speed medium. ah negative squawking uh, new air unknown 1301. ah BZ, over",
+        "short_ts": "ah W, this is AW. ah new air unknown 13013 ah 46 ah 224 nautical miles tracking uh north east, speed medium. ah negative squawking uh, new air unknown 1301. ah BZ, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_14.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_14.wav",
         "full_ts": "ah this is ah alfa whiskey. I do not hold my gadget, your track at two seven zero one, request send ag(ain) again your track two seven zero one, over",
-        "short_ts": "ah this is ah alfa W. I do not hold my gadget, your track at 2701, request send ag ain again your track 2701, over",
+        "short_ts": "ah this is ah AW. I do not hold my gadget, your track at 2701, request send ag ain again your track 2701, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_8.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_8.wav",
         "full_ts": "ah this is ah romeo tango ah roger out",
         "short_ts": "ah this is ah RT ah roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_10.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_10.wav",
         "full_ts": "ah whiskey, this is ah romeo tango air unknown ah two s(even), correction, suspect two seven zero one now ah two eight four seven miles, closing tracking ah north east, correction north west, speed fast. suspect two seven zero one. mike delta, over",
         "short_ts": "ah W, this is ah RT air unknown ah 2 s even, correction, suspect 2701 now ah 2847 miles, closing tracking ah north east, correction north west, speed fast. suspect 2701. MD, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_16.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_16.wav",
         "full_ts": "ah charlie bravo, this is ah alfa whiskey ah request you take duties alfa whiskey my charlie papa one bet correction, my charlie papa one ben. charlie bravo, over",
-        "short_ts": "ah CB, this is ah alfa W ah request you take duties alfa W my CP1 bet correction, my CP1 ben. CB, over",
+        "short_ts": "ah CB, this is ah AW ah request you take duties AW my CP1 bet correction, my CP1 ben. CB, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_female_3.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_female_3.wav",
         "full_ts": "(this i)s charlie bravo, roger out",
         "short_ts": "this i s CB, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_12.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_12.wav",
         "full_ts": "ah whiskey, ah this is romeo tango ah suspect two seven zero one now zero one two clay uh nine decimal eight, tracking ah north east, ah speed ah fast, suspect two seven zero one, alfa whiskey over",
-        "short_ts": "ah W, ah this is RT ah suspect 2701 now 012 clay uh 9.8, tracking ah north east, ah speed ah fast, suspect 2701, alfa W over",
+        "short_ts": "ah W, ah this is RT ah suspect 2701 now 012 clay uh 9.8, tracking ah north east, ah speed ah fast, suspect 2701, AW over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_2.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female.wav",
         "full_ts": "ah this is alfa whiskey, roger out",
-        "short_ts": "ah this is alfa W, roger out",
+        "short_ts": "ah this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_13.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_13.wav",
         "full_ts": "ah whiskey, this is romeo tango. new ah air unknown zero eight six, ah correction of my last ah new air unknown",
         "short_ts": "ah W, this is RT. new ah air unknown 086, ah correction of my last ah new air unknown",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_4.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_1.wav",
         "full_ts": "bravo kilo, this is alfa whiskey. track zero seven, friendly track zero seven, over",
-        "short_ts": "BK, this is alfa W. track 07, friendly track 07, over",
+        "short_ts": "BK, this is AW. track 07, friendly track 07, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_14.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_14.wav",
         "full_ts": "ah whiskey, this is romeo tango, ah new air unknown",
         "short_ts": "ah W, this is RT, ah new air unknown",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_15.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_15.wav",
         "full_ts": "ah whiskey, ah this is romeo tango. new air unknown two seven zero three, ah zero five eight clay ninety six, orbiting, ah recommend ah make suspect two seven zero ah three, based on E.W. ah racket zero one one two . identified ah bear delta, alfa whiskey, over",
-        "short_ts": "ah W, ah this is RT. new air unknown 2703, ah 058 clay 906, orbiting, ah recommend ah make suspect 270 ah 3, based on E. W. ah racket 0112. identified ah bear D, alfa W, over",
+        "short_ts": "ah W, ah this is RT. new air unknown 2703, ah 058 clay 96, orbiting, ah recommend ah make suspect 270 ah 3, based on E. W. ah racket 0112. identified ah bear D, AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_6.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_3.wav",
         "full_ts": "this is alfa whiskey, roger. suspect roger, make suspect make two seven zero three now suspect, two seven zero three. Over",
-        "short_ts": "this is alfa W, roger. suspect roger, make suspect make 2703 now suspect, 2703. Over",
+        "short_ts": "this is AW, roger. suspect roger, make suspect make 2703 now suspect, 2703. Over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_17.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_17.wav",
         "full_ts": "ah romeo tango, roger out",
         "short_ts": "ah RT, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_19.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_19.wav",
         "full_ts": "and alfa whiskey ah, this is ah romeo tango ah. ah recommend ah make track two seven zero one, ah friend two seven zero one based on ah ah following the traffic lanes and now bearing zero three seven clay forty-nine, tracking south, correction, north east, speed ah medium. track two seven zero one, over",
-        "short_ts": "and alfa W ah, this is ah RT ah. ah recommend ah make track 2701, ah friend 2701 based on ah ah following the traffic lanes and now bearing 037 clay 409, tracking south, correction, north east, speed ah medium. track 2701, over",
+        "short_ts": "and AW ah, this is ah RT ah. ah recommend ah make track 2701, ah friend 2701 based on ah ah following the traffic lanes and now bearing 037 clay 49, tracking south, correction, north east, speed ah medium. track 2701, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_8.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_5.wav",
         "full_ts": "ah this is alfa whiskey, roger out",
-        "short_ts": "ah this is alfa W, roger out",
+        "short_ts": "ah this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_21.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_21.wav",
         "full_ts": "and alfa whiskey, this is romeo tango uh recommend making track one one zero seven, suspect one one zero seven, based on no squawk and uh flight profile, over",
-        "short_ts": "and alfa W, this is RT uh recommend making track 1107, suspect 1107, based on no squawk and uh flight profile, over",
+        "short_ts": "and AW, this is RT uh recommend making track 1107, suspect 1107, based on no squawk and uh flight profile, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_9.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_6.wav",
         "full_ts": "ah this is alfa whiskey, roger. I make track one one zero seven, suspect one one zero seven, over",
-        "short_ts": "ah this is alfa W, roger. I make track 1107, suspect 1107, over",
+        "short_ts": "ah this is AW, roger. I make track 1107, suspect 1107, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_22.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_22.wav",
         "full_ts": "romeo tango, roger. break ah whiskey this is romeo tango, new air unknown one one zero six, az- three five nine clay one hundred and thirty, uh tracking uh south, uh speed slow, ah squawking ah mode three and charlie ah. recommend ah making track one one zero six, uh friendly one one zero six. alfa whiskey, over",
-        "short_ts": "RT, roger. break ah W this is RT, new air unknown 1106, az 359 clay 100 and 30, uh tracking uh south, uh speed slow, ah squawking ah mode 3 and C ah. recommend ah making track 1106, uh friendly 1106. alfa W, over",
+        "short_ts": "RT, roger. break ah W this is RT, new air unknown 1106, az 359 clay 130, uh tracking uh south, uh speed slow, ah squawking ah mode 3 and C ah. recommend ah making track 1106, uh friendly 1106. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_11.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_8.wav",
         "full_ts": "ah this is alfa whiskey, roger. I make track one one zero six, friendly one one zero six, out",
-        "short_ts": "ah this is alfa W, roger. I make track 1106, friendly 1106, out",
+        "short_ts": "ah this is AW, roger. I make track 1106, friendly 1106, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_13.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_10.wav",
         "full_ts": "this is alfa whiskey, roger out",
-        "short_ts": "this is alfa W, roger out",
+        "short_ts": "this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_23.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_23.wav",
         "full_ts": "ah whiskey ah, this is uh romeo tango ah, ah big ball jalfa ceased, bearing uh ah zero six zero. alfa whiskey, over",
-        "short_ts": "ah W ah, this is uh RT ah, ah big ball jalfa ceased, bearing uh ah 060. alfa W, over",
+        "short_ts": "ah W ah, this is uh RT ah, ah big ball jalfa ceased, bearing uh ah 060. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_15.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_12.wav",
         "full_ts": "ah this is alfa whiskey, roger out",
-        "short_ts": "ah this is alfa W, roger out",
+        "short_ts": "ah this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_24.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_24.wav",
         "full_ts": "ah whiskey uh, this is uh romeo uh tango. disregard, out",
         "short_ts": "ah W uh, this is uh R uh T. disregard, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_17.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_14.wav",
         "full_ts": "this is alfa whiskey, roger. I make air unknown two seven zero six suspect two seven zero six. out",
-        "short_ts": "this is alfa W, roger. I make air unknown 2706 suspect 2706. out",
+        "short_ts": "this is AW, roger. I make air unknown 2706 suspect 2706. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_19.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_16.wav",
         "full_ts": "ah this is alfa whiskey, roger out",
-        "short_ts": "ah this is alfa W, roger out",
+        "short_ts": "ah this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_26.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_26.wav",
         "full_ts": "flash, this is ah romeo tango. ah new air unknown two seven zero seven, uh zero eight four clay fifty-three uh, uh closing fast. alfa whiskey, over",
-        "short_ts": "flash, this is ah RT. ah new air unknown 2707, uh 084 clay 503 uh, uh closing fast. alfa W, over",
+        "short_ts": "flash, this is ah RT. ah new air unknown 2707, uh 084 clay 53 uh, uh closing fast. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_21.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_18.wav",
         "full_ts": "this is alfa whiskey, roger. I make two seven zero seven, suspect two seven zero seven. out",
-        "short_ts": "this is alfa W, roger. I make 2707, suspect 2707. out",
+        "short_ts": "this is AW, roger. I make 2707, suspect 2707. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_28.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_28.wav",
         "full_ts": "flash, this is uh romeo tango. Exocet uh zero eight three clay forty-nine, closing. alfa whiskey, over",
-        "short_ts": "flash, this is uh RT. Exocet uh 083 clay 409, closing. alfa W, over",
+        "short_ts": "flash, this is uh RT. Exocet uh 083 clay 49, closing. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_23.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_20.wav",
         "full_ts": "this is alfa whiskey, roger. take two seven zero seven with birds. over",
-        "short_ts": "this is alfa W, roger. take 2707 with birds. over",
+        "short_ts": "this is AW, roger. take 2707 with birds. over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_30.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_30.wav",
         "full_ts": "and uh alfa whiskey, this is romeo tango. uh recommend track two seven zero six ah hostile, ah based on weapons release. Exocet now zero seven nine clay forty-four, closing. alfa whiskey, over",
-        "short_ts": "and uh alfa W, this is RT. uh recommend track 2706 ah hostile, ah based on weapons release. Exocet now 079 clay 404, closing. alfa W, over",
+        "short_ts": "and uh AW, this is RT. uh recommend track 2706 ah hostile, ah based on weapons release. Exocet now 079 clay 44, closing. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_25.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_22.wav",
         "full_ts": "this is alfa whiskey, roger. I make two seven zero six hostile, two seven zero six. out",
-        "short_ts": "this is alfa W, roger. I make 2706 hostile, 2706. out",
+        "short_ts": "this is AW, roger. I make 2706 hostile, 2706. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_27.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_24.wav",
         "full_ts": "ah this is alfa whiskey, roger out",
-        "short_ts": "ah this is alfa W, roger out",
+        "short_ts": "ah this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_29.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_26.wav",
         "full_ts": "mike delta, this is alfa whiskey, I ma(ke)",
-        "short_ts": "MD, this is alfa W, I ma ke",
+        "short_ts": "MD, this is AW, I ma ke",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_9.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_11.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_1.wav",
         "full_ts": "mike two delta, roger out",
         "short_ts": "M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_13.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_3.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_15.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_5.wav",
         "full_ts": "mike two delta, roger out",
         "short_ts": "M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_17.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_7.wav",
         "full_ts": "mike two delta, roger out",
         "short_ts": "M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_18.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_8.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_20.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_10.wav",
         "full_ts": "mike two delta, roger out",
         "short_ts": "M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_22.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_12.wav",
         "full_ts": "mike two delta, roger out",
         "short_ts": "M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_24.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_14.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_26.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_16.wav",
         "full_ts": "romeo two golf , correction, flash, this is uh mike two delta. torpedo bearing one two zero, out",
         "short_ts": "R2G, correction, flash, this is uh M2D. torpedo bearing 120, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_28.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_18.wav",
         "full_ts": "romeo two golf, this is ah mike two ah delta. coming left one two zero, speed one five. romeo five tango, over",
         "short_ts": "R2G, this is ah M2 ah D. coming left 120, speed 15. R5T, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_30.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_20.wav",
         "full_ts": "this is ah mike two delta. I say again, coming left one two two, speed one five . romeo five tango, over",
         "short_ts": "this is ah M2D. I say again, coming left 122, speed 15. R5T, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_32.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_22.wav",
         "full_ts": "romeo two golf, this is mike two ah delta. standby cobra port. romeo five tango, over",
         "short_ts": "R2G, this is M2 ah D. standby cobra port. R5T, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_34.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_24.wav",
         "full_ts": "romeo two golf, this is ah mike two delta. cobra loose ah, dogbox established one two zero , ten miles , expiry time minute two five. romeo five tango, over",
         "short_ts": "R2G, this is ah M2D. cobra loose ah, dogbox established 120, 10 miles, expiry time minute 25. R5T, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female.wav",
         "full_ts": "whiskey, this romeo tango. new air unknown one two three four, three zero zero, tango tango, fifteen. new air unknown one two three four. alfa whiskey, over",
-        "short_ts": "W, this RT. new air unknown 1234, 300, TT, 15. new air unknown 1234. alfa W, over",
+        "short_ts": "W, this RT. new air unknown 1234, 300, TT, 15. new air unknown 1234. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_18.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male.wav",
         "full_ts": "this is alfa whiskey, roger out",
-        "short_ts": "this is alfa W, roger out",
+        "short_ts": "this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_1.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_1.wav",
         "full_ts": "whiskey, this is romeo tango. air unknown, correction, recommend air unknown one two three four, assume ven- friend, based on squawking three and charlie. alfa whiskey, over",
-        "short_ts": "W, this is RT. air unknown, correction, recommend air unknown 1234, assume ven friend, based on squawking 3 and C. alfa W, over",
+        "short_ts": "W, this is RT. air unknown, correction, recommend air unknown 1234, assume ven friend, based on squawking 3 and C. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_20.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_1.wav",
         "full_ts": "this is alfa whiskey. I make uh unknown ah one two ah three four, assume friend, based on ah squawk and transiting airlanes. over",
-        "short_ts": "this is alfa W. I make uh unknown ah 12 ah 34, assume friend, based on ah squawk and transiting airlanes. over",
+        "short_ts": "this is AW. I make uh unknown ah 12 ah 34, assume friend, based on ah squawk and transiting airlanes. over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_3.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_3.wav",
         "full_ts": "this is romeo tango, roger out",
         "short_ts": "this is RT, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_5.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_5.wav",
         "full_ts": "whiskey this is romeo tango. lost assume friend one two three four, three zero zero, tango tango, fifty. time one one one eight. recommend drop error, assume friend one two three four. alfa whiskey, over",
-        "short_ts": "W this is RT. lost assume friend 1234, 300, TT, 50. time 1118. recommend drop error, assume friend 1234. alfa W, over",
+        "short_ts": "W this is RT. lost assume friend 1234, 300, TT, 50. time 1118. recommend drop error, assume friend 1234. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_22.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_3.wav",
         "full_ts": "this is alfa whiskey. drop ah assume friend ah one two three four",
-        "short_ts": "this is alfa W. drop ah assume friend ah 1234",
+        "short_ts": "this is AW. drop ah assume friend ah 1234",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_7.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_7.wav",
         "full_ts": "this romeo tango, roger out",
         "short_ts": "this RT, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_30.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female.wav",
         "full_ts": "this alfa whiskey, roger out",
-        "short_ts": "this alfa W, roger out",
+        "short_ts": "this AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_32.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_1.wav",
         "full_ts": "this alfa whiskey, roger. make air unknown one two three five, air suspect one two three five over",
-        "short_ts": "this alfa W, roger. make air unknown 1235, air suspect 1235 over",
+        "short_ts": "this AW, roger. make air unknown 1235, air suspect 1235 over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_34.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_3.wav",
         "full_ts": "this is alfa whiskey, roger. make suspect one two three five, hostile one two three five, over",
-        "short_ts": "this is alfa W, roger. make suspect 1235, hostile 1235, over",
+        "short_ts": "this is AW, roger. make suspect 1235, hostile 1235, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_36.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_5.wav",
         "full_ts": "this is alfa whiskey, roger. make suspect one two three five, hostile one two three five",
-        "short_ts": "this is alfa W, roger. make suspect 1235, hostile 1235",
+        "short_ts": "this is AW, roger. make suspect 1235, hostile 1235",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_36.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_26.wav",
         "full_ts": "this is uh mike two delta. flash, I hold Exocet zero two five, sixteen out. strength four, out",
         "short_ts": "this is uh M2D. flash, I hold Exocet 025, 16 out. strength 4, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_37.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_39.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_1.wav",
         "full_ts": "It's mike two delta, roger out",
         "short_ts": "It s M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_40.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_2.wav",
         "full_ts": "romeo two golf, this is mike two delta. skunk one nine seven six, zero one nine , sixteen miles. course is zero nine zero , speed fifteen . identified one alfa mike. skunk one nine seven eight . romeo five tango, over",
-        "short_ts": "R2G, this is M2D. skunk 1976, 019, 16 miles. course is 090, speed 15. identified 1 alfa M. skunk 1978. R5T, over",
+        "short_ts": "R2G, this is M2D. skunk 1976, 019, 16 miles. course is 090, speed 15. identified 1AM. skunk 1978. R5T, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_42.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_4.wav",
         "full_ts": "romeo two golf, this is ah mike two delta. hot new sonar contact one four four three, zero nine zero mike two delta, range ah four three. tango six mike, over",
         "short_ts": "R2G, this is ah M2D. hot new sonar contact 1443, 090M2D, range ah 43. T6M, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None.wav",
         "full_ts": "this is alfa whiskey, roger out",
-        "short_ts": "this is alfa W, roger out",
+        "short_ts": "this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None_0.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None_0.wav",
         "full_ts": "this is alfa whiskey ah, roger. make ah air assume friend four five zero zero friendly, over",
-        "short_ts": "this is alfa W ah, roger. make ah air assume friend 4500 friendly, over",
+        "short_ts": "this is AW ah, roger. make ah air assume friend 4500 friendly, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None_2.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None_2.wav",
         "full_ts": "this is alfa whiskey, roger out",
-        "short_ts": "this is alfa W, roger out",
+        "short_ts": "this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None_4.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None_4.wav",
         "full_ts": "this is alfa whiskey, roger out",
-        "short_ts": "this is alfa W, roger out",
+        "short_ts": "this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None_6.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_None_6.wav",
         "full_ts": "this is alfa whiskey, roger. make uh air suspect four five zero one correction air unknown f- five four five zero one, suspect five four zero one, over",
-        "short_ts": "this is alfa W, roger. make uh air suspect 4501 correction air unknown f 54501, suspect 5401, over",
+        "short_ts": "this is AW, roger. make uh air suspect 4501 correction air unknown f 54501, suspect 5401, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_24.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male.wav",
         "full_ts": "this is alfa whiskey, roger ah. make unknown one two three five ah, now assume friendly one two three five. over",
-        "short_ts": "this is alfa W, roger ah. make unknown 1235 ah, now assume friendly 1235. over",
+        "short_ts": "this is AW, roger ah. make unknown 1235 ah, now assume friendly 1235. over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_26.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_1.wav",
         "full_ts": "this is alfa whiskey uh, roger out",
-        "short_ts": "this is alfa W uh, roger out",
+        "short_ts": "this is AW uh, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_28.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_3.wav",
         "full_ts": "this is alfa whiskey. make unknown four five zero one now suspect, four five zero one. over",
-        "short_ts": "this is alfa W. make unknown 4501 now suspect, 4501. over",
+        "short_ts": "this is AW. make unknown 4501 now suspect, 4501. over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_30.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_5.wav",
         "full_ts": "this is alfa whiskey, roger out",
-        "short_ts": "this is alfa W, roger out",
+        "short_ts": "this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_9.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female.wav",
         "full_ts": "whiskey, this is romeo tango",
         "short_ts": "W, this is RT",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_11.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_1.wav",
         "full_ts": "whiskey, this romeo tango. Exocet zero four zero, reckon thirty-eight. out",
-        "short_ts": "W, this RT. Exocet 040, reckon 308. out",
+        "short_ts": "W, this RT. Exocet 040, reckon 38. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_13.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_3.wav",
         "full_ts": "whiskey, this romeo tango. Exocet zero four zero, reckon twenty-five. out",
-        "short_ts": "W, this RT. Exocet 040, reckon 205. out",
+        "short_ts": "W, this RT. Exocet 040, reckon 25. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_15.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_female_5.wav",
         "full_ts": "whiskey, this is romeo tango. Exocet zero four zero",
         "short_ts": "W, this is RT. Exocet 040",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_46.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female.wav",
         "full_ts": "prelude molson, I say again, shift prelude molson . I authenticate time zero one three zero, authentication victor lima. tango six mike, over",
         "short_ts": "prelude molson, I say again, shift prelude molson. I authenticate time 0130, authentication VL. T6M, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_48.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_1.wav",
         "full_ts": "romeo two golf, this is uh mike two delta. coming left one three zero, speed one zero. tango six mike, over",
         "short_ts": "R2G, this is uh M2D. coming left 130, speed 10. T6M, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_50.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_3.wav",
         "full_ts": "romeo two golf, this is mike two delta. AOP one two three four established. major axis one zero, minor axis five, orientation one two two, expansion rate two zero. based on intelligence, possible Akula. AOP one two three four. tango six mike, over",
         "short_ts": "R2G, this is M2D. AOP 1234 established. major axis 10, minor axis 5, orientation 122, expansion rate 20. based on intelligence, possible Akula. AOP 1234. T6M, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_32.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_7.wav",
         "full_ts": "alfa whiskey, roger out",
-        "short_ts": "alfa W, roger out",
+        "short_ts": "AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_34.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_9.wav",
         "full_ts": "this is alfa whiskey, roger ah. make assume friend make unknown one two three four now assume friend one two three four",
-        "short_ts": "this is alfa W, roger ah. make assume friend make unknown 1234 now assume friend 1234",
+        "short_ts": "this is AW, roger ah. make assume friend make unknown 1234 now assume friend 1234",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_5.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male.wav",
         "full_ts": "whiskey, this is ah charlie bravo. new air unknown one two three five, one three zero, molson hundred fifty mile. new air unknown one two three five. whiskey uniform, over",
-        "short_ts": "W, this is ah CB. new air unknown 1235, 130, molson 0050 mile. new air unknown 1235. WU, over",
+        "short_ts": "W, this is ah CB. new air unknown 1235, 130, molson 150 mile. new air unknown 1235. WU, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_7.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_1.wav",
         "full_ts": "whiskey, this is charlie bravo. air unknown one two three five, one three zero, molson hundred fifty miles, negative squawk",
-        "short_ts": "W, this is CB. air unknown 1235, 130, molson 0050 miles, negative squawk",
+        "short_ts": "W, this is CB. air unknown 1235, 130, molson 150 miles, negative squawk",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_9.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_3.wav",
         "full_ts": "whiskey, this is charlie bravo. air unknown one two three four, one three zero, molson hundred fifty miles. tracking North, speed fast. negative squawk, not conforming to airlanes. recommend suspect. alfa whiskey, over",
-        "short_ts": "W, this is CB. air unknown 1234, 130, molson 0050 miles. tracking North, speed fast. negative squawk, not conforming to airlanes. recommend suspect. alfa W, over",
+        "short_ts": "W, this is CB. air unknown 1234, 130, molson 150 miles. tracking North, speed fast. negative squawk, not conforming to airlanes. recommend suspect. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_36.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_11.wav",
         "full_ts": "this is alfa whiskey, roger ah. make ah air unknown one two three five, now suspect one two three five..over",
-        "short_ts": "this is alfa W, roger ah. make ah air unknown 1235, now suspect 1235.. over",
+        "short_ts": "this is AW, roger ah. make ah air unknown 1235, now suspect 1235.. over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_11.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_5.wav",
         "full_ts": "this is charlie bravo, roger out",
         "short_ts": "this is CB, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_13.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_7.wav",
         "full_ts": "whiskey, this is ah charlie bravo . music my gadget charlie papa one spoke north. whiskey uniform, over",
         "short_ts": "W, this is ah CB. music my gadget CP1 spoke north. WU, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_38.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_13.wav",
         "full_ts": "this is alfa whiskey, roger. drop assume friend one two three four, over",
-        "short_ts": "this is alfa W, roger. drop assume friend 1234, over",
+        "short_ts": "this is AW, roger. drop assume friend 1234, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_15.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_9.wav",
         "full_ts": "flash, this is charlie bravo. I hold exocet one three zero, ten miles, strength two. out",
         "short_ts": "flash, this is CB. I hold exocet 130, 10 miles, strength 2. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_52.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_54.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_1.wav",
         "full_ts": "charlie six delta, this is mike two delta. new contact one two zero one, two correction three two two tango tango, twenty-three miles. new contact one two zero one. bravo three kilo, over",
-        "short_ts": "C6D, this is M2D. new contact 1201, 2 correction 322TT, 203 miles. new contact 1201. B3K, over",
+        "short_ts": "C6D, this is M2D. new contact 1201, 2 correction 322TT, 23 miles. new contact 1201. B3K, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_56.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_3.wav",
         "full_ts": "bravo three kilo, this is mike two delta. Confirm you copy my last, over",
         "short_ts": "B3K, this is M2D. Confirm you copy my last, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_58.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_5.wav",
         "full_ts": "charlie six delta, this is mike two delta. new contact one two zero one, bearing ah three two five tango tango ah, twenty-two miles. course north, speed two five. contact one two zero one. bravo one zulu, over",
-        "short_ts": "C6D, this is M2D. new contact 1201, bearing ah 325TT ah, 202 miles. course north, speed 25. contact 1201. B1Z, over",
+        "short_ts": "C6D, this is M2D. new contact 1201, bearing ah 325TT ah, 22 miles. course north, speed 25. contact 1201. B1Z, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_59.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_6.wav",
         "full_ts": "this is mike two delta. Tessio splashed. out",
         "short_ts": "this is M2D. Tessio splashed. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_61.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_8.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_63.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_10.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_65.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_12.wav",
         "full_ts": "flash",
         "short_ts": "flash",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_66.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_13.wav",
         "full_ts": "Exocet one two three zero, zero seven four, five miles, strength two",
         "short_ts": "Exocet 1230, 074, 5 miles, strength 2",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_67.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_14.wav",
         "full_ts": "mike two delta, roger out",
         "short_ts": "M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_69.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_16.wav",
         "full_ts": "this is mike two delta, roger out",
         "short_ts": "this is M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_71.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_18.wav",
         "full_ts": "this is mike two delta. gridlock positive, out",
         "short_ts": "this is M2D. gridlock positive, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_73.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_20.wav",
         "full_ts": "charlie six delta, this is mike two delta. ginger bread, ginger bread, ginger bread. bravo three kilo, over",
         "short_ts": "C6D, this is M2D. ginger bread, ginger bread, ginger bread. B3K, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_75.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_22.wav",
         "full_ts": "this is mike two delta, over",
         "short_ts": "this is M2D, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_76.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_23.wav",
         "full_ts": "charlie six delta, this is uh mike two delta. ginger bread, ginger bread, ginger bread. I au(thenticate) time one zero four three. I authenticate",
         "short_ts": "C6D, this is uh M2D. ginger bread, ginger bread, ginger bread. I au thenticate time 1043. I authenticate",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_78.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_25.wav",
         "full_ts": "bravo three kilo, over",
         "short_ts": "B3K, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_80.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_27.wav",
         "full_ts": "bravo three kilo , confirm you copied my last, over",
         "short_ts": "B3K, confirm you copied my last, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_81.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_28.wav",
         "full_ts": "charlie six delta, this is mike two delta. ginger bread, ginger bread, gin- ginger bread. time zero three five eight. I authenticate delta lima, over. ah disregard my last",
         "short_ts": "C6D, this is M2D. ginger bread, ginger bread, gin ginger bread. time 0358. I authenticate DL, over. ah disregard my last",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_83.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_30.wav",
         "full_ts": "charlie six delta, this is mike two delta. ginger bread, ginger bread, ginger bread. time zero three five eight. I authenticate delta lima. bravo one zulu, over",
         "short_ts": "C6D, this is M2D. ginger bread, ginger bread, ginger bread. time 0358. I authenticate DL. B1Z, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_84.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_31.wav",
         "full_ts": "charlie six delta, this is mike two delta. ginger bread, ginger bread, ginger bread. time zero three five eight. I authenticate oscar yankee. bravo one zulu, over",
         "short_ts": "C6D, this is M2D. ginger bread, ginger bread, ginger bread. time 0358. I authenticate OY. B1Z, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_16.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male.wav",
         "full_ts": "Charlie mike, this is charlie bravo. Go ahead when you are ready",
         "short_ts": "CM, this is CB. Go ahead when you are ready",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_18.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_1.wav",
         "full_ts": "Charlie yankee, this is uh charlie bravo uh go ahead with your text",
         "short_ts": "CY, this is uh CB uh go ahead with your text",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_20.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_3.wav",
         "full_ts": "Charlie golf, this is charlie bravo. Go ahead with your report",
         "short_ts": "CG, this is CB. Go ahead with your report",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_22.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_5.wav",
         "full_ts": "ah, charlie charlie foxtrot, this is charlie bravo. Go ahead with your ah re- go ahead with your report",
         "short_ts": "ah, CCF, this is CB. Go ahead with your ah re go ahead with your report",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_24.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male.wav",
         "full_ts": "uh this is uh the voice of uh charlie bravo. Lead one uh actually sting lead, texaco and so on",
         "short_ts": "uh this is uh the voice of uh CB. Lead 1 uh actually sting lead, texaco and so on",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_86.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female.wav",
         "full_ts": "this is mike two delta, over",
         "short_ts": "this is M2D, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_88.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_1.wav",
         "full_ts": "this is uh mike two delta. do not hold contact on my gadget over",
         "short_ts": "this is uh M2D. do not hold contact on my gadget over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_91.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_4.wav",
         "full_ts": "(thi i)s mike two delta, roger out",
         "short_ts": "thi i s M2D, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_93.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_6.wav",
         "full_ts": "charlie six delta, this is mike two delta. hot sonar contact two seven zero zero bearing ah zero seven four tango tango, two miles tracking two seven zero speed five. sonar contact two seven zero zero. tango six mike, over",
         "short_ts": "C6D, this is M2D. hot sonar contact 2700 bearing ah 074TT, 2 miles tracking 270 speed 5. sonar contact 2700. T6M, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_95.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_8.wav",
         "full_ts": "flash, flash, mike two, this is mike two delta. cold sonar contact, correction, datum established two seven zero zero. last known, disregard my last. out",
         "short_ts": "flash, flash, M2, this is M2D. cold sonar contact, correction, datum established 2700. last known, disregard my last. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_98.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_11.wav",
         "full_ts": "charlie six delta, this is mike two delta. new sonar contact one two ah zero zero, bearing ah zero four eight, twelve miles, tracking at two zero zero ah, speed one five. new sonar contact one two zero zero. charlie two bravo, over",
         "short_ts": "C6D, this is M2D. new sonar contact 12 ah 00, bearing ah 048, 12 miles, tracking at 200 ah, speed 15. new sonar contact 1200. C2B, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_100.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_13.wav",
         "full_ts": "bravo three kilo, over",
         "short_ts": "B3K, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_103.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_16.wav",
         "full_ts": "charlie six delta, this is mike two delta. cobra loose. bravo three kilo, over",
         "short_ts": "C6D, this is M2D. cobra loose. B3K, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_105.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_18.wav",
         "full_ts": "charlie six delta, this is ah mike two delta. dogbox established one one ah seven, nine miles. dogbox expiry time minute two seven . bravo three kil- kilo, over",
         "short_ts": "C6D, this is ah M2D. dogbox established 11 ah 7, 9 miles. dogbox expiry time minute 27. B3 kil K, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_107.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_20.wav",
         "full_ts": "flash, torpedo, torpedo, torpedo, bearing ah zero nine zero. romeo five tango, over",
         "short_ts": "flash, torpedo, torpedo, torpedo, bearing ah 090. R5T, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female_109.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_M2D_female.wav",
         "full_ts": "romeo two golf, this is mike two delta. music my golf quebec one fan three three zero tack three five zero, zero two zero, tack zero four zero. romeo five tango, over",
         "short_ts": "R2G, this is M2D. music my GQ1 fan 330 tack 350, 020, tack 040. R5T, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female_38.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_female.wav",
         "full_ts": "this is alfa whiskey, roger out",
-        "short_ts": "this is alfa W, roger out",
+        "short_ts": "this is AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_26.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male.wav",
         "full_ts": "charlie whiskey, this is ah charlie bravo. request uh sitrep",
         "short_ts": "CW, this is ah CB. request uh sitrep",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_28.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_1.wav",
         "full_ts": "this is ah charlie bravo, roger. Out",
         "short_ts": "this is ah CB, roger. Out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_30.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_3.wav",
         "full_ts": "charlie whiskey, yo(u) you should give an authentication on your mission kill",
         "short_ts": "CW, yo u you should give an authentication on your mission kill",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_32.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_5.wav",
         "full_ts": "this is charlie bravo, over",
         "short_ts": "this is CB, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_34.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_7.wav",
         "full_ts": "this is ah charlie bravo, roger. out",
         "short_ts": "this is ah CB, roger. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_36.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_9.wav",
         "full_ts": "this is ah sting lead over",
         "short_ts": "this is ah sting lead over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_38.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_11.wav",
         "full_ts": "this is uh sting lead uh roger. affirmative completed tanking uh, now state tiger six zero. weapons state two two plus four",
         "short_ts": "this is uh sting lead uh roger. affirmative completed tanking uh, now state tiger 60. weapons state 22 plus 4",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_40.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_13.wav",
         "full_ts": "this is ah s- sting lead and two roger hold hostile six nine nine three my gadget, over",
         "short_ts": "this is ah s sting lead and 2 roger hold hostile 6993 my gadget, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_42.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_15.wav",
         "full_ts": "this is sting lead, ah roger. request authenticate, over",
         "short_ts": "this is sting lead, ah roger. request authenticate, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_44.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_17.wav",
         "full_ts": "this is sting lead, roger out",
         "short_ts": "this is sting lead, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_45.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_18.wav",
         "full_ts": "this is sting lead, over",
         "short_ts": "this is sting lead, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_47.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_20.wav",
         "full_ts": "this is sting lead, roger. skip hostile six nine nine three, mission viz confirm mission viz ID, suspect five eight two seven, one four zero zero, over",
         "short_ts": "this is sting lead, roger. skip hostile 6993, mission viz confirm mission viz ID, suspect 5827, 1400, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_49.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_22.wav",
         "full_ts": "this is ah sting lead, roger. mission ID out",
         "short_ts": "this is ah sting lead, roger. mission ID out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_51.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_24.wav",
         "full_ts": "this is texaco, over",
         "short_ts": "this is texaco, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_53.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_26.wav",
         "full_ts": "this is ah texaco, roger. retrograding towards barns- barnstorm, over",
         "short_ts": "this is ah texaco, roger. retrograding towards barns barnstorm, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_55.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_28.wav",
         "full_ts": "texaco, roger out",
         "short_ts": "texaco, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_57.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_30.wav",
         "full_ts": "foxtrot, this is sting lead and two suspect one four zero zero five eight two seven ID'd as fighters, over",
         "short_ts": "F, this is sting lead and 2 suspect 14005827 ID d as fighters, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_59.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_32.wav",
         "full_ts": "sting lead, over",
         "short_ts": "sting lead, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_61.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_34.wav",
         "full_ts": "this is uh sting lead, roger. covering five eight two seven one four zero zero, over",
         "short_ts": "this is uh sting lead, roger. covering 58271400, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_63.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_36.wav",
         "full_ts": "this is charlie bravo, over",
         "short_ts": "this is CB, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_65.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_38.wav",
         "full_ts": "charlie whiskey, this is uh charlie bravo. copied your last sitrep ah, request uh proceed uh with viz ID, over",
         "short_ts": "CW, this is uh CB. copied your last sitrep ah, request uh proceed uh with viz ID, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_67.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_40.wav",
         "full_ts": "this is ah sting lead, over",
         "short_ts": "this is ah sting lead, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_69.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_42.wav",
         "full_ts": "this is uh sting lead, roger. mission viz ID, out",
         "short_ts": "this is uh sting lead, roger. mission viz ID, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_71.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_44.wav",
         "full_ts": "foxtrot, this is sting sting lead over",
         "short_ts": "F, this is sting sting lead over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_73.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_46.wav",
         "full_ts": "this is ah sting lead. viz ID'd as ah foxtrot one one one. request uh new mission over",
         "short_ts": "this is ah sting lead. viz ID d as ah F111. request uh new mission over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_75.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_48.wav",
         "full_ts": "this is uh sting lead, roger. fox one out",
         "short_ts": "this is uh sting lead, roger. F1 out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_77.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_50.wav",
         "full_ts": "flash, this is sting lead. Slameye, I say again, Slameye, out",
         "short_ts": "flash, this is sting lead. Slameye, I say again, Slameye, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_79.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_52.wav",
         "full_ts": "foxtrot this is ah sting lead. splash hostile one four zero zero five eight two seven, weapons state two two plus four, over",
         "short_ts": "F this is ah sting lead. splash hostile 14005827, weapons state 22 plus 4, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_81.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_54.wav",
         "full_ts": "this is uh sting lead, roger. breaking west, out",
         "short_ts": "this is uh sting lead, roger. breaking west, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_83.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_56.wav",
         "full_ts": "this is uh sting lead uh, roger. resetting uh oil two, out",
         "short_ts": "this is uh sting lead uh, roger. resetting uh oil 2, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_85.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_58.wav",
         "full_ts": "this is ah sting lead, say again over",
         "short_ts": "this is ah sting lead, say again over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_87.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_60.wav",
         "full_ts": "this is uh texaco, roger. out",
         "short_ts": "this is uh texaco, roger. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_89.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_62.wav",
         "full_ts": "charlie bravo, over",
         "short_ts": "CB, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_91.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_64.wav",
         "full_ts": "this is uh charlie bravo, roger out",
         "short_ts": "this is uh CB, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_93.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_66.wav",
         "full_ts": "this is uh sting lead, over",
         "short_ts": "this is uh sting lead, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_95.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_68.wav",
         "full_ts": "this is uh sting lead. affirmative, I'm in position over",
         "short_ts": "this is uh sting lead. affirmative, I m in position over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_97.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_70.wav",
         "full_ts": "foxtrot, this is sting uh lead uh. request you pass uh my new station uh from uh claymore, over",
         "short_ts": "F, this is sting uh lead uh. request you pass uh my new station uh from uh claymore, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_99.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_72.wav",
         "full_ts": "this is uh sting lead, over",
         "short_ts": "this is uh sting lead, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_101.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_74.wav",
         "full_ts": "this is uh sting lead, roger out",
         "short_ts": "this is uh sting lead, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_102.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_75.wav",
         "full_ts": "sting lead, over",
         "short_ts": "sting lead, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_104.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_77.wav",
         "full_ts": "this is uh sting, roger. new station oil three, out",
         "short_ts": "this is uh sting, roger. new station oil 3, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_106.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_79.wav",
         "full_ts": "charlie bravo, over",
         "short_ts": "CB, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_107.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_80.wav",
         "full_ts": "this is uh charlie bravo, roger. request uh ident of six nine nine three, over",
         "short_ts": "this is uh CB, roger. request uh ident of 6993, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_109.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_82.wav",
         "full_ts": "this is ah charlie bravo, roger out",
         "short_ts": "this is ah CB, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_111.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_84.wav",
         "full_ts": "this is sting lead, over",
         "short_ts": "this is sting lead, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_113.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_86.wav",
         "full_ts": "this is uh sting lead uh, roger. confirm uh holding on my gadget uh, north of my position, over",
         "short_ts": "this is uh sting lead uh, roger. confirm uh holding on my gadget uh, north of my position, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_115.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_88.wav",
         "full_ts": "this is ah sting lead, roger. mission kill six nine nine three confirm, I.. authentication",
         "short_ts": "this is ah sting lead, roger. mission kill 6993 confirm, I.. authentication",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_117.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_90.wav",
         "full_ts": "this is sting lead, roger",
         "short_ts": "this is sting lead, roger",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_118.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_91.wav",
         "full_ts": "foxtrot, this is uh sting lead and two. multiple target uh famish over",
         "short_ts": "F, this is uh sting lead and 2. multiple target uh famish over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_120.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_93.wav",
         "full_ts": "this is uh sting lead and two. negative uh assess uh hostile fighter, positioning for mission kill. out",
         "short_ts": "this is uh sting lead and 2. negative uh assess uh hostile fighter, positioning for mission kill. out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_122.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_95.wav",
         "full_ts": "this is charlie bravo, roger out",
         "short_ts": "this is CB, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_124.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_97.wav",
         "full_ts": "foxtrot, this is uh sting lead. flash, sting two splash. five splash two hostile Fencer, proceeding for hostile Bear, over",
         "short_ts": "F, this is uh sting lead. flash, sting 2 splash. 5 splash 2 hostile Fencer, proceeding for hostile Bear, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_126.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_99.wav",
         "full_ts": "this is uh sting lead, roger. mission kill uh six nine nine three hostile out",
         "short_ts": "this is uh sting lead, roger. mission kill uh 6993 hostile out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_128.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_101.wav",
         "full_ts": "this is uh charlie bravo, over",
         "short_ts": "this is uh CB, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_130.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_103.wav",
         "full_ts": "this is uh charlie bravo, roger. combat SAR will be airborne in two zero minute. proceeding to position ah zero four eight seven",
         "short_ts": "this is uh CB, roger. combat SAR will be airborne in 20 minute. proceeding to position ah 0487",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_132.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_105.wav",
         "full_ts": "foxtrot, this is sting lead uh. splash uh Bear delta hostile hostile one two three four. state LAN, weapons zero zero minus zero. RTB over",
         "short_ts": "F, this is sting lead uh. splash uh Bear D hostile hostile 1234. state LAN, weapons 00 minus 0. RTB over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_134.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_107.wav",
         "full_ts": "this is ah bucken mike charlie, over",
         "short_ts": "this is ah bucken MC, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_136.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_CB_male_109.wav",
         "full_ts": "this is ah buchen mike charlie, roger. running short on cap at this time. next cap will be airborne in one hour, over",
         "short_ts": "this is ah buchen MC, roger. running short on cap at this time. next cap will be airborne in 1 hour, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_41.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_0.wav",
         "full_ts": "whiskey, this is alfa whiskey. uh no active rackets. break, uh this is alfa whiskey. force currently being surveyed by a Bear delta to the north east. all units remain vigilant. romeo tango, over",
-        "short_ts": "W, this is alfa W. uh no active rackets. break, uh this is alfa W. force currently being surveyed by a Bear D to the north east. all units remain vigilant. RT, over",
+        "short_ts": "W, this is AW. uh no active rackets. break, uh this is AW. force currently being surveyed by a Bear D to the north east. all units remain vigilant. RT, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_32.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male.wav",
         "full_ts": "this is romeo tango, roger out",
         "short_ts": "this is RT, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_34.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_1.wav",
         "full_ts": "flash, this is uh romeo tango. new air unknown two seven uh zero six zero one three clay thirty-nine. uh recommend making track two seven zero six uh suspect based on no modes and codes and a pop up target. alfa whiskey, over",
-        "short_ts": "flash, this is uh RT. new air unknown 27 uh 06013 clay 309. uh recommend making track 2706 uh suspect based on no modes and codes and a pop up target. alfa W, over",
+        "short_ts": "flash, this is uh RT. new air unknown 27 uh 06013 clay 39. uh recommend making track 2706 uh suspect based on no modes and codes and a pop up target. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_43.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_2.wav",
         "full_ts": "this is alfa whiskey, roger. make uh track two seven two six uh suspect, over",
-        "short_ts": "this is alfa W, roger. make uh track 2726 uh suspect, over",
+        "short_ts": "this is AW, roger. make uh track 2726 uh suspect, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_36.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_3.wav",
         "full_ts": "romeo tango, roger out",
         "short_ts": "RT, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_38.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_5.wav",
         "full_ts": "ah zero four four clay ah forty-one ah closing. heads up",
-        "short_ts": "ah 044 clay ah 401 ah closing. heads up",
+        "short_ts": "ah 044 clay ah 41 ah closing. heads up",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_45.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_4.wav",
         "full_ts": "alfa whiskey, roger out",
-        "short_ts": "alfa W, roger out",
+        "short_ts": "AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_39.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_6.wav",
         "full_ts": "ah this is romeo tango. alph(a) Exocet now zero seven eight ah range ah two five. alfa whiskey, over",
-        "short_ts": "ah this is RT. alph a Exocet now 078 ah range ah 25. alfa W, over",
+        "short_ts": "ah this is RT. alph a Exocet now 078 ah range ah 25. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_47.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_6.wav",
         "full_ts": "alfa whiskey, roger out",
-        "short_ts": "alfa W, roger out",
+        "short_ts": "AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_49.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_8.wav",
         "full_ts": "this is mi(ke) alfa whiskey, roger out",
-        "short_ts": "this is mi ke alfa W, roger out",
+        "short_ts": "this is mi ke AW, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_50.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_9.wav",
         "full_ts": "whiskey, this is alfa whiskey, assess ah raid to the east plate. Bear delta orbiting to the north east uh. all units remain vigilant. ah romeo tango, over",
-        "short_ts": "W, this is alfa W, assess ah raid to the east plate. Bear D orbiting to the north east uh. all units remain vigilant. ah RT, over",
+        "short_ts": "W, this is AW, assess ah raid to the east plate. Bear D orbiting to the north east uh. all units remain vigilant. ah RT, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_41.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_8.wav",
         "full_ts": "Romeo tango, roger out",
         "short_ts": "RT, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_52.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_11.wav",
         "full_ts": "this is alfa whiskey. uh make uh air unknown one one one zero friendly one one one zero based on squawk and in adherence to the air lanes. mike delta, over",
-        "short_ts": "this is alfa W. uh make uh air unknown 1110 friendly 1110 based on squawk and in adherence to the air lanes. MD, over",
+        "short_ts": "this is AW. uh make uh air unknown 1110 friendly 1110 based on squawk and in adherence to the air lanes. MD, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_43.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_10.wav",
         "full_ts": "ah whiskey, ah this is romeo tango. new air unknown one one one two ah one three zero, correction ah one eight four clay forty-six. ah recommend make friendly one one ah one two based on ah modes three and charlie. alfa whiskey, over",
-        "short_ts": "ah W, ah this is RT. new air unknown 1112 ah 130, correction ah 184 clay 406. ah recommend make friendly 11 ah 12 based on ah modes 3 and C. alfa W, over",
+        "short_ts": "ah W, ah this is RT. new air unknown 1112 ah 130, correction ah 184 clay 46. ah recommend make friendly 11 ah 12 based on ah modes 3 and C. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_54.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_13.wav",
         "full_ts": "this is alfa whiskey, roger. make uh air unknown one one one two",
-        "short_ts": "this is alfa W, roger. make uh air unknown 1112",
+        "short_ts": "this is AW, roger. make uh air unknown 1112",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_55.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_14.wav",
         "full_ts": "friendly one one one two based on squawk and in the air lanes. Over",
         "short_ts": "friendly 1112 based on squawk and in the air lanes. Over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_45.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_12.wav",
         "full_ts": "romeo tango ah, roger out",
         "short_ts": "RT ah, roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_57.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_16.wav",
         "full_ts": "this is alfa whiskey, roger. make uh two seven zero one friendly two seven v- zero one based on squawk and in the air lanes, over",
-        "short_ts": "this is alfa W, roger. make uh 2701 friendly 27 v 01 based on squawk and in the air lanes, over",
+        "short_ts": "this is AW, roger. make uh 2701 friendly 27 v 01 based on squawk and in the air lanes, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_59.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_18.wav",
         "full_ts": "this is alfa whiskey, roger. make air unknown two seven uh zero two friendly ah two seven zero two based on squawk and in the air lanes. bravo kilo, over",
-        "short_ts": "this is alfa W, roger. make air unknown 27 uh 02 friendly ah 2702 based on squawk and in the air lanes. BK, over",
+        "short_ts": "this is AW, roger. make air unknown 27 uh 02 friendly ah 2702 based on squawk and in the air lanes. BK, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_61.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_20.wav",
         "full_ts": "this is alfa whiskey. request you say again, over",
-        "short_ts": "this is alfa W. request you say again, over",
+        "short_ts": "this is AW. request you say again, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_63.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_22.wav",
         "full_ts": "this is alfa whiskey, roger. ah tango mike, are you prepared to take duty four zero fife zero eight zero, over ?",
-        "short_ts": "this is alfa W, roger. ah TM, are you prepared to take duty 40 fife 080, over?",
+        "short_ts": "this is AW, roger. ah TM, are you prepared to take duty 40 fife 080, over?",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_65.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_24.wav",
         "full_ts": "tango mike, this is",
         "short_ts": "TM, this is",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_67.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_26.wav",
         "full_ts": "this is alfa whiskey, roger. ah air unknown one one one zero, one eight zero clay twenty-five miles, ah turn tail, now tracking south, speed fast, squawk mode three charlie, flight level ah one four zero. make ah suspect one one one zero. romeo tango, over",
-        "short_ts": "this is alfa W, roger. ah air unknown 1110, 180 clay 205 miles, ah turn tail, now tracking south, speed fast, squawk mode 3C, flight level ah 140. make ah suspect 1110. RT, over",
+        "short_ts": "this is AW, roger. ah air unknown 1110, 180 clay 25 miles, ah turn tail, now tracking south, speed fast, squawk mode 3C, flight level ah 140. make ah suspect 1110. RT, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_47.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_14.wav",
         "full_ts": "it's ah romeo tango, ah roger out",
         "short_ts": "it s ah RT, ah roger out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_48.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_15.wav",
         "full_ts": "flash, this is romeo tango. new air unknown one nine zero, ah range ah three seven, ah closing. ah recommend ah make ah suspect ah one one one three based on no modes and codes. alfa whiskey, over",
-        "short_ts": "flash, this is RT. new air unknown 190, ah range ah 37, ah closing. ah recommend ah make ah suspect ah 1113 based on no modes and codes. alfa W, over",
+        "short_ts": "flash, this is RT. new air unknown 190, ah range ah 37, ah closing. ah recommend ah make ah suspect ah 1113 based on no modes and codes. AW, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_69.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_AW_male_28.wav",
         "full_ts": "this is alfa whiskey, roger. make one one one three a suspect. cover one one one three. romeo tango, over",
-        "short_ts": "this is alfa W, roger. make 1113 a suspect. cover 1113. RT, over",
+        "short_ts": "this is AW, roger. make 1113 a suspect. cover 1113. RT, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_50.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_17.wav",
         "full_ts": "ah this is ah romeo tango, roger. covering uh suspect one one one three, out",
         "short_ts": "ah this is ah RT, roger. covering uh suspect 1113, out",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_52.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_19.wav",
         "full_ts": "and ah alfa whiskey, this is ah romeo tango ah. ah recommend ah track one one one three ah possible Exocet ah from suspect ah one one one two, over",
-        "short_ts": "and ah alfa W, this is ah RT ah. ah recommend ah track 1113 ah possible Exocet ah from suspect ah 1112, over",
+        "short_ts": "and ah AW, this is ah RT ah. ah recommend ah track 1113 ah possible Exocet ah from suspect ah 1112, over",
         "prompt": null
     },
     {
-        "audio": "n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_54.wav",
+        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Speech_Segments/0_RT_male_21.wav",
         "full_ts": "ah this is ah romeo tango, ah roger. ah recommend make track one one one two hostile based on weapons release, over",
         "short_ts": "ah this is ah RT, ah roger. ah recommend make track 1112 hostile based on weapons release, over",
         "prompt": null
