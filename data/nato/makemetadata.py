@@ -1,22 +1,11 @@
-from calendar import c
-import math
 import os
-import random
-from librosa import ex
-from numpy import short
-from openai import audio
 from pydub import AudioSegment 
 import re
-from bs4 import BeautifulSoup
-from scipy.io import wavfile
 import json
 from rapidfuzz import process
 from glob import glob
 from time import time
 from tqdm import tqdm
-
-from sklearn import tests
-from sklearn.model_selection import train_test_split
 
 units = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 tens = ['20', '30', '40', '50', '60', '70', '80', '90'] 

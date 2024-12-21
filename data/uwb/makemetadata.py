@@ -1,8 +1,11 @@
 import re
 
-from arrow import get
-from numpy import number, short
 from rapidfuzz import process
+from pydub import AudioSegment 
+import os, json, time
+
+from sklearn.metrics import top_k_accuracy_score
+import tqdm
 
 units = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 tens = ['20', '30', '40', '50', '60', '70', '80', '90'] 
@@ -213,43 +216,13 @@ def get_shortts(full_ts : str, what : str ="alphanum"):
 def alphaToAviation(ts : str) -> str:
     result = []
     for word in ts.split(" "):
-        if word.upper() in aviation_reverse_map:
-            result.append(aviation_reverse_map[word])
+        word_upper = word.upper()
+        if word_upper in aviation_reverse_map:
+            result.append(aviation_reverse_map[word_upper])
         else:
             result.append(word)
+            
     return " ".join(result)
-
-def getFullTs(ts) -> None|str:
-    
-    ts = ts.strip()
-    # check whether it is not blank
-    if ts == "" or ts == "..":
-        return None
-    
-    
-    # remove the tags
-    ts = re.sub(r'\[[^\]]*\]', ' ', ts)
-    # parse the pronountiation (e.g. "(9(najn))" to '9')
-    ts = re.sub(r'\(([^\)]+)\([^\)]+\)\)', r' \1 ', ts)
-    # remove double spaces
-    ts = re.sub(r'\s+', ' ', ts)
-    
-    # put floats together
-    ts = re.sub(r'(?<=\d)\s+\.\s+(?=\d)', '.', ts) # 1 . 2 -> 1.2
-    
-    # now parse all the numbers back to spoken form
-    ts = numbersToWords(ts)
-    ts = alphaToAviation(ts)
-    return ts
-
-    #put the digits and letters together without spaces
-    # ts = re.sub(r'(?<=\d)\s+(?=\d)', '', ts) # 1 2 3 -> 123
-    # ts = re.sub(r'(?<=\d)\s+\.\s+(?=\d)', '.', ts) # 1 . 2 -> 1.2
-    # ts = re.sub(r'(?<=[A-Z0-9])\s+(?=[A-Z0-9])', '', ts) # A B -> AB
-    # resplit some possible unwanted combinations like 123Ahoj -> 123 Ahoj
-    # ts = re.sub(r'([A-Z][a-z]+)', r' \1', ts) # A B -> AB
-    # remove double spaces again
-    # ts = re.sub(r'\s+', ' ', ts)
 
 def complexNumberToWords(number : str) -> str:
     # we assume the number is kind 1523 ... less or more
@@ -315,11 +288,95 @@ def numbersToWords(ts : str) -> str:
             
     return " ".join(result)     
 
+def getFullTs(ts) -> None|str:
+    
+    ts = ts.strip()
+    # check whether it is not blank
+    if ts == "" or ts == "..":
+        return None
+    
+    
+    # remove the tags
+    ts = re.sub(r'\[[^\]]*\]', ' ', ts)
+    # parse the pronountiation (e.g. "(9(najn))" to '9')
+    ts = re.sub(r'\(([^\)]+)\([^\)]+\)\)', r' \1 ', ts)
+    # remove double spaces
+    ts = re.sub(r'\s+', ' ', ts)
+    
+    # put floats together
+    ts = re.sub(r'(?<=\d)\s+\.\s+(?=\d)', '.', ts) # 1 . 2 -> 1.2
+    
+    # now parse all the numbers back to spoken form
+    ts = numbersToWords(ts)
+    ts = alphaToAviation(ts)
+    # replace FL for flight level
+    ts = ts.replace("FL", "flight level")
+    
+    return ts
+
+def make_audio_split(start_in_s,stop_in_s,audio,out_path) -> str:
+    segment = audio[start_in_s*1000:stop_in_s*1000]
+    segment.export(out_path, format="wav")
+
+def makeMetadata(parsed_wavs, path_to_wavs, out_dir_wavs, out_path_metadata_train, out_path_metadata_test, out_dir_replace = ""):
+    test_wavs = []
+    with open('test_wavs.out', "r") as f:
+        for line in f.readlines():
+            test_wavs.append(line.split()[0].strip())
+    
+    result_test_set = []
+    result_train_set = []
+    
+    for wav in tqdm.tqdm(parsed_wavs):
+        wavname = wav["audio"]
+        start = float(wav["start"])
+        end = float(wav["end"])
+        full_ts = wav["full_ts"]
+        short_ts = wav["short_ts"]
+        
+        # load proper audio file
+        audio = AudioSegment.from_wav(os.path.join(path_to_wavs, wavname) + ".wav")
+
+        # extract the specified part of the audio
+        audio_out_path = os.path.join(out_dir_wavs, wavname)
+        suffix = 0
+        while os.path.exists(audio_out_path + f"_{suffix}.wav"):
+            suffix += 1
+        audio_out_path = audio_out_path + f"_{suffix}.wav"
+        make_audio_split(start, end, audio, audio_out_path)
+        
+        # save audio metadata to proper set
+        if wavname in test_wavs:
+            result_test_set.append({
+                "audio": audio_out_path.replace(out_dir_replace, ""),
+                "full_ts": full_ts,
+                "short_ts": short_ts,
+                "prompt": None
+            })
+        else:
+            result_train_set.append({
+                "audio": audio_out_path.replace(out_dir_replace, ""),
+                "full_ts": full_ts,
+                "short_ts": short_ts,
+                "prompt": None
+            })
+    
+    if  os.path.exists(out_path_metadata_train):
+        out_path_metadata_train.replace(".json", f"_{time.time()}.json")
+    if  os.path.exists(out_path_metadata_test):
+        out_path_metadata_test.replace(".json", f"_{time.time()}.json")
+        
+    with open(out_path_metadata_train, "w") as f:
+        f.write(json.dumps(result_train_set, indent=4))
+    
+    with open(out_path_metadata_test, "w") as f:
+        f.write(json.dumps(result_test_set, indent=4))
+        
 def parseStm(path):
     result = []
+    skipped = 0
     with open(path, "r") as f:
         lines = f.readlines()
-        i = 0
         for line in lines:
             line = line.split('<,,,>')
             wav_desc = line[0].split(" ")
@@ -328,25 +385,65 @@ def parseStm(path):
             wav_start_time = wav_desc[3]
             wav_end_time = wav_desc[4]
             
+            if float(wav_end_time) - float(wav_start_time) >= 30:
+                print(f"Skipping {wavname} because it is longer than 30s")
+                skipped += 1
+                continue
+                
             full_ts = getFullTs(ts)
             if full_ts is None:
+                skipped += 1
                 continue
             
             short_ts = get_shortts(full_ts)
 
             result.append({
-                # "audio": wavname,
+                "audio": wavname,
+                "start": wav_start_time,
+                "end": wav_end_time,
                 "full_ts": full_ts,
-                "short_ts": short_ts,
-                "prompt": ""
+                "short_ts": short_ts
             })
-            i += 1
-            if i == 5:
-                break
-    
-    for res in result:
-        print(res)
+
+    print(f"WARNING: Skipped {skipped} files")
+    return result
+
 if __name__ == "__main__":
-    parseStm('/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/stm/stm')
+    parsed_wavs = parseStm('/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/stm/stm')
+    
+    # THIS PART IS USED TO FIND OUT HOW MANY WAVS CAN BE USED AND HOW TO SPLIT THE DATASET
+    # dict_wavs = {}
+    # with open('test_wavs.out', "w") as f:
+    #     total_test_speeches = 0
+    #     total_wav_files_test = 0
+    #     total_wav_files = 0
+    #     for pw in parsed_wavs:
+    #         if pw["audio"] in dict_wavs:
+    #             dict_wavs[pw["audio"]] += 1
+    #         else:
+    #             dict_wavs[pw["audio"]] = 1
+        
+    #     for key in dict_wavs:
+    #         if total_test_speeches < 3960: # 27% of 14666 ... usable speeches from wav files
+    #             f.write(f"{key} {dict_wavs[key]}\n")
+    #             total_test_speeches += dict_wavs[key]
+    #             total_wav_files_test += 1
+    #         else: break
+        
+    #     print(total_test_speeches, total_wav_files_test, len(dict_wavs))
+    # exit(3)
+    
+    path_to_wavs = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/audio'
+    path_to_save_new_wavs = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/audio_split'
+    out_metadata_test = './metadata_test.json'
+    out_metadata_train = './metadata_train.json'
+    replace_path_of_audio = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/'
+    
+    makeMetadata(parsed_wavs, 
+                 path_to_wavs, 
+                 path_to_save_new_wavs,
+                 out_metadata_train,
+                 out_metadata_test,
+                 replace_path_of_audio)
     
    
