@@ -295,7 +295,7 @@ def make_metadata(short_segments,set_lang,out_file_path="metadata.json"):
     train_written = 0
     
     for segment in tqdm(short_segments):
-        audio_path = segment["audio"]
+        audio_path = segment["audio"].replace("/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/","")
         full_ts = segment["text"]
         short_ts = get_shortts(full_ts)
         
@@ -360,14 +360,17 @@ if __name__ == "__main__":
         "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/DE/DE_",
     ]
     langs = ["UK","CA","NL","DE"]
+    
     for idx,file in enumerate(inputs):
         all_short_segments = []
+        
+        wav_out_path = file + 'Audio_Speech_Segments'
+        if os.path.exists(wav_out_path):
+            os.system(f"rm -rf {wav_out_path}")
+        os.mkdir(wav_out_path)
+        
         for audio_file in glob(file+"Audio_Sphere/*.wav"):
             ts_file = inputs[idx]+'Trans/'+os.path.basename(audio_file).replace('wav','TRS')
-            wav_out_path = file + 'Audio_Speech_Segments'
-            if os.path.exists(wav_out_path):
-                os.system(f"rm -rf {wav_out_path}")
-            os.mkdir(wav_out_path)
             short_segments=extract_short_segments(ts_file, audio_file, wav_out_path, max_duration=30)   
             all_short_segments.extend(short_segments)    
         

@@ -1,1632 +1,1632 @@
 [
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_0.wav",
         "full_ts": "papa alfa sierra zulu this is oscar romeo juliett hotel over",
         "short_ts": "PASZ this is ORJH over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female.wav",
         "full_ts": "papa alfa sierra zulu this is golf charlie oscar bravo over",
         "short_ts": "PASZ this is GCOB over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa sierra zulu roger out",
         "short_ts": "HBXJ this is PASZ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_0.wav",
         "full_ts": "papa alfa mike charlie this is golf charlie oscar bravo over",
         "short_ts": "PAMC this is GCOB over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_2.wav",
         "full_ts": "papa alfa mike charlie this is golf charlie oscar bravo nothing heard out",
         "short_ts": "PAMC this is GCOB nothing heard out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_1.wav",
         "full_ts": "papa alfa victor oscar this is oscar romeo juliett hotel radio check over",
         "short_ts": "PAVO this is ORJH radio check over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_3.wav",
         "full_ts": "papa alfa victor oscar this is oscar romeo juliett hotel roger out",
         "short_ts": "PAVO this is ORJH roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_2.wav",
         "full_ts": "ok",
         "short_ts": "ok",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_4.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa correction break word before two two November break out",
         "short_ts": "HBXJ this is AMAA correction break word before 22N break out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa mike charlie correction my two three one three one seven zulu from two to exempt to hotel bravo xray juliett info papa alfa delta hotel exempt over",
         "short_ts": "HBXJ this is PAMC correction my 231317Z from 200 exempt to HBXJ info PADH exempt over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_5.wav",
         "full_ts": "alfa mike alfa alfa this is oscar romeo juliett hotel say again from ship to leave over",
         "short_ts": "AMAA this is ORJH say again from ship to leave over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_7.wav",
         "full_ts": "romeo delta this is juliett hotel out",
         "short_ts": "RD this is JH out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female_1.wav",
         "full_ts": "alfa mike this is mike charlie out",
         "short_ts": "AM this is MC out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_6.wav",
         "full_ts": "alfa alfa this is oscar bravo out",
         "short_ts": "AA this is OB out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female_1.wav",
         "full_ts": "alfa alfa this is sierra zulu out",
         "short_ts": "AA this is SZ out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_9.wav",
         "full_ts": "alfa mike alfa alfa this is oscar romeo juliett hotel out",
         "short_ts": "AMAA this is ORJH out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_34_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_34_male.wav",
         "full_ts": "ok",
         "short_ts": "ok",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_7.wav",
         "full_ts": "unknown station this is golf charlie oscar bravo say again over",
         "short_ts": "unknown station this is GCOB say again over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female_3.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa mike charlie interrogative roger over",
         "short_ts": "AMAA this is PAMC interrogative roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_10.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_11.wav",
         "full_ts": "alfa mike alfa alfa this is oscar romeo juliett hotel say again your two two three four from tack to tack over",
         "short_ts": "AMAA this is ORJH say again your 2234 from tack to tack over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_0.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa romeo delta ginger bread on-line authentication time zero seven one eight I authenticate uniform tango over",
         "short_ts": "HBXJ this is PARD ginger bread on line authentication time 0718 I authenticate UT over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_9.wav",
         "full_ts": "alfa mike alfa alfa this is golf charlie oscar bravo over",
         "short_ts": "AMAA this is GCOB over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female_6.wav",
         "full_ts": "golf charlie oscar bravo this is papa alfa mike charlie through me over",
         "short_ts": "GCOB this is PAMC through me over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_12.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_13.wav",
         "full_ts": "alfa mike alfa alfa this is oscar romeo juliett hotel say again from four five xray to tango alfa eight eight over",
         "short_ts": "AMAA this is ORJH say again from 45X to TA88 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_2.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa romeo delta verify your one one two three zulu from break to break over",
         "short_ts": "AMAA this is PARD verify your 1123Z from break to break over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_4.wav",
         "full_ts": "this is papa alfa romeo delta roger out",
         "short_ts": "this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_1.wav",
         "full_ts": "this is papa alfa mike charlie roger out",
         "short_ts": "this is PAMC roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male.wav",
         "full_ts": "this is papa alfa mike alfa roger out",
         "short_ts": "this is PAMA roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_3.wav",
         "full_ts": "this is papa alfa mike charlie roger out",
         "short_ts": "this is PAMC roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_6.wav",
         "full_ts": "this is papa alfa romeo delta roger out",
         "short_ts": "this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_2.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa mike bravo standby standby execute papa alfa mike alfa over",
         "short_ts": "HBXJ this is PAMB standby standby execute PAMA over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_1.wav",
         "full_ts": "this is papa alfa mike alfa roger out",
         "short_ts": "this is PAMA roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male.wav",
         "full_ts": "papa alfa victor papa roger out",
         "short_ts": "PAVP roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male.wav",
         "full_ts": "this is papa alfa zulu juliett roger out",
         "short_ts": "this is PAZJ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female.wav",
         "full_ts": "this is oscar romeo juliett hotel roger out",
         "short_ts": "this is ORJH roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_0.wav",
         "full_ts": "this is papa alfa sierra zulu roger out",
         "short_ts": "this is PASZ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_5.wav",
         "full_ts": "this is papa alfa mike charlie roger out",
         "short_ts": "this is PAMC roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_13.wav",
         "full_ts": "hotel foxtrot zulu xray this is golf charlie oscar bravo break negat speed one eight break oscar romeo juliett hotel over",
         "short_ts": "HFZX this is GCOB break negat speed 18 break ORJH over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_1.wav",
         "full_ts": "this is oscar romeo juliett hotel roger out",
         "short_ts": "this is ORJH roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_4.wav",
         "full_ts": "papa alfa victor papa this is papa alfa mike alfa I say again from break to echo delta two break alfa victor two eight tack five tack echo delta two over",
         "short_ts": "PAVP this is PAMA I say again from break to ED2 break AV28 tack 5 tack ED2 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_2.wav",
         "full_ts": "this is papa alfa victor papa roger out",
         "short_ts": "this is PAVP roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_3.wav",
         "full_ts": "this is oscar romeo juliett hotel over correction roger out",
         "short_ts": "this is ORJH over correction roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_5.wav",
         "full_ts": "papa alfa victor oscar oscar romeo juliett hotel this is papa alfa sierra zulu standby standby execute papa alfa victor oscar over",
         "short_ts": "PAVOORJH this is PASZ standby standby execute PAVO over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_3.wav",
         "full_ts": "this is papa alfa victor papa roger out",
         "short_ts": "this is PAVP roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_8.wav",
         "full_ts": "this is papa alfa romeo delta roger out",
         "short_ts": "this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_15.wav",
         "full_ts": "this is golf charlie oscar bravo roger out",
         "short_ts": "this is GCOB roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_10.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa mike charlie break negat break standby execute out",
         "short_ts": "HBXJ this is PAMC break negat break standby execute out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_7.wav",
         "full_ts": "this is papa alfa sierra zulu roger out",
         "short_ts": "this is PASZ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_None_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_None_0.wav",
         "full_ts": "ja maar",
         "short_ts": "ja maar",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_None_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_None_2.wav",
         "full_ts": "vra",
         "short_ts": "vra",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_2.wav",
         "full_ts": "for victor oscar I say again turn port niner has been execute out",
         "short_ts": "for VO I say again turn port niner has been execute out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_10.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa romeo delta verify sierra speed one eight over",
         "short_ts": "ORJH this is PARD verify S speed 18 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_5.wav",
         "full_ts": "this is oscar romeo juliett hotel roger out",
         "short_ts": "this is ORJH roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_7.wav",
         "full_ts": "papa alfa romeo delta this is oscar romeo juliett hotel I verify speed correction I verify sierra speed one eight over",
         "short_ts": "PARD this is ORJH I verify speed correction I verify S speed 18 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_12.wav",
         "full_ts": "this is papa alfa romeo delta roger out",
         "short_ts": "this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_4.wav",
         "full_ts": "papa alfa victor oscar this is papa alfa mike bravo I verify your two three one three zero six zulu from known",
         "short_ts": "PAVO this is PAMB I verify your 231306Z from known",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_33_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_33_male.wav",
         "full_ts": "u bent netcontrolstation open een freenet met alle schepen de schepen liggen nog in de haven bij het openen van een freenet door de Willem van der Zaan geeft u aan dat u geen verkeer voorhanden heeft bij het openen van een freenet door de Willem van der Zaan antwoordt u in eerste instantie niet nadat het netcontrolstation het net geopend heeft meldt u zich bij het netcontrolstation",
         "short_ts": "u bent netcontrolstation open een freenet met alle schepen de schepen liggen nog in de haven bij het openen van een freenet door de Willem van der Zaan geeft u aan dat u geen verkeer voorhanden heeft bij het openen van een freenet door de Willem van der Zaan antwoordt u in eerste instantie niet nadat het netcontrolstation het net geopend heeft meldt u zich bij het netcontrolstation",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U01_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U01_male.wav",
         "full_ts": "loud and clear",
         "short_ts": "loud and clear",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U02_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U02_female.wav",
         "full_ts": "clear",
         "short_ts": "clear",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U03_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U03_male.wav",
         "full_ts": "loud and clear",
         "short_ts": "loud and clear",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U05_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U05_female.wav",
         "full_ts": "roger over",
         "short_ts": "roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U06_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U06_female.wav",
         "full_ts": "roger over",
         "short_ts": "roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U09_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U09_male.wav",
         "full_ts": "roger over",
         "short_ts": "roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U11_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U11_female.wav",
         "full_ts": "roger over",
         "short_ts": "roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U13_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U13_male.wav",
         "full_ts": "loud and clear",
         "short_ts": "loud and clear",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U14_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U14_male.wav",
         "full_ts": "roger over",
         "short_ts": "roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U15_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U15_male.wav",
         "full_ts": "roger over",
         "short_ts": "roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U16_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_U16_male.wav",
         "full_ts": "roger over",
         "short_ts": "roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_9.wav",
         "full_ts": "hotel (bra)vo xray juliett this is oscar romeo juliett hotel over",
         "short_ts": "H bra vo XJ this is ORJH over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_17.wav",
         "full_ts": "oscar romeo juliett hotel this is golf charlie o(scar) bravo over",
         "short_ts": "ORJH this is GC o scar B over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_6.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa mike alfa over",
         "short_ts": "ORJH this is PAMA over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_5.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa mike bravo over",
         "short_ts": "ORJH this is PAMB over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_12.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa mike charlie over",
         "short_ts": "ORJH this is PAMC over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_14.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa romeo delta over",
         "short_ts": "ORJH this is PARD over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_9.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa sierra zulu over",
         "short_ts": "ORJH this is PASZ over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_6.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa victor papa over",
         "short_ts": "ORJH this is PAVP over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_11.wav",
         "full_ts": "hotel bravo xray juliett this is oscar romeo juliett hotel roger papa alfa zulu juliett nothing heard out",
         "short_ts": "HBXJ this is ORJH roger PAZJ nothing heard out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_4.wav",
         "full_ts": "romeo juliett hotel this is papa alfa zulu juliett reporting into net over",
         "short_ts": "RJH this is PAZJ reporting into net over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_13.wav",
         "full_ts": "papa alfa zulu juliett this is oscar romeo juliett hotel out",
         "short_ts": "PAZJ this is ORJH out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_4.wav",
         "full_ts": "ok",
         "short_ts": "ok",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_5.wav",
         "full_ts": "[silence]",
         "short_ts": "",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_11.wav",
         "full_ts": "papa alfa zulu juliett this is papa alfa sierra zulu reporting into net over",
         "short_ts": "PAZJ this is PASZ reporting into net over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_6.wav",
         "full_ts": "door ze [eh] gedeetsia antwoordt u in eerste instantie niet in opdracht twee",
         "short_ts": "door ze gedeetsia antwoordt u in eerste instantie niet in opdracht twee",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_13.wav",
         "full_ts": "papa alfa mike alfa this is papa alfa sierra zulu reporting into net over",
         "short_ts": "PAMA this is PASZ reporting into net over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_8.wav",
         "full_ts": "papa alfa sierra zulu this is papa alfa mike alfa request you authenticate mike charlie victor over",
         "short_ts": "PASZ this is PAMA request you authenticate MCV over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_10.wav",
         "full_ts": "papa alfa sierra zulu this is papa alfa mike alfa I authenticate quebec over",
         "short_ts": "PASZ this is PAMA I authenticate Q over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_16.wav",
         "full_ts": "papa alfa sierra zulu .. papa alfa z(ulu).. mike alfa this is papa alfa sierra zulu out",
         "short_ts": "PASZ.. PA z ulu.. MA this is PASZ out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_14.wav",
         "full_ts": "papa alfa victor oscar this is papa alfa mike charlie weak but readable over",
         "short_ts": "PAVO this is PAMC weak but readable over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_19.wav",
         "full_ts": "oscar romeo juliett hotel this is golf charlie oscar bravo radio check over",
         "short_ts": "ORJH this is GCOB radio check over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_15.wav",
         "full_ts": "golf charlie oscar bravo this is oscar romeo juliett hotel roger over",
         "short_ts": "GCOB this is ORJH roger over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_21.wav",
         "full_ts": "oscar romeo juliett hotel this is golf charlie oscar bravo loud but distorted roger out",
         "short_ts": "ORJH this is GCOB loud but distorted roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_8.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa victor papa use abbreviated call signs over",
         "short_ts": "HBXJ this is PAVP use abbreviated call signs over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_22.wav",
         "full_ts": "this is oscar bravo[silence] out.. roger out",
         "short_ts": "this is OB out.. roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_17.wav",
         "full_ts": "this is juliett hotel roger out",
         "short_ts": "this is JH roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_12.wav",
         "full_ts": "this is mike alfa roger out",
         "short_ts": "this is MA roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_7.wav",
         "full_ts": "this is mike bravo roger out",
         "short_ts": "this is MB roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_16.wav",
         "full_ts": "this is mike charlie roger out",
         "short_ts": "this is MC roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_16.wav",
         "full_ts": "this is romeo delta roger out",
         "short_ts": "this is RD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_18.wav",
         "full_ts": "this is sierra zulu roger out",
         "short_ts": "this is SZ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_7.wav",
         "full_ts": "this is zulu juliett roger out",
         "short_ts": "this is ZJ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_8.wav",
         "full_ts": "this is papa alfa mike bravo roger out",
         "short_ts": "this is PAMB roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_13.wav",
         "full_ts": "this is papa alfa mike alfa roger out",
         "short_ts": "this is PAMA roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_17.wav",
         "full_ts": "papa alfa victor oscar this is papa alfa mike charlie say again word after figures one zero zero three over",
         "short_ts": "PAVO this is PAMC say again word after figures 1003 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_19.wav",
         "full_ts": "this is papa alf(a) alfa mike charlie roger out",
         "short_ts": "this is P alf a AMC roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_23.wav",
         "full_ts": "papa alfa victor oscar this is golf charlie oscar bravo say again over",
         "short_ts": "PAVO this is GCOB say again over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_6.wav",
         "full_ts": "after",
         "short_ts": "after",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_19.wav",
         "full_ts": "papa alfa zulu juliett this is papa alfa sierra zulu over",
         "short_ts": "PAZJ this is PASZ over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_11.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_21.wav",
         "full_ts": "papa alfa zulu juliett this is papa alfa sierra zulu over",
         "short_ts": "PAZJ this is PASZ over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_13.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_23.wav",
         "full_ts": "papa alfa zulu juliett this is papa alfa sierra zulu nothing heard out",
         "short_ts": "PAZJ this is PASZ nothing heard out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_7.wav",
         "full_ts": "rotterdam",
         "short_ts": "rotterdam",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_9.wav",
         "full_ts": "ya",
         "short_ts": "ya",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_17.wav",
         "full_ts": "papa alfa zulu juliett correction papa alfa sierra zulu this is papa alfa romeo delta through me over",
         "short_ts": "PAZJ correction PASZ this is PARD through me over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_19.wav",
         "full_ts": "this is papa alfa romeo delta say again word before figures six zero three over",
         "short_ts": "this is PARD say again word before figures 603 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_16.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_26.wav",
         "full_ts": "papa alfa romeo delta this is papa alfa sierra zulu I say again word before figures six zero three navcomex over",
         "short_ts": "PARD this is PASZ I say again word before figures 603 navcomex over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_21.wav",
         "full_ts": "this is papa alfa romeo delta roger out",
         "short_ts": "this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_10.wav",
         "full_ts": "this is papa alfa zulu juliett over uh roger ou(t)",
         "short_ts": "this is PAZJ over uh roger ou t",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_7.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_14.wav",
         "full_ts": "correction my two three one three zero six zulu word after alfa mike alfa alfa hotel foxtrot zulu xray papa alfa victor papa over",
         "short_ts": "correction my 231306Z word after AMAAHFZXPAVP over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_11.wav",
         "full_ts": "papa alfa victor papa roger out",
         "short_ts": "PAVP roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_9.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_16.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa mike alfa say again from point to until over",
         "short_ts": "ORJH this is PAMA say again from. to until over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male.wav",
         "full_ts": "echo four two bravo this is zero charlie say again from figures three six to two over",
         "short_ts": "E42B this is 0C say again from figures 3 602 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_1.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male.wav",
         "full_ts": "this is echo four two alfa roger out",
         "short_ts": "this is E42A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_0.wav",
         "full_ts": "echo four two alfa this is bravo four zero correction my time one zero three zero zulu I spell word after alfa full stop zero zero three over",
         "short_ts": "E42A this is B40 correction my time 1030Z I spell word after A full stop 003 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_1.wav",
         "full_ts": "this is echo four two alfa roger out",
         "short_ts": "this is E42A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male.wav",
         "full_ts": "echo one zero this is echo two zero verify your time one two one five zulu from logstadt to call sign two three alfa over",
         "short_ts": "E10 this is E20 verify your time 1215Z from logstadt to call sign 23A over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male.wav",
         "full_ts": "this is echo one zero roger out",
         "short_ts": "this is E10 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male_0.wav",
         "full_ts": "I verify your time one two one five zulu from unlogstadt to call sign two three alfa over",
         "short_ts": "I verify your time 1215Z from unlogstadt to call sign 23A over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_1.wav",
         "full_ts": "this echo two zero roger out",
         "short_ts": "this E20 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male.wav",
         "full_ts": "bravo three zero this is zero bravo say again your time one two one five zulu from break to alfa full stop over",
         "short_ts": "B30 this is 0B say again your time 1215Z from break to A full stop over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B30_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B30_male.wav",
         "full_ts": "this is bravo three zero wait",
         "short_ts": "this is B30 wait",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_1.wav",
         "full_ts": "zero bravo roger out",
         "short_ts": "0B roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_3.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male.wav",
         "full_ts": "this is zero alfa wait",
         "short_ts": "this is 0A wait",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_1.wav",
         "full_ts": "this is zero alfa say again from call sign echo three zero to I spell bravo full stop over",
         "short_ts": "this is 0A say again from call sign E3 5 spell B full stop over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_3.wav",
         "full_ts": "this is zero alfa roger out",
         "short_ts": "this is 0A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male.wav",
         "full_ts": "zero charlie this is echo four zero contact wait out",
         "short_ts": "0C this is E40 contact wait out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_5.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_5.wav",
         "full_ts": "bravo three zero this is echo four two alfa break",
         "short_ts": "B30 this is E42A break",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_11.wav",
         "full_ts": "daarin vraagt de Rotterdam verificatie aan mij",
         "short_ts": "daarin vraagt de Rotterdam verificatie aan mij",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_13.wav",
         "full_ts": "ahre",
         "short_ts": "ahre",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_15.wav",
         "full_ts": "uh",
         "short_ts": "uh",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_11.wav",
         "full_ts": "this is papa alfa mike bravo roger out",
         "short_ts": "this is PAMB roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_24.wav",
         "full_ts": "papa alfa mike bravo this is golf charlie oscar bravo correction my two three one three zero six zulu from",
         "short_ts": "PAMB this is GCOB correction my 231306Z from",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_18.wav",
         "full_ts": "kop",
         "short_ts": "kop",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_26.wav",
         "full_ts": "this is golf charlie oscar bravo roger out",
         "short_ts": "this is GCOB roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_24.wav",
         "full_ts": "this is papa alfa romeo delta roger out",
         "short_ts": "this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_13.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa mike bravo time one four correction time one four zero one zulu break serial disregard this transmission out",
         "short_ts": "HBXJ this is PAMB time 14 correction time 1401Z break serial disregard this transmission out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_28.wav",
         "full_ts": "this is papa alfa sierra zulu roger out",
         "short_ts": "this is PASZ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_13.wav",
         "full_ts": "papa alfa romeo delta this is papa alfa victor papa reporting into net over",
         "short_ts": "PARD this is PAVP reporting into net over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_25.wav",
         "full_ts": "papa alfa victor papa this is papa alfa romeo delta request you authenticate golf November bravo over",
         "short_ts": "PAVP this is PARD request you authenticate GNB over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_15.wav",
         "full_ts": "papa alfa romeo delta this is papa alfa victor papa I authenticate foxtrot over",
         "short_ts": "PARD this is PAVP I authenticate F over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_27.wav",
         "full_ts": "papa alfa victor papa this is papa alfa romeo delta request you authenticate authenticate mike kilo foxtrot",
         "short_ts": "PAVP this is PARD request you authenticate authenticate MKF",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_29.wav",
         "full_ts": "papa alfa victor papa this is papa alfa romeo delta I authenticate alfa over",
         "short_ts": "PAVP this is PARD I authenticate A over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_18.wav",
         "full_ts": "papa alfa romeo delta ro(ger) of pa(pa) correction papa alfa victor papa roger out",
         "short_ts": "PARD ro ger of pa pa correction PAVP roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_28.wav",
         "full_ts": "this is golf charlie oscar bravo roger out",
         "short_ts": "this is GCOB roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_8.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_20.wav",
         "full_ts": "ja o",
         "short_ts": "ja o",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_18.wav",
         "full_ts": "this is papa alfa mike alfa roger out",
         "short_ts": "this is PAMA roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_male_21.wav",
         "full_ts": "this is papa alfa mike charlie roger out",
         "short_ts": "this is PAMC roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_5.wav",
         "full_ts": "bravo two zero this is zero alfa say again from uitvoeren to op over",
         "short_ts": "B20 this is 0A say again from uitvoeren to op over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B20_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B20_male.wav",
         "full_ts": "this is bravo two zero I say again from uitvoeren to op uitvoeren alle commandanten op over",
         "short_ts": "this is B20 I say again from uitvoeren to op uitvoeren alle commandanten op over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_6.wav",
         "full_ts": "this is zero alfa roger out",
         "short_ts": "this is 0A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_3.wav",
         "full_ts": "foxtrot two zero this is echo two zero say again word after india alfa over",
         "short_ts": "F20 this is E20 say again word after IA over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_5.wav",
         "full_ts": "this is echo two zero roger out",
         "short_ts": "this is E20 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male_1.wav",
         "full_ts": "zero bravo this is echo four zero again your time one three two one four three zulu December niner one word before opgegegeven over",
         "short_ts": "0B this is E40 again your time 132143Z December niner 1 word before opgegegeven over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_2.wav",
         "full_ts": "this is zero bravo wait",
         "short_ts": "this is 0B wait",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male_3.wav",
         "full_ts": "this is echo four zero roger out",
         "short_ts": "this is E40 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B20_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B20_male_1.wav",
         "full_ts": "echo two zero this is bravo two zero say again from priority to from over",
         "short_ts": "E20 this is B20 say again from priority to from over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_7.wav",
         "full_ts": "this is echo two zero wait",
         "short_ts": "this is E20 wait",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_9.wav",
         "full_ts": "bravo two zero this is echo two zero I say again from priority to from priority one three two one four three zulu December niner one from over",
         "short_ts": "B20 this is E20 I say again from priority to from priority 132143Z December niner 1 from over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B20_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B20_male_3.wav",
         "full_ts": "this is bravo two zero roger out",
         "short_ts": "this is B20 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male.wav",
         "full_ts": "echo three zero this is bravo one zero say again your time one tHree two one four three zulu December niner one all after Decem(ber) December niner one",
         "short_ts": "E30 this is B10 say again your time 132143Z December niner 1 all after Decem ber December niner 1",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_1.wav",
         "full_ts": "echo three zero this is bravo one zero roger out",
         "short_ts": "E30 this is B10 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_7.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B30_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B30_male_1.wav",
         "full_ts": "this is bravo three zero roger out",
         "short_ts": "this is B30 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_3.wav",
         "full_ts": "zero bravo this bravo four zero say again word before grids over",
         "short_ts": "0B this B40 say again word before grids over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_4.wav",
         "full_ts": "this is zero bravo I say again word before grids door over",
         "short_ts": "this is 0B I say again word before grids door over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_5.wav",
         "full_ts": "zero bravo this is bravo four zero",
         "short_ts": "0B this is B40",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_15.wav",
         "full_ts": "engelse tekst",
         "short_ts": "engelse tekst",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_32.wav",
         "full_ts": "engelse tekst",
         "short_ts": "engelse tekst",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_34.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa romeo delta roger out",
         "short_ts": "AMAA this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_35.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa romeo delta roger out",
         "short_ts": "AMAA this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female_3.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa sierra zulu I verify my time zero seven four four over",
         "short_ts": "AMAA this is PASZ I verify my time 0744 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_29.wav",
         "full_ts": "papa alfa mike charlie this is golf charlie oscar bravo request your authenticate kilo November tango over",
         "short_ts": "PAMC this is GCOB request your authenticate KNT over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMC_female_7.wav",
         "full_ts": "golf charlie oscar bravo this is papa alfa mike charlie I authenticate juliett request you to authenticate bravo xray tango over",
         "short_ts": "GCOB this is PAMC I authenticate J request you to authenticate BXT over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_31.wav",
         "full_ts": "papa alfa mike charlie this is golf charlie oscar bravo I authenticate echo out",
         "short_ts": "PAMC this is GCOB I authenticate E out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_17.wav",
         "full_ts": "papa alfa victor oscar this is oscar romeo juliett hotel",
         "short_ts": "PAVO this is ORJH",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_19.wav",
         "full_ts": "has been executed over",
         "short_ts": "has been executed over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_male_22.wav",
         "full_ts": "ya",
         "short_ts": "ya",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_33.wav",
         "full_ts": "papa alfa romeo delta this is golf charlie oscar bravo roger out",
         "short_ts": "PARD this is GCOB roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_34_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_34_male_1.wav",
         "full_ts": "ok",
         "short_ts": "ok",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_None.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_35_None_4.wav",
         "full_ts": "dat wil ik wel maar niet goed genoeg",
         "short_ts": "dat wil ik wel maar niet goed genoeg",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_32_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_32_male.wav",
         "full_ts": "zendknop indrukken eh nummer opgeven en lezen maar",
         "short_ts": "zendknop indrukken eh nummer opgeven en lezen maar",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_8.wav",
         "full_ts": "this is zero alfa over",
         "short_ts": "this is 0A over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_5.wav",
         "full_ts": "zero bravo over",
         "short_ts": "0B over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_9.wav",
         "full_ts": "zero charlie over",
         "short_ts": "0C over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male_2.wav",
         "full_ts": "echo one zero over",
         "short_ts": "E10 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_10.wav",
         "full_ts": "echo two zero over",
         "short_ts": "E20 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male.wav",
         "full_ts": "echo tree zero over",
         "short_ts": "E tree 0 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male_5.wav",
         "full_ts": "echo four zero over",
         "short_ts": "E40 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_6.wav",
         "full_ts": "echo four two alfa over",
         "short_ts": "E42A over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_3.wav",
         "full_ts": "charlie charlie four charlie charlie five this is bravo one zero roger out",
         "short_ts": "CC4CC5 this is B10 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_0.wav",
         "full_ts": "this is echo tree zero roger out",
         "short_ts": "this is E tree 0 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_4.wav",
         "full_ts": "echo tree zero this is bravo one zero radio check over",
         "short_ts": "E tree 0 this is B10 radio check over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_2.wav",
         "full_ts": "this is echo three zero weak but readable out",
         "short_ts": "this is E30 weak but readable out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_5.wav",
         "full_ts": "echo three zero this is bravo one zero loud and clear out",
         "short_ts": "E30 this is B10 loud and clear out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_8.wav",
         "full_ts": "this is echo four two alfa roger out",
         "short_ts": "this is E42A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_6.wav",
         "full_ts": "zero bravo this is bravo four zero say again word before grids over",
         "short_ts": "0B this is B40 say again word before grids over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_6.wav",
         "full_ts": "this is zero bravo I say again word before grids door over",
         "short_ts": "this is 0B I say again word before grids door over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_8.wav",
         "full_ts": "zero bravo this is bravo four zero roger out",
         "short_ts": "0B this is B40 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_9.wav",
         "full_ts": "echo three zero this is zero alfa say again all before op over",
         "short_ts": "E30 this is 0A say again all before op over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_11.wav",
         "full_ts": "this is zero alfa roger out",
         "short_ts": "this is 0A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male_3.wav",
         "full_ts": "echo four two bravo this is echo one zero verify your time one three two one four three zulu December niner one from grid to opgevangen over",
         "short_ts": "E42B this is E10 verify your time 132143Z December niner 1 from grid to opgevangen over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_4.wav",
         "full_ts": "this is echo three uh three zero roger out",
         "short_ts": "this is E3 uh 30 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_6.wav",
         "full_ts": "foxtrot two zero this is bravo one zero wrong word after warning order break over",
         "short_ts": "F20 this is B10 wrong word after warning order break over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_8.wav",
         "full_ts": "foxtrot two zero this is bravo one zero roger out",
         "short_ts": "F20 this is B10 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_10.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male_7.wav",
         "full_ts": "bravo two zero this is echo four zero say again from area to call sign echo one zero over",
         "short_ts": "B20 this is E40 say again from area to call sign E10 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B20_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B20_male_6.wav",
         "full_ts": "this is bravo two zero I say again from area to call sign echo one zero area north of viel stoge call sign echo one zero over",
         "short_ts": "this is B20 I say again from area to call sign E10 area north of viel stoge call sign E10 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E40_male_9.wav",
         "full_ts": "this is echo four zero roger out",
         "short_ts": "this is E40 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_11.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_39.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa romeo delta roger out",
         "short_ts": "AMAA this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female_7.wav",
         "full_ts": "flash flash flash this is papa alfa sierra zulu break emergency sierra one zero zero I say again emergency sierra one zero zero break authentication time one zero correction one seven three zero I authenticate victor lima out",
         "short_ts": "flash flash flash this is PASZ break emergency S100 I say again emergency S100 break authentication time 10 correction 1730 I authenticate VL out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_female_8.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa sierra zulu I authenticate zulu out",
         "short_ts": "AMAA this is PASZ I authenticate Z out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_38.wav",
         "full_ts": "alfa mike alfa alfa this is golf charlie oscar bravo say again your one one two three zulu from break to tack over",
         "short_ts": "AMAA this is GCOB say again your 1123Z from break to tack over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_40.wav",
         "full_ts": "alfa mike alfa alfa this is golf charlie oscar bravo roger out",
         "short_ts": "AMAA this is GCOB roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_GCOB_female_41.wav",
         "full_ts": "[silence]",
         "short_ts": "",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_male_21.wav",
         "full_ts": "hotel bravo xray juliett this is oscar romeo juliett hotel delayed execute break from yankee port",
         "short_ts": "HBXJ this is ORJH delayed execute break from Y port",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_41.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa romeo delta roger out",
         "short_ts": "AMAA this is PARD roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PARD_male_43.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa romeo delta verify your zero seven three six zulu bravo corpan correction break bravo corpan one six zero break over",
         "short_ts": "AMAA this is PARD verify your 0736ZB corpan correction break B corpan 160 break over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_10.wav",
         "full_ts": "bravo three zero this is echo fou(r) echo four two alfa over",
         "short_ts": "B30 this is E fou r E42A over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_12.wav",
         "full_ts": "bravo three zero this is echo four two alfa over",
         "short_ts": "B30 this is E42A over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_13.wav",
         "full_ts": "say again all after hotel delta over",
         "short_ts": "say again all after HD over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E20_male_11.wav",
         "full_ts": "(e)cho two zero roger out",
         "short_ts": "e cho 20 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_13.wav",
         "full_ts": "this is echo four two alfa roger out",
         "short_ts": "this is E42A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_5.wav",
         "full_ts": "this is echo three zero say again from four papa to sierra papa over",
         "short_ts": "this is E30 say again from 4P to SP over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_7.wav",
         "full_ts": "this is echo three zero roger out",
         "short_ts": "this is E30 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_13.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_15.wav",
         "full_ts": "this is echo four two alfa roger out",
         "short_ts": "this is E42A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_6.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_17.wav",
         "full_ts": "this is echo four two alfa roger out",
         "short_ts": "this is E42A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_24.wav",
         "full_ts": "this is papa alfa mike alfa roger out",
         "short_ts": "this is PAMA roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_31.wav",
         "full_ts": "papa alfa mike bravo this is papa alfa sierra zulu say again word after callsign papa alfa zulu juliett over",
         "short_ts": "PAMB this is PASZ say again word after callsign PAZJ over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_33.wav",
         "full_ts": "this is papa alfa sierra zulu roger out",
         "short_ts": "this is PASZ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_3.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PASZ_male_35.wav",
         "full_ts": "this is papa alfa sierra zulu roger out",
         "short_ts": "this is PASZ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMA_male_26.wav",
         "full_ts": "this is papa alfa mike alfa roger out",
         "short_ts": "this is PAMA roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_21.wav",
         "full_ts": "this is oscar romeo juliett hotel roger out",
         "short_ts": "this is ORJH roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_23.wav",
         "full_ts": "papa alfa sierra zulu this is oscar romeo juliett hotel say again from speed one two two November alfa one four over",
         "short_ts": "PASZ this is ORJH say again from speed 122NA14 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_25.wav",
         "full_ts": "this is oscar romeo juliett hotel roger out, roger out",
         "short_ts": "this is ORJH roger out, roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_ORJH_female_26.wav",
         "full_ts": "this is oscar romeo juliett hotel roger out",
         "short_ts": "this is ORJH roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_14.wav",
         "full_ts": "papa alfa victor papa this is papa alfa zulu juliett say again from tack to tack over",
         "short_ts": "PAVP this is PAZJ say again from tack to tack over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVP_male_20.wav",
         "full_ts": "papa alfa zulu juliett this is papa alfa victor papa I say again from tack to tack s(peed).. speed one two over",
         "short_ts": "PAZJ this is PAVP I say again from tack to tack s peed.. speed 12 over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAZJ_male_16.wav",
         "full_ts": "papa alfa zulu juliett roger out",
         "short_ts": "PAZJ roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_18.wav",
         "full_ts": "this is echo four two alfa roger out",
         "short_ts": "this is E42A roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_15.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B40_male_9.wav",
         "full_ts": "echo one two this is bravo four zero I authenticate alfa bravo authenticate lima sierra over",
         "short_ts": "E12 this is B40 I authenticate AB authenticate LS over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_8.wav",
         "full_ts": "echo one zero this is zero bravo permission to close down over",
         "short_ts": "E10 this is 0B permission to close down over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E10_male_5.wav",
         "full_ts": "zero bravo this is echo one zero permission not granted over",
         "short_ts": "0B this is E10 permission not granted over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0B_male_10.wav",
         "full_ts": "this is zero bravo roger out",
         "short_ts": "this is 0B roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_15.wav",
         "full_ts": "zero charlie this is zero alfa radio check over",
         "short_ts": "0C this is 0A radio check over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_17.wav",
         "full_ts": "this is zero charlie loud and clear over",
         "short_ts": "this is 0C loud and clear over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0A_male_16.wav",
         "full_ts": "this is zero alfa loud but distorted over",
         "short_ts": "this is 0A loud but distorted over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_18.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_10.wav",
         "full_ts": "echo one zero this is bravo one zero say again from grid to opgevangen over",
         "short_ts": "E10 this is B10 say again from grid to opgevangen over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_B10_male_12.wav",
         "full_ts": "echo one zero this is bravo one zero roger out",
         "short_ts": "E10 this is B10 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_20.wav",
         "full_ts": "this is zero charlie roger out",
         "short_ts": "this is 0C roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_5.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_0C_male_21.wav",
         "full_ts": "this is zero charlie I say again my time one three two one four three zulu December niner one word before five alfa verzamelpunt over",
         "short_ts": "this is 0C I say again my time 132143Z December niner 1 word before 5A verzamelpunt over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_9.wav",
         "full_ts": "echo four two alfa this is echo three zero say again word after nieuwe over",
         "short_ts": "E42A this is E30 say again word after nieuwe over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_0.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_19.wav",
         "full_ts": "this is echo four two alfa wait",
         "short_ts": "this is E42A wait",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_21.wav",
         "full_ts": "echo three zero this is echo four two alfa I say again word before nieuwe mine over",
         "short_ts": "E30 this is E42A I say again word before nieuwe mine over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_1.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_11.wav",
         "full_ts": "correction echo four two alfa say again word after nieuwe over",
         "short_ts": "correction E42A say again word after nieuwe over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_4.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E42A_male_23.wav",
         "full_ts": "this is echo four two alfa I say again word after nieuwe positie over",
         "short_ts": "this is E42A I say again word after nieuwe positie over",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_2.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_E30_male_12.wav",
         "full_ts": "this is echo three zero roger out",
         "short_ts": "this is E30 roger out",
         "prompt": null
     },
     {
-        "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male.wav",
+        "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAMB_male_17.wav",
         "full_ts": "nummer 9",
         "short_ts": "nummer 9",
         "prompt": null

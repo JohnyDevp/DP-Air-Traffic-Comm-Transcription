@@ -6,7 +6,7 @@ DISK_DIR="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
 METADATA_PATH="./metadata_train.json"
 DATASET_SAVE_PATH="./apimod_train_ds"
 
-dataset = load_dataset("json", data_files=METADATA_PATH)
+dataset = load_dataset("json", data_files=METADATA_PATH,split="train")
 
 # set properly path to the recordings according to the current disk path
 dataset = dataset.map(lambda x: {"audio": DISK_DIR + x["audio"]}, remove_columns=["audio"])

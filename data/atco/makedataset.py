@@ -8,7 +8,7 @@ METADATA_PATH       =   ["./metadata_en_ruzyne_test.json","./metadata_en_stefani
 DATASET_SAVE_PATH   =   ["./en_ruzyne_test_ds",'./en_stefanik_test_ds','./en_zurich_test_ds','./en_train_ds']
 
 for i in range(len(METADATA_PATH)):
-    dataset = load_dataset("json", data_files=METADATA_PATH[i])
+    dataset = load_dataset("json", data_files=METADATA_PATH[i],split="train")
 
     # set properly path to the recordings according to the current disk path
     dataset = dataset.map(lambda x: {"audio": os.path.join(DISK_DIR, x["audio"])}, remove_columns=["audio"])
