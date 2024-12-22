@@ -14,6 +14,10 @@
 
 ## NOTES
 
+-   WAV LENGTH OK(<30s, for own-cut wavs)
+
+    -   original wavs not used, the cut was done according to the timestamps in _stm_ file with check for length <30s
+
 -   **!!! WARNING !!!** the transcripts (_stm_ file)were mix of shorts (like numbers as digits, but not all of them, e.g. "1 thousand 5 hundred")
 
     -   the problem comes especially with the decimal points, which can be pronounced in many ways

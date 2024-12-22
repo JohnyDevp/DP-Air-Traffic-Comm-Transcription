@@ -33,7 +33,9 @@ In this dataset is used this number of wavs (same as speechs), which was made by
 \* adduced minutes with noise included in wavs
 
 ## NOTES
-
+- WAV LENGTH OK (<30s, for the own-cut files), the cuts are around the speech segments, no noise should be included there
+    - original wavs are not used...
+    
 -   **!!! IMPORTANT !!!** only texts between synctimes \< 30s were converted and used, so the number of potential usable wavs are greater, but it will be hard to match the speaking text with the transcription
 
 -   .sph files to .wav files converted through **sox** using command
