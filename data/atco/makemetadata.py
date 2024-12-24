@@ -1,13 +1,15 @@
 import sys
 import glob as glob
 import os
-from unittest import result
 from bs4 import BeautifulSoup
+from openai import files
 from rapidfuzz import process
 import re
+from sympy import det
 from tqdm import tqdm
 import json
 import time
+from pydub import AudioSegment
 
 units = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 tens = ['20', '30', '40', '50', '60', '70', '80', '90'] 
@@ -212,7 +214,13 @@ def get_shortts(wav_full_path_current_disk, xml_data) -> str:
     soup = BeautifulSoup(xml_data, "xml")
     shortts = ""
     for segment in soup.find_all("segment"):
-        # obtain the text tag amd remove the <text> tag from it
+        seg_text = get_shortts_for_one_segment(segment,wav_full_path_current_disk)
+        shortts += seg_text.strip() + '\n'
+
+    return shortts.strip()
+
+def get_shortts_for_one_segment(segment, wav_full_path_current_disk) -> str:
+    # obtain the text tag amd remove the <text> tag from it
         text_w_tag = segment.find("text")
         seg_text = text_w_tag.get_text(separator=" ", strip=True)
         
@@ -247,11 +255,8 @@ def get_shortts(wav_full_path_current_disk, xml_data) -> str:
         # finnaly go again with alphanum processing
         seg_text = process_tag_content(seg_text, "alphanum")
         
-        # append
-        shortts += seg_text + '\n'
-
-    return shortts
-
+        return seg_text
+    
 def get_plain_text_from_segment(tag_text):
     pattern = r'\[[^\]]*\]'
     return re.sub(pattern,"",tag_text)
@@ -260,9 +265,13 @@ def get_fullts(xml_data):
     soup = BeautifulSoup(xml_data, "xml")
     fullts = ""
     for segment in soup.find_all("segment"):
-        text_tag = segment.find("text")
-        fullts += get_plain_text_from_segment(text_tag.get_text(separator=" ", strip=True))
-        fullts += "\n"
+        seg_text = get_fullts_for_one_segment(segment)
+        fullts += seg_text.strip() + "\n"
+    return fullts.strip()
+
+def get_fullts_for_one_segment(segment) -> str:
+    text_tag = segment.find("text")
+    fullts = get_plain_text_from_segment(text_tag.get_text(separator=" ", strip=True))
     return fullts
 
 def get_prompt(xml_file):
@@ -283,7 +292,21 @@ def get_prompt(xml_file):
         
     return waypoints_array, call_sign_shorts, call_sign_longs
 
-def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, out_file_name : str):
+def is_english_lang(xml_data):
+    # returns True if more than 50% of the segments are in English, otherwise False
+    soup = BeautifulSoup(xml_data, "xml")
+    english_segments = 0
+    num_of_segments = len(soup.find_all("segment"))
+    for segment in soup.find_all("segment"):
+        tags = segment.find('tags')
+        if (tags):
+            tag_en = tags.find("non_english")
+            if (tag_en): # the tag is <non_english></non_english>, meaning 0 is english
+                english_segments += 1 - int(tag_en.get_text())
+                    
+    return english_segments / num_of_segments > 0.5
+
+def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, disk_path_for_cuts : str, out_file_name : str):
     out_data = []
     
     for wav_file_path in tqdm(wav_listings_path):
@@ -303,6 +326,43 @@ def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, out_file_
             if (full_ts.strip() == ""):
                 print(f"File {xml_file} has empty transcription, skipping", file=sys.stderr)
                 continue
+            
+            # get wav language
+            wav_is_english = is_english_lang(xml_data)
+            if (not wav_is_english):
+                print(f"File {wav_file_path} is not in English, skipping")
+            
+            # check for the length of the transcription
+            #====================
+            audiowav = AudioSegment.from_file(wav_full_path_current_disk)
+            if (audiowav.duration_seconds > 30): # if the audio is longer than 30 seconds, cut
+                print(f"File {wav_full_path_current_disk} is longer than 30s, processing cuts...")
+                soup = BeautifulSoup(xml_data, "xml")
+                for idx,segment in enumerate(soup.find_all("segment")):
+                    start = float(segment.find("start").get_text())
+                    end = float(segment.find("end").get_text())
+                    # export the segment to the file
+                    segment_name = f"{os.path.basename(wav_full_path_current_disk)}_segidx{idx}_{start}_{end}.wav"
+                    segment_path = os.path.join(disk_path_for_cuts, segment_name)
+                    audiowav[start*1000:end*1000].export(segment_path, format="wav")
+                    
+                    full_ts = get_fullts_for_one_segment(segment)
+                    short_ts = get_shortts_for_one_segment(segment,wav_full_path_current_disk)
+                    prompt_waypoints, prompt_short_callsigns, prompt_long_callsigns = get_prompt(xml_file)
+                    
+                    out_data.append({
+                        "audio": segment_path.removeprefix(disk_path_tb_excluded).removeprefix('/'), # just want the path on the disk, not whole on the pc
+                        "full_ts": full_ts,
+                        "short_ts": short_ts,
+                        "prompt": {
+                        "waypoints": prompt_waypoints,
+                        "short_callsigns": prompt_short_callsigns,
+                        "long_callsigns": prompt_long_callsigns
+                        }
+                    })
+
+                continue # dont need to add the original file
+            #====================
             
             short_ts = get_shortts(wav_full_path_current_disk, xml_data)
 
@@ -329,7 +389,7 @@ def makemetadata(wav_listings_path : str, disk_path_tb_excluded : str, out_file_
         f.write(out) 
         f.close()
 
-def split_wav_files_en(root : str) -> list:
+def split_wav_files_en(folders : list[str]) -> list:
     # counts for datasets ruzyne and stefanik - from each is used for test 350 files
     # and whole LZSH_Zurich is used for test
     
@@ -340,36 +400,76 @@ def split_wav_files_en(root : str) -> list:
     result_test_ruzyne = []
     result_test_zurich = []
     result_train = []
-    for file in glob.glob(root +"/*.wav"):
-        if (count_test_ruzyne < 50 and "LKPR_RUZYNE" in file):
-            result_test_ruzyne.append(file)
-            count_test_ruzyne += 1
-        elif (count_test_stefanik < 50 and "LZIB_STEFANIK" in file):
-            result_test_stefanik.append(file)
-            count_test_stefanik += 1
-        elif ("LSZH_ZURICH" in file):
-            result_test_zurich.append(file)
-        else:
-            result_train.append(file)
+    for folder in folders:
+        for file in glob.glob(folder +"/*.wav"):
+            if (count_test_ruzyne < 53 and "LKPR_RUZYNE" in file):
+                result_test_ruzyne.append(file)
+                count_test_ruzyne += 1
+            elif (count_test_stefanik < 53 and "LZIB_STEFANIK" in file):
+                result_test_stefanik.append(file)
+                count_test_stefanik += 1
+            elif ("LSZH_ZURICH" in file):
+                result_test_zurich.append(file)
+            else:
+                result_train.append(file)
     return [result_train, result_test_ruzyne,result_test_stefanik,result_test_zurich]
 
-def split_wav_files_nonen(root : str) -> list:
-    result = []
-    for file in glob.glob(root +"/*.wav"):
-        result.append(file)
-    return result
+import whisper
+model = whisper.load_model("medium")
+
+def split_wav_files_nonen(folders : list[str]) -> list:
+    # in the code is specified, that i want 80 files in french for train and the rest for test
+    result_test_fr = []
+    result_test_other = []
+    result_train_fr = []
+    
+    for folder in folders:
+        for file in glob.glob(folder +"/*.wav"):
+            # load audio and pad/trim it to fit 30 seconds
+            audio = whisper.load_audio(file)
+            audio = whisper.pad_or_trim(audio)
+
+            # make log-Mel spectrogram and move to the same device as the model
+            mel = whisper.log_mel_spectrogram(audio).to(model.device)
+
+            # detect the spoken language
+            _, probs = model.detect_language(mel)
+            if max(probs, key=probs.get) == "en":
+                probs.pop('en')
+            det_lang = max(probs, key=probs.get)
+            
+            if (det_lang == "fr" and len(result_train_fr) < 80):
+                result_train_fr.append(file)
+            elif (det_lang == "fr"):
+                result_test_fr.append(file)
+            else:
+                result_test_other.append(file)
+            
+    return result_train_fr, result_test_fr, result_test_other
 
 if __name__ == "__main__":
-    ROOT_DIR_EN="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA"
-    files_train, files_test_ruzyne,files_test_stefanik,files_test_zurich = split_wav_files_en(ROOT_DIR_EN)
-    makemetadata(files_train, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38", out_file_name="metadata_en_train.json")
-    makemetadata(files_test_ruzyne, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_ruzyne_test.json")
-    makemetadata(files_test_stefanik, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_stefanik_test.json")
-    makemetadata(files_test_zurich, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",out_file_name="metadata_en_zurich_test.json")
+    ROOT_DIR_EN=[
+        "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA", # important to be this as first
+        "run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN-datanonen-EN"
+    ]
+    files_train, files_test_ruzyne,files_test_stefanik,files_test_zurich = split_wav_files_en(ROOT_DIR_EN) # only files in the large folder are splitted
+    print(len(files_train), len(files_test_ruzyne), len(files_test_stefanik), len(files_test_zurich))
+    disk_path_for_cuts = "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts"
+    makemetadata(files_train, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",disk_path_for_cuts=disk_path_for_cuts, out_file_name="metadata_en_train.json")
+    makemetadata(files_test_ruzyne, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",disk_path_for_cuts=disk_path_for_cuts,out_file_name="metadata_en_ruzyne_test.json")
+    makemetadata(files_test_stefanik, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",disk_path_for_cuts=disk_path_for_cuts,out_file_name="metadata_en_stefanik_test.json")
+    makemetadata(files_test_zurich, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",disk_path_for_cuts=disk_path_for_cuts,out_file_name="metadata_en_zurich_test.json")
     
     
-    # ROOT_DIR_NONEN="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN"
-    # wav_files_nonen = get_wav_file_names(ROOT_DIR_NONEN)
+    # ROOT_DIR_NONEN=[
+    #     "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN",
+    #     '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-data-nonEN'
+    # ]
+    # files_fr_train, files_fr_test, files_other_test = split_wav_files_nonen(ROOT_DIR_NONEN)
+    # print(len(files_fr_train), len(files_fr_test), len(files_other_test))
+    # makemetadata(files_fr_train, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",disk_path_for_cuts='/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN-longer30s-cuts',out_file_name="metadata_fr_train.json")
+    # makemetadata(files_fr_test, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",disk_path_for_cuts='/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN-longer30s-cuts',out_file_name="metadata_fr_test.json")
+    # makemetadata(files_other_test, disk_path_tb_excluded="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38",disk_path_for_cuts='/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA_nonEN-longer30s-cuts',out_file_name="metadata_other_lang_test.json")
 
    
     
