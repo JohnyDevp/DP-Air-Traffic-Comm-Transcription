@@ -296,6 +296,8 @@ def getFullTs(ts) -> None|str:
         return None
     
     
+    # remove plus signs
+    ts = re.sub(r'\+', '', ts)
     # remove the tags
     ts = re.sub(r'\[[^\]]*\]', ' ', ts)
     # parse the pronountiation (e.g. "(9(najn))" to '9')
@@ -312,7 +314,7 @@ def getFullTs(ts) -> None|str:
     # replace FL for flight level
     ts = ts.replace("FL", "flight level")
     
-    return ts
+    return ts.strip()
 
 def make_audio_split(start_in_s,stop_in_s,audio,out_path) -> str:
     segment = audio[start_in_s*1000:stop_in_s*1000]
@@ -391,7 +393,7 @@ def parseStm(path):
                 continue
                 
             full_ts = getFullTs(ts)
-            if full_ts is None:
+            if full_ts is None or full_ts.strip() == "":
                 skipped += 1
                 continue
             

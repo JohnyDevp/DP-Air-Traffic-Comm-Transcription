@@ -1,0 +1,127 @@
+atco
+  |--- metadata_fr_train.json
+       | ** total files: 92
+       | ** hours: 0
+       | ** minutes: 10
+       | ** seconds: 18
+  |--- metadata_fr_test.json
+       | ** total files: 33
+       | ** hours: 0
+       | ** minutes: 3
+       | ** seconds: 39
+  |--- metadata_other_lang_test.json
+       | ** total files: 40
+       | ** hours: 0
+       | ** minutes: 5
+       | ** seconds: 2
+  |--- metadata_en_train.json
+       | ** total files: 1579
+       | ** hours: 3
+       | ** minutes: 0
+       | ** seconds: 8
+  |--- metadata_en_ruzyne_test.json
+       | ** total files: 70
+       | ** hours: 0
+       | ** minutes: 11
+       | ** seconds: 58
+  |--- metadata_en_stefanik_test.json
+       | ** total files: 53
+       | ** hours: 0
+       | ** minutes: 10
+       | ** seconds: 29
+  |--- metadata_en_zurich_test.json
+       | ** total files: 412
+       | ** hours: 0
+       | ** minutes: 49
+       | ** seconds: 56
+apimod
+  |--- metadata_train.json
+       | ** total files: 105
+       | ** hours: 0
+       | ** minutes: 13
+       | ** seconds: 29
+tools
+malorca
+  |--- metadata_test.json
+       | ** total files: 1557
+       | ** hours: 1
+       | ** minutes: 55
+       | ** seconds: 33
+  |--- metadata_dev12.json
+       | ** total files: 6335
+       | ** hours: 7
+       | ** minutes: 56
+       | ** seconds: 45
+hiwire
+  |--- metadata_hwir_train.json
+       | ** total files: 4032
+       | ** hours: 3
+       | ** minutes: 18
+       | ** seconds: 19
+  |--- metadata_hwir_fr_test.json
+       | ** total files: 800
+       | ** hours: 0
+       | ** minutes: 32
+       | ** seconds: 5
+  |--- metadata_hwir_gr_test.json
+       | ** total files: 400
+       | ** hours: 0
+       | ** minutes: 28
+       | ** seconds: 41
+  |--- metadata_hwir_sp_test.json
+       | ** total files: 300
+       | ** hours: 0
+       | ** minutes: 13
+       | ** seconds: 6
+nato
+  |--- metadata_UK_test.json
+       | ** total files: 98
+       | ** hours: 0
+       | ** minutes: 15
+       | ** seconds: 2
+  |--- metadata_UK_train.json
+       | ** total files: 259
+       | ** hours: 0
+       | ** minutes: 37
+       | ** seconds: 53
+  |--- metadata_CA_test.json
+       | ** total files: 237
+       | ** hours: 0
+       | ** minutes: 30
+       | ** seconds: 36
+  |--- metadata_CA_train.json
+       | ** total files: 614
+       | ** hours: 1
+       | ** minutes: 15
+       | ** seconds: 52
+  |--- metadata_NL_test.json
+       | ** total files: 97
+       | ** hours: 0
+       | ** minutes: 19
+       | ** seconds: 2
+  |--- metadata_NL_train.json
+       | ** total files: 272
+       | ** hours: 0
+       | ** minutes: 37
+       | ** seconds: 21
+  |--- metadata_DE_test.json
+       | ** total files: 60
+       | ** hours: 0
+       | ** minutes: 6
+       | ** seconds: 41
+  |--- metadata_DE_train.json
+       | ** total files: 228
+       | ** hours: 0
+       | ** minutes: 21
+       | ** seconds: 14
+uwb
+  |--- metadata_train.json
+       | ** total files: 10536
+       | ** hours: 9
+       | ** minutes: 26
+       | ** seconds: 11
+  |--- metadata_test.json
+       | ** total files: 3899
+       | ** hours: 3
+       | ** minutes: 44
+       | ** seconds: 25
