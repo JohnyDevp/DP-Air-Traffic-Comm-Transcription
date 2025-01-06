@@ -1,0 +1,90 @@
+{
+	"en_ruzyne_test_ds": {
+		"eval_loss": 4.112339019775391,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 60.739030023094685,
+		"eval_runtime": 61.5621,
+		"eval_samples_per_second": 1.137,
+		"eval_steps_per_second": 0.081
+	},
+	"en_stefanik_test_ds": {
+		"eval_loss": 3.9269776344299316,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 60.809018567639264,
+		"eval_runtime": 50.8085,
+		"eval_samples_per_second": 1.043,
+		"eval_steps_per_second": 0.079
+	},
+	"en_zurich_test_ds": {
+		"eval_loss": 4.868663311004639,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 65.43832428238944,
+		"eval_runtime": 357.6376,
+		"eval_samples_per_second": 1.152,
+		"eval_steps_per_second": 0.073
+	},
+	"fr_test_ds": {
+		"eval_loss": 4.172120571136475,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 95.03676470588235,
+		"eval_runtime": 27.7137,
+		"eval_samples_per_second": 1.191,
+		"eval_steps_per_second": 0.108
+	},
+	"other_lang_test_ds": {
+		"eval_loss": 4.521596431732178,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 117.51497005988023,
+		"eval_runtime": 36.5837,
+		"eval_samples_per_second": 1.093,
+		"eval_steps_per_second": 0.082
+	},
+	"hwir_fr_test_ds": {
+		"eval_loss": 0.7741304039955139,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 40.56761268781302,
+		"eval_runtime": 563.537,
+		"eval_samples_per_second": 1.42,
+		"eval_steps_per_second": 0.089
+	},
+	"hwir_gr_test_ds": {
+		"eval_loss": 0.8641952276229858,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 40.92356687898089,
+		"eval_runtime": 281.8051,
+		"eval_samples_per_second": 1.419,
+		"eval_steps_per_second": 0.089
+	},
+	"hwir_sp_test_ds": {
+		"eval_loss": 0.8720176815986633,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 39.70893970893971,
+		"eval_runtime": 212.1131,
+		"eval_samples_per_second": 1.414,
+		"eval_steps_per_second": 0.09
+	},
+	"malorca_test_ds": {
+		"eval_loss": 0.18566803634166718,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 5.3759930351507235,
+		"eval_runtime": 1162.2424,
+		"eval_samples_per_second": 1.34,
+		"eval_steps_per_second": 0.084
+	},
+	"nato_test_ds": {
+		"eval_loss": 1.9729279279708862,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 38.841978287092886,
+		"eval_runtime": 387.018,
+		"eval_samples_per_second": 1.271,
+		"eval_steps_per_second": 0.08
+	},
+	"uwb_test_ds": {
+		"eval_loss": 2.295729875564575,
+		"eval_model_preparation_time": 0.0109,
+		"eval_wer": 38.64247809453289,
+		"eval_runtime": 2914.9661,
+		"eval_samples_per_second": 1.338,
+		"eval_steps_per_second": 0.084
+	}
+}

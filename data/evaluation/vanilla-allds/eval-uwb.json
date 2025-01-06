@@ -1,0 +1,10 @@
+{
+    "uwb_test_ds": {
+        "eval_loss": 2.217625141143799,
+        "eval_model_preparation_time": 0.0116,
+        "eval_wer": 89.89016413673949,
+        "eval_runtime": 3038.421,
+        "eval_samples_per_second": 1.283,
+        "eval_steps_per_second": 0.08
+    }
+}
