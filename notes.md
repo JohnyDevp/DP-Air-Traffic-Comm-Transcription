@@ -1,3 +1,9 @@
+## TODO
+- make SGE script
+- run evaluation 
+- run training for shortts
+
+
 # Literature to be studied
 https://arxiv.org/abs/2212.04356 -- robust speech recognition  
 https://arxiv.org/abs/1706.03762 -- attention is all you need  

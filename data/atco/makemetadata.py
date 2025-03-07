@@ -2,10 +2,8 @@ import sys
 import glob as glob
 import os
 from bs4 import BeautifulSoup
-from openai import files
 from rapidfuzz import process
 import re
-from sympy import det
 from tqdm import tqdm
 import json
 import time

@@ -1,4 +1,3 @@
-from re import M
 from datasets import load_dataset, Dataset, DatasetDict, Audio
 import json,os
 
@@ -17,6 +16,7 @@ for i in range(len(METADATA_PATH)):
 
     # load the audio (from disk)
     dataset = dataset.cast_column("audio", Audio(sampling_rate=16000))
-    
+    print(dataset[0])
+    break
     # save the dataset
     dataset.save_to_disk(DATASET_SAVE_PATH[i])
