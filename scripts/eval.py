@@ -39,6 +39,55 @@ class PrepareDatasetAsInput:
 
         return batch
 
+    def prepare_dataset_with_prompt(self,batch):
+        # load and resample audio data from 48 to 16kHz
+        audio = batch["audio"]
+
+        # compute log-Mel input features from input audio array
+        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+
+        # encode prompts to prompt ids - we assume that the dataset has a column `"prompt"` that contains the prompt for each example
+        prompt_ids = []
+        if 'prompt' in batch:
+            prompt_ids = self.tokenizer_en.get_prompt_ids(batch["prompt"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+
+        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
+        # if french, than use french tokenizer, english otherwise
+        tokenizer = self.tokenizer_en
+        if "lang" in batch:
+            if batch["lang"] == "fr":
+                tokenizer = self.tokenizer_fr
+
+        token_ids = tokenizer(batch["full_ts"]).input_ids
+
+        batch["labels_fullts"] = prompt_ids + token_ids # building labels ids with prompt and tokens together
+        batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
+
+        return batch
+    
+    def prepare_dataset_self_prompt(self,batch):
+        # load and resample audio data from 48 to 16kHz
+        audio = batch["audio"]
+
+        # compute log-Mel input features from input audio array
+        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+
+        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
+        # if french, than use french tokenizer, english otherwise
+        tokenizer = self.tokenizer_en
+        if "lang" in batch:
+            if batch["lang"] == "fr":
+                tokenizer = self.tokenizer_fr
+        
+        # make prompt from the lables
+        batch['fullts_prompt_ids'] = self.tokenizer_en.get_prompt_ids(batch["full_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        batch['shortts_prompt_ids'] = self.tokenizer_en.get_prompt_ids(batch["short_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        
+        batch["labels_fullts"] = tokenizer(batch["full_ts"]).input_ids # building labels ids with prompt and tokens together
+        batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
+
+        return batch
+
 class ComputeMetrics:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer

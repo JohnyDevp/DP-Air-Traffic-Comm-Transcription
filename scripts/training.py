@@ -82,8 +82,8 @@ class PrepareDatasetAsInput:
                 tokenizer = self.tokenizer_fr
         
         # make prompt from the lables
-        fullts_prompt_ids = self.get_prompt_ids(batch["full_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
-        shortts_prompt_ids = self.get_prompt_ids(batch["short_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        fullts_prompt_ids = self.tokenizer_en.get_prompt_ids(batch["full_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        shortts_prompt_ids = self.tokenizer_en.get_prompt_ids(batch["short_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
         
         batch["labels_fullts"] = fullts_prompt_ids + tokenizer(batch["full_ts"]).input_ids # building labels ids with prompt and tokens together
         batch["labels_shortts"] = shortts_prompt_ids + tokenizer(batch["short_ts"]).input_ids
@@ -149,8 +149,52 @@ class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
 class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
     processor : Any
     decoder_start_token_id: int
-    
     def __call__(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
+    # ==================================================================================
+        # WORKING CALL, USED IN PROMPT-TEST-3A, NOT SURE IF CORRECT, ONLY WITH 448 MAX LENGTH
+        # ==================================================================================
+
+        # split inputs and labels since they have to be of different lengths and need
+        # different padding methods
+
+        # dataloader returns a list of features which we convert to a dict
+        input_features = [{"input_features": feature["input_features"]} for feature in features]
+        label_features = [{"input_ids": feature["labels"]} for feature in features]
+
+        # reformat list to dict and set to pytorch format
+        batch = self.processor.feature_extractor.pad(
+            input_features,
+            return_tensors="pt",
+        )
+
+        labels_batch = self.processor.tokenizer.pad(
+            label_features,
+            return_tensors="pt",
+        )
+
+        # shift labels to the right to get decoder input ids
+        labels = labels_batch["input_ids"]
+
+
+        decoder_input_ids = labels[:, :-1]
+
+        labels = labels[:, 1:]
+        labels_mask = labels_batch.attention_mask[:, 1:]
+
+        # replace padding with -100 to ignore correctly when computing the loss
+        labels = labels.masked_fill(labels_mask.ne(1), -100)
+
+        # replace initial prompt tokens with -100 to ignore correctly when computing the loss
+        bos_index = torch.argmax((labels == self.decoder_start_token_id).long(), dim=1)
+        prompt_mask = torch.arange(labels.shape[1]) < bos_index[:, None]
+        labels = torch.where(prompt_mask, -100, labels)
+
+        batch["labels"] = labels
+        batch["decoder_input_ids"] = decoder_input_ids
+
+        return batch
+    
+    def klgjhkglgh(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
         # split inputs and labels since they have to be of different lengths and need different padding methods
         # first treat the audio inputs by simply returning torch tensors
 
@@ -163,7 +207,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         labels_batch = self.processor.tokenizer.pad(label_features, return_tensors="pt")
 
         # copy the labels as in its form now (with both prompt and the transcript itself) it should be the input to the decoder
-        batch['decoder_input_ids'] = labels_batch.clone()
+        batch['decoder_input_ids'] = labels_batch["input_ids"].clone()
 
         # replace padding in labels with -100 to ignore loss correctly
         labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)

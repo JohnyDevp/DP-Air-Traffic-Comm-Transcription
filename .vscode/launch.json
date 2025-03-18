@@ -10,7 +10,11 @@
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "cwd": "${workspaceFolder}/work/google_train_sim",
+            "cwd": "${workspaceFolder}/scripts/",
+            "args": [
+                "--setup",
+                "train_setup.json"
+            ],
             "justMyCode": false
         }
     ]
