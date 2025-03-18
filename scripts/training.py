@@ -8,7 +8,7 @@ import torch
 import numpy as np
 from dataclasses import dataclass
 import evaluate
-from transformers import WhisperProcessor, WhisperTokenizer, Seq2SeqTrainingArguments, WhisperForConditionalGeneration
+from transformers import WhisperProcessor, WhisperTokenizer, Seq2SeqTrainingArguments, WhisperForConditionalGeneration, Seq2SeqTrainer
 from datasets import Dataset, load_from_disk, concatenate_datasets
 
 from typing import Any, Dict, List, Union
@@ -64,6 +64,29 @@ class PrepareDatasetAsInput:
 
         batch["labels_fullts"] = prompt_ids + token_ids # building labels ids with prompt and tokens together
         batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
+
+        return batch
+    
+    def prepare_dataset_self_prompt(self,batch):
+        # load and resample audio data from 48 to 16kHz
+        audio = batch["audio"]
+
+        # compute log-Mel input features from input audio array
+        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+
+        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
+        # if french, than use french tokenizer, english otherwise
+        tokenizer = self.tokenizer_en
+        if "lang" in batch:
+            if batch["lang"] == "fr":
+                tokenizer = self.tokenizer_fr
+        
+        # make prompt from the lables
+        fullts_prompt_ids = self.get_prompt_ids(batch["full_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        shortts_prompt_ids = self.get_prompt_ids(batch["short_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        
+        batch["labels_fullts"] = fullts_prompt_ids + tokenizer(batch["full_ts"]).input_ids # building labels ids with prompt and tokens together
+        batch["labels_shortts"] = shortts_prompt_ids + tokenizer(batch["short_ts"]).input_ids
 
         return batch
 
@@ -171,6 +194,7 @@ class TrainingSetup:
     train_datasets: list[str]
     path_to_train_datasets: str
     use_prompt: bool
+    self_prompt: bool
     
 def build_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False, ts='fullts') -> list[Dataset]|Dataset:
     allds_train = []
@@ -231,7 +255,10 @@ if __name__ == "__main__":
     # load the dataset preparator, use prepare function according to prompt usage
     prepare_dataset = PrepareDatasetAsInput(processor.feature_extractor, processor.tokenizer, tokenizer_fr)
     if training_setup.use_prompt:
-        prepare_fn = prepare_dataset.prepare_dataset_with_prompt
+        if training_setup.self_prompt:
+            prepare_fn = prepare_dataset.prepare_dataset_self_prompt
+        else:
+            prepare_fn = prepare_dataset.prepare_dataset_with_prompt
     else:
         prepare_fn = prepare_dataset.prepare_dataset
         
@@ -258,7 +285,6 @@ if __name__ == "__main__":
         **setup['training_args']
     )
     
-    print(training_args)
     # training_args = Seq2SeqTrainingArguments(
     #     output_dir="./drive/Shareddrives/DP/models/train-prototype",
     #     per_device_train_batch_size=4,
@@ -281,16 +307,16 @@ if __name__ == "__main__":
     #     push_to_hub=False, # change to True to push the model to the Hub (need to be logged in)
     # )
 
-    # trainer = Seq2SeqTrainer(
-    #     args=training_args,
-    #     model=model,
-    #     train_dataset=train_ds,
-    #     # eval_dataset=ds_dict["test"],
-    #     data_collator=data_collator,
-    #     compute_metrics=cm.compute_metrics,
-    #     processing_class=processor
-    # )
+    trainer = Seq2SeqTrainer(
+        args=training_args,
+        model=model,
+        train_dataset=train_ds,
+        # eval_dataset=ds_dict["test"],
+        data_collator=data_collator,
+        compute_metrics=cm.compute_metrics,
+        processing_class=processor
+    )
 
-    # trainer.train()
+    trainer.train()
 
     # trainer.evaluate()

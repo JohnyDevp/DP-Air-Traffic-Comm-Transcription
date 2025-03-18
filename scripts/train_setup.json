@@ -3,7 +3,8 @@
 		"model_path": "openai/whisper-medium",
 		"train_datasets": ["atco_en"],
 		"path_to_train_datasets": "./data",
-		"use_prompt": false
+		"use_prompt": false,
+		"self_prompt": false
 	},
 	"training_args": {
 		"output_dir": "./test",
