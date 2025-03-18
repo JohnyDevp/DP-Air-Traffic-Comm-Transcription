@@ -150,8 +150,8 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
     processor : Any
     decoder_start_token_id: int
     def __call__(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
-    # ==================================================================================
-        # WORKING CALL, USED IN PROMPT-TEST-3A, NOT SURE IF CORRECT, ONLY WITH 448 MAX LENGTH
+        # ==================================================================================
+        # WORKING CALL, USED IN PROMPT-TEST-3A, CORRECT, ONLY WITH 448 MAX LENGTH
         # ==================================================================================
 
         # split inputs and labels since they have to be of different lengths and need
@@ -175,9 +175,9 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         # shift labels to the right to get decoder input ids
         labels = labels_batch["input_ids"]
 
-
         decoder_input_ids = labels[:, :-1]
-
+        
+        # shift the labels to the left, to match work as prediction
         labels = labels[:, 1:]
         labels_mask = labels_batch.attention_mask[:, 1:]
 
@@ -194,7 +194,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         return batch
     
-    def klgjhkglgh(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
+    def myoldcall_stillworking(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
         # split inputs and labels since they have to be of different lengths and need different padding methods
         # first treat the audio inputs by simply returning torch tensors
 
@@ -207,10 +207,10 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         labels_batch = self.processor.tokenizer.pad(label_features, return_tensors="pt")
 
         # copy the labels as in its form now (with both prompt and the transcript itself) it should be the input to the decoder
-        batch['decoder_input_ids'] = labels_batch["input_ids"].clone()
+        batch['decoder_input_ids'] = labels_batch["input_ids"].clone()[:, :-1]
 
         # replace padding in labels with -100 to ignore loss correctly
-        labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)
+        labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)[:, 1:]
         
         # then mask out the prompt in the labels
         bos_index = np.argmax(labels==self.decoder_start_token_id, axis=1)
@@ -235,6 +235,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 @dataclass
 class TrainingSetup:
     model_path: str
+    continue_from_checkpoint: bool
     train_datasets: list[str]
     path_to_train_datasets: str
     use_prompt: bool
@@ -361,6 +362,9 @@ if __name__ == "__main__":
         processing_class=processor
     )
 
-    trainer.train()
+    if training_setup.continue_from_checkpoint:
+        trainer.train(resume_from_checkpoint=training_setup.model_path)
+    else:
+        trainer.train()
 
     # trainer.evaluate()
