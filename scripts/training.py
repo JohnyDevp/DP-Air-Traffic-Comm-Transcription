@@ -50,8 +50,10 @@ class PrepareDatasetAsInput:
 
         # encode prompts to prompt ids - we assume that the dataset has a column `"prompt"` that contains the prompt for each example
         prompt_ids = []
-        if 'prompt' in batch:
-            prompt_ids = self.tokenizer_en.get_prompt_ids(batch["prompt"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        if 'prompt_fullts' in batch:
+            prompt_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_fullts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        if 'prompt_shortts' in batch:
+            prompt_shortts_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_shortts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
 
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
