@@ -4,13 +4,13 @@
         "full_ts": "Oscar Echo Golf Tango Echo taxi to holding point runway one three via delta foxtrot\nvia delta foxtrot holding point runway one three      Oscar   Tango Echo",
         "short_ts": "OEGTE taxi to holding. runway 13 via DF\nvia DF holding. runway 13 OTE",
         "prompt-data": {
-            "callsigns": [
-                " Oscar Tango Echo",
-                "Oscar Echo Golf Tango Echo"
+            "long_callsigns": [
+                "Oscar Echo Golf Tango Echo",
+                " Oscar Tango Echo"
             ],
-            "speaker_labels": [
-                "ATCO tower",
-                "OEGTE"
+            "short_callsigns": [
+                "OEGTE",
+                "ATCO tower"
             ],
             "waypoints": [
                 "ABETI",
@@ -48,7 +48,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA858",
                 "DENIF",
                 "DLH4YE",
@@ -62,7 +62,7 @@
                 "OYJJN",
                 "QTR655V"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian Eight Five Eight ",
                 "Delta Echo November India Foxtrot ",
                 "Hansa Four Yankee Echo ",
@@ -75,22 +75,27 @@
                 "Oscar Mike Mike Two Three Three ",
                 "Oscar Yankee Juliett Juliett November ",
                 "Qatari Six Five Five Victor "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": " Oscar Tango Echo, Oscar Echo Golf Tango Echo, CIFER, VEDER, ADAMA, Oscar Kilo Yankee Uniform Alpha Two One , Austrian Eight Five Eight , Oscar Yankee Juliett Juliett November "
+        "prompt_fullts_1G_4B": "Oscar Echo Golf Tango Echo,  Oscar Tango Echo, Oscar Echo Golf Tango Echo,  Oscar Tango Echo",
+        "prompt_fullts_5B": " Oscar Tango Echo, Oscar Echo Golf Tango Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_172604.wav",
         "full_ts": "dobry vecer  Stefanik Tower Galileo Three Four  Six  Papa ILS established\u00a0\u00a0runway three one\u00a0\u00a0DME seven point five\nGalileo  Three  Four  Six  Papa Stefanik Tower  dobry  vecer  wind  one three zero degrees four knots runway three one cleared to land\ncleared to land runway three one is copying\u00a0Galileo  Three  Four  Six  Papa\nOscar Mike  Charlie  Mike  Juliett \u00a0\u00a0  dopocutia",
         "short_ts": "dobry vecer Stefanik Tower AXE346P ILS established runway 31 DME 7.5\nAXE346P Stefanik Tower dobry vecer wind 130 degrees 4 knots runway 31 cleared to land\ncleared to land runway 31 is copying AXE346P\nOMC MJ dopocutia",
         "prompt-data": {
-            "callsigns": [
-                "Oscar Mike Charlie",
-                "Mike Juliett",
+            "long_callsigns": [
                 "Galileo Three Four Six Papa",
+                "Mike Juliett",
+                "Oscar Mike Charlie",
                 " Galileo Three Four Six Papa"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OMCMJ",
                 "AXE346P",
                 "ATCO tower"
@@ -131,7 +136,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFL2353",
                 "AOJ96M",
                 "AXE346P",
@@ -142,7 +147,7 @@
                 "SBI3752",
                 "WUK5067"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aeroflot Two Three Five Three ",
                 "Asterix Nine Six Mike ",
                 "Galileo Three Four Six Papa ",
@@ -152,19 +157,24 @@
                 "Oscar Mike Juliett Golf Alpha ",
                 "Siberian Airlines Three Seven Five Two ",
                 "Wizz Go Five Zero Six Seven "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Mike Charlie, Mike Juliett, Galileo Three Four Six Papa,  Galileo Three Four Six Papa, XENDI, ADAMA, NIGER, Asterix Nine Six Mike , Aeroflot Two Three Five Three , Oscar Kilo Romeo Delta Sierra "
+        "prompt_fullts_1G_4B": "Galileo Three Four Six Papa, Mike Juliett, Oscar Mike Charlie,  Galileo Three Four Six Papa, Oscar Mike Charlie, Galileo Three Four Six Papa,  Galileo Three Four Six Papa, Mike Juliett",
+        "prompt_fullts_5B": "Galileo Three Four Six Papa,  Galileo Three Four Six Papa, Mike Juliett, Oscar Mike Charlie"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_143155.wav",
         "full_ts": "stefanik tower Oscar Mike Charlie India Alpha final runway one three Oscar Mike Charlie India Alpha\nOscar Mike Charlie India Alpha runway one three cleared to land wind    one three zero degrees  eight knots",
         "short_ts": "stefanik tower OMCIA final runway 13 OMCIA\nOMCIA runway 13 cleared to land wind 130 degrees 8 knots",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Mike Charlie India Alpha"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OMCIA",
                 "ATCO tower"
             ],
@@ -204,7 +214,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP712",
                 "AOJ78P",
                 "AUA858",
@@ -229,7 +239,7 @@
                 "TIE394Y",
                 "VTBRK"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven One Two ",
                 "Asterix Seven Eight Papa ",
                 "Austrian Eight Five Eight ",
@@ -253,19 +263,24 @@
                 "Sunexpress Four Echo Whiskey ",
                 "Time Air Three Nine Four Yankee ",
                 "Victor Tango Bravo Romeo Kilo "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Mike Charlie India Alpha, BERVA, LEDRI, KOXER, Mazoon Four Two Four , Juliett Sierra Hotel Six Six One , Victor Tango Bravo Romeo Kilo "
+        "prompt_fullts_1G_4B": "Oscar Mike Charlie India Alpha, Oscar Mike Charlie India Alpha",
+        "prompt_fullts_5B": "Oscar Mike Charlie India Alpha"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_120635.wav",
         "full_ts": "November Four Niner X-ray Lima taxi via delta line up zero four report ready\nvia delta line up zero four call you when ready November Four Niner X-ray Lima",
         "short_ts": "N4 Niner X ray L taxi via D line up 04 report ready\nvia D line up 04 call you when ready N4 Niner X ray L",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "November Four Niner X-ray Lima"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "N49XL",
                 "ATCO tower"
             ],
@@ -305,7 +320,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP751",
                 "AUA655",
                 "AUA6TM",
@@ -330,7 +345,7 @@
                 "THY98U",
                 "UAE128"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven Five One ",
                 "Austrian Six Five Five ",
                 "Austrian Six Tango Mike ",
@@ -354,19 +369,24 @@
                 "Slovak Government Zero Four Alpha ",
                 "Turkish Nine Eight Uniform ",
                 "Emirates One Two Eight "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "November Four Niner X-ray Lima, ABLOM, MAREG, ASPIB, China Eastern Seven Zero Four Four , Elite Jet Two Zero One , Jetset Two Foxtrot Delta "
+        "prompt_fullts_1G_4B": "November Four Niner X-ray Lima, November Four Niner X-ray Lima",
+        "prompt_fullts_5B": "November Four Niner X-ray Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_203102.wav",
         "full_ts": "two zero three six thanks for your help  one three juliett start and push and start call you for taxi\nroger squawk four four zero four",
         "short_ts": "2036 thanks for your help 13 J start and push and start call you for taxi\nroger squawk 4404",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "two zero three six"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO tower",
                 "pilot"
             ],
@@ -406,7 +426,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AAR789",
                 "AUA126",
                 "AUA156",
@@ -425,7 +445,7 @@
                 "MTL9237",
                 "THY3JW"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Asiana Seven Eight Nine ",
                 "Austrian One Two Six ",
                 "Austrian One Five Six ",
@@ -443,22 +463,27 @@
                 "Lima Delta X-ray One Three ",
                 "Mitavia Nine Two Three Seven ",
                 "Turkish Three Juliett Whiskey "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "two zero three six, KUVEX, BEGLA, XENAK, Austrian Five Zero Bravo , Mitavia Nine Two Three Seven , Fedex Five One One Two "
+        "prompt_fullts_1G_4B": "two zero three six, two zero three six",
+        "prompt_fullts_5B": "two zero three six"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_181207.wav",
         "full_ts": "Oscar Golf Echo roger descend to traffic altitude one thousand five hundred feet\nstart descending one thousand five hundred feet altitude Oscar Mike Alpha Golf Echo",
         "short_ts": "OGE roger descend to traffic altitude 1500 feet\nstart descending 1500 feet altitude OMAGE",
         "prompt-data": {
-            "callsigns": [
-                "Oscar Mike Alpha Golf Echo",
-                "Oscar Golf Echo"
+            "long_callsigns": [
+                "Oscar Golf Echo",
+                "Oscar Mike Alpha Golf Echo"
             ],
-            "speaker_labels": [
-                "OMAGE",
-                "ATCO tower"
+            "short_callsigns": [
+                "ATCO tower",
+                "OMAGE"
             ],
             "waypoints": [
                 "ABETI",
@@ -496,7 +521,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AOJ81R",
                 "AXA111",
                 "MTL9237",
@@ -506,7 +531,7 @@
                 "SBI3650",
                 "SVW43LD"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Asterix Eight One Romeo ",
                 "Alpha X-ray Alpha One One One ",
                 "Mitavia Nine Two Three Seven ",
@@ -515,19 +540,22 @@
                 "Siberian Airlines Three Six Four Two ",
                 "Siberian Airlines Three Six Five Zero ",
                 "Silver Arrows Four Three Lima Delta "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Mike Alpha Golf Echo, Oscar Golf Echo, PESAT, VEDER, GASNA, Silver Arrows Four Three Lima Delta , Siberian Airlines Three Six Five Zero , Mitavia Nine Two Three Seven "
+        "prompt_fullts_1G_4B": "Oscar Golf Echo, Oscar Mike Alpha Golf Echo, Oscar Golf Echo, Oscar Mike Alpha Golf Echo",
+        "prompt_fullts_5B": "Oscar Golf Echo, Oscar Mike Alpha Golf Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210422_142821.wav",
         "full_ts": "i would like request  airborn on runway zero four exit alpha  Foxtrot",
         "short_ts": "i would like request airborn on runway 04 exit AF",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "UNK-1"
-            ],
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -564,7 +592,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "7745",
                 "ABP941",
                 "AOJ51S",
@@ -581,7 +609,7 @@
                 "SOW4",
                 "THY1YG"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Seven Seven Four Five ",
                 "Bair Nine Four One ",
                 "Asterix Five One Sierra ",
@@ -597,19 +625,24 @@
                 "Qatari Seven Six Golf Kilo ",
                 "Sowind Four ",
                 "Turkish One Yankee Golf "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", KUVEX, SOMID, VABGU, Austrian Six Zero Two , Elite Jet Eight Zero Two , Austrian Three Eight Two "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_132814.wav",
         "full_ts": "stefanik tower Top Jet Four Zero One   dobr\u00fd de\u0148  apron charlie in front of the hangar ready for startup cleared destination Ostrava  lima  on board  QNH one zero one seven",
         "short_ts": "stefanik tower Top Jet 401 dobr\u00fd de\u0148 apron C 9 front of the hangar ready for startup cleared 10 Ostrava hes L on board QNH 1017",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Top Jet Four Zero One"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -648,7 +681,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AOJ85S",
                 "AUA1492",
                 "AUA51",
@@ -669,7 +702,7 @@
                 "UAE128",
                 "WZZ82"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Asterix Eight Five Sierra ",
                 "Austrian One Four Nine Two ",
                 "Austrian Five One ",
@@ -689,17 +722,22 @@
                 "Slovak Government Zero Zero Six ",
                 "Emirates One Two Eight ",
                 "Wizzair Eight Two "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Top Jet Four Zero One, REKLU, ABETI, ADAMA, Slovak Government Zero Zero Six , Qatari One Six Papa , Austrian Eight November Foxtrot "
+        "prompt_fullts_1G_4B": "Top Jet Four Zero One, Top Jet Four Zero One",
+        "prompt_fullts_5B": "Top Jet Four Zero One"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_130418.wav",
         "full_ts": "QNH one zero  one eight  after keep the proceeding to victor",
         "short_ts": "QNH 10 hes 18 after keep the proceeding to V",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -738,7 +776,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP751",
                 "AFL2408",
                 "AFR33GX",
@@ -764,7 +802,7 @@
                 "UAE9330",
                 "WZZ1518"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven Five One ",
                 "Aeroflot Two Four Zero Eight ",
                 "Air France Three Three Golf X-ray ",
@@ -789,22 +827,27 @@
                 "Emirates Nine Two Five Seven ",
                 "Emirates Nine Three Three Zero ",
                 "Wizzair One Five One Eight "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", XENAK, BEGLA, URUMU, Bair Seven Five One , Oscar Mike Echo Sierra Bravo , Oscar Mike Mike Two Three Three "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_151209.wav",
         "full_ts": "Stefanik tower  dobr\u00fd de\u0148  Burg Six Nine Two Lima stop established runway three one six point five DME\nAir Hamburg Six Niner Two Lima Stefanik tower  dobr\u00fd de\u0148\nwind    two two zero degrees  five knots          variable between one seven zero and two three zero degrees     maximum one zero minimum three  runway three one cleared to land",
         "short_ts": "Stefanik tower dobr\u00fd de\u0148 Burg 692L stop established runway 316.5 DME\nAir Hamburg 6 Niner 2L Stefanik tower dobr\u00fd de\u0148\nwind 220 degrees 5 knots variable between 170000230 degrees maximum 10 minimum 3 runway 31 cleared to land",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Air Hamburg Six Niner Two Lima",
                 "Burg Six Nine Two Lima"
             ],
-            "speaker_labels": [
-                "AHO692L",
-                "ATCO tower"
+            "short_callsigns": [
+                "ATCO tower",
+                "AHO692L"
             ],
             "waypoints": [
                 "ABETI",
@@ -842,7 +885,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AHO692L",
                 "AUA46",
                 "AUA66JT",
@@ -875,7 +918,7 @@
                 "WZZ6275",
                 "WZZ6276"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air Hamburg Six Nine Two Lima ",
                 "Austrian Four Six ",
                 "Austrian Six Six Juliett Tango ",
@@ -907,19 +950,24 @@
                 "Emirates Nine Seven Four Four ",
                 "Wizzair Six Two Seven Five ",
                 "Wizzair Six Two Seven Six "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Air Hamburg Six Niner Two Lima, Burg Six Nine Two Lima, ASPIB, ABETI, MOVOS, Siberian Airlines Three Six Four Two , Emirates One Two Eight , Mazoon Six Six Six "
+        "prompt_fullts_1G_4B": "Air Hamburg Six Niner Two Lima, Burg Six Nine Two Lima, Burg Six Nine Two Lima, Air Hamburg Six Niner Two Lima",
+        "prompt_fullts_5B": "Burg Six Nine Two Lima, Air Hamburg Six Niner Two Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210423_120826.wav",
         "full_ts": "Slovak Airforce  Seven Four Four Five frequency change approved  dopo\u010dutia pekn\u00fd let",
         "short_ts": "Slovak Airforce hes 7445 frequency change approved dopo\u010dutia pekn\u00fd let",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Slovak Airforce [hes] Seven Four Four Five"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -958,7 +1006,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "7745",
                 "AUA61UK",
                 "AUA791",
@@ -978,7 +1026,7 @@
                 "UAE2554",
                 "WZZ1820"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Seven Seven Four Five ",
                 "Austrian Six One Uniform Kilo ",
                 "Austrian Seven Nine One ",
@@ -997,19 +1045,24 @@
                 "Emirates One Two Eight ",
                 "Emirates Two Five Five Four ",
                 "Wizzair One Eight Two Zero "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Slovak Airforce [hes] Seven Four Four Five, CIFER, AGMIM, MAREG, Austrian Seven Victor Romeo , Austrian Seven Nine One , Austrian Six One Uniform Kilo "
+        "prompt_fullts_1G_4B": "Slovak Airforce [hes] Seven Four Four Five, Slovak Airforce [hes] Seven Four Four Five",
+        "prompt_fullts_5B": "Slovak Airforce [hes] Seven Four Four Five"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_073318.wav",
         "full_ts": "Bratislava tower      dobr\u00fd den   Five Four Romeo visual approach runway three one runway in sight",
         "short_ts": "Bratislava tower dobr\u00fd den 54R visual approach runway 31 runway 98",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Five Four Romeo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "DFC54R"
             ],
             "waypoints": [
@@ -1048,7 +1101,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFL2596",
                 "BRU880",
                 "DCJKP",
@@ -1065,7 +1118,7 @@
                 "TVS6VY",
                 "WZZ4JZ"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aeroflot Two Five Nine Six ",
                 "Belarus Avia Eight Eight Zero ",
                 "Delta Charlie Juliett Kilo Papa ",
@@ -1081,19 +1134,24 @@
                 "Ryan Two Golf Whiskey ",
                 "Skytravel Six Victor Yankee ",
                 "Wizzair Four Juliett Zulu "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Five Four Romeo, MAREG, ABETI, UBUXI, Oscar Echo X-ray Oscar X-ray , November Four Nine X-ray Lima , Flying Bulgaria Four Four Zero "
+        "prompt_fullts_1G_4B": "Five Four Romeo, Five Four Romeo",
+        "prompt_fullts_5B": "Five Four Romeo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_205033.wav",
         "full_ts": "Eurotrans One Three Juliett request push and start\ngood evening Eurotrans One Three Juliett startup and push back approved position to Foxtrot squawk four four two five\nsquawk four four two five and start and push pre- approved position foxtrot(fox-) two foxtrot",
         "short_ts": "BCS13J request push and start\ngood evening BCS13J startup and push back approved position 100 F squawk 4425\nsquawk 4425 and start and push pre approved position FF2F",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Eurotrans One Three Juliett"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "BCS13J",
                 "ATCO tower"
             ],
@@ -1133,7 +1191,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP942",
                 "AUA641",
                 "AUA7PK",
@@ -1144,7 +1202,7 @@
                 "GDMAZ",
                 "OKRLV"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Nine Four Two ",
                 "Austrian Six Four One ",
                 "Austrian Seven Papa Kilo ",
@@ -1154,20 +1212,24 @@
                 "Fedex Five One One Two ",
                 "Golf Delta Mike Alpha Zulu ",
                 "Oscar Kilo Romeo Lima Victor "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Eurotrans One Three Juliett, ABETI, PESAT, VYDRA, Bair Nine Four Two , Golf Delta Mike Alpha Zulu , Fedex Five One One Two "
+        "prompt_fullts_1G_4B": "Eurotrans One Three Juliett, Eurotrans One Three Juliett",
+        "prompt_fullts_5B": "Eurotrans One Three Juliett"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_144950.wav",
         "full_ts": "Stefanik Tower Trans Europe Three Eight Five Two\u00a0   pekne odpoludnie \u00a0 established ILS three one",
         "short_ts": "Stefanik Tower Trans Europe 3852 pekne odpoludnie established ILS 31",
         "prompt-data": {
-            "callsigns": [
-                "Stefanik Tower",
-                "Trans Europe Three Eight Five Two"
+            "long_callsigns": [
+                "Stefanik Tower Trans Europe Three Eight Five Two"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "EAT3852"
             ],
             "waypoints": [
@@ -1206,7 +1268,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP712",
                 "AOJ78P",
                 "AUA858",
@@ -1230,7 +1292,7 @@
                 "TIE394Y",
                 "VTBRK"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven One Two ",
                 "Asterix Seven Eight Papa ",
                 "Austrian Eight Five Eight ",
@@ -1253,17 +1315,22 @@
                 "Sunexpress Four Echo Whiskey ",
                 "Time Air Three Nine Four Yankee ",
                 "Victor Tango Bravo Romeo Kilo "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Stefanik Tower, Trans Europe Three Eight Five Two, TOVKA, ASPIB, REKLU, Mambra Sierra Echo , Time Air Three Nine Four Yankee , Juliett Sierra Hotel Six Six One "
+        "prompt_fullts_1G_4B": "Stefanik Tower Trans Europe Three Eight Five Two, Stefanik Tower Trans Europe Three Eight Five Two",
+        "prompt_fullts_5B": "Stefanik Tower Trans Europe Three Eight Five Two"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210423_115253.wav",
         "full_ts": "Four Four Five Stefanik tower  dobr\u00fd",
         "short_ts": "445 Stefanik tower dobr\u00fd",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -1302,7 +1369,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "7745",
                 "AUA61UK",
                 "AUA791",
@@ -1322,7 +1389,7 @@
                 "UAE2554",
                 "WZZ1820"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Seven Seven Four Five ",
                 "Austrian Six One Uniform Kilo ",
                 "Austrian Seven Nine One ",
@@ -1341,17 +1408,22 @@
                 "Emirates One Two Eight ",
                 "Emirates Two Five Five Four ",
                 "Wizzair One Eight Two Zero "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", VABGU, AGMIM, TOVKA, Wizzair One Eight Two Zero , Austrian Seven Victor Romeo , Ryanair Two Hotel Victor "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_195343.wav",
         "full_ts": "X-ray One Three if you prefer\nthank you and then that's witch departure again",
         "short_ts": "X ray 13 if you prefer\nthank you and then that s witch departure again",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO tower",
                 "pilot"
             ],
@@ -1391,7 +1463,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ASL52J",
                 "ASL60M",
                 "AUA641",
@@ -1400,7 +1472,7 @@
                 "ETD69K",
                 "THY6YP"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air Serbia Five Two Juliett ",
                 "Air Serbia Six Zero Mike ",
                 "Austrian Six Four One ",
@@ -1408,19 +1480,24 @@
                 "Eurotrans One Three Juliett ",
                 "Etihad Six Nine Kilo ",
                 "Turkish Six Yankee Papa "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", ABLOM, KOXER, NIGER, Eurotrans One Three Juliett , Austrian Six Four One , Austrian Seven Five "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_225241.wav",
         "full_ts": "Elite Jet Seven Zero Four taxi via Delta to apron Charlie",
         "short_ts": "ELJ704 taxi via D 100 apron C",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Elite Jet Seven Zero Four"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -1459,112 +1536,38 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "BCS13J",
                 "BCS5334",
                 "BCS5335",
                 "ELJ704",
                 "SIA319"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Eurotrans One Three Juliett ",
                 "Eurotrans Five Three Three Four ",
                 "Eurotrans Five Three Three Five ",
                 "Elite Jet Seven Zero Four ",
                 "Singapore Three One Nine "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Elite Jet Seven Zero Four, KUVEX, ASPIB, MAREG, Eurotrans Five Three Three Five , Eurotrans One Three Juliett , Elite Jet Seven Zero Four "
+        "prompt_fullts_1G_4B": "Elite Jet Seven Zero Four, Elite Jet Seven Zero Four",
+        "prompt_fullts_5B": "Elite Jet Seven Zero Four"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210428_092625.wav",
         "full_ts": "Time Air Three Niner Seven Foxtrot call me on tower frequency please\nroger",
         "short_ts": "Time Air 3 Niner 7F call me on tower frequency please\nroger",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Time Air Three Niner Seven Foxtrot"
             ],
-            "speaker_labels": [
-                "ATCO approach",
-                "TIE397F"
-            ],
-            "waypoints": [
-                "ABETI",
-                "ABLOM",
-                "ADAMA",
-                "AGMIM",
-                "ASLOT",
-                "ASPIB",
-                "ASTON",
-                "BEGLA",
-                "BERVA",
-                "CIFER",
-                "EKLIP",
-                "GASNA",
-                "GESGI",
-                "KOXER",
-                "KUVEX",
-                "LEDRI",
-                "MABOD",
-                "MAREG",
-                "MOVOS",
-                "NATEX",
-                "NIGER",
-                "PESAT",
-                "REKLU",
-                "SOMID",
-                "TOVKA",
-                "UBUXI",
-                "URUMU",
-                "VABGU",
-                "VAMOG",
-                "VAPIT",
-                "VEDER",
-                "VYDRA",
-                "XENAK",
-                "XENDI"
-            ],
             "short_callsigns": [
-                "AUA1472",
-                "AUA791",
-                "AUA7VR",
-                "CEF05B",
-                "KRP3105",
-                "N390LY",
-                "OKBRO",
-                "OKRLV",
-                "OMCIA",
-                "PGT53X",
-                "QTR1RA",
-                "QTR3PE",
-                "TIE397F"
-            ],
-            "long_callsigns": [
-                "Austrian One Four Seven Two ",
-                "Austrian Seven Nine One ",
-                "Austrian Seven Victor Romeo ",
-                "Czech Air Force Zero Five Bravo ",
-                "Carpatair Three One Zero Five ",
-                "November Three Nine Zero Lima Yankee ",
-                "Oscar Kilo Bravo Romeo Oscar ",
-                "Oscar Kilo Romeo Lima Victor ",
-                "Oscar Mike Charlie India Alpha ",
-                "Sunturk Five Three X-ray ",
-                "Qatari One Romeo Alpha ",
-                "Qatari Three Papa Echo ",
-                "Time Air Three Nine Seven Foxtrot "
-            ]
-        },
-        "prompt_fullts": "Time Air Three Niner Seven Foxtrot, GASNA, ABLOM, LEDRI, Qatari One Romeo Alpha , Time Air Three Nine Seven Foxtrot , November Three Nine Zero Lima Yankee "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203029.wav",
-        "full_ts": "no actually the  one alpha was planned for us but i see now as well the one kilo is going ya is by ATC and going straight ahead to  that's correct Eurotrans One Three Juliett\naffirm and if you are able to  comply with the restrictions you can choose to one kilo\nalright just give us five seconds discuss with a colleague Eurotrans One Three Juliett thank you",
-        "short_ts": "no actually the 1A was planned for us but i see now as well the 1K is going ya is by ATC and going straight ahead to that s correct Eurotrans 13J\naffirm and if you are able to comply with the restrictions you can choose to 1K\nalright just give us 5 seconds discuss with a colleague Eurotrans 13J thank you",
-        "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "BCS13J",
+                "TIE397F",
                 "ATCO approach"
             ],
             "waypoints": [
@@ -1603,36 +1606,53 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
-                "ALK504",
-                "AUA641",
-                "BCS13J",
-                "ETD054",
-                "ETH725",
-                "FDX5112",
-                "UAE32"
+            "nearby_short_callsigns": [
+                "AUA1472",
+                "AUA791",
+                "AUA7VR",
+                "CEF05B",
+                "KRP3105",
+                "N390LY",
+                "OKBRO",
+                "OKRLV",
+                "OMCIA",
+                "PGT53X",
+                "QTR1RA",
+                "QTR3PE",
+                "TIE397F"
             ],
-            "long_callsigns": [
-                "Srilankan Five Zero Four ",
-                "Austrian Six Four One ",
-                "Eurotrans One Three Juliett ",
-                "Etihad Zero Five Four ",
-                "Ethiopian Seven Two Five ",
-                "Fedex Five One One Two ",
-                "Emirates Three Two "
-            ]
+            "nearby_long_callsigns": [
+                "Austrian One Four Seven Two ",
+                "Austrian Seven Nine One ",
+                "Austrian Seven Victor Romeo ",
+                "Czech Air Force Zero Five Bravo ",
+                "Carpatair Three One Zero Five ",
+                "November Three Nine Zero Lima Yankee ",
+                "Oscar Kilo Bravo Romeo Oscar ",
+                "Oscar Kilo Romeo Lima Victor ",
+                "Oscar Mike Charlie India Alpha ",
+                "Sunturk Five Three X-ray ",
+                "Qatari One Romeo Alpha ",
+                "Qatari Three Papa Echo ",
+                "Time Air Three Nine Seven Foxtrot "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", ASTON, AGMIM, ASPIB, Ethiopian Seven Two Five , Srilankan Five Zero Four , Etihad Zero Five Four "
+        "prompt_fullts_1G_4B": "Time Air Three Niner Seven Foxtrot, Time Air Three Niner Seven Foxtrot",
+        "prompt_fullts_5B": "Time Air Three Niner Seven Foxtrot"
     },
     {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_150258.wav",
-        "full_ts": "squawk four four one seven\nsquawk four four one seven",
-        "short_ts": "squawk 4417\nsquawk 4417",
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203029.wav",
+        "full_ts": "no actually the  one alpha was planned for us but i see now as well the one kilo is going ya is by ATC and going straight ahead to  that's correct Eurotrans One Three Juliett\naffirm and if you are able to  comply with the restrictions you can choose to one kilo\nalright just give us five seconds discuss with a colleague Eurotrans One Three Juliett thank you",
+        "short_ts": "no actually the 1A was planned for us but i see now as well the 1K is going ya is by ATC and going straight ahead to that s correct Eurotrans 13J\naffirm and if you are able to comply with the restrictions you can choose to 1K\nalright just give us 5 seconds discuss with a colleague Eurotrans 13J thank you",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "ATCO tower",
-                "UNK-1"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "ATCO approach",
+                "BCS13J"
             ],
             "waypoints": [
                 "ABETI",
@@ -1670,7 +1690,78 @@
                 "XENAK",
                 "XENDI"
             ],
+            "nearby_short_callsigns": [
+                "ALK504",
+                "AUA641",
+                "BCS13J",
+                "ETD054",
+                "ETH725",
+                "FDX5112",
+                "UAE32"
+            ],
+            "nearby_long_callsigns": [
+                "Srilankan Five Zero Four ",
+                "Austrian Six Four One ",
+                "Eurotrans One Three Juliett ",
+                "Etihad Zero Five Four ",
+                "Ethiopian Seven Two Five ",
+                "Fedex Five One One Two ",
+                "Emirates Three Two "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_150258.wav",
+        "full_ts": "squawk four four one seven\nsquawk four four one seven",
+        "short_ts": "squawk 4417\nsquawk 4417",
+        "prompt-data": {
+            "long_callsigns": [],
             "short_callsigns": [
+                "ATCO tower"
+            ],
+            "waypoints": [
+                "ABETI",
+                "ABLOM",
+                "ADAMA",
+                "AGMIM",
+                "ASLOT",
+                "ASPIB",
+                "ASTON",
+                "BEGLA",
+                "BERVA",
+                "CIFER",
+                "EKLIP",
+                "GASNA",
+                "GESGI",
+                "KOXER",
+                "KUVEX",
+                "LEDRI",
+                "MABOD",
+                "MAREG",
+                "MOVOS",
+                "NATEX",
+                "NIGER",
+                "PESAT",
+                "REKLU",
+                "SOMID",
+                "TOVKA",
+                "UBUXI",
+                "URUMU",
+                "VABGU",
+                "VAMOG",
+                "VAPIT",
+                "VEDER",
+                "VYDRA",
+                "XENAK",
+                "XENDI"
+            ],
+            "nearby_short_callsigns": [
                 "AUA858",
                 "DENIF",
                 "DLH4YE",
@@ -1685,7 +1776,7 @@
                 "OYJJN",
                 "QTR655V"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian Eight Five Eight ",
                 "Delta Echo November India Foxtrot ",
                 "Hansa Four Yankee Echo ",
@@ -1699,21 +1790,26 @@
                 "Oscar Mike Mike Two Three Three ",
                 "Oscar Yankee Juliett Juliett November ",
                 "Qatari Six Five Five Victor "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", MAREG, PESAT, UBUXI, Elite Jet Seven Zero Two , Oscar Mike Mike Two Three Three , Oscar Kilo Yankee Uniform Alpha Two One "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_163922.wav",
         "full_ts": "looking out for a traffic Oscar Mike Kilo Lima Lima\nroger just traffic is    on your eleven o'clock  one mile",
         "short_ts": "looking out for a traffic OMKLL\nroger just traffic is 1 your 110 clock 1 mile",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Mike Kilo Lima Lima"
             ],
-            "speaker_labels": [
-                "ATCO tower",
-                "OMKLL"
+            "short_callsigns": [
+                "OMKLL",
+                "ATCO tower"
             ],
             "waypoints": [
                 "ABETI",
@@ -1751,7 +1847,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP712",
                 "AOJ78P",
                 "AZG280",
@@ -1771,7 +1867,7 @@
                 "SXS4EW",
                 "VTBRK"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven One Two ",
                 "Asterix Seven Eight Papa ",
                 "Silk West Two Eight Zero ",
@@ -1790,19 +1886,24 @@
                 "Slovak Government Zero Four Alpha ",
                 "Sunexpress Four Echo Whiskey ",
                 "Victor Tango Bravo Romeo Kilo "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Mike Kilo Lima Lima, VYDRA, VAMOG, XENDI, Trans Europe Three Eight Five Two , Silk West Two Eight Zero , Oscar Yankee Juliett Juliett November "
+        "prompt_fullts_1G_4B": "Oscar Mike Kilo Lima Lima, Oscar Mike Kilo Lima Lima",
+        "prompt_fullts_5B": "Oscar Mike Kilo Lima Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_143012.wav",
         "full_ts": "stefanik tower Oscar Mike Charlie India Alpha request\nyes go ahead",
         "short_ts": "stefanik tower OMCIA request\nyes go ahead",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Mike Charlie India Alpha"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OMCIA",
                 "ATCO tower"
             ],
@@ -1842,7 +1943,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP712",
                 "AOJ78P",
                 "AUA858",
@@ -1867,7 +1968,7 @@
                 "TIE394Y",
                 "VTBRK"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven One Two ",
                 "Asterix Seven Eight Papa ",
                 "Austrian Eight Five Eight ",
@@ -1891,19 +1992,24 @@
                 "Sunexpress Four Echo Whiskey ",
                 "Time Air Three Nine Four Yankee ",
                 "Victor Tango Bravo Romeo Kilo "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Mike Charlie India Alpha, MAREG, VEDER, LEDRI, Victor Tango Bravo Romeo Kilo , Oscar Kilo Romeo Delta Sierra , Trans Europe Three Eight Five Two "
+        "prompt_fullts_1G_4B": "Oscar Mike Charlie India Alpha, Oscar Mike Charlie India Alpha",
+        "prompt_fullts_5B": "Oscar Mike Charlie India Alpha"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_202823.wav",
         "full_ts": "Eurotrans One Three Juliett startup approved own discretion\nstartup own discretion Eurotrans One Three Juliett",
         "short_ts": "BCS13J startup approved own discretion\nstartup own discretion BCS13J",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Eurotrans One Three Juliett"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "BCS13J",
                 "ATCO tower"
             ],
@@ -1943,7 +2049,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AAR789",
                 "AUA126",
                 "AUA156",
@@ -1962,7 +2068,7 @@
                 "MTL9237",
                 "THY3JW"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Asiana Seven Eight Nine ",
                 "Austrian One Two Six ",
                 "Austrian One Five Six ",
@@ -1980,20 +2086,109 @@
                 "Lima Delta X-ray One Three ",
                 "Mitavia Nine Two Three Seven ",
                 "Turkish Three Juliett Whiskey "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Eurotrans One Three Juliett, PESAT, VABGU, REKLU, Austrian Five Zero Bravo , Austrian One Two Six , Cargolux Seven Eight Four Four "
+        "prompt_fullts_1G_4B": "Eurotrans One Three Juliett, Eurotrans One Three Juliett",
+        "prompt_fullts_5B": "Eurotrans One Three Juliett"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_075711.wav",
         "full_ts": "Stefanik tower Slovak Government Zero Zero Four  dobr\u00e9 r\u00e1no\nSlovak Government Zero Zero Four Stefanik tower  dobr\u00e9 r\u00e1no\nour stand information lima one zero zero seven ready for startup clearance destination Kosice\nSlovak Government Zero Zero Four information Mike time five seven QNH one zero zero eight cleared to  Kosice         from runway one three via Nitra one yankee departure initially climb altitude five thousand feet startup approved squawk six seven four six",
         "short_ts": "Stefanik tower SSG004 dobr\u00e9 r\u00e1no\nSSG004 Stefanik tower dobr\u00e9 r\u00e1no\nour stand information L 1007 ready for startup clearance destination Kosice\nSSG004 information M time 57 QNH 1008 cleared to Kosice from runway 13 via Nitra 1 Y departure initially climb altitude 5000 feet startup approved squawk 6746",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Slovak Government Zero Zero Four"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
+                "ATCO tower",
+                "SSG004"
+            ],
+            "waypoints": [
+                "ABETI",
+                "ABLOM",
+                "ADAMA",
+                "AGMIM",
+                "ASLOT",
+                "ASPIB",
+                "ASTON",
+                "BEGLA",
+                "BERVA",
+                "CIFER",
+                "EKLIP",
+                "GASNA",
+                "GESGI",
+                "KOXER",
+                "KUVEX",
+                "LEDRI",
+                "MABOD",
+                "MAREG",
+                "MOVOS",
+                "NATEX",
+                "NIGER",
+                "PESAT",
+                "REKLU",
+                "SOMID",
+                "TOVKA",
+                "UBUXI",
+                "URUMU",
+                "VABGU",
+                "VAMOG",
+                "VAPIT",
+                "VEDER",
+                "VYDRA",
+                "XENAK",
+                "XENDI"
+            ],
+            "nearby_short_callsigns": [
+                "AUA829",
+                "BTI9HP",
+                "ECA21E",
+                "ELJ403",
+                "ELJ801",
+                "HFM7887",
+                "MOZ331",
+                "OKACT",
                 "SSG004",
+                "THY8PQ",
+                "TTJ613",
+                "VCJ99A",
+                "VJT929"
+            ],
+            "nearby_long_callsigns": [
+                "Austrian Eight Two Nine ",
+                "Airbaltic Nine Hotel Papa ",
+                "Eurocypria Two One Echo ",
+                "Elite Jet Four Zero Three ",
+                "Elite Jet Eight Zero One ",
+                "Moonraker Seven Eight Eight Seven ",
+                "Mike Oscar Zulu Three Three One ",
+                "Okayjet Charlie Tango ",
+                "Slovak Government Zero Zero Four ",
+                "Turkish Eight Papa Quebec ",
+                "Tango Tango Juliett Six One Three ",
+                "Victor Charlie Juliett Nine Nine Alpha ",
+                "Vista Malta Nine Two Nine "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": "Slovak Government Zero Zero Four, Slovak Government Zero Zero Four",
+        "prompt_fullts_5B": "Slovak Government Zero Zero Four"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210421_121412.wav",
+        "full_ts": "Stefanik tower good day Three Alpha Mike Charlie Golf\nThree Alpha Mike Charlie Golf Stefanik tower good day\nHelicopter Alpha One  ready to  start   only one pesron on board two hours over",
+        "short_ts": "Stefanik tower good day 3AMCG\n3AMCG Stefanik tower good day\nHelicopter A1 ready to start only 1 pesron on board 2 hours over",
+        "prompt-data": {
+            "long_callsigns": [],
+            "short_callsigns": [
+                "3AMCG",
                 "ATCO tower"
             ],
             "waypoints": [
@@ -2032,87 +2227,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
-                "AUA829",
-                "BTI9HP",
-                "ECA21E",
-                "ELJ403",
-                "ELJ801",
-                "HFM7887",
-                "MOZ331",
-                "OKACT",
-                "SSG004",
-                "THY8PQ",
-                "TTJ613",
-                "VCJ99A",
-                "VJT929"
-            ],
-            "long_callsigns": [
-                "Austrian Eight Two Nine ",
-                "Airbaltic Nine Hotel Papa ",
-                "Eurocypria Two One Echo ",
-                "Elite Jet Four Zero Three ",
-                "Elite Jet Eight Zero One ",
-                "Moonraker Seven Eight Eight Seven ",
-                "Mike Oscar Zulu Three Three One ",
-                "Okayjet Charlie Tango ",
-                "Slovak Government Zero Zero Four ",
-                "Turkish Eight Papa Quebec ",
-                "Tango Tango Juliett Six One Three ",
-                "Victor Charlie Juliett Nine Nine Alpha ",
-                "Vista Malta Nine Two Nine "
-            ]
-        },
-        "prompt_fullts": "Slovak Government Zero Zero Four, KUVEX, ADAMA, EKLIP, Moonraker Seven Eight Eight Seven , Airbaltic Nine Hotel Papa , Elite Jet Eight Zero One "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210421_121412.wav",
-        "full_ts": "Stefanik tower good day Three Alpha Mike Charlie Golf\nThree Alpha Mike Charlie Golf Stefanik tower good day\nHelicopter Alpha One  ready to  start   only one pesron on board two hours over",
-        "short_ts": "Stefanik tower good day 3AMCG\n3AMCG Stefanik tower good day\nHelicopter A1 ready to start only 1 pesron on board 2 hours over",
-        "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "3AMCG",
-                "ATCO tower",
-                "UNK-1"
-            ],
-            "waypoints": [
-                "ABETI",
-                "ABLOM",
-                "ADAMA",
-                "AGMIM",
-                "ASLOT",
-                "ASPIB",
-                "ASTON",
-                "BEGLA",
-                "BERVA",
-                "CIFER",
-                "EKLIP",
-                "GASNA",
-                "GESGI",
-                "KOXER",
-                "KUVEX",
-                "LEDRI",
-                "MABOD",
-                "MAREG",
-                "MOVOS",
-                "NATEX",
-                "NIGER",
-                "PESAT",
-                "REKLU",
-                "SOMID",
-                "TOVKA",
-                "UBUXI",
-                "URUMU",
-                "VABGU",
-                "VAMOG",
-                "VAPIT",
-                "VEDER",
-                "VYDRA",
-                "XENAK",
-                "XENDI"
-            ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA655",
                 "AUA75",
                 "AUA77KT",
@@ -2131,7 +2246,7 @@
                 "SPARK",
                 "UAE128"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian Six Five Five ",
                 "Austrian Seven Five ",
                 "Austrian Seven Seven Kilo Tango ",
@@ -2149,19 +2264,24 @@
                 "Tarom Three Four Two Yankee ",
                 "Sierra Pacific Romeo Kilo ",
                 "Emirates One Two Eight "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", TOVKA, GESGI, ABETI, Twin Star Five Zero Three , German Cargo Five One Eight , Austrian Eight Mike Sierra "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_155946.wav",
         "full_ts": "Oscar Kilo Alpha Golf Lima squad four six seven four six\nsix seven four six",
         "short_ts": "OKAGL squad 46746\n6746",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Golf Lima"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO tower",
                 "OKAGL"
             ],
@@ -2201,7 +2321,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AHO692L",
                 "AOJ81R",
                 "AUA46",
@@ -2232,7 +2352,7 @@
                 "WZZ6275",
                 "WZZ6276"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air Hamburg Six Nine Two Lima ",
                 "Asterix Eight One Romeo ",
                 "Austrian Four Six ",
@@ -2262,17 +2382,22 @@
                 "Tango Tango Juliett Six Zero Three ",
                 "Wizzair Six Two Seven Five ",
                 "Wizzair Six Two Seven Six "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Golf Lima, VAPIT, KOXER, MAREG, Belarus Avia Eight Eight Zero , Austrian Eight Zero November , Mambra Uniform Charlie "
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Golf Lima, Oscar Kilo Alpha Golf Lima",
+        "prompt_fullts_5B": "Oscar Kilo Alpha Golf Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_202836.wav",
         "full_ts": "Stefanik tower good evening Eurotrans One Three Juliett information zulu is copied request KLM two",
         "short_ts": "Stefanik tower good evening Eurotrans 13J information Z is copied request KLM 2",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -2311,7 +2436,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA126",
                 "AUA172",
                 "AUA3NC",
@@ -2325,7 +2450,7 @@
                 "RYR2HV",
                 "UAE4"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian One Two Six ",
                 "Austrian One Seven Two ",
                 "Austrian Three November Charlie ",
@@ -2338,17 +2463,22 @@
                 "KLM Two Five Foxtrot ",
                 "Ryan Two Hotel Victor ",
                 "Emirates Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", NIGER, ASTON, VAMOG, Austrian Three Sierra Victor , Ethiopian Seven Two Five , Austrian One Seven Two "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210428_092638.wav",
         "full_ts": "tower Time Air Three Niner Seven Foxtrot  dobr\u00fd den\ndobr\u00fd de\u0148 op\u00e4\u0165  Time Air Three Niner Seven Foxtrot tower goahead\nTime Air Three Niner Seven Foxtrot  waypoint charlie stand four five different information yankee QNH one zero one one request technical startup",
         "short_ts": "tower Time Air 3 Niner 7F dobr\u00fd den\ndobr\u00fd de\u0148 op\u00e4\u0165 Time Air 3 Niner 7F tower goahead\nTime Air 3 Niner 7F waypoint C stand 45 different information Y QNH 1011 request technical startup",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "TIE397F",
                 "ATCO tower"
             ],
@@ -2388,7 +2518,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA1472",
                 "AUA791",
                 "AUA7VR",
@@ -2403,7 +2533,7 @@
                 "QTR3PE",
                 "TIE397F"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian One Four Seven Two ",
                 "Austrian Seven Nine One ",
                 "Austrian Seven Victor Romeo ",
@@ -2417,20 +2547,25 @@
                 "Qatari One Romeo Alpha ",
                 "Qatari Three Papa Echo ",
                 "Time Air Three Nine Seven Foxtrot "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", VABGU, KUVEX, TOVKA, Time Air Three Nine Seven Foxtrot , Qatari Three Papa Echo , Austrian One Four Seven Two "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_101342.wav",
         "full_ts": "Oscar India Alpha and contact Stefanik Radar one three four decimal nine two five   ahoj\ncontacting radar one three four decimal(dec-) decimal nine two five    Oscar Mike Charlie India Alpha thank you bye",
         "short_ts": "OIA and contact Stefanik Radar 134.925 ahoj\ncontacting radar 134. dec.925 OMCIA thank you bye",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 " Oscar Mike Charlie India Alpha",
                 " Oscar India Alpha"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OMCIA",
                 "ATCO tower"
             ],
@@ -2470,7 +2605,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR45AA",
                 "AUA791",
                 "AUA8TB",
@@ -2491,7 +2626,7 @@
                 "TVS2571",
                 "UAE202"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France Four Five Alpha Alpha ",
                 "Austrian Seven Nine One ",
                 "Austrian Eight Tango Bravo ",
@@ -2511,23 +2646,28 @@
                 "Turkish Two Bravo Foxtrot ",
                 "Skytravel Two Five Seven One ",
                 "Emirates Two Zero Two "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": " Oscar Mike Charlie India Alpha,  Oscar India Alpha, ABETI, ASTON, VABGU, Turkish Two Bravo Foxtrot , Austrian Seven Nine One , Air France Four Five Alpha Alpha "
+        "prompt_fullts_1G_4B": " Oscar Mike Charlie India Alpha,  Oscar India Alpha,  Oscar India Alpha,  Oscar Mike Charlie India Alpha",
+        "prompt_fullts_5B": " Oscar India Alpha,  Oscar Mike Charlie India Alpha"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_163524.wav",
         "full_ts": "Tower hello Dream Team Zero One Five November established on ILS three one\nDream Team Zero One Five November Stefanik Tower  dobry den  wind one nine zero degrees nine knots runway three one cleared to land\nrunway three one cleared land      Dream Team Zero One Five November and  dobry den",
         "short_ts": "Tower hello GAC015N established on ILS 31\nDream Team 015N Stefanik Tower dobry den wind 190 degrees 9 knots runway 31 cleared to land\nrunway 31 cleared land GAC015N and dobry den",
         "prompt-data": {
-            "callsigns": [
-                "Stefanik Tower",
-                " Tower",
-                "Dream Team Zero One Five November"
+            "long_callsigns": [
+                "Dream Team Zero One Five November Stefanik Tower",
+                "Dream Team Zero One Five November",
+                " Tower"
             ],
-            "speaker_labels": [
-                "GAC015N",
-                "ATCO tower"
+            "short_callsigns": [
+                "ATCO tower",
+                "GAC015N"
             ],
             "waypoints": [
                 "ABETI",
@@ -2565,7 +2705,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA66JT",
                 "AUA7KS",
                 "GAC015N",
@@ -2574,7 +2714,7 @@
                 "TTJ312B",
                 "TTJ315A"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian Six Six Juliett Tango ",
                 "Austrian Seven Kilo Sierra ",
                 "Dream Team Zero One Five November ",
@@ -2582,20 +2722,25 @@
                 "Turkish Six Six Zero Four ",
                 "Tango Tango Juliett Three One Two Bravo ",
                 "Tango Tango Juliett Three One Five Alpha "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Stefanik Tower,  Tower, Dream Team Zero One Five November, UBUXI, BEGLA, ASTON, Tango Tango Juliett Three One Five Alpha , Tango Tango Juliett Three One Two Bravo , Dream Team Zero One Five November "
+        "prompt_fullts_1G_4B": "Dream Team Zero One Five November Stefanik Tower, Dream Team Zero One Five November,  Tower, Dream Team Zero One Five November,  Tower, Dream Team Zero One Five November Stefanik Tower",
+        "prompt_fullts_5B": " Tower, Dream Team Zero One Five November Stefanik Tower, Dream Team Zero One Five November"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210424_151420.wav",
         "full_ts": "dobr\u00e9 popoludnie  Stefanik tower Bair Niner Four One ILS three one\nBair Nine Four One Stefanik tower   pekn\u00e9 popoludnie  wind\u00a0three one zero  degrees  eight knots          variable between two seven zero and three three zero degrees   runway three one cleared to land\nrunway three one cleared to land Bair Niner Four One",
         "short_ts": "dobr\u00e9 popoludnie Stefanik tower Bair Niner 41 ILS 31\nABP941 Stefanik tower pekn\u00e9 popoludnie wind 310 degrees 8 knots variable between 270000330 degrees runway 31 cleared to land\nrunway 31 cleared to land Bair Niner 41",
         "prompt-data": {
-            "callsigns": [
-                "Bair Nine Four One",
-                "Bair Niner Four One"
+            "long_callsigns": [
+                "Bair Niner Four One",
+                "Bair Nine Four One"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ABP941",
                 "ATCO tower"
             ],
@@ -2635,7 +2780,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP751",
                 "ABP941",
                 "AUA382",
@@ -2656,7 +2801,7 @@
                 "WUK3815",
                 "WZZ1677"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven Five One ",
                 "Bair Nine Four One ",
                 "Austrian Three Eight Two ",
@@ -2676,17 +2821,22 @@
                 "Slovak Government Zero Six Bravo ",
                 "Wizz Go Three Eight One Five ",
                 "Wizzair One Six Seven Seven "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Bair Nine Four One, Bair Niner Four One, URUMU, UBUXI, XENDI, Kilo Alpha Yankee Five Two , Austrian Seven Nine Lima Golf , Oscar Mike Mike Two One Five "
+        "prompt_fullts_1G_4B": "Bair Niner Four One, Bair Nine Four One, Bair Nine Four One, Bair Niner Four One",
+        "prompt_fullts_5B": "Bair Nine Four One, Bair Niner Four One"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_173822.wav",
         "full_ts": "cleared to land runway three one and please say again the wind\ntwo eight zero degrees   one one knots   maximum one eight   minimum six knots",
         "short_ts": "cleared to land runway 31 and please say again the wind\n280 degrees 11 knots maximum 18 minimum 6 knots",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO tower",
                 "pilot"
             ],
@@ -2726,7 +2876,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP752",
                 "AUA126",
                 "AUA156",
@@ -2747,7 +2897,7 @@
                 "TTJ600",
                 "TWG144"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven Five Two ",
                 "Austrian One Two Six ",
                 "Austrian One Five Six ",
@@ -2767,21 +2917,26 @@
                 "Juliett Sierra Hotel Six Five Five ",
                 "Tango Tango Juliett Six Zero Zero ",
                 "Twingoose One Four Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", ASTON, ABLOM, GASNA, Austrian Two Nine Six , Austrian One Five Six , Austrian Three November Charlie "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_130351.wav",
         "full_ts": "Stefanik tower Oscar Mike Echo Lima Echo good day\nOscar Mike Echo Lima Echo Stefanik tower good day\nStefanik tower Oscar Mike Echo Lima Echo  actual position  inbound keep  descending to two thousand feet altitude and requesting exit point victor Oscar Mike Echo Lima Echo\nOscar Lima Echo QNH one zero one eight after  proceed to Victor",
         "short_ts": "Stefanik tower OMELE good day\nOMELE Stefanik tower good day\nStefanik tower OMELE actual position inbound keep descending to 2000 feet altitude and requesting exit.V OMELE\nOLE QNH 1018 after proceed to V",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
+                "Oscar Mike Echo Lima Echo",
                 "Oscar Lima Echo",
-                "Oscar Mike Echo Lima Echo good day",
-                "Oscar Mike Echo Lima Echo"
+                "Oscar Mike Echo Lima Echo good day"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OMELE",
                 "ATCO tower"
             ],
@@ -2821,7 +2976,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP751",
                 "AFL2408",
                 "AFR33GX",
@@ -2847,7 +3002,7 @@
                 "UAE9330",
                 "WZZ1518"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven Five One ",
                 "Aeroflot Two Four Zero Eight ",
                 "Air France Three Three Golf X-ray ",
@@ -2872,19 +3027,24 @@
                 "Emirates Nine Two Five Seven ",
                 "Emirates Nine Three Three Zero ",
                 "Wizzair One Five One Eight "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Lima Echo, Oscar Mike Echo Lima Echo good day, Oscar Mike Echo Lima Echo, ASLOT, VEDER, UBUXI, Slovak Government Zero Zero Four , Turkish Nine Delta Whiskey , Aeroflot Two Four Zero Eight "
+        "prompt_fullts_1G_4B": "Oscar Mike Echo Lima Echo, Oscar Lima Echo, Oscar Mike Echo Lima Echo good day, Oscar Mike Echo Lima Echo good day, Oscar Lima Echo, Oscar Mike Echo Lima Echo",
+        "prompt_fullts_5B": "Oscar Lima Echo, Oscar Mike Echo Lima Echo good day, Oscar Mike Echo Lima Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_121412.wav",
         "full_ts": "Elite Jet Two Zero One and via foxtrot line up three one report ready",
         "short_ts": "ELJ201 000 via F line up 31 report ready",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Elite Jet Two Zero One"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ELJ201"
             ],
             "waypoints": [
@@ -2923,7 +3083,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AAR795",
                 "ABP751",
                 "AUA655",
@@ -2948,7 +3108,7 @@
                 "THY98U",
                 "UAE128"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Asiana Seven Nine Five ",
                 "Bair Seven Five One ",
                 "Austrian Six Five Five ",
@@ -2972,19 +3132,24 @@
                 "Slovak Government Zero Four Alpha ",
                 "Turkish Nine Eight Uniform ",
                 "Emirates One Two Eight "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Elite Jet Two Zero One, NATEX, VABGU, KUVEX, Asiana Seven Nine Five , Air China Five Nine Eight , Oscar Kilo Oscar Uniform Lima Four Five "
+        "prompt_fullts_1G_4B": "Elite Jet Two Zero One, Elite Jet Two Zero One",
+        "prompt_fullts_5B": "Elite Jet Two Zero One"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_181535.wav",
         "full_ts": "Oscar Golf Echo continue to final runway two two traffic is just now before shortly before landing",
         "short_ts": "OGE continue to final runway 22 traffic 30 just now before shortly before landing",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Golf Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -3023,7 +3188,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AOJ81R",
                 "AXA111",
                 "MTL9237",
@@ -3032,7 +3197,7 @@
                 "SBI3642",
                 "SBI3650"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Asterix Eight One Romeo ",
                 "Alpha X-ray Alpha One One One ",
                 "Mitavia Nine Two Three Seven ",
@@ -3040,19 +3205,23 @@
                 "Mazoon Six Six Six ",
                 "Siberian Airlines Three Six Four Two ",
                 "Siberian Airlines Three Six Five Zero "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Golf Echo, KOXER, ABETI, VEDER, Mitavia Nine Two Three Seven , Mazoon Six Six Six , Asterix Eight One Romeo "
+        "prompt_fullts_1G_4B": "Oscar Golf Echo, Oscar Golf Echo",
+        "prompt_fullts_5B": "Oscar Golf Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_093554.wav",
         "full_ts": "Oscar Mike Romeo Whiskey India wind one seven zero degrees six knots variable between one four zero and two four zero degrees runway three one cleared to land",
         "short_ts": "OMRWI wind 170 degrees 6 knots variable between 140 and 240 degrees runway 31 cleared to land",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "ATCO tower",
-                "UNK-1"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "ATCO tower"
             ],
             "waypoints": [
                 "ABETI",
@@ -3090,7 +3259,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFL2611",
                 "AUA61UK",
                 "AUA7VR",
@@ -3111,7 +3280,7 @@
                 "UAE127",
                 "YURDA"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aeroflot Two Six One One ",
                 "Austrian Six One Uniform Kilo ",
                 "Austrian Seven Victor Romeo ",
@@ -3131,19 +3300,24 @@
                 "Tango Tango Juliett Six One Three ",
                 "Emirates One Two Seven ",
                 "Yankee Uniform Romeo Delta Alpha "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", ASTON, ASPIB, GASNA, Ryan Five Seven Foxtrot Alpha , Slok Gambia Oscar Lima , Yankee Uniform Romeo Delta Alpha "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_204845.wav",
         "full_ts": "Eurotrans One Three Juliett taxi to holding point runway zero four via alpha delta\nalpha delta    holding point zero four Eurotrans One Three Juliett",
         "short_ts": "BCS13J taxi to holding. runway 04 via AD\nAD holding. 04 BCS13J",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Eurotrans One Three Juliett"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "BCS13J",
                 "ATCO tower"
             ],
@@ -3183,7 +3357,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA126",
                 "AUA172",
                 "AUA3NC",
@@ -3197,7 +3371,7 @@
                 "RYR2HV",
                 "UAE4"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian One Two Six ",
                 "Austrian One Seven Two ",
                 "Austrian Three November Charlie ",
@@ -3210,17 +3384,22 @@
                 "KLM Two Five Foxtrot ",
                 "Ryan Two Hotel Victor ",
                 "Emirates Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Eurotrans One Three Juliett, MOVOS, ASPIB, NIGER, Fedex Five One One Two , Austrian Six Juliett Mike , Austrian One Two Six "
+        "prompt_fullts_1G_4B": "Eurotrans One Three Juliett, Eurotrans One Three Juliett",
+        "prompt_fullts_5B": "Eurotrans One Three Juliett"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_171541.wav",
         "full_ts": "opakujte volaciu zna\u010dku\ntower Oscar Mike Charlie Mike Juliett  dobr\u00fd de\u0148\nOscar Mike Charlie Mike Juliett  \u0161tef\u00e1nikovo dobr\u00fd de\u0148\nOscar Mike Charlie Mike Juliett  flight plan  position  bound charlie one thousand three hundred feet QNH one zero zero seven information golf four one six",
         "short_ts": "opakujte volaciu zna\u010dku\ntower OMCMJ dobr\u00fd de\u0148\nOMCMJ \u0161tef\u00e1nikovo dobr\u00fd de\u0148\nOMCMJ flight plan position bound C 1300 feet QNH 1007 information G416",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OMCMJ",
                 "ATCO tower"
             ],
@@ -3260,7 +3439,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFL2353",
                 "AOJ96M",
                 "AXE346P",
@@ -3272,7 +3451,7 @@
                 "SBI3752",
                 "WUK5067"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aeroflot Two Three Five Three ",
                 "Asterix Nine Six Mike ",
                 "Galileo Three Four Six Papa ",
@@ -3283,342 +3462,26 @@
                 "Oscar Mike Mike Six Zero Five ",
                 "Siberian Airlines Three Seven Five Two ",
                 "Wizz Go Five Zero Six Seven "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", KUVEX, VABGU, ABETI, Oscar Kilo Romeo Delta Sierra , Oscar Mike Charlie Mike Juliett , Siberian Airlines Three Seven Five Two "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203133.wav",
         "full_ts": "right so then yeah Tovka one kilo would be much better Eurotrans  One Three Juliett thank you\nEurotrans One Three Juliett roger so recleared via Tovka one kilo departure of runway three one initial climb five thousand feet\nrecleared at Tovka one kilo departure runway three initial climb five thousand feet and request push and start Eurotrans One Three Juliett\nEurotrans One Three Juliett push and start approved facing foxtrot and squawk four four zero three",
         "short_ts": "right so then yeah Tovka 1 K would be much better Eurotrans hes 13J thank you\nBCS13J roger so recleared via Tovka 1 K departure of runway 31 initial climb 5000 feet\nrecleared at Tovka 1 K departure runway 3 initial climb 5000 feet and request push and start BCS13J\nBCS13J push and start approved facing F and squawk 4403",
         "prompt-data": {
-            "callsigns": [
-                "Eurotrans One Three Juliett",
-                "Eurotrans [hes] One Three Juliett"
-            ],
-            "speaker_labels": [
-                "BCS13J",
-                "ATCO approach"
-            ],
-            "waypoints": [
-                "ABETI",
-                "ABLOM",
-                "ADAMA",
-                "AGMIM",
-                "ASLOT",
-                "ASPIB",
-                "ASTON",
-                "BEGLA",
-                "BERVA",
-                "CIFER",
-                "EKLIP",
-                "GASNA",
-                "GESGI",
-                "KOXER",
-                "KUVEX",
-                "LEDRI",
-                "MABOD",
-                "MAREG",
-                "MOVOS",
-                "NATEX",
-                "NIGER",
-                "PESAT",
-                "REKLU",
-                "SOMID",
-                "TOVKA",
-                "UBUXI",
-                "URUMU",
-                "VABGU",
-                "VAMOG",
-                "VAPIT",
-                "VEDER",
-                "VYDRA",
-                "XENAK",
-                "XENDI"
+            "long_callsigns": [
+                "Eurotrans [hes] One Three Juliett",
+                "Eurotrans One Three Juliett"
             ],
             "short_callsigns": [
-                "ALK504",
-                "AUA641",
-                "BCS13J",
-                "ETD054",
-                "ETH725",
-                "FDX5112",
-                "UAE32"
-            ],
-            "long_callsigns": [
-                "Srilankan Five Zero Four ",
-                "Austrian Six Four One ",
-                "Eurotrans One Three Juliett ",
-                "Etihad Zero Five Four ",
-                "Ethiopian Seven Two Five ",
-                "Fedex Five One One Two ",
-                "Emirates Three Two "
-            ]
-        },
-        "prompt_fullts": "Eurotrans One Three Juliett, Eurotrans [hes] One Three Juliett, ADAMA, MAREG, PESAT, Etihad Zero Five Four , Ethiopian Seven Two Five , Srilankan Five Zero Four "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_230611.wav",
-        "full_ts": "Stefanik Tower good morning      Eurotrans Five Three Three  Four established on the final inbound three one\ngood morning     Eurotrans Five Three Three Four    Stefanik    Tower wind variable three knots runway three one cleared to land\ncleared to land three one        Eurotrans  Five  Three   Three   Four",
-        "short_ts": "Stefanik Tower good morning BCS5334 established on the final inbound 31\ngood morning Eurotrans 5334 Stefanik Tower wind variable 3 knots runway 31 cleared to land\ncleared to land 31 BCS5334",
-        "prompt-data": {
-            "callsigns": [
-                " Eurotrans Five Three Three Four",
-                "Stefanik Tower",
-                " Stefanik Tower",
-                "Eurotrans Five Three Three Four"
-            ],
-            "speaker_labels": [
-                "BCS5334",
-                "ATCO tower"
-            ],
-            "waypoints": [
-                "ABETI",
-                "ABLOM",
-                "ADAMA",
-                "AGMIM",
-                "ASLOT",
-                "ASPIB",
-                "ASTON",
-                "BEGLA",
-                "BERVA",
-                "CIFER",
-                "EKLIP",
-                "GASNA",
-                "GESGI",
-                "KOXER",
-                "KUVEX",
-                "LEDRI",
-                "MABOD",
-                "MAREG",
-                "MOVOS",
-                "NATEX",
-                "NIGER",
-                "PESAT",
-                "REKLU",
-                "SOMID",
-                "TOVKA",
-                "UBUXI",
-                "URUMU",
-                "VABGU",
-                "VAMOG",
-                "VAPIT",
-                "VEDER",
-                "VYDRA",
-                "XENAK",
-                "XENDI"
-            ],
-            "short_callsigns": [
-                "BCS5334",
-                "BCS5335",
-                "ELJ704"
-            ],
-            "long_callsigns": [
-                "Eurotrans Five Three Three Four ",
-                "Eurotrans Five Three Three Five ",
-                "Elite Jet Seven Zero Four "
-            ]
-        },
-        "prompt_fullts": " Eurotrans Five Three Three Four, Stefanik Tower,  Stefanik Tower, Eurotrans Five Three Three Four, URUMU, GESGI, ABLOM, Elite Jet Seven Zero Four , Eurotrans Five Three Three Four , Eurotrans Five Three Three Five "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_202859.wav",
-        "full_ts": "One Two Juliett any chance to send a ready message\nwill do\nthanks",
-        "short_ts": "12J any chance to send a ready message\nwill do\nthanks",
-        "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "ATCO tower",
-                "pilot"
-            ],
-            "waypoints": [
-                "ABETI",
-                "ABLOM",
-                "ADAMA",
-                "AGMIM",
-                "ASLOT",
-                "ASPIB",
-                "ASTON",
-                "BEGLA",
-                "BERVA",
-                "CIFER",
-                "EKLIP",
-                "GASNA",
-                "GESGI",
-                "KOXER",
-                "KUVEX",
-                "LEDRI",
-                "MABOD",
-                "MAREG",
-                "MOVOS",
-                "NATEX",
-                "NIGER",
-                "PESAT",
-                "REKLU",
-                "SOMID",
-                "TOVKA",
-                "UBUXI",
-                "URUMU",
-                "VABGU",
-                "VAMOG",
-                "VAPIT",
-                "VEDER",
-                "VYDRA",
-                "XENAK",
-                "XENDI"
-            ],
-            "short_callsigns": [
-                "AAR789",
-                "AUA126",
-                "AUA156",
-                "AUA172",
-                "AUA296",
-                "AUA3NC",
-                "AUA3SV",
-                "AUA4DL",
-                "AUA50B",
-                "BCS13J",
-                "BCS86N",
-                "CLX6104",
-                "CLX7844",
-                "FDX5112",
-                "LDX13",
-                "MTL9237",
-                "THY3JW"
-            ],
-            "long_callsigns": [
-                "Asiana Seven Eight Nine ",
-                "Austrian One Two Six ",
-                "Austrian One Five Six ",
-                "Austrian One Seven Two ",
-                "Austrian Two Nine Six ",
-                "Austrian Three November Charlie ",
-                "Austrian Three Sierra Victor ",
-                "Austrian Four Delta Lima ",
-                "Austrian Five Zero Bravo ",
-                "Eurotrans One Three Juliett ",
-                "Eurotrans Eight Six November ",
-                "Cargolux Six One Zero Four ",
-                "Cargolux Seven Eight Four Four ",
-                "Fedex Five One One Two ",
-                "Lima Delta X-ray One Three ",
-                "Mitavia Nine Two Three Seven ",
-                "Turkish Three Juliett Whiskey "
-            ]
-        },
-        "prompt_fullts": ", ASLOT, VAMOG, GESGI, Austrian One Two Six , Austrian Three November Charlie , Austrian One Seven Two "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_103144.wav",
-        "full_ts": "Double Dot Four Zero One line up runway one three wind variable two knots  runway one three cleared for takeoff  dopo\nvia foxtrot line up run- runway one three and run- runway runway one three cleared for takeoff",
-        "short_ts": "Double Dot 401 line up runway 13 wind variable 2 knots runway 13 cleared for takeoff dopo\nvia F line up run runway 13 and run runway runway 13 cleared for takeoff",
-        "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "ATCO tower",
-                "pilot"
-            ],
-            "waypoints": [
-                "ABETI",
-                "ABLOM",
-                "ADAMA",
-                "AGMIM",
-                "ASLOT",
-                "ASPIB",
-                "ASTON",
-                "BEGLA",
-                "BERVA",
-                "CIFER",
-                "EKLIP",
-                "GASNA",
-                "GESGI",
-                "KOXER",
-                "KUVEX",
-                "LEDRI",
-                "MABOD",
-                "MAREG",
-                "MOVOS",
-                "NATEX",
-                "NIGER",
-                "PESAT",
-                "REKLU",
-                "SOMID",
-                "TOVKA",
-                "UBUXI",
-                "URUMU",
-                "VABGU",
-                "VAMOG",
-                "VAPIT",
-                "VEDER",
-                "VYDRA",
-                "XENAK",
-                "XENDI"
-            ],
-            "short_callsigns": [
-                "AUA381",
-                "AUA61UK",
-                "AUA655",
-                "AUA75",
-                "AUA791",
-                "AUA8TB",
-                "CCA598",
-                "DLH4YV",
-                "ELJ401",
-                "ELJ403",
-                "ELJ801",
-                "ELJ802",
-                "EVA066",
-                "HFM7887",
-                "MOZ331",
-                "OKACT",
-                "OMM611",
-                "OMS215",
-                "PGT74E",
-                "SIA317",
-                "THY8PQ",
-                "TTJ613",
-                "VCJ99A",
-                "VJT929"
-            ],
-            "long_callsigns": [
-                "Austrian Three Eight One ",
-                "Austrian Six One Uniform Kilo ",
-                "Austrian Six Five Five ",
-                "Austrian Seven Five ",
-                "Austrian Seven Nine One ",
-                "Austrian Eight Tango Bravo ",
-                "Air China Five Nine Eight ",
-                "Hansa Four Yankee Victor ",
-                "Elite Jet Four Zero One ",
-                "Elite Jet Four Zero Three ",
-                "Elite Jet Eight Zero One ",
-                "Elite Jet Eight Zero Two ",
-                "Eva Zero Six Six ",
-                "Moonraker Seven Eight Eight Seven ",
-                "Mike Oscar Zulu Three Three One ",
-                "Okayjet Charlie Tango ",
-                "Oscar Mike Mike Six One One ",
-                "Mazoon Two One Five ",
-                "Sunturk Seven Four Echo ",
-                "Singapore Three One Seven ",
-                "Turkish Eight Papa Quebec ",
-                "Tango Tango Juliett Six One Three ",
-                "Victor Charlie Juliett Nine Nine Alpha ",
-                "Vista Malta Nine Two Nine "
-            ]
-        },
-        "prompt_fullts": ", ASLOT, MAREG, TOVKA, Air China Five Nine Eight , Austrian Six Five Five , Vista Malta Nine Two Nine "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_203652.wav",
-        "full_ts": "holding point   runway three one  via foxtrot and cross runway zero four Eurotrans Two One correction One Three Juliett thank you",
-        "short_ts": "holding. runway 31 via F and cross runway 04 BCS21 correction 13J thank you",
-        "prompt-data": {
-            "callsigns": [
-                "One Three Juliett",
-                "Eurotrans Two One"
-            ],
-            "speaker_labels": [
+                "ATCO approach",
                 "BCS13J"
             ],
             "waypoints": [
@@ -3657,7 +3520,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ALK504",
                 "AUA641",
                 "BCS13J",
@@ -3666,7 +3529,7 @@
                 "FDX5112",
                 "UAE32"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Srilankan Five Zero Four ",
                 "Austrian Six Four One ",
                 "Eurotrans One Three Juliett ",
@@ -3674,22 +3537,28 @@
                 "Ethiopian Seven Two Five ",
                 "Fedex Five One One Two ",
                 "Emirates Three Two "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "One Three Juliett, Eurotrans Two One, ASTON, GASNA, BEGLA, Fedex Five One One Two , Austrian Six Four One , Etihad Zero Five Four "
+        "prompt_fullts_1G_4B": "Eurotrans [hes] One Three Juliett, Eurotrans One Three Juliett, Eurotrans [hes] One Three Juliett, Eurotrans One Three Juliett",
+        "prompt_fullts_5B": "Eurotrans One Three Juliett, Eurotrans [hes] One Three Juliett"
     },
     {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210502_141218.wav",
-        "full_ts": "Stefanik tower   pekn\u00e9 popoludnie  Tatra Six One Three establish ILS three one\nTatra Six One Three   dobr\u00e9 popoludnie  Stefanik tower runway three one cleared to land wind three zero zero degrees one niner knots maximum three three knots\nrunway  three one clear to land Tatra Six One Three\nand after landing vacate via delta\nafter landing  via delta Six One Three",
-        "short_ts": "Stefanik tower pekn\u00e9 popoludnie Tatra 613 establish ILS 31\nTatra 613 dobr\u00e9 popoludnie Stefanik tower runway 31 cleared to land wind 300 degrees 19 knots maximum 33 knots\nrunway hes 31 clear to land Tatra 613\nand after landing vacate via D\nafter landing via D 613",
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_230611.wav",
+        "full_ts": "Stefanik Tower good morning      Eurotrans Five Three Three  Four established on the final inbound three one\ngood morning     Eurotrans Five Three Three Four    Stefanik    Tower wind variable three knots runway three one cleared to land\ncleared to land three one        Eurotrans  Five  Three   Three   Four",
+        "short_ts": "Stefanik Tower good morning BCS5334 established on the final inbound 31\ngood morning Eurotrans 5334 Stefanik Tower wind variable 3 knots runway 31 cleared to land\ncleared to land 31 BCS5334",
         "prompt-data": {
-            "callsigns": [
-                "Tatra Six One Three",
-                "Six One Three"
+            "long_callsigns": [
+                " Eurotrans Five Three Three Four",
+                "Eurotrans Five Three Three Four Stefanik Tower",
+                "Stefanik Tower"
             ],
-            "speaker_labels": [
-                "ATCO tower",
-                "TTJ613"
+            "short_callsigns": [
+                "BCS5334",
+                "ATCO tower"
             ],
             "waypoints": [
                 "ABETI",
@@ -3727,7 +3596,346 @@
                 "XENAK",
                 "XENDI"
             ],
+            "nearby_short_callsigns": [
+                "BCS5334",
+                "BCS5335",
+                "ELJ704"
+            ],
+            "nearby_long_callsigns": [
+                "Eurotrans Five Three Three Four ",
+                "Eurotrans Five Three Three Five ",
+                "Elite Jet Seven Zero Four "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": " Eurotrans Five Three Three Four, Eurotrans Five Three Three Four Stefanik Tower, Stefanik Tower,  Eurotrans Five Three Three Four, Stefanik Tower, Eurotrans Five Three Three Four Stefanik Tower",
+        "prompt_fullts_5B": " Eurotrans Five Three Three Four, Eurotrans Five Three Three Four Stefanik Tower, Stefanik Tower"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_202859.wav",
+        "full_ts": "One Two Juliett any chance to send a ready message\nwill do\nthanks",
+        "short_ts": "12J any chance to send a ready message\nwill do\nthanks",
+        "prompt-data": {
+            "long_callsigns": [],
             "short_callsigns": [
+                "ATCO tower",
+                "pilot"
+            ],
+            "waypoints": [
+                "ABETI",
+                "ABLOM",
+                "ADAMA",
+                "AGMIM",
+                "ASLOT",
+                "ASPIB",
+                "ASTON",
+                "BEGLA",
+                "BERVA",
+                "CIFER",
+                "EKLIP",
+                "GASNA",
+                "GESGI",
+                "KOXER",
+                "KUVEX",
+                "LEDRI",
+                "MABOD",
+                "MAREG",
+                "MOVOS",
+                "NATEX",
+                "NIGER",
+                "PESAT",
+                "REKLU",
+                "SOMID",
+                "TOVKA",
+                "UBUXI",
+                "URUMU",
+                "VABGU",
+                "VAMOG",
+                "VAPIT",
+                "VEDER",
+                "VYDRA",
+                "XENAK",
+                "XENDI"
+            ],
+            "nearby_short_callsigns": [
+                "AAR789",
+                "AUA126",
+                "AUA156",
+                "AUA172",
+                "AUA296",
+                "AUA3NC",
+                "AUA3SV",
+                "AUA4DL",
+                "AUA50B",
+                "BCS13J",
+                "BCS86N",
+                "CLX6104",
+                "CLX7844",
+                "FDX5112",
+                "LDX13",
+                "MTL9237",
+                "THY3JW"
+            ],
+            "nearby_long_callsigns": [
+                "Asiana Seven Eight Nine ",
+                "Austrian One Two Six ",
+                "Austrian One Five Six ",
+                "Austrian One Seven Two ",
+                "Austrian Two Nine Six ",
+                "Austrian Three November Charlie ",
+                "Austrian Three Sierra Victor ",
+                "Austrian Four Delta Lima ",
+                "Austrian Five Zero Bravo ",
+                "Eurotrans One Three Juliett ",
+                "Eurotrans Eight Six November ",
+                "Cargolux Six One Zero Four ",
+                "Cargolux Seven Eight Four Four ",
+                "Fedex Five One One Two ",
+                "Lima Delta X-ray One Three ",
+                "Mitavia Nine Two Three Seven ",
+                "Turkish Three Juliett Whiskey "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_103144.wav",
+        "full_ts": "Double Dot Four Zero One line up runway one three wind variable two knots  runway one three cleared for takeoff  dopo\nvia foxtrot line up run- runway one three and run- runway runway one three cleared for takeoff",
+        "short_ts": "Double Dot 401 line up runway 13 wind variable 2 knots runway 13 cleared for takeoff dopo\nvia F line up run runway 13 and run runway runway 13 cleared for takeoff",
+        "prompt-data": {
+            "long_callsigns": [],
+            "short_callsigns": [
+                "ATCO tower",
+                "pilot"
+            ],
+            "waypoints": [
+                "ABETI",
+                "ABLOM",
+                "ADAMA",
+                "AGMIM",
+                "ASLOT",
+                "ASPIB",
+                "ASTON",
+                "BEGLA",
+                "BERVA",
+                "CIFER",
+                "EKLIP",
+                "GASNA",
+                "GESGI",
+                "KOXER",
+                "KUVEX",
+                "LEDRI",
+                "MABOD",
+                "MAREG",
+                "MOVOS",
+                "NATEX",
+                "NIGER",
+                "PESAT",
+                "REKLU",
+                "SOMID",
+                "TOVKA",
+                "UBUXI",
+                "URUMU",
+                "VABGU",
+                "VAMOG",
+                "VAPIT",
+                "VEDER",
+                "VYDRA",
+                "XENAK",
+                "XENDI"
+            ],
+            "nearby_short_callsigns": [
+                "AUA381",
+                "AUA61UK",
+                "AUA655",
+                "AUA75",
+                "AUA791",
+                "AUA8TB",
+                "CCA598",
+                "DLH4YV",
+                "ELJ401",
+                "ELJ403",
+                "ELJ801",
+                "ELJ802",
+                "EVA066",
+                "HFM7887",
+                "MOZ331",
+                "OKACT",
+                "OMM611",
+                "OMS215",
+                "PGT74E",
+                "SIA317",
+                "THY8PQ",
+                "TTJ613",
+                "VCJ99A",
+                "VJT929"
+            ],
+            "nearby_long_callsigns": [
+                "Austrian Three Eight One ",
+                "Austrian Six One Uniform Kilo ",
+                "Austrian Six Five Five ",
+                "Austrian Seven Five ",
+                "Austrian Seven Nine One ",
+                "Austrian Eight Tango Bravo ",
+                "Air China Five Nine Eight ",
+                "Hansa Four Yankee Victor ",
+                "Elite Jet Four Zero One ",
+                "Elite Jet Four Zero Three ",
+                "Elite Jet Eight Zero One ",
+                "Elite Jet Eight Zero Two ",
+                "Eva Zero Six Six ",
+                "Moonraker Seven Eight Eight Seven ",
+                "Mike Oscar Zulu Three Three One ",
+                "Okayjet Charlie Tango ",
+                "Oscar Mike Mike Six One One ",
+                "Mazoon Two One Five ",
+                "Sunturk Seven Four Echo ",
+                "Singapore Three One Seven ",
+                "Turkish Eight Papa Quebec ",
+                "Tango Tango Juliett Six One Three ",
+                "Victor Charlie Juliett Nine Nine Alpha ",
+                "Vista Malta Nine Two Nine "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_203652.wav",
+        "full_ts": "holding point   runway three one  via foxtrot and cross runway zero four Eurotrans Two One correction One Three Juliett thank you",
+        "short_ts": "holding. runway 31 via F and cross runway 04 BCS21 correction 13J thank you",
+        "prompt-data": {
+            "long_callsigns": [
+                "One Three Juliett",
+                "Eurotrans Two One"
+            ],
+            "short_callsigns": [
+                "BCS13J"
+            ],
+            "waypoints": [
+                "ABETI",
+                "ABLOM",
+                "ADAMA",
+                "AGMIM",
+                "ASLOT",
+                "ASPIB",
+                "ASTON",
+                "BEGLA",
+                "BERVA",
+                "CIFER",
+                "EKLIP",
+                "GASNA",
+                "GESGI",
+                "KOXER",
+                "KUVEX",
+                "LEDRI",
+                "MABOD",
+                "MAREG",
+                "MOVOS",
+                "NATEX",
+                "NIGER",
+                "PESAT",
+                "REKLU",
+                "SOMID",
+                "TOVKA",
+                "UBUXI",
+                "URUMU",
+                "VABGU",
+                "VAMOG",
+                "VAPIT",
+                "VEDER",
+                "VYDRA",
+                "XENAK",
+                "XENDI"
+            ],
+            "nearby_short_callsigns": [
+                "ALK504",
+                "AUA641",
+                "BCS13J",
+                "ETD054",
+                "ETH725",
+                "FDX5112",
+                "UAE32"
+            ],
+            "nearby_long_callsigns": [
+                "Srilankan Five Zero Four ",
+                "Austrian Six Four One ",
+                "Eurotrans One Three Juliett ",
+                "Etihad Zero Five Four ",
+                "Ethiopian Seven Two Five ",
+                "Fedex Five One One Two ",
+                "Emirates Three Two "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": "One Three Juliett, Eurotrans Two One, Eurotrans Two One, One Three Juliett",
+        "prompt_fullts_5B": "Eurotrans Two One, One Three Juliett"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210502_141218.wav",
+        "full_ts": "Stefanik tower   pekn\u00e9 popoludnie  Tatra Six One Three establish ILS three one\nTatra Six One Three   dobr\u00e9 popoludnie  Stefanik tower runway three one cleared to land wind three zero zero degrees one niner knots maximum three three knots\nrunway  three one clear to land Tatra Six One Three\nand after landing vacate via delta\nafter landing  via delta Six One Three",
+        "short_ts": "Stefanik tower pekn\u00e9 popoludnie Tatra 613 establish ILS 31\nTatra 613 dobr\u00e9 popoludnie Stefanik tower runway 31 cleared to land wind 300 degrees 19 knots maximum 33 knots\nrunway hes 31 clear to land Tatra 613\nand after landing vacate via D\nafter landing via D 613",
+        "prompt-data": {
+            "long_callsigns": [
+                "Tatra Six One Three",
+                "Six One Three"
+            ],
+            "short_callsigns": [
+                "TTJ613",
+                "ATCO tower"
+            ],
+            "waypoints": [
+                "ABETI",
+                "ABLOM",
+                "ADAMA",
+                "AGMIM",
+                "ASLOT",
+                "ASPIB",
+                "ASTON",
+                "BEGLA",
+                "BERVA",
+                "CIFER",
+                "EKLIP",
+                "GASNA",
+                "GESGI",
+                "KOXER",
+                "KUVEX",
+                "LEDRI",
+                "MABOD",
+                "MAREG",
+                "MOVOS",
+                "NATEX",
+                "NIGER",
+                "PESAT",
+                "REKLU",
+                "SOMID",
+                "TOVKA",
+                "UBUXI",
+                "URUMU",
+                "VABGU",
+                "VAMOG",
+                "VAPIT",
+                "VEDER",
+                "VYDRA",
+                "XENAK",
+                "XENDI"
+            ],
+            "nearby_short_callsigns": [
                 "AUA426",
                 "AUA46",
                 "AUA5VG",
@@ -3773,7 +3981,7 @@
                 "WZZ5379",
                 "YUPNK"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian Four Two Six ",
                 "Austrian Four Six ",
                 "Austrian Five Victor Golf ",
@@ -3818,19 +4026,24 @@
                 "Emirates One Eight ",
                 "Wizzair Five Three Seven Nine ",
                 "Yankee Uniform Papa November Kilo "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Tatra Six One Three, Six One Three, VAPIT, VEDER, SOMID, Austrian Six Zero Two , Austrian Five Victor Golf , Austrian Seven Three Two "
+        "prompt_fullts_1G_4B": "Tatra Six One Three, Six One Three, Six One Three, Tatra Six One Three",
+        "prompt_fullts_5B": "Six One Three, Tatra Six One Three"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_202731.wav",
         "full_ts": "Stefanik tower Oscar Mike Echo Lima Echo altitude six thousand feet and descending to two thousand feet\nwe would be   at about Victor    in  fourty seconds and  requesting approach information information quebec QNH one zero two zero",
         "short_ts": "Stefanik tower OMELE altitude 6000 feet and descending to 2000 feet\nwe would be 15 about V 9 hes 40 seconds and requesting approach information information Q QNH 1020",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Mike Echo Lima Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OMELE"
             ],
             "waypoints": [
@@ -3869,7 +4082,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA126",
                 "AUA172",
                 "AUA3NC",
@@ -3883,7 +4096,7 @@
                 "RYR2HV",
                 "UAE4"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian One Two Six ",
                 "Austrian One Seven Two ",
                 "Austrian Three November Charlie ",
@@ -3896,19 +4109,24 @@
                 "KLM Two Five Foxtrot ",
                 "Ryan Two Hotel Victor ",
                 "Emirates Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Mike Echo Lima Echo, XENAK, VEDER, ABLOM, Austrian Six Juliett Mike , KLM Two Five Foxtrot , Fedex Five One One Two "
+        "prompt_fullts_1G_4B": "Oscar Mike Echo Lima Echo, Oscar Mike Echo Lima Echo",
+        "prompt_fullts_5B": "Oscar Mike Echo Lima Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_104342.wav",
         "full_ts": "Stefanik tower good day Austrian One Four One One ILS three one",
         "short_ts": "Stefanik tower good day AUA1411 ILS 31",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Austrian One Four One One"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "AUA1411"
             ],
             "waypoints": [
@@ -3947,7 +4165,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFL2611",
                 "AUA61UK",
                 "AUA7VR",
@@ -3972,7 +4190,7 @@
                 "UAE9920",
                 "YURDA"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aeroflot Two Six One One ",
                 "Austrian Six One Uniform Kilo ",
                 "Austrian Seven Victor Romeo ",
@@ -3996,19 +4214,24 @@
                 "Emirates One Two Seven ",
                 "Emirates Nine Nine Two Zero ",
                 "Yankee Uniform Romeo Delta Alpha "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Austrian One Four One One, ASTON, BEGLA, BERVA, Sunturk Nine Zero One , Air China Five Nine Eight , Tango Tango Juliett Six Zero Three "
+        "prompt_fullts_1G_4B": "Austrian One Four One One, Austrian One Four One One",
+        "prompt_fullts_5B": "Austrian One Four One One"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_203710.wav",
         "full_ts": "Oscar Mike Echo Lima Echo taxi between anchors via foxtrot\ntaxi between anchors via foxtrot Oscar Mike Echo Lima Echo",
         "short_ts": "OMELE taxi between anchors via F\ntaxi between anchors via F OMELE",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Mike Echo Lima Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OMELE",
                 "ATCO tower"
             ],
@@ -4048,7 +4271,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA126",
                 "AUA172",
                 "AUA3NC",
@@ -4062,7 +4285,7 @@
                 "RYR2HV",
                 "UAE4"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian One Two Six ",
                 "Austrian One Seven Two ",
                 "Austrian Three November Charlie ",
@@ -4075,19 +4298,24 @@
                 "KLM Two Five Foxtrot ",
                 "Ryan Two Hotel Victor ",
                 "Emirates Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Mike Echo Lima Echo, SOMID, ADAMA, MAREG, KLM Two Five Foxtrot , Emirates Four , Ethiopian Seven Two Five "
+        "prompt_fullts_1G_4B": "Oscar Mike Echo Lima Echo, Oscar Mike Echo Lima Echo",
+        "prompt_fullts_5B": "Oscar Mike Echo Lima Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_224858.wav",
         "full_ts": "runway three one cleared to land we copied Topjet  Seven Zero Four",
         "short_ts": "runway 31 cleared to land we copied Topjet hes 704",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Topjet [hes] Seven Zero Four"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ELJ704"
             ],
             "waypoints": [
@@ -4126,32 +4354,37 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "BCS13J",
                 "BCS5334",
                 "BCS5335",
                 "ELJ704",
                 "SIA319"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Eurotrans One Three Juliett ",
                 "Eurotrans Five Three Three Four ",
                 "Eurotrans Five Three Three Five ",
                 "Elite Jet Seven Zero Four ",
                 "Singapore Three One Nine "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Topjet [hes] Seven Zero Four, XENDI, AGMIM, NIGER, Eurotrans Five Three Three Four , Singapore Three One Nine , Eurotrans One Three Juliett "
+        "prompt_fullts_1G_4B": "Topjet [hes] Seven Zero Four, Topjet [hes] Seven Zero Four",
+        "prompt_fullts_5B": "Topjet [hes] Seven Zero Four"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_192342.wav",
         "full_ts": "Oscar Kilo Romeo Lima Victor taxi via delta foxtrot holding one three\nvia delta foxtrot holding one three     Oscar Kilo Romeo Lima Victor",
         "short_ts": "OKRLV taxi via DF holding 13\nvia DF holding 13 OKRLV",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Romeo Lima Victor"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKRLV",
                 "ATCO tower"
             ],
@@ -4191,7 +4424,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP942",
                 "AUA641",
                 "AUA7PK",
@@ -4203,7 +4436,7 @@
                 "OKRLV",
                 "UAE20"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Nine Four Two ",
                 "Austrian Six Four One ",
                 "Austrian Seven Papa Kilo ",
@@ -4214,19 +4447,24 @@
                 "Golf Delta Mike Alpha Zulu ",
                 "Oscar Kilo Romeo Lima Victor ",
                 "Emirates Two Zero "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Romeo Lima Victor, URUMU, UBUXI, ABLOM, Austrian Seven Papa Kilo , Eurotrans Nine Six One , Blue Sky Hotel Tango "
+        "prompt_fullts_1G_4B": "Oscar Kilo Romeo Lima Victor, Oscar Kilo Romeo Lima Victor",
+        "prompt_fullts_5B": "Oscar Kilo Romeo Lima Victor"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_115915.wav",
         "full_ts": "Oscar Mike Delta Bravo Victor  \u0160tef\u00e1nik ve\u017ea dobr\u00fd de\u0148\nStefanik tower Oscar Mike Delta Bravo Victor be reported there've been hazards  on board on a VFR flight to Senica over Devin with information charlie QNH one zero zero nine requesting departure instructions",
         "short_ts": "OMDBV \u0160tef\u00e1nik ve\u017ea dobr\u00fd de\u0148\nStefanik tower OMDBV be reported there ve been hazards on board on a VFR flight to Senica over Devin with information C QNH 1009 requesting departure instructions",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "OMDBV",
-                "ATCO tower"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "ATCO tower",
+                "OMDBV"
             ],
             "waypoints": [
                 "ABETI",
@@ -4264,7 +4502,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AUA791",
                 "AUA8TB",
                 "AZE71B",
@@ -4287,7 +4525,7 @@
                 "UAE202",
                 "WZZ66TX"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Austrian Seven Nine One ",
                 "Austrian Eight Tango Bravo ",
                 "Arcus Air Seven One Bravo ",
@@ -4309,19 +4547,24 @@
                 "Turkish Two Bravo Foxtrot ",
                 "Emirates Two Zero Two ",
                 "Wizzair Six Six Tango X-ray "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", VAMOG, MABOD, LEDRI, Mazoon Two One Five , Austrian Eight Tango Bravo , Oscar Kilo Romeo Delta Sierra "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_120446.wav",
         "full_ts": "taxi holding point three one via Foxtrot  cross   runway zero four Slovak Government Zero Zero Four",
         "short_ts": "taxi holding. 31 via F cross runway 04 SSG004",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Slovak Government Zero Zero Four"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "SSG004"
             ],
             "waypoints": [
@@ -4360,7 +4603,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFL2408",
                 "AFR33GX",
                 "AUA61UK",
@@ -4387,7 +4630,7 @@
                 "UAE9330",
                 "WZZ1518"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aeroflot Two Four Zero Eight ",
                 "Air France Three Three Golf X-ray ",
                 "Austrian Six One Uniform Kilo ",
@@ -4413,20 +4656,26 @@
                 "Emirates Nine Two Five Seven ",
                 "Emirates Nine Three Three Zero ",
                 "Wizzair One Five One Eight "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Slovak Government Zero Zero Four, LEDRI, SOMID, VEDER, Oscar Mike Mike Two Three Three , Slovak Government Zero Zero Four , Austrian Six One Uniform Kilo "
+        "prompt_fullts_1G_4B": "Slovak Government Zero Zero Four, Slovak Government Zero Zero Four",
+        "prompt_fullts_5B": "Slovak Government Zero Zero Four"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210424_140755.wav",
         "full_ts": "Stefanik Tower \u00a0\u00a0  ahoj \u00a0\u00a0 Top Jet Seven Zero One  established ILS three one\nTop Jet Seven Zero One Stefanik Tower   ahojte  wind two three zero degrees seven knots variable between one nine zero and two eight zero degrees runway three one cleared to land\nrunway three one cleared to land Top Jet Seven Zero One",
         "short_ts": "Stefanik Tower ahoj Top Jet 701 established ILS 31\nTop Jet 701 Stefanik Tower ahojte wind 230 degrees 7 knots variable between 190 and 280 degrees runway 31 cleared to land\nrunway 31 cleared to land Top Jet 701",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Top Jet Seven Zero One",
-                "Stefanik Tower"
+                "Stefanik Tower",
+                "Top Jet Seven Zero One Stefanik Tower"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "TJ701",
                 "ATCO tower"
             ],
@@ -4466,7 +4715,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP751",
                 "ABP941",
                 "AUA382",
@@ -4494,7 +4743,7 @@
                 "WZZ1677",
                 "WZZ66TX"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Seven Five One ",
                 "Bair Nine Four One ",
                 "Austrian Three Eight Two ",
@@ -4521,19 +4770,24 @@
                 "Wizz Go Three Eight One Five ",
                 "Wizzair One Six Seven Seven ",
                 "Wizzair Six Six Tango X-ray "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Top Jet Seven Zero One, Stefanik Tower, SOMID, REKLU, ABLOM, Wizz Go Three Eight One Five , Austrian Seven Nine Two , Elite Jet Eight Zero Two "
+        "prompt_fullts_1G_4B": "Top Jet Seven Zero One, Stefanik Tower, Top Jet Seven Zero One Stefanik Tower, Stefanik Tower, Top Jet Seven Zero One, Top Jet Seven Zero One Stefanik Tower",
+        "prompt_fullts_5B": "Top Jet Seven Zero One Stefanik Tower, Stefanik Tower, Top Jet Seven Zero One"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_150028.wav",
         "full_ts": "roger position start approved position five Foxtrot and squawk four four two three for Wizzair Six Two Seven Six",
         "short_ts": "roger position start approved position 5 F and squawk 4423 for WZZ6276",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Wizzair Six Two Seven Six"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -4572,7 +4826,7 @@
                 "XENAK",
                 "XENDI"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AHO692L",
                 "AUA46",
                 "AUA66JT",
@@ -4605,7 +4859,7 @@
                 "WZZ6275",
                 "WZZ6276"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air Hamburg Six Nine Two Lima ",
                 "Austrian Four Six ",
                 "Austrian Six Six Juliett Tango ",
@@ -4637,8 +4891,13 @@
                 "Emirates Nine Seven Four Four ",
                 "Wizzair Six Two Seven Five ",
                 "Wizzair Six Two Seven Six "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Wizzair Six Two Seven Six, ASLOT, KUVEX, EKLIP, Austrian Four Six , Etihad Two Zero , Emirates Nine Seven Four Four "
+        "prompt_fullts_1G_4B": "Wizzair Six Two Seven Six, Wizzair Six Two Seven Six",
+        "prompt_fullts_5B": "Wizzair Six Two Seven Six"
     }
 ]

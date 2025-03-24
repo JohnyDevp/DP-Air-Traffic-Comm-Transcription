@@ -4,13 +4,12 @@
         "full_ts": "Radar CSA One Delta Zulu established\nCSA One Delta Zulu roger contact Ruzyne Tower one three four decimal five six zero\n\nthree four five six zero CSA One Delta Zulu  pekn\u00fd de\u0148",
         "short_ts": "Radar CSA 1DZ established\nCSA 1DZ roger contact Ruzyne Tower 134.560\n\n34560 CSA 1DZ pekn\u00fd de\u0148",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "CSA One Delta Zulu"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "UNK-1",
-                "CSA1DZ"
+            "short_callsigns": [
+                "CSA1DZ",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -33,7 +32,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR108Z",
                 "AFR10BE",
                 "AUA2JP",
@@ -70,7 +69,7 @@
                 "TVS36J",
                 "TVS432P"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France One Zero Eight Zulu",
                 "Air France One Zero Bravo Echo",
                 "Austrian Airlines Two Juliett Papa",
@@ -106,19 +105,24 @@
                 "Tuifly Three Papa Charlie",
                 "Sky Travel Three Six Juliett",
                 "Sky Travel Four Three Two Papa"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "CSA One Delta Zulu, ELMEK, KUVIX, BEKVI, Oscar Kilo Kilo Echo Alfa, Dark Blue Eight Five Tango, Oscar Kilo Whiskey Uniform Sierra One Three"
+        "prompt_fullts_1G_4B": "CSA One Delta Zulu, CSA One Delta Zulu",
+        "prompt_fullts_5B": "CSA One Delta Zulu"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_121714.wav",
         "full_ts": "Oscar Kilo Uniform Tango Charlie re- release from frequency flying information service available at one two six decimal one Praha Information   dobr\u00fd den",
         "short_ts": "OKUTC re release from frequency flying information service available at 126.1 Praha Information dobr\u00fd den",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Uniform Tango Charlie"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO radar"
             ],
             "waypoints": [
@@ -142,7 +146,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH9TP",
                 "OKMDH",
                 "DLH6LL",
@@ -182,7 +186,7 @@
                 "AWC941",
                 "CSA918"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Nine Tango Papa",
                 "Oscar Kilo Mike Delta Hotel",
                 "Lufthansa Six Lima Lima",
@@ -221,21 +225,26 @@
                 "Lion King Echo Three Six",
                 "Zap Nine Four One",
                 "Csa / Czech Nine One Eight"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Uniform Tango Charlie, EVEMI, TIPRU, UTORO, Broadsword Two One, Oscar Kilo Yankee Uniform Romeo Nine Nine, Csa / Czech Nine One Eight"
+        "prompt_fullts_1G_4B": "Oscar Kilo Uniform Tango Charlie, Oscar Kilo Uniform Tango Charlie",
+        "prompt_fullts_5B": "Oscar Kilo Uniform Tango Charlie"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_130708.wav",
         "full_ts": "Air France One Zero Eight Zulu standby now descend to  descend flight level seven zero\nAir France One Zero Eight Zulu",
         "short_ts": "AFR108Z standby now descend to descend flight level 70\nAFR108Z",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Air France One Zero Eight Zulu"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "AFR108Z"
+            "short_callsigns": [
+                "AFR108Z",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -258,7 +267,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "2MRGT",
                 "AFR108Z",
                 "BAW697V",
@@ -301,7 +310,7 @@
                 "WZZ554",
                 "WZZ92"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Two Mike Romeo Golf Tango",
                 "Air France One Zero Eight Zulu",
                 "Speedbird Six Nine Seven Victor",
@@ -343,21 +352,26 @@
                 "Wizzair One Charlie Echo",
                 "Wizzair Five Five Four",
                 "Wizzair Nine Two"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Air France One Zero Eight Zulu, LETNA, RISUK, BAROX, Qatari Six Bravo Lima, Okayjet Lima Yankee, Lufthansa Eight Hotel Tango"
+        "prompt_fullts_1G_4B": "Air France One Zero Eight Zulu, Air France One Zero Eight Zulu",
+        "prompt_fullts_5B": "Air France One Zero Eight Zulu"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_131433.wav",
         "full_ts": "Praha Radar Oscar Kilo Uniform Tango Charlie   dobr\u00fd den   passing three thousand nine hundred climbing flight level seven zero inbound Vlasim ready for IFR\nOscar Kilo Uniform Tango Charlie   dobr\u00fd den  Praha Radar identified\nclimb flight level seven zero and cleared to   destination Benesov    via flight plan route\nIFR flight starts now time one three one four",
         "short_ts": "Praha Radar OKUTC dobr\u00fd den passing 3900 climbing flight level 70 inbound Vlasim ready for IFR\nOKUTC dobr\u00fd den Praha Radar identified\nclimb flight level 70 and cleared to 10 Benesov via flight plan route\nIFR flight starts now time 1314",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Uniform Tango Charlie"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "OK-UTC"
+            "short_callsigns": [
+                "OK-UTC",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -380,21 +394,26 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Uniform Tango Charlie, RATEV, AKEVA, BEKVI, "
+        "prompt_fullts_1G_4B": "Oscar Kilo Uniform Tango Charlie, Oscar Kilo Uniform Tango Charlie",
+        "prompt_fullts_5B": "Oscar Kilo Uniform Tango Charlie"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_114352.wav",
         "full_ts": "Oscar Kilo Papa Romeo Mike turn right heading zero six zero\nzero six zero right turn Oscar Papa Romeo Mike",
         "short_ts": "OKPRM turn right heading 060\n060 right turn OPRM",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Papa Romeo Mike",
                 "Oscar Papa Romeo Mike"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKPRM",
                 "ATCO radar"
             ],
@@ -419,7 +438,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "2MRGT",
                 "AUA89",
                 "BAW697V",
@@ -464,7 +483,7 @@
                 "VLG86TM",
                 "WZZ1CE"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Two Mike Romeo Golf Tango",
                 "Austrian Airlines Eight Nine",
                 "Speedbird Six Nine Seven Victor",
@@ -508,19 +527,24 @@
                 "Vueling Eight Six Five Three",
                 "Vueling Eight Six Tango Mike",
                 "Wizzair One Charlie Echo"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Papa Romeo Mike, Oscar Papa Romeo Mike, BAROX, BEKVI, KENOK, Dark Blue Eight Five Tango, Soko Air Oscar Papa, Speedbird Six Nine Seven Victor"
+        "prompt_fullts_1G_4B": "Oscar Kilo Papa Romeo Mike, Oscar Papa Romeo Mike, Oscar Papa Romeo Mike, Oscar Kilo Papa Romeo Mike",
+        "prompt_fullts_5B": "Oscar Papa Romeo Mike, Oscar Kilo Papa Romeo Mike"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_105855.wav",
         "full_ts": "Skytravel Three Five Juliett turn right heading one eight zero vectoring for spacing\nturning right heading one eight zero Skytravel Three Five Juliett",
         "short_ts": "Skytravel 35J turn right heading 180 vectoring for spacing\nturning right heading 180 Skytravel 35J",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Skytravel Three Five Juliett"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "TVS35J",
                 "ATCO radar"
             ],
@@ -545,7 +569,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "2MRGT",
                 "AUA89",
                 "BAW697V",
@@ -591,7 +615,7 @@
                 "WZZ1CE",
                 "WZZ35YT"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Two Mike Romeo Golf Tango",
                 "Austrian Airlines Eight Nine",
                 "Speedbird Six Nine Seven Victor",
@@ -636,20 +660,25 @@
                 "Vueling Eight Six Tango Mike",
                 "Wizzair One Charlie Echo",
                 "Wizzair Three Five Yankee Tango"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Skytravel Three Five Juliett, BAROX, KENOK, LETNA, Lot Four Mike Tango, Wizzair One Charlie Echo, Soko Air Oscar Papa"
+        "prompt_fullts_1G_4B": "Skytravel Three Five Juliett, Skytravel Three Five Juliett",
+        "prompt_fullts_5B": "Skytravel Three Five Juliett"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_131046.wav",
         "full_ts": "Air France One Zero Eight Zulu descend to flight level seven zero reduce two four zero knots or less\nor less and descend flight level seven zero Air France  One Zero Eight Zulu\nCzech Air Four Six Seven Five descend to four thousand feet QNH one zero one two and contact Kbely Tower one two zero decimal eight eight zero\ndescending four thousand feet  one zero one two and changing Kbely one two zero eight eight zero bye\nnaslysenou(-slysenou)",
         "short_ts": "Air France 108Z descend to flight level 70 reduce 240 knots or less\nor less and descend flight level 70 Air France 108Z\nCzech Air 4675 descend to 4000 feet QNH 1012 and contact Kbely Tower 120.880\ndescending 4000 feet 1012 and changing Kbely 120880 bye\nnaslysenou slysenou",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OK4675",
-                "ATCO radar",
-                "AFR108Z"
+                "AFR108Z",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -672,7 +701,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE6RW",
                 "AFR108Z",
                 "AWC941",
@@ -714,7 +743,7 @@
                 "TVS4378",
                 "UAE9936"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Six Romeo Whiskey",
                 "Air France One Zero Eight Zulu",
                 "Zap Nine Four One",
@@ -755,19 +784,24 @@
                 "Turkish Six Two Eight Nine",
                 "Sky Travel Four Three Seven Eight",
                 "Emirates Nine Nine Three Six"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", RISUK, ELMEK, ERASU, Qatari Six Bravo Lima, Air Silesia Seven Seven One, Csa / Czech Nine One Eight"
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_160035.wav",
         "full_ts": "Silesia Seven Six Two continue     Charlie Lima Quebec Quebec Five       behind follow me stand mike one bravo",
         "short_ts": "Silesia 762 continue CLQQ 5 behind follow me 1000 M 1 B",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Silesia Seven Six Two"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -791,7 +825,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH8HT",
                 "RYR92BQ",
                 "OKWUR38",
@@ -827,7 +861,7 @@
                 "OKTOP",
                 "AZG5501"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Eight Hotel Tango",
                 "Ryan Air Nine Two Bravo Quebec",
                 "Oscar Kilo Whiskey Uniform Romeo Three Eight",
@@ -862,38 +896,45 @@
                 "Qatari Eight One Nine Four",
                 "Soko Air Oscar Papa",
                 "Silk West Five Five Zero One"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Silesia Seven Six Two, ARVEG, LETNA, KENOK, Oscar Kilo Zulu Whiskey Charlie Seven Three, Csa / Czech Nine One Nine, Austrian Airlines Two Juliett Papa"
+        "prompt_fullts_1G_4B": "Silesia Seven Six Two, Silesia Seven Six Two",
+        "prompt_fullts_5B": "Silesia Seven Six Two"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_092519.wav",
         "full_ts": "Ruzyne Tower Oscar Victor Kilo  alpha\naffirm and continue whiskey two departure\ncontinue whiskey two departure Oscar Victor Kilo",
         "short_ts": "Ruzyne Tower OVKA\naffirm and continue W2 departure\ncontinue W2 departure OVK",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "OV-KHA",
-                "ATCO tower"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "ATCO tower",
+                "OV-KHA"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_091331.wav",
         "full_ts": "Ruzyne tower Oscar Kilo Alpha Victor Kilo two thousand three hundred feet QNH one zero one four inbound tango and we will hold on tango\nOscar Kilo Alpha Victor Kilo Ruzyne tower  dobry den  roger continue Tango and hold",
         "short_ts": "Ruzyne tower OKAVK 2300 feet QNH 1014 inbound T and we will hold on T\nOKAVK Ruzyne tower dobry den roger continue T and hold",
         "prompt-data": {
-            "callsigns": [
-                "Kilo",
-                "Victor",
-                "Alpha",
-                "Oscar"
+            "long_callsigns": [
+                "Oscar Kilo Alpha Victor Kilo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKAVK",
                 "ATCO tower"
             ],
@@ -918,7 +959,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AHO222E",
                 "AHO292Z",
                 "AMC538",
@@ -958,7 +999,7 @@
                 "VJT431",
                 "WZZ3858"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air Hamburg Two Two Two Echo",
                 "Air Hamburg Two Nine Two Zulu",
                 "Air Malta Five Three Eight",
@@ -997,21 +1038,26 @@
                 "Sky Travel Four Three Six Eight",
                 "Vista Jet Four Three One",
                 "Wizzair Three Eight Five Eight"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Kilo, Victor, Alpha, Oscar, TIPRU, EVEMI, BEKVI, Lufthansa Three November Lima, Okayjet Oscar Alfa, Oscar Kilo Delta Sierra Victor"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Victor Kilo, Oscar Kilo Alpha Victor Kilo",
+        "prompt_fullts_5B": "Oscar Kilo Alpha Victor Kilo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_174652.wav",
         "full_ts": "good evening Lufthansa Eight Hotel Romeo passing two thousand five hundred climbing five thousand\nLufthansa Eight Hotel Romeo  Praha Radar good evening identified\nclimb to flight level one six zero\nLufthansa Eight Hotel Romeo climb flight level one six zero",
         "short_ts": "good evening DLH8HR passing 2500 climbing 5000\nDLH8HR Praha Radar good evening identified\nclimb to flight level 160\nDLH8HR climb flight level 160",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Lufthansa Eight Hotel Romeo"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "DLH8HR"
+            "short_callsigns": [
+                "DLH8HR",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1034,7 +1080,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AMC376",
                 "BAW34V",
                 "BAW856Z",
@@ -1087,7 +1133,7 @@
                 "WZZ3858",
                 "WZZ9DD"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air Malta Three Seven Six",
                 "Speedbird Three Four Victor",
                 "Speedbird Eight Five Six Zulu",
@@ -1139,22 +1185,27 @@
                 "Sky Travel Five Alfa Delta",
                 "Wizzair Three Eight Five Eight",
                 "Wizzair Nine Delta Delta"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Lufthansa Eight Hotel Romeo, SULOV, EVEMI, SOMIS, Wizzair Three Eight Five Eight, Okapi Mike Papa, Qatari Five Charlie Foxtrot"
+        "prompt_fullts_1G_4B": "Lufthansa Eight Hotel Romeo, Lufthansa Eight Hotel Romeo",
+        "prompt_fullts_5B": "Lufthansa Eight Hotel Romeo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_143027.wav",
         "full_ts": "Dream Team Four Zero Four Kilo  descend four thousand feet QNH one zero zero four\none zero zero four  Dream Team Four Zero Four Kilo",
         "short_ts": "GAC404K descend 4000 feet QNH 1004\n1004 GAC404K",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 " Dream Team Four Zero Four Kilo",
                 "Dream Team Four Zero Four Kilo"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "GAC404K"
+            "short_callsigns": [
+                "GAC404K",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1177,7 +1228,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "2MRGT",
                 "AFR108Z",
                 "AFR10BE",
@@ -1215,7 +1266,7 @@
                 "WZZ554",
                 "WZZ92"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Two Mike Romeo Golf Tango",
                 "Air France One Zero Eight Zulu",
                 "Air France One Zero Bravo Echo",
@@ -1252,19 +1303,22 @@
                 "Sky Travel Four Three Two Papa",
                 "Wizzair Five Five Four",
                 "Wizzair Nine Two"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": " Dream Team Four Zero Four Kilo, Dream Team Four Zero Four Kilo, BEKVI, BAROX, ELPON, Ryan Air Six Five Yankee, Time Air Seven Eight Four Yankee, Ryan Air Eight Three Three Two"
+        "prompt_fullts_1G_4B": " Dream Team Four Zero Four Kilo, Dream Team Four Zero Four Kilo,  Dream Team Four Zero Four Kilo, Dream Team Four Zero Four Kilo",
+        "prompt_fullts_5B": "Dream Team Four Zero Four Kilo,  Dream Team Four Zero Four Kilo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_212419.wav",
         "full_ts": "Zero Four Two Two taxi holding point runway two four via taxiway quebec lima golf bravo",
         "short_ts": "0422 taxi holding. runway 24 via taxiway QLGB",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "UNK-1"
-            ],
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "AKEVA",
                 "ARVEG",
@@ -1286,37 +1340,47 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", AKEVA, BAVIN, KUVIX, "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_213836.wav",
         "full_ts": "Skytravel Two Eight Two Seven and there is closed echo airspace below flight level one hundred so  if you wish to avoid class echo airspace next descend in two zero miles",
         "short_ts": "Skytravel 2827 and there is closed E airspace below flight level 100 so if you wish to avoid class E airspace next descend in 20 miles",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Skytravel Two Eight Two Seven"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Skytravel Two Eight Two Seven, , "
+        "prompt_fullts_1G_4B": "Skytravel Two Eight Two Seven, Skytravel Two Eight Two Seven",
+        "prompt_fullts_5B": "Skytravel Two Eight Two Seven"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_084648.wav",
         "full_ts": "Oscar Kilo Tango Uniform Romeo approaching to Victor Lima Mike start holding there and  remain my frequency and  report when ready for come back to Prague\nremain on frequency and hold as published at Victor Lima Mike and we report   Tango Uniform Romeo\nok",
         "short_ts": "OKTUR approaching to VLM start holding there and remain my frequency and report when ready for come back to Prague\nremain on frequency and hold as published at VLM and we report TUR\nok",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "OK-TUR",
-                "ATCO Radar"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "ATCO Radar",
+                "OK-TUR"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1339,7 +1403,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "OKAOA",
                 "OKMDH",
                 "AHO222E",
@@ -1376,7 +1440,7 @@
                 "OKBYT",
                 "VJT431"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Okayjet Oscar Alfa",
                 "Oscar Kilo Mike Delta Hotel",
                 "Air Hamburg Two Two Two Echo",
@@ -1412,91 +1476,25 @@
                 "Soko Air Oscar Papa",
                 "Oscar Kilo Bravo Yankee Tango",
                 "Vista Jet Four Three One"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", LETNA, TIPRU, EVEMI, Oklahoma Lima Zulu, Okayjet Victor Kilo, Oscar Echo Victor Sierra Oscar"
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201024_221711.wav",
         "full_ts": "Oscar Kilo Foxtrot  Charlie  \u00a0Alpha you are leaving TMA Praha switch to Praha info one two six decimal one \u00a0 naslysenou\none two six decimal  one \u00a0 naslysenou dekuji",
         "short_ts": "OKFCA you are leaving TMA Praha switch to Praha info 126.1 naslysenou\n126.1 naslysenou dekuji",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Foxtrot Charlie Alpha"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "OKFCA"
-            ],
-            "waypoints": [
-                "AKEVA",
-                "ARVEG",
-                "BAGRU",
-                "BAROX",
-                "BAVIN",
-                "BEKVI",
-                "ELMEK",
-                "ELPON",
-                "ERASU",
-                "EVEMI",
-                "KENOK",
-                "KUVIX",
-                "LETNA",
-                "RATEV",
-                "RISUK",
-                "SOMIS",
-                "SULOV",
-                "TIPRU",
-                "UTORO"
-            ],
             "short_callsigns": [
-                "CSA922",
-                "DLH7LP",
-                "EJU84XC",
-                "EVA078",
-                "EWG7645",
-                "KLM73W",
-                "NOS02",
-                "OKCEZ",
-                "OKRLV",
-                "SDR4865",
-                "SXS1GX",
-                "THY6338",
-                "THY6606",
-                "TVS2800",
-                "TVS6X",
-                "WZZ4670"
-            ],
-            "long_callsigns": [
-                "Csa / Czech Nine Two Two",
-                "Lufthansa Seven Lima Papa",
-                "Alpine Eight Four X-ray Charlie",
-                "Eva Zero Seven Eight",
-                "Eurowings Seven Six Four Five",
-                "Klm Seven Three Whiskey",
-                "Moonflower Zero Two",
-                "Thunder Wings Echo Zulu",
-                "Oscar Kilo Romeo Lima Victor",
-                "Sundair Four Eight Six Five",
-                "Sunexpress One Golf X-ray",
-                "Turkish Six Three Three Eight",
-                "Turkish Six Six Zero Six",
-                "Sky Travel Two Eight Zero Zero",
-                "Sky Travel Six X-ray",
-                "Wizzair Four Six Seven Zero"
-            ]
-        },
-        "prompt_fullts": "Oscar Kilo Foxtrot Charlie Alpha, LETNA, ERASU, BEKVI, Sunexpress One Golf X-ray, Csa / Czech Nine Two Two, Eurowings Seven Six Four Five"
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_151332.wav",
-        "full_ts": "Oscar Kilo Mike Charlie Charlie Praha Radar   dobry den  you are identified    flight level seven zero  after Baltu proceed to Benesov",
-        "short_ts": "OKMCC Praha Radar dobry den you are identified flight level 70 after Baltu proceed to Benesov",
-        "prompt-data": {
-            "callsigns": [
-                "Oscar Kilo Mike Charlie Charlie"
-            ],
-            "speaker_labels": [
+                "OKFCA",
                 "ATCO radar"
             ],
             "waypoints": [
@@ -1520,7 +1518,83 @@
                 "TIPRU",
                 "UTORO"
             ],
+            "nearby_short_callsigns": [
+                "CSA922",
+                "DLH7LP",
+                "EJU84XC",
+                "EVA078",
+                "EWG7645",
+                "KLM73W",
+                "NOS02",
+                "OKCEZ",
+                "OKRLV",
+                "SDR4865",
+                "SXS1GX",
+                "THY6338",
+                "THY6606",
+                "TVS2800",
+                "TVS6X",
+                "WZZ4670"
+            ],
+            "nearby_long_callsigns": [
+                "Csa / Czech Nine Two Two",
+                "Lufthansa Seven Lima Papa",
+                "Alpine Eight Four X-ray Charlie",
+                "Eva Zero Seven Eight",
+                "Eurowings Seven Six Four Five",
+                "Klm Seven Three Whiskey",
+                "Moonflower Zero Two",
+                "Thunder Wings Echo Zulu",
+                "Oscar Kilo Romeo Lima Victor",
+                "Sundair Four Eight Six Five",
+                "Sunexpress One Golf X-ray",
+                "Turkish Six Three Three Eight",
+                "Turkish Six Six Zero Six",
+                "Sky Travel Two Eight Zero Zero",
+                "Sky Travel Six X-ray",
+                "Wizzair Four Six Seven Zero"
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": "Oscar Kilo Foxtrot Charlie Alpha, Oscar Kilo Foxtrot Charlie Alpha",
+        "prompt_fullts_5B": "Oscar Kilo Foxtrot Charlie Alpha"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_151332.wav",
+        "full_ts": "Oscar Kilo Mike Charlie Charlie Praha Radar   dobry den  you are identified    flight level seven zero  after Baltu proceed to Benesov",
+        "short_ts": "OKMCC Praha Radar dobry den you are identified flight level 70 after Baltu proceed to Benesov",
+        "prompt-data": {
+            "long_callsigns": [
+                "Oscar Kilo Mike Charlie Charlie"
+            ],
             "short_callsigns": [
+                "ATCO radar"
+            ],
+            "waypoints": [
+                "AKEVA",
+                "ARVEG",
+                "BAGRU",
+                "BAROX",
+                "BAVIN",
+                "BEKVI",
+                "ELMEK",
+                "ELPON",
+                "ERASU",
+                "EVEMI",
+                "KENOK",
+                "KUVIX",
+                "LETNA",
+                "RATEV",
+                "RISUK",
+                "SOMIS",
+                "SULOV",
+                "TIPRU",
+                "UTORO"
+            ],
+            "nearby_short_callsigns": [
                 "AFL2013",
                 "AFR108Z",
                 "AFR10BE",
@@ -1554,7 +1628,7 @@
                 "UAE18",
                 "WZZ2184"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aeroflot Two Zero One Three",
                 "Air France One Zero Eight Zulu",
                 "Air France One Zero Bravo Echo",
@@ -1587,21 +1661,25 @@
                 "Sky Travel Six Alfa Delta",
                 "Emirates One Eight",
                 "Wizzair Two One Eight Four"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Mike Charlie Charlie, RATEV, TIPRU, BAROX, Oscar Kilo Foxtrot Romeo Oscar, Ryan Air One Zero One, Kilo Zero One"
+        "prompt_fullts_1G_4B": "Oscar Kilo Mike Charlie Charlie, Oscar Kilo Mike Charlie Charlie",
+        "prompt_fullts_5B": "Oscar Kilo Mike Charlie Charlie"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_161808.wav",
         "full_ts": "Oscar Mike Papa turn right heading zero two zero cleared ILS approach runway zero six speed maximum one six zero knots\nright heading zero two zero cleared ILS approach zero six and maximum one six zero speed confirm\nI do confirm",
         "short_ts": "OMP turn right heading 020 cleared ILS approach runway 06 speed maximum 160 knots\nright heading 020 cleared ILS approach 06 and maximum 160 speed confirm\nI do confirm",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Mike Papa"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "UNK-1"
+            "short_callsigns": [
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1624,7 +1702,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR108Z",
                 "AFR10BE",
                 "AMC376",
@@ -1684,7 +1762,7 @@
                 "WZZ3858",
                 "WZZ9DD"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France One Zero Eight Zulu",
                 "Air France One Zero Bravo Echo",
                 "Air Malta Three Seven Six",
@@ -1743,21 +1821,26 @@
                 "Emirates One Four Zero",
                 "Wizzair Three Eight Five Eight",
                 "Wizzair Nine Delta Delta"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Mike Papa, KUVIX, KENOK, BAROX, Emirates One Four Zero, Oscar Kilo X-ray Alfa India Zero Four, Speedbird Eight Five Six Zulu"
+        "prompt_fullts_1G_4B": "Oscar Mike Papa, Oscar Mike Papa",
+        "prompt_fullts_5B": "Oscar Mike Papa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_111817.wav",
         "full_ts": "Qatari    Qatari Six Bravo Lima just confirm we are cleared to land\nQatari Six Bravo Lima affirm runway two four cleared to land wind one nine zero deegres seven knots\ncleared to land    Qatari Six Bravo Lima",
         "short_ts": "Qatari QTR6BL just confirm we are cleared to land\nQTR6BL affirm runway 24 cleared to land wind 190 deegres 7 knots\ncleared to land QTR6BL",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Qatari Six Bravo Lima"
             ],
-            "speaker_labels": [
-                "ATCO tower",
-                "QTR6BL"
+            "short_callsigns": [
+                "QTR6BL",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1780,7 +1863,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR17DT",
                 "AMC539",
                 "AUA29CT",
@@ -1842,7 +1925,7 @@
                 "UAE139",
                 "WZZ3858"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France One Seven Delta Tango",
                 "Air Malta Five Three Nine",
                 "Austrian Airlines Two Nine Charlie Tango",
@@ -1903,21 +1986,26 @@
                 "Sky Travel Four Three Eight Six",
                 "Emirates One Three Nine",
                 "Wizzair Three Eight Five Eight"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Qatari Six Bravo Lima, BEKVI, BAGRU, ELMEK, Sierra Papa Mike Mike Alfa, Air France One Seven Delta Tango, Wizzair Three Eight Five Eight"
+        "prompt_fullts_1G_4B": "Qatari Six Bravo Lima, Qatari Six Bravo Lima",
+        "prompt_fullts_5B": "Qatari Six Bravo Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_143955.wav",
         "full_ts": "Dream Team Four Zero Four Kilo taxi charlie lima and quebec    behind follow me car    to stand Sierra three",
         "short_ts": "GAC404K taxi CL 000 Q behind follow me car 00 1000 S 3",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Dream Team Four Zero Four Kilo"
             ],
-            "speaker_labels": [
-                "ATCO tower",
-                "GAC404K"
+            "short_callsigns": [
+                "GAC404K",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1940,7 +2028,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH8HT",
                 "OKALY",
                 "RYR92BQ",
@@ -1977,7 +2065,7 @@
                 "QTR8194",
                 "AZG5501"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Eight Hotel Tango",
                 "Okayjet Lima Yankee",
                 "Ryan Air Nine Two Bravo Quebec",
@@ -2013,21 +2101,26 @@
                 "Tarom Three Six Two Mike",
                 "Qatari Eight One Nine Four",
                 "Silk West Five Five Zero One"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Dream Team Four Zero Four Kilo, TIPRU, EVEMI, LETNA, Ryan Air Four One Quebec Hotel, Wizzair Five Five Four, Scandinavian Nine One Three Five"
+        "prompt_fullts_1G_4B": "Dream Team Four Zero Four Kilo, Dream Team Four Zero Four Kilo",
+        "prompt_fullts_5B": "Dream Team Four Zero Four Kilo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_103443.wav",
         "full_ts": "CSA Nine One Eight  taxi holding point runway two four to the right via Delta Bravo\ntaxi Delta Bravo    holding point two four CSA Nine One Eight",
         "short_ts": "CSA 918 taxi holding. runway 2 400 the 8 via DB\ntaxi DB holding. 24 CSA 918",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "CSA Nine One Eight"
             ],
-            "speaker_labels": [
-                "ATCO tower",
-                "CSA918"
+            "short_callsigns": [
+                "CSA918",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2050,7 +2143,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "LOT527",
                 "DLH9TP",
                 "OKMDH",
@@ -2105,7 +2198,7 @@
                 "OKBYT",
                 "VJT431"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lot Five Two Seven",
                 "Lufthansa Nine Tango Papa",
                 "Oscar Kilo Mike Delta Hotel",
@@ -2159,22 +2252,27 @@
                 "Soko Air Oscar Papa",
                 "Oscar Kilo Bravo Yankee Tango",
                 "Vista Jet Four Three One"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "CSA Nine One Eight, KENOK, BEKVI, UTORO, Speedbird Eight Five Four, Soko Air Oscar Papa, Sky Travel Four Three Eight Six"
+        "prompt_fullts_1G_4B": "CSA Nine One Eight, CSA Nine One Eight",
+        "prompt_fullts_5B": "CSA Nine One Eight"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_122911.wav",
         "full_ts": "say again  Oscar  Kilo  Bravo  Alpha Lima\nOscar  Kilo  Bravo  \u00a0Alpha  Lima descend to four thousand feet QNH one zero one two\ndescending four thousand feet QNH one zero one two     Oscar  Kilo Bravo  Alpha  Lima",
         "short_ts": "say again OKBAL\nOKBAL descend to 4000 feet QNH 1012\ndescending 4000 feet QNH 1012 OKBAL",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 " Oscar Kilo Bravo Alpha Lima",
                 "Oscar Kilo Bravo Alpha Lima"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "OKBAL"
+            "short_callsigns": [
+                "OKBAL",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2197,7 +2295,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE6RW",
                 "AWC941",
                 "BAW854",
@@ -2236,7 +2334,7 @@
                 "TVS4378",
                 "UAE9936"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Six Romeo Whiskey",
                 "Zap Nine Four One",
                 "Speedbird Eight Five Four",
@@ -2274,25 +2372,29 @@
                 "Time Air Seven Eight Three Yankee",
                 "Sky Travel Four Three Seven Eight",
                 "Emirates Nine Nine Three Six"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": " Oscar Kilo Bravo Alpha Lima, Oscar Kilo Bravo Alpha Lima, EVEMI, ARVEG, SULOV, Turkish Six Two Eight Nine, Lufthansa Five Uniform Yankee, Sun Turk Seven Six Alfa"
+        "prompt_fullts_1G_4B": " Oscar Kilo Bravo Alpha Lima, Oscar Kilo Bravo Alpha Lima,  Oscar Kilo Bravo Alpha Lima, Oscar Kilo Bravo Alpha Lima",
+        "prompt_fullts_5B": "Oscar Kilo Bravo Alpha Lima,  Oscar Kilo Bravo Alpha Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx0_0.0_6.73.wav",
         "full_ts": "and  Oscar Oscar Echo released from my frequency flight information services available on one two six decimal one   naslysenou ",
         "short_ts": "and OOE released from my frequency flight information services available on 126.1 naslysenou",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2315,7 +2417,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -2361,7 +2463,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -2406,25 +2508,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, BAGRU, LETNA, UTORO, Okayjet Charlie Tango, Oscar Kilo Bravo Alfa Lima, Dark Blue Nine Two Kilo"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo,  Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa",
+        "prompt_fullts_5B": "Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx1_6.77_9.77.wav",
         "full_ts": "one zero Oscar Kilo Zero Oscar Kilo Yankee  diky naslysenou ",
         "short_ts": "10OK0OKY diky naslysenou",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2447,7 +2553,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -2493,7 +2599,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -2538,25 +2644,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, ELMEK, RATEV, SOMIS, Emirates One Four Seven, Etihad Four Eight Sierra, Etihad Five Nine Victor"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango",
+        "prompt_fullts_5B": " Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx2_9.77_11.59.wav",
         "full_ts": "Oscar Kilo Alpha Charlie Tango Praha",
         "short_ts": "OKACT Praha",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2579,7 +2689,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -2625,7 +2735,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -2670,25 +2780,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, AKEVA, RISUK, ERASU, Delta Papa Hotel India November Four One, Okapi Romeo Mike, Oscar Kilo Mike Hotel Zulu"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango",
+        "prompt_fullts_5B": "Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx3_11.61_13.41.wav",
         "full_ts": "go ahead Oscar Kilo Alpha Charlie Tango",
         "short_ts": "go ahead OKACT",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2711,7 +2825,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -2757,7 +2871,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -2802,25 +2916,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, ARVEG, BAGRU, AKEVA, Emirates One Four Seven, Turkish Five Bravo X-ray, Turkish Three Two Bravo"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango",
+        "prompt_fullts_5B": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx4_13.41_17.16.wav",
         "full_ts": "contact Ostrava one one nine decimal three seven five   naslysenou ",
         "short_ts": "contact Ostrava 119.375 naslysenou",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2843,7 +2961,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -2889,7 +3007,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -2934,25 +3052,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, ARVEG, SULOV, EVEMI, Sun Turk One Zero Four Three, Lufthansa Five Uniform Yankee, Turkish Six Five Nine One"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango",
+        "prompt_fullts_5B": " Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx5_17.18_20.73.wav",
         "full_ts": "one one nine decimal three seven five Oscar Kilo Alpha Charlie Tango",
         "short_ts": "119.375 OKACT",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2975,7 +3097,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -3021,7 +3143,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -3066,25 +3188,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, BAGRU, RISUK, BAROX, Csa / Czech Six Kilo Golf, Air Hamburg Eight Seven Six November, Aegean Two Delta Tango"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango",
+        "prompt_fullts_5B": "Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx6_20.75_26.15.wav",
         "full_ts": "can you confirm Oscar Kilo Alpha Charlie Tango Ostrava one one nine three seven five",
         "short_ts": "can you confirm OKACT Ostrava 119375",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3107,7 +3233,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -3153,7 +3279,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -3198,25 +3324,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, ELMEK, SOMIS, BAGRU, Delta Papa Hotel India November Four One, Qatari Eight Eight Six Four, Emirates One Four Seven"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango",
+        "prompt_fullts_5B": " Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx7_26.15_27.65.wav",
         "full_ts": "affirm correct",
         "short_ts": "affirm correct",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3239,7 +3369,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -3285,7 +3415,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -3330,25 +3460,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, ERASU, KUVIX, SOMIS, Fraction Two Five Zero Echo, Alpine Three Nine Charlie Foxtrot, Turkish Three Two Bravo"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa",
+        "prompt_fullts_5B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx8_27.67_29.71.wav",
         "full_ts": "Oscar Kilo Alpha Charlie Tango",
         "short_ts": "OKACT",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3371,7 +3505,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -3417,7 +3551,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -3462,25 +3596,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, BAVIN, SULOV, RATEV, Turkish Five Bravo X-ray, Speedbird Eight Five Four, Speedbird Eight Five Five"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango",
+        "prompt_fullts_5B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx9_29.71_35.0.wav",
         "full_ts": "Timeair Eight Zero Four Papa contact Praha one two zero decimal two seven five   naslysenou ",
         "short_ts": "Timeair 804P contact Praha 120.275 naslysenou",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3503,7 +3641,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -3549,7 +3687,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -3594,25 +3732,29 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, TIPRU, AKEVA, BAGRU, Oscar Kilo Mike November Mike, Fraction Two Five Zero Echo, Lufthansa Nine Tango Papa"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango",
+        "prompt_fullts_5B": "Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx10_35.0_39.2.wav",
         "full_ts": "one two zero decimal two seven five     Timeair Eight Zero Four  Papa   naslys ",
         "short_ts": "120.275 Timeair 804P naslys",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Alpha Charlie Tango",
-                " Oscar Oscar Echo",
-                "Timeair Eight Zero Four Papa"
+                "Timeair Eight Zero Four Papa",
+                " Oscar Oscar Echo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKACT",
-                "ATCO radar",
-                "UNK-1",
-                "TIE804P"
+                "TIE804P",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3635,7 +3777,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AHO876N",
@@ -3681,7 +3823,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air Hamburg Eight Seven Six November",
@@ -3726,21 +3868,26 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, RATEV, AKEVA, RISUK, Speedbird Eight Five Five, Okayjet Charlie Tango, Lufthansa Nine Tango Papa"
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa,  Oscar Oscar Echo, Timeair Eight Zero Four Papa, Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo",
+        "prompt_fullts_5B": "Oscar Kilo Alpha Charlie Tango,  Oscar Oscar Echo, Timeair Eight Zero Four Papa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_051226.wav",
         "full_ts": "KLM One Three Five Zero\nsorry go ahead\nyeah contact radar one two zero two seven five  ahoj\none two zero two seven five  ahoj KLM One Three Five Zero",
         "short_ts": "KLM 1350\nsorry go ahead\nyeah contact radar 120275 ahoj\n120275 ahoj KLM 1350",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "KLM One Three Five Zero"
             ],
-            "speaker_labels": [
-                "ATCO Tower",
-                "KLM1350"
+            "short_callsigns": [
+                "KLM1350",
+                "ATCO Tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3763,22 +3910,27 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "KLM One Three Five Zero, ELPON, RATEV, BEKVI, "
+        "prompt_fullts_1G_4B": "KLM One Three Five Zero, KLM One Three Five Zero",
+        "prompt_fullts_5B": "KLM One Three Five Zero"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_121325.wav",
         "full_ts": "Ryanair Seven Three Alpha Hotel turn left heading three six zero\nRyanair Seven Three Alpha Hotel",
         "short_ts": "Ryanair 73AH turn left heading 360\nRyanair 73AH",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Ryanair Seven Three Alpha Hotel"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "RYR73AH"
+            "short_callsigns": [
+                "RYR73AH",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3801,7 +3953,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "BLA1RK",
                 "BRU861",
                 "BRU862",
@@ -3853,7 +4005,7 @@
                 "UAE73",
                 "WZZ9654"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "All Charter One Romeo Kilo",
                 "Belarus Avia Eight Six One",
                 "Belarus Avia Eight Six Two",
@@ -3904,38 +4056,47 @@
                 "Emirates One Three Nine",
                 "Emirates Seven Three",
                 "Wizzair Nine Six Five Four"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Ryanair Seven Three Alpha Hotel, ELPON, BAGRU, KENOK, Camber One Three Two, Oscar Kilo Victor Uniform Sierra Zero Two, Ryan Air Seven Romeo Mike"
+        "prompt_fullts_1G_4B": "Ryanair Seven Three Alpha Hotel, Ryanair Seven Three Alpha Hotel",
+        "prompt_fullts_5B": "Ryanair Seven Three Alpha Hotel"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_221550.wav",
         "full_ts": "heading to three one eight\nroger continue on present heading vectoring for ILS approach runway two four\nheading and  vectoring for ILS two four thank you\nQuality Four Zero Nine One proceed to Rapet\nRapet Quality Four Zero Nine One",
         "short_ts": "heading to 318\nroger continue on present heading vectoring for ILS approach runway 24\nheading and vectoring for ILS 24 thank you\nQuality 4091 proceed to Rapet\nRapet Quality 4091",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "ATCO radar",
-                "UNK-1",
-                "TAY4091"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "TAY4091",
+                "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_152306.wav",
         "full_ts": "Ruzyne Tower CSA One Delta Zulu    dobr\u00fd podve\u010der  established localizer two four\ndobr\u00fd den  CSA One Delta Zulu Ruzyne Tower runway two four cleared to land wind    two two zero degrees   one four knots\nare cleared to land runway two four CSA One Delta Zulu",
         "short_ts": "Ruzyne Tower CSA 1DZ dobr\u00fd podve\u010der established localizer 24\ndobr\u00fd den CSA 1DZ Ruzyne Tower runway 24 cleared to land wind 220 degrees 14 knots\nare cleared to land runway 24 CSA 1DZ",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "CSA One Delta Zulu"
             ],
-            "speaker_labels": [
-                "ATCO tower",
-                "CSA1DZ"
+            "short_callsigns": [
+                "CSA1DZ",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3958,7 +4119,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "OKAOA",
                 "2FEEL",
                 "OKWAR24",
@@ -4003,7 +4164,7 @@
                 "OKCMR",
                 "OKTOP"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Okayjet Oscar Alfa",
                 "Two Foxtrot Echo Echo Lima",
                 "Oscar Kilo Whiskey Alfa Romeo Two Four",
@@ -4047,33 +4208,43 @@
                 "Sierra Papa Mike Mike Alfa",
                 "Thunder Wings Mike Romeo",
                 "Soko Air Oscar Papa"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "CSA One Delta Zulu, TIPRU, RISUK, ELMEK, Ryan Air Five Five Zero Seven, Oscar Kilo Whiskey Uniform Sierra One Three, Oscar Kilo Whiskey Alfa Romeo Two Four"
+        "prompt_fullts_1G_4B": "CSA One Delta Zulu, CSA One Delta Zulu",
+        "prompt_fullts_5B": "CSA One Delta Zulu"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_052456.wav",
         "full_ts": "Quality Four Zero Eight Nine turn right heading two one zero cleared ILS approach runway two four report established\nyes two one zero cleared ILS two four report established Quality",
         "short_ts": "Quality 4089 turn right heading 210 cleared ILS approach runway 24 report established\nyes 210 cleared ILS 24 report established Quality",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "ATCO radar",
-                "TAY4089"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "TAY4089",
+                "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_113144.wav",
         "full_ts": "i'd suggest deviation to south i'd say but my weather radar is not very precise",
         "short_ts": "i d suggest deviation to south i d say but my weather radar is not very precise",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO radar"
             ],
             "waypoints": [
@@ -4097,7 +4268,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2012",
                 "AIC131",
@@ -4138,7 +4309,7 @@
                 "TVS39J",
                 "UAE147"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Two",
                 "Air India One Three One",
@@ -4178,19 +4349,24 @@
                 "Time Air Eight Zero Four Papa",
                 "Sky Travel Three Nine Juliett",
                 "Emirates One Four Seven"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", AKEVA, EVEMI, RISUK, Speedbird Eight Five Four, Lufthansa Nine Tango Papa, Csa / Czech Two Delta Zulu"
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_205125.wav",
         "full_ts": "and KLM Seven Three Whiskey reduce speed    one six zero knots  till four DME\nsixty to four DME KLM Seven Three Whiskey",
         "short_ts": "and KLM73W reduce speed 160 knots till 4 DME\n60 104 DME KLM73W",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "KLM Seven Three Whiskey"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Radar",
                 "KLM73W"
             ],
@@ -4215,7 +4391,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "RYR92BQ",
                 "TAY4091",
                 "TIE796Y",
@@ -4244,7 +4420,7 @@
                 "RYR1WD",
                 "RYR1BA"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Ryan Air Nine Two Bravo Quebec",
                 "Quality Four Zero Nine One",
                 "Time Air Seven Nine Six Yankee",
@@ -4272,19 +4448,24 @@
                 "Sundair Four Two Eight One",
                 "Ryan Air One Whiskey Delta",
                 "Ryan Air One Bravo Alfa"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "KLM Seven Three Whiskey, BAVIN, AKEVA, RATEV, Oscar Kilo Bravo Yankee Echo, Klm Seven Nine Golf, Ryan Air One Whiskey Delta"
+        "prompt_fullts_1G_4B": "KLM Seven Three Whiskey, KLM Seven Three Whiskey",
+        "prompt_fullts_5B": "KLM Seven Three Whiskey"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201029_164604.wav",
         "full_ts": "Tower good day KLM Four Six Alfa\ngood day KLM Four Six Alfa Ruzyne Tower\n\nKLM Four Six Alfa QNH one zero one eight time check four six cleared to Amsterdam departure route Baltu four Alfa initial climb to five thousand feet squawk one thousand\nthe QNH is one zero one eight to destination via Baltu four Alfa departure five thousand feet and squawk one thousand\ncorrect",
         "short_ts": "Tower good day KLM 46A\ngood day KLM 46A Ruzyne Tower\n\nKLM 46A QNH 1018 time check 46 cleared to Amsterdam departure route Baltu 4A initial climb to 5000 feet squawk 1000\nthe QNH is 101 810 via Baltu 4A departure 5000 feet and squawk 1000\ncorrect",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "ATCO tower",
-                "KLM46A"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "KLM46A",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4307,7 +4488,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "QGA131P",
                 "TVF43EP",
                 "WZZ2184",
@@ -4340,7 +4521,7 @@
                 "LOT419",
                 "CSA508"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Quadriga One Three One Papa",
                 "France Soleil Four Three Echo Papa",
                 "Wizzair Two One Eight Four",
@@ -4372,40 +4553,50 @@
                 "Ryan Air Eight Three Three Two",
                 "Lot Four One Nine",
                 "Csa / Czech Five Zero Eight"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", LETNA, EVEMI, RATEV, Silver Arrow Seven Two Victor Papa, Oscar Echo Foxtrot Echo Bravo, Time Air Six Nine Zero Juliett"
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_145941.wav",
         "full_ts": "Oscar Kilo Triple Hotel please confirm one more holding\nOscar Kilo Hotel Hotel Hotel affirm one holding and then it should be possible to follow ILS runway zero six\nroger thank you",
         "short_ts": "OK Triple H please confirm 1 more holding\nOKHHH affirm 1 holding and then it should be possible to follow ILS runway 06\nroger thank you",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Triple Hotel",
                 "Oscar Kilo Hotel Hotel Hotel"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "OKHHH",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Triple Hotel, Oscar Kilo Hotel Hotel Hotel, , "
+        "prompt_fullts_1G_4B": "Oscar Kilo Triple Hotel, Oscar Kilo Hotel Hotel Hotel, Oscar Kilo Hotel Hotel Hotel, Oscar Kilo Triple Hotel",
+        "prompt_fullts_5B": "Oscar Kilo Hotel Hotel Hotel, Oscar Kilo Triple Hotel"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_130407.wav",
         "full_ts": "Oscar Kilo Kilo Uniform November proceed direct Baltu\nproceed direct Baltu Oscar Kilo Kilo Uniform November",
         "short_ts": "OKKUN proceed direct Baltu\nproceed direct Baltu OKKUN",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Kilo Uniform November"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "OK-KUN"
+            "short_callsigns": [
+                "OK-KUN",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4428,7 +4619,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR108Z",
                 "BLA1RK",
                 "BRU861",
@@ -4480,7 +4671,7 @@
                 "UAE139",
                 "WZZ9654"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France One Zero Eight Zulu",
                 "All Charter One Romeo Kilo",
                 "Belarus Avia Eight Six One",
@@ -4531,19 +4722,24 @@
                 "Sky Travel Five Romeo Uniform",
                 "Emirates One Three Nine",
                 "Wizzair Nine Six Five Four"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Kilo Uniform November, RISUK, ARVEG, LETNA, Lufthansa One Nine Three Five, Csa / Czech Nine Four Delta, Oscar Kilo Victor Uniform Sierra Zero Two"
+        "prompt_fullts_1G_4B": "Oscar Kilo Kilo Uniform November, Oscar Kilo Kilo Uniform November",
+        "prompt_fullts_5B": "Oscar Kilo Kilo Uniform November"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_120512.wav",
         "full_ts": "Oscar Kilo Kilo Echo Alfa Praha Radar identified climb flight level one hundred IFR flight starts  now time zero five cleared to destination via flight plan route",
         "short_ts": "OKKEA Praha Radar identified climb flight level 100 IFR flight starts now time 05 cleared to destination via flight plan route",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Kilo Echo Alfa"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO radar"
             ],
             "waypoints": [
@@ -4567,7 +4763,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "EZS93AV",
                 "OKPHM",
                 "DLH9TP",
@@ -4618,7 +4814,7 @@
                 "CSA918",
                 "OKTOP"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Topswiss Nine Three Alfa Victor",
                 "Okapi Hotel Mike",
                 "Lufthansa Nine Tango Papa",
@@ -4668,21 +4864,26 @@
                 "Topo Eight Zero",
                 "Csa / Czech Nine One Eight",
                 "Soko Air Oscar Papa"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Kilo Echo Alfa, BEKVI, KENOK, UTORO, Turkish Six Two Eight Six, Ryan Air One Juliett Uniform, Ryan Air Three Three Four Five"
+        "prompt_fullts_1G_4B": "Oscar Kilo Kilo Echo Alfa, Oscar Kilo Kilo Echo Alfa",
+        "prompt_fullts_5B": "Oscar Kilo Kilo Echo Alfa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_090915.wav",
         "full_ts": "Skytravel  Four  Three  Seven  Eight\nroger call\u00a0Tower one three four decimal five six zero   naslysenou\nfive six zero  Skytravel Four Three Seven  Eight   hezky  den\ntaky hezky diky",
         "short_ts": "Skytravel 4378\nroger call Tower 134.560 naslysenou\n560 Skytravel 4378 hezky den\ntaky hezky diky",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 " Skytravel Four Three Seven Eight"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "TVS4378"
+            "short_callsigns": [
+                "TVS4378",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4705,7 +4906,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE4RG",
                 "AEE8DD",
                 "AHO244N",
@@ -4730,7 +4931,7 @@
                 "TVS2848",
                 "TVS4378"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Four Romeo Golf",
                 "Aegean Eight Delta Delta",
                 "Air Hamburg Two Four Four November",
@@ -4754,19 +4955,24 @@
                 "Time Air Seven Eight Three Yankee",
                 "Sky Travel Two Eight Four Eight",
                 "Sky Travel Four Three Seven Eight"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": " Skytravel Four Three Seven Eight, RATEV, SOMIS, UTORO, Aegean Eight Delta Delta, Lot Three Kilo Foxtrot, Sundair Four One Nine Three"
+        "prompt_fullts_1G_4B": " Skytravel Four Three Seven Eight,  Skytravel Four Three Seven Eight",
+        "prompt_fullts_5B": " Skytravel Four Three Seven Eight"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_175333.wav",
         "full_ts": "Qatari Eight Two Three Two request taxi\nQatari Eight Two Three Two taxi  via zulu tango alfa to holding point runway two four\nvia zulu tango alfa to holding point runway two four Qatari Eight Two Three Two\nsorry you are on the othe way so continue straight ahead via only via zulu to holding point runway two four\nokay yeah via zulu and holding point runway two four Qatari Eight Two Three Two",
         "short_ts": "Qatari 8232 request taxi\nQatari 8232 taxi via ZTA to holding. runway 24\nvia ZTA to holding. runway 24 Qatari 8232\nsorry you are on the othe way so continue straight ahead via only via Z to holding. runway 24\nokay yeah via Z and holding. runway 24 Qatari 8232",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "ATCO tower",
-                "QTR8232"
+            "long_callsigns": [],
+            "short_callsigns": [
+                "QTR8232",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4789,18 +4995,23 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", EVEMI, BAGRU, ARVEG, "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201029_140101.wav",
         "full_ts": "Air France One Zero Bravo Echo we are on stand one eight Embraer one seventy  to Paris\nAir France One Zero Bravo Echo good day Ruzyne Tower time zero one information lima QNH one zero one seven\ncleared to Paris Charles de Gaule Baltu Four Alpha departure initial climb five thousand feet and squawk one thousand",
         "short_ts": "Air France 10BE we are on stand 18 Embraer 1 7000 Paris\nAir France 10BE good day Ruzyne Tower time 01 information L QNH 1017\ncleared to Paris Charles de Gaule Baltu 4A departure initial climb 5000 feet and squawk 1000",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "AFR10BE",
                 "ATCO tower"
             ],
@@ -4825,7 +5036,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE2DT",
                 "AFL2013",
                 "AFR108Z",
@@ -4860,7 +5071,7 @@
                 "TVS6AD",
                 "UAE18"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Two Delta Tango",
                 "Aeroflot Two Zero One Three",
                 "Air France One Zero Eight Zulu",
@@ -4894,17 +5105,22 @@
                 "Sky Travel Three Nine Juliett",
                 "Sky Travel Six Alfa Delta",
                 "Emirates One Eight"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", KENOK, ERASU, KUVIX, Oscar Kilo Mike Hotel Zulu, Csa / Czech Six Kilo Golf, Lufthansa One Nine Three Seven"
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_104523.wav",
         "full_ts": "Belavia Eight Six One now descend four thousand feet QNH one zero one two and via Papa Romeo Five Three Two cleared ILS approach runway two four\nthousand feet nosig QNH one zero one two proceed Papa Romeo Five Three Two cleared ILS runway two four Belavia  eight six one",
         "short_ts": "Belavia 861 now descend 4000 feet QNH 1012 and via PR532 cleared ILS approach runway 24\n1000 feet nosig QNH 1012 proceed PR532 cleared ILS runway 24 Belavia 861",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "BRU861",
                 "ATCO radar"
             ],
@@ -4929,23 +5145,28 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", BEKVI, TIPRU, LETNA, "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_090116.wav",
         "full_ts": "Sky  Travel  Four  Three Seven Eight  descend flight level seven  zero\nflight  level  seven  zero      Sky Travel Four Three Seven Eight",
         "short_ts": "TVS4378 descend flight level 70\nflight level 70 TVS4378",
         "prompt-data": {
-            "callsigns": [
-                " Sky Travel Four Three Seven Eight",
-                "Sky Travel Four Three Seven Eight"
+            "long_callsigns": [
+                "Sky Travel Four Three Seven Eight",
+                " Sky Travel Four Three Seven Eight"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "TVS4378"
+            "short_callsigns": [
+                "TVS4378",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4968,7 +5189,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AEE4RG",
                 "AEE8DD",
                 "AHO244N",
@@ -4991,7 +5212,7 @@
                 "TVS2848",
                 "TVS4378"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Aegean Four Romeo Golf",
                 "Aegean Eight Delta Delta",
                 "Air Hamburg Two Four Four November",
@@ -5013,55 +5234,70 @@
                 "Turkish Six Four Five Three",
                 "Sky Travel Two Eight Four Eight",
                 "Sky Travel Four Three Seven Eight"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": " Sky Travel Four Three Seven Eight, Sky Travel Four Three Seven Eight, UTORO, EVEMI, SULOV, Quality Four Zero Eight Nine, Turkish Six Four Five Three, Aegean Four Romeo Golf"
+        "prompt_fullts_1G_4B": "Sky Travel Four Three Seven Eight,  Sky Travel Four Three Seven Eight,  Sky Travel Four Three Seven Eight, Sky Travel Four Three Seven Eight",
+        "prompt_fullts_5B": " Sky Travel Four Three Seven Eight, Sky Travel Four Three Seven Eight"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_161709.wav",
         "full_ts": "Timeair Six Niner Zero Juliett contact Ruzyne Tower one three four decimal five six zero   hezk\u00fd ve\u010der ahoj\none three four five six zero Timeair Six Niner Zero Juliett bye   d\u00edky",
         "short_ts": "Timeair 6 Niner 0J contact Ruzyne Tower 134.560 hezk\u00fd ve\u010der ahoj\n134560 Timeair 6 Niner 0J bye d\u00edky",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Timeair Six Niner Zero Juliett"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "TIE690J",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Timeair Six Niner Zero Juliett, , "
+        "prompt_fullts_1G_4B": "Timeair Six Niner Zero Juliett, Timeair Six Niner Zero Juliett",
+        "prompt_fullts_5B": "Timeair Six Niner Zero Juliett"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_142311.wav",
         "full_ts": "Ryanair Nine Two Bravo Quebec turn right heading zero nine zero\nnine zero degrees Ryanair Nine Two Bravo Quebec",
         "short_ts": "Ryanair 92BQ turn right heading 090\n90 degrees Ryanair 92BQ",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Ryanair Nine Two Bravo Quebec"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "RYR92BQ",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Ryanair Nine Two Bravo Quebec, , "
+        "prompt_fullts_1G_4B": "Ryanair Nine Two Bravo Quebec, Ryanair Nine Two Bravo Quebec",
+        "prompt_fullts_5B": "Ryanair Nine Two Bravo Quebec"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx0_0.0_3.86.wav",
         "full_ts": "hi Tower good morning Fraction One Five Zero Whiskey",
         "short_ts": "hi Tower good morning Fraction 150W",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Fraction One Five Zero Whiskey"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "NJE150W",
                 "ATCO tower"
             ],
@@ -5086,20 +5322,25 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Fraction One Five Zero Whiskey, AKEVA, BAROX, KENOK, "
+        "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, Fraction One Five Zero Whiskey",
+        "prompt_fullts_5B": "Fraction One Five Zero Whiskey"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx1_3.86_7.55.wav",
         "full_ts": "morning Fraction One Five Zero Whiskey Ruzyne Tower go ahead",
         "short_ts": "morning Fraction 150W Ruzyne Tower go ahead",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Fraction One Five Zero Whiskey"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "NJE150W",
                 "ATCO tower"
             ],
@@ -5124,20 +5365,25 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Fraction One Five Zero Whiskey, BAGRU, BAROX, ELPON, "
+        "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, Fraction One Five Zero Whiskey",
+        "prompt_fullts_5B": "Fraction One Five Zero Whiskey"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx2_7.55_12.86.wav",
         "full_ts": "good morning we tried to call Ground while at the lobby  no reply",
         "short_ts": "good morning we tried to call Ground while at the lobby no reply",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Fraction One Five Zero Whiskey"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "NJE150W",
                 "ATCO tower"
             ],
@@ -5162,20 +5408,25 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Fraction One Five Zero Whiskey, RISUK, KENOK, ERASU, "
+        "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, Fraction One Five Zero Whiskey",
+        "prompt_fullts_5B": "Fraction One Five Zero Whiskey"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx3_12.86_16.37.wav",
         "full_ts": " squawk for us to Vienna",
         "short_ts": "squawk for us to Vienna",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Fraction One Five Zero Whiskey"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "NJE150W",
                 "ATCO tower"
             ],
@@ -5200,20 +5451,25 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Fraction One Five Zero Whiskey, BAGRU, KUVIX, BAVIN, "
+        "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, Fraction One Five Zero Whiskey",
+        "prompt_fullts_5B": "Fraction One Five Zero Whiskey"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx4_16.38_31.06.wav",
         "full_ts": "inform that frequencies are closed so just Tower and Fraction One Five Zero Whiskey time check is two zero information Oscar with QNH one zero one three and you are cleared to Vienna Schwechat Vozice three alfa departure initial climb to five thousand feet and squawk is one thousand",
         "short_ts": "inform that frequencies are closed so just Tower and Fraction 150W time check is 20 information O with QNH 1013 and you are cleared to Vienna Schwechat Vozice 3A departure initial climb to 5000 feet and squawk is 1000",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Fraction One Five Zero Whiskey"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "NJE150W",
                 "ATCO tower"
             ],
@@ -5238,23 +5494,28 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Fraction One Five Zero Whiskey, BAROX, ARVEG, UTORO, "
+        "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, Fraction One Five Zero Whiskey",
+        "prompt_fullts_5B": "Fraction One Five Zero Whiskey"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_140929.wav",
         "full_ts": "Eurowings Seven Alfa Bravo turn right heading two one zero cleared ILS approach runway two four report established\nheading(-ding)  two one zero cleared for the ILS two four report established Eurowings Seven Alpha Bravo",
         "short_ts": "EWG7AB turn right heading 210 cleared ILS approach runway 24 report established\nheading ding 210 cleared for the ILS 24 report established EWG7AB",
         "prompt-data": {
-            "callsigns": [
-                "Eurowings Seven Alfa Bravo",
-                "Eurowings Seven Alpha Bravo"
+            "long_callsigns": [
+                "Eurowings Seven Alpha Bravo",
+                "Eurowings Seven Alfa Bravo"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "EWG7AB"
+            "short_callsigns": [
+                "EWG7AB",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5277,7 +5538,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "OKLBA",
                 "PGT302",
                 "EZS93AV",
@@ -5326,7 +5587,7 @@
                 "SFS80",
                 "OKTOP"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Oklahoma Bravo Alfa",
                 "Sun Turk Three Zero Two",
                 "Topswiss Nine Three Alfa Victor",
@@ -5374,149 +5635,194 @@
                 "Oscar Kilo Hotel Sierra India",
                 "Topo Eight Zero",
                 "Soko Air Oscar Papa"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Eurowings Seven Alfa Bravo, Eurowings Seven Alpha Bravo, LETNA, BAGRU, KENOK, Emirates One Four Zero, Air Portugal One Two Four Four, Ryan Air Seven Three Alfa Hotel"
+        "prompt_fullts_1G_4B": "Eurowings Seven Alpha Bravo, Eurowings Seven Alfa Bravo, Eurowings Seven Alpha Bravo, Eurowings Seven Alfa Bravo",
+        "prompt_fullts_5B": "Eurowings Seven Alfa Bravo, Eurowings Seven Alpha Bravo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx0_0.0_2.04.wav",
         "full_ts": "Oscar Kilo India Alpha Fox hello",
         "short_ts": "OKIAF hello",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OKIAF",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx1_2.52_24.29.wav",
         "full_ts": " Oscar Kilo India Alpha Fox Tecnam two zero eight  two thousand  ECA Echo two five up to two thousand five hundred feet with info Oscar QNH one zero one two  requesting the Echo Two arrival and November Two departure",
         "short_ts": "OKIAF Tecnam 208 2000 ECA E25 up to 2500 feet with info O QNH 1012 requesting the E2 arrival and N2 departure",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OKIAF",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx2_24.31_28.73.wav",
         "full_ts": "roger set squawk three three one seven and say again the type of aircraft please",
         "short_ts": "roger 100 squawk 3317 and say again the type of aircraft please",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OKIAF",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx3_28.74_35.56.wav",
         "full_ts": "Tecnam two zero eight and squawk three three one seven Oscar Kilo India Alpha Fox",
         "short_ts": "Tecnam 208 and squawk 3317OKIAF",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OKIAF",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx4_35.56_47.79.wav",
         "full_ts": "all is correct and traffic information  twelve o'clock distance half a mile same level unverified unknown traffic probably ultralight traffic",
         "short_ts": "all is correct and traffic information 12 o clock distance half a mile same level unverified unknown traffic probably ultralight traffic",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OKIAF",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx5_47.9_51.86.wav",
         "full_ts": "copy traffic information we are visual Oscar Kilo India Alpha Fox",
         "short_ts": "copy traffic information we are visual OKIAF",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OKIAF",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx6_51.86_53.4.wav",
         "full_ts": "thank you",
         "short_ts": "thank you",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "OKIAF",
                 "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", , "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_072404.wav",
         "full_ts": "Oscar Kilo Tango Oscar Papa proceed direct Lanux\ndirect Lanux Oscar Kilo Tango Oscar Papa",
         "short_ts": "OKTOP proceed direct Lanux\ndirect Lanux OKTOP",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Tango Oscar Papa"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "OK-TOP"
+            "short_callsigns": [
+                "OK-TOP",
+                "ATCO radar"
             ],
             "waypoints": [],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Tango Oscar Papa, , "
+        "prompt_fullts_1G_4B": "Oscar Kilo Tango Oscar Papa, Oscar Kilo Tango Oscar Papa",
+        "prompt_fullts_5B": "Oscar Kilo Tango Oscar Papa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_144339.wav",
         "full_ts": "Radar   dobre odpoledne  Sky Travel Four Three Two Papa passing nineteen hundred climbing to five thousand\nSky Travel Four Three Two Papa   dobre odpoledne  Praha Radar identified climb flight level one six zero\nclimb to flight level one six zero Sky Travel Four Three Two Papa",
         "short_ts": "Radar dobre odpoledne TVS432P passing 1900 climbing to 5000\nTVS432P dobre odpoledne Praha Radar identified climb flight level 160\nclimb to flight level 160 TVS432P",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Sky Travel Four Three Two Papa"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO radar",
                 "TVS432P"
             ],
@@ -5541,7 +5847,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR108Z",
                 "AFR10BE",
                 "AUA2JP",
@@ -5578,7 +5884,7 @@
                 "WZZ554",
                 "WZZ92"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France One Zero Eight Zulu",
                 "Air France One Zero Bravo Echo",
                 "Austrian Airlines Two Juliett Papa",
@@ -5614,19 +5920,24 @@
                 "Sky Travel Four Three Two Papa",
                 "Wizzair Five Five Four",
                 "Wizzair Nine Two"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Sky Travel Four Three Two Papa, RATEV, ARVEG, RISUK, Ryan Air Nine Two Bravo Quebec, Csa / Czech Nine One Nine, Wizzair Five Five Four"
+        "prompt_fullts_1G_4B": "Sky Travel Four Three Two Papa, Sky Travel Four Three Two Papa",
+        "prompt_fullts_5B": "Sky Travel Four Three Two Papa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201027_135214.wav",
         "full_ts": "Ryanair One Bravo Alfa stand five seven QNH one zero one two request engine start",
         "short_ts": "Ryanair 1BA stand 57 QNH 1012 request engine start",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Ryanair One Bravo Alfa"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "RYR1BA"
             ],
             "waypoints": [
@@ -5650,7 +5961,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "PGT302",
                 "RYR92BQ",
                 "OKMDH",
@@ -5692,7 +6003,7 @@
                 "ECC301",
                 "RYR1BA"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Sun Turk Three Zero Two",
                 "Ryan Air Nine Two Bravo Quebec",
                 "Oscar Kilo Mike Delta Hotel",
@@ -5733,17 +6044,22 @@
                 "Turkish Six Two Eight Nine",
                 "Eclair Three Zero One",
                 "Ryan Air One Bravo Alfa"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Ryanair One Bravo Alfa, KUVIX, BAVIN, SULOV, Oscar Kilo Bravo Yankee Alfa, Oscar Kilo Mike Hotel Zulu, Ryan Air One Four Kilo"
+        "prompt_fullts_1G_4B": "Ryanair One Bravo Alfa, Ryanair One Bravo Alfa",
+        "prompt_fullts_5B": "Ryanair One Bravo Alfa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_110119.wav",
         "full_ts": "Tower good afternoon Emirates One Three Nine runway two four twelve miles out\nEmirates One Three Nine Heavy Ruzyne Tower continue approach wind one eight zero degrees five knots\ncontinue approach Emirates One Three Nine",
         "short_ts": "Tower good afternoon Emirates 139 runway 2412 miles out\nEmirates 139 Heavy Ruzyne Tower continue approach wind 180 degrees 5 knots\ncontinue approach Emirates 139",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "UAE139",
                 "ATCO tower"
             ],
@@ -5768,22 +6084,27 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [],
-            "long_callsigns": []
+            "nearby_short_callsigns": [],
+            "nearby_long_callsigns": [],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", RISUK, KENOK, BAROX, "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_125731.wav",
         "full_ts": "one one eight decimal one  Six Five Zero\nthat's it bye bye\nd\u011bkujem na sly\u0161enou\nna sly\u0161enou",
         "short_ts": "118.1 650\nthat s it bye bye\nd\u011bkujem na sly\u0161enou\nna sly\u0161enou",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Six Five Zero"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "UNK-1"
+            "short_callsigns": [
+                "650",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5806,7 +6127,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "PGT302",
                 "RYR92BQ",
                 "OKMDH",
@@ -5846,7 +6167,7 @@
                 "CSA918",
                 "ECC301"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Sun Turk Three Zero Two",
                 "Ryan Air Nine Two Bravo Quebec",
                 "Oscar Kilo Mike Delta Hotel",
@@ -5885,21 +6206,26 @@
                 "Zap Nine Four One",
                 "Csa / Czech Nine One Eight",
                 "Eclair Three Zero One"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Six Five Zero, BAGRU, ELMEK, SULOV, Ryan Air Nine Two Bravo Quebec, Oscar Kilo Delta Sierra Victor, Aegean Six Romeo Whiskey"
+        "prompt_fullts_1G_4B": "Six Five Zero, Six Five Zero",
+        "prompt_fullts_5B": "Six Five Zero"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_091112.wav",
         "full_ts": "Oscar Kilo Papa Mike Bravo descend flight level one hundred\nlevel one hundred Oscar Kilo Papa Mike Bravo",
         "short_ts": "OKPMB descend flight level 100\nlevel 100 OKPMB",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Oscar Kilo Papa Mike Bravo"
             ],
-            "speaker_labels": [
-                "ATCO radar",
-                "OK-PMB"
+            "short_callsigns": [
+                "OK-PMB",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5922,7 +6248,7 @@
                 "TIPRU",
                 "UTORO"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "BLA131",
                 "BLA1XQ",
                 "BTI7PY",
@@ -5950,7 +6276,7 @@
                 "TIE790J",
                 "UAE73"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "All Charter One Three One",
                 "All Charter One X-ray Quebec",
                 "Air Baltic Seven Papa Yankee",
@@ -5977,8 +6303,13 @@
                 "Turkish Six Five Seven Seven",
                 "Time Air Seven Nine Zero Juliett",
                 "Emirates Seven Three"
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oscar Kilo Papa Mike Bravo, TIPRU, SOMIS, BAVIN, Etihad Seven Two Echo, Oklahoma Lima Zulu, Oscar Kilo Hotel Bravo Tango"
+        "prompt_fullts_1G_4B": "Oscar Kilo Papa Mike Bravo, Oscar Kilo Papa Mike Bravo",
+        "prompt_fullts_5B": "Oscar Kilo Papa Mike Bravo"
     }
 ]

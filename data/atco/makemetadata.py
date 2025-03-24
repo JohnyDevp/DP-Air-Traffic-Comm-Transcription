@@ -194,6 +194,10 @@ def make_vocab(info_path):
     return vocab
 
 def process_callsign_from_info(callsign_plain : str, airport_vocab : dict):
+    # this function works for callsigns like Air France 1234, where the last word of digits
+    # we obtain by calling process_tag_content, and Air France we translate to shortcut by 
+    # looking into the info file
+    
     partly_processed_callsign = process_tag_content(callsign_plain, "alphanum")
     # we assume that the last word is now built from numbers and letters recognized 
     # from air traffic alphabet and numbers

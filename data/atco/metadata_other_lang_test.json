@@ -136,7 +136,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201028_153007.wav",
         "full_ts": "Oscar Whiskey India Tři Sedm QNH jedna nula jedna šest maximálně dva tisíce pět set stop povolení \njedna nula jedna šest maximálně dva tisíce pět set stop přímo  povolení  Oscar Kilo Whisky India Tři Sedm",
-        "short_ts": "OWI37 QNH 1016 maximálně 2 tisíce 500 stop povolení\n1016 maximálně 2 tisíce 500 stop přímo povolení OKWI37\n",
+        "short_ts": "OWI37 QNH 1016 maximálně 2500 stop povolení\n1016 maximálně 2500 stop přímo povolení OKWI37\n",
         "prompt": {
             "waypoints": [],
             "short_callsigns": [],
@@ -146,7 +146,7 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201029_151000.wav",
         "full_ts": "Kryštof Nula Jedna v CTR Ruzyně maximálně dva tisíce pět set stop QNH jedna nula jedna osm",
-        "short_ts": "Kryštof 01 v CTR Ruzyně maximálně 2 tisíce 500 stop QNH 1018\n",
+        "short_ts": "Kryštof 01 v CTR Ruzyně maximálně 2500 stop QNH 1018\n",
         "prompt": {
             "waypoints": [],
             "short_callsigns": [],

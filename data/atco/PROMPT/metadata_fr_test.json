@@ -5,322 +5,10 @@
         "short_ts": "Blue B tu peux rouler merci bonne soiree ciao\na bientot ciao\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Bravo",
-                "Blue"
-            ],
-            "speaker_labels": [
-                "ATCO Ground",
-                "UNK-1"
-            ],
-            "waypoints": [
-                "ALETO",
-                "AOSTA",
-                "BANKO",
-                "BERAR",
-                "BIBAN",
-                "CERVI",
-                "ESOKO",
-                "ETEKI",
-                "GARLO",
-                "GODRA",
-                "GOLEB",
-                "GRANA",
-                "INTIP",
-                "LAMUR",
-                "MASAB",
-                "MOBLO",
-                "MOLUS",
-                "MONIN",
-                "OMETO",
-                "ORSUD",
-                "PUNSA",
-                "REVLI",
-                "ROCCA",
-                "ROMOM",
-                "SANET",
-                "SONOD",
-                "SOSAL",
-                "TERSI",
-                "UBIMA",
-                "VADAR",
-                "VALOR",
-                "VENAT",
-                "VEROX"
+            "long_callsigns": [
+                "Blue Bravo"
             ],
             "short_callsigns": [
-                "DLH26E",
-                "FCK511",
-                "FPADU",
-                "HB2087",
-                "HB2414",
-                "HBDGV",
-                "HBKGO",
-                "HBKOJ",
-                "HBYTM",
-                "HBYYA",
-                "HBZAP",
-                "HBZVP",
-                "JFA15B",
-                "JFA19X",
-                "LMJ249L",
-                "LXG22S",
-                "NJE791G",
-                "OOPCJ",
-                "RGA04"
-            ],
-            "long_callsigns": [
-                "Hansa Two Six Echo ",
-                "Nav Checker Five One One ",
-                "Foxtrot Papa Alpha Delta Uniform ",
-                "Hotel Bravo Two Zero Eight Seven ",
-                "Hotel Bravo Two Four One Four ",
-                "Hotel Bravo Delta Golf Victor ",
-                "Hotel Bravo Kilo Golf Oscar ",
-                "Hotel Bravo Kilo Oscar Juliett ",
-                "Hotel Bravo Yankee Tango Mike ",
-                "Hotel Bravo Yankee Yankee Alpha ",
-                "Hotel Bravo Zulu Alpha Papa ",
-                "Hotel Bravo Zulu Victor Papa ",
-                "Mosquito One Five Bravo ",
-                "Mosquito One Nine X-ray ",
-                "Masterjet Two Four Nine Lima ",
-                "Luxor Golf Two Two Sierra ",
-                "Fraction Seven Nine One Golf ",
-                "Oscar Oscar Papa Charlie Juliett ",
-                "Royal Ghana Zero Four "
-            ]
-        },
-        "prompt_fullts": "Bravo, Blue, VADAR, ROMOM, VALOR, Luxor Golf Two Two Sierra , Hotel Bravo Delta Golf Victor , Mosquito One Five Bravo "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210501_073416.wav",
-        "full_ts": "Foxtrot Lima Delta a niveau piste deux cinq QNH mille neuf\non s'aligne deux cinq et on attent, mille neuf, Foxtrot Lima Delta",
-        "short_ts": "FLD a niveau piste deux cinq QNH mille neuf\non s aligne deux cinq et on attent, mille neuf, FLD\n",
-        "lang": "fr",
-        "prompt-data": {
-            "callsigns": [
-                "Lima",
-                "Delta",
-                "Foxtrot"
-            ],
-            "speaker_labels": [
-                "ATCO Ground",
-                "UNK-1"
-            ],
-            "waypoints": [
-                "ALETO",
-                "AOSTA",
-                "BANKO",
-                "BERAR",
-                "BIBAN",
-                "CERVI",
-                "ESOKO",
-                "ETEKI",
-                "GARLO",
-                "GODRA",
-                "GOLEB",
-                "GRANA",
-                "INTIP",
-                "LAMUR",
-                "MASAB",
-                "MOBLO",
-                "MOLUS",
-                "MONIN",
-                "OMETO",
-                "ORSUD",
-                "PUNSA",
-                "REVLI",
-                "ROCCA",
-                "ROMOM",
-                "SANET",
-                "SONOD",
-                "SOSAL",
-                "TERSI",
-                "UBIMA",
-                "VADAR",
-                "VALOR",
-                "VENAT",
-                "VEROX"
-            ],
-            "short_callsigns": [
-                "FHDBL",
-                "KLM1555",
-                "NJE852R",
-                "RYR39FD"
-            ],
-            "long_callsigns": [
-                "Foxtrot Hotel Delta Bravo Lima ",
-                "KLM One Five Five Five ",
-                "Fraction Eight Five Two Romeo ",
-                "Ryan Three Nine Foxtrot Delta "
-            ]
-        },
-        "prompt_fullts": "Lima, Delta, Foxtrot, SANET, MOBLO, SONOD, Ryan Three Nine Foxtrot Delta , Fraction Eight Five Two Romeo , KLM One Five Five Five "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_174454.wav",
-        "full_ts": "Foxtrot Lima Delta debut vent arriere main gauche pour la vingt cinq",
-        "short_ts": "FLD debut vent arriere main gauche pour 0 vingt cinq\n",
-        "lang": "fr",
-        "prompt-data": {
-            "callsigns": [
-                "Lima",
-                "Delta",
-                "Foxtrot"
-            ],
-            "speaker_labels": [
-                "UNK-1"
-            ],
-            "waypoints": [
-                "ALETO",
-                "AOSTA",
-                "BANKO",
-                "BERAR",
-                "BIBAN",
-                "CERVI",
-                "ESOKO",
-                "ETEKI",
-                "GARLO",
-                "GODRA",
-                "GOLEB",
-                "GRANA",
-                "INTIP",
-                "LAMUR",
-                "MASAB",
-                "MOBLO",
-                "MOLUS",
-                "MONIN",
-                "OMETO",
-                "ORSUD",
-                "PUNSA",
-                "REVLI",
-                "ROCCA",
-                "ROMOM",
-                "SANET",
-                "SONOD",
-                "SOSAL",
-                "TERSI",
-                "UBIMA",
-                "VADAR",
-                "VALOR",
-                "VENAT",
-                "VEROX"
-            ],
-            "short_callsigns": [
-                "DLH26E",
-                "FBU700",
-                "HBKLE",
-                "HBKOJ",
-                "HBZVP",
-                "HBZWP",
-                "HMJ185",
-                "NJE791G",
-                "RGA04"
-            ],
-            "long_callsigns": [
-                "Lufthansa Two Six Echo ",
-                "French Bee Seven Zero Zero ",
-                "Hotel Bravo Kilo Lima Echo ",
-                "Hotel Bravo Kilo Oscar Juliett ",
-                "Hotel Bravo Zulu Victor Papa ",
-                "Hotel Bravo Zulu Whiskey Papa ",
-                "Harmony One Eight Five ",
-                "Fraction Seven Nine One Golf ",
-                "Royal Ghana Zero Four "
-            ]
-        },
-        "prompt_fullts": "Lima, Delta, Foxtrot, BANKO, GRANA, ETEKI, Harmony One Eight Five , Hotel Bravo Kilo Lima Echo , Lufthansa Two Six Echo "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_173717.wav",
-        "full_ts": "Hotel Echo Whiskey c'est bien pris maintener bien le nord de la vallee, QNH mille dix sept, rappeller Montana, pour information un traffic  nord de  quatorze mille pieds en descente pour l'atterissage\nalors je maintiens le nord de la vallee Hotel Echo Whiskey, bien compris pour le traffic, vous rappelle Montana\nEcho Whiskey merci",
-        "short_ts": "HEW c est bien pris maintener bien 11 nord 90 vallee, QNH mille dix 100, rappeller Montana, pour information un traffic nord de quatorze mille pieds en descente pour l atterissage\nalors je maintiens 11 nord 90 vallee HEW, bien compris pour le traffic, vous rappelle Montana\nEW merci\n",
-        "lang": "fr",
-        "prompt-data": {
-            "callsigns": [
-                "Whiskey",
-                "Echo",
-                "Hotel",
-                "Whiskey,"
-            ],
-            "speaker_labels": [
-                "ATCO Ground",
-                "UNK-1"
-            ],
-            "waypoints": [
-                "ALETO",
-                "AOSTA",
-                "BANKO",
-                "BERAR",
-                "BIBAN",
-                "CERVI",
-                "ESOKO",
-                "ETEKI",
-                "GARLO",
-                "GODRA",
-                "GOLEB",
-                "GRANA",
-                "INTIP",
-                "LAMUR",
-                "MASAB",
-                "MOBLO",
-                "MOLUS",
-                "MONIN",
-                "OMETO",
-                "ORSUD",
-                "PUNSA",
-                "REVLI",
-                "ROCCA",
-                "ROMOM",
-                "SANET",
-                "SONOD",
-                "SOSAL",
-                "TERSI",
-                "UBIMA",
-                "VADAR",
-                "VALOR",
-                "VENAT",
-                "VEROX"
-            ],
-            "short_callsigns": [
-                "DLH26E",
-                "FBU700",
-                "HBKLE",
-                "HBKOJ",
-                "HBZVP",
-                "HBZWP",
-                "HMJ185",
-                "NJE791G",
-                "RGA04"
-            ],
-            "long_callsigns": [
-                "Lufthansa Two Six Echo ",
-                "French Bee Seven Zero Zero ",
-                "Hotel Bravo Kilo Lima Echo ",
-                "Hotel Bravo Kilo Oscar Juliett ",
-                "Hotel Bravo Zulu Victor Papa ",
-                "Hotel Bravo Zulu Whiskey Papa ",
-                "Harmony One Eight Five ",
-                "Fraction Seven Nine One Golf ",
-                "Royal Ghana Zero Four "
-            ]
-        },
-        "prompt_fullts": "Whiskey, Echo, Hotel, Whiskey,, GODRA, BANKO, VALOR, Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Victor Papa "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_150030.wav",
-        "full_ts": "Huitante et Un c'est, cautionnement est correct, rappeler au roulage\nwilco",
-        "short_ts": "Huitante et Un c est, cautionnement est correct, rappeler 1000 roulage\nwilco\n",
-        "lang": "fr",
-        "prompt-data": {
-            "callsigns": [
-                "et",
-                "Un",
-                "Huitante"
-            ],
-            "speaker_labels": [
-                "81",
                 "ATCO Ground"
             ],
             "waypoints": [
@@ -358,7 +46,330 @@
                 "VENAT",
                 "VEROX"
             ],
+            "nearby_short_callsigns": [
+                "DLH26E",
+                "FCK511",
+                "FPADU",
+                "HB2087",
+                "HB2414",
+                "HBDGV",
+                "HBKGO",
+                "HBKOJ",
+                "HBYTM",
+                "HBYYA",
+                "HBZAP",
+                "HBZVP",
+                "JFA15B",
+                "JFA19X",
+                "LMJ249L",
+                "LXG22S",
+                "NJE791G",
+                "OOPCJ",
+                "RGA04"
+            ],
+            "nearby_long_callsigns": [
+                "Hansa Two Six Echo ",
+                "Nav Checker Five One One ",
+                "Foxtrot Papa Alpha Delta Uniform ",
+                "Hotel Bravo Two Zero Eight Seven ",
+                "Hotel Bravo Two Four One Four ",
+                "Hotel Bravo Delta Golf Victor ",
+                "Hotel Bravo Kilo Golf Oscar ",
+                "Hotel Bravo Kilo Oscar Juliett ",
+                "Hotel Bravo Yankee Tango Mike ",
+                "Hotel Bravo Yankee Yankee Alpha ",
+                "Hotel Bravo Zulu Alpha Papa ",
+                "Hotel Bravo Zulu Victor Papa ",
+                "Mosquito One Five Bravo ",
+                "Mosquito One Nine X-ray ",
+                "Masterjet Two Four Nine Lima ",
+                "Luxor Golf Two Two Sierra ",
+                "Fraction Seven Nine One Golf ",
+                "Oscar Oscar Papa Charlie Juliett ",
+                "Royal Ghana Zero Four "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": "Blue Bravo, Blue Bravo",
+        "prompt_fullts_5B": "Blue Bravo"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210501_073416.wav",
+        "full_ts": "Foxtrot Lima Delta a niveau piste deux cinq QNH mille neuf\non s'aligne deux cinq et on attent, mille neuf, Foxtrot Lima Delta",
+        "short_ts": "FLD a niveau piste deux cinq QNH mille neuf\non s aligne deux cinq et on attent, mille neuf, FLD\n",
+        "lang": "fr",
+        "prompt-data": {
+            "long_callsigns": [
+                "Foxtrot Lima Delta"
+            ],
             "short_callsigns": [
+                "ATCO Ground",
+                "FLD"
+            ],
+            "waypoints": [
+                "ALETO",
+                "AOSTA",
+                "BANKO",
+                "BERAR",
+                "BIBAN",
+                "CERVI",
+                "ESOKO",
+                "ETEKI",
+                "GARLO",
+                "GODRA",
+                "GOLEB",
+                "GRANA",
+                "INTIP",
+                "LAMUR",
+                "MASAB",
+                "MOBLO",
+                "MOLUS",
+                "MONIN",
+                "OMETO",
+                "ORSUD",
+                "PUNSA",
+                "REVLI",
+                "ROCCA",
+                "ROMOM",
+                "SANET",
+                "SONOD",
+                "SOSAL",
+                "TERSI",
+                "UBIMA",
+                "VADAR",
+                "VALOR",
+                "VENAT",
+                "VEROX"
+            ],
+            "nearby_short_callsigns": [
+                "FHDBL",
+                "KLM1555",
+                "NJE852R",
+                "RYR39FD"
+            ],
+            "nearby_long_callsigns": [
+                "Foxtrot Hotel Delta Bravo Lima ",
+                "KLM One Five Five Five ",
+                "Fraction Eight Five Two Romeo ",
+                "Ryan Three Nine Foxtrot Delta "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": "Foxtrot Lima Delta, Foxtrot Lima Delta",
+        "prompt_fullts_5B": "Foxtrot Lima Delta"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_174454.wav",
+        "full_ts": "Foxtrot Lima Delta debut vent arriere main gauche pour la vingt cinq",
+        "short_ts": "FLD debut vent arriere main gauche pour 0 vingt cinq\n",
+        "lang": "fr",
+        "prompt-data": {
+            "long_callsigns": [
+                "Foxtrot Lima Delta"
+            ],
+            "short_callsigns": [
+                "FLD"
+            ],
+            "waypoints": [
+                "ALETO",
+                "AOSTA",
+                "BANKO",
+                "BERAR",
+                "BIBAN",
+                "CERVI",
+                "ESOKO",
+                "ETEKI",
+                "GARLO",
+                "GODRA",
+                "GOLEB",
+                "GRANA",
+                "INTIP",
+                "LAMUR",
+                "MASAB",
+                "MOBLO",
+                "MOLUS",
+                "MONIN",
+                "OMETO",
+                "ORSUD",
+                "PUNSA",
+                "REVLI",
+                "ROCCA",
+                "ROMOM",
+                "SANET",
+                "SONOD",
+                "SOSAL",
+                "TERSI",
+                "UBIMA",
+                "VADAR",
+                "VALOR",
+                "VENAT",
+                "VEROX"
+            ],
+            "nearby_short_callsigns": [
+                "DLH26E",
+                "FBU700",
+                "HBKLE",
+                "HBKOJ",
+                "HBZVP",
+                "HBZWP",
+                "HMJ185",
+                "NJE791G",
+                "RGA04"
+            ],
+            "nearby_long_callsigns": [
+                "Lufthansa Two Six Echo ",
+                "French Bee Seven Zero Zero ",
+                "Hotel Bravo Kilo Lima Echo ",
+                "Hotel Bravo Kilo Oscar Juliett ",
+                "Hotel Bravo Zulu Victor Papa ",
+                "Hotel Bravo Zulu Whiskey Papa ",
+                "Harmony One Eight Five ",
+                "Fraction Seven Nine One Golf ",
+                "Royal Ghana Zero Four "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": "Foxtrot Lima Delta, Foxtrot Lima Delta",
+        "prompt_fullts_5B": "Foxtrot Lima Delta"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_173717.wav",
+        "full_ts": "Hotel Echo Whiskey c'est bien pris maintener bien le nord de la vallee, QNH mille dix sept, rappeller Montana, pour information un traffic  nord de  quatorze mille pieds en descente pour l'atterissage\nalors je maintiens le nord de la vallee Hotel Echo Whiskey, bien compris pour le traffic, vous rappelle Montana\nEcho Whiskey merci",
+        "short_ts": "HEW c est bien pris maintener bien 11 nord 90 vallee, QNH mille dix 100, rappeller Montana, pour information un traffic nord de quatorze mille pieds en descente pour l atterissage\nalors je maintiens 11 nord 90 vallee HEW, bien compris pour le traffic, vous rappelle Montana\nEW merci\n",
+        "lang": "fr",
+        "prompt-data": {
+            "long_callsigns": [
+                "Echo Whiskey",
+                "Hotel Echo Whiskey",
+                "Hotel Echo Whiskey,"
+            ],
+            "short_callsigns": [
+                "ATCO Ground",
+                "HEW,"
+            ],
+            "waypoints": [
+                "ALETO",
+                "AOSTA",
+                "BANKO",
+                "BERAR",
+                "BIBAN",
+                "CERVI",
+                "ESOKO",
+                "ETEKI",
+                "GARLO",
+                "GODRA",
+                "GOLEB",
+                "GRANA",
+                "INTIP",
+                "LAMUR",
+                "MASAB",
+                "MOBLO",
+                "MOLUS",
+                "MONIN",
+                "OMETO",
+                "ORSUD",
+                "PUNSA",
+                "REVLI",
+                "ROCCA",
+                "ROMOM",
+                "SANET",
+                "SONOD",
+                "SOSAL",
+                "TERSI",
+                "UBIMA",
+                "VADAR",
+                "VALOR",
+                "VENAT",
+                "VEROX"
+            ],
+            "nearby_short_callsigns": [
+                "DLH26E",
+                "FBU700",
+                "HBKLE",
+                "HBKOJ",
+                "HBZVP",
+                "HBZWP",
+                "HMJ185",
+                "NJE791G",
+                "RGA04"
+            ],
+            "nearby_long_callsigns": [
+                "Lufthansa Two Six Echo ",
+                "French Bee Seven Zero Zero ",
+                "Hotel Bravo Kilo Lima Echo ",
+                "Hotel Bravo Kilo Oscar Juliett ",
+                "Hotel Bravo Zulu Victor Papa ",
+                "Hotel Bravo Zulu Whiskey Papa ",
+                "Harmony One Eight Five ",
+                "Fraction Seven Nine One Golf ",
+                "Royal Ghana Zero Four "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": "Echo Whiskey, Hotel Echo Whiskey, Hotel Echo Whiskey,, Hotel Echo Whiskey, Echo Whiskey, Hotel Echo Whiskey,",
+        "prompt_fullts_5B": "Hotel Echo Whiskey, Echo Whiskey, Hotel Echo Whiskey,"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_150030.wav",
+        "full_ts": "Huitante et Un c'est, cautionnement est correct, rappeler au roulage\nwilco",
+        "short_ts": "Huitante et Un c est, cautionnement est correct, rappeler 1000 roulage\nwilco\n",
+        "lang": "fr",
+        "prompt-data": {
+            "long_callsigns": [
+                "Huitante et Un"
+            ],
+            "short_callsigns": [
+                "ATCO Ground",
+                "81"
+            ],
+            "waypoints": [
+                "ALETO",
+                "AOSTA",
+                "BANKO",
+                "BERAR",
+                "BIBAN",
+                "CERVI",
+                "ESOKO",
+                "ETEKI",
+                "GARLO",
+                "GODRA",
+                "GOLEB",
+                "GRANA",
+                "INTIP",
+                "LAMUR",
+                "MASAB",
+                "MOBLO",
+                "MOLUS",
+                "MONIN",
+                "OMETO",
+                "ORSUD",
+                "PUNSA",
+                "REVLI",
+                "ROCCA",
+                "ROMOM",
+                "SANET",
+                "SONOD",
+                "SOSAL",
+                "TERSI",
+                "UBIMA",
+                "VADAR",
+                "VALOR",
+                "VENAT",
+                "VEROX"
+            ],
+            "nearby_short_callsigns": [
                 "DLH03A",
                 "FCK511",
                 "FDX5279",
@@ -370,7 +381,7 @@
                 "VCG2EG",
                 "VLG28YQ"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Zero Three Alpha ",
                 "Nav Checker Five One One ",
                 "Fedex Five Two Seven Nine ",
@@ -381,9 +392,14 @@
                 "Scandinavian Four Three Six Lima ",
                 "Victor Charlie Golf Two Echo Golf ",
                 "Vueling Two Eight Yankee Quebec "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "et, Un, Huitante, LAMUR, SANET, TERSI, Med Rescue Echo Echo , Hotel Bravo Delta Golf Victor , Scandinavian Four Three Six Lima "
+        "prompt_fullts_1G_4B": "Huitante et Un, Huitante et Un",
+        "prompt_fullts_5B": "Huitante et Un"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210502_043558.wav",
@@ -391,15 +407,13 @@
         "short_ts": "Cinquante et Un, salut, tu peux rentrer en piste, rappelle termine\nje rentre en piste Cinquante et Un\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Un",
-                "et",
-                "Un,",
-                "Cinquante"
+            "long_callsigns": [
+                "Cinquante et Un,",
+                "Cinquante et Un"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground",
-                "UNK-1"
+                "Cinquante et Un"
             ],
             "waypoints": [
                 "ALETO",
@@ -436,18 +450,23 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR813",
                 "ENT73LH",
                 "KLM1628"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France Eight One Three ",
                 "Enter Seven Three Lima Hotel ",
                 "KLM One Six Two Eight "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Un, et, Un,, Cinquante, SOSAL, ESOKO, REVLI, KLM One Six Two Eight , Enter Seven Three Lima Hotel , Air France Eight One Three "
+        "prompt_fullts_1G_4B": "Cinquante et Un,, Cinquante et Un, Cinquante et Un, Cinquante et Un,",
+        "prompt_fullts_5B": "Cinquante et Un,, Cinquante et Un"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_122116.wav",
@@ -455,13 +474,12 @@
         "short_ts": "j accepte la direct Proxima D\nmerci donc vous pouvez venir pour une direct piste deux cinq, numero un rappeler final\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Delta",
-                "Proxima"
+            "long_callsigns": [
+                "Proxima Delta"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground",
-                "UNK-1"
+                "Proxima D"
             ],
             "waypoints": [
                 "ALETO",
@@ -498,7 +516,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "FCK511",
                 "HB2087",
                 "HB2414",
@@ -520,7 +538,7 @@
                 "N3YZ",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Nav Checker Five One One ",
                 "Hotel Bravo Two Zero Eight Seven ",
                 "Hotel Bravo Two Four One Four ",
@@ -541,9 +559,14 @@
                 "Med Rescue Echo Echo ",
                 "November Three Yankee Zulu ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Delta, Proxima, MOLUS, TERSI, CERVI, Hotel Bravo Kilo Foxtrot India , Mosquito One Nine X-ray , Royal Ghana Zero Four "
+        "prompt_fullts_1G_4B": "Proxima Delta, Proxima Delta",
+        "prompt_fullts_5B": "Proxima Delta"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_053014.wav",
@@ -551,166 +574,12 @@
         "short_ts": "TLM Novembre W cinq mille trois cent pied remonter\nTLM vous pouvez quitter, bon vol, bonne journee\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Lima",
-                "Whiskey",
-                "Novembre",
-                "Mike",
-                "Tango"
-            ],
-            "speaker_labels": [
-                "ATCO Ground",
-                "UNK-1"
-            ],
-            "waypoints": [
-                "ALETO",
-                "AOSTA",
-                "BANKO",
-                "BERAR",
-                "BIBAN",
-                "CERVI",
-                "ESOKO",
-                "ETEKI",
-                "GARLO",
-                "GODRA",
-                "GOLEB",
-                "GRANA",
-                "INTIP",
-                "LAMUR",
-                "MASAB",
-                "MOBLO",
-                "MOLUS",
-                "MONIN",
-                "OMETO",
-                "ORSUD",
-                "PUNSA",
-                "REVLI",
-                "ROCCA",
-                "ROMOM",
-                "SANET",
-                "SONOD",
-                "SOSAL",
-                "TERSI",
-                "UBIMA",
-                "VADAR",
-                "VALOR",
-                "VENAT",
-                "VEROX"
+            "long_callsigns": [
+                "Tango Lima Mike",
+                "Tango Lima Mike Novembre Whiskey"
             ],
             "short_callsigns": [
-                "DLH23T",
-                "HBDGV",
-                "LGL92M",
-                "MYGJL",
-                "RYR8YT",
-                "VPCFK"
-            ],
-            "long_callsigns": [
-                "Lufthansa Two Three Tango ",
-                "Hotel Bravo Delta Golf Victor ",
-                "Luxair Nine Two Mike ",
-                "Mike Yankee Golf Juliett Lima ",
-                "Ryan Eight Yankee Tango ",
-                "Victor Papa Charlie Foxtrot Kilo "
-            ]
-        },
-        "prompt_fullts": "Lima, Whiskey, Novembre, Mike, Tango, OMETO, AOSTA, MOLUS, Mike Yankee Golf Juliett Lima , Hotel Bravo Delta Golf Victor , Lufthansa Two Three Tango "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Tower_118_3MHz_20210503_160321.wav",
-        "full_ts": "compris Dix Huit on peut retourner en piste",
-        "short_ts": "compris Dix Huit on peut retourner en piste\n",
-        "lang": "fr",
-        "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "UNK-1"
-            ],
-            "waypoints": [
-                "ALETO",
-                "AOSTA",
-                "BANKO",
-                "BERAR",
-                "BIBAN",
-                "CERVI",
-                "ESOKO",
-                "ETEKI",
-                "GARLO",
-                "GODRA",
-                "GOLEB",
-                "GRANA",
-                "INTIP",
-                "LAMUR",
-                "MASAB",
-                "MOBLO",
-                "MOLUS",
-                "MONIN",
-                "OMETO",
-                "ORSUD",
-                "PUNSA",
-                "REVLI",
-                "ROCCA",
-                "ROMOM",
-                "SANET",
-                "SONOD",
-                "SOSAL",
-                "TERSI",
-                "UBIMA",
-                "VADAR",
-                "VALOR",
-                "VENAT",
-                "VEROX"
-            ],
-            "short_callsigns": [
-                "DLH26E",
-                "FPADU",
-                "HBDGV",
-                "HBKGO",
-                "HBKLE",
-                "HBKOJ",
-                "HBYTM",
-                "HBYYA",
-                "HBZVP",
-                "HBZWP",
-                "HMJ185",
-                "JFA15B",
-                "LMJ249L",
-                "NJE791G",
-                "OOPCJ",
-                "RGA04"
-            ],
-            "long_callsigns": [
-                "Hansa Two Six Echo ",
-                "Foxtrot Papa Alpha Delta Uniform ",
-                "Hotel Bravo Delta Golf Victor ",
-                "Hotel Bravo Kilo Golf Oscar ",
-                "Hotel Bravo Kilo Lima Echo ",
-                "Hotel Bravo Kilo Oscar Juliett ",
-                "Hotel Bravo Yankee Tango Mike ",
-                "Hotel Bravo Yankee Yankee Alpha ",
-                "Hotel Bravo Zulu Victor Papa ",
-                "Hotel Bravo Zulu Whiskey Papa ",
-                "Harmony One Eight Five ",
-                "Mosquito One Five Bravo ",
-                "Masterjet Two Four Nine Lima ",
-                "Fraction Seven Nine One Golf ",
-                "Oscar Oscar Papa Charlie Juliett ",
-                "Royal Ghana Zero Four "
-            ]
-        },
-        "prompt_fullts": ", VENAT, ESOKO, ETEKI, Hotel Bravo Zulu Victor Papa , Royal Ghana Zero Four , Fraction Seven Nine One Golf "
-    },
-    {
-        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_052323.wav",
-        "full_ts": "India Juliett standby break break kafa tu peux sortir a bravo, un traffic est bientot pret au depart",
-        "short_ts": "IJ standby break break kafa tu peux sortir 0 B, un traffic est bientot pret au depart\n",
-        "lang": "fr",
-        "prompt-data": {
-            "callsigns": [
-                "India",
-                "Juliett"
-            ],
-            "speaker_labels": [
+                "TLM Novembre W",
                 "ATCO Ground"
             ],
             "waypoints": [
@@ -748,7 +617,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH23T",
                 "HBDGV",
                 "LGL92M",
@@ -756,16 +625,179 @@
                 "RYR8YT",
                 "VPCFK"
             ],
+            "nearby_long_callsigns": [
+                "Lufthansa Two Three Tango ",
+                "Hotel Bravo Delta Golf Victor ",
+                "Luxair Nine Two Mike ",
+                "Mike Yankee Golf Juliett Lima ",
+                "Ryan Eight Yankee Tango ",
+                "Victor Papa Charlie Foxtrot Kilo "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": "Tango Lima Mike, Tango Lima Mike Novembre Whiskey, Tango Lima Mike, Tango Lima Mike Novembre Whiskey",
+        "prompt_fullts_5B": "Tango Lima Mike, Tango Lima Mike Novembre Whiskey"
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Tower_118_3MHz_20210503_160321.wav",
+        "full_ts": "compris Dix Huit on peut retourner en piste",
+        "short_ts": "compris Dix Huit on peut retourner en piste\n",
+        "lang": "fr",
+        "prompt-data": {
+            "long_callsigns": [],
+            "short_callsigns": [],
+            "waypoints": [
+                "ALETO",
+                "AOSTA",
+                "BANKO",
+                "BERAR",
+                "BIBAN",
+                "CERVI",
+                "ESOKO",
+                "ETEKI",
+                "GARLO",
+                "GODRA",
+                "GOLEB",
+                "GRANA",
+                "INTIP",
+                "LAMUR",
+                "MASAB",
+                "MOBLO",
+                "MOLUS",
+                "MONIN",
+                "OMETO",
+                "ORSUD",
+                "PUNSA",
+                "REVLI",
+                "ROCCA",
+                "ROMOM",
+                "SANET",
+                "SONOD",
+                "SOSAL",
+                "TERSI",
+                "UBIMA",
+                "VADAR",
+                "VALOR",
+                "VENAT",
+                "VEROX"
+            ],
+            "nearby_short_callsigns": [
+                "DLH26E",
+                "FPADU",
+                "HBDGV",
+                "HBKGO",
+                "HBKLE",
+                "HBKOJ",
+                "HBYTM",
+                "HBYYA",
+                "HBZVP",
+                "HBZWP",
+                "HMJ185",
+                "JFA15B",
+                "LMJ249L",
+                "NJE791G",
+                "OOPCJ",
+                "RGA04"
+            ],
+            "nearby_long_callsigns": [
+                "Hansa Two Six Echo ",
+                "Foxtrot Papa Alpha Delta Uniform ",
+                "Hotel Bravo Delta Golf Victor ",
+                "Hotel Bravo Kilo Golf Oscar ",
+                "Hotel Bravo Kilo Lima Echo ",
+                "Hotel Bravo Kilo Oscar Juliett ",
+                "Hotel Bravo Yankee Tango Mike ",
+                "Hotel Bravo Yankee Yankee Alpha ",
+                "Hotel Bravo Zulu Victor Papa ",
+                "Hotel Bravo Zulu Whiskey Papa ",
+                "Harmony One Eight Five ",
+                "Mosquito One Five Bravo ",
+                "Masterjet Two Four Nine Lima ",
+                "Fraction Seven Nine One Golf ",
+                "Oscar Oscar Papa Charlie Juliett ",
+                "Royal Ghana Zero Four "
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
+        },
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
+    },
+    {
+        "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_052323.wav",
+        "full_ts": "India Juliett standby break break kafa tu peux sortir a bravo, un traffic est bientot pret au depart",
+        "short_ts": "IJ standby break break kafa tu peux sortir 0 B, un traffic est bientot pret au depart\n",
+        "lang": "fr",
+        "prompt-data": {
             "long_callsigns": [
+                "India Juliett"
+            ],
+            "short_callsigns": [
+                "ATCO Ground"
+            ],
+            "waypoints": [
+                "ALETO",
+                "AOSTA",
+                "BANKO",
+                "BERAR",
+                "BIBAN",
+                "CERVI",
+                "ESOKO",
+                "ETEKI",
+                "GARLO",
+                "GODRA",
+                "GOLEB",
+                "GRANA",
+                "INTIP",
+                "LAMUR",
+                "MASAB",
+                "MOBLO",
+                "MOLUS",
+                "MONIN",
+                "OMETO",
+                "ORSUD",
+                "PUNSA",
+                "REVLI",
+                "ROCCA",
+                "ROMOM",
+                "SANET",
+                "SONOD",
+                "SOSAL",
+                "TERSI",
+                "UBIMA",
+                "VADAR",
+                "VALOR",
+                "VENAT",
+                "VEROX"
+            ],
+            "nearby_short_callsigns": [
+                "DLH23T",
+                "HBDGV",
+                "LGL92M",
+                "MYGJL",
+                "RYR8YT",
+                "VPCFK"
+            ],
+            "nearby_long_callsigns": [
                 "Hansa Two Three Tango ",
                 "Hotel Bravo Delta Golf Victor ",
                 "Luxair Nine Two Mike ",
                 "Mike Yankee Golf Juliett Lima ",
                 "Ryan Eight Yankee Tango ",
                 "Victor Papa Charlie Foxtrot Kilo "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "India, Juliett, ROMOM, AOSTA, ORSUD, Ryan Eight Yankee Tango , Hansa Two Three Tango , Mike Yankee Golf Juliett Lima "
+        "prompt_fullts_1G_4B": "India Juliett, India Juliett",
+        "prompt_fullts_5B": "India Juliett"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_052105.wav",
@@ -773,14 +805,13 @@
         "short_ts": "TLM rouler 1000.110 D piste deux cinq QNH mille vingt trois\nmille vingt trois D deux cinq LM\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Mike",
-                "Lima",
-                "Tango"
+            "long_callsigns": [
+                "Tango Lima Mike",
+                "Lima Mike"
             ],
-            "speaker_labels": [
-                "ATCO Ground",
-                "UNK-1"
+            "short_callsigns": [
+                "LM",
+                "ATCO Ground"
             ],
             "waypoints": [
                 "ALETO",
@@ -817,7 +848,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH23T",
                 "HBDGV",
                 "LGL92M",
@@ -825,16 +856,21 @@
                 "RYR8YT",
                 "VPCFK"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Hansa Two Three Tango ",
                 "Hotel Bravo Delta Golf Victor ",
                 "Luxair Nine Two Mike ",
                 "Mike Yankee Golf Juliett Lima ",
                 "Ryan Eight Yankee Tango ",
                 "Victor Papa Charlie Foxtrot Kilo "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Mike, Lima, Tango, BIBAN, GODRA, UBIMA, Luxair Nine Two Mike , Ryan Eight Yankee Tango , Mike Yankee Golf Juliett Lima "
+        "prompt_fullts_1G_4B": "Tango Lima Mike, Lima Mike, Tango Lima Mike, Lima Mike",
+        "prompt_fullts_5B": "Lima Mike, Tango Lima Mike"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_061605.wav",
@@ -842,12 +878,12 @@
         "short_ts": "airport dix huit\nC on aimerait entrer en piste pour continuer 11 poncage 10 lampes\nairport dix huit rentrer en piste, rester a l ecoute\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Charlie"
             ],
-            "speaker_labels": [
-                "ATCO Ground",
-                "UNK-1"
+            "short_callsigns": [
+                "C",
+                "ATCO Ground"
             ],
             "waypoints": [
                 "ALETO",
@@ -884,7 +920,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABR738",
                 "AFR21GB",
                 "AFR74CJ",
@@ -898,7 +934,7 @@
                 "MREEE",
                 "NJE028C"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Contract Seven Three Eight ",
                 "Air France Two One Golf Bravo ",
                 "Air France Seven Four Charlie Juliett ",
@@ -911,9 +947,14 @@
                 "Lima Alpha Sierra Seven ",
                 "Med Rescue Echo Echo ",
                 "Fraction Zero Two Eight Charlie "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Charlie, PUNSA, CERVI, UBIMA, Air France Two One Golf Bravo , Air France Seven Four Charlie Juliett , Lufthansa Two Three Tango "
+        "prompt_fullts_1G_4B": "Charlie, Charlie",
+        "prompt_fullts_5B": "Charlie"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_150003.wav",
@@ -921,16 +962,10 @@
         "short_ts": "6 Mille Trois Cent Huitante et Un bonjour\nbonjour demande une route clearante 010 unk\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Huitante",
-                "et",
-                "Cent",
-                "Un",
-                "Trois",
-                "Six",
-                "Mille"
+            "long_callsigns": [
+                "Six Mille Trois Cent Huitante et Un"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "6381",
                 "ATCO Ground"
             ],
@@ -969,7 +1004,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH03A",
                 "FCK511",
                 "FDX5279",
@@ -981,7 +1016,7 @@
                 "VCG2EG",
                 "VLG28YQ"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Zero Three Alpha ",
                 "Nav Checker Five One One ",
                 "Fedex Five Two Seven Nine ",
@@ -992,9 +1027,14 @@
                 "Scan Four Three Six Lima ",
                 "Victor Charlie Golf Two Echo Golf ",
                 "Vueling Two Eight Yankee Quebec "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Huitante, et, Cent, Un, Trois, Six, Mille, REVLI, VEROX, SOSAL, Luxor Golf Two Two Sierra , Nav Checker Five One One , Hotel Bravo Delta Golf Victor "
+        "prompt_fullts_1G_4B": "Six Mille Trois Cent Huitante et Un, Six Mille Trois Cent Huitante et Un",
+        "prompt_fullts_5B": "Six Mille Trois Cent Huitante et Un"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210502_073630.wav",
@@ -1002,14 +1042,12 @@
         "short_ts": "Mosquito Quinze B votre clearance est prete\nallez y monsieur\nMosquito Quinze B apres 11 depart rester 7 espace E 619 en rejoignant 11 lac contacter Geneve D 1000 cent dix neuf. 900 cinquante 19 code transpondeur cinq 100 quatre quatre\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Bravo",
-                "Quinze",
-                "Mosquito"
+            "long_callsigns": [
+                "Mosquito Quinze Bravo"
             ],
-            "speaker_labels": [
-                "JFA15B",
-                "ATCO Ground"
+            "short_callsigns": [
+                "ATCO Ground",
+                "JFA15B"
             ],
             "waypoints": [
                 "ALETO",
@@ -1046,7 +1084,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ANE80QY",
                 "AZA156",
                 "DLH74U",
@@ -1054,16 +1092,21 @@
                 "LXG22H",
                 "VLG9437"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air Nostrum Eight Zero Quebec Yankee ",
                 "Alitalia One Five Six ",
                 "Lufthansa Seven Four Uniform ",
                 "Mosquito One Five Bravo ",
                 "Luxor Golf Two Two Hotel ",
                 "Vueling Nine Four Three Seven "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Bravo, Quinze, Mosquito, SOSAL, BANKO, ROCCA, Air Nostrum Eight Zero Quebec Yankee , Lufthansa Seven Four Uniform , Vueling Nine Four Three Seven "
+        "prompt_fullts_1G_4B": "Mosquito Quinze Bravo, Mosquito Quinze Bravo",
+        "prompt_fullts_5B": "Mosquito Quinze Bravo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_124618.wav",
@@ -1071,8 +1114,8 @@
         "short_ts": "Airport Dix Huit, je vous donne 100 huit minutes apres il faudrait juste ressortir\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO Ground"
             ],
             "waypoints": [
@@ -1110,7 +1153,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR88VM",
                 "FCK511",
                 "HBDGV",
@@ -1123,7 +1166,7 @@
                 "SWR258E",
                 "VCG2EG"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France Eight Eight Victor Mike ",
                 "Nav Checker Five One One ",
                 "Hotel Bravo Delta Golf Victor ",
@@ -1135,9 +1178,14 @@
                 "Spring Air Three Eight One ",
                 "Swiss Two Five Eight Echo ",
                 "Victor Charlie Golf Two Echo Golf "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", GOLEB, VALOR, ALETO, Spring Air Three Eight One , Swiss Two Five Eight Echo , Hotel Bravo Zulu Whiskey Papa "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_142821.wav",
@@ -1145,13 +1193,12 @@
         "short_ts": "KB a l hopital pour 0 deux cinq\nKB autoriser, deux cent cinquant degres, 6 noeud pour 0 piste deux cinq\npour 0 deux cinq, KB\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Kilo",
-                "Bravo"
+            "long_callsigns": [
+                "Kilo Bravo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground",
-                "UNK-1"
+                "KB"
             ],
             "waypoints": [
                 "ALETO",
@@ -1188,7 +1235,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FCK511",
                 "FPADU",
@@ -1209,7 +1256,7 @@
                 "OOPCJ",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Two Six Echo ",
                 "Nav Checker Five One One ",
                 "Foxtrot Papa Alpha Delta Uniform ",
@@ -1229,9 +1276,14 @@
                 "Fraction Seven Nine One Golf ",
                 "Oscar Oscar Papa Charlie Juliett ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Kilo, Bravo, LAMUR, VADAR, VALOR, Hotel Bravo Zulu Alpha Papa , Mosquito One Nine X-ray , Masterjet Two Four Nine Lima "
+        "prompt_fullts_1G_4B": "Kilo Bravo, Kilo Bravo",
+        "prompt_fullts_5B": "Kilo Bravo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210421_142107.wav",
@@ -1239,8 +1291,8 @@
         "short_ts": "tour de Sion salut Heli EF\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO Ground"
             ],
             "waypoints": [
@@ -1278,7 +1330,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "EWG68C",
                 "FDX5279",
                 "HBKCJ",
@@ -1287,7 +1339,7 @@
                 "N14EF",
                 "RYR8KM"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Eurowings Six Eight Charlie ",
                 "Fedex Five Two Seven Nine ",
                 "Hotel Bravo Kilo Charlie Juliett ",
@@ -1295,9 +1347,14 @@
                 "Mike Yankee Golf Juliett Lima ",
                 "November One Four Echo Foxtrot ",
                 "Ryanair Eight Kilo Mike "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", GRANA, PUNSA, GARLO, Fedex Five Two Seven Nine , November One Four Echo Foxtrot , Eurowings Six Eight Charlie "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Tower_118_3MHz_20210420_141742.wav",
@@ -1305,8 +1362,8 @@
         "short_ts": "HG X ray vacate right and taxi to approved\nbonne fin de journ\u00e9e\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
+            "long_callsigns": [],
+            "short_callsigns": [
                 "ATCO tower"
             ],
             "waypoints": [
@@ -1344,7 +1401,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DCWPS",
                 "DLH26E",
                 "FDX5279",
@@ -1358,7 +1415,7 @@
                 "NJE242K",
                 "ZSGUA"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Delta Charlie Whiskey Papa Sierra ",
                 "Hansa Two Six Echo ",
                 "Fedex Five Two Seven Nine ",
@@ -1371,9 +1428,14 @@
                 "Lanex Charlie Foxtrot ",
                 "Fraction Two Four Two Kilo ",
                 "Zulu Sierra Golf Uniform Alpha "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", SONOD, GRANA, ORSUD, Hotel Bravo Two Five Three Four , Delta Charlie Whiskey Papa Sierra , Hansa Two Six Echo "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_173638.wav",
@@ -1381,16 +1443,14 @@
         "short_ts": "la tour rebonjour CSDOG etablie deux cinq\nCSDOG rebonjour monsieur, rappeler dix nautique final pour 0 piste deux cinq\ndix nautique final CGOG\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Charlie",
-                "Golf",
-                "Delta",
-                "Sierra",
-                "Oscar"
+            "long_callsigns": [
+                "Charlie Golf Oscar Golf",
+                "Charlie Sierra Delta Oscar Golf"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground",
-                "UNK-1"
+                "CSDOG",
+                "CGOG"
             ],
             "waypoints": [
                 "ALETO",
@@ -1427,7 +1487,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FBU700",
                 "HBKLE",
@@ -1438,7 +1498,7 @@
                 "NJE791G",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Hansa Two Six Echo ",
                 "French Bee Seven Zero Zero ",
                 "Hotel Bravo Kilo Lima Echo ",
@@ -1448,9 +1508,14 @@
                 "Harmony One Eight Five ",
                 "Fraction Seven Nine One Golf ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Charlie, Golf, Delta, Sierra, Oscar, ALETO, BERAR, BIBAN, Hotel Bravo Zulu Whiskey Papa , Fraction Seven Nine One Golf , Royal Ghana Zero Four "
+        "prompt_fullts_1G_4B": "Charlie Golf Oscar Golf, Charlie Sierra Delta Oscar Golf, Charlie Sierra Delta Oscar Golf, Charlie Golf Oscar Golf",
+        "prompt_fullts_5B": "Charlie Golf Oscar Golf, Charlie Sierra Delta Oscar Golf"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210502_094601.wav",
@@ -1458,10 +1523,10 @@
         "short_ts": "Helicopter DR joining 1 French Saint Prex dans 11 espace E sous les tma 9 Geneve et le...\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Helicopter Delta Romeo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground"
             ],
             "waypoints": [
@@ -1499,7 +1564,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ANE80QY",
                 "AZA156",
                 "HBZAP",
@@ -1508,7 +1573,7 @@
                 "N25HJ",
                 "VLG9437"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air Nostrum Eight Zero Quebec Yankee ",
                 "Alitalia One Five Six ",
                 "Hotel Bravo Zulu Alpha Papa ",
@@ -1516,9 +1581,14 @@
                 "Luxor Golf Two Two Hotel ",
                 "November Two Five Hotel Juliett ",
                 "Vueling Nine Four Three Seven "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Helicopter Delta Romeo, AOSTA, OMETO, UBIMA, November Two Five Hotel Juliett , Air Nostrum Eight Zero Quebec Yankee , Vueling Nine Four Three Seven "
+        "prompt_fullts_1G_4B": "Helicopter Delta Romeo, Helicopter Delta Romeo",
+        "prompt_fullts_5B": "Helicopter Delta Romeo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210505_124845.wav",
@@ -1526,13 +1596,12 @@
         "short_ts": "may leave frequency a toute\na toute a l heure HY\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Hotel",
-                "Yankee"
+            "long_callsigns": [
+                "Hotel Yankee"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground",
-                "UNK-1"
+                "HY"
             ],
             "waypoints": [
                 "ALETO",
@@ -1569,7 +1638,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABP951",
                 "AFR45HR",
                 "AZA206",
@@ -1581,7 +1650,7 @@
                 "VLG1502",
                 "VLZ133A"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Bair Nine Five One ",
                 "Air France Four Five Hotel Romeo ",
                 "Alitalia Two Zero Six ",
@@ -1592,9 +1661,14 @@
                 "Vista Malta Four Six Seven ",
                 "Vueling One Five Zero Two ",
                 "Victor Lima Zulu One Three Three Alpha "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Hotel, Yankee, ORSUD, AOSTA, REVLI, Vista Malta Four Six Seven , Swiss Air Force Five Two Eight , Victor Lima Zulu One Three Three Alpha "
+        "prompt_fullts_1G_4B": "Hotel Yankee, Hotel Yankee",
+        "prompt_fullts_5B": "Hotel Yankee"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Tower_118_3MHz_20210422_143458.wav",
@@ -1602,10 +1676,8 @@
         "short_ts": "je poursuis en direction de l est et j attends\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [],
-            "speaker_labels": [
-                "UNK-1"
-            ],
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1641,7 +1713,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "HB2314",
                 "HBDGV",
@@ -1653,7 +1725,7 @@
                 "RGA04",
                 "TRA30R"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Two Six Echo ",
                 "Hotel Bravo Two Three One Four ",
                 "Hotel Bravo Delta Golf Victor ",
@@ -1664,9 +1736,14 @@
                 "Mosquito One Eight Uniform ",
                 "Royal Ghana Zero Four ",
                 "Avia Three Zero Romeo "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": ", ORSUD, ALETO, OMETO, Icarfly Bravo Charlie , Hotel Bravo Zulu Alpha Papa , Mosquito One Eight Uniform "
+        "prompt_fullts_1G_4B": ", ",
+        "prompt_fullts_5B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_174041.wav",
@@ -1674,14 +1751,12 @@
         "short_ts": "COG rappeler cinq nautique final\ncinq nautique final COG\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Charlie",
-                "Oscar",
-                "Golf"
+            "long_callsigns": [
+                "Charlie Oscar Golf"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground",
-                "UNK-1"
+                "COG"
             ],
             "waypoints": [
                 "ALETO",
@@ -1718,7 +1793,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FBU700",
                 "HBKLE",
@@ -1729,7 +1804,7 @@
                 "NJE791G",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Hansa Two Six Echo ",
                 "French Bee Seven Zero Zero ",
                 "Hotel Bravo Kilo Lima Echo ",
@@ -1739,9 +1814,14 @@
                 "Harmony One Eight Five ",
                 "Fraction Seven Nine One Golf ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Charlie, Oscar, Golf, TERSI, UBIMA, ESOKO, Fraction Seven Nine One Golf , Hotel Bravo Kilo Lima Echo , Royal Ghana Zero Four "
+        "prompt_fullts_1G_4B": "Charlie Oscar Golf, Charlie Oscar Golf",
+        "prompt_fullts_5B": "Charlie Oscar Golf"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_142434.wav",
@@ -1749,16 +1829,11 @@
         "short_ts": "faut monter LMJ249L\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Lima",
-                "Two",
-                "Four",
-                "Nine",
-                "Mike",
-                "Juliett"
+            "long_callsigns": [
+                "Lima Mike Juliett Two Four Nine Lima"
             ],
-            "speaker_labels": [
-                "UNK-1"
+            "short_callsigns": [
+                "LMJ249L"
             ],
             "waypoints": [
                 "ALETO",
@@ -1795,7 +1870,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FCK511",
                 "FPADU",
@@ -1816,7 +1891,7 @@
                 "OOPCJ",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Hansa Two Six Echo ",
                 "Nav Checker Five One One ",
                 "Foxtrot Papa Alpha Delta Uniform ",
@@ -1836,9 +1911,14 @@
                 "Fraction Seven Nine One Golf ",
                 "Oscar Oscar Papa Charlie Juliett ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Lima, Two, Four, Nine, Mike, Juliett, MONIN, VENAT, SONOD, Nav Checker Five One One , Hotel Bravo Zulu Victor Papa , Mosquito One Nine X-ray "
+        "prompt_fullts_1G_4B": "Lima Mike Juliett Two Four Nine Lima, Lima Mike Juliett Two Four Nine Lima",
+        "prompt_fullts_5B": "Lima Mike Juliett Two Four Nine Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_070458.wav",
@@ -1846,12 +1926,10 @@
         "short_ts": "MJL contact Swiss radar 1124.225 bye bye\npareil merci\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Mike",
-                "Lima",
-                "Juliett"
+            "long_callsigns": [
+                "Mike Juliett Lima"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground"
             ],
             "waypoints": [
@@ -1889,7 +1967,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "AFR74CJ",
                 "DLH23T",
                 "HBDGV",
@@ -1899,7 +1977,7 @@
                 "LXG22H",
                 "MYGJL"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Air France Seven Four Charlie Juliett ",
                 "Hansa Two Three Tango ",
                 "Hotel Bravo Delta Golf Victor ",
@@ -1908,9 +1986,14 @@
                 "Luxair Nine Two Mike ",
                 "Luxor Golf Two Two Hotel ",
                 "Mike Yankee Golf Juliett Lima "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Mike, Lima, Juliett, GRANA, BANKO, GOLEB, Hotel Bravo Zulu Whiskey Papa , Luxor Golf Two Two Hotel , Hansa Two Three Tango "
+        "prompt_fullts_1G_4B": "Mike Juliett Lima, Mike Juliett Lima",
+        "prompt_fullts_5B": "Mike Juliett Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_141045.wav",
@@ -1918,14 +2001,13 @@
         "short_ts": "OKB salut\nsalut KB vole a voile pour rouler a la C pour le tour d office\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Kilo",
-                "Oscar",
-                "Bravo"
+            "long_callsigns": [
+                "Kilo Bravo",
+                "Oscar Kilo Bravo"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground",
-                "UNK-1"
+                "KB"
             ],
             "waypoints": [
                 "ALETO",
@@ -1962,7 +2044,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FCK511",
                 "FPADU",
@@ -1983,7 +2065,7 @@
                 "OOPCJ",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Two Six Echo ",
                 "Nav Checker Five One One ",
                 "Foxtrot Papa Alpha Delta Uniform ",
@@ -2003,9 +2085,14 @@
                 "Fraction Seven Nine One Golf ",
                 "Oscar Oscar Papa Charlie Juliett ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Kilo, Oscar, Bravo, BERAR, INTIP, CERVI, Mosquito One Nine X-ray , Hotel Bravo Two Zero Eight Seven , Lufthansa Two Six Echo "
+        "prompt_fullts_1G_4B": "Kilo Bravo, Oscar Kilo Bravo, Kilo Bravo, Oscar Kilo Bravo",
+        "prompt_fullts_5B": "Kilo Bravo, Oscar Kilo Bravo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_173524.wav",
@@ -2013,11 +2100,11 @@
         "short_ts": "tour de Sion bonsoir Vevey HBE X ray\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
+            "long_callsigns": [
                 "Hotel Bravo Echo X-ray"
             ],
-            "speaker_labels": [
-                ""
+            "short_callsigns": [
+                "HBE X ray"
             ],
             "waypoints": [
                 "ALETO",
@@ -2054,7 +2141,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FBU700",
                 "HBKLE",
@@ -2065,7 +2152,7 @@
                 "NJE791G",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Hansa Two Six Echo ",
                 "French Bee Seven Zero Zero ",
                 "Hotel Bravo Kilo Lima Echo ",
@@ -2075,9 +2162,14 @@
                 "Harmony One Eight Five ",
                 "Fraction Seven Nine One Golf ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Hotel Bravo Echo X-ray, REVLI, VALOR, SOSAL, Hotel Bravo Zulu Whiskey Papa , Hansa Two Six Echo , Fraction Seven Nine One Golf "
+        "prompt_fullts_1G_4B": "Hotel Bravo Echo X-ray, Hotel Bravo Echo X-ray",
+        "prompt_fullts_5B": "Hotel Bravo Echo X-ray"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210502_133303.wav",
@@ -2085,13 +2177,11 @@
         "short_ts": "KAW bonjour\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Kilo",
-                "Alpha",
-                "Whiskey"
+            "long_callsigns": [
+                "Kilo Alpha Whiskey"
             ],
-            "speaker_labels": [
-                "UNK-1"
+            "short_callsigns": [
+                "KAW"
             ],
             "waypoints": [
                 "ALETO",
@@ -2128,7 +2218,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "ABW560",
                 "DLH09M",
                 "DLH56E",
@@ -2139,7 +2229,7 @@
                 "OKPHM",
                 "RYR491Y"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Airbridge Cargo Five Six Zero ",
                 "Hansa Zero Nine Mike ",
                 "Hansa Five Six Echo ",
@@ -2149,9 +2239,14 @@
                 "Oscar Hotel Romeo Bravo X-ray ",
                 "Okapi Hotel Mike ",
                 "Ryan Four Nine One Yankee "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Kilo, Alpha, Whiskey, ORSUD, MASAB, GARLO, Hansa Zero Nine Mike , Hansa Nine Three Tango , Luxor Golf Two Two Hotel "
+        "prompt_fullts_1G_4B": "Kilo Alpha Whiskey, Kilo Alpha Whiskey",
+        "prompt_fullts_5B": "Kilo Alpha Whiskey"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_145756.wav",
@@ -2159,15 +2254,12 @@
         "short_ts": "yes but if you agree we could flight downwind runway 25 JFA15B\nokay merci beaucoup\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "One",
-                "Bravo",
-                "Mosquito",
-                "Five"
+            "long_callsigns": [
+                "Mosquito One Five Bravo"
             ],
-            "speaker_labels": [
-                "JFA15B",
-                "ATCO Ground"
+            "short_callsigns": [
+                "ATCO Ground",
+                "JFA15B"
             ],
             "waypoints": [
                 "ALETO",
@@ -2204,7 +2296,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FCK511",
                 "FPADU",
@@ -2224,7 +2316,7 @@
                 "OOPCJ",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Hansa Two Six Echo ",
                 "Nav Checker Five One One ",
                 "Foxtrot Papa Alpha Delta Uniform ",
@@ -2243,9 +2335,14 @@
                 "Fraction Seven Nine One Golf ",
                 "Oscar Oscar Papa Charlie Juliett ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "One, Bravo, Mosquito, Five, VALOR, SANET, MOBLO, Nav Checker Five One One , Royal Ghana Zero Four , Hotel Bravo Kilo Oscar Juliett "
+        "prompt_fullts_1G_4B": "Mosquito One Five Bravo, Mosquito One Five Bravo",
+        "prompt_fullts_5B": "Mosquito One Five Bravo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_174000.wav",
@@ -2253,11 +2350,10 @@
         "short_ts": "Proxima D merci rappeler W pour 0 deux cinq QNH mille dix 00\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Delta",
-                "Proxima"
+            "long_callsigns": [
+                "Proxima Delta"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground"
             ],
             "waypoints": [
@@ -2295,7 +2391,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FBU700",
                 "HBKLE",
@@ -2306,7 +2402,7 @@
                 "NJE791G",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Hansa Two Six Echo ",
                 "French Bee Seven Zero Zero ",
                 "Hotel Bravo Kilo Lima Echo ",
@@ -2316,9 +2412,14 @@
                 "Harmony One Eight Five ",
                 "Fraction Seven Nine One Golf ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Delta, Proxima, BERAR, ESOKO, PUNSA, Fraction Seven Nine One Golf , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Lima Echo "
+        "prompt_fullts_1G_4B": "Proxima Delta, Proxima Delta",
+        "prompt_fullts_5B": "Proxima Delta"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_142438.wav",
@@ -2326,17 +2427,12 @@
         "short_ts": "LMJ249L bonjour\nbonjour 10 quais vingt 100 vingt\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Lima",
-                "Two",
-                "Four",
-                "Nine",
-                "Mike",
-                "Juliett"
+            "long_callsigns": [
+                "Lima Mike Juliett Two Four Nine Lima"
             ],
-            "speaker_labels": [
-                "LMJ249L",
-                "ATCO Ground"
+            "short_callsigns": [
+                "ATCO Ground",
+                "LMJ249L"
             ],
             "waypoints": [
                 "ALETO",
@@ -2373,7 +2469,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FCK511",
                 "FPADU",
@@ -2394,7 +2490,7 @@
                 "OOPCJ",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Two Six Echo ",
                 "Nav Checker Five One One ",
                 "Foxtrot Papa Alpha Delta Uniform ",
@@ -2414,9 +2510,14 @@
                 "Fraction Seven Nine One Golf ",
                 "Oscar Oscar Papa Charlie Juliett ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Lima, Two, Four, Nine, Mike, Juliett, GRANA, ROMOM, MASAB, Nav Checker Five One One , Hotel Bravo Two Four One Four , Royal Ghana Zero Four "
+        "prompt_fullts_1G_4B": "Lima Mike Juliett Two Four Nine Lima, Lima Mike Juliett Two Four Nine Lima",
+        "prompt_fullts_5B": "Lima Mike Juliett Two Four Nine Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_164918.wav",
@@ -2424,14 +2525,11 @@
         "short_ts": "bonsoir j appelle Oskar BEEW\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Oskar",
-                "Echo",
-                "Whiskey",
-                "Bravo"
+            "long_callsigns": [
+                "Oskar Bravo Echo Echo Whiskey"
             ],
-            "speaker_labels": [
-                "UNK-1"
+            "short_callsigns": [
+                "Oskar BEEW"
             ],
             "waypoints": [
                 "ALETO",
@@ -2468,7 +2566,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FPADU",
                 "HBKLE",
@@ -2481,7 +2579,7 @@
                 "OOPCJ",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Hansa Two Six Echo ",
                 "Foxtrot Papa Alpha Delta Uniform ",
                 "Hotel Bravo Kilo Lima Echo ",
@@ -2493,9 +2591,14 @@
                 "Fraction Seven Nine One Golf ",
                 "Oscar Oscar Papa Charlie Juliett ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Oskar, Echo, Whiskey, Bravo, VENAT, UBIMA, GOLEB, Harmony One Eight Five , Mosquito One Five Bravo , Royal Ghana Zero Four "
+        "prompt_fullts_1G_4B": "Oskar Bravo Echo Echo Whiskey, Oskar Bravo Echo Echo Whiskey",
+        "prompt_fullts_5B": "Oskar Bravo Echo Echo Whiskey"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_162800.wav",
@@ -2503,12 +2606,10 @@
         "short_ts": "Helicopter CP vous pouvez quittez la frequence bon vol salut\n",
         "lang": "fr",
         "prompt-data": {
-            "callsigns": [
-                "Papa",
-                "Charlie",
-                "Helicopter"
+            "long_callsigns": [
+                "Helicopter Charlie Papa"
             ],
-            "speaker_labels": [
+            "short_callsigns": [
                 "ATCO Ground"
             ],
             "waypoints": [
@@ -2546,7 +2647,7 @@
                 "VENAT",
                 "VEROX"
             ],
-            "short_callsigns": [
+            "nearby_short_callsigns": [
                 "DLH26E",
                 "FPADU",
                 "HBDGV",
@@ -2562,7 +2663,7 @@
                 "OOPCJ",
                 "RGA04"
             ],
-            "long_callsigns": [
+            "nearby_long_callsigns": [
                 "Lufthansa Two Six Echo ",
                 "Foxtrot Papa Alpha Delta Uniform ",
                 "Hotel Bravo Delta Golf Victor ",
@@ -2577,8 +2678,13 @@
                 "Fraction Seven Nine One Golf ",
                 "Oscar Oscar Papa Charlie Juliett ",
                 "Royal Ghana Zero Four "
-            ]
+            ],
+            "short_runway": [],
+            "long_runway": [],
+            "short_taxiway": [],
+            "long_taxiway": []
         },
-        "prompt_fullts": "Papa, Charlie, Helicopter, INTIP, ROMOM, ETEKI, Harmony One Eight Five , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Zulu Victor Papa "
+        "prompt_fullts_1G_4B": "Helicopter Charlie Papa, Helicopter Charlie Papa",
+        "prompt_fullts_5B": "Helicopter Charlie Papa"
     }
 ]
