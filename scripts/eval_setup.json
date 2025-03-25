@@ -1,0 +1,12 @@
+{
+	"metric": "wer",
+	"datasets": ["atco"],
+	"datasets_basedir": ".",
+	"model": "medium",
+	"output_dir": ".",
+	"overwrite": true,
+	"separate_ds": true,
+	"use_prompt": true,
+	"transcription_name_in_ds": "full_ts",
+	"prompt_name_in_ds": "prompt_fullts_1G_4B"
+}

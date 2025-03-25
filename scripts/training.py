@@ -49,9 +49,9 @@ class PrepareDatasetAsInput:
         batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
 
         # encode prompts to prompt ids - we assume that the dataset has a column `"prompt"` that contains the prompt for each example
-        prompt_ids = []
+        prompt_fullts_ids = []
         if 'prompt_fullts' in batch:
-            prompt_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_fullts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+            prompt_fullts_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_fullts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
         if 'prompt_shortts' in batch:
             prompt_shortts_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_shortts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
 
@@ -62,10 +62,8 @@ class PrepareDatasetAsInput:
             if batch["lang"] == "fr":
                 tokenizer = self.tokenizer_fr
 
-        token_ids = tokenizer(batch["full_ts"]).input_ids
-
-        batch["labels_fullts"] = prompt_ids + token_ids # building labels ids with prompt and tokens together
-        batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
+        batch["labels_fullts"] = prompt_fullts_ids + tokenizer(batch["full_ts"]).input_ids # building labels ids with prompt and tokens together
+        batch["labels_shortts"] = prompt_shortts_ids + tokenizer(batch["short_ts"]).input_ids
 
         return batch
     
@@ -176,7 +174,8 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         # shift labels to the right to get decoder input ids
         labels = labels_batch["input_ids"]
-
+        
+        # get the decoder input ids, by removing the last token (this is the 'shift' operation)
         decoder_input_ids = labels[:, :-1]
         
         # shift the labels to the left, to match work as prediction
@@ -249,19 +248,41 @@ def build_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :str, s
         ds = None
         match ds_name:
             case 'apimod':
-                ds = load_from_disk(os.path.join(path_to_ds,"apimod/apimod_train_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"apimod/apimod_train_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"apimod/apimod_train_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"apimod_train_ds"))
             case 'atco_en':
-                ds = load_from_disk(os.path.join(path_to_ds,"atco/en_train_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"atco/en_train_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/en_train_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"en_train_ds"))
             case 'atco_fr':
-                ds = load_from_disk(os.path.join(path_to_ds,"atco/fr_train_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"atco/fr_train_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/fr_train_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"fr_train_ds"))
             case 'hwir':
-                ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_train_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"hiwire/hwir_train_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_train_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"hwir_train_ds"))
             case 'malorca':
-                ds = load_from_disk(os.path.join(path_to_ds,"malorca/malorca_train_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"malorca/malorca_train_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"malorca/malorca_train_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"malorca_train_ds"))
             case 'nato':
-                ds = load_from_disk(os.path.join(path_to_ds,"nato/nato_train_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"nato/nato_train_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"nato/nato_train_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"nato_train_ds"))
             case 'uwb':
-                ds = load_from_disk(os.path.join(path_to_ds,"uwb/uwb_train_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"uwb/uwb_train_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"uwb/uwb_train_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"uwb_train_ds"))
+                    
         if (ds is not None):
             allds_train.append(ds)
 
@@ -332,28 +353,6 @@ if __name__ == "__main__":
         **setup['training_args']
     )
     
-    # training_args = Seq2SeqTrainingArguments(
-    #     output_dir="./drive/Shareddrives/DP/models/train-prototype",
-    #     per_device_train_batch_size=4,
-    #     gradient_accumulation_steps=4,
-    #     learning_rate=1e-5,
-    #     warmup_ratio=0.12,
-    #     gradient_checkpointing=True,
-    #     fp16=True,
-    #     # eval_strategy="epoch", # changed from evaluation_strategy (because of warning)
-    #     save_strategy="epoch",
-    #     num_train_epochs=2,
-    #     per_device_eval_batch_size=8,
-    #     predict_with_generate=True,
-    #     generation_max_length=448, # 448 MAX LENGTH AVAILABLE, DO NOT CHANGE !!!
-    #     logging_steps=30,
-    #     report_to=["tensorboard"],
-    #     # load_best_model_at_end=True,
-    #     metric_for_best_model="wer",
-    #     greater_is_better=False,
-    #     push_to_hub=False, # change to True to push the model to the Hub (need to be logged in)
-    # )
-
     trainer = Seq2SeqTrainer(
         args=training_args,
         model=model,
@@ -364,9 +363,9 @@ if __name__ == "__main__":
         processing_class=processor
     )
 
+    trainer.evaluate(eval_dataset=train_ds)
+    
     if training_setup.continue_from_checkpoint:
         trainer.train(resume_from_checkpoint=training_setup.model_path)
     else:
         trainer.train()
-
-    # trainer.evaluate()

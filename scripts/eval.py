@@ -1,5 +1,4 @@
-from multiprocessing import process
-import re
+import json
 import torch
 from torch.utils.data import DataLoader
 from jiwer import wer, cer
@@ -19,7 +18,13 @@ class PrepareDatasetAsInput:
         self.feature_extractor = feature_extractor
         self.tokenizer_en = tokenizer_en
         self.tokenizer_fr = tokenizer_fr
-            
+    
+    def set_transcription_name(self, transcription_name):
+        self.transcription_name = transcription_name
+    
+    def set_prompt_name(self, prompt_name):
+        self.prompt_name = prompt_name
+               
     def prepare_dataset(self, batch):
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
@@ -39,6 +44,46 @@ class PrepareDatasetAsInput:
 
         return batch
 
+    def prepare_dataset2(self, batch):
+        # load and resample audio data from 48 to 16kHz
+        audio = batch["audio"]
+
+        # compute log-Mel input features from input audio array
+        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+
+        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
+        # if french, than use french tokenizer, english otherwise
+        tokenizer = self.tokenizer_en
+        if "lang" in batch:
+            if batch["lang"] == "fr":
+                tokenizer = self.tokenizer_fr
+
+        batch['labels'] = tokenizer(batch[self.transcription_name]).input_ids
+
+        return batch
+    
+    def prepare_dataset_with_prompt2(self,batch):
+        # load and resample audio data from 48 to 16kHz
+        audio = batch["audio"]
+
+        # compute log-Mel input features from input audio array
+        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+
+        
+        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
+        # if french, than use french tokenizer, english otherwise
+        tokenizer = self.tokenizer_en
+        if "lang" in batch:
+            if batch["lang"] == "fr":
+                tokenizer = self.tokenizer_fr
+        
+        # encode prompts to prompt ids - we assume that the dataset has a column `"prompt"` that contains the prompt for each example
+        prompt_ids = tokenizer.get_prompt_ids(batch[self.prompt_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+
+        batch["labels"] = prompt_ids + tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
+
+        return batch
+    
     def prepare_dataset_with_prompt(self,batch):
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
@@ -62,7 +107,7 @@ class PrepareDatasetAsInput:
 
         token_ids = tokenizer(batch["full_ts"]).input_ids
 
-        batch["labels_fullts"] = token_ids # building labels ids with prompt and tokens together
+        batch["labels_fullts"] = prompt_ids + token_ids # building labels ids with prompt and tokens together
         batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
 
         return batch
@@ -137,7 +182,20 @@ class DataCollatorSpeechSeq2SeqWithPadding:
         
         return batch
 
-def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False, ts='fullts') -> list[Dataset]|Dataset:  
+@dataclass
+class EvaluationSetup:
+    metric : str
+    datasets : str
+    datasets_basedir : str
+    model : str
+    output_dir : str
+    prompt_name_in_ds : str
+    transcription_name_in_ds : str
+    overwrite : bool = False
+    separate_ds : bool = False
+    use_prompt : bool = True
+
+def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False) -> list[Dataset]|Dataset:  
     allds_test = []
     # find all datasets to be tested
     for ds_name in ds_list:
@@ -171,7 +229,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
     # prepare the datasets to be ready for model
     for idx,ds in enumerate(allds_test):
         allds_test[idx] = ds.map(prepare_dataset_fn, remove_columns=ds.column_names, num_proc=1)
-        allds_test[idx] = allds_test[idx].rename_column('labels_fullts' if ts == 'fullts' else 'labels_shortts','labels')
+        # allds_test[idx] = allds_test[idx].rename_column('labels_fullts' if transcription == 'fullts' else 'labels_shortts','labels')
     
     # return either concatenated datasets or list of datasets
     if (separate_ds):
@@ -186,7 +244,7 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         decoder_start_token_id=model.config.decoder_start_token_id
     )
     
-    if (isinstance(test_ds, Dataset)):
+    if (isinstance(test_ds, Dataset) and not use_prompt):
         # setup the dataloader
         dataloader = DataLoader(test_ds, batch_size=batch_size, collate_fn=data_collator)
         
@@ -196,6 +254,29 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         for batch in tqdm(dataloader):
             input_features = batch["input_features"].cuda()
             out = model.generate(input_features).detach().cpu()
+            all_preds.extend(processor.batch_decode(out, skip_special_tokens=True))
+            all_lables.extend(processor.batch_decode(batch["labels"]['input_ids'], skip_special_tokens=True))
+            # Free memory
+            del batch
+            torch.cuda.empty_cache()
+        
+        # compute the wer
+        wer=metric.compute_metrics_from_text(all_preds, all_lables)   
+        
+        return wer
+
+    elif (isinstance(test_ds, Dataset) and use_prompt):
+        # WHEN using PROMPT, so far we can test only one sample at a time with one prompt
+        # setup the dataloader
+        dataloader = DataLoader(test_ds, batch_size=1, collate_fn=data_collator)
+        
+        # Iterate over batches
+        all_preds = []
+        all_lables = []
+        for batch in tqdm(dataloader):
+            input_features = batch["input_features"].cuda()
+            prompt_ids = batch["prompt_ids"].cuda()
+            out = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
             all_preds.extend(processor.batch_decode(out, skip_special_tokens=True))
             all_lables.extend(processor.batch_decode(batch["labels"]['input_ids'], skip_special_tokens=True))
             # Free memory
@@ -220,59 +301,65 @@ def setup_model_processor(model_path) -> tuple[WhisperForConditionalGeneration, 
     
     return model, processor
 
-def main(args):
-    if (args.metric == 'wer'):
+def main(evaluation_setup : EvaluationSetup):
+    if (evaluation_setup.metric == 'wer'):
         # handle the output file
-        if (args.overwrite):
-            f= open(args.output, 'w')
+        if (evaluation_setup.overwrite):
+            f= open(evaluation_setup.output_dir, 'w')
         else: 
-            if os.path.exists(args.output):
+            if os.path.exists(evaluation_setup.output_dir):
                 print("Output file already exists. Use --overwrite to overwrite it.")
                 exit(1)
             else:
-                f= open(args.output, 'w')
+                f= open(evaluation_setup.output_dir, 'w')
         
         # run the evaluation
         # ===========================================
         
         # setup model and the processor
-        model, processor = setup_model_processor(args.model)
-        tokenizer_fr = WhisperTokenizer.from_pretrained(args.model, language="French") # just for the french tokenizer
+        model, processor = setup_model_processor(evaluation_setup.model)
+        tokenizer_fr = WhisperTokenizer.from_pretrained(evaluation_setup.model, language="French") # just for the french tokenizer
         prep_ds_cls = PrepareDatasetAsInput(processor.feature_extractor, processor.tokenizer, tokenizer_fr)
         
-        # split the datasets list (; separated) and build the dataset
-        ds_list = args.datasets.split(';')
+        # set up the prompt and transcription names in the given dataset, that will be used
+        prep_ds_cls.set_transcription_name(evaluation_setup.transcription_name_in_ds)
+        prep_ds_cls.set_prompt_name(evaluation_setup.prompt_name_in_ds)
+        
+        ds_list = evaluation_setup.datasets
         built_ds = build_dataset(
             ds_list, 
-            prep_ds_cls.prepare_dataset, 
-            args.ds_basedir, 
-            args.separate_ds, 
-            ts=('shortts' if args.use_shortts else 'fullts')
+            prep_ds_cls.prepare_dataset2 if not evaluation_setup.use_prompt else prep_ds_cls.prepare_dataset_with_prompt2, 
+            evaluation_setup.datasets_basedir, 
+            evaluation_setup.separate_ds, 
+            transcription=evaluation_setup.transcription_name_in_ds,
+            prompt=evaluation_setup.prompt_name_in_ds  
         )
         metric = ComputeMetrics(processor.tokenizer)
         # compute the wer
-        out=compute(built_ds, model, processor, metric, batch_size=3)
+        out=compute(built_ds, model, processor, metric, batch_size=1)
         # ===========================================
         
         print(out)
         # write the output
         f.write(str(out))
         f.close()
-    elif (args.metric == 'cer'):
+        
+    elif (evaluation_setup.metric == 'cer'):
         metric = cer
-
+    
 if __name__ == '__main__':
-    # do parse args
+    # parse args
     parser = argparse.ArgumentParser(description='Evaluate transcription accuracy in WER or CER.')
-    parser.add_argument('--metric', type=str, required=False, choices=['wer', 'cer'], help='Type of evaluation metric',default='wer')
-    parser.add_argument('--datasets', type=str, required=True, help='Path to the dataset file with both audio and transcription as are provided in finetuning dataset')
-    parser.add_argument('--ds_basedir', type=str, required=False, help='Path to the base dir of the dataset\'s folders', default='.')
-    parser.add_argument('--model', type=str, required=True, help='Path to the model file')
-    parser.add_argument('--output', type=str, required=True, help='Path to the output')
-    parser.add_argument('--overwrite', action='store_true', help='Overwrite the output file if it exists')
-    parser.add_argument('--separate_ds', action='store_true', help='Say where to build the datasets together or not')
-    parser.add_argument('--use_shortts', action='store_true', help='Whether to use shortts or fullts (default)')
-    args = parser.parse_args()
+    parser.add_argument('--setup', type=str, required=True, help='Type of evaluation metric')
+    evaluation_setup = parser.parse_args()
+    
+    # load the setup
+    with open(evaluation_setup.setup, 'r') as f:
+        setup = json.load(f)
+    evaluation_setup = EvaluationSetup(**setup)
+    
+    print('******** Evaluation setup ********')
+    print(evaluation_setup.__str__())
     
     # run the evaluation
-    main(args)
+    main(evaluation_setup)
