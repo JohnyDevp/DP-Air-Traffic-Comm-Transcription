@@ -94,7 +94,22 @@ class ComputeMetrics:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
         self.metric = evaluate.load("wer")
-        
+    
+    def compute_metrics_original(self,pred):
+        pred_ids = pred.predictions
+        label_ids = pred.label_ids
+
+        # replace -100 with the pad_token_id
+        label_ids[label_ids == -100] = self.tokenizer.pad_token_id
+
+        # we do not want to group tokens when computing the metrics
+        pred_str = self.tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
+        label_str = self.tokenizer.batch_decode(label_ids, skip_special_tokens=True)
+
+        wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
+
+        return {"wer": wer}
+    
     def compute_metrics(self,pred_text, reference_text):
         pred_ids = pred_text
         label_ids = reference_text
@@ -106,7 +121,7 @@ class ComputeMetrics:
         pred_str = self.tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
         label_str = self.tokenizer.batch_decode(label_ids, skip_special_tokens=True)
 
-        wer = 100 * metric.compute(predictions=pred_str, references=label_str)
+        wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
 
         return {"wer": wer}
     
@@ -316,7 +331,8 @@ if __name__ == "__main__":
     with open(args.setup, 'r') as f:
         setup = json.load(f)
     training_setup = TrainingSetup(**setup['training_setup'])
-
+    print(training_setup)
+    
     # get the model, processor and tokenizer
     model, processor, tokenizer_fr = get_model_processor_tokenizerfr(training_setup.model_path)
     
@@ -359,12 +375,10 @@ if __name__ == "__main__":
         train_dataset=train_ds,
         # eval_dataset=ds_dict["test"],
         data_collator=data_collator,
-        compute_metrics=cm.compute_metrics,
+        compute_metrics=cm.compute_metrics_original,
         processing_class=processor
     )
 
-    trainer.evaluate(eval_dataset=train_ds)
-    
     if training_setup.continue_from_checkpoint:
         trainer.train(resume_from_checkpoint=training_setup.model_path)
     else:

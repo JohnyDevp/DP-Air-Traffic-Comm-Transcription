@@ -1,12 +1,13 @@
 {
 	"metric": "wer",
-	"datasets": ["atco"],
-	"datasets_basedir": ".",
-	"model": "medium",
-	"output_dir": ".",
+	"datasets": ["atco_en_ruzyne"],
+	"datasets_basedir": "./data/",
+	"model": "./test3-tiny-prompt/checkpoint-980",
+	"output_file": "my_out_file",
 	"overwrite": true,
-	"separate_ds": true,
-	"use_prompt": true,
+    "eval_description" : "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting",
+	"use_prompt": false,
+	"self_prompt": true,
 	"transcription_name_in_ds": "full_ts",
 	"prompt_name_in_ds": "prompt_fullts_1G_4B"
 }

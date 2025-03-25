@@ -1,4 +1,6 @@
 import json
+from click import prompt
+from regex import D
 import torch
 from torch.utils.data import DataLoader
 from jiwer import wer, cer
@@ -10,6 +12,7 @@ from dataclasses import dataclass
 from transformers import WhisperTokenizer, WhisperProcessor, WhisperForConditionalGeneration
 import evaluate
 from tqdm import tqdm
+import numpy as np
 
 
 class PrepareDatasetAsInput:
@@ -39,30 +42,11 @@ class PrepareDatasetAsInput:
             if batch["lang"] == "fr":
                 tokenizer = self.tokenizer_fr
 
-        batch["labels_fullts"] = tokenizer(batch["full_ts"]).input_ids
-        batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
-
-        return batch
-
-    def prepare_dataset2(self, batch):
-        # load and resample audio data from 48 to 16kHz
-        audio = batch["audio"]
-
-        # compute log-Mel input features from input audio array
-        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
-
-        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
-        # if french, than use french tokenizer, english otherwise
-        tokenizer = self.tokenizer_en
-        if "lang" in batch:
-            if batch["lang"] == "fr":
-                tokenizer = self.tokenizer_fr
-
         batch['labels'] = tokenizer(batch[self.transcription_name]).input_ids
 
         return batch
     
-    def prepare_dataset_with_prompt2(self,batch):
+    def prepare_dataset_with_prompt(self,batch):
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
 
@@ -80,38 +64,11 @@ class PrepareDatasetAsInput:
         # encode prompts to prompt ids - we assume that the dataset has a column `"prompt"` that contains the prompt for each example
         prompt_ids = tokenizer.get_prompt_ids(batch[self.prompt_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
 
-        batch["labels"] = prompt_ids + tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
-
+        batch["prompt_ids"] = prompt_ids
+        batch["labels"] = tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
+        
         return batch
-    
-    def prepare_dataset_with_prompt(self,batch):
-        # load and resample audio data from 48 to 16kHz
-        audio = batch["audio"]
-
-        # compute log-Mel input features from input audio array
-        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
-
-        # encode prompts to prompt ids - we assume that the dataset has a column `"prompt"` that contains the prompt for each example
-        prompt_ids = []
-        if 'prompt_fullts' in batch:
-            prompt_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_fullts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
-        if 'prompt_shortts' in batch:
-            prompt_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_shortts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
-            
-        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
-        # if french, than use french tokenizer, english otherwise
-        tokenizer = self.tokenizer_en
-        if "lang" in batch:
-            if batch["lang"] == "fr":
-                tokenizer = self.tokenizer_fr
-
-        token_ids = tokenizer(batch["full_ts"]).input_ids
-
-        batch["labels_fullts"] = prompt_ids + token_ids # building labels ids with prompt and tokens together
-        batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
-
-        return batch
-    
+   
     def prepare_dataset_self_prompt(self,batch):
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
@@ -125,16 +82,15 @@ class PrepareDatasetAsInput:
         if "lang" in batch:
             if batch["lang"] == "fr":
                 tokenizer = self.tokenizer_fr
-        
+
         # make prompt from the lables
-        batch['fullts_prompt_ids'] = self.tokenizer_en.get_prompt_ids(batch["full_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
-        batch['shortts_prompt_ids'] = self.tokenizer_en.get_prompt_ids(batch["short_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
-        
-        batch["labels_fullts"] = tokenizer(batch["full_ts"]).input_ids # building labels ids with prompt and tokens together
-        batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
+        prompt_ids = self.tokenizer_en.get_prompt_ids(batch[self.transcription_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+
+        batch['prompt_ids'] = prompt_ids 
+        batch['labels'] = tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
 
         return batch
-
+    
 class ComputeMetrics:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
@@ -162,8 +118,8 @@ class ComputeMetrics:
         return {"wer": wer}
 
 @dataclass
-class DataCollatorSpeechSeq2SeqWithPadding:
-    processor: WhisperProcessor
+class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
+    processor: Any
     decoder_start_token_id: int
 
     def __call__(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
@@ -178,8 +134,95 @@ class DataCollatorSpeechSeq2SeqWithPadding:
         # pad the labels to max length
         labels_batch = self.processor.tokenizer.pad(label_features, return_tensors="pt")
 
-        batch["labels"] = labels_batch
+        # replace padding with -100 to ignore loss correctly
+        labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)
+
+        # if bos token is appended in previous tokenization step,
+        # cut bos token here as it's append later anyways
+        if (labels[:, 0] == self.decoder_start_token_id).all().cpu().item():
+            labels = labels[:, 1:]
+
+        batch["labels"] = labels
+
+        return batch
+
+@dataclass
+class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
+    processor : Any
+    decoder_start_token_id: int
+    def __call__(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
+        # ==================================================================================
+        # WORKING CALL, USED IN PROMPT-TEST-3A, CORRECT, ONLY WITH 448 MAX LENGTH
+        # ==================================================================================
+
+        # split inputs and labels since they have to be of different lengths and need
+        # different padding methods
+
+        # dataloader returns a list of features which we convert to a dict
+        input_features = [{"input_features": feature["input_features"]} for feature in features]
+        label_features = [{"input_ids": feature["labels"]} for feature in features]
+        prompt_features = [{"prompt_ids": feature["prompt_ids"]} for feature in features]
         
+        # reformat list to dict and set to pytorch format
+        batch = self.processor.feature_extractor.pad(
+            input_features,
+            return_tensors="pt",
+        )
+
+        labels_batch = self.processor.tokenizer.pad(
+            label_features,
+            return_tensors="pt",
+        )
+
+        # shift labels to the right to get decoder input ids
+        labels = labels_batch["input_ids"]
+        
+        labels_mask = labels_batch.attention_mask
+        
+        # replace padding with -100 to ignore correctly when computing the loss
+        labels = labels.masked_fill(labels_mask.ne(1), -100)
+
+        batch["labels"] = labels
+        batch["prompt_ids"] = prompt_features['prompt_ids']
+
+        return batch
+    
+    def myoldcall_stillworking(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
+        # split inputs and labels since they have to be of different lengths and need different padding methods
+        # first treat the audio inputs by simply returning torch tensors
+
+        input_features = [{"input_features": feature["input_features"]} for feature in features]
+        batch = self.processor.feature_extractor.pad(input_features, return_tensors="pt")
+
+        # get the tokenized label sequences
+        label_features = [{"input_ids": feature["labels"]} for feature in features]
+        # pad the labels to max length
+        labels_batch = self.processor.tokenizer.pad(label_features, return_tensors="pt")
+
+        # copy the labels as in its form now (with both prompt and the transcript itself) it should be the input to the decoder
+        batch['decoder_input_ids'] = labels_batch["input_ids"].clone()[:, :-1]
+
+        # replace padding in labels with -100 to ignore loss correctly
+        labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)[:, 1:]
+        
+        # then mask out the prompt in the labels
+        bos_index = np.argmax(labels==self.decoder_start_token_id, axis=1)
+        prompt_mask = np.arange(labels.shape[1]) < bos_index.numpy()[:, np.newaxis]
+        labels = torch.tensor(np.where(prompt_mask, -100, labels))
+
+        # if bos token is appended in previous tokenization step,
+        # cut bos token here as it's append later anyways (actually it's not needed to cut it here, because it the bos
+        # tokeon is appended just if decode_input_ids is not provided)
+        # STILL WE LET IT BE THERE AS PART OF ORIGINAL CODE
+        if (labels[:, 0] == self.decoder_start_token_id).all().cpu().item():
+            labels = labels[:, 1:]
+
+        batch["labels"] = labels
+
+        # and at last we create attention mask, to tell the decoder to use the correct part from the labels
+        # attention_mask = torch.tensor(np.where(decoder_input_ids != tokenizer_en.pad_token_id, 1 , 0))
+        # batch["attention_mask"] = attention_mask
+
         return batch
 
 @dataclass
@@ -188,12 +231,14 @@ class EvaluationSetup:
     datasets : str
     datasets_basedir : str
     model : str
-    output_dir : str
-    prompt_name_in_ds : str
+    output_file : str
     transcription_name_in_ds : str
+    prompt_name_in_ds : str = None
+    eval_description : str = ""
     overwrite : bool = False
     separate_ds : bool = False
     use_prompt : bool = True
+    self_prompt : bool = False
 
 def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False) -> list[Dataset]|Dataset:  
     allds_test = []
@@ -239,10 +284,16 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
     
 def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False):        
     # define collator
-    data_collator = DataCollatorSpeechSeq2SeqWithPadding(
-        processor=processor,
-        decoder_start_token_id=model.config.decoder_start_token_id
-    )
+    if (not use_prompt):
+        data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
+            processor=processor,
+            decoder_start_token_id=model.config.decoder_start_token_id
+        )
+    else:
+        data_collator = DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT(
+            processor=processor,
+            decoder_start_token_id=model.config.decoder_start_token_id
+        )
     
     if (isinstance(test_ds, Dataset) and not use_prompt):
         # setup the dataloader
@@ -255,7 +306,7 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
             input_features = batch["input_features"].cuda()
             out = model.generate(input_features).detach().cpu()
             all_preds.extend(processor.batch_decode(out, skip_special_tokens=True))
-            all_lables.extend(processor.batch_decode(batch["labels"]['input_ids'], skip_special_tokens=True))
+            all_lables.extend(processor.batch_decode(batch["labels"], skip_special_tokens=True))
             # Free memory
             del batch
             torch.cuda.empty_cache()
@@ -264,24 +315,23 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         wer=metric.compute_metrics_from_text(all_preds, all_lables)   
         
         return wer
-
     elif (isinstance(test_ds, Dataset) and use_prompt):
-        # WHEN using PROMPT, so far we can test only one sample at a time with one prompt
+        # WHEN using PROMPT, so far we can test only one sample at a time with one promp
+        # because yet we cannot handle different prompts for different samples in the same batch
         # setup the dataloader
-        dataloader = DataLoader(test_ds, batch_size=1, collate_fn=data_collator)
+        # dataloader = DataLoader(test_ds, batch_size=1, collate_fn=data_collator)
         
         # Iterate over batches
         all_preds = []
         all_lables = []
-        for batch in tqdm(dataloader):
-            input_features = batch["input_features"].cuda()
-            prompt_ids = batch["prompt_ids"].cuda()
+        for d in tqdm(test_ds[0]):
+            input_features = torch.tensor(d["input_features"]).unsqueeze(0).cuda()
+            prompt_ids = torch.tensor(d["prompt_ids"]).cuda()
+            
             out = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
-            all_preds.extend(processor.batch_decode(out, skip_special_tokens=True))
-            all_lables.extend(processor.batch_decode(batch["labels"]['input_ids'], skip_special_tokens=True))
-            # Free memory
-            del batch
-            torch.cuda.empty_cache()
+            
+            all_preds.extend([processor.tokenizer.decode(out[0], skip_special_tokens=True)])
+            all_lables.extend([processor.tokenizer.decode(d["labels"], skip_special_tokens=True)])
         
         # compute the wer
         wer=metric.compute_metrics_from_text(all_preds, all_lables)   
@@ -305,13 +355,13 @@ def main(evaluation_setup : EvaluationSetup):
     if (evaluation_setup.metric == 'wer'):
         # handle the output file
         if (evaluation_setup.overwrite):
-            f= open(evaluation_setup.output_dir, 'w')
+            f= open(evaluation_setup.output_file, 'w')
         else: 
-            if os.path.exists(evaluation_setup.output_dir):
+            if os.path.exists(evaluation_setup.output_file):
                 print("Output file already exists. Use --overwrite to overwrite it.")
                 exit(1)
             else:
-                f= open(evaluation_setup.output_dir, 'w')
+                f= open(evaluation_setup.output_file, 'w')
         
         # run the evaluation
         # ===========================================
@@ -326,21 +376,34 @@ def main(evaluation_setup : EvaluationSetup):
         prep_ds_cls.set_prompt_name(evaluation_setup.prompt_name_in_ds)
         
         ds_list = evaluation_setup.datasets
+        
+        if evaluation_setup.use_prompt:
+            if evaluation_setup.self_prompt:
+                prepare_fn = prep_ds_cls.prepare_dataset_self_prompt
+            else:
+                prepare_fn = prep_ds_cls.prepare_dataset_with_prompt
+        else:
+            prepare_fn = prep_ds_cls.prepare_dataset
         built_ds = build_dataset(
             ds_list, 
-            prep_ds_cls.prepare_dataset2 if not evaluation_setup.use_prompt else prep_ds_cls.prepare_dataset_with_prompt2, 
+            prepare_fn,
             evaluation_setup.datasets_basedir, 
-            evaluation_setup.separate_ds, 
-            transcription=evaluation_setup.transcription_name_in_ds,
-            prompt=evaluation_setup.prompt_name_in_ds  
+            evaluation_setup.separate_ds
         )
         metric = ComputeMetrics(processor.tokenizer)
         # compute the wer
-        out=compute(built_ds, model, processor, metric, batch_size=1)
+        out=compute(built_ds, model, processor, metric, batch_size=3, use_prompt=evaluation_setup.use_prompt)
         # ===========================================
-        
+    
         print(out)
         # write the output
+        f.write("******** Evaluation setup ********\n")
+        f.write(evaluation_setup.__str__())
+        f.write("\n")
+        f.write("******** Evaluation description ********\n")
+        f.write(evaluation_setup.eval_description)
+        f.write("\n")
+        f.write("******** Evaluation results ********\n")
         f.write(str(out))
         f.close()
         

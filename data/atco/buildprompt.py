@@ -346,7 +346,7 @@ if __name__ == '__main__':
                 # build some prompts, that can be used during training
                 # this prompt is using 1 correct callsign and 4 incorrect callsigns
                 meta['prompt_fullts_1G_4B'] = ', '.join(meta['prompt-data']['long_callsigns']) + ', ' + \
-                    ', '.join(sample_random_callsigns(meta['prompt-data']['long_callsigns'],4))
+                    ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],4))
                 # this prompt uses 5 incorrect callsigns
                 meta['prompt_fullts_5B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],5))
                 
