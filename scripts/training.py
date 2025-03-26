@@ -379,6 +379,8 @@ if __name__ == "__main__":
         processing_class=processor
     )
 
+    trainer.evaluate(eval_dataset=train_ds)
+    
     if training_setup.continue_from_checkpoint:
         trainer.train(resume_from_checkpoint=training_setup.model_path)
     else:

@@ -1,5 +1,0 @@
-******** Evaluation setup ********
-EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne'], datasets_basedir='./data/', model='./test3-tiny-prompt/checkpoint-980', output_file='my_out_file', transcription_name_in_ds='full_ts', prompt_name_in_ds='prompt_fullts_1G_4B', eval_description='Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting', overwrite=True, separate_ds=False, use_prompt=False, self_prompt=True)
-******** Evaluation description ********
-Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting******** Evaluation results ********
-{'wer': 260.68129330254044}

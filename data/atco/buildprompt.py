@@ -343,12 +343,14 @@ if __name__ == '__main__':
                 }
                 len_waypoints = len(meta['prompt-data']['waypoints'])
                 len_long_callsign = len(meta['prompt-data']['long_callsigns'])
+                
                 # build some prompts, that can be used during training
                 # this prompt is using 1 correct callsign and 4 incorrect callsigns
                 meta['prompt_fullts_1G_4B'] = ', '.join(meta['prompt-data']['long_callsigns']) + ', ' + \
                     ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],4))
                 # this prompt uses 5 incorrect callsigns
                 meta['prompt_fullts_5B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],5))
+                meta['prompt_fullts_50B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],50))
                 
                 # remove the prompt from the metadata (because in the old version it was there with the content sorted above)
                 meta.pop('prompt')

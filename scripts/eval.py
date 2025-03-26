@@ -305,6 +305,10 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         for batch in tqdm(dataloader):
             input_features = batch["input_features"].cuda()
             out = model.generate(input_features).detach().cpu()
+            out = model(input_features, labels=batch["labels"].cuda())
+            print(out.loss)
+            
+            exit(1)
             all_preds.extend(processor.batch_decode(out, skip_special_tokens=True))
             all_lables.extend(processor.batch_decode(batch["labels"], skip_special_tokens=True))
             # Free memory
@@ -324,7 +328,7 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         # Iterate over batches
         all_preds = []
         all_lables = []
-        for d in tqdm(test_ds[0]):
+        for d in tqdm(test_ds):
             input_features = torch.tensor(d["input_features"]).unsqueeze(0).cuda()
             prompt_ids = torch.tensor(d["prompt_ids"]).cuda()
             
