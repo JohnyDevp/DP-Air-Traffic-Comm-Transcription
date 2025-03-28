@@ -161,8 +161,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         # dataloader returns a list of features which we convert to a dict
         input_features = [{"input_features": feature["input_features"]} for feature in features]
         label_features = [{"input_ids": feature["labels"]} for feature in features]
-        prompt_features = [{"prompt_ids": feature["prompt_ids"]} for feature in features]
-        
+
         # reformat list to dict and set to pytorch format
         batch = self.processor.feature_extractor.pad(
             input_features,
@@ -176,17 +175,29 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         # shift labels to the right to get decoder input ids
         labels = labels_batch["input_ids"]
-        
-        labels_mask = labels_batch.attention_mask
-        
+
+        # get the decoder input ids, by removing the last token (this is the 'shift' operation)
+        decoder_input_ids = torch.tensor(labels[:, :-1])
+
+        # shift the labels to the left, to match work as prediction
+        labels = labels[:, 1:]
+        labels_mask = labels_batch.attention_mask[:, 1:]
+
         # replace padding with -100 to ignore correctly when computing the loss
         labels = labels.masked_fill(labels_mask.ne(1), -100)
 
-        batch["labels"] = labels
-        batch["prompt_ids"] = prompt_features['prompt_ids']
+        # replace initial prompt tokens with -100 to ignore correctly when computing the loss
+        bos_index = torch.argmax((labels == self.decoder_start_token_id).long(), dim=1)
+        prompt_mask = torch.arange(labels.shape[1]) < bos_index[:, None]
+        labels = torch.where(prompt_mask, -100, labels)
+
+        # TODO
+        batch['input_features'] = batch['input_features'].cuda()
+        batch["labels"] = labels.cuda()
+        batch["decoder_input_ids"] = decoder_input_ids.cuda()
 
         return batch
-    
+
     def myoldcall_stillworking(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
         # split inputs and labels since they have to be of different lengths and need different padding methods
         # first treat the audio inputs by simply returning torch tensors
@@ -204,7 +215,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         # replace padding in labels with -100 to ignore loss correctly
         labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)[:, 1:]
-        
+
         # then mask out the prompt in the labels
         bos_index = np.argmax(labels==self.decoder_start_token_id, axis=1)
         prompt_mask = np.arange(labels.shape[1]) < bos_index.numpy()[:, np.newaxis]
@@ -247,34 +258,66 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
         ds = None
         match ds_name:
             case 'atco_en_ruzyne':
-                ds = load_from_disk(os.path.join(path_to_ds,"atco/en_ruzyne_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"atco/en_ruzyne_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/en_ruzyne_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"en_ruzyne_test_ds"))
             case 'atco_en_stefanik':
-                ds = load_from_disk(os.path.join(path_to_ds,"atco/en_stefanik_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"atco/en_stefanik_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/en_stefanik_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"en_stefanik_test_ds"))
             case 'atco_en_zurich':
-                ds = load_from_disk(os.path.join(path_to_ds,"atco/en_zurich_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"atco/en_zurich_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/en_zurich_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"en_zurich_test_ds"))
             case 'atco_fr':
-                ds = load_from_disk(os.path.join(path_to_ds,"atco/fr_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"atco/fr_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/fr_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"fr_test_ds"))
             case 'atco_other_lang':
-                ds = load_from_disk(os.path.join(path_to_ds,"atco/other_lang_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"atco/other_lang_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/other_lang_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"other_lang_test_ds"))
             case 'hiwire_fr':
-                ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_fr_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"hiwire/hwir_fr_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_fr_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"hwir_fr_test_ds"))
             case 'hiwire_gr':
-                ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_gr_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"hiwire/hwir_gr_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_gr_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"hwir_gr_test_ds"))
             case 'hiwire_sp':
-                ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_sp_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"hiwire/hwir_sp_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_sp_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"hwir_sp_test_ds"))
             case 'malorca':
-                ds = load_from_disk(os.path.join(path_to_ds,"malorca/malorca_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"malorca/malorca_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"malorca/malorca_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"malorca_test_ds"))
             case 'nato':
-                ds = load_from_disk(os.path.join(path_to_ds,"nato/nato_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"nato/nato_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"nato/nato_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"nato_test_ds"))
             case 'uwb':
-                ds = load_from_disk(os.path.join(path_to_ds,"uwb/uwb_test_ds"))
+                if (os.path.exists(os.path.join(path_to_ds,"uwb/uwb_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"uwb/uwb_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"uwb_test_ds"))
         if (ds):
             allds_test.append(ds)
     
     # prepare the datasets to be ready for model
     for idx,ds in enumerate(allds_test):
         allds_test[idx] = ds.map(prepare_dataset_fn, remove_columns=ds.column_names, num_proc=1)
-        # allds_test[idx] = allds_test[idx].rename_column('labels_fullts' if transcription == 'fullts' else 'labels_shortts','labels')
     
     # return either concatenated datasets or list of datasets
     if (separate_ds):
@@ -323,19 +366,24 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         # WHEN using PROMPT, so far we can test only one sample at a time with one promp
         # because yet we cannot handle different prompts for different samples in the same batch
         # setup the dataloader
-        # dataloader = DataLoader(test_ds, batch_size=1, collate_fn=data_collator)
+        dataloader = DataLoader(test_ds, batch_size=1, collate_fn=data_collator)
+   
         
         # Iterate over batches
         all_preds = []
         all_lables = []
         loss = []
-        for d in tqdm(test_ds):
-            input_features = torch.tensor(d["input_features"]).unsqueeze(0).cuda()
-            prompt_ids = torch.tensor(d["prompt_ids"]).cuda()
-            decoder_input_ids = torch.tensor(prompt_ids + ).unsqueeze(0).cuda()
+        for batch in tqdm(dataloader):
+            # input_features = torch.tensor(batch["input_features"]).unsqueeze(0).cuda()
+            # prompt_ids = torch.tensor(batch["prompt_ids"]).cuda()
             
-            outputs = model(input_features, labels=d["labels"].cuda())
+            # compute loss together for all batch
+            with torch.no_grad():
+                outputs = model(**batch)
             
+            print(outputs)
+            
+            exit(5)
             preds = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
             
             all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])

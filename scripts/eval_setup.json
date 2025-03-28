@@ -5,8 +5,8 @@
 	"model": "openai/whisper-tiny",
 	"output_file": "my_out_file",
 	"overwrite": true,
-    "eval_description" : "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting",
-	"use_prompt": false,
+	"eval_description": "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting",
+	"use_prompt": true,
 	"self_prompt": true,
 	"transcription_name_in_ds": "full_ts",
 	"prompt_name_in_ds": "prompt_fullts_1G_4B"
