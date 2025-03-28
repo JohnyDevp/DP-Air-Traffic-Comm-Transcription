@@ -2,7 +2,7 @@
 	"metric": "wer",
 	"datasets": ["atco_en_ruzyne"],
 	"datasets_basedir": "./data/",
-	"model": "openai/whisper-tiny",
+	"model": "./test3-tiny-prompt/checkpoint-980",
 	"output_file": "my_out_file",
 	"overwrite": true,
 	"eval_description": "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting",

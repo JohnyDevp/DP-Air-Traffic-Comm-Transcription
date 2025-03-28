@@ -96,7 +96,7 @@ class ComputeMetrics:
         self.tokenizer = tokenizer
         self.metric = evaluate.load("wer")
         
-    def compute_metrics(self,pred_text, reference_text):
+    def compute_metrics(self,pred_text, reference_text) -> float:
         pred_ids = pred_text
         label_ids = reference_text
 
@@ -107,15 +107,15 @@ class ComputeMetrics:
         pred_str = self.tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
         label_str = self.tokenizer.batch_decode(label_ids, skip_special_tokens=True)
 
-        wer = 100 * metric.compute(predictions=pred_str, references=label_str)
+        wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
 
-        return {"wer": wer}
+        return wer
     
-    def compute_metrics_from_text(self,pred_str,label_str):
+    def compute_metrics_from_text(self,pred_str,label_str) -> float:
 
         wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
 
-        return {"wer": wer}
+        return wer
 
 @dataclass
 class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
@@ -340,6 +340,7 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
             decoder_start_token_id=model.config.decoder_start_token_id
         )
     
+    # run the evaluation
     if (isinstance(test_ds, Dataset) and not use_prompt):
         # setup the dataloader
         dataloader = DataLoader(test_ds, batch_size=batch_size, collate_fn=data_collator)
@@ -382,7 +383,12 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
                 if (key == 'prompt_ids'): continue
                 batch[key] = batch[key].cuda()
             
+            # loop through the batch and compute the predicitons
+            # it is necessary because model.generate() cannot handle multiple input features with multiple prompt 
             for idx in range(batch_size):
+                # check whether the index doesnt go above the number of items in current batch
+                if (idx >= len(batch['input_features'])): break
+                
                 input_features = batch["input_features"][idx].unsqueeze(0)
                 prompt_ids = torch.tensor(batch["prompt_ids"][idx]['prompt_ids']).cuda()
                 preds = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
@@ -391,12 +397,12 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
                 all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])
                 all_lables.extend([processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)])
             
-            
+            # compute the loss
             with torch.no_grad():
                 outputs = model(input_features = batch['input_features'], labels=batch['labels'], decoder_input_ids=batch['decoder_input_ids'])
-
+            # append the loss result to the whole result obtained so far
             all_loss.append(outputs.loss.detach().cpu())
-        
+            
         # compute the wer
         wer=metric.compute_metrics_from_text(all_preds, all_lables)   
         loss = torch.mean(torch.tensor(all_loss),dtype=float)
