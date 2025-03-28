@@ -161,7 +161,8 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         # dataloader returns a list of features which we convert to a dict
         input_features = [{"input_features": feature["input_features"]} for feature in features]
         label_features = [{"input_ids": feature["labels"]} for feature in features]
-
+        prompt_features = [{'prompt_ids': feature['prompt_ids']} for feature in features]
+        
         # reformat list to dict and set to pytorch format
         batch = self.processor.feature_extractor.pad(
             input_features,
@@ -177,7 +178,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         labels = labels_batch["input_ids"]
 
         # get the decoder input ids, by removing the last token (this is the 'shift' operation)
-        decoder_input_ids = torch.tensor(labels[:, :-1])
+        decoder_input_ids = labels[:, :-1]
 
         # shift the labels to the left, to match work as prediction
         labels = labels[:, 1:]
@@ -191,11 +192,12 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         prompt_mask = torch.arange(labels.shape[1]) < bos_index[:, None]
         labels = torch.where(prompt_mask, -100, labels)
 
-        # TODO
-        batch['input_features'] = batch['input_features'].cuda()
-        batch["labels"] = labels.cuda()
-        batch["decoder_input_ids"] = decoder_input_ids.cuda()
-
+        batch["labels"] = labels
+        batch["decoder_input_ids"] = decoder_input_ids
+        
+        # added especially for EVALUATION
+        batch['prompt_ids'] = prompt_features
+        
         return batch
 
     def myoldcall_stillworking(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
@@ -325,7 +327,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
     else:
         return concatenate_datasets(allds_test)
     
-def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False):        
+def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False) -> tuple[float,float]:        
     # define collator
     if (not use_prompt):
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
@@ -366,33 +368,39 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         # WHEN using PROMPT, so far we can test only one sample at a time with one promp
         # because yet we cannot handle different prompts for different samples in the same batch
         # setup the dataloader
-        dataloader = DataLoader(test_ds, batch_size=1, collate_fn=data_collator)
+        dataloader = DataLoader(test_ds, batch_size=batch_size, collate_fn=data_collator)
    
         
         # Iterate over batches
         all_preds = []
         all_lables = []
-        loss = []
+        all_loss = []
         for batch in tqdm(dataloader):
-            # input_features = torch.tensor(batch["input_features"]).unsqueeze(0).cuda()
-            # prompt_ids = torch.tensor(batch["prompt_ids"]).cuda()
             
-            # compute loss together for all batch
+            # pass everything to CUDA
+            for key in batch:
+                if (key == 'prompt_ids'): continue
+                batch[key] = batch[key].cuda()
+            
+            for idx in range(batch_size):
+                input_features = batch["input_features"][idx].unsqueeze(0)
+                prompt_ids = torch.tensor(batch["prompt_ids"][idx]['prompt_ids']).cuda()
+                preds = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
+                
+                # compute loss together for all batch
+                all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])
+                all_lables.extend([processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)])
+            
+            
             with torch.no_grad():
-                outputs = model(**batch)
-            
-            print(outputs)
-            
-            exit(5)
-            preds = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
-            
-            all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])
-            all_lables.extend([processor.tokenizer.decode(d["labels"], skip_special_tokens=True)])
+                outputs = model(input_features = batch['input_features'], labels=batch['labels'], decoder_input_ids=batch['decoder_input_ids'])
+
+            all_loss.append(outputs.loss.detach().cpu())
         
         # compute the wer
         wer=metric.compute_metrics_from_text(all_preds, all_lables)   
-        
-        return wer
+        loss = torch.mean(torch.tensor(all_loss),dtype=float)
+        return wer,loss
 
 def setup_model_processor(model_path) -> tuple[WhisperForConditionalGeneration, WhisperProcessor]:
     # setup the model
@@ -448,10 +456,10 @@ def main(evaluation_setup : EvaluationSetup):
         )
         metric = ComputeMetrics(processor.tokenizer)
         # compute the wer
-        out=compute(built_ds, model, processor, metric, batch_size=3, use_prompt=evaluation_setup.use_prompt)
+        wer,loss=compute(built_ds, model, processor, metric, batch_size=3, use_prompt=evaluation_setup.use_prompt)
         # ===========================================
     
-        print(out)
+        print(f'WER: {wer} LOSS: {loss}')
         # write the output
         f.write("******** Evaluation setup ********\n")
         f.write(evaluation_setup.__str__())
@@ -460,7 +468,7 @@ def main(evaluation_setup : EvaluationSetup):
         f.write(evaluation_setup.eval_description)
         f.write("\n")
         f.write("******** Evaluation results ********\n")
-        f.write(str(out))
+        f.write(f'WER: {wer} LOSS: {loss}')
         f.close()
         
     elif (evaluation_setup.metric == 'cer'):
