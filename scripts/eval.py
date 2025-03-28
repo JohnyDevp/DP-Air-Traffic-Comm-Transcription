@@ -1,6 +1,9 @@
+from io import FileIO, TextIOWrapper
 import json
-from click import prompt
+from click import File, prompt
+from h11 import Data
 from regex import D
+from sklearn.linear_model import OrthogonalMatchingPursuitCV
 import torch
 from torch.utils.data import DataLoader
 from jiwer import wer, cer
@@ -240,12 +243,20 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
 @dataclass
 class EvaluationSetup:
+    r"""
+        Class that stores the evalution parameters passed to script
+        
+        `same_processor` : bool
+
+    """
     metric : str
     datasets : str
     datasets_basedir : str
-    model : str
+    models : str | list
     output_file : str
     transcription_name_in_ds : str
+    batch_size : int = 1
+    same_processor : bool = True
     prompt_name_in_ds : str = None
     eval_description : str = ""
     overwrite : bool = False
@@ -253,8 +264,8 @@ class EvaluationSetup:
     use_prompt : bool = True
     self_prompt : bool = False
 
-def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False) -> list[Dataset]|Dataset:  
-    allds_test = []
+def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False) -> dict[str,Dataset]|Dataset:  
+    allds_test = {}
     # find all datasets to be tested
     for ds_name in ds_list:
         ds = None
@@ -315,19 +326,19 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
                 else:
                     ds = load_from_disk(os.path.join(path_to_ds,"uwb_test_ds"))
         if (ds):
-            allds_test.append(ds)
+            allds_test[ds_name]=ds
     
     # prepare the datasets to be ready for model
-    for idx,ds in enumerate(allds_test):
-        allds_test[idx] = ds.map(prepare_dataset_fn, remove_columns=ds.column_names, num_proc=1)
+    for key in allds_test:
+        allds_test[key] = allds_test[key].map(prepare_dataset_fn, remove_columns=ds.column_names, num_proc=1)
     
     # return either concatenated datasets or list of datasets
     if (separate_ds):
         return allds_test
     else:
-        return concatenate_datasets(allds_test)
+        return concatenate_datasets([allds_test[key] for key in allds_test])
     
-def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False) -> tuple[float,float]:        
+def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False) -> dict[str,dict]:        
     # define collator
     if (not use_prompt):
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
@@ -348,23 +359,53 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         # Iterate over batches
         all_preds = []
         all_lables = []
+        all_loss = []
         for batch in tqdm(dataloader):
             input_features = batch["input_features"].cuda()
-            preds = model.generate(input_features).detach().cpu()
-            preds = model(input_features, labels=batch["labels"].cuda())
-            print(preds.loss)
             
-            exit(1)
+            preds = model.generate(input_features).detach().cpu()
+            outputs = model(input_features, labels=batch["labels"].cuda())
+            
+            all_loss.append(outputs.loss.detach().cpu())
             all_preds.extend(processor.batch_decode(preds, skip_special_tokens=True))
             all_lables.extend(processor.batch_decode(batch["labels"], skip_special_tokens=True))
-            # Free memory
-            del batch
-            torch.cuda.empty_cache()
+
         
         # compute the wer
         wer=metric.compute_metrics_from_text(all_preds, all_lables)   
+        loss=torch.mean(torch.tensor(all_loss,dtype=float))
         
-        return wer
+        return {'allds':{'wer':wer,'loss':loss}}
+    
+    elif (isinstance(test_ds, dict) and not use_prompt):
+        out = {}
+        for ds_name, ds in test_ds.items():
+            # setup the dataloader
+            dataloader = DataLoader(ds, batch_size=batch_size, collate_fn=data_collator)
+            
+            # Iterate over batches
+            all_preds = []
+            all_lables = []
+            all_loss = []
+            for batch in tqdm(dataloader):
+                input_features = batch["input_features"].cuda()
+                
+                preds = model.generate(input_features).detach().cpu()
+                outputs = model(input_features, labels=batch["labels"].cuda())
+                
+                all_loss.append(outputs.loss.detach().cpu())
+                all_preds.extend(processor.batch_decode(preds, skip_special_tokens=True))
+                all_lables.extend(processor.batch_decode(batch["labels"], skip_special_tokens=True))
+
+            
+            # compute the wer
+            wer=metric.compute_metrics_from_text(all_preds, all_lables)   
+            loss=torch.mean(torch.tensor(all_loss,dtype=float))
+            
+            out[ds_name] = {'wer':wer,'loss':loss}
+
+        return out
+
     elif (isinstance(test_ds, Dataset) and use_prompt):
         # WHEN using PROMPT, so far we can test only one sample at a time with one promp
         # because yet we cannot handle different prompts for different samples in the same batch
@@ -406,7 +447,54 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         # compute the wer
         wer=metric.compute_metrics_from_text(all_preds, all_lables)   
         loss = torch.mean(torch.tensor(all_loss),dtype=float)
-        return wer,loss
+        return {'allds':{'wer':wer, 'loss':loss}}
+    elif (isinstance(test_ds, dict) and use_prompt):
+        # WHEN using PROMPT, so far we can test only one sample at a time with one promp
+        # because yet we cannot handle different prompts for different samples in the same batch
+        # setup the dataloader
+        out = {}
+        for ds_name,ds in test_ds.items():
+            dataloader = DataLoader(ds, batch_size=batch_size, collate_fn=data_collator)
+    
+            # Iterate over batches
+            all_preds = []
+            all_lables = []
+            all_loss = []
+            for batch in tqdm(dataloader):
+                
+                # pass everything to CUDA
+                for key in batch:
+                    if (key == 'prompt_ids'): continue
+                    batch[key] = batch[key].cuda()
+                
+                # loop through the batch and compute the predicitons
+                # it is necessary because model.generate() cannot handle multiple input features with multiple prompt 
+                for idx in range(batch_size):
+                    # check whether the index doesnt go above the number of items in current batch
+                    if (idx >= len(batch['input_features'])): break
+                    
+                    input_features = batch["input_features"][idx].unsqueeze(0)
+                    prompt_ids = torch.tensor(batch["prompt_ids"][idx]['prompt_ids']).cuda()
+                    preds = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
+                    
+                    # compute loss together for all batch
+                    all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])
+                    all_lables.extend([processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)])
+                
+                # compute the loss
+                with torch.no_grad():
+                    outputs = model(input_features = batch['input_features'], labels=batch['labels'], decoder_input_ids=batch['decoder_input_ids'])
+                # append the loss result to the whole result obtained so far
+                all_loss.append(outputs.loss.detach().cpu())
+                
+            # compute the wer and loss for current dataset
+            wer=metric.compute_metrics_from_text(all_preds, all_lables)   
+            loss = torch.mean(torch.tensor(all_loss),dtype=float)
+            out[ds_name] = {'wer':wer, 'loss':loss}
+            
+        return out
+    else:
+        raise ValueError('Wrong dataset format')
 
 def setup_model_processor(model_path) -> tuple[WhisperForConditionalGeneration, WhisperProcessor]:
     # setup the model
@@ -421,62 +509,126 @@ def setup_model_processor(model_path) -> tuple[WhisperForConditionalGeneration, 
     
     return model, processor
 
+def result_printout(f_desc : TextIOWrapper, out_dict : dict[str, dict], evaluation_setup : EvaluationSetup):
+    for k,v in out_dict.items():
+        print(f'DATASET: {k} | WER: {v['wer']} LOSS: {v['loss']}')
+        
+    # write the output
+    f_desc.write("******** Evaluation setup ********\n")
+    f_desc.write(evaluation_setup.__str__())
+    f_desc.write("\n")
+    f_desc.write("******** Evaluation description ********\n")
+    f_desc.write(evaluation_setup.eval_description)
+    f_desc.write("\n")
+    f_desc.write("******** Evaluation results ********\n")
+    for k,v in out_dict.items():
+        f_desc.write(f'DATASET: {k} | WER: {v['wer']} LOSS: {v['loss']}')
+           
 def main(evaluation_setup : EvaluationSetup):
     if (evaluation_setup.metric == 'wer'):
         # handle the output file
         if (evaluation_setup.overwrite):
-            f= open(evaluation_setup.output_file, 'w')
+            out_file= open(evaluation_setup.output_file, 'w')
         else: 
-            if os.path.exists(evaluation_setup.output_file):
-                print("Output file already exists. Use --overwrite to overwrite it.")
-                exit(1)
-            else:
-                f= open(evaluation_setup.output_file, 'w')
+            out_file= open(evaluation_setup.output_file, 'a')
         
-        # run the evaluation
-        # ===========================================
-        
-        # setup model and the processor
-        model, processor = setup_model_processor(evaluation_setup.model)
-        tokenizer_fr = WhisperTokenizer.from_pretrained(evaluation_setup.model, language="French") # just for the french tokenizer
-        prep_ds_cls = PrepareDatasetAsInput(processor.feature_extractor, processor.tokenizer, tokenizer_fr)
-        
-        # set up the prompt and transcription names in the given dataset, that will be used
-        prep_ds_cls.set_transcription_name(evaluation_setup.transcription_name_in_ds)
-        prep_ds_cls.set_prompt_name(evaluation_setup.prompt_name_in_ds)
-        
-        ds_list = evaluation_setup.datasets
-        
-        if evaluation_setup.use_prompt:
-            if evaluation_setup.self_prompt:
-                prepare_fn = prep_ds_cls.prepare_dataset_self_prompt
-            else:
-                prepare_fn = prep_ds_cls.prepare_dataset_with_prompt
+        # handle multiple models 
+        if (isinstance(evaluation_setup.models,list)):       
+            # go through each model, clear the memory and see the results
+            first_model_in_serie = True
+            
+            # these setups can change over iterations through the list of models
+            # when models are same, than this setup is stored and reused 
+            prep_ds_cls : PrepareDatasetAsInput     = None
+            built_ds : dict[Dataset]|Dataset        = None
+            metric : ComputeMetrics                 = None
+            tokenizer_fr : WhisperTokenizer         = None
+                        
+            for model_path in evaluation_setup.models:
+                out_file.write(f'#### EVAL MODEL {model_path} ####\n')
+                print(f'*** Model path {model_path} ***')
+                
+                model, processor = setup_model_processor(model_path)
+
+                if (not evaluation_setup.same_processor or first_model_in_serie):
+                    tokenizer_fr = WhisperTokenizer.from_pretrained(model_path, language="French") # just for the french tokenizer
+                    # above are the only conditions when new data parsing is necessary
+                    # prepare new handler for dataset
+                    prep_ds_cls = PrepareDatasetAsInput(processor.feature_extractor, processor.tokenizer, tokenizer_fr)
+                    # set up the prompt and transcription names in the given dataset, that will be used
+                    prep_ds_cls.set_transcription_name(evaluation_setup.transcription_name_in_ds)
+                    prep_ds_cls.set_prompt_name(evaluation_setup.prompt_name_in_ds)    
+                    
+                    # choose function for dataset parsing
+                    if evaluation_setup.use_prompt:
+                        if evaluation_setup.self_prompt:
+                            prepare_fn = prep_ds_cls.prepare_dataset_self_prompt
+                        else:
+                            prepare_fn = prep_ds_cls.prepare_dataset_with_prompt
+                    else:
+                        prepare_fn = prep_ds_cls.prepare_dataset
+                        
+                    built_ds = build_dataset(
+                        evaluation_setup.datasets, 
+                        prepare_fn,
+                        evaluation_setup.datasets_basedir, 
+                        evaluation_setup.separate_ds
+                    )
+                    
+                    metric = ComputeMetrics(processor.tokenizer)
+                    
+                # compute the wer and loss
+                out_dict = compute(built_ds, model, processor, metric, batch_size=3, use_prompt=evaluation_setup.use_prompt)
+                
+                # print results to the file
+                result_printout(out_file,out_dict,evaluation_setup)
+                
+                # new lines at the end of the file
+                out_file.write('\n\n')
+                
+                if first_model_in_serie:
+                    first_model_in_serie = False 
+            
+            # close file 
+            out_file.close()
         else:
-            prepare_fn = prep_ds_cls.prepare_dataset
-        built_ds = build_dataset(
-            ds_list, 
-            prepare_fn,
-            evaluation_setup.datasets_basedir, 
-            evaluation_setup.separate_ds
-        )
-        metric = ComputeMetrics(processor.tokenizer)
-        # compute the wer
-        wer,loss=compute(built_ds, model, processor, metric, batch_size=3, use_prompt=evaluation_setup.use_prompt)
-        # ===========================================
-    
-        print(f'WER: {wer} LOSS: {loss}')
-        # write the output
-        f.write("******** Evaluation setup ********\n")
-        f.write(evaluation_setup.__str__())
-        f.write("\n")
-        f.write("******** Evaluation description ********\n")
-        f.write(evaluation_setup.eval_description)
-        f.write("\n")
-        f.write("******** Evaluation results ********\n")
-        f.write(f'WER: {wer} LOSS: {loss}')
-        f.close()
-        
+            # run the evaluation of single model
+            # ==========================================                    
+                        
+            # setup model and the processor
+            model, processor = setup_model_processor(evaluation_setup.models)
+            tokenizer_fr = WhisperTokenizer.from_pretrained(evaluation_setup.models, language="French") # just for the french tokenizer
+            prep_ds_cls = PrepareDatasetAsInput(processor.feature_extractor, processor.tokenizer, tokenizer_fr)
+            
+            # set up the prompt and transcription names in the given dataset, that will be used
+            prep_ds_cls.set_transcription_name(evaluation_setup.transcription_name_in_ds)
+            prep_ds_cls.set_prompt_name(evaluation_setup.prompt_name_in_ds)
+            
+            ds_list = evaluation_setup.datasets
+            
+            if evaluation_setup.use_prompt:
+                if evaluation_setup.self_prompt:
+                    prepare_fn = prep_ds_cls.prepare_dataset_self_prompt
+                else:
+                    prepare_fn = prep_ds_cls.prepare_dataset_with_prompt
+            else:
+                prepare_fn = prep_ds_cls.prepare_dataset
+            built_ds = build_dataset(
+                ds_list, 
+                prepare_fn,
+                evaluation_setup.datasets_basedir, 
+                evaluation_setup.separate_ds
+            )
+            
+            metric = ComputeMetrics(processor.tokenizer)
+            
+            # compute the wer and loss
+            out_dict = compute(built_ds, model, processor, metric, batch_size=3, use_prompt=evaluation_setup.use_prompt)
+            
+            result_printout(out_file, out_dict, evaluation_setup)
+            
+            out_file.close()
+            
     elif (evaluation_setup.metric == 'cer'):
         metric = cer
     
