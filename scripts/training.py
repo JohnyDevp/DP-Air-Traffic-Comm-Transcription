@@ -12,17 +12,27 @@ from transformers import WhisperProcessor, WhisperTokenizer, Seq2SeqTrainingArgu
 from datasets import Dataset, load_from_disk, concatenate_datasets
 
 from typing import Any, Dict, List, Union
-import argparse, os
+import argparse, os, time
 import json
 
+
 class PrepareDatasetAsInput:
-    
-    def __init__(self, feature_extractor, tokenizer_en, tokenizer_fr):
+
+    def __init__(self, feature_extractor, tokenizer_en, tokenizer_fr, prompt_version=None):
         self.feature_extractor = feature_extractor
         self.tokenizer_en = tokenizer_en
         self.tokenizer_fr = tokenizer_fr
-            
+
+    def set_transcription_name(self, transcription_name):
+        self.transcription_name = transcription_name
+
+    def set_prompt_name(self, prompt_name):
+        self.prompt_name = prompt_name
+
     def prepare_dataset(self, batch):
+        if (self.transcription_name is None):
+            raise ValueError("Transcription name is not set. Please set it using set_transcription_name() method.")
+        
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
 
@@ -36,38 +46,39 @@ class PrepareDatasetAsInput:
             if batch["lang"] == "fr":
                 tokenizer = self.tokenizer_fr
 
-        batch["labels_fullts"] = tokenizer(batch["full_ts"]).input_ids
-        batch["labels_shortts"] = tokenizer(batch["short_ts"]).input_ids
+        batch['labels'] = tokenizer(batch[self.transcription_name]).input_ids
 
         return batch
-    
+
     def prepare_dataset_with_prompt(self,batch):
+        if (self.transcription_name is None or self.prompt_name is None):
+            raise ValueError("Transcription name is not set. Please set it using set_transcription_name() method.")
+        
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
 
         # compute log-Mel input features from input audio array
         batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+
+
+        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
+        # if french, than use french tokenizer, english otherwise
+        tokenizer = self.tokenizer_en
+        if "lang" in batch:
+            if batch["lang"] == "fr":
+                tokenizer = self.tokenizer_fr
 
         # encode prompts to prompt ids - we assume that the dataset has a column `"prompt"` that contains the prompt for each example
-        prompt_fullts_ids = []
-        if 'prompt_fullts' in batch:
-            prompt_fullts_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_fullts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
-        if 'prompt_shortts' in batch:
-            prompt_shortts_ids = self.tokenizer_en.get_prompt_ids(batch["prompt_shortts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+        prompt_ids = tokenizer.get_prompt_ids(batch[self.prompt_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
 
-        # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
-        # if french, than use french tokenizer, english otherwise
-        tokenizer = self.tokenizer_en
-        if "lang" in batch:
-            if batch["lang"] == "fr":
-                tokenizer = self.tokenizer_fr
-
-        batch["labels_fullts"] = prompt_fullts_ids + tokenizer(batch["full_ts"]).input_ids # building labels ids with prompt and tokens together
-        batch["labels_shortts"] = prompt_shortts_ids + tokenizer(batch["short_ts"]).input_ids
+        batch["labels"] = prompt_ids + tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
 
         return batch
-    
+
     def prepare_dataset_self_prompt(self,batch):
+        if (self.transcription_name is None):
+            raise ValueError("Transcription name is not set. Please set it using set_transcription_name() method.")
+        
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
 
@@ -80,13 +91,11 @@ class PrepareDatasetAsInput:
         if "lang" in batch:
             if batch["lang"] == "fr":
                 tokenizer = self.tokenizer_fr
-        
+
         # make prompt from the lables
-        fullts_prompt_ids = self.tokenizer_en.get_prompt_ids(batch["full_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
-        shortts_prompt_ids = self.tokenizer_en.get_prompt_ids(batch["short_ts"]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
-        
-        batch["labels_fullts"] = fullts_prompt_ids + tokenizer(batch["full_ts"]).input_ids # building labels ids with prompt and tokens together
-        batch["labels_shortts"] = shortts_prompt_ids + tokenizer(batch["short_ts"]).input_ids
+        prompt_ids = self.tokenizer_en.get_prompt_ids(batch[self.transcription_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
+
+        batch['labels'] = prompt_ids + tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
 
         return batch
 
@@ -94,8 +103,29 @@ class ComputeMetrics:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
         self.metric = evaluate.load("wer")
-    
-    def compute_metrics_original(self,pred):
+
+    def compute_metrics(self,pred_text, reference_text):
+        pred_ids = pred_text
+        label_ids = reference_text
+
+        # replace -100 with the pad_token_id
+        label_ids[label_ids == -100] = self.tokenizer.pad_token_id
+
+        # we do not want to group tokens when computing the metrics
+        pred_str = self.tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
+        label_str = self.tokenizer.batch_decode(label_ids, skip_special_tokens=True)
+
+        wer = 100 * metric.compute(predictions=pred_str, references=label_str)
+
+        return {"wer": wer}
+
+    def compute_metrics_from_text(self,pred_str,label_str):
+
+        wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
+
+        return {"wer": wer}
+
+    def compute_metrics_original(self, pred):
         pred_ids = pred.predictions
         label_ids = pred.label_ids
 
@@ -109,28 +139,7 @@ class ComputeMetrics:
         wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
 
         return {"wer": wer}
-    
-    def compute_metrics(self,pred_text, reference_text):
-        pred_ids = pred_text
-        label_ids = reference_text
-
-        # replace -100 with the pad_token_id
-        label_ids[label_ids == -100] = self.tokenizer.pad_token_id
-
-        # we do not want to group tokens when computing the metrics
-        pred_str = self.tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
-        label_str = self.tokenizer.batch_decode(label_ids, skip_special_tokens=True)
-
-        wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
-
-        return {"wer": wer}
-    
-    def compute_metrics_from_text(self,pred_str,label_str):
-
-        wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
-
-        return {"wer": wer}
-
+ 
 @dataclass
 class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
     processor: Any
@@ -189,10 +198,10 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         # shift labels to the right to get decoder input ids
         labels = labels_batch["input_ids"]
-        
+
         # get the decoder input ids, by removing the last token (this is the 'shift' operation)
         decoder_input_ids = labels[:, :-1]
-        
+
         # shift the labels to the left, to match work as prediction
         labels = labels[:, 1:]
         labels_mask = labels_batch.attention_mask[:, 1:]
@@ -209,7 +218,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         batch["decoder_input_ids"] = decoder_input_ids
 
         return batch
-    
+
     def myoldcall_stillworking(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
         # split inputs and labels since they have to be of different lengths and need different padding methods
         # first treat the audio inputs by simply returning torch tensors
@@ -227,7 +236,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         # replace padding in labels with -100 to ignore loss correctly
         labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)[:, 1:]
-        
+
         # then mask out the prompt in the labels
         bos_index = np.argmax(labels==self.decoder_start_token_id, axis=1)
         prompt_mask = np.arange(labels.shape[1]) < bos_index.numpy()[:, np.newaxis]
@@ -251,12 +260,14 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 @dataclass
 class TrainingSetup:
     model_path: str
-    continue_from_checkpoint: bool
     train_datasets: list[str]
     path_to_train_datasets: str
-    use_prompt: bool
-    self_prompt: bool
-    
+    transcription_name_in_ds : str
+    prompt_name_in_ds : str
+    continue_from_checkpoint: bool = False
+    use_prompt: bool = True
+    self_prompt: bool = False
+
 def build_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False, ts='fullts') -> list[Dataset]|Dataset:
     allds_train = []
     for ds_name in list_of_ds:
@@ -297,23 +308,22 @@ def build_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :str, s
                     ds = load_from_disk(os.path.join(path_to_ds,"uwb/uwb_train_ds"))
                 else:
                     ds = load_from_disk(os.path.join(path_to_ds,"uwb_train_ds"))
-                    
+
         if (ds is not None):
             allds_train.append(ds)
 
     for idx,ds in enumerate(allds_train):
         allds_train[idx] = ds.map(prepare_dataset_fn, remove_columns=ds.column_names, num_proc=1)
-        allds_train[idx] = allds_train[idx].rename_column('labels_fullts' if ts == 'fullts' else 'labels_shortts','labels')
-    
+
     if (separate_ds):
         return allds_train
     else:
         return concatenate_datasets(allds_train)
 
 def get_model_processor_tokenizerfr(model_path) -> tuple[WhisperForConditionalGeneration, WhisperProcessor, WhisperTokenizer]:
-    tokenizer_fr = WhisperTokenizer.from_pretrained(model_path, language="french", task="transcribe")
-    processor = WhisperProcessor.from_pretrained(model_path, language="English", task="transcribe")
-    
+    tokenizer_fr = WhisperTokenizer.from_pretrained(model_path, language="french", task="transcribe") # MODIF
+    processor = WhisperProcessor.from_pretrained(model_path, language="English", task="transcribe")  # MODIF
+
     model = WhisperForConditionalGeneration.from_pretrained(model_path)
     model.generation_config.language = "english"
     model.generation_config.task = "transcribe"
@@ -338,6 +348,9 @@ if __name__ == "__main__":
     
     # load the dataset preparator, use prepare function according to prompt usage
     prepare_dataset = PrepareDatasetAsInput(processor.feature_extractor, processor.tokenizer, tokenizer_fr)
+    prepare_dataset.set_transcription_name(training_setup.transcription_name_in_ds)
+    prepare_dataset.set_prompt_name(training_setup.prompt_name_in_ds)
+
     if training_setup.use_prompt:
         if training_setup.self_prompt:
             prepare_fn = prepare_dataset.prepare_dataset_self_prompt
@@ -373,15 +386,32 @@ if __name__ == "__main__":
         args=training_args,
         model=model,
         train_dataset=train_ds,
-        # eval_dataset=ds_dict["test"],
         data_collator=data_collator,
         compute_metrics=cm.compute_metrics_original,
         processing_class=processor
     )
 
-    trainer.evaluate(eval_dataset=train_ds)
+    # save training details
+    with open(os.path.join(setup['training_args']['output_dir'], "training_details.txt"), 'a') as f:        
+        # print training setup
+        f.write(f'**** TRAINING RUN, datetime: {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}\n ****')
+        f.write("============================================\n")
+        f.write("Training setup:\n")
+        f.write(json.dumps(setup['training_setup'], indent=4))
+        f.write('\n')
+        f.write("Training arguments:\n")
+        f.write(json.dumps(setup['training_args'], indent=4))
+        f.write('\n\n')
+        f.close()
     
     if training_setup.continue_from_checkpoint:
         trainer.train(resume_from_checkpoint=training_setup.model_path)
     else:
         trainer.train()
+
+    # save info about finish at the end
+    with open(os.path.join(setup['training_args']['output_dir'], "training_details.txt"), 'a') as f:
+        f.write(f"Training finished, datetime: {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}\n ****'\n")
+        f.write("============================================\n")
+        f.close()
+        

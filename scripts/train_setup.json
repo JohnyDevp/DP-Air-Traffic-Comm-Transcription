@@ -5,7 +5,9 @@
 		"train_datasets": ["atco_en"],
 		"path_to_train_datasets": "./data",
 		"use_prompt": true,
-		"self_prompt": true
+		"self_prompt": false,
+		"transcription_name_in_ds": "full_ts",
+		"prompt_name_in_ds": "prompt_fullts_1G_4B"
 	},
 	"training_args": {
 		"output_dir": "./nothing",

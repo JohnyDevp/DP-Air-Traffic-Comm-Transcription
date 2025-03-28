@@ -304,12 +304,12 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         all_lables = []
         for batch in tqdm(dataloader):
             input_features = batch["input_features"].cuda()
-            out = model.generate(input_features).detach().cpu()
-            out = model(input_features, labels=batch["labels"].cuda())
-            print(out.loss)
+            preds = model.generate(input_features).detach().cpu()
+            preds = model(input_features, labels=batch["labels"].cuda())
+            print(preds.loss)
             
             exit(1)
-            all_preds.extend(processor.batch_decode(out, skip_special_tokens=True))
+            all_preds.extend(processor.batch_decode(preds, skip_special_tokens=True))
             all_lables.extend(processor.batch_decode(batch["labels"], skip_special_tokens=True))
             # Free memory
             del batch
@@ -328,13 +328,17 @@ def compute(test_ds : list[Dataset]|Dataset, model, processor, metric, batch_siz
         # Iterate over batches
         all_preds = []
         all_lables = []
+        loss = []
         for d in tqdm(test_ds):
             input_features = torch.tensor(d["input_features"]).unsqueeze(0).cuda()
             prompt_ids = torch.tensor(d["prompt_ids"]).cuda()
+            decoder_input_ids = torch.tensor(prompt_ids + ).unsqueeze(0).cuda()
             
-            out = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
+            outputs = model(input_features, labels=d["labels"].cuda())
             
-            all_preds.extend([processor.tokenizer.decode(out[0], skip_special_tokens=True)])
+            preds = model.generate(input_features, prompt_ids=prompt_ids).detach().cpu()
+            
+            all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])
             all_lables.extend([processor.tokenizer.decode(d["labels"], skip_special_tokens=True)])
         
         # compute the wer
