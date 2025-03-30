@@ -208,8 +208,11 @@ def make_info_vocab(info_file_path):
 def run_xmlfile_process(xml_data, info_file_path):
     soup = BeautifulSoup(xml_data, "xml")
     out = {}
+    count_of_all_previous_words_of_segments = 0
     for segment in soup.find_all("segment"):
-        found_tags = get_knowledge(segment, info_file_path)
+        found_tags,num_of_words_in_segment = get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segments)
+        
+        count_of_all_previous_words_of_segments += num_of_words_in_segment
         
         # merge the dictionaries of found parts
         for tag, content in found_tags.items():
@@ -219,13 +222,15 @@ def run_xmlfile_process(xml_data, info_file_path):
                 out[tag] = content
     return out
 
-def get_knowledge(segment, info_file_path) -> str:
+def get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segments) -> tuple[str,int]:
     # first obtain tags from the text of the segment
     text = segment.find("text").text
     # remove multiply tagged one, logically together belonging content (meaning one tag)
     text=re.sub(r'\[\/#(\w+)\]\s*\[#\1\]',' ',text)
     # remove multiple spaces
     text = re.sub(r'\s+', ' ',text)
+    # remove spaces before and after
+    text = text.strip()
     
     out = {}
     
@@ -237,23 +242,35 @@ def get_knowledge(segment, info_file_path) -> str:
     if (speaker_label):
         out['short_callsigns'] = [speaker_label]
     else: out['short_callsigns'] = cal_out['short']
+    # save info about the position of the callsign in the text
+    # we are indexing from 0,
+    out['callsigns_pos'] = [i + count_of_all_previous_words_of_segments for i in cal_out['pos']]
     
     # RUNWAY
     pass 
     # TAXIWAY
     pass
 
-    return out
+    return out, text.strip().count(' ') + 1 # return the number of words in the segment
 
-def get_callsigns_from_text(corrected_text_with_tags, info_file_path):
-    out = {'short' : [],'long' : []}
+def get_callsigns_from_text(corrected_text_with_tags : str, info_file_path : str):
+    out = {'short' : [], 'long' : [], 'pos':[]}
     
     # find all callsigns
     pattern = r'\[#callsign\](.*?)\[/#callsign\]'
     for it in re.findall(pattern, corrected_text_with_tags):
+        
         # append the found callsign to the dictionary, remove multiple spaces and normalize the string (hex characters)
         callsign = re.sub(r'\s+', ' ', normalize('NFC',it))
         out['long'].append(callsign)
+        
+        # find the position of the callsign in the text
+        cal_pos = corrected_text_with_tags.index(it)
+        # count the index of the callsign in the text as index of word 
+        # text_without_tags = re.sub(r'\s*\[.*\]\s*',' ',corrected_text_with_tags).strip() NOT WORKING
+        words_before = re.findall(r'\s+',corrected_text_with_tags.strip()[:cal_pos]).__len__()
+        # acctually words before is the index of the callsign in the text, because we are idnexing from 0
+        out['pos'].append(words_before) 
         
         # shorten the callsign
         full_vocab = make_info_vocab(info_file_path)
@@ -344,6 +361,9 @@ if __name__ == '__main__':
                 len_waypoints = len(meta['prompt-data']['waypoints'])
                 len_long_callsign = len(meta['prompt-data']['long_callsigns'])
                 
+                # add the positions of callsigns in the text
+                meta['callsigns_pos_fullts'] = out['callsigns_pos']
+                
                 # build some prompts, that can be used during training
                 # this prompt is using 1 correct callsign and 4 incorrect callsigns
                 meta['prompt_fullts_1G_4B'] = ', '.join(meta['prompt-data']['long_callsigns']) + ', ' + \
@@ -355,5 +375,5 @@ if __name__ == '__main__':
                 # remove the prompt from the metadata (because in the old version it was there with the content sorted above)
                 meta.pop('prompt')
             
-            json.dump(js_file, open(SAVE_FOLDER+file,'w'),indent=4)
+            json.dump(js_file, open(SAVE_FOLDER+file,'w'),indent=4,ensure_ascii=False)
             f.close()

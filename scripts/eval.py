@@ -264,6 +264,24 @@ class EvaluationSetup:
     use_prompt : bool = True
     self_prompt : bool = False
 
+
+from rapidfuzz import process
+class EvalCallsigns:
+    
+    def __obtain_callsign_from_transcription(self, callsigns, callsigns_pos, transcription : str):
+        ts_arr = transcription.strip().lower().split(' ')
+        for callsign in callsigns:
+            callsign_arr = callsign.strip().lower().split(' ')    
+            # check if the callsign is in the transcription
+            for cal in callsign_arr:
+                process.extractOne(cal, ts_arr, scorer=80)
+    
+    def __search_for_callsign(self, callsign):
+        # search for the callsign in the dataset
+        # if found, return True
+        # if not found, return False
+        pass
+
 def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False) -> dict[str,Dataset]|Dataset:  
     allds_test = {}
     # find all datasets to be tested
@@ -337,7 +355,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
         return allds_test
     else:
         return concatenate_datasets([allds_test[key] for key in allds_test])
-    
+
 def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False) -> dict[str,dict]:        
     # define collator
     if (not use_prompt):

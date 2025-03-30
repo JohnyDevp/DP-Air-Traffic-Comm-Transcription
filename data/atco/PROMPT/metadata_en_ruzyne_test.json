@@ -1,8 +1,8 @@
 [
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_161349.wav",
-        "full_ts": "Radar CSA One Delta Zulu established\nCSA One Delta Zulu roger contact Ruzyne Tower one three four decimal five six zero\n\nthree four five six zero CSA One Delta Zulu  pekn\u00fd de\u0148",
-        "short_ts": "Radar CSA 1DZ established\nCSA 1DZ roger contact Ruzyne Tower 134.560\n\n34560 CSA 1DZ pekn\u00fd de\u0148",
+        "full_ts": "Radar CSA One Delta Zulu established\nCSA One Delta Zulu roger contact Ruzyne Tower one three four decimal five six zero\n\nthree four five six zero CSA One Delta Zulu  pekný deň",
+        "short_ts": "Radar CSA 1DZ established\nCSA 1DZ roger contact Ruzyne Tower 134.560\n\n34560 CSA 1DZ pekný deň",
         "prompt-data": {
             "long_callsigns": [
                 "CSA One Delta Zulu"
@@ -111,13 +111,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "CSA One Delta Zulu, Austrian Airlines Two Juliett Papa, Qatari Six Kilo Golf, Air France One Zero Eight Zulu, Klm Two One Yankee",
-        "prompt_fullts_5B": "Sky Travel Four Three Two Papa, Turkish Five X-ray Victor, Ryan Air Six Five Yankee, Csa / Czech One Delta Zulu, Black Sea One Zero Two"
+        "callsigns_pos_fullts": [
+            1,
+            6,
+            27
+        ],
+        "prompt_fullts_1G_4B": "CSA One Delta Zulu, Oscar Kilo Whiskey Uniform Sierra One Three, Silk West Five Five Zero One, Oscar Kilo Kilo Echo Alfa, Lufthansa Six November Charlie",
+        "prompt_fullts_5B": "Air Silesia Seven Six Two, Oscar Kilo Zulu Whiskey Charlie Seven Three, Soko Air Oscar Papa, Kilo Zero One, Lufthansa Six November Charlie",
+        "prompt_fullts_50B": "Sky Travel Three Six Juliett, Air France One Zero Bravo Echo, Klm Two One Yankee, Turkish Five X-ray Victor, Dream Team Four Zero Four Kilo, Air France One Zero Eight Zulu, Thunder Wings Tango Papa, Oscar Kilo Whiskey Uniform Romeo Three Eight, Tuifly Three Papa Charlie, Okapi Romeo Mike, Topjet Four Zero Two, Qatari Eight One Nine Four, Dark Blue Eight Five Tango, Kilo Zero One, Oscar Kilo Hotel Hotel Hotel, Ryan Air Four One Quebec Hotel, Austrian Airlines Two Juliett Papa, Qatari Six Kilo Golf, Csa / Czech Nine One Nine, Silk West Five Five Zero One, Lufthansa Six November Charlie, Qatari Two Hotel Romeo, Air Silesia Seven Six Two, Lufthansa Five Charlie Victor, Scandinavian Nine One Three Five, Oscar Kilo Whiskey Uniform Sierra One Three, Ryan Air Nine Two Bravo Quebec, Sunexpress Seven Delta, Sky Travel Four Three Two Papa, Black Sea One Zero Two, Csa / Czech One Delta Zulu, Oscar Kilo Kilo Echo Alfa, Ryan Air Six Five Yankee, Oscar Kilo Zulu Whiskey Charlie Seven Three, Soko Air Oscar Papa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_121714.wav",
-        "full_ts": "Oscar Kilo Uniform Tango Charlie re- release from frequency flying information service available at one two six decimal one Praha Information   dobr\u00fd den",
-        "short_ts": "OKUTC re release from frequency flying information service available at 126.1 Praha Information dobr\u00fd den",
+        "full_ts": "Oscar Kilo Uniform Tango Charlie re- release from frequency flying information service available at one two six decimal one Praha Information   dobrý den",
+        "short_ts": "OKUTC re release from frequency flying information service available at 126.1 Praha Information dobrý den",
         "prompt-data": {
             "long_callsigns": [
                 "Oscar Kilo Uniform Tango Charlie"
@@ -231,8 +237,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Uniform Tango Charlie, Oscar Kilo Delta Sierra Victor, Lufthansa Four Romeo Mike, Lion King Echo Three Six, Speedbird Eight Five Four",
-        "prompt_fullts_5B": "Okapi Romeo Mike, Air Silesia Six Seven Two, Aegean Six Romeo Whiskey, Speedbird Eight Five Five, Lufthansa Six Lima Lima"
+        "callsigns_pos_fullts": [
+            0
+        ],
+        "prompt_fullts_1G_4B": "Oscar Kilo Uniform Tango Charlie, Lufthansa Four Romeo Mike, Sky Travel Four Three Seven Eight, Sundair Four One Nine Three, Broadsword Two One",
+        "prompt_fullts_5B": "Lufthansa Nine Tango Papa, Ryan Air Five Yankee Juliett, Air Silesia Six Seven One, Soko Air Oscar Charlie, Time Air Seven Eight Three Yankee",
+        "prompt_fullts_50B": "Okapi Romeo Mike, Turkish Five Bravo X-ray, Speedbird Eight Five Five, Broadsword Two One, Qatari Six Bravo Lima, Sun Turk Seven Six Alfa, Oscar Kilo Mike Delta Hotel, Lufthansa Six Lima Lima, Ryan Air Five Yankee Juliett, Klm Four Four Kilo, Lufthansa Four Romeo Mike, Air Silesia Six Seven One, Sky Travel Four Three Seven Eight, Lufthansa Nine Tango Papa, Air Baltic Six Three Zero, All Charter Four Alfa Papa, Mass Air Oscar Four Zero, Emirates Nine Nine Three Six, Air Silesia Seven Seven One, Oscar Kilo Bravo Alfa Lima, Sundair Four One Nine Three, Oscar Kilo Delta Sierra Victor, Csa / Czech Nine One Eight, Oscar Kilo Mike Hotel Zulu, Zap Nine Four One, Aegean Six Romeo Whiskey, Turkish Six Two Eight Nine, Lion King Echo Three Six, Csa / Czech Two Delta Zulu, Lufthansa Five Uniform Yankee, Ryan Air Five Foxtrot Papa, Oscar Kilo Yankee Uniform Romeo Nine Nine, Oscar Kilo Yankee Uniform Sierra Four Five, Time Air Seven Eight Three Yankee, Oscar Kilo Bravo Yankee Alfa, Air Silesia Six Seven Two, Speedbird Eight Five Four, Soko Air Oscar Charlie"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_130708.wav",
@@ -243,8 +253,8 @@
                 "Air France One Zero Eight Zulu"
             ],
             "short_callsigns": [
-                "AFR108Z",
-                "ATCO radar"
+                "ATCO radar",
+                "AFR108Z"
             ],
             "waypoints": [
                 "AKEVA",
@@ -358,20 +368,25 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Air France One Zero Eight Zulu, Oscar Kilo Hotel Hotel Hotel, Ryan Air Six Eight Four Two, Orienteagle Whiskey Victor, Qatari Three Alfa Uniform",
-        "prompt_fullts_5B": "Two Mike Romeo Golf Tango, Lufthansa Five Uniform Yankee, Wizzair Five Five Four, Oscar Kilo Zulu Whiskey Charlie Seven Three, Ryan Air One Bravo Alfa"
+        "callsigns_pos_fullts": [
+            0,
+            16
+        ],
+        "prompt_fullts_1G_4B": "Air France One Zero Eight Zulu, Oscar Kilo Zulu Whiskey Charlie Seven Three, Ryan Air Six Tango November, Oscar Kilo Hotel Hotel Hotel, Tuifly Three Papa Charlie",
+        "prompt_fullts_5B": "Ryan Air Eight Three Three Two, Ryan Air Six Eight Four Two, Tarom Three Six Two Mike, Lufthansa Five Uniform Yankee, Turkish Five X-ray Victor",
+        "prompt_fullts_50B": "Sky Travel Three Five Juliett, Wizzair One Charlie Echo, Qatari Six Bravo Lima, Ryan Air Four One Quebec Hotel, Ryan Air Six Eight Four Two, Oscar Kilo Whiskey Uniform Romeo Three Eight, Ryan Air One Bravo Alfa, Lot Four Mike Tango, Okayjet Lima Yankee, Foxtrot Whiskey Whiskey Zulu Zulu, All Charter Two Zero Zero, Okapi Romeo Mike, Tuifly Three Papa Charlie, Vueling Eight Six Five Three, Time Air Seven Eight Four Yankee, Speedbird Eight Five Five, Swiss One Six Five Victor, Ryan Air Nine Foxtrot Delta, Orienteagle Whiskey Victor, Two Mike Romeo Golf Tango, Ryan Air Six Tango November, Csa / Czech Two Delta Zulu, Oscar Kilo Yankee Alfa India One Four, Okayjet Charlie Tango, Wizzair Nine Two, Oscar Kilo Hotel Hotel Hotel, Ryan Air Eight Three Three Two, Turkish Five X-ray Victor, Air France One Zero Eight Zulu, Lufthansa Five Uniform Yankee, Tarom Three Six Two Mike, Csa / Czech Nine One Eight, Oscar Kilo Kilo Echo Alfa, Okapi Hotel Mike, Wizzair Five Five Four, Qatari Three Alfa Uniform, Speedbird Six Nine Seven Victor, Topjet Five Zero One, Lufthansa Eight Hotel Tango, Oscar Echo Foxtrot Delta India, Oscar Kilo Zulu Whiskey Charlie Seven Three"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_131433.wav",
-        "full_ts": "Praha Radar Oscar Kilo Uniform Tango Charlie   dobr\u00fd den   passing three thousand nine hundred climbing flight level seven zero inbound Vlasim ready for IFR\nOscar Kilo Uniform Tango Charlie   dobr\u00fd den  Praha Radar identified\nclimb flight level seven zero and cleared to   destination Benesov    via flight plan route\nIFR flight starts now time one three one four",
-        "short_ts": "Praha Radar OKUTC dobr\u00fd den passing 3900 climbing flight level 70 inbound Vlasim ready for IFR\nOKUTC dobr\u00fd den Praha Radar identified\nclimb flight level 70 and cleared to 10 Benesov via flight plan route\nIFR flight starts now time 1314",
+        "full_ts": "Praha Radar Oscar Kilo Uniform Tango Charlie   dobrý den   passing three thousand nine hundred climbing flight level seven zero inbound Vlasim ready for IFR\nOscar Kilo Uniform Tango Charlie   dobrý den  Praha Radar identified\nclimb flight level seven zero and cleared to   destination Benesov    via flight plan route\nIFR flight starts now time one three one four",
+        "short_ts": "Praha Radar OKUTC dobrý den passing 3900 climbing flight level 70 inbound Vlasim ready for IFR\nOKUTC dobrý den Praha Radar identified\nclimb flight level 70 and cleared to 10 Benesov via flight plan route\nIFR flight starts now time 1314",
         "prompt-data": {
             "long_callsigns": [
                 "Oscar Kilo Uniform Tango Charlie"
             ],
             "short_callsigns": [
-                "OK-UTC",
-                "ATCO radar"
+                "ATCO radar",
+                "OK-UTC"
             ],
             "waypoints": [
                 "AKEVA",
@@ -401,8 +416,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            2,
+            29
+        ],
         "prompt_fullts_1G_4B": "Oscar Kilo Uniform Tango Charlie, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_114352.wav",
@@ -533,8 +553,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Papa Romeo Mike, Oscar Kilo Papa Romeo Mike, Foxtrot Whiskey Whiskey Zulu Zulu, Ryan Air Six Eight Four Two, Qatari Seven Golf Uniform, Swiss One Six Five Victor",
-        "prompt_fullts_5B": "Vueling Eight Six Five Three, Oscar Kilo Yankee Alfa India One Four, Speedbird Eight Five Four, Ryan Air One Juliett Uniform, Oscar Kilo Kilo Echo Alfa"
+        "callsigns_pos_fullts": [
+            0,
+            16
+        ],
+        "prompt_fullts_1G_4B": "Oscar Papa Romeo Mike, Oscar Kilo Papa Romeo Mike, Okapi Romeo Mike, Lufthansa Three November Lima, Csa / Czech Two Delta Zulu, All Charter Two Zero Zero",
+        "prompt_fullts_5B": "Two Mike Romeo Golf Tango, Speedbird Eight Five Five, Lufthansa Five Uniform Yankee, Wizzair One Charlie Echo, Okapi Hotel Mike",
+        "prompt_fullts_50B": "Lufthansa Five Uniform Yankee, Orienteagle Whiskey Victor, Speedbird Eight Five Four, Time Air Seven Eight Four Yankee, Lufthansa Nine Tango Papa, Oscar Kilo Kilo Echo Alfa, Aerovega Alfa Two Four, Ryan Air One Juliett Uniform, Austrian Airlines Eight Nine, All Charter Two Zero Zero, Tarom Three Six Two Mike, Lufthansa Three November Lima, Csa / Czech Two Delta Zulu, Vueling Eight Six Five Three, Dark Blue Eight Five Tango, Sky Travel Three Five Juliett, Qatari Seven Golf Uniform, Speedbird Eight Five Five, Ryan Air Six Tango November, Flyinglux Six Two Charlie Bravo, Lot Five Romeo Whiskey, Oscar Echo Foxtrot Delta India, Humber Air Foxtrot Three Four Three, Oscar Kilo Whiskey Uniform Romeo Three Eight, Two Mike Romeo Golf Tango, Swiss One Six Five Victor, Lot Four Mike Tango, Okayjet Charlie Tango, Qatari Six Bravo Lima, Okapi Romeo Mike, Qatari Three Alfa Uniform, Wizzair One Charlie Echo, Vueling Eight Six Tango Mike, Speedbird Six Nine Seven Victor, Ryan Air One Bravo Alfa, Okapi Hotel Mike, Soko Air Oscar Papa, Iranair Seven Three Three, Foxtrot Whiskey Whiskey Zulu Zulu, Alpine Nine Four Yankee Tango, Oscar Kilo Yankee Alfa India One Four, Csa / Czech Nine One Eight, Ryan Air Six Eight Four Two"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_105855.wav",
@@ -545,8 +570,8 @@
                 "Skytravel Three Five Juliett"
             ],
             "short_callsigns": [
-                "TVS35J",
-                "ATCO radar"
+                "ATCO radar",
+                "TVS35J"
             ],
             "waypoints": [
                 "AKEVA",
@@ -666,8 +691,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Skytravel Three Five Juliett, Speedbird Six Nine Seven Victor, Qatari Five Nine Golf, Soko Air Oscar Papa, Oscar Kilo Yankee Alfa India One Four",
-        "prompt_fullts_5B": "Ryan Air One Juliett Uniform, Iranair Seven Three Three, Time Air Seven Eight Four Yankee, Tarom Three Six One Romeo, Lufthansa Five Uniform Yankee"
+        "callsigns_pos_fullts": [
+            0,
+            20
+        ],
+        "prompt_fullts_1G_4B": "Skytravel Three Five Juliett, Lot Five Two Papa, Ryan Air Six Eight Four Two, Ryan Air One Juliett Uniform, Lufthansa Nine Tango Papa",
+        "prompt_fullts_5B": "Qatari Six Bravo Lima, Oscar Kilo Yankee Alfa India One Four, Soko Air Oscar Papa, Vueling Eight Six Five Three, Flyinglux Six Two Charlie Bravo",
+        "prompt_fullts_50B": "Speedbird Eight Five Five, Aerovega Alfa Two Four, Oscar Kilo Kilo Echo Alfa, All Charter Two Zero Zero, Ryan Air One Bravo Alfa, Qatari Five Nine Golf, Sky Travel Three Five Juliett, Austrian Airlines Eight Nine, Lot Five Two Papa, Orienteagle Whiskey Victor, Speedbird Six Nine Seven Victor, Dark Blue Five Seven Golf, Okapi Hotel Mike, Okayjet Charlie Tango, Qatari Six Bravo Lima, Flyinglux Six Two Charlie Bravo, Ryan Air Six Eight Four Two, Iranair Seven Three Three, Soko Air Oscar Papa, Dark Blue Eight Five Tango, Wizzair Three Five Yankee Tango, Csa / Czech Two Delta Zulu, Wizzair One Charlie Echo, Tarom Three Six One Romeo, Okapi Romeo Mike, Lot Four Mike Tango, Alpine Nine Four Yankee Tango, Flyinglux Six One Charlie Bravo, Oscar Kilo Yankee Alfa India One Four, Humber Air Foxtrot Three Four Three, Qatari Seven Golf Uniform, Lot Five Romeo Whiskey, Time Air Seven Eight Four Yankee, Vueling Eight Six Tango Mike, Lufthansa Three November Lima, Qatari Three Alfa Uniform, Two Mike Romeo Golf Tango, Lufthansa Five Uniform Yankee, Vueling Eight Six Five Three, Speedbird Eight Five Four, Oscar Echo Foxtrot Delta India, Csa / Czech Nine One Eight, Lufthansa Nine Tango Papa, Ryan Air One Juliett Uniform"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_131046.wav",
@@ -676,8 +706,8 @@
         "prompt-data": {
             "long_callsigns": [],
             "short_callsigns": [
-                "AFR108Z",
                 "ATCO radar",
+                "AFR108Z",
                 "OK4675"
             ],
             "waypoints": [
@@ -790,8 +820,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Quebec Quebec Echo Four Zero Five, Broadsword Two One, Aegean Six Romeo Whiskey, Sun Turk Seven Six Alfa",
-        "prompt_fullts_5B": "Air Silesia Six Seven Two, Oscar Kilo Delta Sierra Victor, Lufthansa Six Lima Lima, Aegean Six Romeo Whiskey, Lufthansa Four Romeo Mike"
+        "callsigns_pos_fullts": [],
+        "prompt_fullts_1G_4B": ", Sky Travel Four Three Seven Eight, Ryan Air Nine Two Bravo Quebec, Oscar Kilo Bravo Alfa Lima, Okapi Romeo Mike",
+        "prompt_fullts_5B": "Aegean Six Romeo Whiskey, Oscar Kilo Yankee Uniform Sierra Four Five, Csa / Czech Nine One Eight, Lufthansa Four Juliett November, Oscar Kilo Mike Delta Hotel",
+        "prompt_fullts_50B": "Air Baltic Six Three Zero, Sky Travel Four Three Seven Eight, Csa / Czech Two Delta Zulu, Sun Turk Seven Six Alfa, Oscar Kilo Bravo Yankee Alfa, Ryan Air Nine Two Bravo Quebec, Okapi Romeo Mike, Turkish Three X-ray Yankee, Soko Air Oscar Charlie, Lufthansa Four Juliett November, Lufthansa Six Lima Lima, Air Silesia Six Seven Two, Lufthansa Four Romeo Mike, Oscar Kilo Yankee Uniform Sierra Four Five, Oscar Kilo Yankee Uniform Romeo Nine Nine, Ryan Air Five Yankee Juliett, Oscar Kilo Bravo Alfa Lima, Oscar Kilo Mike Delta Hotel, Mass Air Oscar Four Zero, Eclair Three Zero One, Broadsword Two One, All Charter Four Alfa Papa, Oscar Kilo Whiskey Uniform Romeo Three Four, Csa / Czech Nine One Eight, Speedbird Eight Five Five, Zap Nine Four One, Ryan Air One Four Kilo, Air France One Zero Eight Zulu, Lion King Echo Three Six, Emirates Nine Nine Three Six, Oscar Kilo Mike Hotel Zulu, Oscar Kilo Delta Sierra Victor, Oscar Echo Foxtrot Delta India, Air Silesia Seven Seven One, Aegean Six Romeo Whiskey, Quebec Quebec Echo Four Zero Five, Lufthansa Five Uniform Yankee, Turkish Six Two Eight Nine, Qatari Six Bravo Lima, Sun Turk Three Zero Two"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_160035.wav",
@@ -902,8 +934,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Silesia Seven Six Two, Tuifly Three Papa Charlie, Qatari Two Hotel Romeo, Csa / Czech Nine One Nine, Scandinavian Nine One Three Five",
-        "prompt_fullts_5B": "Soko Air Oscar Papa, Klm Two One Yankee, Qatari Eight One Nine Four, Ryan Air Nine Two Bravo Quebec, Ryan Air Six Five Yankee"
+        "callsigns_pos_fullts": [
+            0
+        ],
+        "prompt_fullts_1G_4B": "Silesia Seven Six Two, Air France One Zero Eight Zulu, Oscar Kilo Kilo Echo Alfa, Lufthansa Eight Hotel Tango, Qatari Two Hotel Romeo",
+        "prompt_fullts_5B": "Scandinavian Nine One Three Five, Air France One Zero Bravo Echo, Sky Travel Three Six Juliett, Oscar Kilo Whiskey Uniform Romeo Three Eight, Oscar Kilo Zulu Whiskey Charlie Seven Three",
+        "prompt_fullts_50B": "Thunder Wings Tango Papa, Tuifly Three Papa Charlie, Dream Team Four Zero Four Kilo, Air France One Zero Bravo Echo, Sky Travel Four Three Two Papa, Ryan Air Nine Two Bravo Quebec, Air France One Zero Eight Zulu, Qatari Six Kilo Golf, Ryan Air Four One Quebec Hotel, Scandinavian Nine One Three Five, Lufthansa Eight Hotel Tango, Csa / Czech Nine One Nine, Soko Air Oscar Papa, Topjet Four Zero Two, Silk West Five Five Zero One, Oscar Kilo Whiskey Uniform Sierra One Three, Qatari Two Hotel Romeo, Austrian Airlines Two Juliett Papa, Sunexpress Seven Delta, Csa / Czech One Delta Zulu, Oscar Kilo Kilo Echo Alfa, Ryan Air Six Five Yankee, Qatari Eight One Nine Four, Turkish Five X-ray Victor, Dark Blue Eight Five Tango, Kilo Zero One, Oscar Kilo Hotel Hotel Hotel, Oscar Kilo Whiskey Uniform Romeo Three Eight, Klm Two One Yankee, Sky Travel Three Six Juliett, Air Silesia Seven Six Two, Oscar Kilo Zulu Whiskey Charlie Seven Three, Lufthansa Six November Charlie, Okapi Romeo Mike"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_092519.wav",
@@ -923,8 +959,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_091331.wav",
@@ -935,8 +973,8 @@
                 "Oscar Kilo Alpha Victor Kilo"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "OKAVK"
+                "OKAVK",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1044,8 +1082,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Victor Kilo, Lufthansa One Yankee Yankee, Sunexpress Four Tango, Qatari Three One Seven One, Fraction One Five Zero Whiskey",
-        "prompt_fullts_5B": "Air Hamburg Two Two Two Echo, Oklahoma Lima Zulu, Kilo Zero One, Oscar Echo Foxtrot Lima Zulu, Oscar Kilo Whiskey Uniform Sierra One Three"
+        "callsigns_pos_fullts": [
+            3,
+            26
+        ],
+        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Victor Kilo, Qatari Three One Seven One, Fraction One Five Zero Whiskey, Oscar Kilo Victor Alfa Romeo One Two, Oklahoma Lima Zulu",
+        "prompt_fullts_5B": "Qatari Three One Seven One, Time Air Seven Nine Three Foxtrot, Air Malta Five Three Eight, Wizzair Three Eight Five Eight, Turkish Six Two Zero One",
+        "prompt_fullts_50B": "Oscar Kilo Mike Delta Hotel, Qatari Three One Seven One, Kilo Zero One, Oscar Kilo Victor Alfa Romeo One Two, Time Air Seven Nine Three Foxtrot, Air Malta Five Three Eight, Wizzair Three Eight Five Eight, Oscar Kilo Delta Sierra Victor, Sky Travel Four Three Six Eight, Lufthansa One Kilo Victor, Turkish Six Two Zero One, Air Hamburg Two Nine Two Zulu, Vista Jet Four Three One, Oscar Kilo Mike Hotel Zulu, Speedbird Eight Five Four, Oscar Kilo Hotel Bravo Tango, Fraction One Five Zero Whiskey, Okapi Romeo Mike, Oscar Echo Foxtrot Lima Zulu, Oklahoma Lima Zulu, Klm Four Four Kilo, Swift Three Kilo Tango, Air Malta Five Three Nine, Sunexpress Four Tango, Sky Travel Three Three Juliett, Air Hamburg Two Two Two Echo, Dark Blue Four Foxtrot Quebec, Soko Air Oscar Papa, Soko Air Oscar Charlie, Okayjet Oscar Alfa, Lufthansa One Yankee Yankee, Oklahoma India Oscar, Okayjet Victor Kilo, Oscar Kilo Whiskey Uniform Sierra One Three, Lufthansa Three November Lima, Oscar Echo Victor Sierra Oscar, Lot Three Five Echo, Oscar Kilo Bravo Yankee Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_174652.wav",
@@ -1191,8 +1234,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Lufthansa Eight Hotel Romeo, Qatari Five Charlie Foxtrot, Wizzair Three Eight Five Eight, Lufthansa Two Hotel Alfa, Speedbird Eight Eight Seven",
-        "prompt_fullts_5B": "Ryan Air Two Zero One Four, Klm Two One Yankee, Klm Four Six Alfa, Transavia Zero Five One, Air Baltic Two Two Three"
+        "callsigns_pos_fullts": [
+            3,
+            15,
+            32
+        ],
+        "prompt_fullts_1G_4B": "Lufthansa Eight Hotel Romeo, Oscar Kilo Mike Delta Hotel, Lufthansa Two Hotel Alfa, Alpine Five Eight One Five, Oscar Kilo Yankee Uniform Alfa Two One",
+        "prompt_fullts_5B": "Lufthansa Two Hotel Alfa, Lufthansa Eight Hotel Romeo, Ryan Air Two Nine Five Lima, Time Air Seven Nine Zero Juliett, Eurowings One Tango Kilo",
+        "prompt_fullts_50B": "Speedbird Eight Five Six Zulu, Transavia Zero Five One, Ryan Air Two Zero One Four, Mazoon Seven Three Seven, Lot Three Seven Three, Csa / Czech Nine Five Delta, Lufthansa Seven Seven Two, Swiss One Three Four Uniform, Oscar Kilo X-ray Alfa India Zero Four, Csa / Czech One Delta Zulu, Speedbird Eight Eight Seven, Swiss One Six Five Victor, Air Malta Three Seven Six, Csa / Czech Seven Kilo Golf, Ryan Air Seven Seven Nine Seven, Csa / Czech Nine One Nine, Oscar Kilo Kilo Mike Charlie, Eclair Three Zero One, Flying Bulgaria Three Zero Two, Okapi Mike Papa, Wizzair Nine Delta Delta, Transavia Zero Five Three, Lufthansa Eight Hotel Romeo, Klm One Six One Four, Fraction Zero Four Four Golf, Sun Turk Five Seven Five Four, Tango Seven Victor Sierra Romeo, Oscar Kilo Yankee Uniform Alfa Two One, Wizzair Three Eight Five Eight, Csa / Czech Five Zero Eight, Ryan Air Two Nine Five Lima, Bohemia Seven One One, Qatari Eight Two Three One, Klm Four Six Alfa, Cargo Med Five Seven One Seven, Lufthansa Two Hotel Alfa, Alpine Five Eight One Five, Oscar Kilo Mike Delta Hotel, Sky Travel Two Eight Two Six, Ryan Air Two Three One Nine, Oscar Kilo Zulu Whiskey Charlie Seven Three, Lufthansa Five Charlie Victor, Dark Knight Nine Charlie, Qatari Five Charlie Foxtrot, Eurowings One Tango Kilo, Time Air Seven Nine Zero Juliett, Klm Two One Yankee, Qatari Eight Two Three Two, Air Baltic Two Two Three, Speedbird Three Four Victor"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_143027.wav",
@@ -1204,8 +1253,8 @@
                 "Dream Team Four Zero Four Kilo"
             ],
             "short_callsigns": [
-                "GAC404K",
-                "ATCO radar"
+                "ATCO radar",
+                "GAC404K"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1309,8 +1358,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Dream Team Four Zero Four Kilo, Dream Team Four Zero Four Kilo, Oscar Kilo Hotel Hotel Hotel, Air France One Zero Eight Zulu, Topjet Five Zero One, Ryan Air Nine Two Bravo Quebec",
-        "prompt_fullts_5B": "Ryan Air Six Tango November, Turkish Five X-ray Victor, Okayjet Lima Yankee, Ryan Air Six Eight Four Two, Dream Team Four Zero Four Kilo"
+        "callsigns_pos_fullts": [
+            0,
+            21
+        ],
+        "prompt_fullts_1G_4B": " Dream Team Four Zero Four Kilo, Dream Team Four Zero Four Kilo, Two Mike Romeo Golf Tango, Ryan Air Eight Three Three Two, Austrian Airlines Two Juliett Papa, Wizzair Nine Two",
+        "prompt_fullts_5B": "Time Air Seven Eight Four Yankee, Swiss One Six Five Victor, Oscar Kilo Whiskey Uniform Sierra One Three, Ryan Air Nine Two Bravo Quebec, Silk West Five Five Zero One",
+        "prompt_fullts_50B": "Dream Team Four Zero Four Kilo, Topjet Five Zero One, Ryan Air Eight Three Three Two, Ryan Air Six Eight Four Two, Air France One Zero Bravo Echo, Ryan Air Nine Two Bravo Quebec, Okapi Romeo Mike, Two Mike Romeo Golf Tango, Oscar Kilo Whiskey Uniform Sierra One Three, Swiss One Six Five Victor, Oscar Kilo Hotel Hotel Hotel, Turkish Five X-ray Victor, Foxtrot Whiskey Whiskey Zulu Zulu, Ryan Air Nine Foxtrot Delta, Silk West Five Five Zero One, Air France One Zero Eight Zulu, Qatari Eight One Nine Four, Sunexpress Seven Delta, Lufthansa Eight Hotel Tango, Ryan Air Six Tango November, Ryan Air Six Five Yankee, Wizzair Five Five Four, Dark Blue Eight Five Tango, Sky Travel Four Three Two Papa, Kilo Zero One, Time Air Seven Eight Four Yankee, Oscar Kilo Whiskey Uniform Romeo Three Eight, Tarom Three Six Two Mike, Wizzair Nine Two, Scandinavian Nine One Three Five, Oscar Kilo Kilo Echo Alfa, Oscar Kilo Zulu Whiskey Charlie Seven Three, Okayjet Lima Yankee, Austrian Airlines Two Juliett Papa, Ryan Air Four One Quebec Hotel, Tuifly Three Papa Charlie"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_212419.wav",
@@ -1347,8 +1401,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_213836.wav",
@@ -1369,8 +1425,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            0
+        ],
         "prompt_fullts_1G_4B": "Skytravel Two Eight Two Seven, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_084648.wav",
@@ -1482,12 +1542,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Oscar Kilo Mike Delta Hotel, Wizzair Three Eight Five Eight, Vista Jet Four Three One, Turkish Six Two Zero One",
-        "prompt_fullts_5B": "Speedbird Eight Five Four, Soko Air Oscar Charlie, Air Malta Five Three Nine, Dark Blue Four Foxtrot Quebec, Air Hamburg Two Nine Two Zulu"
+        "callsigns_pos_fullts": [],
+        "prompt_fullts_1G_4B": ", Sky Travel Four Three Two Foxtrot, Soko Air Oscar Papa, Soko Air Oscar Charlie, Oklahoma Lima Zulu",
+        "prompt_fullts_5B": "Air Malta Five Three Nine, Oscar Kilo Delta Sierra Victor, Oscar Kilo Mike Hotel Zulu, Sky Travel Three Three Juliett, Swift Three Kilo Tango",
+        "prompt_fullts_50B": "Sky Travel Four Three Two Foxtrot, Lufthansa One Kilo Victor, Turkish Six Two Zero One, Sky Travel Three Three Juliett, Vista Jet Four Three One, Oscar Kilo Hotel Bravo Tango, Time Air Seven Nine Three Foxtrot, Lufthansa One Yankee Yankee, Air Hamburg Two Two Two Echo, Air Hamburg Two Nine Two Zulu, Okayjet Victor Kilo, Okayjet Oscar Alfa, Swift Three Kilo Tango, Lot Three Five Echo, German Cargo Six Nine One, Oscar Echo Foxtrot Lima Zulu, Oscar Kilo Mike Delta Hotel, Fraction One Five Zero Whiskey, Oscar Kilo Bravo Yankee Tango, Soko Air Oscar Papa, Dark Blue Four Foxtrot Quebec, Air Malta Five Three Eight, Oscar Kilo Victor Alfa Romeo One Two, Oscar Echo Victor Sierra Oscar, Lufthansa Three November Lima, Sky Travel Four Three Six Eight, Speedbird Eight Five Four, Oscar Kilo Whiskey Uniform Sierra One Three, Oscar Kilo Mike Hotel Zulu, Wizzair Three Eight Five Eight, Oscar Kilo Delta Sierra Victor, Oklahoma Lima Zulu, Qatari Three One Seven One, Air Malta Five Three Nine, Soko Air Oscar Charlie"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201024_221711.wav",
-        "full_ts": "Oscar Kilo Foxtrot  Charlie  \u00a0Alpha you are leaving TMA Praha switch to Praha info one two six decimal one \u00a0 naslysenou\none two six decimal  one \u00a0 naslysenou dekuji",
+        "full_ts": "Oscar Kilo Foxtrot  Charlie   Alpha you are leaving TMA Praha switch to Praha info one two six decimal one   naslysenou\none two six decimal  one   naslysenou dekuji",
         "short_ts": "OKFCA you are leaving TMA Praha switch to Praha info 126.1 naslysenou\n126.1 naslysenou dekuji",
         "prompt-data": {
             "long_callsigns": [
@@ -1559,8 +1621,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Foxtrot Charlie Alpha, Turkish Six Six Zero Six, Lufthansa Seven Lima Papa, Sunexpress One Golf X-ray, Alpine Eight Four X-ray Charlie",
-        "prompt_fullts_5B": "Wizzair Four Six Seven Zero, Oscar Kilo Romeo Lima Victor, Sky Travel Two Eight Zero Zero, Sky Travel Six X-ray, Lufthansa Seven Lima Papa"
+        "callsigns_pos_fullts": [
+            0
+        ],
+        "prompt_fullts_1G_4B": "Oscar Kilo Foxtrot Charlie Alpha, Wizzair Four Six Seven Zero, Thunder Wings Echo Zulu, Sky Travel Two Eight Zero Zero, Sundair Four Eight Six Five",
+        "prompt_fullts_5B": "Klm Seven Three Whiskey, Alpine Eight Four X-ray Charlie, Sky Travel Six X-ray, Moonflower Zero Two, Sky Travel Two Eight Zero Zero",
+        "prompt_fullts_50B": "Alpine Eight Four X-ray Charlie, Wizzair Four Six Seven Zero, Sunexpress One Golf X-ray, Turkish Six Three Three Eight, Eva Zero Seven Eight, Sky Travel Two Eight Zero Zero, Klm Seven Three Whiskey, Thunder Wings Echo Zulu, Sundair Four Eight Six Five, Moonflower Zero Two, Eurowings Seven Six Four Five, Sky Travel Six X-ray, Oscar Kilo Romeo Lima Victor, Turkish Six Six Zero Six, Csa / Czech Nine Two Two, Lufthansa Seven Lima Papa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_151332.wav",
@@ -1667,8 +1733,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Mike Charlie Charlie, Arcusair Four Three Lima, Csa / Czech Six Kilo Golf, Oscar Kilo Mike Hotel Zulu, France Soleil Four Three Echo Papa",
-        "prompt_fullts_5B": "Aeroflot Two Zero One Three, Oscar Kilo Mike Mike India, Wizzair Two One Eight Four, Ryan Air Six Tango November, Csa / Czech Six Kilo Golf"
+        "callsigns_pos_fullts": [
+            0
+        ],
+        "prompt_fullts_1G_4B": "Oscar Kilo Mike Charlie Charlie, Turkish Six Five Nine One, Aeroflot Two Zero One Three, Time Air Eight Zero Four Papa, Oscar Kilo Bravo Alfa Lima",
+        "prompt_fullts_5B": "Emirates One Eight, Oscar Echo Foxtrot Echo Bravo, Aeroflot Two Zero One Three, France Soleil Four Three Echo Papa, Oscar Kilo Foxtrot Romeo Oscar",
+        "prompt_fullts_50B": "France Soleil Four Three Echo Papa, Csa / Czech One Delta Zulu, Oscar Echo Foxtrot Echo Bravo, Time Air Eight Zero Four Papa, Wizzair Two One Eight Four, Lufthansa One Nine Three Seven, Ryan Air One Zero One, Air France One Zero Bravo Echo, Emirates One Eight, Turkish Five Alfa Golf, Lot Five Two One, France Soleil Four Zero Three Eight, Csa / Czech Six Kilo Golf, Oscar Kilo Mike Hotel Zulu, Oscar Kilo Mike Delta Hotel, Okapi Romeo Mike, Turkish Six Five Nine One, Alpine Eight Four Charlie Bravo, Ryan Air Six Tango November, Lufthansa Six Yankee Whiskey, Okayjet Charlie Tango, Sky Travel Six Alfa Delta, Air France One Zero Eight Zulu, Oscar Kilo Foxtrot Romeo Oscar, Silver Arrow Seven Two Victor Papa, Oscar Kilo Bravo Alfa Lima, Arcusair Four Three Lima, Oscar Kilo Mike Mike India, Mistral Wings Lima Tango, Okayjet Lima Yankee, Aeroflot Two Zero One Three, Kilo Zero One"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_161808.wav",
@@ -1827,8 +1897,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Mike Papa, Alpine Five Eight One Five, Tango Seven Victor Sierra Romeo, Ryan Air Two One Two Two, Oscar Kilo Yankee Uniform Alfa Two One",
-        "prompt_fullts_5B": "Ryan Air Two Three One Nine, Ryan Air Five X-ray Lima, Air Portugal One Two Four Four, Lufthansa Seven Seven Two, Csa / Czech One Delta Zulu"
+        "callsigns_pos_fullts": [
+            0
+        ],
+        "prompt_fullts_1G_4B": "Oscar Mike Papa, Oscar Kilo Mike Delta Hotel, Oscar Kilo Whiskey Yankee Zulu, Sky Travel Two Eight Two Six, Wizzair Three Eight Five Eight",
+        "prompt_fullts_5B": "Ryan Air Two Yankee Kilo, Ryan Air Two One Two Two, Oscar Kilo Kilo Mike Charlie, Ryan Air Five X-ray Lima, Oscar Kilo Kilo Echo Alfa",
+        "prompt_fullts_50B": "Eclair Three Zero One, Transavia Zero Five One, Wizzair Nine Delta Delta, Oklahoma Lima Zulu, Eurowings One Tango Kilo, World Express Five Four Seven, Air France One Zero Bravo Echo, Flying Bulgaria Three Zero Two, Time Air Seven Nine Zero Juliett, Transavia Zero Five Three, Oscar Kilo Mike Delta Hotel, Speedbird Eight Eight Seven, Air Baltic Two Two Three, Oscar Kilo Kilo Echo Alfa, Sun Turk Five Seven Five Four, Cargo Med Five Seven One Seven, Ryan Air Two One Two Two, Oscar Kilo Whiskey Yankee Zulu, Wizzair Three Eight Five Eight, Ryan Air Two Three One Nine, Speedbird Eight Five Six Zulu, Sky Travel Two Eight Two Six, Okapi Mike Papa, Mazoon Seven Three Seven, Qatari Eight Two Three One, Oklahoma Bravo Alfa, Csa / Czech One Delta Zulu, Lufthansa Two Hotel Alfa, Oscar Kilo X-ray Alfa India Zero Four, Oscar Kilo Yankee Uniform Alfa Two One, Csa / Czech Five Zero Eight, Klm Two One Yankee, Bohemia Seven One One, Air Malta Three Seven Six, Ryan Air Two Yankee Kilo, Flying Bulgaria Three Zero One, Fraction Zero Four Four Golf, Eurowings Seven Alfa Bravo, Csa / Czech Nine One Nine, Lufthansa Five Charlie Victor, Oscar Kilo Yankee Alfa India One Four, Oscar Kilo Zulu Whiskey Charlie Seven Three, Air Portugal One Two Four One, Lufthansa Seven Seven Two, Oscar Kilo Hotel Sierra India, Emirates One Four Zero, Ryan Air Seven Seven Nine Seven, Ascot/kittyhawk Four Nine Four One, Air France One Zero Eight Zulu, Sun Turk Three Zero Two"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_111817.wav",
@@ -1839,8 +1913,8 @@
                 "Qatari Six Bravo Lima"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "QTR6BL"
+                "QTR6BL",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -1992,8 +2066,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Qatari Six Bravo Lima, Kilo Zero One, Bohemia Seven One One, Oscar Kilo X-ray Uniform Sierra Two Nine, Sky Travel Four Three Seven Foxtrot",
-        "prompt_fullts_5B": "Kilo Zero One, Csa / Czech Two Delta Zulu, Austrian Airlines Two Nine Charlie Tango, Queen Air Two Five Alfa, Wizzair Three Eight Five Eight"
+        "callsigns_pos_fullts": [
+            1,
+            12,
+            33
+        ],
+        "prompt_fullts_1G_4B": "Qatari Six Bravo Lima, Qatari Six Bravo Lima, Oscar Echo Victor Sierra Oscar, Soko Air Juliett Lima, Bohemia Seven One One",
+        "prompt_fullts_5B": "Flyinglux Six One Charlie Bravo, Eurobird One Seven Two Five, Oscar Kilo Victor Alfa Romeo One Two, Okapi Romeo Mike, Bohemia Seven One One",
+        "prompt_fullts_50B": "Lufthansa Five Uniform Yankee, Oscar Kilo Whiskey Uniform Sierra One Seven, Oscar Kilo Hotel Hotel Hotel, Csa / Czech Nine One Eight, Soko Air Oscar Charlie, Sky Travel Four Three Six Eight, Sky Travel Four Three Eight Six, Eurobird One Seven Two Five, Oklahoma Lima Zulu, Queen Air Two Five Alfa, Flyinglux Six Two Charlie Bravo, Klm Four Four Kilo, Ryan Air Six One Two One, Qatari Four Lima Alfa, Oscar Kilo Mike Lima Delta, Bohemia Seven One Two, Thunder Wings Mike Romeo, Oscar Kilo Victor Alfa Romeo One Two, Lot Four One Two, Oscar Echo Foxtrot Lima Zulu, Oscar Kilo Bravo Yankee Tango, Okapi Romeo Mike, Oscar Kilo Delta Sierra Victor, Air Malta Five Three Nine, Speedbird Eight Five Five, Air France One Seven Delta Tango, Sky Travel Four Three Seven Foxtrot, Emirates One Three Nine, Oscar Kilo X-ray Uniform Sierra Two Nine, Austrian Airlines Two Nine Charlie Tango, Oscar Kilo Bravo Yankee India, Csa / Czech Two Delta Zulu, Oklahoma India Oscar, Sierra Papa Mike Mike Alfa, Sunexpress Four Tango, Belarus Avia Eight Six One, Lot Five Two Seven, Wizzair Three Eight Five Eight, Bohemia Seven One One, Flyinglux Six One Charlie Bravo, Swiss Ambulance Seven Two, Oscar Kilo Bravo Alfa Lima, Oscar Kilo Mike Delta Hotel, Speedbird Eight Five Four, Turkish Six Two Zero One, Qatari Six Bravo Lima, Okapi Mike Alfa, Ryan Air Three Zero Three, Lot Five Two Eight, Kilo Zero One"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201026_143955.wav",
@@ -2107,8 +2187,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Dream Team Four Zero Four Kilo, Qatari Two Hotel Romeo, Swiss One Six Five Victor, Wizzair Five Five Four, Wizzair Nine Two",
-        "prompt_fullts_5B": "Dream Team Four Zero Four Kilo, Two Mike Romeo Golf Tango, Wizzair Nine Two, Oscar Kilo Zulu Whiskey Charlie Seven Three, Sky Travel Four Three Two Papa"
+        "callsigns_pos_fullts": [
+            0
+        ],
+        "prompt_fullts_1G_4B": "Dream Team Four Zero Four Kilo, Sunexpress Seven Delta, Ryan Air Four One Quebec Hotel, Tuifly Three Papa Charlie, Kilo Zero One",
+        "prompt_fullts_5B": "Ryan Air Nine Foxtrot Delta, Tuifly Three Papa Charlie, Austrian Airlines Two Juliett Papa, Scandinavian Nine One Three Five, Oscar Kilo Whiskey Uniform Romeo Three Eight",
+        "prompt_fullts_50B": "Ryan Air Nine Two Bravo Quebec, Oscar Kilo Zulu Whiskey Charlie Seven Three, Dream Team Four Zero Four Kilo, Sunexpress Seven Delta, Foxtrot Whiskey Whiskey Zulu Zulu, Kilo Zero One, Turkish Five X-ray Victor, Lufthansa Eight Hotel Tango, Swiss One Six Five Victor, Ryan Air Eight Three Three Two, Oscar Kilo Kilo Echo Alfa, Oscar Kilo Hotel Hotel Hotel, Topjet Five Zero One, Oscar Kilo Whiskey Uniform Romeo Three Eight, Sky Travel Four Three Two Papa, Air France One Zero Eight Zulu, Tuifly Three Papa Charlie, Wizzair Nine Two, Austrian Airlines Two Juliett Papa, Wizzair Five Five Four, Okayjet Lima Yankee, Tarom Three Six Two Mike, Ryan Air Nine Foxtrot Delta, Two Mike Romeo Golf Tango, Dark Blue Eight Five Tango, Okapi Romeo Mike, Ryan Air Six Five Yankee, Oscar Kilo Whiskey Uniform Sierra One Three, Air France One Zero Bravo Echo, Ryan Air Six Tango November, Ryan Air Four One Quebec Hotel, Qatari Eight One Nine Four, Scandinavian Nine One Three Five, Silk West Five Five Zero One, Qatari Two Hotel Romeo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_103443.wav",
@@ -2119,8 +2203,8 @@
                 "CSA Nine One Eight"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "CSA918"
+                "CSA918",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2258,12 +2342,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "CSA Nine One Eight, Oscar Kilo Whiskey Uniform Sierra One Three, Speedbird Eight Five Five, Oscar Kilo Mike Delta Hotel, Fraction One Five Zero Whiskey",
-        "prompt_fullts_5B": "Dark Blue Four Foxtrot Quebec, Soko Air Juliett Lima, Vista Jet Four Three One, Kilo Zero One, Okayjet Victor Kilo"
+        "callsigns_pos_fullts": [
+            0,
+            24
+        ],
+        "prompt_fullts_1G_4B": "CSA Nine One Eight, Time Air Seven Nine Three Foxtrot, Soko Air Oscar Charlie, Oscar Kilo Mike Delta Hotel, Oscar Kilo Whiskey Uniform Sierra One Three",
+        "prompt_fullts_5B": "Oscar Kilo Whiskey Uniform Sierra One Seven, Queen Air Two Five Alfa, Oscar Kilo Delta Sierra Victor, November Two Zero One Hotel Sierra, Csa / Czech Nine One Eight",
+        "prompt_fullts_50B": "Sky Travel Four Three Eight Six, Speedbird Eight Five Five, Vista Jet Four Three One, Okapi Romeo Mike, Time Air Seven Nine Three Foxtrot, Soko Air Oscar Papa, Soko Air Oscar Charlie, Sky Travel Four Three Six Eight, Oklahoma Lima Zulu, Sunexpress Four Tango, Bohemia Seven One Two, Oscar Kilo Bravo Yankee Tango, Lufthansa Three November Lima, Fraction One Five Zero Whiskey, Oscar Kilo Hotel Bravo Tango, Okapi Mike Alfa, Oscar Kilo Mike Delta Hotel, Wizzair Three Eight Five Eight, Kilo Zero One, Klm Four Four Kilo, Air Malta Five Three Eight, Emirates One Three Nine, Oscar Echo Victor Sierra Oscar, Oscar Kilo Bravo Alfa Lima, Queen Air Two Five Alfa, Oscar Kilo Whiskey Uniform Sierra One Seven, Oscar Kilo Delta Sierra Victor, Bohemia Seven One One, Flyinglux Six Two Charlie Bravo, Lot Four One Two, Oscar Kilo X-ray Uniform Sierra Two Nine, Air France One Seven Delta Tango, Oscar Kilo Victor Alfa Romeo One Two, Belarus Avia Eight Six One, Csa / Czech Nine One Eight, Turkish Six Two Zero One, Soko Air Juliett Lima, Oklahoma India Oscar, November Two Zero One Hotel Sierra, Lufthansa Nine Tango Papa, Austrian Airlines Two Nine Charlie Tango, Oscar Kilo Whiskey Uniform Sierra One Three, Speedbird Eight Five Four, Dark Blue Four Foxtrot Quebec, Flyinglux Six One Charlie Bravo, Air Malta Five Three Nine, Okayjet Victor Kilo, Oscar Echo Foxtrot Lima Zulu, Oscar Kilo Mike Hotel Zulu, Lufthansa Five Uniform Yankee"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_122911.wav",
-        "full_ts": "say again  Oscar  Kilo  Bravo  Alpha Lima\nOscar  Kilo  Bravo  \u00a0Alpha  Lima descend to four thousand feet QNH one zero one two\ndescending four thousand feet QNH one zero one two     Oscar  Kilo Bravo  Alpha  Lima",
+        "full_ts": "say again  Oscar  Kilo  Bravo  Alpha Lima\nOscar  Kilo  Bravo   Alpha  Lima descend to four thousand feet QNH one zero one two\ndescending four thousand feet QNH one zero one two     Oscar  Kilo Bravo  Alpha  Lima",
         "short_ts": "say again OKBAL\nOKBAL descend to 4000 feet QNH 1012\ndescending 4000 feet QNH 1012 OKBAL",
         "prompt-data": {
             "long_callsigns": [
@@ -2378,8 +2467,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Bravo Alpha Lima,  Oscar Kilo Bravo Alpha Lima, Air Baltic Six Three Zero, Ryan Air Five Foxtrot Papa, Lufthansa Five Uniform Yankee, Turkish Six Two Eight Nine",
-        "prompt_fullts_5B": "Sundair Four One Nine Three, Lufthansa Four Romeo Mike, Oscar Kilo Mike Delta Hotel, Sun Turk Seven Six Alfa, Ryan Air Five Foxtrot Papa"
+        "callsigns_pos_fullts": [
+            2,
+            8,
+            33
+        ],
+        "prompt_fullts_1G_4B": "Oscar Kilo Bravo Alpha Lima,  Oscar Kilo Bravo Alpha Lima, Emirates Nine Nine Three Six, Lufthansa Nine Tango Papa, Air Baltic Six Three Zero, Broadsword Two One",
+        "prompt_fullts_5B": "Air Silesia Seven Seven One, Ryan Air Five Yankee Juliett, Okapi Romeo Mike, Emirates Nine Nine Three Six, Oscar Kilo Delta Sierra Victor",
+        "prompt_fullts_50B": "Air Silesia Six Seven Two, Ryan Air Five Foxtrot Papa, Oscar Kilo Yankee Uniform Sierra Four Five, Time Air Seven Eight Three Yankee, Turkish Five Bravo X-ray, Zap Nine Four One, Sun Turk Seven Six Alfa, Lufthansa Six Lima Lima, Speedbird Eight Five Five, Broadsword Two One, Turkish Six Two Eight Nine, Csa / Czech Two Delta Zulu, Soko Air Oscar Charlie, Oscar Kilo Bravo Alfa Lima, Oscar Kilo Mike Delta Hotel, Air Silesia Seven Seven One, Oscar Kilo Yankee Uniform Romeo Nine Nine, Oscar Kilo Delta Sierra Victor, Lufthansa Nine Tango Papa, Air Baltic Six Three Zero, Aegean Six Romeo Whiskey, Csa / Czech Nine One Eight, Emirates Nine Nine Three Six, Okapi Romeo Mike, Ryan Air Five Yankee Juliett, Sky Travel Four Three Seven Eight, Mass Air Oscar Four Zero, Speedbird Eight Five Four, Qatari Six Bravo Lima, Air Silesia Six Seven One, Lion King Echo Three Six, Lufthansa Five Uniform Yankee, Oscar Kilo Mike Hotel Zulu, Oscar Kilo Bravo Yankee Alfa, All Charter Four Alfa Papa, Sundair Four One Nine Three, Lufthansa Four Romeo Mike"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx0_0.0_6.73.wav",
@@ -2393,8 +2488,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2514,8 +2609,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Aeroflot Two Zero One Two, Oscar Kilo Bravo Yankee Foxtrot, Turkish Five Bravo X-ray, Alpine Three Nine Charlie Foxtrot",
-        "prompt_fullts_5B": "Air Hamburg Eight Seven Six November, Sun Turk One Zero Four Three, Speedbird Eight Five Four, Aegean Two Delta Tango, Sunexpress One Foxtrot Lima"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Qatari Three Alfa Uniform, Qatari One Two Mike, Csa / Czech Two Delta Zulu, Turkish Five Bravo X-ray",
+        "prompt_fullts_5B": "Aeroflot Two Zero One Two, Qatari Eight Eight Six Four, Speedbird Eight Five Four, Alpine Three Nine Charlie Foxtrot, Fraction Two Five Zero Echo",
+        "prompt_fullts_50B": "Oscar Kilo Bravo Alfa Lima, Okapi Romeo Mike, Sunexpress One Foxtrot Lima, Csa / Czech Six Kilo Golf, Oscar Kilo Bravo Yankee Foxtrot, Air India One Three One, Lufthansa Five Uniform Yankee, Etihad Four Eight Sierra, Alpine Three Nine Charlie Foxtrot, Time Air Eight Zero Four Papa, Qatari One Two Mike, Sun Turk One Zero Four Three, Lufthansa Three November Lima, Sun Turk Nine Three Zulu, Oscar Kilo Mike November Mike, Csa / Czech Nine One Eight, Lufthansa Nine Tango Papa, Turkish Six Five Nine One, Aeroflot Two Zero One Two, Turkish Three Two Bravo, Sun Turk Four Two Whiskey, Lufthansa One Three Seven One, Speedbird Eight Five Five, Oscar Kilo Mike Hotel Zulu, Delta Papa Hotel India November Four One, Fraction Two Five Zero Echo, Emirates One Four Seven, Dark Blue Nine Two Kilo, Air Hamburg Eight Seven Six November, Speedbird Eight Five Four, Qatari Eight Eight Six Four, Speedbird Six Nine Seven Victor, Air Bremen One Delta, Okayjet Oscar Alfa, Etihad Five Nine Victor, Soko Air Oscar Charlie, Qatari Three Alfa Uniform, Oscar Kilo Bravo Yankee Echo, Sky Travel Three Nine Juliett, Sunexpress Seven Uniform Uniform, Okayjet Charlie Tango, Csa / Czech Two Delta Zulu, Turkish Five Bravo X-ray, Aegean Two Delta Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx1_6.77_9.77.wav",
@@ -2529,8 +2635,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2650,8 +2756,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Fraction Two Five Zero Echo, Okayjet Oscar Alfa, Speedbird Six Nine Seven Victor, Sun Turk Nine Three Zulu",
-        "prompt_fullts_5B": "Turkish Five Bravo X-ray, Speedbird Eight Five Five, Csa / Czech Six Kilo Golf, Speedbird Six Nine Seven Victor, Oscar Kilo Bravo Yankee Echo"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Csa / Czech Two Delta Zulu, Speedbird Six Nine Seven Victor, Csa / Czech Six Kilo Golf, Time Air Eight Zero Four Papa",
+        "prompt_fullts_5B": "Soko Air Oscar Charlie, Turkish Five Bravo X-ray, Lufthansa Three November Lima, Turkish Six Five Nine One, Emirates One Four Seven",
+        "prompt_fullts_50B": "Sunexpress One Foxtrot Lima, Sunexpress Seven Uniform Uniform, Oscar Kilo Bravo Yankee Echo, Qatari Three Alfa Uniform, Delta Papa Hotel India November Four One, Turkish Five Bravo X-ray, Qatari Eight Eight Six Four, Air Bremen One Delta, Etihad Five Nine Victor, Sun Turk Four Two Whiskey, Okayjet Charlie Tango, Air Hamburg Eight Seven Six November, Okapi Romeo Mike, Turkish Six Five Nine One, Etihad Four Eight Sierra, Aegean Two Delta Tango, Qatari One Two Mike, Turkish Three Two Bravo, Oscar Kilo Bravo Yankee Foxtrot, Csa / Czech Nine One Eight, Fraction Two Five Zero Echo, Csa / Czech Six Kilo Golf, Lufthansa Five Uniform Yankee, Sun Turk Nine Three Zulu, Csa / Czech Two Delta Zulu, Oscar Kilo Bravo Alfa Lima, Speedbird Eight Five Five, Time Air Eight Zero Four Papa, Sun Turk One Zero Four Three, Dark Blue Nine Two Kilo, Alpine Three Nine Charlie Foxtrot, Lufthansa Nine Tango Papa, Lufthansa Three November Lima, Soko Air Oscar Charlie, Emirates One Four Seven, Speedbird Six Nine Seven Victor, Oscar Kilo Mike Hotel Zulu, Okayjet Oscar Alfa, Lufthansa One Three Seven One, Air India One Three One, Aeroflot Two Zero One Two, Oscar Kilo Mike November Mike, Speedbird Eight Five Four, Sky Travel Three Nine Juliett"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx2_9.77_11.59.wav",
@@ -2665,8 +2782,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2786,8 +2903,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Lufthansa One Three Seven One, Sunexpress Seven Uniform Uniform, Qatari Eight Eight Six Four, Delta Papa Hotel India November Four One",
-        "prompt_fullts_5B": "Etihad Five Nine Victor, Lufthansa Nine Tango Papa, Sunexpress One Foxtrot Lima, Oscar Kilo Bravo Yankee Echo, Air Hamburg Eight Seven Six November"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Csa / Czech Six Kilo Golf, Sunexpress Seven Uniform Uniform, Emirates One Four Seven, Okayjet Oscar Alfa",
+        "prompt_fullts_5B": "Aegean Two Delta Tango, Speedbird Eight Five Five, Fraction Two Five Zero Echo, Lufthansa Nine Tango Papa, Speedbird Eight Five Four",
+        "prompt_fullts_50B": "Okayjet Charlie Tango, Oscar Kilo Mike November Mike, Aegean Two Delta Tango, Speedbird Eight Five Four, Sky Travel Three Nine Juliett, Csa / Czech Six Kilo Golf, Dark Blue Nine Two Kilo, Csa / Czech Two Delta Zulu, Air India One Three One, Alpine Three Nine Charlie Foxtrot, Qatari One Two Mike, Speedbird Eight Five Five, Oscar Kilo Bravo Yankee Echo, Oscar Kilo Bravo Alfa Lima, Fraction Two Five Zero Echo, Turkish Six Five Nine One, Time Air Eight Zero Four Papa, Emirates One Four Seven, Sunexpress One Foxtrot Lima, Sunexpress Seven Uniform Uniform, Turkish Five Bravo X-ray, Okapi Romeo Mike, Air Bremen One Delta, Lufthansa Five Uniform Yankee, Etihad Five Nine Victor, Sun Turk One Zero Four Three, Soko Air Oscar Charlie, Okayjet Oscar Alfa, Qatari Three Alfa Uniform, Oscar Kilo Bravo Yankee Foxtrot, Sun Turk Nine Three Zulu, Lufthansa Three November Lima, Air Hamburg Eight Seven Six November, Etihad Four Eight Sierra, Sun Turk Four Two Whiskey, Aeroflot Two Zero One Two, Qatari Eight Eight Six Four, Lufthansa Nine Tango Papa, Delta Papa Hotel India November Four One, Lufthansa One Three Seven One, Speedbird Six Nine Seven Victor, Csa / Czech Nine One Eight, Oscar Kilo Mike Hotel Zulu, Turkish Three Two Bravo"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx3_11.61_13.41.wav",
@@ -2801,8 +2929,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -2922,8 +3050,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Air Hamburg Eight Seven Six November, Dark Blue Nine Two Kilo, Qatari Three Alfa Uniform, Speedbird Eight Five Five",
-        "prompt_fullts_5B": "Oscar Kilo Bravo Yankee Foxtrot, Okayjet Charlie Tango, Aegean Two Delta Tango, Turkish Three Two Bravo, Sky Travel Three Nine Juliett"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Delta Papa Hotel India November Four One, Okapi Romeo Mike, Okayjet Charlie Tango, Lufthansa Five Uniform Yankee",
+        "prompt_fullts_5B": "Sunexpress Seven Uniform Uniform, Speedbird Six Nine Seven Victor, Turkish Five Bravo X-ray, Oscar Kilo Bravo Alfa Lima, Csa / Czech Six Kilo Golf",
+        "prompt_fullts_50B": "Fraction Two Five Zero Echo, Oscar Kilo Mike November Mike, Emirates One Four Seven, Oscar Kilo Mike Hotel Zulu, Oscar Kilo Bravo Yankee Echo, Sunexpress Seven Uniform Uniform, Turkish Three Two Bravo, Sky Travel Three Nine Juliett, Okapi Romeo Mike, Oscar Kilo Bravo Alfa Lima, Air Hamburg Eight Seven Six November, Lufthansa Three November Lima, Qatari Three Alfa Uniform, Lufthansa Five Uniform Yankee, Time Air Eight Zero Four Papa, Okayjet Charlie Tango, Air India One Three One, Soko Air Oscar Charlie, Turkish Six Five Nine One, Qatari Eight Eight Six Four, Okayjet Oscar Alfa, Etihad Four Eight Sierra, Speedbird Eight Five Four, Sun Turk Four Two Whiskey, Qatari One Two Mike, Aeroflot Two Zero One Two, Sun Turk Nine Three Zulu, Air Bremen One Delta, Aegean Two Delta Tango, Delta Papa Hotel India November Four One, Csa / Czech Nine One Eight, Sun Turk One Zero Four Three, Speedbird Six Nine Seven Victor, Alpine Three Nine Charlie Foxtrot, Oscar Kilo Bravo Yankee Foxtrot, Csa / Czech Two Delta Zulu, Speedbird Eight Five Five, Lufthansa One Three Seven One, Sunexpress One Foxtrot Lima, Dark Blue Nine Two Kilo, Lufthansa Nine Tango Papa, Csa / Czech Six Kilo Golf, Turkish Five Bravo X-ray, Etihad Five Nine Victor"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx4_13.41_17.16.wav",
@@ -2937,8 +3076,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3058,8 +3197,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Lufthansa Five Uniform Yankee, Sun Turk Nine Three Zulu, Lufthansa One Three Seven One, Speedbird Eight Five Four",
-        "prompt_fullts_5B": "Csa / Czech Six Kilo Golf, Okayjet Oscar Alfa, Air India One Three One, Etihad Four Eight Sierra, Aegean Two Delta Tango"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Oscar Kilo Bravo Alfa Lima, Lufthansa Nine Tango Papa, Turkish Three Two Bravo, Alpine Three Nine Charlie Foxtrot",
+        "prompt_fullts_5B": "Qatari Three Alfa Uniform, Sunexpress One Foxtrot Lima, Qatari One Two Mike, Turkish Five Bravo X-ray, Aeroflot Two Zero One Two",
+        "prompt_fullts_50B": "Okapi Romeo Mike, Etihad Five Nine Victor, Dark Blue Nine Two Kilo, Oscar Kilo Bravo Yankee Echo, Air Bremen One Delta, Csa / Czech Six Kilo Golf, Okayjet Oscar Alfa, Sky Travel Three Nine Juliett, Soko Air Oscar Charlie, Lufthansa One Three Seven One, Aeroflot Two Zero One Two, Etihad Four Eight Sierra, Okayjet Charlie Tango, Air Hamburg Eight Seven Six November, Csa / Czech Nine One Eight, Turkish Five Bravo X-ray, Speedbird Eight Five Four, Oscar Kilo Bravo Alfa Lima, Turkish Six Five Nine One, Turkish Three Two Bravo, Qatari Eight Eight Six Four, Qatari Three Alfa Uniform, Sunexpress Seven Uniform Uniform, Speedbird Six Nine Seven Victor, Sun Turk One Zero Four Three, Time Air Eight Zero Four Papa, Speedbird Eight Five Five, Lufthansa Nine Tango Papa, Qatari One Two Mike, Lufthansa Five Uniform Yankee, Sunexpress One Foxtrot Lima, Csa / Czech Two Delta Zulu, Sun Turk Four Two Whiskey, Emirates One Four Seven, Fraction Two Five Zero Echo, Aegean Two Delta Tango, Air India One Three One, Alpine Three Nine Charlie Foxtrot, Oscar Kilo Bravo Yankee Foxtrot, Oscar Kilo Mike Hotel Zulu, Oscar Kilo Mike November Mike, Sun Turk Nine Three Zulu, Delta Papa Hotel India November Four One, Lufthansa Three November Lima"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx5_17.18_20.73.wav",
@@ -3073,8 +3223,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3194,8 +3344,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Oscar Kilo Bravo Yankee Echo, Lufthansa Nine Tango Papa, Turkish Three Two Bravo, Aeroflot Two Zero One Two",
-        "prompt_fullts_5B": "Speedbird Eight Five Five, Turkish Five Bravo X-ray, Air Hamburg Eight Seven Six November, Sun Turk One Zero Four Three, Speedbird Six Nine Seven Victor"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Dark Blue Nine Two Kilo, Oscar Kilo Mike November Mike, Aegean Two Delta Tango, Speedbird Eight Five Five",
+        "prompt_fullts_5B": "Speedbird Eight Five Four, Sunexpress One Foxtrot Lima, Aeroflot Two Zero One Two, Oscar Kilo Mike November Mike, Alpine Three Nine Charlie Foxtrot",
+        "prompt_fullts_50B": "Speedbird Eight Five Five, Delta Papa Hotel India November Four One, Etihad Four Eight Sierra, Sky Travel Three Nine Juliett, Sunexpress Seven Uniform Uniform, Fraction Two Five Zero Echo, Okapi Romeo Mike, Oscar Kilo Mike Hotel Zulu, Alpine Three Nine Charlie Foxtrot, Turkish Three Two Bravo, Oscar Kilo Bravo Yankee Foxtrot, Soko Air Oscar Charlie, Turkish Six Five Nine One, Speedbird Six Nine Seven Victor, Okayjet Oscar Alfa, Sun Turk Four Two Whiskey, Speedbird Eight Five Four, Okayjet Charlie Tango, Qatari Three Alfa Uniform, Turkish Five Bravo X-ray, Lufthansa Nine Tango Papa, Dark Blue Nine Two Kilo, Qatari Eight Eight Six Four, Sun Turk Nine Three Zulu, Oscar Kilo Bravo Yankee Echo, Air Bremen One Delta, Sunexpress One Foxtrot Lima, Aegean Two Delta Tango, Csa / Czech Two Delta Zulu, Lufthansa Three November Lima, Csa / Czech Nine One Eight, Aeroflot Two Zero One Two, Air Hamburg Eight Seven Six November, Oscar Kilo Mike November Mike, Lufthansa One Three Seven One, Qatari One Two Mike, Emirates One Four Seven, Etihad Five Nine Victor, Csa / Czech Six Kilo Golf, Sun Turk One Zero Four Three, Lufthansa Five Uniform Yankee, Oscar Kilo Bravo Alfa Lima, Time Air Eight Zero Four Papa, Air India One Three One"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx6_20.75_26.15.wav",
@@ -3209,8 +3370,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3330,8 +3491,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Oscar Kilo Mike November Mike, Sun Turk One Zero Four Three, Qatari Three Alfa Uniform, Qatari Eight Eight Six Four",
-        "prompt_fullts_5B": "Aegean Two Delta Tango, Lufthansa Three November Lima, Air India One Three One, Soko Air Oscar Charlie, Sunexpress One Foxtrot Lima"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Lufthansa Three November Lima, Turkish Five Bravo X-ray, Fraction Two Five Zero Echo, Emirates One Four Seven",
+        "prompt_fullts_5B": "Aeroflot Two Zero One Two, Turkish Six Five Nine One, Turkish Three Two Bravo, Lufthansa One Three Seven One, Aegean Two Delta Tango",
+        "prompt_fullts_50B": "Sunexpress Seven Uniform Uniform, Lufthansa Nine Tango Papa, Turkish Six Five Nine One, Lufthansa Five Uniform Yankee, Speedbird Six Nine Seven Victor, Emirates One Four Seven, Okayjet Charlie Tango, Dark Blue Nine Two Kilo, Qatari Three Alfa Uniform, Okapi Romeo Mike, Time Air Eight Zero Four Papa, Etihad Four Eight Sierra, Soko Air Oscar Charlie, Aegean Two Delta Tango, Air India One Three One, Aeroflot Two Zero One Two, Delta Papa Hotel India November Four One, Qatari One Two Mike, Speedbird Eight Five Four, Sun Turk Four Two Whiskey, Lufthansa One Three Seven One, Oscar Kilo Bravo Alfa Lima, Sunexpress One Foxtrot Lima, Speedbird Eight Five Five, Oscar Kilo Mike November Mike, Fraction Two Five Zero Echo, Sun Turk One Zero Four Three, Oscar Kilo Bravo Yankee Echo, Turkish Five Bravo X-ray, Etihad Five Nine Victor, Oscar Kilo Bravo Yankee Foxtrot, Csa / Czech Nine One Eight, Qatari Eight Eight Six Four, Alpine Three Nine Charlie Foxtrot, Lufthansa Three November Lima, Sky Travel Three Nine Juliett, Sun Turk Nine Three Zulu, Turkish Three Two Bravo, Air Bremen One Delta, Air Hamburg Eight Seven Six November, Okayjet Oscar Alfa, Csa / Czech Two Delta Zulu, Oscar Kilo Mike Hotel Zulu, Csa / Czech Six Kilo Golf"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx7_26.15_27.65.wav",
@@ -3345,8 +3517,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3466,8 +3638,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Lufthansa Five Uniform Yankee, Etihad Five Nine Victor, Lufthansa Nine Tango Papa, Okayjet Oscar Alfa",
-        "prompt_fullts_5B": "Turkish Five Bravo X-ray, Turkish Six Five Nine One, Air Hamburg Eight Seven Six November, Time Air Eight Zero Four Papa, Okayjet Oscar Alfa"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Fraction Two Five Zero Echo, Sun Turk Nine Three Zulu, Csa / Czech Two Delta Zulu, Turkish Three Two Bravo",
+        "prompt_fullts_5B": "Oscar Kilo Mike Hotel Zulu, Air Hamburg Eight Seven Six November, Sun Turk Four Two Whiskey, Aegean Two Delta Tango, Alpine Three Nine Charlie Foxtrot",
+        "prompt_fullts_50B": "Lufthansa Five Uniform Yankee, Turkish Six Five Nine One, Dark Blue Nine Two Kilo, Aeroflot Two Zero One Two, Okayjet Charlie Tango, Turkish Three Two Bravo, Speedbird Eight Five Five, Sun Turk Four Two Whiskey, Lufthansa One Three Seven One, Alpine Three Nine Charlie Foxtrot, Air India One Three One, Turkish Five Bravo X-ray, Qatari Three Alfa Uniform, Soko Air Oscar Charlie, Air Hamburg Eight Seven Six November, Oscar Kilo Mike November Mike, Sunexpress Seven Uniform Uniform, Air Bremen One Delta, Qatari Eight Eight Six Four, Speedbird Six Nine Seven Victor, Fraction Two Five Zero Echo, Oscar Kilo Bravo Alfa Lima, Sunexpress One Foxtrot Lima, Okayjet Oscar Alfa, Sun Turk Nine Three Zulu, Okapi Romeo Mike, Csa / Czech Six Kilo Golf, Csa / Czech Nine One Eight, Emirates One Four Seven, Oscar Kilo Bravo Yankee Foxtrot, Delta Papa Hotel India November Four One, Etihad Five Nine Victor, Etihad Four Eight Sierra, Speedbird Eight Five Four, Qatari One Two Mike, Lufthansa Three November Lima, Time Air Eight Zero Four Papa, Sun Turk One Zero Four Three, Oscar Kilo Bravo Yankee Echo, Csa / Czech Two Delta Zulu, Oscar Kilo Mike Hotel Zulu, Sky Travel Three Nine Juliett, Lufthansa Nine Tango Papa, Aegean Two Delta Tango"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx8_27.67_29.71.wav",
@@ -3481,8 +3664,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3602,8 +3785,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Air Hamburg Eight Seven Six November, Okapi Romeo Mike, Aegean Two Delta Tango, Oscar Kilo Mike Hotel Zulu",
-        "prompt_fullts_5B": "Emirates One Four Seven, Sky Travel Three Nine Juliett, Air Hamburg Eight Seven Six November, Fraction Two Five Zero Echo, Qatari Eight Eight Six Four"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Qatari One Two Mike, Oscar Kilo Mike November Mike, Time Air Eight Zero Four Papa, Lufthansa Nine Tango Papa",
+        "prompt_fullts_5B": "Speedbird Eight Five Four, Lufthansa Five Uniform Yankee, Speedbird Six Nine Seven Victor, Emirates One Four Seven, Oscar Kilo Bravo Yankee Echo",
+        "prompt_fullts_50B": "Okapi Romeo Mike, Csa / Czech Nine One Eight, Speedbird Eight Five Four, Qatari Eight Eight Six Four, Qatari One Two Mike, Sun Turk Four Two Whiskey, Oscar Kilo Bravo Yankee Echo, Okayjet Charlie Tango, Lufthansa Nine Tango Papa, Sunexpress Seven Uniform Uniform, Sunexpress One Foxtrot Lima, Dark Blue Nine Two Kilo, Speedbird Eight Five Five, Air Hamburg Eight Seven Six November, Lufthansa One Three Seven One, Turkish Three Two Bravo, Aeroflot Two Zero One Two, Delta Papa Hotel India November Four One, Sun Turk Nine Three Zulu, Oscar Kilo Bravo Yankee Foxtrot, Csa / Czech Six Kilo Golf, Turkish Six Five Nine One, Qatari Three Alfa Uniform, Sun Turk One Zero Four Three, Etihad Four Eight Sierra, Csa / Czech Two Delta Zulu, Etihad Five Nine Victor, Speedbird Six Nine Seven Victor, Alpine Three Nine Charlie Foxtrot, Oscar Kilo Mike November Mike, Emirates One Four Seven, Sky Travel Three Nine Juliett, Okayjet Oscar Alfa, Time Air Eight Zero Four Papa, Oscar Kilo Mike Hotel Zulu, Oscar Kilo Bravo Alfa Lima, Air India One Three One, Fraction Two Five Zero Echo, Lufthansa Three November Lima, Aegean Two Delta Tango, Air Bremen One Delta, Turkish Five Bravo X-ray, Soko Air Oscar Charlie, Lufthansa Five Uniform Yankee"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx9_29.71_35.0.wav",
@@ -3617,8 +3811,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3738,8 +3932,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Speedbird Six Nine Seven Victor, Csa / Czech Six Kilo Golf, Sun Turk Nine Three Zulu, Csa / Czech Two Delta Zulu",
-        "prompt_fullts_5B": "Qatari Three Alfa Uniform, Sun Turk Nine Three Zulu, Aegean Two Delta Tango, Speedbird Eight Five Four, Lufthansa Five Uniform Yankee"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Air India One Three One, Etihad Four Eight Sierra, Fraction Two Five Zero Echo, Air Bremen One Delta",
+        "prompt_fullts_5B": "Air Bremen One Delta, Lufthansa Nine Tango Papa, Csa / Czech Two Delta Zulu, Alpine Three Nine Charlie Foxtrot, Oscar Kilo Bravo Alfa Lima",
+        "prompt_fullts_50B": "Turkish Six Five Nine One, Speedbird Eight Five Five, Qatari One Two Mike, Sunexpress Seven Uniform Uniform, Sun Turk One Zero Four Three, Speedbird Six Nine Seven Victor, Lufthansa Five Uniform Yankee, Sky Travel Three Nine Juliett, Okayjet Charlie Tango, Alpine Three Nine Charlie Foxtrot, Soko Air Oscar Charlie, Air Hamburg Eight Seven Six November, Etihad Four Eight Sierra, Turkish Three Two Bravo, Air Bremen One Delta, Sunexpress One Foxtrot Lima, Fraction Two Five Zero Echo, Sun Turk Nine Three Zulu, Okayjet Oscar Alfa, Qatari Three Alfa Uniform, Emirates One Four Seven, Lufthansa Three November Lima, Oscar Kilo Bravo Alfa Lima, Csa / Czech Nine One Eight, Time Air Eight Zero Four Papa, Aegean Two Delta Tango, Air India One Three One, Lufthansa Nine Tango Papa, Oscar Kilo Bravo Yankee Echo, Turkish Five Bravo X-ray, Oscar Kilo Mike Hotel Zulu, Delta Papa Hotel India November Four One, Speedbird Eight Five Four, Oscar Kilo Mike November Mike, Oscar Kilo Bravo Yankee Foxtrot, Okapi Romeo Mike, Etihad Five Nine Victor, Qatari Eight Eight Six Four, Csa / Czech Two Delta Zulu, Lufthansa One Three Seven One, Dark Blue Nine Two Kilo, Csa / Czech Six Kilo Golf, Sun Turk Four Two Whiskey, Aeroflot Two Zero One Two"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.wav_segidx10_35.0_39.2.wav",
@@ -3753,8 +3958,8 @@
             ],
             "short_callsigns": [
                 "TIE804P",
-                "OKACT",
-                "ATCO radar"
+                "ATCO radar",
+                "OKACT"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3874,8 +4079,19 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Turkish Six Five Nine One, Sunexpress Seven Uniform Uniform, Qatari One Two Mike, Fraction Two Five Zero Echo",
-        "prompt_fullts_5B": "Lufthansa Nine Tango Papa, Okapi Romeo Mike, Turkish Five Bravo X-ray, Sunexpress One Foxtrot Lima, Okayjet Oscar Alfa"
+        "callsigns_pos_fullts": [
+            1,
+            37,
+            45,
+            71,
+            79,
+            93,
+            98,
+            124
+        ],
+        "prompt_fullts_1G_4B": " Oscar Oscar Echo, Oscar Kilo Alpha Charlie Tango, Timeair Eight Zero Four Papa, Sunexpress One Foxtrot Lima, Sun Turk Four Two Whiskey, Oscar Kilo Mike Hotel Zulu, Time Air Eight Zero Four Papa",
+        "prompt_fullts_5B": "Okayjet Oscar Alfa, Qatari Three Alfa Uniform, Qatari Eight Eight Six Four, Lufthansa Five Uniform Yankee, Sun Turk Nine Three Zulu",
+        "prompt_fullts_50B": "Speedbird Six Nine Seven Victor, Air India One Three One, Etihad Four Eight Sierra, Alpine Three Nine Charlie Foxtrot, Speedbird Eight Five Four, Oscar Kilo Mike Hotel Zulu, Aegean Two Delta Tango, Oscar Kilo Mike November Mike, Fraction Two Five Zero Echo, Sun Turk One Zero Four Three, Lufthansa Five Uniform Yankee, Air Hamburg Eight Seven Six November, Okayjet Oscar Alfa, Emirates One Four Seven, Aeroflot Two Zero One Two, Soko Air Oscar Charlie, Turkish Six Five Nine One, Csa / Czech Nine One Eight, Speedbird Eight Five Five, Sun Turk Four Two Whiskey, Sky Travel Three Nine Juliett, Air Bremen One Delta, Oscar Kilo Bravo Alfa Lima, Okapi Romeo Mike, Turkish Five Bravo X-ray, Qatari Three Alfa Uniform, Csa / Czech Two Delta Zulu, Sunexpress Seven Uniform Uniform, Oscar Kilo Bravo Yankee Foxtrot, Csa / Czech Six Kilo Golf, Dark Blue Nine Two Kilo, Turkish Three Two Bravo, Lufthansa Nine Tango Papa, Lufthansa Three November Lima, Etihad Five Nine Victor, Oscar Kilo Bravo Yankee Echo, Sun Turk Nine Three Zulu, Qatari One Two Mike, Lufthansa One Three Seven One, Okayjet Charlie Tango, Qatari Eight Eight Six Four, Sunexpress One Foxtrot Lima, Delta Papa Hotel India November Four One, Time Air Eight Zero Four Papa"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_051226.wav",
@@ -3886,8 +4102,8 @@
                 "KLM One Three Five Zero"
             ],
             "short_callsigns": [
-                "ATCO Tower",
-                "KLM1350"
+                "KLM1350",
+                "ATCO Tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -3917,8 +4133,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            0,
+            27
+        ],
         "prompt_fullts_1G_4B": "KLM One Three Five Zero, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_121325.wav",
@@ -3929,8 +4150,8 @@
                 "Ryanair Seven Three Alpha Hotel"
             ],
             "short_callsigns": [
-                "ATCO radar",
-                "RYR73AH"
+                "RYR73AH",
+                "ATCO radar"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4062,8 +4283,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Ryanair Seven Three Alpha Hotel, Ryan Air Seven Romeo Mike, Sundair Four Nine Nine Five, Klm Four Four Kilo, Sky Travel Five Romeo Uniform",
-        "prompt_fullts_5B": "Time Air Seven Nine Zero Juliett, Channex One Sierra Golf, Sun Turk Seven Six Alfa, Ryan Air Three Three Four Five, Oscar Kilo Yankee Alfa India One Four"
+        "callsigns_pos_fullts": [
+            0,
+            11
+        ],
+        "prompt_fullts_1G_4B": "Ryanair Seven Three Alpha Hotel, Okayjet Victor Kilo, Oscar Kilo Sierra Oscar Lima, Emirates Seven Three, Oscar Kilo Mike Hotel Zulu",
+        "prompt_fullts_5B": "Csa / Czech Two Delta Zulu, Qatari Eight Zero Zero Four, Sky Travel Five Romeo Uniform, Belarus Avia Eight Six One, Klm Four Four Kilo",
+        "prompt_fullts_50B": "Okayjet Victor Kilo, Belarus Avia Eight Six Two, Sunexpress Seven Delta, Belarus Avia Eight Six One, Debonair Lima November, Oklahoma Lima Zulu, Turkish Six Two Eight Six, Klm Four Four Kilo, Okapi Hotel Mike, Csa / Czech Nine Four Delta, Oscar Kilo Victor Uniform Sierra Zero Two, Ryan Air Seven Three Alfa Hotel, Qatari Eight Zero Zero Five, Ryan Air One Juliett Uniform, Ryan Air Seven Seven Sierra Juliett, Csa / Czech Two Delta Zulu, Oscar Kilo Yankee Alfa India One Four, Camber One Three Two, Csa / Czech Six Kilo Golf, Eurowings Seven Six Seven Seven, Eclair Seven Zero One, Ryan Air Three Three Four Five, Oscar Kilo Oscar Uniform Uniform Three Seven, Air Moldova Eight Six Four, Oscar Kilo Mike Hotel Zulu, Sun Turk One Five Two Seven, Emirates Seven Three, Csa / Czech Nine One Eight, Emirates One Three Nine, All Charter One Romeo Kilo, Sundair Four Nine Nine Five, Soko Air Oscar Papa, Ryan Air Seven Romeo Mike, Lufthansa Six Yankee Whiskey, Time Air Seven Nine Zero Juliett, Lufthansa Nine Tango Papa, Topswiss One Two One Seven, Lufthansa One Nine Three Five, Oscar Kilo Sierra Oscar Lima, Channex One Sierra Golf, Qatari Eight Zero Zero Four, Topo Eight Zero, Oscar Kilo Hotel Bravo Tango, Oscar Kilo Whiskey Uniform Sierra One Seven, Topswiss Nine Three Alfa Victor, Lufthansa Four Romeo Mike, Oscar Kilo Kilo Echo Alfa, Wizzair Nine Six Five Four, Sun Turk Seven Six Alfa, Sky Travel Five Romeo Uniform"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_221550.wav",
@@ -4083,20 +4309,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201028_152306.wav",
-        "full_ts": "Ruzyne Tower CSA One Delta Zulu    dobr\u00fd podve\u010der  established localizer two four\ndobr\u00fd den  CSA One Delta Zulu Ruzyne Tower runway two four cleared to land wind    two two zero degrees   one four knots\nare cleared to land runway two four CSA One Delta Zulu",
-        "short_ts": "Ruzyne Tower CSA 1DZ dobr\u00fd podve\u010der established localizer 24\ndobr\u00fd den CSA 1DZ Ruzyne Tower runway 24 cleared to land wind 220 degrees 14 knots\nare cleared to land runway 24 CSA 1DZ",
+        "full_ts": "Ruzyne Tower CSA One Delta Zulu    dobrý podvečer  established localizer two four\ndobrý den  CSA One Delta Zulu Ruzyne Tower runway two four cleared to land wind    two two zero degrees   one four knots\nare cleared to land runway two four CSA One Delta Zulu",
+        "short_ts": "Ruzyne Tower CSA 1DZ dobrý podvečer established localizer 24\ndobrý den CSA 1DZ Ruzyne Tower runway 24 cleared to land wind 220 degrees 14 knots\nare cleared to land runway 24 CSA 1DZ",
         "prompt-data": {
             "long_callsigns": [
                 "CSA One Delta Zulu"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "CSA1DZ"
+                "CSA1DZ",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4214,8 +4442,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "CSA One Delta Zulu, Oscar Kilo Yankee Alfa India One Four, Ryan Air Five Five Zero Seven, Ukraine International Three Sierra Delta, Solstas Lab Charlie Tango",
-        "prompt_fullts_5B": "Oklahoma Lima Zulu, Oscar Kilo Bravo Yankee India, Fraction Nine Zero Two Bravo, Antonov Bureau Five Nine Zero Foxtrot, Oscar Kilo Whiskey Uniform Sierra One Seven"
+        "callsigns_pos_fullts": [
+            2,
+            22,
+            49
+        ],
+        "prompt_fullts_1G_4B": "CSA One Delta Zulu, Oscar Kilo Kilo Echo Alfa, Time Air Seven Nine Three Foxtrot, Air France One Zero Bravo Echo, Tomjet Seven Bravo Echo",
+        "prompt_fullts_5B": "Oscar Kilo Mike Lima Delta, Okayjet Oscar Alfa, Dialogue Charlie Golf, Ukraine International Three Sierra Delta, Csa / Czech One Delta Zulu",
+        "prompt_fullts_50B": "Oscar Kilo Whiskey Uniform Sierra One Three, Etihad Four Three Uniform, Ukraine International Three Sierra Delta, Soko Air Oscar Charlie, Oscar Kilo Whiskey Alfa Romeo Two Four, Fraction Nine Zero Two Bravo, Thunder Wings Mike Romeo, Oscar Kilo Yankee Alfa India One Four, Oscar Kilo Whiskey Uniform Sierra One Seven, Oscar Kilo Mike Delta Hotel, Qatari Two Hotel Romeo, Antonov Bureau Five Nine Zero Foxtrot, Okapi Romeo Mike, Oscar Kilo Hotel Hotel Hotel, Emirates One Four Zero, Oscar Kilo Kilo Echo Alfa, Ryan Air Five Five Zero Seven, German Airforce Six Eight Zero, Lufthansa One Nine Three Seven, Klm One Nine Seven Seven, Okapi Mike Papa, Oscar Kilo Mike Lima Delta, Time Air Seven Nine Three Foxtrot, Okayjet Oscar Alfa, Oscar Kilo Yankee Uniform India Seven Nine, Ryan Air Five Five Zero Eight, Oscar Kilo Bravo Yankee India, Two Foxtrot Echo Echo Lima, Lufthansa One Victor Victor, Sky Travel Two Eight One Eight, Air France One Zero Bravo Echo, Uzbek Three Five Seven Seven, Solstas Lab Charlie Tango, Oscar Kilo X-ray Uniform Sierra Two Nine, Csa / Czech One Delta Zulu, Sierra Papa Mike Mike Alfa, Oscar Kilo Bravo Alfa Lima, Soko Air Oscar Papa, Oklahoma Lima Zulu, Lufthansa Four Romeo Mike, Dialogue Charlie Golf, Tomjet Seven Bravo Echo, Air France One Zero Eight Zulu"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_052456.wav",
@@ -4224,8 +4458,8 @@
         "prompt-data": {
             "long_callsigns": [],
             "short_callsigns": [
-                "TAY4089",
-                "ATCO radar"
+                "ATCO radar",
+                "TAY4089"
             ],
             "waypoints": [],
             "nearby_short_callsigns": [],
@@ -4235,8 +4469,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_113144.wav",
@@ -4355,8 +4591,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Alpine Three Nine Charlie Foxtrot, Speedbird Eight Five Four, Qatari Eight Eight Six Four, Air Bremen One Delta",
-        "prompt_fullts_5B": "Lufthansa Five Uniform Yankee, Delta Papa Hotel India November Four One, Okapi Romeo Mike, Qatari Eight Eight Six Four, Air Bremen One Delta"
+        "callsigns_pos_fullts": [],
+        "prompt_fullts_1G_4B": ", Okayjet Charlie Tango, Aeroflot Two Zero One Two, Sunexpress One Foxtrot Lima, Csa / Czech Six Kilo Golf",
+        "prompt_fullts_5B": "Soko Air Oscar Charlie, Sunexpress One Foxtrot Lima, Oscar Kilo Bravo Yankee Foxtrot, Fraction Two Five Zero Echo, Sky Travel Three Nine Juliett",
+        "prompt_fullts_50B": "Air Bremen One Delta, Sunexpress Seven Uniform Uniform, Oscar Kilo Bravo Yankee Foxtrot, Okapi Romeo Mike, Speedbird Eight Five Five, Okayjet Charlie Tango, Qatari One Two Mike, Lufthansa Nine Tango Papa, Speedbird Eight Five Four, Alpine Three Nine Charlie Foxtrot, Aeroflot Two Zero One Two, Air India One Three One, Sun Turk One Zero Four Three, Delta Papa Hotel India November Four One, Csa / Czech Nine One Eight, Sunexpress One Foxtrot Lima, Speedbird Six Nine Seven Victor, Oscar Kilo Mike Hotel Zulu, Emirates One Four Seven, Time Air Eight Zero Four Papa, Qatari Eight Eight Six Four, Oscar Kilo Bravo Yankee Echo, Fraction Two Five Zero Echo, Oscar Kilo Bravo Alfa Lima, Etihad Four Eight Sierra, Dark Blue Nine Two Kilo, Lufthansa Five Uniform Yankee, Soko Air Oscar Charlie, Csa / Czech Two Delta Zulu, Sun Turk Four Two Whiskey, Etihad Five Nine Victor, Lufthansa Three November Lima, Qatari Three Alfa Uniform, Turkish Six Five Nine One, Sky Travel Three Nine Juliett, Csa / Czech Six Kilo Golf, Aegean Two Delta Tango, Turkish Five Bravo X-ray, Sun Turk Nine Three Zulu"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_205125.wav",
@@ -4454,8 +4692,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "KLM Seven Three Whiskey, Csa / Czech Five Zero Nine, Lufthansa Eight Hotel Romeo, Quality Four Zero Nine One, Kilo Zero One",
-        "prompt_fullts_5B": "Ryan Air One Bravo Alfa, Time Air Seven Nine Six Yankee, Wizzair One Bravo Kilo, Ryan Air Eight X-ray Mike, Qatari Eight Two Three Two"
+        "callsigns_pos_fullts": [
+            1,
+            18
+        ],
+        "prompt_fullts_1G_4B": "KLM Seven Three Whiskey, Dark Blue Four Foxtrot Quebec, Ryan Air Nine Two Bravo Quebec, Ryan Air Five Six Three Seven, Reach Five Zero Zero",
+        "prompt_fullts_5B": "Ryan Air One Bravo Alfa, Klm One Nine Eight One, Klm Seven Nine Golf, Lufthansa Five Tango Papa, Ryan Air One Whiskey Delta",
+        "prompt_fullts_50B": "Qatari Eight Two Three Two, Lufthansa Six Hotel Foxtrot, Lufthansa Seven Victor Alfa, Reach Five Zero Zero, Quality Four Zero Nine One, Ups Two Nine Five, Time Air Seven Nine Six Yankee, Klm One Nine Eight One, Dark Blue Four Foxtrot Quebec, Kilo Zero One, Csa / Czech Seven Kilo Golf, Dark Blue Nine Two Kilo, Wizzair One Bravo Kilo, Ryan Air Five Six Three Seven, Oscar Kilo Bravo Yankee Echo, Ryan Air One Whiskey Delta, Klm Seven Nine Golf, Sundair Four Two Eight One, Lufthansa Five Tango Papa, Lufthansa Eight Hotel Romeo, Camber Five Four Three, Ryan Air Eight X-ray Mike, Csa / Czech Five Zero Nine, Ryan Air One Bravo Alfa, Eclair Seven Zero Two, Ryan Air Nine Two Bravo Quebec, Papa Victor Delta Six Eight Seven Hotel"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201029_164604.wav",
@@ -4464,8 +4707,8 @@
         "prompt-data": {
             "long_callsigns": [],
             "short_callsigns": [
-                "ATCO tower",
-                "KLM46A"
+                "KLM46A",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4559,8 +4802,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Csa / Czech Nine One Nine, Ryan Air One Zero One, Sky Travel Six Alfa Delta, Time Air Six Nine Zero Juliett",
-        "prompt_fullts_5B": "Ryan Air One Zero One, Time Air Eight Zero Four Papa, Lot Four One Nine, Kilo Zero One, Speedbird Eight Five Six Zulu"
+        "callsigns_pos_fullts": [],
+        "prompt_fullts_1G_4B": ", Csa / Czech Six Kilo Golf, Lot Five Two One, Oscar Kilo Mike Hotel Zulu, Ryan Air One Zero One",
+        "prompt_fullts_5B": "Csa / Czech One Delta Zulu, Time Air Eight Zero Four Papa, Oscar Kilo Mike Hotel Zulu, Csa / Czech Nine One Nine, Quadriga One Three One Papa",
+        "prompt_fullts_50B": "Ryan Air One Zero One, Kilo Zero One, Csa / Czech One Delta Zulu, Air France One Zero Bravo Echo, Silver Arrow Seven Two Victor Papa, Oscar Kilo Mike Hotel Zulu, Wizzair Nine Six One Eight, France Soleil Four Three Echo Papa, Speedbird Eight Five Six Zulu, Csa / Czech Six Kilo Golf, Lot Five Two Two, Time Air Eight Zero Four Papa, Emirates One Eight, Wizzair Two One Eight Four, Time Air Six Nine Zero Juliett, Oscar Kilo Mike Mike India, Ryan Air Eight Three Three Two, Lot Five Two One, Klm Four Six Alfa, Oscar Kilo Mike Delta Hotel, Mistral Wings Lima Tango, Csa / Czech Five Zero Eight, Lot Four One Nine, Okayjet Lima Yankee, Oscar Echo Foxtrot Echo Bravo, Quadriga One Three One Papa, Csa / Czech Nine One Nine, Sky Travel Six Alfa Delta, Lufthansa Five Charlie Victor, Klm Two One Yankee, Ryan Air Six Tango November"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_145941.wav",
@@ -4572,8 +4817,8 @@
                 "Oscar Kilo Hotel Hotel Hotel"
             ],
             "short_callsigns": [
-                "OKHHH",
-                "ATCO radar"
+                "ATCO radar",
+                "OKHHH"
             ],
             "waypoints": [],
             "nearby_short_callsigns": [],
@@ -4583,8 +4828,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            0,
+            9
+        ],
         "prompt_fullts_1G_4B": "Oscar Kilo Triple Hotel, Oscar Kilo Hotel Hotel Hotel, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_130407.wav",
@@ -4595,8 +4845,8 @@
                 "Oscar Kilo Kilo Uniform November"
             ],
             "short_callsigns": [
-                "OK-KUN",
-                "ATCO radar"
+                "ATCO radar",
+                "OK-KUN"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4728,8 +4978,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Kilo Uniform November, Oscar Kilo Victor Uniform Sierra Zero Two, Topswiss Nine Three Alfa Victor, Oscar Kilo Whiskey Yankee Zulu, Air Portugal One Two Four Four",
-        "prompt_fullts_5B": "Oscar Kilo X-ray Alfa India Zero Four, Qatari Eight Zero Zero Five, Ryan Air Seven Romeo Mike, Csa / Czech Six Kilo Golf, All Charter One Romeo Kilo"
+        "callsigns_pos_fullts": [
+            0,
+            11
+        ],
+        "prompt_fullts_1G_4B": "Oscar Kilo Kilo Uniform November, Csa / Czech Two Delta Zulu, Csa / Czech Six Kilo Golf, Sundair Four Two Seven Two, Oscar Kilo Mike Hotel Zulu",
+        "prompt_fullts_5B": "Air France One Zero Eight Zulu, Csa / Czech Six Kilo Golf, Transavia Six Eight Six Eight, Sundair Four Two Seven Two, Emirates One Three Nine",
+        "prompt_fullts_50B": "Sky Travel Five Romeo Uniform, Oscar Kilo Kilo Echo Alfa, Camber One Three Two, Oscar Kilo Sierra Oscar Lima, All Charter One Romeo Kilo, Oscar Kilo Victor Uniform Sierra Zero Two, Qatari Eight Zero Zero Four, Air Portugal One Two Four Four, Csa / Czech Two Delta Zulu, Sun Turk Three Zero Two, Topo Eight Zero, Csa / Czech Six Kilo Golf, Ryan Air Seven Seven Sierra Juliett, Sun Turk Seven Six Alfa, Sun Turk One Five Two Seven, Oscar Kilo Delta Kilo Bravo, Csa / Czech Nine One Eight, Oscar Kilo Hotel Bravo Tango, Topswiss One Two One Seven, Emirates One Three Nine, Oscar Kilo Oscar Uniform Uniform Three Seven, Ryan Air Five X-ray Lima, Belarus Avia Eight Six One, Ryan Air Seven Romeo Mike, Oscar Kilo Mike Hotel Zulu, Belarus Avia Eight Six Two, Topswiss Nine Three Alfa Victor, Oklahoma Bravo Alfa, Air France One Zero Eight Zulu, Ryan Air Seven Three Alfa Hotel, Csa / Czech Nine Four Delta, Oscar Kilo X-ray Alfa India Zero Four, Sundair Four Two Seven Two, Channex One Sierra Golf, Debonair Lima November, Lufthansa One Nine Three Five, Eurowings Seven Six Seven Seven, Transavia Six Eight Six Eight, Lufthansa Six Yankee Whiskey, Soko Air Oscar Papa, Oklahoma Lima Zulu, Sundair Four Nine Nine Five, Ryan Air Three Three Four Five, Okayjet Victor Kilo, Lufthansa Four Romeo Mike, Oscar Kilo Yankee Alfa India One Four, Wizzair Nine Six Five Four, Oscar Kilo Whiskey Yankee Zulu, Ascot/kittyhawk Four Nine Four One, Qatari Eight Zero Zero Five"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_120512.wav",
@@ -4870,20 +5125,24 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Kilo Echo Alfa, Emirates One Three Nine, Ryan Air One Juliett Uniform, Topswiss One Two One Seven, Lufthansa One Nine Three Five",
-        "prompt_fullts_5B": "Csa / Czech Two Delta Zulu, Emirates One Three Nine, Lufthansa Six Yankee Whiskey, Belarus Avia Eight Six Two, Qatari Eight Zero Zero Five"
+        "callsigns_pos_fullts": [
+            0
+        ],
+        "prompt_fullts_1G_4B": "Oscar Kilo Kilo Echo Alfa, Topswiss One Two One Seven, Turkish Six Two Eight Six, Qatari Eight Zero Zero Four, Lufthansa One Nine Three Five",
+        "prompt_fullts_5B": "Topswiss One Two One Seven, Debonair Lima November, Ryan Air One Juliett Uniform, Sun Turk Seven Six Alfa, Oscar Kilo Whiskey Uniform Sierra One Seven",
+        "prompt_fullts_50B": "Qatari Eight Zero Zero Five, Oscar Kilo Sierra Oscar Lima, Oscar Kilo Hotel Bravo Tango, Eurowings Seven Six Seven Seven, Channex One Sierra Golf, Oscar Kilo Yankee Alfa India One Four, Okapi Hotel Mike, Ryan Air Three Three Four Five, Lufthansa Four Romeo Mike, Time Air Seven Nine Zero Juliett, Sundair Four Nine Nine Five, Ryan Air One Juliett Uniform, Sky Travel Five Romeo Uniform, Camber One Three Two, Oscar Kilo Mike Hotel Zulu, Ryan Air Seven Romeo Mike, All Charter One Romeo Kilo, Csa / Czech Nine Four Delta, Oklahoma Lima Zulu, Emirates Seven Three, Csa / Czech Two Delta Zulu, Okayjet Victor Kilo, Oscar Kilo Kilo Echo Alfa, Eclair Seven Zero One, Ryan Air Seven Three Alfa Hotel, Lufthansa One Nine Three Five, Belarus Avia Eight Six Two, Topo Eight Zero, Oscar Kilo Victor Uniform Sierra Zero Two, Lufthansa Nine Tango Papa, Sunexpress Seven Delta, Belarus Avia Eight Six One, Lufthansa Six Yankee Whiskey, Debonair Lima November, Air Moldova Eight Six Four, Qatari Eight Zero Zero Four, Klm Four Four Kilo, Sun Turk Seven Six Alfa, Topswiss Nine Three Alfa Victor, Topswiss One Two One Seven, Sun Turk One Five Two Seven, Csa / Czech Nine One Eight, Oscar Kilo Whiskey Uniform Sierra One Seven, Csa / Czech Six Kilo Golf, Turkish Six Two Eight Six, Emirates One Three Nine, Soko Air Oscar Papa, Oscar Kilo Oscar Uniform Uniform Three Seven, Ryan Air Seven Seven Sierra Juliett"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_090915.wav",
-        "full_ts": "Skytravel  Four  Three  Seven  Eight\nroger call\u00a0Tower one three four decimal five six zero   naslysenou\nfive six zero  Skytravel Four Three Seven  Eight   hezky  den\ntaky hezky diky",
+        "full_ts": "Skytravel  Four  Three  Seven  Eight\nroger call Tower one three four decimal five six zero   naslysenou\nfive six zero  Skytravel Four Three Seven  Eight   hezky  den\ntaky hezky diky",
         "short_ts": "Skytravel 4378\nroger call Tower 134.560 naslysenou\n560 Skytravel 4378 hezky den\ntaky hezky diky",
         "prompt-data": {
             "long_callsigns": [
                 " Skytravel Four Three Seven Eight"
             ],
             "short_callsigns": [
-                "TVS4378",
-                "ATCO radar"
+                "ATCO radar",
+                "TVS4378"
             ],
             "waypoints": [
                 "AKEVA",
@@ -4961,8 +5220,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": " Skytravel Four Three Seven Eight, Aegean Four Romeo Golf, Soko Air Oscar Charlie, Ryan Air Five Foxtrot Papa, Oscar Kilo Delta Sierra Victor",
-        "prompt_fullts_5B": "Turkish Five Delta Bravo, Sky Travel Four Three Seven Eight, Oscar Kilo Mike Delta Hotel, Ryan Air Five Foxtrot Papa, Air Hamburg Two Four Four November"
+        "callsigns_pos_fullts": [
+            1,
+            26
+        ],
+        "prompt_fullts_1G_4B": " Skytravel Four Three Seven Eight, Lufthansa Three November Lima, Oscar Kilo Bravo Alfa Lima, Sky Travel Two Eight Four Eight, Sky Travel Four Three Seven Eight",
+        "prompt_fullts_5B": "Air Hamburg Two Four Four November, Klm Four Four Kilo, Aegean Eight Delta Delta, Sundair Four One Nine Three, Oscar Kilo Delta Sierra Victor",
+        "prompt_fullts_50B": "Air Hamburg Two Four Four November, Oscar Kilo Delta Sierra Victor, Soko Air Oscar Charlie, Oscar Kilo Mike Delta Hotel, Aegean Four Romeo Golf, Aegean Eight Delta Delta, Ryan Air Five Foxtrot Papa, Dark Blue One Five Tango, Sundair Four One Nine Three, Oscar Kilo Mike Hotel Zulu, Lot Three Kilo Foxtrot, Speedbird Eight Five Four, Turkish Five Delta Bravo, Time Air Seven Eight Three Yankee, Turkish Six Four Five Three, Oscar Kilo Bravo Alfa Lima, Sky Travel Four Three Seven Eight, Lufthansa Three November Lima, Quality Four Zero Eight Nine, Klm Four Four Kilo, Ryan Air Seven November Delta, Austrian Airlines Two Lima Sierra, Sky Travel Two Eight Four Eight"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_175333.wav",
@@ -5002,8 +5266,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201029_140101.wav",
@@ -5012,8 +5278,8 @@
         "prompt-data": {
             "long_callsigns": [],
             "short_callsigns": [
-                "ATCO tower",
-                "AFR10BE"
+                "AFR10BE",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5111,8 +5377,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Silver Arrow Seven Two Victor Papa, Okayjet Lima Yankee, Sky Travel Three Nine Juliett, Air France One Zero Bravo Echo",
-        "prompt_fullts_5B": "Oscar Kilo Mike Delta Hotel, Aegean Two Delta Tango, Air France One Zero Bravo Echo, Csa / Czech Six Kilo Golf, Okapi Romeo Mike"
+        "callsigns_pos_fullts": [],
+        "prompt_fullts_1G_4B": ", Sky Travel Three Nine Juliett, Alpine Eight Four Charlie Bravo, Oscar Kilo Mike Mike India, Oscar Kilo Mike Delta Hotel",
+        "prompt_fullts_5B": "Turkish Six Five Nine One, Okayjet Charlie Tango, Silver Arrow Seven Two Victor Papa, Ryan Air One Zero One, Oscar Echo Foxtrot Echo Bravo",
+        "prompt_fullts_50B": "Ryan Air One Zero One, Turkish Six Five Nine One, Okapi Romeo Mike, Oscar Kilo Mike Delta Hotel, Oscar Kilo Mike Mike India, Lufthansa One Nine Three Seven, Time Air Eight Zero Four Papa, Csa / Czech Two Delta Zulu, Turkish Five Alfa Golf, Oscar Kilo Bravo Alfa Lima, Lufthansa Five Uniform Yankee, Okayjet Lima Yankee, Oscar Kilo Foxtrot Romeo Oscar, Sky Travel Six Alfa Delta, France Soleil Four Zero Three Eight, Qatari Eight One Five Seven, Okayjet Charlie Tango, Oscar Echo Foxtrot Echo Bravo, Lufthansa Six Yankee Whiskey, Alpine Three Nine Charlie Foxtrot, Mistral Wings Lima Tango, Silver Arrow Seven Two Victor Papa, Aeroflot Two Zero One Three, Oscar Kilo Mike Hotel Zulu, Air France One Zero Eight Zulu, France Soleil Four Three Echo Papa, Air France One Zero Bravo Echo, Alpine Eight Four Charlie Bravo, Sky Travel Three Nine Juliett, Csa / Czech Six Kilo Golf, Aegean Two Delta Tango, Arcusair Four Three Lima, Emirates One Eight"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_104523.wav",
@@ -5121,8 +5389,8 @@
         "prompt-data": {
             "long_callsigns": [],
             "short_callsigns": [
-                "BRU861",
-                "ATCO radar"
+                "ATCO radar",
+                "BRU861"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5152,8 +5420,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_090116.wav",
@@ -5161,12 +5431,12 @@
         "short_ts": "TVS4378 descend flight level 70\nflight level 70 TVS4378",
         "prompt-data": {
             "long_callsigns": [
-                "Sky Travel Four Three Seven Eight",
-                " Sky Travel Four Three Seven Eight"
+                " Sky Travel Four Three Seven Eight",
+                "Sky Travel Four Three Seven Eight"
             ],
             "short_callsigns": [
-                "TVS4378",
-                "ATCO radar"
+                "ATCO radar",
+                "TVS4378"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5240,13 +5510,18 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Sky Travel Four Three Seven Eight,  Sky Travel Four Three Seven Eight, Aegean Eight Delta Delta, Dark Blue Five Seven November, Lufthansa Three November Lima, Oscar Kilo Delta Sierra Victor",
-        "prompt_fullts_5B": "Sky Travel Two Eight Four Eight, Ryan Air Seven November Delta, Turkish Six Four Five Three, Dark Blue One Five Tango, Aegean Eight Delta Delta"
+        "callsigns_pos_fullts": [
+            0,
+            18
+        ],
+        "prompt_fullts_1G_4B": " Sky Travel Four Three Seven Eight, Sky Travel Four Three Seven Eight, Air Hamburg Two Four Four November, Aegean Eight Delta Delta, Lufthansa Three November Lima, Ryan Air Seven November Delta",
+        "prompt_fullts_5B": "Quality Four Zero Eight Nine, Aegean Eight Delta Delta, Oscar Kilo Mike Hotel Zulu, Oscar Kilo Mike Delta Hotel, Lot Three Kilo Foxtrot",
+        "prompt_fullts_50B": "Lufthansa Three November Lima, Ryan Air Seven November Delta, Speedbird Eight Five Four, Quality Four Zero Eight Nine, Aegean Eight Delta Delta, Turkish Six Four Five Three, Dark Blue Five Seven November, Oscar Kilo Mike Delta Hotel, Oscar Kilo Delta Sierra Victor, Oscar Kilo Bravo Alfa Lima, Klm Four Four Kilo, Turkish Five Delta Bravo, Sky Travel Two Eight Four Eight, Air Hamburg Two Four Four November, Austrian Airlines Two Lima Sierra, Soko Air Oscar Charlie, Oscar Kilo Mike Hotel Zulu, Aegean Four Romeo Golf, Dark Blue One Five Tango, Sky Travel Four Three Seven Eight, Lot Three Kilo Foxtrot"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201029_161709.wav",
-        "full_ts": "Timeair Six Niner Zero Juliett contact Ruzyne Tower one three four decimal five six zero   hezk\u00fd ve\u010der ahoj\none three four five six zero Timeair Six Niner Zero Juliett bye   d\u00edky",
-        "short_ts": "Timeair 6 Niner 0J contact Ruzyne Tower 134.560 hezk\u00fd ve\u010der ahoj\n134560 Timeair 6 Niner 0J bye d\u00edky",
+        "full_ts": "Timeair Six Niner Zero Juliett contact Ruzyne Tower one three four decimal five six zero   hezký večer ahoj\none three four five six zero Timeair Six Niner Zero Juliett bye   díky",
+        "short_ts": "Timeair 6 Niner 0J contact Ruzyne Tower 134.560 hezký večer ahoj\n134560 Timeair 6 Niner 0J bye díky",
         "prompt-data": {
             "long_callsigns": [
                 "Timeair Six Niner Zero Juliett"
@@ -5263,8 +5538,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            0,
+            28
+        ],
         "prompt_fullts_1G_4B": "Timeair Six Niner Zero Juliett, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_142311.wav",
@@ -5286,8 +5566,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            0,
+            14
+        ],
         "prompt_fullts_1G_4B": "Ryanair Nine Two Bravo Quebec, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx0_0.0_3.86.wav",
@@ -5298,8 +5583,8 @@
                 "Fraction One Five Zero Whiskey"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "NJE150W"
+                "NJE150W",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5329,8 +5614,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            4,
+            10,
+            48
+        ],
         "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx1_3.86_7.55.wav",
@@ -5341,8 +5632,8 @@
                 "Fraction One Five Zero Whiskey"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "NJE150W"
+                "NJE150W",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5372,8 +5663,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            4,
+            10,
+            48
+        ],
         "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx2_7.55_12.86.wav",
@@ -5384,8 +5681,8 @@
                 "Fraction One Five Zero Whiskey"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "NJE150W"
+                "NJE150W",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5415,8 +5712,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            4,
+            10,
+            48
+        ],
         "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx3_12.86_16.37.wav",
@@ -5427,8 +5730,8 @@
                 "Fraction One Five Zero Whiskey"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "NJE150W"
+                "NJE150W",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5458,8 +5761,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            4,
+            10,
+            48
+        ],
         "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.wav_segidx4_16.38_31.06.wav",
@@ -5470,8 +5779,8 @@
                 "Fraction One Five Zero Whiskey"
             ],
             "short_callsigns": [
-                "ATCO tower",
-                "NJE150W"
+                "NJE150W",
+                "ATCO tower"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5501,8 +5810,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            4,
+            10,
+            48
+        ],
         "prompt_fullts_1G_4B": "Fraction One Five Zero Whiskey, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_140929.wav",
@@ -5641,8 +5956,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Eurowings Seven Alfa Bravo, Eurowings Seven Alpha Bravo, World Express Five Four Seven, Okayjet Victor Kilo, Oscar Kilo Whiskey Yankee Zulu, Oscar Kilo Uniform Uniform Romeo One Four",
-        "prompt_fullts_5B": "Oscar Kilo Sierra Oscar Lima, Lufthansa Four Romeo Mike, Air France One Zero Bravo Echo, Okapi Mike Papa, Oscar Kilo Uniform Uniform Romeo One Four"
+        "callsigns_pos_fullts": [
+            0,
+            31
+        ],
+        "prompt_fullts_1G_4B": "Eurowings Seven Alfa Bravo, Eurowings Seven Alpha Bravo, Csa / Czech Two Delta Zulu, Air Portugal One Two Four Four, Emirates One Four Zero, Topswiss Nine Three Alfa Victor",
+        "prompt_fullts_5B": "Sun Turk Seven Six Alfa, Belarus Avia Eight Six Two, Oscar Kilo Uniform Uniform Romeo One Four, Csa / Czech Two Delta Zulu, Lufthansa Six Yankee Whiskey",
+        "prompt_fullts_50B": "Lufthansa Six Yankee Whiskey, Oklahoma Bravo Alfa, Csa / Czech Six Kilo Golf, Csa / Czech Nine Four Delta, Oscar Kilo Delta Kilo Bravo, Emirates One Three Nine, Belarus Avia Eight Six Two, Oscar Kilo Kilo Echo Alfa, Eurowings Seven Alfa Bravo, Flying Bulgaria Three Zero One, Oscar Kilo X-ray Alfa India Zero Four, Ryan Air Two One Two Two, Sundair Four Two Seven Two, Ryan Air Two Yankee Kilo, Lufthansa Four Romeo Mike, Emirates One Four Zero, Air France One Zero Eight Zulu, Soko Air Oscar Papa, Oscar Kilo Yankee Alfa India One Four, Ascot/kittyhawk Four Nine Four One, Oscar Kilo Mike Hotel Zulu, Okayjet Victor Kilo, Oscar Kilo Hotel Sierra India, Sun Turk Seven Six Alfa, Oklahoma Lima Zulu, Sun Turk Three Zero Two, Eurowings Seven Six Seven Seven, Air France One Zero Bravo Echo, Debonair Lima November, Air Portugal One Two Four Four, Oscar Kilo Whiskey Yankee Zulu, Ryan Air Five X-ray Lima, Qatari Eight Zero Zero Five, Topswiss Nine Three Alfa Victor, Sun Turk One Five Two Seven, Oscar Kilo Uniform Uniform Romeo One Four, Wizzair Nine Six Five Four, Topo Eight Zero, Ryan Air Seven Three Alfa Hotel, Transavia Six Eight Six Eight, Oscar Kilo Sierra Oscar Lima, Oscar Kilo Hotel Bravo Tango, Csa / Czech Two Delta Zulu, Okapi Mike Papa, All Charter One Romeo Kilo, Oscar Kilo Oscar Uniform Uniform Three Seven, World Express Five Four Seven"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx0_0.0_2.04.wav",
@@ -5662,8 +5982,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx1_2.52_24.29.wav",
@@ -5683,8 +6005,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx2_24.31_28.73.wav",
@@ -5704,8 +6028,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx3_28.74_35.56.wav",
@@ -5725,8 +6051,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx4_35.56_47.79.wav",
@@ -5746,8 +6074,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx5_47.9_51.86.wav",
@@ -5767,8 +6097,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-longer30s-cuts/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.wav_segidx6_51.86_53.4.wav",
@@ -5788,8 +6120,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201028_072404.wav",
@@ -5811,8 +6145,13 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [
+            0,
+            11
+        ],
         "prompt_fullts_1G_4B": "Oscar Kilo Tango Oscar Papa, ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201026_144339.wav",
@@ -5823,8 +6162,8 @@
                 "Sky Travel Four Three Two Papa"
             ],
             "short_callsigns": [
-                "TVS432P",
-                "ATCO radar"
+                "ATCO radar",
+                "TVS432P"
             ],
             "waypoints": [
                 "AKEVA",
@@ -5926,8 +6265,14 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Sky Travel Four Three Two Papa, Oscar Kilo Whiskey Uniform Romeo Three Eight, Lufthansa Eight Hotel Tango, Dream Team Four Zero Four Kilo, Oscar Kilo Zulu Whiskey Charlie Seven Three",
-        "prompt_fullts_5B": "Topjet Five Zero One, Turkish Five X-ray Victor, Csa / Czech Nine One Nine, Sunexpress Seven Delta, Dream Team Four Zero Four Kilo"
+        "callsigns_pos_fullts": [
+            6,
+            19,
+            47
+        ],
+        "prompt_fullts_1G_4B": "Sky Travel Four Three Two Papa, Austrian Airlines Two Juliett Papa, Ryan Air Nine Foxtrot Delta, Scandinavian Nine One Three Five, Dark Blue Eight Five Tango",
+        "prompt_fullts_5B": "Tarom Three Six Two Mike, Wizzair Nine Two, Oscar Kilo Zulu Whiskey Charlie Seven Three, Okapi Romeo Mike, Scandinavian Nine One Three Five",
+        "prompt_fullts_50B": "Air France One Zero Eight Zulu, Dream Team Four Zero Four Kilo, Sky Travel Four Three Two Papa, Wizzair Five Five Four, Ryan Air Nine Two Bravo Quebec, Tarom Three Six Two Mike, Oscar Kilo Kilo Echo Alfa, Dark Blue Eight Five Tango, Ryan Air Six Five Yankee, Turkish Five X-ray Victor, Topjet Five Zero One, Ryan Air Nine Foxtrot Delta, Swiss One Six Five Victor, Csa / Czech Nine One Nine, Silk West Five Five Zero One, Wizzair Nine Two, Foxtrot Whiskey Whiskey Zulu Zulu, Ryan Air Six Tango November, Lufthansa Eight Hotel Tango, Qatari Two Hotel Romeo, Okapi Romeo Mike, Okayjet Lima Yankee, Oscar Kilo Hotel Hotel Hotel, Ryan Air Eight Three Three Two, Tuifly Three Papa Charlie, Air France One Zero Bravo Echo, Scandinavian Nine One Three Five, Austrian Airlines Two Juliett Papa, Oscar Kilo Whiskey Uniform Romeo Three Eight, Oscar Kilo Zulu Whiskey Charlie Seven Three, Kilo Zero One, Qatari Eight One Nine Four, Ryan Air Four One Quebec Hotel, Sunexpress Seven Delta, Oscar Kilo Whiskey Uniform Sierra One Three"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201027_135214.wav",
@@ -6050,8 +6395,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Ryanair One Bravo Alfa, Air France One Zero Bravo Echo, Quebec Quebec Echo Four Zero Five, Mass Air Oscar Four Zero, All Charter Four Alfa Papa",
-        "prompt_fullts_5B": "Oscar Kilo Mike Hotel Zulu, Quebec Quebec Echo Four Zero Five, Air Baltic Seven Whiskey Delta, Turkish Six Two Eight Nine, Oscar Kilo Mike Delta Hotel"
+        "callsigns_pos_fullts": [
+            0
+        ],
+        "prompt_fullts_1G_4B": "Ryanair One Bravo Alfa, Air France One Zero Bravo Echo, Oscar Kilo Bravo Alfa Lima, Sun Turk Three Zero Two, Quebec Quebec Echo Four Zero Five",
+        "prompt_fullts_5B": "Ryan Air One Four Kilo, Oscar Kilo Mike Hotel Zulu, Emirates Nine Nine Three Six, Broadsword Two One, Eclair Three Zero One",
+        "prompt_fullts_50B": "Qatari Six Bravo Lima, Oscar Kilo Bravo Yankee Alfa, Oscar Kilo Yankee Uniform Romeo Nine Nine, Oscar Kilo November Tango Uniform, Emirates Nine Nine Three Six, Ryan Air Nine Two Bravo Quebec, Lufthansa Five Uniform Yankee, Ryan Air One Four Kilo, All Charter Four Alfa Papa, Sun Turk Three Zero Two, Okayjet Victor Kilo, Air Baltic Seven Whiskey Delta, Oscar Kilo Whiskey Uniform Romeo Three Four, Oscar Kilo Mike Hotel Zulu, Lufthansa Four Juliett November, Ryan Air Five Yankee Juliett, Yankee Uniform Tango Uniform Uniform, Air Silesia Seven Seven One, Air France One Zero Bravo Echo, Turkish Six Two Eight Nine, Turkish Three X-ray Yankee, Broadsword Two One, Lufthansa Six Lima Lima, Air France One Zero Eight Zulu, Oscar Kilo Yankee Uniform Sierra Four Five, Oscar Kilo Mike Delta Hotel, Eclair Three Zero One, Soko Air Oscar Charlie, Mass Air Oscar Four Zero, Wizz Go Eight Six Seven Zero, Sun Turk Seven Six Alfa, Oscar Kilo Delta Sierra Victor, Lufthansa Five Yankee Yankee, Oscar Echo Foxtrot Delta India, Csa / Czech Two Delta Zulu, Okapi Romeo Mike, Lufthansa Four Romeo Mike, Ryan Air One Bravo Alfa, Oscar Kilo Bravo Alfa Lima, Quebec Quebec Echo Four Zero Five"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Tower_134_560MHz_20201025_110119.wav",
@@ -6091,20 +6440,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
+        "callsigns_pos_fullts": [],
         "prompt_fullts_1G_4B": ", ",
-        "prompt_fullts_5B": ""
+        "prompt_fullts_5B": "",
+        "prompt_fullts_50B": ""
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201027_125731.wav",
-        "full_ts": "one one eight decimal one  Six Five Zero\nthat's it bye bye\nd\u011bkujem na sly\u0161enou\nna sly\u0161enou",
-        "short_ts": "118.1 650\nthat s it bye bye\nd\u011bkujem na sly\u0161enou\nna sly\u0161enou",
+        "full_ts": "one one eight decimal one  Six Five Zero\nthat's it bye bye\nděkujem na slyšenou\nna slyšenou",
+        "short_ts": "118.1 650\nthat s it bye bye\nděkujem na slyšenou\nna slyšenou",
         "prompt-data": {
             "long_callsigns": [
                 "Six Five Zero"
             ],
             "short_callsigns": [
-                "650",
-                "ATCO radar"
+                "ATCO radar",
+                "650"
             ],
             "waypoints": [
                 "AKEVA",
@@ -6212,8 +6563,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Six Five Zero, Emirates Nine Nine Three Six, Oscar Kilo Whiskey Uniform Romeo Three Four, Sun Turk Three Zero Two, Lufthansa Six Lima Lima",
-        "prompt_fullts_5B": "Lufthansa Four Romeo Mike, Csa / Czech Nine One Eight, Okapi Romeo Mike, Oscar Echo Foxtrot Delta India, Air Baltic Six Three Zero"
+        "callsigns_pos_fullts": [
+            6
+        ],
+        "prompt_fullts_1G_4B": "Six Five Zero, All Charter Four Alfa Papa, Soko Air Oscar Charlie, Oscar Kilo Mike Delta Hotel, Sky Travel Four Three Seven Eight",
+        "prompt_fullts_5B": "Turkish Three X-ray Yankee, Oscar Kilo Mike Hotel Zulu, Oscar Kilo Bravo Alfa Lima, Air France One Zero Eight Zulu, Oscar Kilo Whiskey Uniform Romeo Three Four",
+        "prompt_fullts_50B": "Ryan Air Nine Two Bravo Quebec, Turkish Three X-ray Yankee, Sky Travel Four Three Seven Eight, Lion King Echo Three Six, Air Silesia Six Seven Two, Csa / Czech Nine One Eight, Oscar Kilo Yankee Uniform Romeo Nine Nine, Eclair Three Zero One, Aegean Six Romeo Whiskey, Oscar Kilo Delta Sierra Victor, Sun Turk Three Zero Two, Oscar Kilo Bravo Yankee Alfa, Zap Nine Four One, Qatari Six Bravo Lima, Air France One Zero Eight Zulu, Emirates Nine Nine Three Six, Oscar Kilo Whiskey Uniform Romeo Three Four, Mass Air Oscar Four Zero, Ryan Air Five Yankee Juliett, Air Silesia Six Seven One, Oscar Echo Foxtrot Delta India, Oscar Kilo Mike Hotel Zulu, Okapi Romeo Mike, All Charter Four Alfa Papa, Turkish Six Two Eight Nine, Air Baltic Six Three Zero, Oscar Kilo Bravo Alfa Lima, Broadsword Two One, Sun Turk Seven Six Alfa, Air Silesia Seven Seven One, Lufthansa Four Romeo Mike, Oscar Kilo Yankee Uniform Sierra Four Five, Oscar Kilo Mike Delta Hotel, Lufthansa Six Lima Lima, Csa / Czech Two Delta Zulu, Lufthansa Five Uniform Yankee, Soko Air Oscar Charlie, Speedbird Eight Five Five"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LKPR_RUZYNE_Radar_120_520MHz_20201025_091112.wav",
@@ -6224,8 +6579,8 @@
                 "Oscar Kilo Papa Mike Bravo"
             ],
             "short_callsigns": [
-                "OK-PMB",
-                "ATCO radar"
+                "ATCO radar",
+                "OK-PMB"
             ],
             "waypoints": [
                 "AKEVA",
@@ -6309,7 +6664,12 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Papa Mike Bravo, Air Moldova Eight Six Four, Turkish Three Two Bravo, Ryan Air One Juliett Uniform, Lufthansa Three November Lima",
-        "prompt_fullts_5B": "Okapi Hotel Mike, Air Moldova Eight Six Three, Ryan Air One Juliett Uniform, Oklahoma Lima Zulu, Eurowings Six Hotel Papa"
+        "callsigns_pos_fullts": [
+            0,
+            13
+        ],
+        "prompt_fullts_1G_4B": "Oscar Kilo Papa Mike Bravo, Oklahoma Lima Zulu, Okapi Hotel Mike, Sunexpress Seven Delta, Croatia Four Eight Zero",
+        "prompt_fullts_5B": "Ryan Air One Juliett Uniform, All Charter One Three One, Klm Four Four Kilo, Okapi Hotel Mike, Turkish Three Two Bravo",
+        "prompt_fullts_50B": "Klm Four Four Kilo, Eurowings Six Hotel Papa, Ryan Air One Juliett Uniform, Sunexpress Seven Delta, Iranair Seven One One, Emirates Seven Three, Air Moldova Eight Six Three, Etihad Seven Two Echo, Oscar Kilo Hotel Bravo Tango, Croatia Four Eight Zero, Lufthansa Three November Lima, Air Baltic Seven Papa Yankee, Oscar Kilo Mike Hotel Zulu, Finn Air One Delta Hotel, Air Moldova Eight Six Four, Turkish Six Five Seven Seven, Ryan Air Four Nine Four Five, Oscar Kilo Yankee Alfa India One Four, Okapi Hotel Mike, Lufthansa Nine Tango Papa, All Charter One Three One, Oscar Kilo Whiskey Uniform Sierra One Seven, Oklahoma Lima Zulu, All Charter One X-ray Quebec, Turkish Three Two Bravo, Time Air Seven Nine Zero Juliett"
     }
 ]
