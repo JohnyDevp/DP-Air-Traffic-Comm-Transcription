@@ -244,7 +244,9 @@ def get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segmen
     else: out['short_callsigns'] = cal_out['short']
     # save info about the position of the callsign in the text
     # we are indexing from 0,
-    out['callsigns_pos'] = [i + count_of_all_previous_words_of_segments for i in cal_out['pos']]
+    out['callsigns_pos'] = []
+    for positions in cal_out['pos']:
+        out['callsigns_pos'].append([pos + count_of_all_previous_words_of_segments for pos in positions])
     
     # RUNWAY
     pass 
@@ -270,7 +272,8 @@ def get_callsigns_from_text(corrected_text_with_tags : str, info_file_path : str
         # text_without_tags = re.sub(r'\s*\[.*\]\s*',' ',corrected_text_with_tags).strip() NOT WORKING
         words_before = re.findall(r'\s+',corrected_text_with_tags.strip()[:cal_pos]).__len__()
         # acctually words before is the index of the callsign in the text, because we are idnexing from 0
-        out['pos'].append(words_before) 
+        
+        out['pos'].append([words_before]) 
         
         # shorten the callsign
         full_vocab = make_info_vocab(info_file_path)

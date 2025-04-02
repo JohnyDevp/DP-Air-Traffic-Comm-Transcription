@@ -1,3 +1,6 @@
+### WHAT IS HAPPENING NOW
+- trenovani na colabu modelu base s testovanim attention masky, tady na notasu se testuje model base bez vyuziti attention masky
+
 ### TODO
 zitra zjisti, jak vypada ten prompt_ids pri pouziti generate - potrebujes vedet, jak vlastne vypada ten prompt 
 
