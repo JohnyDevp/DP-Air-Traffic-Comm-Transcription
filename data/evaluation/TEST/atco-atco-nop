@@ -1,0 +1,103 @@
+#### EVALUATION STARTED - TIME 2025-04-01 17:18:11 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich', 'atco_fr', 'atco_other_lang'], datasets_basedir='./data/', models='/content/drive/Shareddrives/DP/models/whisper-medium-atco-1', output_file='/content/drive/Shareddrives/DP/models/whisper-medium-atco-1/atco_eval_checkpoints_result_1', transcription_name_in_ds='full_ts', checkpoints_eval=True, batch_size=8, same_processor=True, prompt_name_in_ds='prompt_fullts_1G_4B', eval_description='Evaluation of all checkpoints without any prompt', overwrite=False, separate_ds=True, use_prompt=False, self_prompt=False)
+******** Evaluation description ********
+Evaluation of all checkpoints without any prompt
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-105 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 45.49653579676674 LOSS: 5.622445901234944
+DATASET: atco_en_stefanik | WER: 51.92307692307693 LOSS: 4.424153941018241
+DATASET: atco_en_zurich | WER: 43.16007240755108 LOSS: 5.793860151217534
+DATASET: atco_fr | WER: 75.36764705882352 LOSS: 2.095063853263855
+DATASET: atco_other_lang | WER: 90.41916167664671 LOSS: 7.188072872161865
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-210 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 58.198614318706696 LOSS: 4.9641870392693415
+DATASET: atco_en_stefanik | WER: 62.6657824933687 LOSS: 3.84025468145098
+DATASET: atco_en_zurich | WER: 40.58701836048616 LOSS: 5.128112710439241
+DATASET: atco_fr | WER: 76.65441176470588 LOSS: 2.144675350189209
+DATASET: atco_other_lang | WER: 96.25748502994011 LOSS: 6.9883638381958
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-315 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 42.725173210161664 LOSS: 6.800897227393256
+DATASET: atco_en_stefanik | WER: 38.59416445623342 LOSS: 5.292261872972761
+DATASET: atco_en_zurich | WER: 36.759762089475046 LOSS: 7.039210713826693
+DATASET: atco_fr | WER: 62.5 LOSS: 1.9799208164215087
+DATASET: atco_other_lang | WER: 115.8682634730539 LOSS: 9.486227989196777
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-420 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 46.18937644341801 LOSS: 7.539118660820855
+DATASET: atco_en_stefanik | WER: 47.41379310344828 LOSS: 6.173840727124896
+DATASET: atco_en_zurich | WER: 37.01836048616499 LOSS: 8.242164373397827
+DATASET: atco_fr | WER: 67.83088235294117 LOSS: 2.049635148048401
+DATASET: atco_other_lang | WER: 90.11976047904191 LOSS: 9.740196228027344
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-525 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 31.58198614318707 LOSS: 7.648821618821886
+DATASET: atco_en_stefanik | WER: 37.6657824933687 LOSS: 6.105256761823382
+DATASET: atco_en_zurich | WER: 32.919575898629425 LOSS: 7.645691752433777
+DATASET: atco_fr | WER: 51.10294117647059 LOSS: 2.1951606035232545
+DATASET: atco_other_lang | WER: 83.53293413173652 LOSS: 10.046555519104004
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-1050 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 28.926096997690532 LOSS: 11.484515296088325
+DATASET: atco_en_stefanik | WER: 24.93368700265252 LOSS: 9.674668857029506
+DATASET: atco_en_zurich | WER: 27.47607964830618 LOSS: 10.308844483815706
+DATASET: atco_fr | WER: 49.63235294117647 LOSS: 2.415926766395569
+DATASET: atco_other_lang | WER: 86.97604790419162 LOSS: 13.522743606567383
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-1155 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 27.02078521939954 LOSS: 13.242684682210287
+DATASET: atco_en_stefanik | WER: 24.93368700265252 LOSS: 11.456841468811035
+DATASET: atco_en_zurich | WER: 27.8251874838376 LOSS: 12.238126351283146
+DATASET: atco_fr | WER: 48.345588235294116 LOSS: 2.4385221004486084
+DATASET: atco_other_lang | WER: 83.23353293413174 LOSS: 14.924364471435547
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-1260 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 29.734411085450347 LOSS: 13.112844361199272
+DATASET: atco_en_stefanik | WER: 24.60212201591512 LOSS: 11.460438864571708
+DATASET: atco_en_zurich | WER: 28.019136281355056 LOSS: 11.971168444706844
+DATASET: atco_fr | WER: 48.89705882352941 LOSS: 2.4354371070861816
+DATASET: atco_other_lang | WER: 85.17964071856288 LOSS: 15.272110939025879
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-1352 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 31.755196304849886 LOSS: 13.476017846001518
+DATASET: atco_en_stefanik | WER: 25.862068965517242 LOSS: 11.919712611607142
+DATASET: atco_en_zurich | WER: 28.60098267390742 LOSS: 12.195582774969248
+DATASET: atco_fr | WER: 48.529411764705884 LOSS: 2.455596685409546
+DATASET: atco_other_lang | WER: 89.52095808383234 LOSS: 15.780087280273438
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-1457 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 30.773672055427255 LOSS: 13.728128645155165
+DATASET: atco_en_stefanik | WER: 25.928381962864723 LOSS: 12.248546327863421
+DATASET: atco_en_zurich | WER: 28.2648047582105 LOSS: 12.55033672772921
+DATASET: atco_fr | WER: 48.161764705882355 LOSS: 2.4674357891082765
+DATASET: atco_other_lang | WER: 87.12574850299401 LOSS: 15.845491218566895
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/whisper-medium-atco-1/checkpoint-1560 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 29.503464203233253 LOSS: 13.6892392900255
+DATASET: atco_en_stefanik | WER: 25.46419098143236 LOSS: 12.207072394234794
+DATASET: atco_en_zurich | WER: 28.303594517713993 LOSS: 12.50345541880681
+DATASET: atco_fr | WER: 47.97794117647059 LOSS: 2.4793580532073975
+DATASET: atco_other_lang | WER: 86.67664670658682 LOSS: 15.873221588134765
