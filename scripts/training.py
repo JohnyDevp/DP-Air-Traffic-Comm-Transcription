@@ -167,6 +167,8 @@ class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
 
         batch["labels"] = labels
 
+        # attention_mask = torch.tensor(np.where(labels != processor.tokenizer.pad_token_id, 1 , 0))
+        # batch["attention_mask"] = attention_mask
         return batch
 
 @dataclass
@@ -261,14 +263,89 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 class TrainingSetup:
     model_path: str
     train_datasets: list[str]
-    path_to_train_datasets: str
+    datasets_root_dir: str
     transcription_name_in_ds : str
     prompt_name_in_ds : str
+    eval_datasets: list[str] = None
     continue_from_checkpoint: bool = False
     use_prompt: bool = True
     self_prompt: bool = False
 
-def build_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False, ts='fullts') -> list[Dataset]|Dataset:
+def build_eval_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False) -> dict[str,Dataset]|Dataset:  
+    allds_test = {}
+    # find all datasets to be tested
+    for ds_name in ds_list:
+        ds = None
+        match ds_name:
+            case 'atco_en_ruzyne':
+                if (os.path.exists(os.path.join(path_to_ds,"atco/en_ruzyne_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/en_ruzyne_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"en_ruzyne_test_ds"))
+            case 'atco_en_stefanik':
+                if (os.path.exists(os.path.join(path_to_ds,"atco/en_stefanik_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/en_stefanik_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"en_stefanik_test_ds"))
+            case 'atco_en_zurich':
+                if (os.path.exists(os.path.join(path_to_ds,"atco/en_zurich_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/en_zurich_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"en_zurich_test_ds"))
+            case 'atco_fr':
+                if (os.path.exists(os.path.join(path_to_ds,"atco/fr_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/fr_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"fr_test_ds"))
+            case 'atco_other_lang':
+                if (os.path.exists(os.path.join(path_to_ds,"atco/other_lang_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/other_lang_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"other_lang_test_ds"))
+            case 'hiwire_fr':
+                if (os.path.exists(os.path.join(path_to_ds,"hiwire/hwir_fr_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_fr_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"hwir_fr_test_ds"))
+            case 'hiwire_gr':
+                if (os.path.exists(os.path.join(path_to_ds,"hiwire/hwir_gr_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_gr_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"hwir_gr_test_ds"))
+            case 'hiwire_sp':
+                if (os.path.exists(os.path.join(path_to_ds,"hiwire/hwir_sp_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"hiwire/hwir_sp_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"hwir_sp_test_ds"))
+            case 'malorca':
+                if (os.path.exists(os.path.join(path_to_ds,"malorca/malorca_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"malorca/malorca_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"malorca_test_ds"))
+            case 'nato':
+                if (os.path.exists(os.path.join(path_to_ds,"nato/nato_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"nato/nato_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"nato_test_ds"))
+            case 'uwb':
+                if (os.path.exists(os.path.join(path_to_ds,"uwb/uwb_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"uwb/uwb_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"uwb_test_ds"))
+        if (ds):
+            allds_test[ds_name]=ds
+    
+    # prepare the datasets to be ready for model
+    for key in allds_test:
+        allds_test[key] = allds_test[key].map(prepare_dataset_fn, remove_columns=ds.column_names, num_proc=1)
+    
+    # return either concatenated datasets or list of datasets
+    if (separate_ds):
+        return allds_test
+    else:
+        return concatenate_datasets([allds_test[key] for key in allds_test])
+
+def build_train_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False) -> list[Dataset]|Dataset:
     allds_train = []
     for ds_name in list_of_ds:
         ds = None
@@ -356,28 +433,30 @@ if __name__ == "__main__":
     prepare_dataset.set_transcription_name(training_setup.transcription_name_in_ds)
     prepare_dataset.set_prompt_name(training_setup.prompt_name_in_ds)
 
-    if training_setup.use_prompt:
-        if training_setup.self_prompt:
-            prepare_fn = prepare_dataset.prepare_dataset_self_prompt
-        else:
-            prepare_fn = prepare_dataset.prepare_dataset_with_prompt
-    else:
-        prepare_fn = prepare_dataset.prepare_dataset
-        
-    # load the datasets
-    train_ds = build_dataset(training_setup.train_datasets, prepare_fn, training_setup.path_to_train_datasets, separate_ds=False)
-    
-    # load the data collator according to prompt usage
+    # setup data PREPARATION FUNCTION and DATACOLLATOR according to prompt usage
     if training_setup.use_prompt:
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT(
             processor=processor,
             decoder_start_token_id=model.config.decoder_start_token_id,
         )
+        if training_setup.self_prompt:
+            prepare_fn = prepare_dataset.prepare_dataset_self_prompt
+        else:
+            prepare_fn = prepare_dataset.prepare_dataset_with_prompt
     else:
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
             processor=processor,
             decoder_start_token_id=model.config.decoder_start_token_id,
         )
+        prepare_fn = prepare_dataset.prepare_dataset
+        
+    # load the train datasets
+    train_ds = build_train_dataset(training_setup.train_datasets, prepare_fn, training_setup.datasets_root_dir, separate_ds=False)
+    
+    # load the eval datasets
+    eval_ds = None
+    if (training_setup.eval_datasets != None):
+        eval_ds = build_eval_dataset(training_setup.eval_datasets, prepare_fn, training_setup.datasets_root_dir, separate_ds=False)
 
     # load the metric computer
     cm = ComputeMetrics(processor.tokenizer)
@@ -392,6 +471,7 @@ if __name__ == "__main__":
         model=model,
         train_dataset=train_ds,
         data_collator=data_collator,
+        eval_dataset=eval_ds,
         compute_metrics=cm.compute_metrics_original,
         processing_class=processor
     )
