@@ -115,7 +115,7 @@ class ComputeMetrics:
         pred_str = self.tokenizer.batch_decode(pred_ids, skip_special_tokens=True)
         label_str = self.tokenizer.batch_decode(label_ids, skip_special_tokens=True)
 
-        wer = 100 * metric.compute(predictions=pred_str, references=label_str)
+        wer = 100 * self.metric.compute(predictions=pred_str, references=label_str)
 
         return {"wer": wer}
 
@@ -273,6 +273,11 @@ def build_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :str, s
     for ds_name in list_of_ds:
         ds = None
         match ds_name:
+            case 'atco_test_en_ruzyne': #TODO REMOVE
+                if (os.path.exists(os.path.join(path_to_ds,"atco/en_ruzyne_test_ds"))):
+                    ds = load_from_disk(os.path.join(path_to_ds,"atco/en_ruzyne_test_ds"))
+                else:
+                    ds = load_from_disk(os.path.join(path_to_ds,"en_ruzyne_test_ds"))
             case 'apimod':
                 if (os.path.exists(os.path.join(path_to_ds,"apimod/apimod_train_ds"))):
                     ds = load_from_disk(os.path.join(path_to_ds,"apimod/apimod_train_ds"))
@@ -321,7 +326,7 @@ def build_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :str, s
         return concatenate_datasets(allds_train)
 
 def get_model_processor_tokenizerfr(model_path) -> tuple[WhisperForConditionalGeneration, WhisperProcessor, WhisperTokenizer]:
-    tokenizer_fr = WhisperTokenizer.from_pretrained(model_path, language="french", task="transcribe") # MODIF
+    tokenizer_fr = WhisperTokenizer.from_pretrained(model_path, language="French", task="transcribe") # MODIF
     processor = WhisperProcessor.from_pretrained(model_path, language="English", task="transcribe")  # MODIF
 
     model = WhisperForConditionalGeneration.from_pretrained(model_path)
