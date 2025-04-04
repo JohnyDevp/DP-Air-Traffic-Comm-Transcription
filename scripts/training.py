@@ -37,7 +37,19 @@ class PrepareDatasetAsInput:
         audio = batch["audio"]
 
         # compute log-Mel input features from input audio array
-        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+        features = self.feature_extractor(
+            audio["array"], 
+            sampling_rate=audio["sampling_rate"],
+            truncation=False,
+            padding='max_length',
+            return_attention_mask=True
+        )
+
+        # add input features to batch
+        batch["input_features"] = features.input_features[0]
+        
+        # add attention mask to batch, potentially for data augmentation
+        batch['attention_mask'] = features.attention_mask[0]
 
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
@@ -58,8 +70,19 @@ class PrepareDatasetAsInput:
         audio = batch["audio"]
 
         # compute log-Mel input features from input audio array
-        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+        features = self.feature_extractor(
+            audio["array"], 
+            sampling_rate=audio["sampling_rate"],
+            truncation=False,
+            padding='max_length',
+            return_attention_mask=True
+        )
 
+        # add input features to batch
+        batch["input_features"] = features.input_features[0]
+        
+        # add attention mask to batch, potentially for data augmentation
+        batch['attention_mask'] = features.attention_mask[0]
 
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
@@ -83,8 +106,19 @@ class PrepareDatasetAsInput:
         audio = batch["audio"]
 
         # compute log-Mel input features from input audio array
-        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+        features = self.feature_extractor(
+            audio["array"], 
+            sampling_rate=audio["sampling_rate"],
+            truncation=False,
+            padding='max_length',
+            return_attention_mask=True
+        )
 
+        # add input features to batch
+        batch["input_features"] = features.input_features[0]
+        
+        # add attention mask to batch, potentially for data augmentation
+        batch['attention_mask'] = features.attention_mask[0]
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
         tokenizer = self.tokenizer_en
@@ -159,19 +193,16 @@ class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
 
         # replace padding with -100 to ignore loss correctly
         labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)
-        # build the attention mask - it is actually not built, just overtaken from the labels_batch
-        labels_mask = labels_batch['attention_mask']
         
         # if bos token is appended in previous tokenization step,
         # cut bos token here as it's append later anyways
         if (labels[:, 0] == self.decoder_start_token_id).all().cpu().item():
             labels = labels[:, 1:]
-            labels_mask = labels_mask[:, 1:]
 
         batch["labels"] = labels
 
-        # TODO BEWARE OF ATTENTION MASK 
-        batch['attention_mask'] = labels_mask
+        # FOR USE ONLY IF WANT DATA AUGMENTATION
+        batch['attention_mask'] = torch.tensor([mask['attention_mask'] for mask in features])
 
         return batch
 
@@ -204,7 +235,6 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         # shift labels to the right to get decoder input ids
         labels = labels_batch["input_ids"]
-        labels_mask = labels_batch["attention_mask"]
         
         # get the decoder input ids, by removing the last token (this is the 'shift' operation)
         decoder_input_ids = labels[:, :-1]
@@ -223,8 +253,9 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         batch["labels"] = labels
         batch["decoder_input_ids"] = decoder_input_ids
-        # TODO BEWARE OF ATTENTION MASK 
-        batch['attention_mask'] = labels_mask
+ 
+        # FOR USE ONLY IF WANT DATA AUGMENTATION
+        batch['attention_mask'] = torch.tensor([mask['attention_mask'] for mask in features])
         
         return batch
 
@@ -379,7 +410,13 @@ def get_model_processor_tokenizerfr(model_path) -> tuple[WhisperForConditionalGe
     model.generation_config.language = "english"
     model.generation_config.task = "transcribe"
     model.generation_config.forced_decoder_ids = None
-
+    
+    # maybe this can be used for light data augmentation... maybe it can be enough
+    # if you want to use this, you also need to uncomment lines in datacollators for obtaining attention_mask
+    # model.config.apply_spec_augment = True
+    # model.config.mask_time_prob = 0.7
+    # model.config.mask_feature_prob = 0.7
+    
     return model, processor, tokenizer_fr
 
 def train(training_setup : TrainingSetup, training_args : Seq2SeqTrainingArguments):
