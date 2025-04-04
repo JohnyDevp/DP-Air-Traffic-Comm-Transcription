@@ -14,24 +14,39 @@ import numpy as np
 
 
 class PrepareDatasetAsInput:
-    
-    def __init__(self, feature_extractor, tokenizer_en, tokenizer_fr):
+
+    def __init__(self, feature_extractor, tokenizer_en, tokenizer_fr, prompt_version=None):
         self.feature_extractor = feature_extractor
         self.tokenizer_en = tokenizer_en
         self.tokenizer_fr = tokenizer_fr
-    
+
     def set_transcription_name(self, transcription_name):
         self.transcription_name = transcription_name
-    
+
     def set_prompt_name(self, prompt_name):
         self.prompt_name = prompt_name
-               
+
     def prepare_dataset(self, batch):
+        if (self.transcription_name is None):
+            raise ValueError("Transcription name is not set. Please set it using set_transcription_name() method.")
+        
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
 
         # compute log-Mel input features from input audio array
-        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+        features = self.feature_extractor(
+            audio["array"], 
+            sampling_rate=audio["sampling_rate"],
+            truncation=False,
+            padding='max_length',
+            return_attention_mask=True
+        )
+
+        # add input features to batch
+        batch["input_features"] = features.input_features[0]
+        
+        # add attention mask to batch, potentially for data augmentation
+        batch['attention_mask'] = features.attention_mask[0]
 
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
@@ -43,37 +58,64 @@ class PrepareDatasetAsInput:
         batch['labels'] = tokenizer(batch[self.transcription_name]).input_ids
 
         return batch
-    
+
     def prepare_dataset_with_prompt(self,batch):
+        if (self.transcription_name is None or self.prompt_name is None):
+            raise ValueError("Transcription name is not set. Please set it using set_transcription_name() method.")
+        
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
 
         # compute log-Mel input features from input audio array
-        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+        features = self.feature_extractor(
+            audio["array"], 
+            sampling_rate=audio["sampling_rate"],
+            truncation=False,
+            padding='max_length',
+            return_attention_mask=True
+        )
 
+        # add input features to batch
+        batch["input_features"] = features.input_features[0]
         
+        # add attention mask to batch, potentially for data augmentation
+        batch['attention_mask'] = features.attention_mask[0]
+
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
         tokenizer = self.tokenizer_en
         if "lang" in batch:
             if batch["lang"] == "fr":
                 tokenizer = self.tokenizer_fr
-        
+
         # encode prompts to prompt ids - we assume that the dataset has a column `"prompt"` that contains the prompt for each example
         prompt_ids = tokenizer.get_prompt_ids(batch[self.prompt_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
 
-        batch["prompt_ids"] = prompt_ids
-        batch["labels"] = tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
-        
+        batch["labels"] = prompt_ids + tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
+
         return batch
-   
+
     def prepare_dataset_self_prompt(self,batch):
+        if (self.transcription_name is None):
+            raise ValueError("Transcription name is not set. Please set it using set_transcription_name() method.")
+        
         # load and resample audio data from 48 to 16kHz
         audio = batch["audio"]
 
         # compute log-Mel input features from input audio array
-        batch["input_features"] = self.feature_extractor(audio["array"], sampling_rate=audio["sampling_rate"]).input_features[0]
+        features = self.feature_extractor(
+            audio["array"], 
+            sampling_rate=audio["sampling_rate"],
+            truncation=False,
+            padding='max_length',
+            return_attention_mask=True
+        )
 
+        # add input features to batch
+        batch["input_features"] = features.input_features[0]
+        
+        # add attention mask to batch, potentially for data augmentation
+        batch['attention_mask'] = features.attention_mask[0]
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
         tokenizer = self.tokenizer_en
@@ -84,11 +126,10 @@ class PrepareDatasetAsInput:
         # make prompt from the lables
         prompt_ids = self.tokenizer_en.get_prompt_ids(batch[self.transcription_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
 
-        batch['prompt_ids'] = prompt_ids 
-        batch['labels'] = tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
+        batch['labels'] = prompt_ids + tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
 
         return batch
-    
+  
 class ComputeMetrics:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
@@ -134,13 +175,16 @@ class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
 
         # replace padding with -100 to ignore loss correctly
         labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)
-
+        
         # if bos token is appended in previous tokenization step,
         # cut bos token here as it's append later anyways
         if (labels[:, 0] == self.decoder_start_token_id).all().cpu().item():
             labels = labels[:, 1:]
 
         batch["labels"] = labels
+
+        # FOR USE ONLY IF WANT DATA AUGMENTATION
+        batch['attention_mask'] = torch.tensor([mask['attention_mask'] for mask in features])
 
         return batch
 
@@ -159,8 +203,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         # dataloader returns a list of features which we convert to a dict
         input_features = [{"input_features": feature["input_features"]} for feature in features]
         label_features = [{"input_ids": feature["labels"]} for feature in features]
-        prompt_features = [{'prompt_ids': feature['prompt_ids']} for feature in features]
-        
+
         # reformat list to dict and set to pytorch format
         batch = self.processor.feature_extractor.pad(
             input_features,
@@ -174,7 +217,7 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         # shift labels to the right to get decoder input ids
         labels = labels_batch["input_ids"]
-
+        
         # get the decoder input ids, by removing the last token (this is the 'shift' operation)
         decoder_input_ids = labels[:, :-1]
 
@@ -192,48 +235,10 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         batch["labels"] = labels
         batch["decoder_input_ids"] = decoder_input_ids
+   
+        # FOR USE ONLY IF WANT DATA AUGMENTATION
+        batch['attention_mask'] = torch.tensor([mask['attention_mask'] for mask in features])
         
-        # added especially for EVALUATION
-        batch['prompt_ids'] = prompt_features
-        
-        return batch
-
-    def myoldcall_stillworking(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
-        # split inputs and labels since they have to be of different lengths and need different padding methods
-        # first treat the audio inputs by simply returning torch tensors
-
-        input_features = [{"input_features": feature["input_features"]} for feature in features]
-        batch = self.processor.feature_extractor.pad(input_features, return_tensors="pt")
-
-        # get the tokenized label sequences
-        label_features = [{"input_ids": feature["labels"]} for feature in features]
-        # pad the labels to max length
-        labels_batch = self.processor.tokenizer.pad(label_features, return_tensors="pt")
-
-        # copy the labels as in its form now (with both prompt and the transcript itself) it should be the input to the decoder
-        batch['decoder_input_ids'] = labels_batch["input_ids"].clone()[:, :-1]
-
-        # replace padding in labels with -100 to ignore loss correctly
-        labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)[:, 1:]
-
-        # then mask out the prompt in the labels
-        bos_index = np.argmax(labels==self.decoder_start_token_id, axis=1)
-        prompt_mask = np.arange(labels.shape[1]) < bos_index.numpy()[:, np.newaxis]
-        labels = torch.tensor(np.where(prompt_mask, -100, labels))
-
-        # if bos token is appended in previous tokenization step,
-        # cut bos token here as it's append later anyways (actually it's not needed to cut it here, because it the bos
-        # tokeon is appended just if decode_input_ids is not provided)
-        # STILL WE LET IT BE THERE AS PART OF ORIGINAL CODE
-        if (labels[:, 0] == self.decoder_start_token_id).all().cpu().item():
-            labels = labels[:, 1:]
-
-        batch["labels"] = labels
-
-        # and at last we create attention mask, to tell the decoder to use the correct part from the labels
-        # attention_mask = torch.tensor(np.where(decoder_input_ids != tokenizer_en.pad_token_id, 1 , 0))
-        # batch["attention_mask"] = attention_mask
-
         return batch
 
 @dataclass
@@ -386,6 +391,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
 
     # run the evaluation
     if (isinstance(test_ds, Dataset) and not use_prompt):
+        print(f"SINGLE DATASET, NOT PROMPT, batch size {batch_size}")
         # setup the dataloader
         dataloader = DataLoader(test_ds, batch_size=batch_size, collate_fn=data_collator)
 
@@ -419,7 +425,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
         return {'allds':{'wer':wer,'loss':loss}}
 
     elif (isinstance(test_ds, dict) and not use_prompt):
-        print(f"MULTIPLE DATASETS, NOT PROMPT, {batch_size}")
+        print(f"MULTIPLE DATASETS, NOT PROMPT, batch size {batch_size}")
         out = {}
         for ds_name, ds in test_ds.items():
             # setup the dataloader
@@ -432,7 +438,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
             for batch in tqdm(dataloader):
                 input_features = batch["input_features"].cuda()
                 labels=batch["labels"].cuda()
-
+                
                 preds = model.generate(input_features)
                 with torch.no_grad():
                   outputs = model(input_features, labels=labels)
@@ -456,6 +462,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
         return out
 
     elif (isinstance(test_ds, Dataset) and use_prompt):
+        print(f"SINGLE DATASET, USE PROMPT, batch size {batch_size}")
         # WHEN using PROMPT, so far we can test only one sample at a time with one promp
         # because yet we cannot handle different prompts for different samples in the same batch
         # setup the dataloader
@@ -504,6 +511,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
         return {'allds':{'wer':wer, 'loss':loss}}
 
     elif (isinstance(test_ds, dict) and use_prompt):
+        print(f"MULTIPLE DATASETS, USE PROMPT, batch size {batch_size}")
         # WHEN using PROMPT, so far we can test only one sample at a time with one promp
         # because yet we cannot handle different prompts for different samples in the same batch
         # setup the dataloader

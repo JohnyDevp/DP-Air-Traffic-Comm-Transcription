@@ -414,8 +414,8 @@ def get_model_processor_tokenizerfr(model_path) -> tuple[WhisperForConditionalGe
     # maybe this can be used for light data augmentation... maybe it can be enough
     # if you want to use this, you also need to uncomment lines in datacollators for obtaining attention_mask
     # model.config.apply_spec_augment = True
-    # model.config.mask_time_prob = 0.7
-    # model.config.mask_feature_prob = 0.7
+    # model.config.mask_time_prob = 0.05
+    # model.config.mask_feature_prob = 0.05
     
     return model, processor, tokenizer_fr
 

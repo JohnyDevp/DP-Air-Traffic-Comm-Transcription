@@ -1,9 +1,8 @@
 {
 	"training_setup": {
-		"model_path": "openai/whisper-base",
+		"model_path": "openai/whisper-tiny",
 		"continue_from_checkpoint": false,
-		"train_datasets": ["atco_en"],
-		"eval_datasets": ["atco_en_ruzyne", "atco_en_stefanik"],
+		"train_datasets": ["atco_test_en_ruzyne"],
 		"datasets_root_dir": "./data",
 		"use_prompt": false,
 		"self_prompt": false,
@@ -18,7 +17,6 @@
 		"warmup_ratio": 0.12,
 		"gradient_checkpointing": true,
 		"fp16": true,
-		"eval_strategy": "epoch",
 		"save_strategy": "epoch",
 		"num_train_epochs": 10,
 		"per_device_eval_batch_size": 4,
