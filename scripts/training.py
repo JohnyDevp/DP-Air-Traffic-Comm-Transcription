@@ -159,16 +159,20 @@ class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
 
         # replace padding with -100 to ignore loss correctly
         labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)
-
+        # build the attention mask - it is actually not built, just overtaken from the labels_batch
+        labels_mask = labels_batch['attention_mask']
+        
         # if bos token is appended in previous tokenization step,
         # cut bos token here as it's append later anyways
         if (labels[:, 0] == self.decoder_start_token_id).all().cpu().item():
             labels = labels[:, 1:]
+            labels_mask = labels_mask[:, 1:]
 
         batch["labels"] = labels
 
-        # attention_mask = torch.tensor(np.where(labels != processor.tokenizer.pad_token_id, 1 , 0))
-        # batch["attention_mask"] = attention_mask
+        # TODO BEWARE OF ATTENTION MASK 
+        batch['attention_mask'] = labels_mask
+
         return batch
 
 @dataclass
@@ -200,7 +204,8 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         # shift labels to the right to get decoder input ids
         labels = labels_batch["input_ids"]
-
+        labels_mask = labels_batch["attention_mask"]
+        
         # get the decoder input ids, by removing the last token (this is the 'shift' operation)
         decoder_input_ids = labels[:, :-1]
 
@@ -218,45 +223,9 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
 
         batch["labels"] = labels
         batch["decoder_input_ids"] = decoder_input_ids
-
-        return batch
-
-    def myoldcall_stillworking(self, features: List[Dict[str, Union[List[int], torch.Tensor]]]) -> Dict[str, torch.Tensor]:
-        # split inputs and labels since they have to be of different lengths and need different padding methods
-        # first treat the audio inputs by simply returning torch tensors
-
-        input_features = [{"input_features": feature["input_features"]} for feature in features]
-        batch = self.processor.feature_extractor.pad(input_features, return_tensors="pt")
-
-        # get the tokenized label sequences
-        label_features = [{"input_ids": feature["labels"]} for feature in features]
-        # pad the labels to max length
-        labels_batch = self.processor.tokenizer.pad(label_features, return_tensors="pt")
-
-        # copy the labels as in its form now (with both prompt and the transcript itself) it should be the input to the decoder
-        batch['decoder_input_ids'] = labels_batch["input_ids"].clone()[:, :-1]
-
-        # replace padding in labels with -100 to ignore loss correctly
-        labels = labels_batch["input_ids"].masked_fill(labels_batch.attention_mask.ne(1), -100)[:, 1:]
-
-        # then mask out the prompt in the labels
-        bos_index = np.argmax(labels==self.decoder_start_token_id, axis=1)
-        prompt_mask = np.arange(labels.shape[1]) < bos_index.numpy()[:, np.newaxis]
-        labels = torch.tensor(np.where(prompt_mask, -100, labels))
-
-        # if bos token is appended in previous tokenization step,
-        # cut bos token here as it's append later anyways (actually it's not needed to cut it here, because it the bos
-        # tokeon is appended just if decode_input_ids is not provided)
-        # STILL WE LET IT BE THERE AS PART OF ORIGINAL CODE
-        if (labels[:, 0] == self.decoder_start_token_id).all().cpu().item():
-            labels = labels[:, 1:]
-
-        batch["labels"] = labels
-
-        # and at last we create attention mask, to tell the decoder to use the correct part from the labels
-        # attention_mask = torch.tensor(np.where(decoder_input_ids != tokenizer_en.pad_token_id, 1 , 0))
-        # batch["attention_mask"] = attention_mask
-
+        # TODO BEWARE OF ATTENTION MASK 
+        batch['attention_mask'] = labels_mask
+        
         return batch
 
 @dataclass
@@ -413,18 +382,7 @@ def get_model_processor_tokenizerfr(model_path) -> tuple[WhisperForConditionalGe
 
     return model, processor, tokenizer_fr
 
-if __name__ == "__main__":
-    # do parse args
-    parser = argparse.ArgumentParser(description='Evaluate transcription accuracy in WER or CER.')
-    parser.add_argument('--setup', type=str, required=True, help='Path to the training setup')
-    args = parser.parse_args()
-    
-    # load the setup
-    with open(args.setup, 'r') as f:
-        setup = json.load(f)
-    training_setup = TrainingSetup(**setup['training_setup'])
-    print(training_setup)
-    
+def train(training_setup : TrainingSetup, training_args : Seq2SeqTrainingArguments):
     # get the model, processor and tokenizer
     model, processor, tokenizer_fr = get_model_processor_tokenizerfr(training_setup.model_path)
     
@@ -461,11 +419,6 @@ if __name__ == "__main__":
     # load the metric computer
     cm = ComputeMetrics(processor.tokenizer)
     
-    # Extract training arguments explicitly from the setup JSON
-    training_args = Seq2SeqTrainingArguments(
-        **setup['training_args']
-    )
-    
     trainer = Seq2SeqTrainer(
         args=training_args,
         model=model,
@@ -475,28 +428,56 @@ if __name__ == "__main__":
         compute_metrics=cm.compute_metrics_original,
         processing_class=processor
     )
-
-    # save training details
-    with open(os.path.join(setup['training_args']['output_dir'], "training_details.txt"), 'a') as f:        
-        # print training setup
-        f.write(f'**** TRAINING RUN, datetime: {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}\n ****')
-        f.write("============================================\n")
-        f.write("Training setup:\n")
-        f.write(json.dumps(setup['training_setup'], indent=4))
-        f.write('\n')
-        f.write("Training arguments:\n")
-        f.write(json.dumps(setup['training_args'], indent=4))
-        f.write('\n\n')
-        f.close()
+    
+    print(f"Training start {' - resuming from checkpoint' if training_setup.continue_from_checkpoint else ''}...")
     
     if training_setup.continue_from_checkpoint:
         trainer.train(resume_from_checkpoint=training_setup.model_path)
     else:
         trainer.train()
+        
+if __name__ == "__main__":
+    # do parse args
+    parser = argparse.ArgumentParser(description='Evaluate transcription accuracy in WER or CER.')
+    parser.add_argument('--setup', type=str, required=True, help='Path to the training setup')
+    args = parser.parse_args()
+    
+    # load the setup
+    with open(args.setup, 'r') as f:
+        setup = json.load(f)
+    training_setup = TrainingSetup(**setup['training_setup'])
+    print(training_setup)
+    
+    
+
+    # save training details
+    with open(os.path.join(setup['training_args']['output_dir'], "training_details.txt"), 'a') as f:        
+        # print training setup
+        f.write("=========================================================\n")
+        f.write(f"**** TRAINING RUN, datetime: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())} ****\n")
+        if training_setup.continue_from_checkpoint:
+            f.write(f" |* CONTINUE TRAINING FROM CHECKPOINT: {training_setup.model_path} *| \n")
+        f.write("=========================================================\n")
+        f.write("Training setup:\n")
+        f.write(json.dumps(setup['training_setup'], indent=4))
+        f.write('\n')
+        f.write("Training arguments:\n")
+        f.write(json.dumps(setup['training_args'], indent=4))
+        f.write('\n')
+        f.close()
+    
+    # setup trainign args
+    training_args = Seq2SeqTrainingArguments(
+        **setup['training_args']
+    )
+    
+    # start training
+    train(training_setup, training_args)
 
     # save info about finish at the end
     with open(os.path.join(setup['training_args']['output_dir'], "training_details.txt"), 'a') as f:
-        f.write(f"Training finished, datetime: {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}\n ****'\n")
+        f.write(f"Training finished, datetime: {time.strftime('%Y-%m-%d %H:%M:%S', time.localtime())} ****\n")
         f.write("============================================\n")
+        f.write("============================================\n\n")
         f.close()
         
