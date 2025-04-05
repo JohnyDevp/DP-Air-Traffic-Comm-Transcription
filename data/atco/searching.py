@@ -32,9 +32,11 @@ if __name__ == '__main__':
                 xml_file = path.replace('.wav','.xml')
                 xml_file_content = open(xml_file,'r').read()
                 content = BeautifulSoup(xml_file_content, 'xml')
-                # for word in LOOKS_FOR:
-                for segment in content.find_all('segment'):
-                    segment_text = segment.find('text').text
-                    speaker_label : str = segment.find('speaker_label').text
-                    if (re.search('callsign', segment_text) is not None and 'UNK'.lower() in speaker_label.lower()):
-                        print(f'{xml_file}')
+                for word in LOOKS_FOR:
+                    for segment in content.find_all('segment'):
+                        segment_text = segment.find('text').text
+                        if (re.search(word, segment_text) is not None):
+                            print(f'{xml_file}')
+                        # speaker_label : str = segment.find('speaker_label').text
+                        # if (re.search('callsign', segment_text) is not None and 'UNK'.lower() in speaker_label.lower()):
+                        #     print(f'{xml_file}')

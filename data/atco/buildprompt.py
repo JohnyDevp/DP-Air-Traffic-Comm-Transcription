@@ -1,6 +1,7 @@
 from math import e
 from operator import call
 import json,os
+from pdb import run
 from sys import path
 from bs4 import BeautifulSoup
 import re
@@ -208,7 +209,7 @@ def make_info_vocab(info_file_path):
 def run_xmlfile_process(xml_data, info_file_path):
     soup = BeautifulSoup(xml_data, "xml")
     out = {}
-    count_of_all_previous_words_of_segments = 0
+    count_of_all_previous_words_of_segments = 0 # for computation of the position of the callsign in the text
     for segment in soup.find_all("segment"):
         found_tags,num_of_words_in_segment = get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segments)
         
@@ -238,50 +239,61 @@ def get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segmen
     # extract the speaker label
     speaker_label = segment.find("speaker_label").text if not ('UNK'.lower() in segment.find("speaker_label").text.lower()) else None
     cal_out = get_callsigns_from_text(text, info_file_path)
-    out['long_callsigns'] = cal_out['long']
+    out['long_callsigns'] = list(cal_out['long'].keys())
     if (speaker_label):
         out['short_callsigns'] = [speaker_label]
-    else: out['short_callsigns'] = cal_out['short']
+    else: out['short_callsigns'] = list(cal_out['short'].keys())
     # save info about the position of the callsign in the text
     # we are indexing from 0,
     out['callsigns_pos'] = []
-    for positions in cal_out['pos']:
-        out['callsigns_pos'].append([pos + count_of_all_previous_words_of_segments for pos in positions])
+    # for positions in cal_out['pos']:
+    #     out['callsigns_pos'].append([pos + count_of_all_previous_words_of_segments for pos in positions])
     
     # RUNWAY
-    pass 
+    extracted_runway = get_value_from_text('runway',text)
+    out['long_runway'] = extracted_runway['long']
+    out['short_runway'] = extracted_runway['short']
+    
     # TAXIWAY
     pass
 
     return out, text.strip().count(' ') + 1 # return the number of words in the segment
 
 def get_callsigns_from_text(corrected_text_with_tags : str, info_file_path : str):
-    out = {'short' : [], 'long' : [], 'pos':[]}
+    out = {'short' : {}, 'long' : {}}
     
     # find all callsigns
     pattern = r'\[#callsign\](.*?)\[/#callsign\]'
     for it in re.findall(pattern, corrected_text_with_tags):
         
         # append the found callsign to the dictionary, remove multiple spaces and normalize the string (hex characters)
-        callsign = re.sub(r'\s+', ' ', normalize('NFC',it))
-        out['long'].append(callsign)
+        callsign = re.sub(r'\s+', ' ', normalize('NFC',it)).lower().strip()
         
+        if not callsign in out['long']:
+            out['long'][callsign]  = 1
+        else:
+            out['long'][callsign] += 1
+
         # find the position of the callsign in the text
-        cal_pos = corrected_text_with_tags.index(it)
+        # cal_pos = corrected_text_with_tags.index(it)
         # count the index of the callsign in the text as index of word 
         # text_without_tags = re.sub(r'\s*\[.*\]\s*',' ',corrected_text_with_tags).strip() NOT WORKING
-        words_before = re.findall(r'\s+',corrected_text_with_tags.strip()[:cal_pos]).__len__()
+        # words_before = re.findall(r'\s+',corrected_text_with_tags.strip()[:cal_pos]).__len__()
         # acctually words before is the index of the callsign in the text, because we are idnexing from 0
-        
-        out['pos'].append([words_before]) 
         
         # shorten the callsign
         full_vocab = make_info_vocab(info_file_path)
         if (_key_normalizer(callsign) in full_vocab):
-            out['short'].append(full_vocab[_key_normalizer(callsign)].upper())
+            shorten_callsign = full_vocab[_key_normalizer(callsign)].upper()
+            # out['short'].append(full_vocab[_key_normalizer(callsign)].upper())
         else:
             # it is not found in the dictionary, so we will process it in shortennign function
-            out['short'].append(process_callsign_with_vocabs(callsign))
+            shorten_callsign = process_callsign_with_vocabs(callsign)
+            
+        if not shorten_callsign in out['short']:
+            out['short'][shorten_callsign] = 1
+        else:
+            out['short'][shorten_callsign] += 1
 
     return out
 
@@ -308,6 +320,32 @@ def process_callsign_with_vocabs(callsign : str):
     
     # if we cant shorten whole callsign return it as it is
     return partly_processed_callsign.strip()
+
+def get_value_from_text(value_sign_word: str, corrected_text_with_tags : str):
+    """
+    give text from xml file with tags and return the runway parts
+    """
+    out = {'short' : [], 'long' : []}
+    
+    # first try to find desired values according to the tags
+    # find runway word and five leading words
+    pattern = r'('+value_sign_word+r'\b(?:\s+\w+){0,5})'
+    matches = re.findall(pattern, corrected_text_with_tags, re.IGNORECASE)
+    combined_dict = {**aviation_map, **number_map}
+    for match in matches:
+        runway_text = re.sub(r'\s+', ' ', normalize('NFC', match)).strip().lower()
+        # go from the second word, because the first one should be the value sign word
+        runway_sign_build = []
+        for word in runway_text.split(' ')[1:]: 
+            if word in combined_dict:
+                runway_sign_build.append(word)
+            else:
+                break
+        out['long'].append(' '.join(runway_sign_build)) # pass the long form
+        out['short'].append(process_tag_content(runway_text, "alphanum"))
+    
+    
+    return out
 
 def sample_random_callsigns(set_of_callsigns, n, exclude = []):
     return random.sample([x for x in set_of_callsigns if x not in exclude], min(n,len(set_of_callsigns)))
@@ -356,8 +394,8 @@ if __name__ == '__main__':
                     'waypoints': meta['prompt']['waypoints'],
                     'nearby_short_callsigns': meta['prompt']['short_callsigns'],
                     'nearby_long_callsigns': meta['prompt']['long_callsigns'],
-                    'short_runway': [],
-                    'long_runway': [],
+                    'short_runway': list(set(out['short_runway'])),
+                    'long_runway': list(set(out['long_runway'])),
                     'short_taxiway': [],
                     'long_taxiway': []
                 }

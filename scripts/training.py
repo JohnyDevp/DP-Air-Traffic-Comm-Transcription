@@ -244,6 +244,11 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         labels_mask = labels_batch.attention_mask[:, 1:]
 
         # replace padding with -100 to ignore correctly when computing the loss
+        # if wondering why just labels_mask will have padding replaced by -100 and not decoder_input_ids
+        # then it is because
+        # only from labels loss is computed. If you dont pass decoder_input_ids and instead pass labels as is
+        # done in the WOPrompt collator, then in shift_tokens_right function in modeling_whisper.py,
+        # -100 are replaced by the pad_token_id, so it looks like for trainign pad_token_id is desired to be used
         labels = labels.masked_fill(labels_mask.ne(1), -100)
 
         # replace initial prompt tokens with -100 to ignore correctly when computing the loss
