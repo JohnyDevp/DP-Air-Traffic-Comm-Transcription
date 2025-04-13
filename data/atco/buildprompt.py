@@ -255,7 +255,10 @@ def get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segmen
     out['short_runway'] = extracted_runway['short']
     
     # TAXIWAY
-    pass
+    extracted_taxi = get_value_from_text('taxi',text)
+    extracted_taxiway = get_value_from_text('taxiway',text)
+    out['long_taxiway'] = extracted_taxi['long'] + extracted_taxiway['long']
+    out['short_taxiway'] = extracted_taxi['short'] + extracted_taxiway['short']
 
     return out, text.strip().count(' ') + 1 # return the number of words in the segment
 
@@ -342,7 +345,7 @@ def get_value_from_text(value_sign_word: str, corrected_text_with_tags : str):
             else:
                 break
         out['long'].append(' '.join(runway_sign_build)) # pass the long form
-        out['short'].append(process_tag_content(runway_text, "alphanum"))
+        out['short'].append(process_tag_content(' '.join(runway_sign_build), "alphanum"))
     
     
     return out
