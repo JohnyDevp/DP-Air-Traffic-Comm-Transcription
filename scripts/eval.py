@@ -6,7 +6,7 @@ import os, json, argparse, time
 from datasets import load_from_disk, concatenate_datasets, Dataset
 from typing import Any, Dict, List, Union
 from dataclasses import dataclass
-from transformers import WhisperTokenizer, WhisperProcessor, WhisperForConditionalGeneration
+from transformers import WhisperTokenizer, WhisperProcessor, WhisperForConditionalGeneration, GenerationConfig
 import evaluate
 from tqdm import tqdm
 from glob import glob
@@ -271,6 +271,32 @@ import re
 class EvalCallsigns:
     wer_metric : ComputeMetrics
     
+    def __init__(self, metric : ComputeMetrics):
+        self.wer_metric = metric
+    
+    def __call__(self, transcription : str, callsigns : dict[str,int]):
+        if (isinstance(callsigns,str)):
+            callsigns = [callsigns]
+
+        for callsign,num_of_occurences in callsigns.items():
+            wer = self.find_lowest_wer(callsign, num_of_occurences, transcription)
+    
+    def find_lowest_wer(self, callsign : str, num_of_occurences : int, transcription : str) -> tuple[int,float]:
+        callsign_norm = re.sub(r'\s+',' ',callsign.strip().lower()).split(' ')
+        transcription_norm = re.sub(r'\s+',' ',transcription.strip().lower()).split(' ')
+        # arange a list where wer will be stored
+        wer_list = np.zeros(len(transcription) - len(callsign_norm) + 1)
+        # move a window with callsign through the transcription, compute wer and store
+        for idx in range(0,len(transcription) - len(callsign_norm) + 1):
+            # check if the callsign is in the transcription
+            cal_wer = self.wer_metric.compute_metrics_from_text(
+                callsign_norm, transcription_norm[idx:idx+len(callsign_norm)]
+            )
+            wer_list[idx] = cal_wer
+        
+        # return as many lowest wer as num_of_occurences
+        return sorted(wer_list)[0:num_of_occurences]
+        
     def __obtain_callsign_from_transcription(self, callsigns, callsigns_pos, transcription : str) -> tuple[int,float]:
         ts_cor = re.sub(transcription.strip().lower(),r'\s+')
         ts_arr = ts_cor.split(' ')
@@ -376,7 +402,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
     else:
         return concatenate_datasets([allds_test[key] for key in allds_test])
 
-def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False) -> dict[str,dict]:
+def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False, compute_callsign_wer=False, compute_runway_wer=False) -> dict[str,dict]:
     # define collator
     if (not use_prompt):
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
@@ -493,9 +519,11 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
                 # detach the predictions from the gpu
                 preds = preds.detach().gpu()
 
-                # compute loss together for all batch
+                # extend all the predictions and labels for later wer computation
                 all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])
                 all_lables.extend([processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)])
+                
+                # compute the wer for callsigns
 
             # compute the loss
             with torch.no_grad():
@@ -568,9 +596,14 @@ def setup_model_processor(model_path) -> tuple[WhisperForConditionalGeneration, 
     if torch.cuda.is_available():
         model.cuda()
     # setting the parameters of model for correct working
+    
+    model.generation_config = GenerationConfig.from_pretrained('openai/whisper-medium')
+    
     model.generation_config.language = "english"
     model.generation_config.task = "transcribe"
     model.generation_config.forced_decoder_ids = None
+    
+    
     
     processor = WhisperProcessor.from_pretrained(model_path,language="English", task="transcribe")
     
