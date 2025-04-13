@@ -477,20 +477,92 @@ def train(training_setup : TrainingSetup, training_args : Seq2SeqTrainingArgumen
         trainer.train(resume_from_checkpoint=training_setup.model_path)
     else:
         trainer.train()
-        
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Parse training configuration")
+
+    parser.add_argument('--setup', type=str, required=False, default=None, help='Path to the training setup')
+    
+    # training_setup
+    parser.add_argument("--model_path", type=str, default="openai/whisper-tiny")
+    parser.add_argument("--continue_from_checkpoint", action='store_true')
+    parser.add_argument("--train_datasets", nargs='+', default=["atco_test_en_ruzyne"])
+    parser.add_argument("--datasets_root_dir", type=str, default="./data")
+    parser.add_argument("--use_prompt", action='store_true')
+    parser.add_argument("--self_prompt", action='store_true')
+    parser.add_argument("--transcription_name_in_ds", type=str, default="full_ts")
+    parser.add_argument("--prompt_name_in_ds", type=str, default="prompt_fullts_1G_4B")
+
+    # training_args
+    parser.add_argument("--output_dir", type=str, default="./test-nomask")
+    parser.add_argument("--per_device_train_batch_size", type=int, default=4)
+    parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
+    parser.add_argument("--learning_rate", type=float, default=1e-5)
+    parser.add_argument("--warmup_ratio", type=float, default=0.12)
+    parser.add_argument("--gradient_checkpointing", action='store_true')
+    parser.add_argument("--fp16", action='store_true')
+    parser.add_argument("--save_strategy", type=str, default="epoch")
+    parser.add_argument("--num_train_epochs", type=int, default=10)
+    parser.add_argument("--per_device_eval_batch_size", type=int, default=4)
+    parser.add_argument("--predict_with_generate", action='store_true')
+    parser.add_argument("--generation_max_length", type=int, default=448)
+    parser.add_argument("--logging_steps", type=int, default=30)
+    parser.add_argument("--report_to", nargs='+', default=["tensorboard"])
+    parser.add_argument("--metric_for_best_model", type=str, default="wer")
+    parser.add_argument("--greater_is_better", action='store_true')
+    parser.add_argument("--push_to_hub", action='store_true')
+
+    return parser.parse_args()
+
+def build_config(args):
+    return {
+        "training_setup": {
+            "model_path": args.model_path,
+            "continue_from_checkpoint": args.continue_from_checkpoint,
+            "train_datasets": args.train_datasets,
+            "datasets_root_dir": args.datasets_root_dir,
+            "use_prompt": args.use_prompt,
+            "self_prompt": args.self_prompt,
+            "transcription_name_in_ds": args.transcription_name_in_ds,
+            "prompt_name_in_ds": args.prompt_name_in_ds
+        },
+        "training_args": {
+            "output_dir": args.output_dir,
+            "per_device_train_batch_size": args.per_device_train_batch_size,
+            "gradient_accumulation_steps": args.gradient_accumulation_steps,
+            "learning_rate": args.learning_rate,
+            "warmup_ratio": args.warmup_ratio,
+            "gradient_checkpointing": args.gradient_checkpointing,
+            "fp16": args.fp16,
+            "save_strategy": args.save_strategy,
+            "num_train_epochs": args.num_train_epochs,
+            "per_device_eval_batch_size": args.per_device_eval_batch_size,
+            "predict_with_generate": args.predict_with_generate,
+            "generation_max_length": args.generation_max_length,
+            "logging_steps": args.logging_steps,
+            "report_to": args.report_to,
+            "metric_for_best_model": args.metric_for_best_model,
+            "greater_is_better": args.greater_is_better,
+            "push_to_hub": args.push_to_hub
+        }
+    }
+   
 if __name__ == "__main__":
     # do parse args
-    parser = argparse.ArgumentParser(description='Evaluate transcription accuracy in WER or CER.')
-    parser.add_argument('--setup', type=str, required=True, help='Path to the training setup')
-    args = parser.parse_args()
+    args = parse_args()
     
-    # load the setup
-    with open(args.setup, 'r') as f:
-        setup = json.load(f)
+    # build the setup
+    if (args.setup is None):
+        # build the config from command line
+        setup = build_config(args)
+    else:    
+        # load the setup
+        with open(args.setup, 'r') as f:
+            setup = json.load(f)
+    
+    # start the training setup
     training_setup = TrainingSetup(**setup['training_setup'])
     print(training_setup)
-    
-    
 
     # save training details
     with open(os.path.join(setup['training_args']['output_dir'], "training_details.txt"), 'a') as f:        

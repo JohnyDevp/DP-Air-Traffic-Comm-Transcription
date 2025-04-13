@@ -759,16 +759,61 @@ def main(evaluation_setup : EvaluationSetup):
 
     elif (evaluation_setup.metric == 'cer'):
         metric = cer
+
+def parse_args():
+    parser = argparse.ArgumentParser(description="Parse evaluation configuration")
+
+    parser.add_argument('--setup', type=str, required=False, default=None, help='Type of evaluation metric')
     
+    parser.add_argument("--metric", type=str, default="wer")
+    parser.add_argument("--datasets", nargs='+')
+    parser.add_argument("--datasets_basedir", type=str, default="./data/")
+    parser.add_argument("--models", nargs='+')
+    parser.add_argument("--checkpoints_eval", action="store_true")  # default is False
+    parser.add_argument("--same_processor", action="store_true")
+    parser.add_argument("--output_file", type=str)
+    parser.add_argument("--separate_ds", action="store_true")  # default is False
+    parser.add_argument("--overwrite", action="store_true")
+    parser.add_argument("--batch_size", type=int, default=4)
+    parser.add_argument("--eval_description", type=str, default="")
+    parser.add_argument("--use_prompt", action="store_true")
+    parser.add_argument("--self_prompt", action="store_true")
+    parser.add_argument("--transcription_name_in_ds", type=str, default="full_ts")
+    parser.add_argument("--prompt_name_in_ds", type=str, default="prompt_fullts_1G_4B")
+
+    return parser.parse_args()
+
+def build_config(args):
+    return {
+        "metric": args.metric,
+        "datasets": args.datasets,
+        "datasets_basedir": args.datasets_basedir,
+        "models": args.models,
+        "checkpoints_eval": args.checkpoints_eval,
+        "same_processor": args.same_processor,
+        "output_file": args.output_file,
+        "separate_ds": args.separate_ds,
+        "overwrite": args.overwrite,
+        "batch_size": args.batch_size,
+        "eval_description": args.eval_description,
+        "use_prompt": args.use_prompt,
+        "self_prompt": args.self_prompt,
+        "transcription_name_in_ds": args.transcription_name_in_ds,
+        "prompt_name_in_ds": args.prompt_name_in_ds
+    }
+
 if __name__ == '__main__':
     # parse args
-    parser = argparse.ArgumentParser(description='Evaluate transcription accuracy in WER or CER.')
-    parser.add_argument('--setup', type=str, required=True, help='Type of evaluation metric')
-    evaluation_setup = parser.parse_args()
+    args = parse_args()
     
     # load the setup
-    with open(evaluation_setup.setup, 'r') as f:
-        setup = json.load(f)
+    if args.setup is not None:
+        with open(args.setup, 'r') as f:
+            setup = json.load(f)
+    else:
+        setup = build_config(args)
+
+    # load the setup
     evaluation_setup = EvaluationSetup(**setup)
     
     print('******** Evaluation setup ********')

@@ -1,0 +1,12 @@
+python eval.py \
+  --metric wer \
+  --datasets atco_en_ruzyne \
+  --datasets_basedir ./data/ \
+  --models openai/whisper-tiny \
+  --same_processor \
+  --output_file my_out_file \
+  --overwrite \
+  --batch_size 4 \
+  --eval_description "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting" \
+  --transcription_name_in_ds full_ts \
+  --prompt_name_in_ds prompt_fullts_1G_4B
