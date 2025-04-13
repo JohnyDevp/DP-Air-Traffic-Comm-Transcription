@@ -1,0 +1,111 @@
+#### EVALUATION STARTED - TIME 2025-04-05 12:59:06 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='./data/', models='/content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/', output_file='/content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/eval-2_iter-1.txt', transcription_name_in_ds='full_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_fullts_1G_4B', eval_description='Evaluation of all checkpoints from atco-en trained model, that was previously trained on ALLDS (8 epochs). \t Testing epochs 0-15. No prompt', overwrite=False, separate_ds=True, use_prompt=False, self_prompt=False)
+******** Evaluation description ********
+Evaluation of all checkpoints from atco-en trained model, that was previously trained on ALLDS (8 epochs). 	 Testing epochs 0-15. No prompt
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-20 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.018475750577366 LOSS: 1.1846640961510795
+DATASET: atco_en_stefanik | WER: 23.80636604774536 LOSS: 1.3057846625645955
+DATASET: atco_en_zurich | WER: 26.053788466511506 LOSS: 1.4846460734094893
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-40 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.884526558891455 LOSS: 1.1343291231564112
+DATASET: atco_en_stefanik | WER: 23.47480106100796 LOSS: 1.2774157325426738
+DATASET: atco_en_zurich | WER: 27.256271011119733 LOSS: 1.4019644487471807
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-60 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.75057736720554 LOSS: 1.0833321554320199
+DATASET: atco_en_stefanik | WER: 25.397877984084882 LOSS: 1.1797699530919392
+DATASET: atco_en_zurich | WER: 27.605378846651153 LOSS: 1.312909763483774
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-80 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 27.367205542725177 LOSS: 1.0804414663996016
+DATASET: atco_en_stefanik | WER: 34.88063660477454 LOSS: 1.2093061606089275
+DATASET: atco_en_zurich | WER: 27.46314972847168 LOSS: 1.3862224306379045
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-100 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 26.90531177829099 LOSS: 1.1170121686799186
+DATASET: atco_en_stefanik | WER: 25.928381962864723 LOSS: 1.2194379965464275
+DATASET: atco_en_zurich | WER: 27.333850530126714 LOSS: 1.4225708913235438
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-120 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.86605080831409 LOSS: 1.126864058630807
+DATASET: atco_en_stefanik | WER: 37.201591511936336 LOSS: 1.204287350177765
+DATASET: atco_en_zurich | WER: 27.307990690457718 LOSS: 1.3564726809660594
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-140 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.808314087759815 LOSS: 1.115166766302926
+DATASET: atco_en_stefanik | WER: 34.283819628647215 LOSS: 1.2261518637339275
+DATASET: atco_en_zurich | WER: 27.023532454098785 LOSS: 1.4041886954080491
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-160 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 26.61662817551963 LOSS: 1.1174858042172022
+DATASET: atco_en_stefanik | WER: 25.198938992042443 LOSS: 1.2448997100194295
+DATASET: atco_en_zurich | WER: 31.27747607964831 LOSS: 1.3967771799791426
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-180 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.653579676674365 LOSS: 1.1589537858963013
+DATASET: atco_en_stefanik | WER: 25.198938992042443 LOSS: 1.2610930999120076
+DATASET: atco_en_zurich | WER: 30.010343935867596 LOSS: 1.4432056035314287
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-200 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.40415704387991 LOSS: 1.1892936996051244
+DATASET: atco_en_stefanik | WER: 34.814323607427056 LOSS: 1.2798503041267395
+DATASET: atco_en_zurich | WER: 27.501939487975175 LOSS: 1.463773589758646
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-220 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.94226327944573 LOSS: 1.1860865354537964
+DATASET: atco_en_stefanik | WER: 24.6684350132626 LOSS: 1.3059783776601155
+DATASET: atco_en_zurich | WER: 27.12697181277476 LOSS: 1.4913198408626376
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-240 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.519630484988454 LOSS: 1.1852644511631556
+DATASET: atco_en_stefanik | WER: 23.275862068965516 LOSS: 1.3104206522305806
+DATASET: atco_en_zurich | WER: 27.398500129299197 LOSS: 1.4861902537800016
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-260 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.40415704387991 LOSS: 1.1913711854389735
+DATASET: atco_en_stefanik | WER: 23.47480106100796 LOSS: 1.3157347838083904
+DATASET: atco_en_zurich | WER: 27.37264028963021 LOSS: 1.4932210388637723
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-280 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.75057736720554 LOSS: 1.1944870012147086
+DATASET: atco_en_stefanik | WER: 22.679045092838194 LOSS: 1.3189526200294495
+DATASET: atco_en_zurich | WER: 27.35971036979571 LOSS: 1.4973696186428977
+
+
+#### EVAL MODEL /content/drive/Shareddrives/DP/models/REAL/allds-atcoEN/2_iter/checkpoint-285 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.75057736720554 LOSS: 1.1946530171803065
+DATASET: atco_en_stefanik | WER: 22.679045092838194 LOSS: 1.3191372156143188
+DATASET: atco_en_zurich | WER: 27.37264028963021 LOSS: 1.4975833396116893
+
+
