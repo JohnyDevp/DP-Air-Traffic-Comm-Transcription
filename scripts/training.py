@@ -271,6 +271,7 @@ class TrainingSetup:
     datasets_root_dir: str
     transcription_name_in_ds : str
     prompt_name_in_ds : str
+    dropout : float = 0.0
     eval_datasets: list[str] = None
     continue_from_checkpoint: bool = False
     use_prompt: bool = True
@@ -407,7 +408,7 @@ def build_train_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :
     else:
         return concatenate_datasets(allds_train)
 
-def get_model_processor_tokenizerfr(model_path) -> tuple[WhisperForConditionalGeneration, WhisperProcessor, WhisperTokenizer]:
+def get_model_processor_tokenizerfr(model_path, dropout=0.0) -> tuple[WhisperForConditionalGeneration, WhisperProcessor, WhisperTokenizer]:
     tokenizer_fr = WhisperTokenizer.from_pretrained(model_path, language="French", task="transcribe") # MODIF
     processor = WhisperProcessor.from_pretrained(model_path, language="English", task="transcribe")  # MODIF
 
@@ -415,6 +416,8 @@ def get_model_processor_tokenizerfr(model_path) -> tuple[WhisperForConditionalGe
     model.generation_config.language = "english"
     model.generation_config.task = "transcribe"
     model.generation_config.forced_decoder_ids = None
+    
+    model.config.dropout = dropout
     
     # maybe this can be used for light data augmentation... maybe it can be enough
     # if you want to use this, you also need to uncomment lines in datacollators for obtaining attention_mask
@@ -426,7 +429,7 @@ def get_model_processor_tokenizerfr(model_path) -> tuple[WhisperForConditionalGe
 
 def train(training_setup : TrainingSetup, training_args : Seq2SeqTrainingArguments):
     # get the model, processor and tokenizer
-    model, processor, tokenizer_fr = get_model_processor_tokenizerfr(training_setup.model_path)
+    model, processor, tokenizer_fr = get_model_processor_tokenizerfr(training_setup.model_path, training_setup.dropout)
     
     # load the dataset preparator, use prepare function according to prompt usage
     prepare_dataset = PrepareDatasetAsInput(processor.feature_extractor, processor.tokenizer, tokenizer_fr)
@@ -487,6 +490,7 @@ def parse_args():
     parser.add_argument("--model_path", type=str, default="openai/whisper-tiny")
     parser.add_argument("--continue_from_checkpoint", action='store_true')
     parser.add_argument("--train_datasets", nargs='+', default=["atco_test_en_ruzyne"])
+    parser.add_argument("--dropout", type=float, default=None)
     parser.add_argument("--datasets_root_dir", type=str, default="./data")
     parser.add_argument("--use_prompt", action='store_true')
     parser.add_argument("--self_prompt", action='store_true')
@@ -520,6 +524,7 @@ def build_config(args):
             "model_path": args.model_path,
             "continue_from_checkpoint": args.continue_from_checkpoint,
             "train_datasets": args.train_datasets,
+            'dropout': args.dropout,
             "datasets_root_dir": args.datasets_root_dir,
             "use_prompt": args.use_prompt,
             "self_prompt": args.self_prompt,
@@ -564,6 +569,10 @@ if __name__ == "__main__":
     training_setup = TrainingSetup(**setup['training_setup'])
     print(training_setup)
 
+    # check if the model path exists and create the directory if not
+    if not os.path.exists(setup['training_args']['output_dir']):
+        os.makedirs(setup['training_args']['output_dir'])
+    
     # save training details
     with open(os.path.join(setup['training_args']['output_dir'], "training_details.txt"), 'a') as f:        
         # print training setup
