@@ -643,7 +643,10 @@ def main(evaluation_setup : EvaluationSetup):
             # build the list of paths to all checkpoints
             if(evaluation_setup.checkpoints_eval):
               evaluation_setup.same_processor = True # must be same processor, no matter what was set in setup
-              checkpoints_dir = evaluation_setup.models
+              if (not isinstance(evaluation_setup.models,str)):
+                checkpoints_dir = evaluation_setup.models[0] # the first and hopefully one element of array
+              else:
+                checkpoints_dir = evaluation_setup.models
               evaluation_setup.models = []
               for check_model in sorted(glob(checkpoints_dir+'/checkpoint-*'),key=lambda x: int(x.split('-')[-1])):
                 evaluation_setup.models.append(os.path.join(checkpoints_dir,check_model))
