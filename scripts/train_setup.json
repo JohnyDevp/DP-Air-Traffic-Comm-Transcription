@@ -5,6 +5,7 @@
 		"train_datasets": ["atco_test_en_ruzyne"],
 		"datasets_root_dir": "./data",
 		"use_prompt": false,
+		"dropout": 0.1,
 		"self_prompt": false,
 		"transcription_name_in_ds": "full_ts",
 		"prompt_name_in_ds": "prompt_fullts_1G_4B"

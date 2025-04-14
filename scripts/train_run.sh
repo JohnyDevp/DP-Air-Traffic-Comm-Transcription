@@ -4,11 +4,12 @@ python training.py \
   --datasets_root_dir ./data \
   --transcription_name_in_ds full_ts \
   --prompt_name_in_ds prompt_fullts_1G_4B \
-  --output_dir ./test-nomask \
+  --output_dir ./test-nomask2 \
   --per_device_train_batch_size 4 \
   --gradient_accumulation_steps 4 \
   --learning_rate 1e-5 \
   --warmup_ratio 0.12 \
+  --dropout 0.1 \
   --gradient_checkpointing \
   --fp16 \
   --save_strategy epoch \
