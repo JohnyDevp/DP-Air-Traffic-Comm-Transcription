@@ -262,7 +262,7 @@ class EvaluationSetup:
     eval_description : str = ""
     overwrite : bool = False
     separate_ds : bool = False
-    use_prompt : bool = True
+    use_prompt : bool = False
     self_prompt : bool = False
 
 
@@ -393,8 +393,8 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
             allds_test[ds_name]=ds
     
     # prepare the datasets to be ready for model
-    for key in allds_test:
-        allds_test[key] = allds_test[key].map(prepare_dataset_fn, remove_columns=ds.column_names, num_proc=1)
+    for key,ds in allds_test.items():
+        allds_test[key] = ds.map(prepare_dataset_fn, remove_columns=ds.column_names, num_proc=1)
     
     # return either concatenated datasets or list of datasets
     if (separate_ds):
