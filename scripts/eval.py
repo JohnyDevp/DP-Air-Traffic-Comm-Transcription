@@ -622,12 +622,17 @@ def result_printout(f_desc : TextIOWrapper, out_dict : dict[str, dict], evaluati
            
 def main(evaluation_setup : EvaluationSetup):
     if (evaluation_setup.metric == 'wer'):
+        
+        
         # handle the output file
         if (evaluation_setup.overwrite):
             out_file= open(evaluation_setup.output_file, 'w')
         else:
             out_file= open(evaluation_setup.output_file, 'a')
 
+        # read file for later check of already evaluated checkpoints
+        readed_file = open(evaluation_setup.output_file, 'r').readlines()
+        
         # print to file evaluation info
         out_file.write(f'#### EVALUATION STARTED - TIME {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())} ####\n')
         out_file.write("******** Evaluation setup ********\n")
@@ -641,7 +646,17 @@ def main(evaluation_setup : EvaluationSetup):
         def get_current_models_in_checkpoint(checkpoints_dir) -> set[str]:
             all_models=[]
             for check_model in sorted(glob(checkpoints_dir+'/checkpoint-*'),key=lambda x: int(x.split('-')[-1])):
+                # check, whether the checkpoint hasn't been evaluated yet
+                search_line = f'#### EVAL MODEL {check_model} ####\n'
+                if (search_line in readed_file):
+                    line_idx = max(i for i, line in enumerate(readed_file) if line == search_line)
+                    if line_idx < len(readed_file) - 3 \
+                     and readed_file[line_idx + 2].startswith('DATASET:'):
+                        out_file.write(f'#### CHECKPOINT {check_model} ALREADY EVALUATED ####\n')
+                        continue
+                    
                 all_models.append(check_model)
+                    
             return set(all_models)
         
         # handle multiple models
