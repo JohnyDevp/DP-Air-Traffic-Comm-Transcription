@@ -246,7 +246,8 @@ def make_shortts(text):
     # normalize the string spaces
     text = re.sub(r'\s+', ' ', normalize('NFC', text)).strip()
     
-    return text
+    return process_tag_content(text, 'alphanum',97)
+
 # ========================================================================================================      
 def run_xmlfile_process(xml_data, info_file_path):
     soup = BeautifulSoup(xml_data, "xml")
