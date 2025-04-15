@@ -1,6 +1,6 @@
 python eval.py \
   --metric wer \
-  --datasets atco_en_ruzyne \
+  --datasets atco_en_ruzyne malorca \
   --datasets_basedir ./data/ \
   --models ./nothing \
   --checkpoints_eval \
