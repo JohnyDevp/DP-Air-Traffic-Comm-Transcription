@@ -1,5 +1,4 @@
 from io import TextIOWrapper
-from arrow import get
 import torch
 from torch.utils.data import DataLoader
 from jiwer import wer, cer
