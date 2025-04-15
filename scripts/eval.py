@@ -1,4 +1,5 @@
 from io import TextIOWrapper
+from arrow import get
 import torch
 from torch.utils.data import DataLoader
 from jiwer import wer, cer
@@ -637,20 +638,28 @@ def main(evaluation_setup : EvaluationSetup):
         out_file.write(evaluation_setup.eval_description)
         out_file.write("\n\n")
         out_file.flush()
-
+        
+        def get_current_models_in_checkpoint(checkpoints_dir) -> set[str]:
+            all_models=[]
+            for check_model in sorted(glob(checkpoints_dir+'/checkpoint-*'),key=lambda x: int(x.split('-')[-1])):
+                all_models.append(check_model)
+            return set(all_models)
+        
         # handle multiple models
         if (isinstance(evaluation_setup.models,list) or evaluation_setup.checkpoints_eval):
             # build the list of paths to all checkpoints
             if(evaluation_setup.checkpoints_eval):
-              evaluation_setup.same_processor = True # must be same processor, no matter what was set in setup
-              if (not isinstance(evaluation_setup.models,str)):
-                checkpoints_dir = evaluation_setup.models[0] # the first and hopefully one element of array
-              else:
-                checkpoints_dir = evaluation_setup.models
-              evaluation_setup.models = []
-              for check_model in sorted(glob(checkpoints_dir+'/checkpoint-*'),key=lambda x: int(x.split('-')[-1])):
-                evaluation_setup.models.append(os.path.join(checkpoints_dir,check_model))
-                print(check_model)
+                evaluation_setup.same_processor = True # must be same processor, no matter what was set in setup
+                if (not isinstance(evaluation_setup.models,str)):
+                    checkpoints_dir = evaluation_setup.models[0] # the first and hopefully one element of array
+                else:
+                    checkpoints_dir = evaluation_setup.models
+                # load all checkpoints to be evaluated, sorted 
+                evaluation_setup.models = sorted(
+                    get_current_models_in_checkpoint(checkpoints_dir),
+                    key=lambda x: int(x.split('-')[-1])
+                )
+                print(evaluation_setup.models)
             # go through each model, clear the memory and see the results
             first_model_in_serie = True
 
@@ -712,6 +721,18 @@ def main(evaluation_setup : EvaluationSetup):
                 if first_model_in_serie:
                     first_model_in_serie = False
 
+                # update all models ... that can change over time 
+                if (evaluation_setup.checkpoints_eval):
+                    new_models = sorted(
+                        get_current_models_in_checkpoint(checkpoints_dir) - set(evaluation_setup.models),
+                        key=lambda x: int(x.split('-')[-1])
+                    )
+                    if (len(new_models) > 0):
+                        out_file.write(f'#### NEW CHECKPOINTS FOUND ####\n')
+                        out_file.write(f'{new_models}\n')
+                        
+                    evaluation_setup.models.extend(new_models)
+                    
             # close file
             out_file.close()
         else:
