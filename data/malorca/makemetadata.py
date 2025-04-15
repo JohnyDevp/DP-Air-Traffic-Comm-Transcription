@@ -81,10 +81,10 @@ aviation_map = {
 }
 leave_untouch_words = ["and", "on", "or"]
 
-def contains_numbers_and_letters(text):
+def contains_numbers_or_letters(text):
     has_letter = any(char.isalpha() for char in text)
     has_number = any(char.isdigit() for char in text)
-    return has_letter and has_number
+    return has_letter or has_number
 
 # Replace specific tags and their content
 def replace_tag_with_word(text, tag, replacement):
@@ -159,6 +159,13 @@ def airtraffic_transcript_to_code_(transcript : str):
     # Join the result with spaces to maintain the sentence structure
     return result.strip()
 
+def _key_normalizer(key):
+    key = str(key).lower().strip() # build something like airforceonetwotree
+    key = re.sub(r'\s+','',key) # remove all spaces
+    return key
+
+
+callsigns_icao = json.load(open('../tools/callsigns_icao.json'))
 def process_tag_content(full_ts, what : str ="alphanum"):
     # what : str = "alphanum" | "num" | "alpha"
     match what:
@@ -179,14 +186,32 @@ def process_tag_content(full_ts, what : str ="alphanum"):
     # remove everything between [ ], if present
     reg = re.compile(r"\[[^\]]*\]")
     full_ts = reg.sub("", full_ts)
+    # remove underscore, for a bracket
+    full_ts = full_ts.replace("_", "")
     
     # split the words and also punctuation separately
     reg = re.compile(r"\w+|[.,!?]")
     words : list[str] = reg.findall(full_ts)
     
     idx = 0
+    callsign_processed = False
     while idx < len(words):
         word = words[idx]
+        # first try to look for callsign
+        found = False
+        if len(words) > idx + 1 and word.lower() not in ['level', 'heading', 'climb', 'descend', 'maintain'] \
+            and not callsign_processed:   
+            for callsign in callsigns_icao: 
+                if _key_normalizer(word) == _key_normalizer(callsign):
+                    next_word = process.extractOne(words[idx+1].lower(), combined_map.keys(), score_cutoff=score_cutoff)
+                    if next_word and next_word[0] and what in ["alphanum", "num"]:
+                        callsign_processed=True
+                        found = True
+                        current_transcript += callsigns_icao[callsign]['icao']
+                        idx += 1
+                        break 
+        if (found): continue
+            
         # Find the closest match from the combined_map keys
         bestmatch = process.extractOne(word.lower(), combined_map.keys(), score_cutoff=score_cutoff)
     
@@ -231,9 +256,8 @@ def get_shortts_from_tra(fullpath_tra : str):
         if os.path.exists(cmd_path):    
             with open(cmd_path, "r") as f:
                 callsign = f.readline().split(' ')[0]
-                
                 # check whether the callsign is really a callsign
-                if (not contains_numbers_and_letters(callsign)):
+                if (not contains_numbers_or_letters(callsign)):
                     callsign = ""
         else:
             callsign = ""
@@ -256,6 +280,8 @@ def get_shortts_from_tra(fullpath_tra : str):
                 tag_content = match.group(1)
                 # Process the content using the function
                 if tag == "callsign":
+                    # remove all possible tags inside the callsign tag
+                    tag_content = re.sub(r"<.*?>", "", tag_content)
                     processed_content = process_tag_content(tag_content, "alphanum")
                 else:
                     processed_content = process_tag_content(tag_content, "num")
@@ -282,6 +308,9 @@ def get_shortts(wav_full_path_current_disk, fullts) -> str:
     if (os.path.exists(tra_path)):
         # 1. check whether .tra - if it does, check for the .cmd file with callsign
         shortenedts= get_shortts_from_tra(tra_path)
+        if (shortenedts.strip() == ""):
+            # if the .tra file is empty, use the fullts
+            shortenedts = fullts
         # still pass it to my function for short ts, because some numbers might not be tagged
         return airtraffic_transcript_to_code_(shortenedts)
     else:
@@ -293,7 +322,7 @@ def get_fullts(wav_full_path_current_disk) -> str | Exception:
     cor_file = wav_full_path_current_disk.replace(".wav", ".cor")
     if (os.path.exists(cor_file)):
         with open(cor_file, "r") as f:
-            return f.read()
+            return f.read().replace('_',' ')
     else:
         raise Exception(f"File {cor_file} does not exist")
 

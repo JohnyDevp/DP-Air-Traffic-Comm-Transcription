@@ -2,9 +2,10 @@ python eval.py \
   --metric wer \
   --datasets atco_en_ruzyne \
   --datasets_basedir ./data/ \
-  --models openai/whisper-tiny \
+  --models ./nothing \
+  --checkpoints_eval \
   --same_processor \
-  --output_file my_out_file \
+  --output_file ./nothing/NEWFILE.txt \
   --overwrite \
   --batch_size 4 \
   --eval_description "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting" \

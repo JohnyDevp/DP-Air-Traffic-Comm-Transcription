@@ -1,0 +1,223 @@
+#### EVALUATION STARTED - TIME 2025-04-15 08:59:07 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2'], output_file='/mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/eval.txt', transcription_name_in_ds='full_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_fullts_1G_4B', eval_description='Evaluation of all checkpoints (30) of whisper allds MED trained on ATCO-en with lr changed', overwrite=False, separate_ds=True, use_prompt=False, self_prompt=False)
+******** Evaluation description ********
+Evaluation of all checkpoints (30) of whisper allds MED trained on ATCO-en with lr changed
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-50 ####
+#### EVALUATION STARTED - TIME 2025-04-15 09:00:28 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2'], output_file='/mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/eval.txt', transcription_name_in_ds='full_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_fullts_1G_4B', eval_description='Evaluation of all checkpoints (30) of whisper allds MED trained on ATCO-en with lr changed', overwrite=False, separate_ds=True, use_prompt=False, self_prompt=False)
+******** Evaluation description ********
+Evaluation of all checkpoints (30) of whisper allds MED trained on ATCO-en with lr changed
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-50 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 27.193995381062358 LOSS: 0.9996159417288644
+DATASET: atco_en_stefanik | WER: 37.3342175066313 LOSS: 1.0892622570196788
+DATASET: atco_en_zurich | WER: 30.553400568916473 LOSS: 1.27230880515916
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-100 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 27.655889145496538 LOSS: 1.0130744406155177
+DATASET: atco_en_stefanik | WER: 36.87002652519894 LOSS: 1.1168300410111744
+DATASET: atco_en_zurich | WER: 32.72562710111197 LOSS: 1.292465058111009
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-150 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 26.732101616628174 LOSS: 1.0502031871250697
+DATASET: atco_en_stefanik | WER: 36.14058355437666 LOSS: 1.133405973513921
+DATASET: atco_en_zurich | WER: 30.786139125937417 LOSS: 1.355140575340816
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-200 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.230946882217093 LOSS: 1.0627814957073756
+DATASET: atco_en_stefanik | WER: 24.071618037135277 LOSS: 1.1630509893099468
+DATASET: atco_en_zurich | WER: 30.39824153090251 LOSS: 1.3755293346586681
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-250 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.884526558891455 LOSS: 1.076519020966121
+DATASET: atco_en_stefanik | WER: 23.54111405835544 LOSS: 1.1769386033217113
+DATASET: atco_en_zurich | WER: 26.894233255753814 LOSS: 1.4019886468138014
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-300 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.057736720554274 LOSS: 1.0849746210234505
+DATASET: atco_en_stefanik | WER: 23.408488063660478 LOSS: 1.1812244256337483
+DATASET: atco_en_zurich | WER: 26.377036462373933 LOSS: 1.4159925693557376
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-350 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.86605080831409 LOSS: 1.109236248901912
+DATASET: atco_en_stefanik | WER: 24.336870026525197 LOSS: 1.2139870723088582
+DATASET: atco_en_zurich | WER: 26.17015774502198 LOSS: 1.4387851300693693
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-400 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.57736720554272 LOSS: 1.1158010789326258
+DATASET: atco_en_stefanik | WER: 24.005305039787796 LOSS: 1.2399661143620808
+DATASET: atco_en_zurich | WER: 26.066718386346004 LOSS: 1.4398668550309681
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-450 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.653579676674365 LOSS: 1.1371449828147888
+DATASET: atco_en_stefanik | WER: 22.082228116710876 LOSS: 1.244279404481252
+DATASET: atco_en_zurich | WER: 26.467545901215413 LOSS: 1.4683578723952884
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-500 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.94226327944573 LOSS: 1.125383266380855
+DATASET: atco_en_stefanik | WER: 23.143236074270558 LOSS: 1.2494478821754456
+DATASET: atco_en_zurich | WER: 26.157227825187483 LOSS: 1.4612840797219957
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-550 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.46189376443418 LOSS: 1.1284218175070626
+DATASET: atco_en_stefanik | WER: 25.26525198938992 LOSS: 1.2421633005142212
+DATASET: atco_en_zurich | WER: 26.622704939229376 LOSS: 1.4691670068672724
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-600 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.057736720554274 LOSS: 1.159574908869607
+DATASET: atco_en_stefanik | WER: 22.944297082228115 LOSS: 1.2843998273213704
+DATASET: atco_en_zurich | WER: 26.493405740884405 LOSS: 1.5115189254283905
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-650 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.94226327944573 LOSS: 1.157478698662349
+DATASET: atco_en_stefanik | WER: 24.6684350132626 LOSS: 1.2789957324663799
+DATASET: atco_en_zurich | WER: 26.17015774502198 LOSS: 1.5105720644905454
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-700 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.0 LOSS: 1.174301998955863
+DATASET: atco_en_stefanik | WER: 23.342175066312997 LOSS: 1.3060107827186584
+DATASET: atco_en_zurich | WER: 26.234807344194465 LOSS: 1.5242535982813155
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-750 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.30715935334873 LOSS: 1.1782027227537972
+DATASET: atco_en_stefanik | WER: 22.944297082228115 LOSS: 1.3066720366477966
+DATASET: atco_en_zurich | WER: 26.286527023532454 LOSS: 1.5297659890992301
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-800 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.230946882217093 LOSS: 1.1761077301842826
+DATASET: atco_en_stefanik | WER: 22.944297082228115 LOSS: 1.3016444842020671
+DATASET: atco_en_zurich | WER: 26.364106542539435 LOSS: 1.5253920895712716
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-850 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.76905311778291 LOSS: 1.1863300204277039
+DATASET: atco_en_stefanik | WER: 23.143236074270558 LOSS: 1.3187780578931172
+DATASET: atco_en_zurich | WER: 26.545125420222394 LOSS: 1.538862638530277
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-900 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.71131639722864 LOSS: 1.1837929061480932
+DATASET: atco_en_stefanik | WER: 22.612732095490717 LOSS: 1.3103120923042297
+DATASET: atco_en_zurich | WER: 26.247737264028963 LOSS: 1.5356832771074205
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-950 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.40415704387991 LOSS: 1.2040442483765739
+DATASET: atco_en_stefanik | WER: 22.281167108753316 LOSS: 1.3450742959976196
+DATASET: atco_en_zurich | WER: 26.11843806568399 LOSS: 1.5659789074034918
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1000 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.28868360277136 LOSS: 1.2081062538283212
+DATASET: atco_en_stefanik | WER: 22.413793103448278 LOSS: 1.3468868335088093
+DATASET: atco_en_zurich | WER: 26.545125420222394 LOSS: 1.5704558789730072
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1050 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.057736720554274 LOSS: 1.2072091783796037
+DATASET: atco_en_stefanik | WER: 22.082228116710876 LOSS: 1.3440601229667664
+DATASET: atco_en_zurich | WER: 26.364106542539435 LOSS: 1.568411451010477
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1100 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.76905311778291 LOSS: 1.2079966919762748
+DATASET: atco_en_stefanik | WER: 22.679045092838194 LOSS: 1.3489264647165935
+DATASET: atco_en_zurich | WER: 26.480475821049907 LOSS: 1.570180519705727
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1150 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.17321016166282 LOSS: 1.212290380682264
+DATASET: atco_en_stefanik | WER: 22.413793103448278 LOSS: 1.3536877036094666
+DATASET: atco_en_zurich | WER: 26.558055340056892 LOSS: 1.577556889681589
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1200 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.17321016166282 LOSS: 1.213860307421003
+DATASET: atco_en_stefanik | WER: 22.546419098143236 LOSS: 1.3558388551076253
+DATASET: atco_en_zurich | WER: 26.558055340056892 LOSS: 1.579766456569944
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1250 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.17321016166282 LOSS: 1.2155096616063799
+DATASET: atco_en_stefanik | WER: 22.546419098143236 LOSS: 1.357189138730367
+DATASET: atco_en_zurich | WER: 26.700284458236357 LOSS: 1.5826630365280878
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1300 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.17321016166282 LOSS: 1.2144658054624284
+DATASET: atco_en_stefanik | WER: 22.546419098143236 LOSS: 1.3552337686220806
+DATASET: atco_en_zurich | WER: 26.5192655805534 LOSS: 1.5809455102398282
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1350 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.884526558891455 LOSS: 1.2179249439920699
+DATASET: atco_en_stefanik | WER: 22.413793103448278 LOSS: 1.3599491516749065
+DATASET: atco_en_zurich | WER: 26.700284458236357 LOSS: 1.5865315653028942
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1400 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.82678983833718 LOSS: 1.218133074896676
+DATASET: atco_en_stefanik | WER: 22.413793103448278 LOSS: 1.3599930604298909
+DATASET: atco_en_zurich | WER: 26.674424618567365 LOSS: 1.5867416149093991
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1450 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.82678983833718 LOSS: 1.2189986280032568
+DATASET: atco_en_stefanik | WER: 22.413793103448278 LOSS: 1.3613235155741374
+DATASET: atco_en_zurich | WER: 26.713214378070855 LOSS: 1.588074306646983
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/planned-allds-fullts/30/learning_rate/lr2/checkpoint-1470 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 24.82678983833718 LOSS: 1.2190473420279366
+DATASET: atco_en_stefanik | WER: 22.413793103448278 LOSS: 1.3613914847373962
+DATASET: atco_en_zurich | WER: 26.726144297905353 LOSS: 1.5881431627841223
+
+

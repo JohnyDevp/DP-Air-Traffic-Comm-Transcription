@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import re
 from unicodedata import normalize
 import random
+from numpy import mat, short
 from tqdm import tqdm
 from rapidfuzz import process
 
@@ -204,13 +205,59 @@ def make_info_vocab(info_file_path):
             info_vocab[_key_normalizer(full)] = code
     
     return info_vocab 
+# =====================================================================================================
+def shorten_callsign(match):
+    if match:
+        match = match.group(1)
+        # remove spaces and normalize the string (hex characters)
+        callsign = re.sub(r'\s+', ' ', normalize('NFC',match)).lower().strip()
+        
+        # find the ICAO code in the info file
+        if (_key_normalizer(callsign) in info_vocab):
+            return info_vocab[_key_normalizer(callsign)].upper()
+        else:
+            callsign_split = callsign.split(' ')
+            # first three words of callsign may be the callsign of some airline
+            for i in range(1,4): # i = 1,2,3
+                current_callsign_part = ' '.join(callsign_split[:i])
+                if (_key_normalizer(current_callsign_part) in vocab_callsign):
+                    rest = process_tag_content(' '.join(callsign_split[i:]), "alphanum")
+                    icao = vocab_callsign[_key_normalizer(current_callsign_part)]
+                    return str(icao + rest).replace(' ','').upper()
+            
+            # if we reach this point, meaning that we have not found the ICAO code in the info file
+            # so we just process the callsign as usual
+            return process_tag_content(callsign, 'alphanum').replace(' ','').upper()
 
+def make_shortts(text):
+    # go through all callsigns and try to find the match
+    pattern= r'\[#callsign\](.*?)\[/#callsign\]'
+    # find all callsigns
+    text=re.sub(pattern, shorten_callsign, text)
+    
+    # find all value tags
+    pattern = r'\[#value\](.*?)\[/#value\]'
+    # shorten them
+    text=re.sub(pattern, lambda match: process_tag_content(match.group(1),'alphanum'), text)
+    
+    # replace all other tags with empty string
+    text = re.sub(r'\[[^\]]*\]',' ',text)
+    
+    # normalize the string spaces
+    text = re.sub(r'\s+', ' ', normalize('NFC', text)).strip()
+    
+    return text
 # ========================================================================================================      
 def run_xmlfile_process(xml_data, info_file_path):
     soup = BeautifulSoup(xml_data, "xml")
-    out = {}
+    out = {'short_ts': ''}
     count_of_all_previous_words_of_segments = 0 # for computation of the position of the callsign in the text
     for segment in soup.find_all("segment"):
+        # make new short transcription
+        shortts = make_shortts(segment.find("text").text)
+        if (shortts.strip() != ""):
+            out['short_ts'] += shortts + '\n'
+        
         found_tags,num_of_words_in_segment = get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segments)
         
         count_of_all_previous_words_of_segments += num_of_words_in_segment
@@ -368,6 +415,7 @@ if __name__ == '__main__':
     
     # create vocab
     make_vocab(json.load(open('../tools/callsigns_icao.json')), json.load(open('../tools/airline_icao.json')))
+    
     for file in METADATA_PATHS:
         with open(file,'r') as f:
             js_file = json.load(f)
@@ -391,6 +439,7 @@ if __name__ == '__main__':
                     xml_data = f.read()
                     out = run_xmlfile_process(xml_data, info_file_path)
                 
+                meta['short_ts'] = out['short_ts']
                 meta['prompt-data'] = {
                     'long_callsigns': list(set(out['long_callsigns'])),
                     'short_callsigns': list(set(out['short_callsigns'])),
