@@ -1,12 +1,11 @@
 python eval.py \
   --metric wer \
-  --datasets atco_en_ruzyne malorca \
+  --datasets atco_en_ruzyne \
   --datasets_basedir ./data/ \
-  --models ./nothing \
+  --models ./test-attentionmask \
   --checkpoints_eval \
   --same_processor \
-  --output_file ./nothing/NEWFILE.txt \
-  --overwrite \
+  --output_file ./test-attentionmask/NEWFILE.txt \
   --batch_size 4 \
   --eval_description "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting" \
   --transcription_name_in_ds full_ts \
