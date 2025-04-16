@@ -12,7 +12,6 @@ from tqdm import tqdm
 from glob import glob
 import numpy as np
 
-
 class PrepareDatasetAsInput:
 
     def __init__(self, feature_extractor, tokenizer_en, tokenizer_fr, prompt_version=None):
@@ -158,7 +157,7 @@ class PrepareDatasetAsInput:
 class ComputeMetrics:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
-        self.metric = evaluate.load("wer",process_id=os.getpid())
+        self.metric = evaluate.load("wer",experiment_id=str(os.getpid())+str(np.random.randint(0,10000000)))
         
     def compute_metrics(self,pred_text, reference_text) -> float:
         pred_ids = pred_text
