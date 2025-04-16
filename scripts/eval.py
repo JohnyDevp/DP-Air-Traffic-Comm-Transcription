@@ -48,6 +48,14 @@ class PrepareDatasetAsInput:
         # add attention mask to batch, potentially for data augmentation
         batch['attention_mask'] = features.attention_mask[0]
 
+        # STORE THE CALLSIGNS FOR EVALUATION
+        if ("prompt-data" in batch):
+            batch['long_callsigns'] = batch['prompt-data']['long_callsigns']
+            batch['short_callsigns'] = batch['prompt-data']['short_callsigns']
+        else :
+            batch['long_callsigns'] = {}
+            batch['short_callsigns'] = {}
+            
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
         tokenizer = self.tokenizer_en
@@ -81,6 +89,14 @@ class PrepareDatasetAsInput:
         # add attention mask to batch, potentially for data augmentation
         batch['attention_mask'] = features.attention_mask[0]
 
+        # STORE THE CALLSIGNS FOR EVALUATION
+        if ("prompt-data" in batch):
+            batch['long_callsigns'] = batch['prompt-data']['long_callsigns']
+            batch['short_callsigns'] = batch['prompt-data']['short_callsigns']
+        else :
+            batch['long_callsigns'] = {}
+            batch['short_callsigns'] = {}
+            
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
         tokenizer = self.tokenizer_en
@@ -116,6 +132,15 @@ class PrepareDatasetAsInput:
         
         # add attention mask to batch, potentially for data augmentation
         batch['attention_mask'] = features.attention_mask[0]
+        
+        # STORE THE CALLSIGNS FOR EVALUATION
+        if ("prompt-data" in batch):
+            batch['long_callsigns'] = batch['prompt-data']['long_callsigns']
+            batch['short_callsigns'] = batch['prompt-data']['short_callsigns']
+        else :
+            batch['long_callsigns'] = {}
+            batch['short_callsigns'] = {}
+            
         # encode target text to label ids **** CHANGED FROM **sentence** TO **transcription**
         # if french, than use french tokenizer, english otherwise
         tokenizer = self.tokenizer_en
@@ -133,7 +158,7 @@ class PrepareDatasetAsInput:
 class ComputeMetrics:
     def __init__(self, tokenizer):
         self.tokenizer = tokenizer
-        self.metric = evaluate.load("wer")
+        self.metric = evaluate.load("wer",process_id=os.getpid())
         
     def compute_metrics(self,pred_text, reference_text) -> float:
         pred_ids = pred_text
@@ -417,7 +442,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
 
     # run the evaluation
     if (isinstance(test_ds, Dataset) and not use_prompt):
-        print(f"SINGLE DATASET, NOT PROMPT, batch size {batch_size}")
+        print(f"SINGLE DATASET, NO PROMPT, batch size {batch_size}")
         # setup the dataloader
         dataloader = DataLoader(test_ds, batch_size=batch_size, collate_fn=data_collator)
 
@@ -436,7 +461,12 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
             input_features.detach().cpu()
             preds = preds.detach().cpu()
 
-            # TODO FIX ALL LOSSES IN OTHER PLACES, as it is here
+            if (compute_callsign_wer):
+                # compute the wer for callsigns
+                callsigns = batch['long_callsigns']
+                ev_cal = EvalCallsigns(metric)
+                ev_cal(preds, callsigns)
+            
             all_loss.extend(outputs.loss.detach().cpu().repeat(len(batch)))
             all_preds.extend(processor.batch_decode(preds, skip_special_tokens=True))
             all_lables.extend(processor.batch_decode(batch["labels"], skip_special_tokens=True))
@@ -451,7 +481,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
         return {'allds':{'wer':wer,'loss':loss}}
 
     elif (isinstance(test_ds, dict) and not use_prompt):
-        print(f"MULTIPLE DATASETS, NOT PROMPT, batch size {batch_size}")
+        print(f"MULTIPLE DATASETS, NO PROMPT, batch size {batch_size}")
         out = {}
         for ds_name, ds in test_ds.items():
             # setup the dataloader
