@@ -2,15 +2,15 @@
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_143005.wav",
         "full_ts": "Blue Bravo tu peux rouler merci bonne soiree ciao\na bientot ciao",
-        "short_ts": "BBL BRV tu peux rouler merci bonne soiree ciao\na bientot ciao\n",
+        "short_ts": "BBL BRV tu peux rouler merci bonne soiree ciao\na bientot ciao",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "blue bravo"
-            ],
-            "short_callsigns": [
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "blue bravo": 1
+            },
+            "short_callsigns": {
+                "BBLB": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -93,24 +93,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "blue bravo, Hotel Bravo Delta Golf Victor , Mosquito One Five Bravo , Fraction Seven Nine One Golf , Nav Checker Five One One ",
-        "prompt_fullts_5B": "Hotel Bravo Delta Golf Victor , Mosquito One Five Bravo , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Two Zero Eight Seven , Masterjet Two Four Nine Lima ",
-        "prompt_fullts_50B": "Hotel Bravo Two Four One Four , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Kilo Golf Oscar , Mosquito One Five Bravo , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Delta Golf Victor , Hotel Bravo Zulu Alpha Papa , Mosquito One Nine X-ray , Hansa Two Six Echo , Hotel Bravo Zulu Victor Papa , Luxor Golf Two Two Sierra , Fraction Seven Nine One Golf , Hotel Bravo Two Zero Eight Seven , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Yankee Tango Mike , Masterjet Two Four Nine Lima , Nav Checker Five One One , Hotel Bravo Yankee Yankee Alpha , Royal Ghana Zero Four "
+        "prompt_fullts_1G_4B": "blue bravo, Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Two Zero Eight Seven , Fraction Seven Nine One Golf , Masterjet Two Four Nine Lima ",
+        "prompt_fullts_5B": "Royal Ghana Zero Four , Hotel Bravo Two Four One Four , Hotel Bravo Kilo Golf Oscar , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Yankee Tango Mike ",
+        "prompt_fullts_50B": "Hotel Bravo Zulu Victor Papa , Hotel Bravo Two Zero Eight Seven , Nav Checker Five One One , Hotel Bravo Zulu Alpha Papa , Royal Ghana Zero Four , Mosquito One Five Bravo , Hotel Bravo Kilo Oscar Juliett , Mosquito One Nine X-ray , Oscar Oscar Papa Charlie Juliett , Masterjet Two Four Nine Lima , Hotel Bravo Delta Golf Victor , Fraction Seven Nine One Golf , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Yankee Yankee Alpha , Luxor Golf Two Two Sierra , Hotel Bravo Two Four One Four , Hansa Two Six Echo , Hotel Bravo Yankee Tango Mike "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210501_073416.wav",
         "full_ts": "Foxtrot Lima Delta a niveau piste deux cinq QNH mille neuf\non s'aligne deux cinq et on attent, mille neuf, Foxtrot Lima Delta",
-        "short_ts": "F L DAL a niveau piste deux cinq QNH mille neuf\non s aligne deux cinq et on attent, mille neuf, F L DAL\n",
+        "short_ts": "F L DAL a niveau piste deux cinq QNH mille neuf\non s aligne deux cinq et on attent, mille neuf, F L DAL",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "foxtrot lima delta"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "FLD"
-            ],
+            "long_callsigns": {
+                "foxtrot lima delta": 2
+            },
+            "short_callsigns": {
+                "FLD": 2
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -163,23 +161,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "foxtrot lima delta, Fraction Eight Five Two Romeo , Foxtrot Hotel Delta Bravo Lima , KLM One Five Five Five , Ryan Three Nine Foxtrot Delta ",
-        "prompt_fullts_5B": "Foxtrot Hotel Delta Bravo Lima , KLM One Five Five Five , Ryan Three Nine Foxtrot Delta , Fraction Eight Five Two Romeo ",
-        "prompt_fullts_50B": "Foxtrot Hotel Delta Bravo Lima , KLM One Five Five Five , Ryan Three Nine Foxtrot Delta , Fraction Eight Five Two Romeo "
+        "prompt_fullts_1G_4B": "foxtrot lima delta, Ryan Three Nine Foxtrot Delta , KLM One Five Five Five , Foxtrot Hotel Delta Bravo Lima , Fraction Eight Five Two Romeo ",
+        "prompt_fullts_5B": "KLM One Five Five Five , Fraction Eight Five Two Romeo , Ryan Three Nine Foxtrot Delta , Foxtrot Hotel Delta Bravo Lima ",
+        "prompt_fullts_50B": "Ryan Three Nine Foxtrot Delta , KLM One Five Five Five , Foxtrot Hotel Delta Bravo Lima , Fraction Eight Five Two Romeo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_174454.wav",
         "full_ts": "Foxtrot Lima Delta debut vent arriere main gauche pour la vingt cinq",
-        "short_ts": "F L DAL debut vent arriere main gauche pour la vingt cinq\n",
+        "short_ts": "F L DAL debut vent arriere main gauche pour la vingt cinq",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "foxtrot lima delta"
-            ],
-            "short_callsigns": [
-                "FLD"
-            ],
+            "long_callsigns": {
+                "foxtrot lima delta": 1
+            },
+            "short_callsigns": {
+                "FLD": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -242,26 +239,26 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "foxtrot lima delta, Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Whiskey Papa , Royal Ghana Zero Four ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Whiskey Papa , Lufthansa Two Six Echo , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Victor Papa , Fraction Seven Nine One Golf ",
-        "prompt_fullts_50B": "Hotel Bravo Zulu Victor Papa , Harmony One Eight Five , Hotel Bravo Kilo Lima Echo , French Bee Seven Zero Zero , Hotel Bravo Kilo Oscar Juliett , Royal Ghana Zero Four , Hotel Bravo Zulu Whiskey Papa , Lufthansa Two Six Echo , Fraction Seven Nine One Golf "
+        "prompt_fullts_1G_4B": "foxtrot lima delta, Lufthansa Two Six Echo , Hotel Bravo Zulu Whiskey Papa , French Bee Seven Zero Zero , Fraction Seven Nine One Golf ",
+        "prompt_fullts_5B": "Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Kilo Lima Echo , Fraction Seven Nine One Golf , Royal Ghana Zero Four ",
+        "prompt_fullts_50B": "Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Lima Echo , Harmony One Eight Five , Lufthansa Two Six Echo , French Bee Seven Zero Zero , Hotel Bravo Kilo Oscar Juliett , Royal Ghana Zero Four , Hotel Bravo Zulu Victor Papa , Fraction Seven Nine One Golf "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_173717.wav",
         "full_ts": "Hotel Echo Whiskey c'est bien pris maintener bien le nord de la vallee, QNH mille dix sept, rappeller Montana, pour information un traffic  nord de  quatorze mille pieds en descente pour l'atterissage\nalors je maintiens le nord de la vallee Hotel Echo Whiskey, bien compris pour le traffic, vous rappelle Montana\nEcho Whiskey merci",
-        "short_ts": "H ECS W c est bien pris maintener bien le nord de la vallee, QNH mille dix sept, rappeller Montana, pour information un traffic nord de quatorze mille pieds en descente pour l atterissage\nalors je maintiens le nord de la vallee H ECS W, bien compris pour le traffic, vous rappelle Montana\nECS W merci\n",
+        "short_ts": "H ECS W c est bien pris maintener bien le nord de la vallee, QNH mille dix sept, rappeller Montana, pour information un traffic nord de quatorze mille pieds en descente pour l atterissage\nalors je maintiens le nord de la vallee H ECS W, bien compris pour le traffic, vous rappelle Montana\nECS W merci",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "hotel echo whiskey",
-                "echo whiskey",
-                "hotel echo whiskey,"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "HEW,"
-            ],
+            "long_callsigns": {
+                "hotel echo whiskey": 1,
+                "hotel echo whiskey,": 1,
+                "echo whiskey": 1
+            },
+            "short_callsigns": {
+                "HEW": 1,
+                "HEW,": 1,
+                "EW": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -324,24 +321,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "hotel echo whiskey, echo whiskey, hotel echo whiskey,, French Bee Seven Zero Zero , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Victor Papa , Lufthansa Two Six Echo ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Victor Papa , Royal Ghana Zero Four , Harmony One Eight Five , Lufthansa Two Six Echo , French Bee Seven Zero Zero ",
-        "prompt_fullts_50B": "Hotel Bravo Zulu Whiskey Papa , Harmony One Eight Five , Hotel Bravo Kilo Lima Echo , Lufthansa Two Six Echo , Fraction Seven Nine One Golf , Royal Ghana Zero Four , French Bee Seven Zero Zero , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Victor Papa "
+        "prompt_fullts_1G_4B": "hotel echo whiskey, hotel echo whiskey,, echo whiskey, Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Oscar Juliett , Lufthansa Two Six Echo , Fraction Seven Nine One Golf ",
+        "prompt_fullts_5B": "Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Oscar Juliett , Lufthansa Two Six Echo , Royal Ghana Zero Four , Hotel Bravo Kilo Lima Echo ",
+        "prompt_fullts_50B": "Hotel Bravo Kilo Lima Echo , French Bee Seven Zero Zero , Hotel Bravo Zulu Whiskey Papa , Harmony One Eight Five , Fraction Seven Nine One Golf , Hotel Bravo Kilo Oscar Juliett , Lufthansa Two Six Echo , Hotel Bravo Zulu Victor Papa , Royal Ghana Zero Four "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_150030.wav",
         "full_ts": "Huitante et Un c'est, cautionnement est correct, rappeler au roulage\nwilco",
-        "short_ts": "HUITANTE ET UN c est, cautionnement est correct, rappeler au roulage\nwilco\n",
+        "short_ts": "HUITANTE ET UN c est, cautionnement est correct, rappeler au roulage\nwilco",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "huitante et un"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "81"
-            ],
+            "long_callsigns": {
+                "huitante et un": 1
+            },
+            "short_callsigns": {
+                "HUITANTEETUN": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -406,25 +401,24 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "huitante et un, Hotel Bravo Delta Golf Victor , Victor Charlie Golf Two Echo Golf , Med Rescue Echo Echo , Scandinavian Four Three Six Lima ",
-        "prompt_fullts_5B": "Lufthansa Zero Three Alpha , Victor Charlie Golf Two Echo Golf , Fedex Five Two Seven Nine , Nav Checker Five One One , Med Rescue Echo Echo ",
-        "prompt_fullts_50B": "Lufthansa Zero Three Alpha , Scandinavian Four Three Six Lima , Luxor Golf Two Two Sierra , Nav Checker Five One One , Fedex Five Two Seven Nine , Victor Charlie Golf Two Echo Golf , Vueling Two Eight Yankee Quebec , November One Four Echo Foxtrot , Med Rescue Echo Echo , Hotel Bravo Delta Golf Victor "
+        "prompt_fullts_1G_4B": "huitante et un, Nav Checker Five One One , Victor Charlie Golf Two Echo Golf , Hotel Bravo Delta Golf Victor , Lufthansa Zero Three Alpha ",
+        "prompt_fullts_5B": "Victor Charlie Golf Two Echo Golf , Nav Checker Five One One , Luxor Golf Two Two Sierra , Vueling Two Eight Yankee Quebec , Fedex Five Two Seven Nine ",
+        "prompt_fullts_50B": "Luxor Golf Two Two Sierra , Hotel Bravo Delta Golf Victor , Scandinavian Four Three Six Lima , Med Rescue Echo Echo , Vueling Two Eight Yankee Quebec , Fedex Five Two Seven Nine , November One Four Echo Foxtrot , Victor Charlie Golf Two Echo Golf , Nav Checker Five One One , Lufthansa Zero Three Alpha "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210502_043558.wav",
         "full_ts": "Cinquante et Un, salut,  tu peux rentrer en piste, rappelle termine\nje rentre en piste  Cinquante et Un",
-        "short_ts": "CINQUANTE ET UN, salut, tu peux rentrer en piste, rappelle termine\nje rentre en piste CINQUANTE ET UN\n",
+        "short_ts": "CINQUANTE ET UN, salut, tu peux rentrer en piste, rappelle termine\nje rentre en piste CINQUANTE ET UN",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "cinquante et un,",
-                "cinquante et un"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "cinquante et un"
-            ],
+            "long_callsigns": {
+                "cinquante et un,": 1,
+                "cinquante et un": 1
+            },
+            "short_callsigns": {
+                "CINQUANTEETUN,": 1,
+                "CINQUANTEETUN": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -475,24 +469,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "cinquante et un,, cinquante et un, Air France Eight One Three , KLM One Six Two Eight , Enter Seven Three Lima Hotel ",
-        "prompt_fullts_5B": "Air France Eight One Three , Enter Seven Three Lima Hotel , KLM One Six Two Eight ",
-        "prompt_fullts_50B": "Enter Seven Three Lima Hotel , KLM One Six Two Eight , Air France Eight One Three "
+        "prompt_fullts_1G_4B": "cinquante et un,, cinquante et un, KLM One Six Two Eight , Air France Eight One Three , Enter Seven Three Lima Hotel ",
+        "prompt_fullts_5B": "Air France Eight One Three , KLM One Six Two Eight , Enter Seven Three Lima Hotel ",
+        "prompt_fullts_50B": "Air France Eight One Three , KLM One Six Two Eight , Enter Seven Three Lima Hotel "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_122116.wav",
         "full_ts": "j'accepte la direct Proxima Delta\nmerci donc vous pouvez venir pour une direct piste deux cinq, numero un rappeler final",
-        "short_ts": "j accepte la direct PROXIMA DAL\nmerci donc vous pouvez venir pour une direct piste deux cinq, numero un rappeler final\n",
+        "short_ts": "j accepte la direct PROXIMA DAL\nmerci donc vous pouvez venir pour une direct piste deux cinq, numero un rappeler final",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "proxima delta"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "proxima D"
-            ],
+            "long_callsigns": {
+                "proxima delta": 1
+            },
+            "short_callsigns": {
+                "PROXIMAD": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -577,25 +569,24 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "proxima delta, Hotel Bravo Yankee Tango Mike , Nav Checker Five One One , Royal Ghana Zero Four , Luxor Golf Two Two Sierra ",
-        "prompt_fullts_5B": "Hotel Bravo Yankee Tango Mike , Royal Ghana Zero Four , Nav Checker Five One One , Hotel Bravo Two Four One Four , Luxor Golf Two Two Sierra ",
-        "prompt_fullts_50B": "Hotel Bravo Zulu Whiskey Papa , Luxor Golf Two Two Sierra , Mosquito Three Five X-ray , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Victor Papa , Royal Ghana Zero Four , Hotel Bravo Zulu Victor Oscar , Mosquito One Nine X-ray , Hotel Bravo Kilo Golf Oscar , Luxor Golf Two Two Victor , Hotel Bravo Kilo Foxtrot India , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Zulu Alpha Papa , Hotel Bravo Two Four One Four , Hotel Bravo Yankee Tango Mike , Med Rescue Echo Echo , Juliett Charlie Lima Two , Hotel Bravo Two Zero Eight Seven , Nav Checker Five One One , November Three Yankee Zulu "
+        "prompt_fullts_1G_4B": "proxima delta, Hotel Bravo Zulu Whiskey Papa , Luxor Golf Two Two Sierra , Hotel Bravo Yankee Yankee Alpha , Royal Ghana Zero Four ",
+        "prompt_fullts_5B": "Hotel Bravo Two Four One Four , November Three Yankee Zulu , Hotel Bravo Yankee Yankee Alpha , Med Rescue Echo Echo , Royal Ghana Zero Four ",
+        "prompt_fullts_50B": "Nav Checker Five One One , Mosquito One Nine X-ray , Royal Ghana Zero Four , Juliett Charlie Lima Two , Hotel Bravo Two Zero Eight Seven , Hotel Bravo Yankee Tango Mike , Luxor Golf Two Two Sierra , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Kilo Foxtrot India , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Zulu Victor Oscar , Luxor Golf Two Two Victor , Mosquito Three Five X-ray , Med Rescue Echo Echo , November Three Yankee Zulu , Hotel Bravo Two Four One Four , Hotel Bravo Zulu Alpha Papa , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Victor Papa "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_053014.wav",
         "full_ts": "Tango Lima Mike Novembre Whiskey cinq mille trois cent pied remonter\nTango Lima Mike vous pouvez quitter, bon vol, bonne journee",
-        "short_ts": "T L M NOVEMBRE W cinq mille trois cent pied remonter\nT L M vous pouvez quitter, bon vol, bonne journee\n",
+        "short_ts": "T L M NOVEMBRE W cinq mille trois cent pied remonter\nT L M vous pouvez quitter, bon vol, bonne journee",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "tango lima mike novembre whiskey",
-                "tango lima mike"
-            ],
-            "short_callsigns": [
-                "TLM novembre W",
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "tango lima mike novembre whiskey": 1,
+                "tango lima mike": 1
+            },
+            "short_callsigns": {
+                "TLMNOVEMBREW": 1,
+                "TLM": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -652,19 +643,18 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "tango lima mike novembre whiskey, tango lima mike, Victor Papa Charlie Foxtrot Kilo , Hotel Bravo Delta Golf Victor , Mike Yankee Golf Juliett Lima , Ryan Eight Yankee Tango ",
-        "prompt_fullts_5B": "Ryan Eight Yankee Tango , Lufthansa Two Three Tango , Mike Yankee Golf Juliett Lima , Hotel Bravo Delta Golf Victor , Luxair Nine Two Mike ",
-        "prompt_fullts_50B": "Victor Papa Charlie Foxtrot Kilo , Mike Yankee Golf Juliett Lima , Hotel Bravo Delta Golf Victor , Ryan Eight Yankee Tango , Lufthansa Two Three Tango , Luxair Nine Two Mike "
+        "prompt_fullts_1G_4B": "tango lima mike novembre whiskey, tango lima mike, Lufthansa Two Three Tango , Luxair Nine Two Mike , Ryan Eight Yankee Tango , Hotel Bravo Delta Golf Victor ",
+        "prompt_fullts_5B": "Mike Yankee Golf Juliett Lima , Hotel Bravo Delta Golf Victor , Lufthansa Two Three Tango , Ryan Eight Yankee Tango , Luxair Nine Two Mike ",
+        "prompt_fullts_50B": "Lufthansa Two Three Tango , Luxair Nine Two Mike , Ryan Eight Yankee Tango , Mike Yankee Golf Juliett Lima , Victor Papa Charlie Foxtrot Kilo , Hotel Bravo Delta Golf Victor "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Tower_118_3MHz_20210503_160321.wav",
         "full_ts": "compris Dix Huit on peut retourner en piste",
-        "short_ts": "compris Dix Huit on peut retourner en piste\n",
+        "short_ts": "compris Dix Huit on peut retourner en piste",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [],
-            "short_callsigns": [],
+            "long_callsigns": {},
+            "short_callsigns": {},
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -741,23 +731,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": ", Hotel Bravo Kilo Golf Oscar , Masterjet Two Four Nine Lima , Royal Ghana Zero Four , Hotel Bravo Kilo Oscar Juliett ",
-        "prompt_fullts_5B": "Oscar Oscar Papa Charlie Juliett , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Delta Golf Victor , Hotel Bravo Zulu Victor Papa , Fraction Seven Nine One Golf ",
-        "prompt_fullts_50B": "Hansa Two Six Echo , Mosquito One Five Bravo , Fraction Seven Nine One Golf , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Zulu Victor Papa , Harmony One Eight Five , Hotel Bravo Yankee Tango Mike , Hotel Bravo Kilo Lima Echo , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Whiskey Papa , Masterjet Two Four Nine Lima , Hotel Bravo Yankee Yankee Alpha , Oscar Oscar Papa Charlie Juliett , Royal Ghana Zero Four , Hotel Bravo Delta Golf Victor , Foxtrot Papa Alpha Delta Uniform "
+        "prompt_fullts_1G_4B": ", Oscar Oscar Papa Charlie Juliett , Hotel Bravo Yankee Yankee Alpha , Masterjet Two Four Nine Lima , Hotel Bravo Kilo Lima Echo ",
+        "prompt_fullts_5B": "Oscar Oscar Papa Charlie Juliett , Hansa Two Six Echo , Hotel Bravo Yankee Tango Mike , Masterjet Two Four Nine Lima , Foxtrot Papa Alpha Delta Uniform ",
+        "prompt_fullts_50B": "Mosquito One Five Bravo , Hotel Bravo Kilo Oscar Juliett , Harmony One Eight Five , Royal Ghana Zero Four , Masterjet Two Four Nine Lima , Hansa Two Six Echo , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Lima Echo , Hotel Bravo Yankee Tango Mike , Hotel Bravo Delta Golf Victor , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Golf Oscar , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Yankee Yankee Alpha , Fraction Seven Nine One Golf , Oscar Oscar Papa Charlie Juliett "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_052323.wav",
         "full_ts": "India Juliett standby break break kafa tu peux sortir a bravo, un traffic est bientot pret au depart",
-        "short_ts": "I J standby break break kafa tu peux sortir a B, un traffic est bientot pret au depart\n",
+        "short_ts": "I J standby break break kafa tu peux sortir a B, un traffic est bientot pret au depart",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "india juliett"
-            ],
-            "short_callsigns": [
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "india juliett": 1
+            },
+            "short_callsigns": {
+                "IJ": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -814,25 +803,24 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "india juliett, Victor Papa Charlie Foxtrot Kilo , Hansa Two Three Tango , Ryan Eight Yankee Tango , Hotel Bravo Delta Golf Victor ",
-        "prompt_fullts_5B": "Hansa Two Three Tango , Hotel Bravo Delta Golf Victor , Mike Yankee Golf Juliett Lima , Victor Papa Charlie Foxtrot Kilo , Ryan Eight Yankee Tango ",
-        "prompt_fullts_50B": "Hansa Two Three Tango , Hotel Bravo Delta Golf Victor , Victor Papa Charlie Foxtrot Kilo , Ryan Eight Yankee Tango , Mike Yankee Golf Juliett Lima , Luxair Nine Two Mike "
+        "prompt_fullts_1G_4B": "india juliett, Ryan Eight Yankee Tango , Mike Yankee Golf Juliett Lima , Luxair Nine Two Mike , Victor Papa Charlie Foxtrot Kilo ",
+        "prompt_fullts_5B": "Hotel Bravo Delta Golf Victor , Mike Yankee Golf Juliett Lima , Ryan Eight Yankee Tango , Hansa Two Three Tango , Victor Papa Charlie Foxtrot Kilo ",
+        "prompt_fullts_50B": "Hansa Two Three Tango , Victor Papa Charlie Foxtrot Kilo , Luxair Nine Two Mike , Mike Yankee Golf Juliett Lima , Ryan Eight Yankee Tango , Hotel Bravo Delta Golf Victor "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_052105.wav",
         "full_ts": "Tango Lima Mike rouler au point d'attente delta piste deux cinq QNH mille vingt-trois\nmille vingt-trois delta deux cinq Lima Mike",
-        "short_ts": "T L M rouler au. d attente D piste deux cinq QNH mille vingt trois\nmille vingt trois D deux cinq L M\n",
+        "short_ts": "T L M rouler au. d attente D piste deux cinq QNH mille vingt trois\nmille vingt trois D deux cinq L M",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "tango lima mike",
-                "lima mike"
-            ],
-            "short_callsigns": [
-                "LM",
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "tango lima mike": 1,
+                "lima mike": 1
+            },
+            "short_callsigns": {
+                "TLM": 1,
+                "LM": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -889,24 +877,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "tango lima mike, lima mike, Ryan Eight Yankee Tango , Hotel Bravo Delta Golf Victor , Hansa Two Three Tango , Victor Papa Charlie Foxtrot Kilo ",
-        "prompt_fullts_5B": "Victor Papa Charlie Foxtrot Kilo , Luxair Nine Two Mike , Mike Yankee Golf Juliett Lima , Hansa Two Three Tango , Ryan Eight Yankee Tango ",
-        "prompt_fullts_50B": "Luxair Nine Two Mike , Victor Papa Charlie Foxtrot Kilo , Hansa Two Three Tango , Ryan Eight Yankee Tango , Hotel Bravo Delta Golf Victor , Mike Yankee Golf Juliett Lima "
+        "prompt_fullts_1G_4B": "tango lima mike, lima mike, Hansa Two Three Tango , Hotel Bravo Delta Golf Victor , Victor Papa Charlie Foxtrot Kilo , Mike Yankee Golf Juliett Lima ",
+        "prompt_fullts_5B": "Mike Yankee Golf Juliett Lima , Victor Papa Charlie Foxtrot Kilo , Ryan Eight Yankee Tango , Hansa Two Three Tango , Hotel Bravo Delta Golf Victor ",
+        "prompt_fullts_50B": "Hotel Bravo Delta Golf Victor , Luxair Nine Two Mike , Ryan Eight Yankee Tango , Hansa Two Three Tango , Victor Papa Charlie Foxtrot Kilo , Mike Yankee Golf Juliett Lima "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_061605.wav",
         "full_ts": "airport dix huit\n Charlie on aimerait entrer en piste pour continuer le poncage des lampes\nairport dix huit rentrer en piste, rester a l'ecoute",
-        "short_ts": "airport dix huit\nC on aimerait entrer en piste pour continuer le poncage des lampes\nairport dix huit rentrer en piste, rester a l ecoute\n",
+        "short_ts": "airport dix huit\nC on aimerait entrer en piste pour continuer le poncage des lampes\nairport dix huit rentrer en piste, rester a l ecoute",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "charlie"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "C"
-            ],
+            "long_callsigns": {
+                "charlie": 1
+            },
+            "short_callsigns": {
+                "C": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -975,24 +961,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "charlie, Mosquito Six Zero Echo , Hotel Bravo Zulu Oscar Zulu , Contract Seven Three Eight , Lima Alpha Sierra Seven ",
-        "prompt_fullts_5B": "Air France Seven Four Charlie Juliett , Air France Two One Golf Bravo , French Bee Seven Zero One , Med Rescue Echo Echo , Hotel Bravo Kilo Mike Oscar ",
-        "prompt_fullts_50B": "Hotel Bravo Zulu Oscar Zulu , Fraction Zero Two Eight Charlie , Lima Alpha Sierra Seven , Mosquito Six Zero Echo , French Bee Seven Zero One , Hotel Bravo Kilo Mike Oscar , Air France Seven Four Charlie Juliett , Lufthansa Two Three Tango , Air France Two One Golf Bravo , Med Rescue Echo Echo , Hotel Bravo Zulu Echo Foxtrot , Contract Seven Three Eight "
+        "prompt_fullts_1G_4B": "charlie, Contract Seven Three Eight , Mosquito Six Zero Echo , French Bee Seven Zero One , Fraction Zero Two Eight Charlie ",
+        "prompt_fullts_5B": "Hotel Bravo Zulu Oscar Zulu , Mosquito Six Zero Echo , Fraction Zero Two Eight Charlie , French Bee Seven Zero One , Contract Seven Three Eight ",
+        "prompt_fullts_50B": "Hotel Bravo Kilo Mike Oscar , Fraction Zero Two Eight Charlie , Air France Two One Golf Bravo , Med Rescue Echo Echo , French Bee Seven Zero One , Air France Seven Four Charlie Juliett , Mosquito Six Zero Echo , Hotel Bravo Zulu Oscar Zulu , Lima Alpha Sierra Seven , Lufthansa Two Three Tango , Contract Seven Three Eight , Hotel Bravo Zulu Echo Foxtrot "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_150003.wav",
         "full_ts": "Six Mille Trois Cent Huitante et Un bonjour\nbonjour demande une route  clearante a destination",
-        "short_ts": "6 MILLE TROIS CENT HUITANTE ET UN bonjour\nbonjour demande une route clearante a destination unk\n",
+        "short_ts": "6 MILLE TROIS CENT HUITANTE ET UN bonjour\nbonjour demande une route clearante a destination unk",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "six mille trois cent huitante et un"
-            ],
-            "short_callsigns": [
-                "6381",
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "six mille trois cent huitante et un": 1
+            },
+            "short_callsigns": {
+                "6MILLETROISCENTHUITANTEETUN": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1057,24 +1041,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "six mille trois cent huitante et un, Hotel Bravo Delta Golf Victor , Med Rescue Echo Echo , Victor Charlie Golf Two Echo Golf , Nav Checker Five One One ",
-        "prompt_fullts_5B": "Luxor Golf Two Two Sierra , Med Rescue Echo Echo , Victor Charlie Golf Two Echo Golf , Fedex Five Two Seven Nine , Hotel Bravo Delta Golf Victor ",
-        "prompt_fullts_50B": "November One Four Echo Foxtrot , Scan Four Three Six Lima , Fedex Five Two Seven Nine , Luxor Golf Two Two Sierra , Victor Charlie Golf Two Echo Golf , Nav Checker Five One One , Lufthansa Zero Three Alpha , Hotel Bravo Delta Golf Victor , Med Rescue Echo Echo , Vueling Two Eight Yankee Quebec "
+        "prompt_fullts_1G_4B": "six mille trois cent huitante et un, Hotel Bravo Delta Golf Victor , Nav Checker Five One One , Med Rescue Echo Echo , November One Four Echo Foxtrot ",
+        "prompt_fullts_5B": "Med Rescue Echo Echo , November One Four Echo Foxtrot , Fedex Five Two Seven Nine , Luxor Golf Two Two Sierra , Lufthansa Zero Three Alpha ",
+        "prompt_fullts_50B": "Hotel Bravo Delta Golf Victor , Nav Checker Five One One , Vueling Two Eight Yankee Quebec , Victor Charlie Golf Two Echo Golf , Scan Four Three Six Lima , November One Four Echo Foxtrot , Fedex Five Two Seven Nine , Lufthansa Zero Three Alpha , Luxor Golf Two Two Sierra , Med Rescue Echo Echo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210502_073630.wav",
         "full_ts": "Mosquito Quinze Bravo votre clearance est prete\nallez y monsieur\nMosquito Quinze Bravo apres le depart rester en espace echo echos et en rejoignant le lac contacter Geneve Delta au cent dix neuf decimal un sept cinquante et code transpondeur cinq sept quatre quatre",
-        "short_ts": "JFA QUINZE BRV votre clearance est prete\nallez y monsieur\nJFA QUINZE BRV apres le depart rester en espace E echos et en rejoignant le lac contacter Geneve D au cent dix neuf. un sept cinquante et code transpondeur cinq sept quatre quatre\n",
+        "short_ts": "JFA QUINZE BRV votre clearance est prete\nallez y monsieur\nJFA QUINZE BRV apres le depart rester en espace E echos et en rejoignant le lac contacter Geneve D au cent dix neuf. un sept cinquante et code transpondeur cinq sept quatre quatre",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "mosquito quinze bravo"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "JFA15B"
-            ],
+            "long_callsigns": {
+                "mosquito quinze bravo": 2
+            },
+            "short_callsigns": {
+                "MOSQUITOQUINZEB": 2
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1131,21 +1113,18 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "mosquito quinze bravo, Vueling Nine Four Three Seven , Luxor Golf Two Two Hotel , Air Nostrum Eight Zero Quebec Yankee , Mosquito One Five Bravo ",
-        "prompt_fullts_5B": "Alitalia One Five Six , Mosquito One Five Bravo , Air Nostrum Eight Zero Quebec Yankee , Luxor Golf Two Two Hotel , Lufthansa Seven Four Uniform ",
-        "prompt_fullts_50B": "Alitalia One Five Six , Luxor Golf Two Two Hotel , Vueling Nine Four Three Seven , Mosquito One Five Bravo , Air Nostrum Eight Zero Quebec Yankee , Lufthansa Seven Four Uniform "
+        "prompt_fullts_1G_4B": "mosquito quinze bravo, Vueling Nine Four Three Seven , Luxor Golf Two Two Hotel , Air Nostrum Eight Zero Quebec Yankee , Lufthansa Seven Four Uniform ",
+        "prompt_fullts_5B": "Lufthansa Seven Four Uniform , Alitalia One Five Six , Luxor Golf Two Two Hotel , Mosquito One Five Bravo , Air Nostrum Eight Zero Quebec Yankee ",
+        "prompt_fullts_50B": "Alitalia One Five Six , Air Nostrum Eight Zero Quebec Yankee , Lufthansa Seven Four Uniform , Mosquito One Five Bravo , Luxor Golf Two Two Hotel , Vueling Nine Four Three Seven "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210504_124618.wav",
         "full_ts": "Airport Dix Huit, je vous donne  sept huit minutes apres il faudrait juste ressortir",
-        "short_ts": "Airport Dix Huit, je vous donne sept huit minutes apres il faudrait juste ressortir\n",
+        "short_ts": "Airport Dix Huit, je vous donne sept huit minutes apres il faudrait juste ressortir",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [],
-            "short_callsigns": [
-                "ATCO Ground"
-            ],
+            "long_callsigns": {},
+            "short_callsigns": {},
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1212,24 +1191,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": ", Hotel Bravo Zulu Echo Foxtrot , Air France Eight Eight Victor Mike , November One Four Echo Foxtrot , Hotel Bravo Zulu Whiskey Papa ",
-        "prompt_fullts_5B": "Swiss Two Five Eight Echo , Luxor Golf Two Two Sierra , Hotel Bravo Zulu Echo Foxtrot , Nav Checker Five One One , November One Four Echo Foxtrot ",
-        "prompt_fullts_50B": "Nav Checker Five One One , Med Rescue Echo Echo , Swiss Two Five Eight Echo , Hotel Bravo Zulu Echo Foxtrot , Hotel Bravo Zulu Whiskey Papa , November One Four Echo Foxtrot , Hotel Bravo Delta Golf Victor , Luxor Golf Two Two Sierra , Spring Air Three Eight One , Victor Charlie Golf Two Echo Golf , Air France Eight Eight Victor Mike "
+        "prompt_fullts_1G_4B": ", Hotel Bravo Zulu Echo Foxtrot , Hotel Bravo Delta Golf Victor , November One Four Echo Foxtrot , Victor Charlie Golf Two Echo Golf ",
+        "prompt_fullts_5B": "Air France Eight Eight Victor Mike , Hotel Bravo Zulu Echo Foxtrot , November One Four Echo Foxtrot , Spring Air Three Eight One , Hotel Bravo Zulu Whiskey Papa ",
+        "prompt_fullts_50B": "Swiss Two Five Eight Echo , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Delta Golf Victor , Spring Air Three Eight One , November One Four Echo Foxtrot , Nav Checker Five One One , Air France Eight Eight Victor Mike , Hotel Bravo Zulu Echo Foxtrot , Med Rescue Echo Echo , Victor Charlie Golf Two Echo Golf , Luxor Golf Two Two Sierra "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_142821.wav",
         "full_ts": "Kilo Bravo a l'hopital pour la deux cinq\nKilo Bravo autoriser, deux cent cinquant degres, six noeud pour la piste deux cinq\n pour la deux cinq, Kilo Bravo",
-        "short_ts": "K BRV a l hopital pour la deux cinq\nK BRV autoriser, deux cent cinquant degres, 6 noeud pour la piste deux cinq\npour la deux cinq, K BRV\n",
+        "short_ts": "K BRV a l hopital pour la deux cinq\nK BRV autoriser, deux cent cinquant degres, 6 noeud pour la piste deux cinq\npour la deux cinq, K BRV",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "kilo bravo"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "KB"
-            ],
+            "long_callsigns": {
+                "kilo bravo": 3
+            },
+            "short_callsigns": {
+                "KB": 3
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1312,21 +1289,18 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "kilo bravo, Hotel Bravo Delta Golf Victor , Masterjet Two Four Nine Lima , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Two Zero Eight Seven ",
-        "prompt_fullts_5B": "Luxor Golf Two Two Sierra , Hotel Bravo Yankee Tango Mike , Hotel Bravo Zulu Alpha Papa , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Yankee Yankee Alpha ",
-        "prompt_fullts_50B": "Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Alpha Papa , Mosquito One Five Bravo , Hotel Bravo Zulu Victor Papa , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Two Zero Eight Seven , Hotel Bravo Yankee Tango Mike , Oscar Oscar Papa Charlie Juliett , Mosquito One Nine X-ray , Hotel Bravo Two Four One Four , Foxtrot Papa Alpha Delta Uniform , Lufthansa Two Six Echo , Hotel Bravo Delta Golf Victor , Royal Ghana Zero Four , Luxor Golf Two Two Sierra , Hotel Bravo Kilo Golf Oscar , Fraction Seven Nine One Golf , Masterjet Two Four Nine Lima , Nav Checker Five One One "
+        "prompt_fullts_1G_4B": "kilo bravo, Hotel Bravo Zulu Alpha Papa , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Two Four One Four , Royal Ghana Zero Four ",
+        "prompt_fullts_5B": "Luxor Golf Two Two Sierra , Masterjet Two Four Nine Lima , Hotel Bravo Yankee Tango Mike , Foxtrot Papa Alpha Delta Uniform , Royal Ghana Zero Four ",
+        "prompt_fullts_50B": "Hotel Bravo Kilo Golf Oscar , Fraction Seven Nine One Golf , Lufthansa Two Six Echo , Hotel Bravo Yankee Tango Mike , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Yankee Yankee Alpha , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Two Zero Eight Seven , Nav Checker Five One One , Oscar Oscar Papa Charlie Juliett , Luxor Golf Two Two Sierra , Hotel Bravo Two Four One Four , Hotel Bravo Delta Golf Victor , Masterjet Two Four Nine Lima , Hotel Bravo Zulu Alpha Papa , Royal Ghana Zero Four , Mosquito One Five Bravo , Hotel Bravo Zulu Victor Papa , Mosquito One Nine X-ray "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210421_142107.wav",
         "full_ts": "tour de Sion salut Heli Echo Fox",
-        "short_ts": "tour de Sion salut Heli EF\n",
+        "short_ts": "tour de Sion salut Heli EF",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [],
-            "short_callsigns": [
-                "ATCO Ground"
-            ],
+            "long_callsigns": {},
+            "short_callsigns": {},
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1385,21 +1359,18 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": ", Fedex Five Two Seven Nine , Ryanair Eight Kilo Mike , Hotel Bravo Kilo Charlie Juliett , Mike Yankee Golf Juliett Lima ",
-        "prompt_fullts_5B": "Mike Yankee Golf Juliett Lima , Ryanair Eight Kilo Mike , Hotel Bravo Zulu Whiskey Papa , Eurowings Six Eight Charlie , November One Four Echo Foxtrot ",
-        "prompt_fullts_50B": "Fedex Five Two Seven Nine , Ryanair Eight Kilo Mike , Mike Yankee Golf Juliett Lima , Hotel Bravo Kilo Charlie Juliett , Eurowings Six Eight Charlie , Hotel Bravo Zulu Whiskey Papa , November One Four Echo Foxtrot "
+        "prompt_fullts_1G_4B": ", Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Charlie Juliett , Fedex Five Two Seven Nine , November One Four Echo Foxtrot ",
+        "prompt_fullts_5B": "Hotel Bravo Kilo Charlie Juliett , Fedex Five Two Seven Nine , Mike Yankee Golf Juliett Lima , November One Four Echo Foxtrot , Eurowings Six Eight Charlie ",
+        "prompt_fullts_50B": "November One Four Echo Foxtrot , Hotel Bravo Kilo Charlie Juliett , Ryanair Eight Kilo Mike , Fedex Five Two Seven Nine , Mike Yankee Golf Juliett Lima , Hotel Bravo Zulu Whiskey Papa , Eurowings Six Eight Charlie "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Tower_118_3MHz_20210420_141742.wav",
         "full_ts": "Hotel Golf X-ray vacate right and taxi to  approved\nbonne fin de journée",
-        "short_ts": "HG X ray vacate right and taxi to approved\nbonne fin de journée\n",
+        "short_ts": "HG X ray vacate right and taxi to approved\nbonne fin de journée",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [],
-            "short_callsigns": [
-                "ATCO tower"
-            ],
+            "long_callsigns": {},
+            "short_callsigns": {},
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1468,26 +1439,24 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": ", Fraction Two Four Two Kilo , Delta Charlie Whiskey Papa Sierra , Hotel Bravo Three Two Nine Nine , Fedex Five Two Seven Nine ",
-        "prompt_fullts_5B": "Hotel Bravo Sierra Hotel Bravo , Hotel Bravo Two Five Three Four , Hotel Bravo Delta Golf Victor , Fraction Two Four Two Kilo , Hotel Bravo Three Two Nine Nine ",
-        "prompt_fullts_50B": "Fraction Two Four Two Kilo , Hotel Bravo Delta Golf Victor , Hotel Bravo Sierra Hotel Bravo , Hotel Bravo Zulu Sierra November , Hotel Bravo Three Two Nine Nine , Zulu Sierra Golf Uniform Alpha , Delta Charlie Whiskey Papa Sierra , Fedex Five Two Seven Nine , Hotel Bravo Two Five Three Four , Hansa Two Six Echo , Lanex Charlie Foxtrot , Hotel Bravo Golf Lima Sierra "
+        "prompt_fullts_1G_4B": ", Hotel Bravo Delta Golf Victor , Hotel Bravo Two Five Three Four , Hotel Bravo Three Two Nine Nine , Delta Charlie Whiskey Papa Sierra ",
+        "prompt_fullts_5B": "Hotel Bravo Sierra Hotel Bravo , Delta Charlie Whiskey Papa Sierra , Hotel Bravo Delta Golf Victor , Fedex Five Two Seven Nine , Hansa Two Six Echo ",
+        "prompt_fullts_50B": "Hotel Bravo Two Five Three Four , Hotel Bravo Three Two Nine Nine , Zulu Sierra Golf Uniform Alpha , Hansa Two Six Echo , Hotel Bravo Zulu Sierra November , Fedex Five Two Seven Nine , Lanex Charlie Foxtrot , Hotel Bravo Sierra Hotel Bravo , Fraction Two Four Two Kilo , Delta Charlie Whiskey Papa Sierra , Hotel Bravo Delta Golf Victor , Hotel Bravo Golf Lima Sierra "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_173638.wav",
         "full_ts": "la tour rebonjour Charlie Sierra Delta Oscar Golf etablie  deux cinq\nCharlie Sierra Delta Oscar Golf rebonjour monsieur, rappeler dix nautique final pour la piste deux cinq\ndix nautique final Charlie Golf Oscar Golf",
-        "short_ts": "la tour rebonjour C S DAL O G etablie deux cinq\nC S DAL O G rebonjour monsieur, rappeler dix nautique final pour la piste deux cinq\ndix nautique final C G O G\n",
+        "short_ts": "la tour rebonjour C S DAL O G etablie deux cinq\nC S DAL O G rebonjour monsieur, rappeler dix nautique final pour la piste deux cinq\ndix nautique final C G O G",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "charlie golf oscar golf",
-                "charlie sierra delta oscar golf"
-            ],
-            "short_callsigns": [
-                "CGOG",
-                "ATCO Ground",
-                "CSDOG"
-            ],
+            "long_callsigns": {
+                "charlie sierra delta oscar golf": 2,
+                "charlie golf oscar golf": 1
+            },
+            "short_callsigns": {
+                "CSDOG": 2,
+                "CGOG": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1550,23 +1519,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "charlie golf oscar golf, charlie sierra delta oscar golf, Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Kilo Lima Echo , Royal Ghana Zero Four , Harmony One Eight Five ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Victor Papa , Royal Ghana Zero Four , French Bee Seven Zero Zero , Hotel Bravo Zulu Whiskey Papa , Hansa Two Six Echo ",
-        "prompt_fullts_50B": "Fraction Seven Nine One Golf , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Oscar Juliett , French Bee Seven Zero Zero , Harmony One Eight Five , Hotel Bravo Zulu Victor Papa , Hansa Two Six Echo , Hotel Bravo Kilo Lima Echo , Royal Ghana Zero Four "
+        "prompt_fullts_1G_4B": "charlie sierra delta oscar golf, charlie golf oscar golf, Hotel Bravo Kilo Lima Echo , Fraction Seven Nine One Golf , Hotel Bravo Zulu Victor Papa , French Bee Seven Zero Zero ",
+        "prompt_fullts_5B": "French Bee Seven Zero Zero , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Victor Papa ",
+        "prompt_fullts_50B": "French Bee Seven Zero Zero , Fraction Seven Nine One Golf , Hotel Bravo Kilo Lima Echo , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Victor Papa , Hansa Two Six Echo , Royal Ghana Zero Four , Hotel Bravo Zulu Whiskey Papa , Harmony One Eight Five "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210502_094601.wav",
         "full_ts": "Helicopter Delta Romeo  joining Saint-Prex dans l'espace echo sous les tma de Geneve et le...",
-        "short_ts": "HELICOPTERDR joining NE French Saint Prex dans l espace E sous les tma de Geneve et le...\n",
+        "short_ts": "HELICOPTERDR joining NE French Saint Prex dans l espace E sous les tma de Geneve et le...",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "helicopter delta romeo"
-            ],
-            "short_callsigns": [
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "helicopter delta romeo": 1
+            },
+            "short_callsigns": {
+                "HCPDR": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1625,24 +1593,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "helicopter delta romeo, Luxor Golf Two Two Hotel , Vueling Nine Four Three Seven , Hotel Bravo Zulu Alpha Papa , Alitalia One Five Six ",
-        "prompt_fullts_5B": "Air Nostrum Eight Zero Quebec Yankee , November Two Five Hotel Juliett , Luxor Golf Two Two Hotel , Alitalia One Five Six , Mosquito One Five Bravo ",
-        "prompt_fullts_50B": "Vueling Nine Four Three Seven , Air Nostrum Eight Zero Quebec Yankee , November Two Five Hotel Juliett , Alitalia One Five Six , Mosquito One Five Bravo , Hotel Bravo Zulu Alpha Papa , Luxor Golf Two Two Hotel "
+        "prompt_fullts_1G_4B": "helicopter delta romeo, Air Nostrum Eight Zero Quebec Yankee , November Two Five Hotel Juliett , Mosquito One Five Bravo , Alitalia One Five Six ",
+        "prompt_fullts_5B": "Mosquito One Five Bravo , Hotel Bravo Zulu Alpha Papa , November Two Five Hotel Juliett , Air Nostrum Eight Zero Quebec Yankee , Vueling Nine Four Three Seven ",
+        "prompt_fullts_50B": "Hotel Bravo Zulu Alpha Papa , Alitalia One Five Six , Air Nostrum Eight Zero Quebec Yankee , Vueling Nine Four Three Seven , Mosquito One Five Bravo , Luxor Golf Two Two Hotel , November Two Five Hotel Juliett "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210505_124845.wav",
         "full_ts": "may leave frequency a toute\na toute a l'heure Hotel Yankee",
-        "short_ts": "may leave frequency a toute\na toute a l heure H Y\n",
+        "short_ts": "may leave frequency a toute\na toute a l heure H Y",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "hotel yankee"
-            ],
-            "short_callsigns": [
-                "HY",
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "hotel yankee": 1
+            },
+            "short_callsigns": {
+                "HY": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1707,19 +1673,18 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "hotel yankee, Hotel Bravo Zulu Oscar Zulu , Bair Nine Five One , Victor Lima Zulu One Three Three Alpha , Alitalia Two Zero Six ",
-        "prompt_fullts_5B": "Victor Lima Zulu One Three Three Alpha , Air France Four Five Hotel Romeo , Bair Nine Five One , Hotel Bravo Zulu Oscar Zulu , Vueling One Five Zero Two ",
-        "prompt_fullts_50B": "Afrilens Four One , Victor Lima Zulu One Three Three Alpha , Swiss Air Force Five Two Eight , Vueling One Five Zero Two , Alitalia Two Zero Six , Ryan Two Zero Foxtrot Hotel , Bair Nine Five One , Air France Four Five Hotel Romeo , Hotel Bravo Zulu Oscar Zulu , Vista Malta Four Six Seven "
+        "prompt_fullts_1G_4B": "hotel yankee, Bair Nine Five One , Alitalia Two Zero Six , Swiss Air Force Five Two Eight , Vista Malta Four Six Seven ",
+        "prompt_fullts_5B": "Vueling One Five Zero Two , Afrilens Four One , Hotel Bravo Zulu Oscar Zulu , Ryan Two Zero Foxtrot Hotel , Vista Malta Four Six Seven ",
+        "prompt_fullts_50B": "Bair Nine Five One , Air France Four Five Hotel Romeo , Vueling One Five Zero Two , Hotel Bravo Zulu Oscar Zulu , Victor Lima Zulu One Three Three Alpha , Ryan Two Zero Foxtrot Hotel , Afrilens Four One , Swiss Air Force Five Two Eight , Vista Malta Four Six Seven , Alitalia Two Zero Six "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Tower_118_3MHz_20210422_143458.wav",
         "full_ts": "je poursuis en direction de l'est et j'attends",
-        "short_ts": "je poursuis en direction de l est et j attends\n",
+        "short_ts": "je poursuis en direction de l est et j attends",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [],
-            "short_callsigns": [],
+            "long_callsigns": {},
+            "short_callsigns": {},
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1784,24 +1749,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": ", Hotel Bravo Foxtrot Uniform Uniform , Royal Ghana Zero Four , Avia Three Zero Romeo , Hotel Bravo Delta Golf Victor ",
-        "prompt_fullts_5B": "Hotel Bravo Two Three One Four , Mosquito One Eight Uniform , Hotel Bravo Foxtrot Uniform Uniform , Hotel Bravo Delta Golf Victor , Avia Three Zero Romeo ",
-        "prompt_fullts_50B": "Royal Ghana Zero Four , Mosquito One Eight Uniform , Hotel Bravo Zulu Alpha Papa , Hotel Bravo Two Three One Four , Hotel Bravo Zulu Whiskey Papa , Lufthansa Two Six Echo , Hotel Bravo Foxtrot Uniform Uniform , Avia Three Zero Romeo , Icarfly Bravo Charlie , Hotel Bravo Delta Golf Victor "
+        "prompt_fullts_1G_4B": ", Icarfly Bravo Charlie , Hotel Bravo Zulu Alpha Papa , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Two Three One Four ",
+        "prompt_fullts_5B": "Hotel Bravo Delta Golf Victor , Lufthansa Two Six Echo , Hotel Bravo Zulu Whiskey Papa , Avia Three Zero Romeo , Royal Ghana Zero Four ",
+        "prompt_fullts_50B": "Hotel Bravo Zulu Alpha Papa , Hotel Bravo Zulu Whiskey Papa , Royal Ghana Zero Four , Hotel Bravo Two Three One Four , Mosquito One Eight Uniform , Hotel Bravo Foxtrot Uniform Uniform , Avia Three Zero Romeo , Icarfly Bravo Charlie , Hotel Bravo Delta Golf Victor , Lufthansa Two Six Echo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_174041.wav",
         "full_ts": "Charlie Oscar Golf rappeler cinq nautique final\ncinq nautique final Charlie Oscar Golf",
-        "short_ts": "C O G rappeler cinq nautique final\ncinq nautique final C O G\n",
+        "short_ts": "C O G rappeler cinq nautique final\ncinq nautique final C O G",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "charlie oscar golf"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "COG"
-            ],
+            "long_callsigns": {
+                "charlie oscar golf": 2
+            },
+            "short_callsigns": {
+                "COG": 2
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1864,23 +1827,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "charlie oscar golf, Hansa Two Six Echo , Royal Ghana Zero Four , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Kilo Lima Echo ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Lima Echo , Hansa Two Six Echo , Hotel Bravo Zulu Victor Papa , Harmony One Eight Five ",
-        "prompt_fullts_50B": "French Bee Seven Zero Zero , Fraction Seven Nine One Golf , Royal Ghana Zero Four , Hansa Two Six Echo , Hotel Bravo Kilo Oscar Juliett , Harmony One Eight Five , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Whiskey Papa "
+        "prompt_fullts_1G_4B": "charlie oscar golf, Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Victor Papa , Harmony One Eight Five ",
+        "prompt_fullts_5B": "Hansa Two Six Echo , Royal Ghana Zero Four , Harmony One Eight Five , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Lima Echo ",
+        "prompt_fullts_50B": "Hansa Two Six Echo , Harmony One Eight Five , French Bee Seven Zero Zero , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Victor Papa , Hotel Bravo Zulu Whiskey Papa , Fraction Seven Nine One Golf , Hotel Bravo Kilo Oscar Juliett , Royal Ghana Zero Four "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_142434.wav",
         "full_ts": "faut monter Lima Mike Juliett Two Four Nine Lima",
-        "short_ts": "faut monter L M J 2 4 9 L\n",
+        "short_ts": "faut monter L M J 2 4 9 L",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "lima mike juliett two four nine lima"
-            ],
-            "short_callsigns": [
-                "LMJ249L"
-            ],
+            "long_callsigns": {
+                "lima mike juliett two four nine lima": 1
+            },
+            "short_callsigns": {
+                "LMJ249L": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -1963,23 +1925,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "lima mike juliett two four nine lima, Luxor Golf Two Two Sierra , Hotel Bravo Delta Golf Victor , Masterjet Two Four Nine Lima , Nav Checker Five One One ",
-        "prompt_fullts_5B": "Hotel Bravo Two Four One Four , Mosquito One Nine X-ray , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Delta Golf Victor , Hotel Bravo Yankee Yankee Alpha ",
-        "prompt_fullts_50B": "Masterjet Two Four Nine Lima , Oscar Oscar Papa Charlie Juliett , Mosquito One Nine X-ray , Hotel Bravo Kilo Oscar Juliett , Mosquito One Five Bravo , Hotel Bravo Zulu Alpha Papa , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Delta Golf Victor , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Two Four One Four , Royal Ghana Zero Four , Fraction Seven Nine One Golf , Hansa Two Six Echo , Hotel Bravo Two Zero Eight Seven , Nav Checker Five One One , Hotel Bravo Yankee Tango Mike , Luxor Golf Two Two Sierra , Hotel Bravo Zulu Victor Papa "
+        "prompt_fullts_1G_4B": "lima mike juliett two four nine lima, Hotel Bravo Delta Golf Victor , Luxor Golf Two Two Sierra , Nav Checker Five One One , Hotel Bravo Kilo Oscar Juliett ",
+        "prompt_fullts_5B": "Foxtrot Papa Alpha Delta Uniform , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Delta Golf Victor , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Two Zero Eight Seven ",
+        "prompt_fullts_50B": "Hotel Bravo Delta Golf Victor , Fraction Seven Nine One Golf , Oscar Oscar Papa Charlie Juliett , Royal Ghana Zero Four , Mosquito One Five Bravo , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Two Four One Four , Mosquito One Nine X-ray , Hotel Bravo Yankee Yankee Alpha , Luxor Golf Two Two Sierra , Hotel Bravo Yankee Tango Mike , Hotel Bravo Two Zero Eight Seven , Nav Checker Five One One , Masterjet Two Four Nine Lima , Hotel Bravo Zulu Alpha Papa , Hotel Bravo Kilo Oscar Juliett , Hansa Two Six Echo , Foxtrot Papa Alpha Delta Uniform "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_070458.wav",
         "full_ts": "Mike Juliett Lima contact Swiss radar on one two four decimal two two five bye bye\npareil merci",
-        "short_ts": "M J L contact Swiss radar on 1 2 4.2 2 5 bye bye\npareil merci\n",
+        "short_ts": "M J L contact Swiss radar on 1 2 4.2 2 5 bye bye\npareil merci",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "mike juliett lima"
-            ],
-            "short_callsigns": [
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "mike juliett lima": 1
+            },
+            "short_callsigns": {
+                "MJL": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2040,25 +2001,24 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "mike juliett lima, Hotel Bravo Delta Golf Victor , Luxor Golf Two Two Hotel , Hansa Two Three Tango , Mike Yankee Golf Juliett Lima ",
-        "prompt_fullts_5B": "Hotel Bravo Kilo Golf November , Air France Seven Four Charlie Juliett , Hansa Two Three Tango , Hotel Bravo Delta Golf Victor , Luxor Golf Two Two Hotel ",
-        "prompt_fullts_50B": "Hotel Bravo Zulu Whiskey Papa , Luxair Nine Two Mike , Hotel Bravo Delta Golf Victor , Mike Yankee Golf Juliett Lima , Luxor Golf Two Two Hotel , Hansa Two Three Tango , Air France Seven Four Charlie Juliett , Hotel Bravo Kilo Golf November "
+        "prompt_fullts_1G_4B": "mike juliett lima, Luxair Nine Two Mike , Luxor Golf Two Two Hotel , Hotel Bravo Delta Golf Victor , Hotel Bravo Kilo Golf November ",
+        "prompt_fullts_5B": "Luxor Golf Two Two Hotel , Luxair Nine Two Mike , Hotel Bravo Zulu Whiskey Papa , Air France Seven Four Charlie Juliett , Mike Yankee Golf Juliett Lima ",
+        "prompt_fullts_50B": "Air France Seven Four Charlie Juliett , Hotel Bravo Delta Golf Victor , Mike Yankee Golf Juliett Lima , Hotel Bravo Zulu Whiskey Papa , Luxor Golf Two Two Hotel , Luxair Nine Two Mike , Hotel Bravo Kilo Golf November , Hansa Two Three Tango "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_141045.wav",
         "full_ts": "Oscar Kilo Bravo salut\nsalut Kilo Bravo vole a voile pour rouler a la charlie pour le tour d'office",
-        "short_ts": "O K BRV salut\nsalut K BRV vole a voile pour rouler a la C pour le tour d office\n",
+        "short_ts": "O K BRV salut\nsalut K BRV vole a voile pour rouler a la C pour le tour d office",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "kilo bravo",
-                "oscar kilo bravo"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "KB"
-            ],
+            "long_callsigns": {
+                "oscar kilo bravo": 1,
+                "kilo bravo": 1
+            },
+            "short_callsigns": {
+                "OKB": 1,
+                "KB": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2141,23 +2101,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "kilo bravo, oscar kilo bravo, Foxtrot Papa Alpha Delta Uniform , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Delta Golf Victor , Mosquito One Nine X-ray ",
-        "prompt_fullts_5B": "Nav Checker Five One One , Hotel Bravo Delta Golf Victor , Luxor Golf Two Two Sierra , Masterjet Two Four Nine Lima , Hotel Bravo Zulu Alpha Papa ",
-        "prompt_fullts_50B": "Hotel Bravo Delta Golf Victor , Masterjet Two Four Nine Lima , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Yankee Tango Mike , Fraction Seven Nine One Golf , Mosquito One Five Bravo , Hotel Bravo Two Zero Eight Seven , Mosquito One Nine X-ray , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Alpha Papa , Hotel Bravo Zulu Victor Oscar , Hotel Bravo Yankee Yankee Alpha , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Kilo Golf Oscar , Nav Checker Five One One , Luxor Golf Two Two Sierra , Royal Ghana Zero Four , Hotel Bravo Two Four One Four , Lufthansa Two Six Echo "
+        "prompt_fullts_1G_4B": "oscar kilo bravo, kilo bravo, Hotel Bravo Zulu Alpha Papa , Oscar Oscar Papa Charlie Juliett , Mosquito One Nine X-ray , Luxor Golf Two Two Sierra ",
+        "prompt_fullts_5B": "Masterjet Two Four Nine Lima , Hotel Bravo Kilo Golf Oscar , Luxor Golf Two Two Sierra , Hotel Bravo Zulu Alpha Papa , Hotel Bravo Yankee Yankee Alpha ",
+        "prompt_fullts_50B": "Foxtrot Papa Alpha Delta Uniform , Lufthansa Two Six Echo , Royal Ghana Zero Four , Hotel Bravo Two Four One Four , Hotel Bravo Two Zero Eight Seven , Hotel Bravo Delta Golf Victor , Hotel Bravo Yankee Tango Mike , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Zulu Alpha Papa , Masterjet Two Four Nine Lima , Mosquito One Five Bravo , Luxor Golf Two Two Sierra , Hotel Bravo Zulu Victor Oscar , Mosquito One Nine X-ray , Fraction Seven Nine One Golf , Oscar Oscar Papa Charlie Juliett , Nav Checker Five One One "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_173524.wav",
         "full_ts": "tour de Sion bonsoir Vevey Hotel Bravo Echo X-ray",
-        "short_ts": "tour de Sion bonsoir Vevey HBEXRAY\n",
+        "short_ts": "tour de Sion bonsoir Vevey HBEXRAY",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "hotel bravo echo x-ray"
-            ],
-            "short_callsigns": [
-                "HBE x ray"
-            ],
+            "long_callsigns": {
+                "hotel bravo echo x-ray": 1
+            },
+            "short_callsigns": {
+                "HBEXRAY": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2220,23 +2179,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "hotel bravo echo x-ray, Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Kilo Lima Echo , Royal Ghana Zero Four , French Bee Seven Zero Zero ",
-        "prompt_fullts_5B": "Royal Ghana Zero Four , Hotel Bravo Zulu Whiskey Papa , Hansa Two Six Echo , French Bee Seven Zero Zero , Hotel Bravo Kilo Oscar Juliett ",
-        "prompt_fullts_50B": "Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Lima Echo , Royal Ghana Zero Four , Hansa Two Six Echo , Fraction Seven Nine One Golf , French Bee Seven Zero Zero , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Oscar Juliett , Harmony One Eight Five "
+        "prompt_fullts_1G_4B": "hotel bravo echo x-ray, Harmony One Eight Five , French Bee Seven Zero Zero , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Whiskey Papa ",
+        "prompt_fullts_5B": "Hotel Bravo Kilo Lima Echo , Hansa Two Six Echo , Royal Ghana Zero Four , Fraction Seven Nine One Golf , Hotel Bravo Zulu Victor Papa ",
+        "prompt_fullts_50B": "Hotel Bravo Zulu Whiskey Papa , Harmony One Eight Five , Hansa Two Six Echo , Hotel Bravo Zulu Victor Papa , Royal Ghana Zero Four , Hotel Bravo Kilo Oscar Juliett , French Bee Seven Zero Zero , Hotel Bravo Kilo Lima Echo , Fraction Seven Nine One Golf "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210502_133303.wav",
         "full_ts": "Kilo Alpha Whiskey bonjour",
-        "short_ts": "K A W bonjour\n",
+        "short_ts": "K A W bonjour",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "kilo alpha whiskey"
-            ],
-            "short_callsigns": [
-                "KAW"
-            ],
+            "long_callsigns": {
+                "kilo alpha whiskey": 1
+            },
+            "short_callsigns": {
+                "KAW": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2299,24 +2257,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "kilo alpha whiskey, Oscar Hotel Romeo Bravo X-ray , Hansa Zero Nine Mike , Hansa Five Six Echo , Airbridge Cargo Five Six Zero ",
-        "prompt_fullts_5B": "Hansa Nine Three Tango , Hansa Zero Nine Mike , Airbridge Cargo Five Six Zero , Okapi Hotel Mike , Ryan Four Nine One Yankee ",
-        "prompt_fullts_50B": "Airbridge Cargo Five Six Zero , Luxor Golf Two Two Hotel , Hansa Five Six Echo , Ryan Four Nine One Yankee , Okapi Hotel Mike , Hansa Zero Nine Mike , November Two Five Hotel Juliett , Hansa Nine Three Tango , Oscar Hotel Romeo Bravo X-ray "
+        "prompt_fullts_1G_4B": "kilo alpha whiskey, Hansa Five Six Echo , Hansa Zero Nine Mike , Oscar Hotel Romeo Bravo X-ray , Airbridge Cargo Five Six Zero ",
+        "prompt_fullts_5B": "Luxor Golf Two Two Hotel , Hansa Nine Three Tango , Ryan Four Nine One Yankee , Okapi Hotel Mike , Airbridge Cargo Five Six Zero ",
+        "prompt_fullts_50B": "Oscar Hotel Romeo Bravo X-ray , Hansa Zero Nine Mike , Airbridge Cargo Five Six Zero , November Two Five Hotel Juliett , Hansa Five Six Echo , Luxor Golf Two Two Hotel , Ryan Four Nine One Yankee , Hansa Nine Three Tango , Okapi Hotel Mike "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_145756.wav",
         "full_ts": "yes but if you agree we could flight downwind   runway  two five  Mosquito One Five Bravo\nokay merci beaucoup",
-        "short_ts": "yes but if you agree we could flight downwind runway 2 5 JFA 1 5 BRV\nokay merci beaucoup\n",
+        "short_ts": "yes but if you agree we could flight downwind runway 2 5 JFA 1 5 BRV\nokay merci beaucoup",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "mosquito one five bravo"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "JFA15B"
-            ],
+            "long_callsigns": {
+                "mosquito one five bravo": 1
+            },
+            "short_callsigns": {
+                "JFA15B": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2401,23 +2357,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "mosquito one five bravo, Hotel Bravo Yankee Yankee Alpha , Nav Checker Five One One , Hotel Bravo Delta Golf Victor , Hotel Bravo Two Four One Four ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Victor Papa , Hansa Two Six Echo , Hotel Bravo Kilo Oscar Juliett , Royal Ghana Zero Four , Hotel Bravo Two Zero Eight Seven ",
-        "prompt_fullts_50B": "Mosquito One Five Bravo , Oscar Oscar Papa Charlie Juliett , Fraction Seven Nine One Golf , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Yankee Tango Mike , Luxor Golf Two Two Sierra , Hotel Bravo Yankee Yankee Alpha , Nav Checker Five One One , Royal Ghana Zero Four , Hotel Bravo Kilo Oscar Juliett , Hansa Two Six Echo , Masterjet Two Four Nine Lima , Hotel Bravo Zulu Victor Papa , Hotel Bravo Two Four One Four , Hotel Bravo Delta Golf Victor , Mosquito One Nine X-ray , Hotel Bravo Two Zero Eight Seven , Hotel Bravo Kilo Golf Oscar "
+        "prompt_fullts_1G_4B": "mosquito one five bravo, Hotel Bravo Zulu Victor Papa , Hotel Bravo Yankee Tango Mike , Hotel Bravo Yankee Yankee Alpha , Luxor Golf Two Two Sierra ",
+        "prompt_fullts_5B": "Hotel Bravo Yankee Tango Mike , Fraction Seven Nine One Golf , Hotel Bravo Kilo Oscar Juliett , Luxor Golf Two Two Sierra , Hotel Bravo Delta Golf Victor ",
+        "prompt_fullts_50B": "Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Delta Golf Victor , Mosquito One Nine X-ray , Masterjet Two Four Nine Lima , Luxor Golf Two Two Sierra , Hansa Two Six Echo , Oscar Oscar Papa Charlie Juliett , Royal Ghana Zero Four , Nav Checker Five One One , Foxtrot Papa Alpha Delta Uniform , Fraction Seven Nine One Golf , Mosquito One Five Bravo , Hotel Bravo Yankee Tango Mike , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Two Four One Four , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Two Zero Eight Seven , Hotel Bravo Zulu Victor Papa "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_174000.wav",
         "full_ts": "Proxima Delta merci rappeler whiskey pour la deux cinq QNH mille dix sept",
-        "short_ts": "PROXIMA DAL merci rappeler W pour la deux cinq QNH mille dix sept\n",
+        "short_ts": "PROXIMA DAL merci rappeler W pour la deux cinq QNH mille dix sept",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "proxima delta"
-            ],
-            "short_callsigns": [
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "proxima delta": 1
+            },
+            "short_callsigns": {
+                "PROXIMAD": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2480,24 +2435,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "proxima delta, Hansa Two Six Echo , Royal Ghana Zero Four , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Victor Papa ",
-        "prompt_fullts_5B": "Royal Ghana Zero Four , Hotel Bravo Kilo Lima Echo , Harmony One Eight Five , Hotel Bravo Zulu Victor Papa , French Bee Seven Zero Zero ",
-        "prompt_fullts_50B": "Royal Ghana Zero Four , French Bee Seven Zero Zero , Harmony One Eight Five , Fraction Seven Nine One Golf , Hotel Bravo Kilo Lima Echo , Hansa Two Six Echo , Hotel Bravo Zulu Victor Papa , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Oscar Juliett "
+        "prompt_fullts_1G_4B": "proxima delta, Fraction Seven Nine One Golf , Hansa Two Six Echo , Harmony One Eight Five , Royal Ghana Zero Four ",
+        "prompt_fullts_5B": "Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Lima Echo , Hansa Two Six Echo , Fraction Seven Nine One Golf ",
+        "prompt_fullts_50B": "Harmony One Eight Five , Hotel Bravo Zulu Whiskey Papa , French Bee Seven Zero Zero , Hotel Bravo Kilo Oscar Juliett , Fraction Seven Nine One Golf , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Lima Echo , Royal Ghana Zero Four , Hansa Two Six Echo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_142438.wav",
         "full_ts": "Lima Mike Juliett Two Four Nine Lima bonjour\nbonjour  des quais vingt sept vingt",
-        "short_ts": "L M J 2 4 9 L bonjour\nbonjour des quais vingt sept vingt\n",
+        "short_ts": "L M J 2 4 9 L bonjour\nbonjour des quais vingt sept vingt",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "lima mike juliett two four nine lima"
-            ],
-            "short_callsigns": [
-                "ATCO Ground",
-                "LMJ249L"
-            ],
+            "long_callsigns": {
+                "lima mike juliett two four nine lima": 1
+            },
+            "short_callsigns": {
+                "LMJ249L": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2580,23 +2533,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "lima mike juliett two four nine lima, Royal Ghana Zero Four , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Delta Golf Victor , Hotel Bravo Yankee Tango Mike ",
-        "prompt_fullts_5B": "Lufthansa Two Six Echo , Royal Ghana Zero Four , Hotel Bravo Zulu Victor Papa , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Yankee Tango Mike ",
-        "prompt_fullts_50B": "Hotel Bravo Zulu Alpha Papa , Masterjet Two Four Nine Lima , Hotel Bravo Yankee Tango Mike , Lufthansa Two Six Echo , Oscar Oscar Papa Charlie Juliett , Luxor Golf Two Two Sierra , Hotel Bravo Kilo Oscar Juliett , Royal Ghana Zero Four , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Two Four One Four , Hotel Bravo Two Zero Eight Seven , Fraction Seven Nine One Golf , Nav Checker Five One One , Mosquito One Five Bravo , Hotel Bravo Delta Golf Victor , Mosquito One Nine X-ray , Hotel Bravo Zulu Victor Papa , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Yankee Yankee Alpha "
+        "prompt_fullts_1G_4B": "lima mike juliett two four nine lima, Mosquito One Nine X-ray , Hotel Bravo Zulu Alpha Papa , Royal Ghana Zero Four , Hotel Bravo Delta Golf Victor ",
+        "prompt_fullts_5B": "Oscar Oscar Papa Charlie Juliett , Hotel Bravo Two Zero Eight Seven , Fraction Seven Nine One Golf , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Alpha Papa ",
+        "prompt_fullts_50B": "Luxor Golf Two Two Sierra , Foxtrot Papa Alpha Delta Uniform , Mosquito One Five Bravo , Hotel Bravo Zulu Alpha Papa , Nav Checker Five One One , Hotel Bravo Two Zero Eight Seven , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Yankee Tango Mike , Hotel Bravo Yankee Yankee Alpha , Mosquito One Nine X-ray , Hotel Bravo Delta Golf Victor , Lufthansa Two Six Echo , Oscar Oscar Papa Charlie Juliett , Fraction Seven Nine One Golf , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Two Four One Four , Royal Ghana Zero Four , Masterjet Two Four Nine Lima "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_164918.wav",
         "full_ts": "bonsoir j'appelle Oskar Bravo Echo Echo Whiskey",
-        "short_ts": "bonsoir j appelle OSKAR BRV ECS ECS W\n",
+        "short_ts": "bonsoir j appelle OSKAR BRV ECS ECS W",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "oskar bravo echo echo whiskey"
-            ],
-            "short_callsigns": [
-                "oskar BEEW"
-            ],
+            "long_callsigns": {
+                "oskar bravo echo echo whiskey": 1
+            },
+            "short_callsigns": {
+                "OSKARBEEW": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2663,23 +2615,22 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "oskar bravo echo echo whiskey, Hansa Two Six Echo , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Victor Papa , Foxtrot Papa Alpha Delta Uniform ",
-        "prompt_fullts_5B": "Oscar Oscar Papa Charlie Juliett , Hotel Bravo Zulu Whiskey Papa , Royal Ghana Zero Four , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Kilo Oscar Juliett ",
-        "prompt_fullts_50B": "Hotel Bravo Kilo Lima Echo , Hansa Two Six Echo , Harmony One Eight Five , Royal Ghana Zero Four , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Victor Papa , Oscar Oscar Papa Charlie Juliett , Fraction Seven Nine One Golf , Mosquito One Five Bravo "
+        "prompt_fullts_1G_4B": "oskar bravo echo echo whiskey, Mosquito One Five Bravo , Harmony One Eight Five , Hotel Bravo Zulu Victor Papa , Fraction Seven Nine One Golf ",
+        "prompt_fullts_5B": "Fraction Seven Nine One Golf , Hansa Two Six Echo , Foxtrot Papa Alpha Delta Uniform , Royal Ghana Zero Four , Harmony One Eight Five ",
+        "prompt_fullts_50B": "Hansa Two Six Echo , Foxtrot Papa Alpha Delta Uniform , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Whiskey Papa , Royal Ghana Zero Four , Harmony One Eight Five , Hotel Bravo Kilo Oscar Juliett , Mosquito One Five Bravo , Fraction Seven Nine One Golf "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_162800.wav",
         "full_ts": "Helicopter Charlie Papa vous pouvez quittez la frequence bon vol salut",
-        "short_ts": "HELICOPTER C P vous pouvez quittez la frequence bon vol salut\n",
+        "short_ts": "HELICOPTER C P vous pouvez quittez la frequence bon vol salut",
         "lang": "fr",
         "prompt-data": {
-            "long_callsigns": [
-                "helicopter charlie papa"
-            ],
-            "short_callsigns": [
-                "ATCO Ground"
-            ],
+            "long_callsigns": {
+                "helicopter charlie papa": 1
+            },
+            "short_callsigns": {
+                "HCPCP": 1
+            },
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2752,9 +2703,8 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "callsigns_pos_fullts": [],
-        "prompt_fullts_1G_4B": "helicopter charlie papa, Harmony One Eight Five , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Zulu Victor Papa ",
-        "prompt_fullts_5B": "Royal Ghana Zero Four , Lufthansa Two Six Echo , Hotel Bravo Kilo Lima Echo , Harmony One Eight Five , Hotel Bravo Zulu Whiskey Papa ",
-        "prompt_fullts_50B": "Lufthansa Two Six Echo , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Victor Papa , Masterjet Two Four Nine Lima , Harmony One Eight Five , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Lima Echo , Mosquito One Five Bravo , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Delta Golf Victor , Royal Ghana Zero Four , Fraction Seven Nine One Golf , Hotel Bravo Yankee Yankee Alpha , Oscar Oscar Papa Charlie Juliett "
+        "prompt_fullts_1G_4B": "helicopter charlie papa, Fraction Seven Nine One Golf , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Zulu Victor Papa , Royal Ghana Zero Four ",
+        "prompt_fullts_5B": "Fraction Seven Nine One Golf , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Delta Golf Victor , Harmony One Eight Five , Hotel Bravo Zulu Whiskey Papa ",
+        "prompt_fullts_50B": "Oscar Oscar Papa Charlie Juliett , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Delta Golf Victor , Mosquito One Five Bravo , Royal Ghana Zero Four , Lufthansa Two Six Echo , Fraction Seven Nine One Golf , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Victor Papa , Harmony One Eight Five , Masterjet Two Four Nine Lima , Foxtrot Papa Alpha Delta Uniform "
     }
 ]
