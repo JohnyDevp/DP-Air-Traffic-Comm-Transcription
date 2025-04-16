@@ -1,3 +1,51 @@
+WORKING ON FULLTS
+===
+### FULLTS VANILLA MEDIUM, experiments of 5 parameters
+- hotovo: learning rate, warmup, dropout 
+- aktualni stav: 
+### FULLTS ALLDS MEDIUM, experiments of 5 parameters
+- hotovo: learning rate, warmup
+- aktualni stav: dropout train
+1e-6
+### FULLTS VANILLA MEDIUM, experiments with MALORCA+ATCO
+- hotovo: 30 epoch ev+tr
+- aktualni stav: NO CONTINUE
+### FULLTS ALLDS MEDIUM, experiments with MALORCA+ATCO
+- hotovo: 30 epoch ev+tr
+- aktualni stav: NO CONTINUE
+
+WORKING ON SHORTTS
+===
+### SHORTTS VANILLA MEDIUM, finetune for 8 epochs of alldata
+- hotovo: train
+- aktualni stav: eval
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## NAZEV KAZDE SLOZKY
 
 je vzdy ve formě [startovací model]_[na jakem DS se trenovalo]_[pripadne vymezeni jazyka]\_[dodatek]
