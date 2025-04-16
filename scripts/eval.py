@@ -623,7 +623,6 @@ def result_printout(f_desc : TextIOWrapper, out_dict : dict[str, dict], evaluati
 def main(evaluation_setup : EvaluationSetup):
     if (evaluation_setup.metric == 'wer'):
         
-        
         # handle the output file
         if (evaluation_setup.overwrite):
             out_file= open(evaluation_setup.output_file, 'w')
@@ -643,7 +642,7 @@ def main(evaluation_setup : EvaluationSetup):
         out_file.write("\n\n")
         out_file.flush()
         
-        def get_current_models_in_checkpoint(checkpoints_dir) -> set[str]:
+        def get_current_models_in_checkpoint(checkpoints_dir, print_skipped=False) -> set[str]:
             all_models=[]
             for check_model in sorted(glob(checkpoints_dir+'/checkpoint-*'),key=lambda x: int(x.split('-')[-1])):
                 # check, whether the checkpoint hasn't been evaluated yet
@@ -651,8 +650,9 @@ def main(evaluation_setup : EvaluationSetup):
                 if (search_line in readed_file):
                     line_idx = max(i for i, line in enumerate(readed_file) if line == search_line)
                     if line_idx < len(readed_file) - 3 \
-                     and readed_file[line_idx + 2].startswith('DATASET:'):
-                        out_file.write(f'#### CHECKPOINT {check_model} ALREADY EVALUATED ####\n')
+                    and readed_file[line_idx + 2].startswith('DATASET:'):
+                        if (print_skipped):
+                            out_file.write(f'#### CHECKPOINT {check_model} ALREADY EVALUATED ####\n')
                         continue
                     
                 all_models.append(check_model)
@@ -670,7 +670,7 @@ def main(evaluation_setup : EvaluationSetup):
                     checkpoints_dir = evaluation_setup.models
                 # load all checkpoints to be evaluated, sorted 
                 evaluation_setup.models = sorted(
-                    get_current_models_in_checkpoint(checkpoints_dir),
+                    get_current_models_in_checkpoint(checkpoints_dir, print_skipped=True),
                     key=lambda x: int(x.split('-')[-1])
                 )
                 print(evaluation_setup.models)
