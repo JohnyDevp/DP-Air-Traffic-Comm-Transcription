@@ -266,9 +266,20 @@ def run_xmlfile_process(xml_data, info_file_path):
         # merge the dictionaries of found parts
         for tag, content in found_tags.items():
             if tag in out:
-                out[tag].extend(content)
+                if (isinstance(content,dict)):
+                    for callsign, count in content.items():
+                        if callsign in out[tag]:
+                            out[tag][callsign] += count
+                        else:
+                            out[tag][callsign] = count
+                else:
+                    out[tag].extend(content)
             else:
                 out[tag] = content
+    
+    # remove ending new lines
+    out['short_ts'] = out['short_ts'].strip()
+    
     return out
 
 def get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segments) -> tuple[str,int]:
@@ -285,15 +296,20 @@ def get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segmen
     
     # CALLSIGN TAG PROCESS
     # extract the speaker label
-    speaker_label = segment.find("speaker_label").text if not ('UNK'.lower() in segment.find("speaker_label").text.lower()) else None
+    speaker_label = segment.find("speaker_label").text if not (
+        'UNK'.lower() in segment.find("speaker_label").text.lower() or 
+        'radar'.lower() in segment.find("speaker_label").text.lower()
+    ) else None
     cal_out = get_callsigns_from_text(text, info_file_path)
-    out['long_callsigns'] = list(cal_out['long'].keys())
-    if (speaker_label):
-        out['short_callsigns'] = [speaker_label]
-    else: out['short_callsigns'] = list(cal_out['short'].keys())
+    out['long_callsigns'] = cal_out['long']
+    out['short_callsigns'] = cal_out['short']
+    # if (speaker_label):
+    #     out['short_callsigns'] = {speaker_label:1}
+    # else: out['short_callsigns'] = cal_out['short']
+    
     # save info about the position of the callsign in the text
     # we are indexing from 0,
-    out['callsigns_pos'] = []
+    # out['callsigns_pos'] = []
     # for positions in cal_out['pos']:
     #     out['callsigns_pos'].append([pos + count_of_all_previous_words_of_segments for pos in positions])
     
@@ -335,11 +351,11 @@ def get_callsigns_from_text(corrected_text_with_tags : str, info_file_path : str
         # shorten the callsign
         full_vocab = make_info_vocab(info_file_path)
         if (_key_normalizer(callsign) in full_vocab):
-            shorten_callsign = full_vocab[_key_normalizer(callsign)].upper()
+            shorten_callsign = full_vocab[_key_normalizer(callsign)].replace(' ','').upper()
             # out['short'].append(full_vocab[_key_normalizer(callsign)].upper())
         else:
             # it is not found in the dictionary, so we will process it in shortennign function
-            shorten_callsign = process_callsign_with_vocabs(callsign)
+            shorten_callsign = process_callsign_with_vocabs(callsign).replace(' ','').upper()
             
         if not shorten_callsign in out['short']:
             out['short'][shorten_callsign] = 1
@@ -442,8 +458,8 @@ if __name__ == '__main__':
                 
                 meta['short_ts'] = out['short_ts']
                 meta['prompt-data'] = {
-                    'long_callsigns': list(set(out['long_callsigns'])),
-                    'short_callsigns': list(set(out['short_callsigns'])),
+                    'long_callsigns': out['long_callsigns'],
+                    'short_callsigns': out['short_callsigns'],
                     'waypoints': meta['prompt']['waypoints'],
                     'nearby_short_callsigns': meta['prompt']['short_callsigns'],
                     'nearby_long_callsigns': meta['prompt']['long_callsigns'],
@@ -453,14 +469,11 @@ if __name__ == '__main__':
                     'long_taxiway': []
                 }
                 len_waypoints = len(meta['prompt-data']['waypoints'])
-                len_long_callsign = len(meta['prompt-data']['long_callsigns'])
-                
-                # add the positions of callsigns in the text
-                meta['callsigns_pos_fullts'] = out['callsigns_pos']
+                len_long_callsign = len(meta['prompt-data']['long_callsigns'].keys())
                 
                 # build some prompts, that can be used during training
                 # this prompt is using 1 correct callsign and 4 incorrect callsigns
-                meta['prompt_fullts_1G_4B'] = ', '.join(meta['prompt-data']['long_callsigns']) + ', ' + \
+                meta['prompt_fullts_1G_4B'] = ', '.join(meta['prompt-data']['long_callsigns'].keys()) + ', ' + \
                     ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],4))
                 # this prompt uses 5 incorrect callsigns
                 meta['prompt_fullts_5B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],5))
