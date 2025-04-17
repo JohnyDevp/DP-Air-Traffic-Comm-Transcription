@@ -503,6 +503,7 @@ def parse_args():
     parser.add_argument("--gradient_accumulation_steps", type=int, default=4)
     parser.add_argument("--learning_rate", type=float, default=1e-5)
     parser.add_argument("--warmup_ratio", type=float, default=0.12)
+    parser.add_argument("--weight_decay", type=float, default=0.0)
     parser.add_argument("--gradient_checkpointing", action='store_true')
     parser.add_argument("--fp16", action='store_true')
     parser.add_argument("--save_strategy", type=str, default="epoch")
@@ -537,6 +538,7 @@ def build_config(args):
             "gradient_accumulation_steps": args.gradient_accumulation_steps,
             "learning_rate": args.learning_rate,
             "warmup_ratio": args.warmup_ratio,
+            "weight_decay": args.weight_decay,
             "gradient_checkpointing": args.gradient_checkpointing,
             "fp16": args.fp16,
             "save_strategy": args.save_strategy,
