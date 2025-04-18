@@ -6,7 +6,6 @@ WORKING ON FULLTS
 ### FULLTS ALLDS MEDIUM, experiments of 5 parameters
 - hotovo: learning rate, warmup
 - aktualni stav: dropout train
-1e-6
 ### FULLTS VANILLA MEDIUM, experiments with MALORCA+ATCO
 - hotovo: 30 epoch ev+tr
 - aktualni stav: NO CONTINUE
