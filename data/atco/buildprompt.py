@@ -230,6 +230,12 @@ def shorten_callsign(match):
             return process_tag_content(callsign, 'alphanum').replace(' ','').upper()
 
 def make_shortts(text):
+    # first merge all possible tags
+    pattern = r'\[\/#(\w+)\]\s*\[#\1\]'
+    text = re.sub(pattern, ' ', text)
+    # remove multiple spaces
+    text = re.sub(r'\s+', ' ',text).strip()
+    
     # go through all callsigns and try to find the match
     pattern= r'\[#callsign\](.*?)\[/#callsign\]'
     # find all callsigns
