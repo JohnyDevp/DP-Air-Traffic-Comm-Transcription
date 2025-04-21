@@ -1,4 +1,5 @@
 from io import TextIOWrapper
+from operator import call
 import torch
 from torch.utils.data import DataLoader
 from jiwer import wer, cer
@@ -107,7 +108,7 @@ class PrepareDatasetAsInput:
         prompt_ids = tokenizer.get_prompt_ids(batch[self.prompt_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
 
         batch["labels"] = prompt_ids + tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
-
+        batch['prompt_ids'] = prompt_ids # add the prompt ids to the batch
         return batch
 
     def prepare_dataset_self_prompt(self,batch):
@@ -263,6 +264,8 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         # FOR USE ONLY IF WANT DATA AUGMENTATION
         batch['attention_mask'] = torch.tensor([mask['attention_mask'] for mask in features])
         
+        # add the prompt ids to the batch
+        batch['prompt_ids'] = torch.tensor([feature['prompt_ids'] for feature in features])
         return batch
 
 @dataclass
@@ -294,56 +297,53 @@ from rapidfuzz import process
 import re
 class EvalCallsigns:
     wer_metric : ComputeMetrics
-    
     def __init__(self, metric : ComputeMetrics):
         self.wer_metric = metric
     
-    def __call__(self, transcription : str, callsigns : dict[str,int]):
+    def __call__(self, transcriptions : list[str], callsigns : dict[str,int]) -> tuple[float, int, float, int]:
+        """
+        Args:
+            transcription (str): The transcription of the audio.
+            callsigns (dict[str,int]): A dictionary of callsigns and their number of occurences in the transcription.
+        Returns:
+            tuple[float, int, float, int]: A tuple containing the average WER, completely correct callsigns, total WER, and the number of callsigns.
+        """
         if (isinstance(callsigns,str)):
+            callsigns = [{callsigns:1}]
+        elif (isinstance(callsigns,dict)):
             callsigns = [callsigns]
-
-        for callsign,num_of_occurences in callsigns.items():
-            wer = self.find_lowest_wer(callsign, num_of_occurences, transcription)
+            
+        if (isinstance(transcriptions,str)):
+            transcriptions = [transcriptions]
+            
+        total_wer = 0.0
+        count_wer = 0
+        completely_right = 0
+        for transcription, callsigns in zip(transcriptions,callsigns):
+            for callsign,num_of_occurences in callsigns.items():
+                wer = self.find_lowest_wer(callsign, num_of_occurences, transcription)
+                total_wer += sum(wer)
+                count_wer += len(wer)
+                completely_right += np.sum(np.where(np.array(wer) == 0,1,0))
+                print({callsign:wer})
+        
+        return total_wer/count_wer, completely_right, total_wer, count_wer
     
-    def find_lowest_wer(self, callsign : str, num_of_occurences : int, transcription : str) -> tuple[int,float]:
+    def find_lowest_wer(self, callsign : str, num_of_occurences : int, transcription : str) -> list[float]:
         callsign_norm = re.sub(r'\s+',' ',callsign.strip().lower()).split(' ')
         transcription_norm = re.sub(r'\s+',' ',transcription.strip().lower()).split(' ')
         # arange a list where wer will be stored
-        wer_list = np.zeros(len(transcription) - len(callsign_norm) + 1)
+        wer_list = np.zeros(len(transcription_norm) - len(callsign_norm) + 1)
         # move a window with callsign through the transcription, compute wer and store
-        for idx in range(0,len(transcription) - len(callsign_norm) + 1):
+        for idx in range(0,len(transcription_norm) - len(callsign_norm) + 1):
             # check if the callsign is in the transcription
             cal_wer = self.wer_metric.compute_metrics_from_text(
-                callsign_norm, transcription_norm[idx:idx+len(callsign_norm)]
+                [' '.join(callsign_norm)], [' '.join(transcription_norm[idx:idx+len(callsign_norm)])]
             )
             wer_list[idx] = cal_wer
-        
+
         # return as many lowest wer as num_of_occurences
-        return sorted(wer_list)[0:num_of_occurences]
-        
-    def __obtain_callsign_from_transcription(self, callsigns, callsigns_pos, transcription : str) -> tuple[int,float]:
-        ts_cor = re.sub(transcription.strip().lower(),r'\s+')
-        ts_arr = ts_cor.split(' ')
-        
-        totally_correct_callsigns = 0
-        wer_callsigns = .0
-        for callsign in callsigns:
-            # count all totally correct callsigns
-            totally_correct_callsigns += ts_cor.count(callsign.strip().lower())
-            
-            callsign_arr = callsign.strip().lower().split(' ')    
-            
-            # check if the callsign is in the transcription
-            for cal in callsign_arr:
-                process.extractOne(cal, ts_arr, scorer=80)
-        
-        return totally_correct_callsigns, wer_callsigns
-    
-    def __search_for_callsign(self, callsign):
-        # search for the callsign in the dataset
-        # if found, return True
-        # if not found, return False
-        pass
+        return sorted(wer_list)[0:min(num_of_occurences,len(wer_list))]
 
 def cuda_clean(model=None):
   if model:
@@ -426,7 +426,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
     else:
         return concatenate_datasets([allds_test[key] for key in allds_test])
 
-def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch_size=3, use_prompt=False, compute_callsign_wer=False, compute_runway_wer=False) -> dict[str,dict]:
+def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProcessor, metric : ComputeMetrics, batch_size=3, use_prompt=False, compute_callsign_wer=False, compute_runway_wer=False, callsign_name=None, ignore_case=False) -> dict[str,dict]:
     # define collator
     if (not use_prompt):
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
@@ -444,11 +444,17 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
         print(f"SINGLE DATASET, NO PROMPT, batch size {batch_size}")
         # setup the dataloader
         dataloader = DataLoader(test_ds, batch_size=batch_size, collate_fn=data_collator)
-
+        
+        # setup the callsign wer evaluator
+        ev_cal = EvalCallsigns(metric)
+        
         # Iterate over batches
         all_preds = []
         all_lables = []
         all_loss = []
+        total_callsigns_wer = 0.0
+        total_callsigns_count = 0
+        totaly_callsigns_correct = 0
         for batch in tqdm(dataloader):
             input_features = batch["input_features"].cuda()
 
@@ -460,24 +466,49 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
             input_features.detach().cpu()
             preds = preds.detach().cpu()
 
-            if (compute_callsign_wer):
-                # compute the wer for callsigns
-                callsigns = batch['long_callsigns']
-                ev_cal = EvalCallsigns(metric)
-                ev_cal(preds, callsigns)
+            # extract string of predictions and labels
+            preds_str = processor.batch_decode(preds, skip_special_tokens=True)
+            labels_str = processor.batch_decode(batch["labels"], skip_special_tokens=True)
             
+            # change case if we should ignore it when computing wer
+            if (ignore_case):
+                preds_str = [x.lower() for x in preds_str]
+                labels_str = [x.lower() for x in labels_str]
+                
+            # compute the wer for callsigns
+            if (compute_callsign_wer):
+                # if we should ignore case, than compute wer agains lower case callsigns
+                if (ignore_case):
+                    callsigns = []
+                    for b in batch[callsign_name]:
+                        callsigns.append({k.lower():v for k,v in b.items()})
+                else:
+                    callsigns = batch[callsign_name]
+                    
+                _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
+                total_callsigns_wer += total_wer
+                total_callsigns_count += count_wer
+                totaly_callsigns_correct += completely_correct
+                
             all_loss.extend(outputs.loss.detach().cpu().repeat(len(batch)))
-            all_preds.extend(processor.batch_decode(preds, skip_special_tokens=True))
-            all_lables.extend(processor.batch_decode(batch["labels"], skip_special_tokens=True))
+            all_preds.extend(preds_str)
+            all_lables.extend(labels_str)
 
 
         # compute the wer
+        # NOTE: the predictions and labels may be in lower case, if set ignore_case=True
+        # so the WER may change according to this setup
         wer=metric.compute_metrics_from_text(all_preds, all_lables)
         loss=torch.mean(torch.tensor(all_loss,dtype=float))
-
-        print(f"allds > wer: {wer} loss: {loss}") # PRINTOUT
-
-        return {'allds':{'wer':wer,'loss':loss}}
+        
+        if (compute_callsign_wer):
+            # compute the average wer for callsigns
+            avg_callsign_wer = total_callsigns_wer / total_callsigns_count
+            print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+            return {'allds':{'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}}
+        else:
+            print(f"allds > wer: {wer} loss: {loss}") # PRINTOUT
+            return {'allds':{'wer':wer,'loss':loss}}
 
     elif (isinstance(test_ds, dict) and not use_prompt):
         print(f"MULTIPLE DATASETS, NO PROMPT, batch size {batch_size}")
@@ -490,6 +521,9 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
             all_preds = []
             all_lables = []
             all_loss = []
+            total_callsigns_wer = 0.0
+            total_callsigns_count = 0
+            totaly_callsigns_correct = 0
             for batch in tqdm(dataloader):
                 input_features = batch["input_features"].cuda()
                 labels=batch["labels"].cuda()
@@ -503,16 +537,47 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
                 labels.detach().cpu()
                 preds = preds.detach().cpu()
 
+                # extract string of predictions and labels
+                preds_str = processor.batch_decode(preds, skip_special_tokens=True)
+                labels_str = processor.batch_decode(batch["labels"], skip_special_tokens=True)
+                
+                # change case if we should ignore it when computing wer
+                if (ignore_case):
+                    preds_str = [x.lower() for x in preds_str]
+                    labels_str = [x.lower() for x in labels_str]
+                    
+                # compute the wer for callsigns
+                if (compute_callsign_wer):
+                    # if we should ignore case, than compute wer agains lower case callsigns
+                    if (ignore_case):
+                        callsigns = []
+                        for b in batch[callsign_name]:
+                            callsigns.append({k.lower():v for k,v in b.items()})
+                    else:
+                        callsigns = batch[callsign_name]
+                        
+                    _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
+                    total_callsigns_wer += total_wer
+                    total_callsigns_count += count_wer
+                    totaly_callsigns_correct += completely_correct
+                
                 all_loss.extend(outputs.loss.detach().cpu().repeat(len(batch)))
-                all_preds.extend(processor.batch_decode(preds, skip_special_tokens=True))
-                all_lables.extend(processor.batch_decode(batch["labels"], skip_special_tokens=True))
+                all_preds.extend(preds_str)
+                all_lables.extend(labels_str)
 
 
             # compute the wer
             wer=metric.compute_metrics_from_text(all_preds, all_lables)
             loss=torch.mean(torch.tensor(all_loss,dtype=float))
-            print(f"{ds_name} > wer: {wer} loss: {loss}") # PRINTOUT
-            out[ds_name] = {'wer':wer,'loss':loss}
+            
+            if (compute_callsign_wer):
+                # compute the average wer for callsigns
+                avg_callsign_wer = total_callsigns_wer / total_callsigns_count
+                print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+                out[ds_name] = {'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}
+            else:
+                print(f"{ds_name} > wer: {wer} loss: {loss}") # PRINTOUT
+                out[ds_name] = {'wer':wer,'loss':loss}
 
         return out
 
@@ -528,6 +593,9 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
         all_preds = []
         all_lables = []
         all_loss = []
+        total_callsigns_wer = 0.0
+        total_callsigns_count = 0
+        totaly_callsigns_correct = 0
         for batch in tqdm(dataloader):
 
             # pass everything to CUDA
@@ -542,17 +610,38 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
                 if (idx >= len(batch['input_features'])): break
 
                 input_features = batch["input_features"][idx].unsqueeze(0)
-                prompt_ids = torch.tensor(batch["prompt_ids"][idx]['prompt_ids']).cuda()
+                prompt_ids = torch.tensor(batch["prompt_ids"][idx]).cuda()
 
                 preds = model.generate(input_features, prompt_ids=prompt_ids)
                 # detach the predictions from the gpu
                 preds = preds.detach().gpu()
-
-                # extend all the predictions and labels for later wer computation
-                all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])
-                all_lables.extend([processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)])
                 
+                # extract string of predictions and labels
+                preds_str = processor.tokenizer.decode(preds[0], skip_special_tokens=True)
+                labels_str = processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)
+                
+                # change case if we should ignore it when computing wer
+                if (ignore_case):
+                    preds_str = preds_str.lower()
+                    labels_str = labels_str.lower()
+                    
                 # compute the wer for callsigns
+                if (compute_callsign_wer):
+                    # if we should ignore case, than compute wer agains lower case callsigns
+                    if (ignore_case):
+                        callsigns={k.lower():v for k,v in batch[callsign_name][idx].items()}
+                    else:
+                        callsigns = batch[callsign_name][idx]
+                        
+                    _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
+                    total_callsigns_wer += total_wer
+                    total_callsigns_count += count_wer
+                    totaly_callsigns_correct += completely_correct
+                
+                # extend all the predictions and labels for later wer computation
+                all_preds.extend([preds_str])
+                all_lables.extend([labels_str])
+                
 
             # compute the loss
             with torch.no_grad():
@@ -564,8 +653,15 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
         # compute the wer
         wer=metric.compute_metrics_from_text(all_preds, all_lables)
         loss = torch.mean(torch.tensor(all_loss),dtype=float)
-        print(f"allds > wer: {wer} loss: {loss}") # PRINTOUT
-        return {'allds':{'wer':wer, 'loss':loss}}
+        
+        if (compute_callsign_wer):
+            # compute the average wer for callsigns
+            avg_callsign_wer = total_callsigns_wer / total_callsigns_count
+            print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+            return {'allds':{'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}}
+        else:
+            print(f"allds > wer: {wer} loss: {loss}") # PRINTOUT
+            return {'allds':{'wer':wer,'loss':loss}}
 
     elif (isinstance(test_ds, dict) and use_prompt):
         print(f"MULTIPLE DATASETS, USE PROMPT, batch size {batch_size}")
@@ -580,6 +676,9 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
             all_preds = []
             all_lables = []
             all_loss = []
+            total_callsigns_wer = 0.0
+            total_callsigns_count = 0
+            totaly_callsigns_correct = 0
             for batch in tqdm(dataloader):
 
                 # pass everything to CUDA
@@ -598,9 +697,31 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
                     preds = model.generate(input_features, prompt_ids=prompt_ids)
                     preds = preds.detach().cpu()
 
-                    # compute loss together for all batch
-                    all_preds.extend([processor.tokenizer.decode(preds[0], skip_special_tokens=True)])
-                    all_lables.extend([processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)])
+                    # extract string of predictions and labels
+                    preds_str = processor.tokenizer.decode(preds[0], skip_special_tokens=True)
+                    labels_str = processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)
+                    
+                    # change case if we should ignore it when computing wer
+                    if (ignore_case):
+                        preds_str = preds_str.lower()
+                        labels_str = labels_str.lower()
+                        
+                    # compute the wer for callsigns
+                    if (compute_callsign_wer):
+                        # if we should ignore case, than compute wer agains lower case callsigns
+                        if (ignore_case):
+                            callsigns={k.lower():v for k,v in batch[callsign_name][idx].items()}
+                        else:
+                            callsigns = batch[callsign_name][idx]
+                            
+                        _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
+                        total_callsigns_wer += total_wer
+                        total_callsigns_count += count_wer
+                        totaly_callsigns_correct += completely_correct
+                    
+                    # extend all the predictions and labels for later wer computation
+                    all_preds.extend([preds_str])
+                    all_lables.extend([labels_str])
 
                 # compute the loss
                 with torch.no_grad():
@@ -612,8 +733,15 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor, metric, batch
             # compute the wer and loss for current dataset
             wer=metric.compute_metrics_from_text(all_preds, all_lables)
             loss = torch.mean(torch.tensor(all_loss),dtype=float)
-            print(f"{ds_name} > wer: {wer} loss: {loss}") # PRINTOUT
-            out[ds_name] = {'wer':wer, 'loss':loss}
+            
+            if (compute_callsign_wer):
+                # compute the average wer for callsigns
+                avg_callsign_wer = total_callsigns_wer / total_callsigns_count
+                print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+                out[ds_name] = {'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}
+            else:
+                print(f"{ds_name} > wer: {wer} loss: {loss}") # PRINTOUT
+                out[ds_name] = {'wer':wer,'loss':loss}
 
         return out
     else:
@@ -749,7 +877,15 @@ def main(evaluation_setup : EvaluationSetup):
                     metric = ComputeMetrics(processor.tokenizer)
 
                 # compute the wer and loss
-                out_dict = compute(built_ds, model, processor, metric, batch_size=evaluation_setup.batch_size, use_prompt=evaluation_setup.use_prompt)
+                out_dict = compute(
+                    built_ds, 
+                    model, 
+                    processor, 
+                    metric, 
+                    batch_size=evaluation_setup.batch_size, 
+                    use_prompt=evaluation_setup.use_prompt,
+                    compute_callsign_wer=True
+                )
 
                 # print results to the file
                 result_printout(out_file,out_dict,evaluation_setup)

@@ -340,7 +340,7 @@ def get_callsigns_from_text(corrected_text_with_tags : str, info_file_path : str
     for it in re.findall(pattern, corrected_text_with_tags):
         
         # append the found callsign to the dictionary, remove multiple spaces and normalize the string (hex characters)
-        callsign = re.sub(r'\s+', ' ', normalize('NFC',it)).lower().strip()
+        callsign = re.sub(r'\s+', ' ', normalize('NFC',it)).strip()
         
         if not callsign in out['long']:
             out['long'][callsign]  = 1

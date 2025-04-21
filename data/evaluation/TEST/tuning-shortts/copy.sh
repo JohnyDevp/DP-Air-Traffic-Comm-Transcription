@@ -5,14 +5,14 @@ NUMBER_OF_EXPERIMENTS=3
 
 # SHORTTS
 # ALLDS
-DIR=models/planned-allds-shortts/warmup       # CHANGE THIS LINE
-EXPER_NAME_DIRS=wr                              # CHANGE THIS LINE
-DST=./allds/warmup                           # CHANGE THIS LINE
+# DIR=models/planned-allds-shortts/epochs       # CHANGE THIS LINE
+# EXPER_NAME_DIRS=ep                              # CHANGE THIS LINE
+# DST=./allds/epochs                           # CHANGE THIS LINE
 # ======================================================
 # VANMED
-# DIR=models/planned-vanmed-shortts/learning_rate        # CHANGE THIS LINE
-# EXPER_NAME_DIRS=lr                                # CHANGE THIS LINE
-# DST=./vanmed/learning_rate                           # CHANGE THIS LINE
+DIR=models/planned-vanmed-shortts/learning_rate        # CHANGE THIS LINE
+EXPER_NAME_DIRS=lr                                # CHANGE THIS LINE
+DST=./vanmed/learning_rate                           # CHANGE THIS LINE
 
 for i in $(seq 1 $NUMBER_OF_EXPERIMENTS); do
     scp $SERVER:$ROOT/$DIR/$EXPER_NAME_DIRS${i}/eval.txt $DST/$EXPER_NAME_DIRS${i}_eval.txt

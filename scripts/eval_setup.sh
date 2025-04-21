@@ -7,6 +7,7 @@ python eval.py \
   --same_processor \
   --output_file ./test-attentionmask/NEWFILE.txt \
   --batch_size 4 \
+  --use_prompt \
   --eval_description "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting" \
   --transcription_name_in_ds full_ts \
   --prompt_name_in_ds prompt_fullts_1G_4B
