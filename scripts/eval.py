@@ -1,9 +1,8 @@
 from enum import nonmember
 from io import TextIOWrapper
-from operator import call
+import re
 import torch
 from torch.utils.data import DataLoader
-from jiwer import wer, cer
 import os, json, argparse, time
 from datasets import load_from_disk, concatenate_datasets, Dataset
 from typing import Any, Dict, List, Union
@@ -13,6 +12,7 @@ import evaluate
 from tqdm import tqdm
 from glob import glob
 import numpy as np
+
 
 class PrepareDatasetAsInput:
 
@@ -153,7 +153,8 @@ class PrepareDatasetAsInput:
         prompt_ids = self.tokenizer_en.get_prompt_ids(batch[self.transcription_name]).tolist() # YOU NEED TO ADD TOLIST() because array cant be combined with list in the next lines
 
         batch['labels'] = prompt_ids + tokenizer(batch[self.transcription_name]).input_ids # building labels ids with prompt and tokens together
-
+        batch['prompt_ids'] = prompt_ids # add the prompt ids to the batch
+        
         return batch
   
 class ComputeMetrics:
@@ -269,8 +270,12 @@ class DataCollatorSpeechSeq2SeqWithPaddingWITHPROMPT:
         # FOR USE ONLY IF WANT DATA AUGMENTATION
         batch['attention_mask'] = torch.tensor([mask['attention_mask'] for mask in features])
         
+        # extract callsigns
+        batch['long_callsigns'] = [feature['long_callsigns'] for feature in features]
+        batch['short_callsigns'] = [feature['short_callsigns'] for feature in features]
+        
         # add the prompt ids to the batch
-        batch['prompt_ids'] = torch.tensor([feature['prompt_ids'] for feature in features])
+        batch['prompt_ids'] = [{'prompt_ids':feature['prompt_ids']} for feature in features]
         return batch
 
 @dataclass
@@ -299,9 +304,6 @@ class EvaluationSetup:
     use_prompt : bool = False
     self_prompt : bool = False
 
-
-from rapidfuzz import process
-import re
 class EvalCallsigns:
     wer_metric : ComputeMetrics
     def __init__(self, metric : ComputeMetrics):
@@ -452,6 +454,9 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             decoder_start_token_id=model.config.decoder_start_token_id
         )
 
+    # setup the callsign wer evaluator
+    ev_cal = EvalCallsigns(metric)
+        
     if (callsigns_name_in_ds is None and compute_callsign_wer):
         raise ValueError("Please set the callsigns name in the dataset using 'callsigns_name_in_ds' parameter.")
     
@@ -460,10 +465,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
         print(f"SINGLE DATASET, NO PROMPT, batch size {batch_size}")
         # setup the dataloader
         dataloader = DataLoader(test_ds, batch_size=batch_size, collate_fn=data_collator)
-        
-        # setup the callsign wer evaluator
-        ev_cal = EvalCallsigns(metric)
-        
+                
         # Iterate over batches
         all_preds = []
         all_lables = []
@@ -521,7 +523,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
         if (compute_callsign_wer):
             # compute the average wer for callsigns
             avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
-            print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+            print(f"allds > wer: {wer} loss: {loss} | callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
             return {'allds':{'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}}
         else:
             print(f"allds > wer: {wer} loss: {loss}") # PRINTOUT
@@ -592,7 +594,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             if (compute_callsign_wer):
                 # compute the average wer for callsigns
                 avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
-                print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+                print(f"{ds_name} > wer: {wer} loss: {loss} | callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
                 out[ds_name] = {'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}
             else:
                 print(f"{ds_name} > wer: {wer} loss: {loss}") # PRINTOUT
@@ -616,24 +618,18 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
         total_callsigns_count = 0
         totaly_callsigns_correct = 0
         for batch in tqdm(dataloader):
-
-            # pass everything to CUDA
-            for key in batch:
-                if (key == 'prompt_ids'): continue
-                batch[key] = batch[key].cuda()
-
             # loop through the batch and compute the predicitons
             # it is necessary because model.generate() cannot handle multiple input features with multiple prompt
             for idx in range(batch_size):
                 # check whether the index doesnt go above the number of items in current batch
                 if (idx >= len(batch['input_features'])): break
 
-                input_features = batch["input_features"][idx].unsqueeze(0)
-                prompt_ids = torch.tensor(batch["prompt_ids"][idx]).cuda()
+                input_features = batch["input_features"][idx].unsqueeze(0).cuda()
+                prompt_ids = torch.tensor(batch['prompt_ids'][idx]['prompt_ids']).cuda()
 
                 preds = model.generate(input_features, prompt_ids=prompt_ids)
                 # detach the predictions from the gpu
-                preds = preds.detach().gpu()
+                preds = preds.detach().cpu()
                 
                 # extract string of predictions and labels
                 preds_str = processor.tokenizer.decode(preds[0], skip_special_tokens=True)
@@ -665,7 +661,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
 
             # compute the loss
             with torch.no_grad():
-                outputs = model(input_features = batch['input_features'], labels=batch['labels'], decoder_input_ids=batch['decoder_input_ids'])
+                outputs = model(input_features = batch['input_features'].cuda(), labels=batch['labels'].cuda(), decoder_input_ids=batch['decoder_input_ids'].cuda())
 
             # append the loss result to the whole result obtained so far
             all_loss.extend(outputs.loss.detach().cpu().repeat(len(batch)))
@@ -677,7 +673,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
         if (compute_callsign_wer):
             # compute the average wer for callsigns
             avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
-            print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+            print(f"allds > wer: {wer} loss: {loss} | callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
             return {'allds':{'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}}
         else:
             print(f"allds > wer: {wer} loss: {loss}") # PRINTOUT
@@ -701,19 +697,14 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             totaly_callsigns_correct = 0
             for batch in tqdm(dataloader):
 
-                # pass everything to CUDA
-                for key in batch:
-                    if (key == 'prompt_ids'): continue
-                    batch[key] = batch[key].cuda()
-
                 # loop through the batch and compute the predicitons
                 # it is necessary because model.generate() cannot handle multiple input features with multiple prompt
                 for idx in range(batch_size):
                     # check whether the index doesnt go above the number of items in current batch
                     if (idx >= len(batch['input_features'])): break
 
-                    input_features = batch["input_features"][idx].unsqueeze(0)
-                    prompt_ids = torch.tensor(batch["prompt_ids"][idx]['prompt_ids']).cuda()
+                    input_features = batch["input_features"][idx].unsqueeze(0).cuda()
+                    prompt_ids = torch.tensor(batch["prompt_ids"][idx]["prompt_ids"]).cuda()
                     preds = model.generate(input_features, prompt_ids=prompt_ids)
                     preds = preds.detach().cpu()
 
@@ -746,7 +737,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
 
                 # compute the loss
                 with torch.no_grad():
-                    outputs = model(input_features = batch['input_features'], labels=batch['labels'], decoder_input_ids=batch['decoder_input_ids'])
+                    outputs = model(input_features = batch['input_features'].cuda(), labels=batch['labels'].cuda(), decoder_input_ids=batch['decoder_input_ids'].cuda())
                 
                 # append the loss result to the whole result obtained so far
                 all_loss.extend(outputs.loss.detach().cpu().repeat(len(batch)))
@@ -758,7 +749,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             if (compute_callsign_wer):
                 # compute the average wer for callsigns
                 avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
-                print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+                print(f"{ds_name} > wer: {wer} loss: {loss} | callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
                 out[ds_name] = {'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}
             else:
                 print(f"{ds_name} > wer: {wer} loss: {loss}") # PRINTOUT
@@ -789,7 +780,11 @@ def setup_model_processor(model_path) -> tuple[WhisperForConditionalGeneration, 
 
 def result_printout(f_desc : TextIOWrapper, out_dict : dict[str, dict], evaluation_setup : EvaluationSetup, callsigns_wer=False):
     for k,v in out_dict.items():
-        print(f"DATASET: {k} | WER: {v['wer']} LOSS: {v['loss']}") # PRINTOUT
+        base = f"DATASET: {k} | WER: {v['wer']} LOSS: {v['loss']}"
+        if (callsigns_wer):
+            cal_wer= f"CALLSIGN WER: {v['callsign_wer']} CALLSIGN COUNT: {v['callsign_count']} CALLSIGN COMPLETELY CORRECT: {v['callsign_completely_correct']}"
+            base += f" {cal_wer}"
+        print(f"{base}") # PRINTOUT
 
     # write the output
     f_desc.write("******** Evaluation results ********\n")

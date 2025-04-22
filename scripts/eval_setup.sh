@@ -7,6 +7,9 @@ python eval.py \
   --output_file ./tiny-cal-ev/NEWFILE3.txt \
   --batch_size 4 \
   --eval_description "" \
-  --eval_callsigns \
   --callsigns_name_in_ds long_callsigns \
   --transcription_name_in_ds full_ts \
+  --prompt_name_in_ds prompt_fullts_1G_4B \
+  --separate_ds \
+  # --eval_callsigns \
+  # --use_prompt 
