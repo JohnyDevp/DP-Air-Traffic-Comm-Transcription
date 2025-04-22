@@ -2,12 +2,11 @@ python eval.py \
   --metric wer \
   --datasets atco_en_ruzyne \
   --datasets_basedir ./data/ \
-  --models ./test-attentionmask \
-  --checkpoints_eval \
+  --models openai/whisper-tiny \
   --same_processor \
-  --output_file ./test-attentionmask/NEWFILE.txt \
+  --output_file ./tiny-cal-ev/NEWFILE3.txt \
   --batch_size 4 \
-  --use_prompt \
-  --eval_description "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting" \
+  --eval_description "" \
+  --eval_callsigns \
+  --callsigns_name_in_ds long_callsigns \
   --transcription_name_in_ds full_ts \
-  --prompt_name_in_ds prompt_fullts_1G_4B

@@ -1,3 +1,4 @@
+from enum import nonmember
 from io import TextIOWrapper
 from operator import call
 import torch
@@ -50,8 +51,8 @@ class PrepareDatasetAsInput:
 
         # STORE THE CALLSIGNS FOR EVALUATION
         if ("prompt-data" in batch):
-            batch['long_callsigns'] = batch['prompt-data']['long_callsigns']
-            batch['short_callsigns'] = batch['prompt-data']['short_callsigns']
+            batch['long_callsigns'] =  batch['prompt-data']['long_callsigns']
+            batch['short_callsigns'] =  batch['prompt-data']['short_callsigns']
         else :
             batch['long_callsigns'] = {}
             batch['short_callsigns'] = {}
@@ -208,6 +209,10 @@ class DataCollatorSpeechSeq2SeqWithPaddingWOPrompt:
 
         batch["labels"] = labels
 
+        # extract callsigns
+        batch['long_callsigns'] = [feature['long_callsigns'] for feature in features]
+        batch['short_callsigns'] = [feature['short_callsigns'] for feature in features]
+        
         # FOR USE ONLY IF WANT DATA AUGMENTATION
         batch['attention_mask'] = torch.tensor([mask['attention_mask'] for mask in features])
 
@@ -289,6 +294,8 @@ class EvaluationSetup:
     eval_description : str = ""
     overwrite : bool = False
     separate_ds : bool = False
+    eval_callsigns : bool = False
+    callsigns_name_in_ds : str = None
     use_prompt : bool = False
     self_prompt : bool = False
 
@@ -300,7 +307,7 @@ class EvalCallsigns:
     def __init__(self, metric : ComputeMetrics):
         self.wer_metric = metric
     
-    def __call__(self, transcriptions : list[str], callsigns : dict[str,int]) -> tuple[float, int, float, int]:
+    def __call__(self, transcriptions : list[str], callsigns : list[dict[str,int]]) -> tuple[float, int, float, int]:
         """
         Args:
             transcription (str): The transcription of the audio.
@@ -323,27 +330,33 @@ class EvalCallsigns:
             for callsign,num_of_occurences in callsigns.items():
                 wer = self.find_lowest_wer(callsign, num_of_occurences, transcription)
                 total_wer += sum(wer)
-                count_wer += len(wer)
+                count_wer += num_of_occurences
                 completely_right += np.sum(np.where(np.array(wer) == 0,1,0))
-                print({callsign:wer})
         
-        return total_wer/count_wer, completely_right, total_wer, count_wer
+        return total_wer/max(count_wer,1), completely_right, total_wer, count_wer
     
     def find_lowest_wer(self, callsign : str, num_of_occurences : int, transcription : str) -> list[float]:
         callsign_norm = re.sub(r'\s+',' ',callsign.strip().lower()).split(' ')
         transcription_norm = re.sub(r'\s+',' ',transcription.strip().lower()).split(' ')
         # arange a list where wer will be stored
-        wer_list = np.zeros(len(transcription_norm) - len(callsign_norm) + 1)
+        wer_list = np.zeros(max((len(transcription_norm) - len(callsign_norm) + 1),1))
         # move a window with callsign through the transcription, compute wer and store
-        for idx in range(0,len(transcription_norm) - len(callsign_norm) + 1):
+        for idx in range(0,max((len(transcription_norm) - len(callsign_norm) + 1),1)):
             # check if the callsign is in the transcription
             cal_wer = self.wer_metric.compute_metrics_from_text(
                 [' '.join(callsign_norm)], [' '.join(transcription_norm[idx:idx+len(callsign_norm)])]
             )
             wer_list[idx] = cal_wer
-
+        
         # return as many lowest wer as num_of_occurences
-        return sorted(wer_list)[0:min(num_of_occurences,len(wer_list))]
+        # if we have short transcription, so we cannot obtain as many WER as num_of_occurences
+        # fill the WER with 100 as the greatest possible WER
+        return np.pad(
+            sorted(wer_list)[0:min(num_of_occurences,len(wer_list))],
+            (0,max(0,num_of_occurences-len(wer_list))),
+            'constant',
+            constant_values=(100,100)
+        )
 
 def cuda_clean(model=None):
   if model:
@@ -426,7 +439,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
     else:
         return concatenate_datasets([allds_test[key] for key in allds_test])
 
-def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProcessor, metric : ComputeMetrics, batch_size=3, use_prompt=False, compute_callsign_wer=False, compute_runway_wer=False, callsign_name=None, ignore_case=False) -> dict[str,dict]:
+def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProcessor, metric : ComputeMetrics, batch_size=3, use_prompt=False, compute_callsign_wer=True, compute_runway_wer=False, callsigns_name_in_ds = None, ignore_case=False) -> dict[str,dict]:
     # define collator
     if (not use_prompt):
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
@@ -439,6 +452,9 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             decoder_start_token_id=model.config.decoder_start_token_id
         )
 
+    if (callsigns_name_in_ds is None and compute_callsign_wer):
+        raise ValueError("Please set the callsigns name in the dataset using 'callsigns_name_in_ds' parameter.")
+    
     # run the evaluation
     if (isinstance(test_ds, Dataset) and not use_prompt):
         print(f"SINGLE DATASET, NO PROMPT, batch size {batch_size}")
@@ -478,12 +494,13 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             # compute the wer for callsigns
             if (compute_callsign_wer):
                 # if we should ignore case, than compute wer agains lower case callsigns
+                callsigns = []
                 if (ignore_case):
-                    callsigns = []
-                    for b in batch[callsign_name]:
-                        callsigns.append({k.lower():v for k,v in b.items()})
+                    for subbatch in batch[callsigns_name_in_ds]:
+                        callsigns.append({cal['key'].lower():cal['val'] for cal in subbatch})
                 else:
-                    callsigns = batch[callsign_name]
+                    for subbatch in batch[callsigns_name_in_ds]:
+                        callsigns.append({cal['key']:cal['val'] for cal in subbatch})
                     
                 _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
                 total_callsigns_wer += total_wer
@@ -503,7 +520,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
         
         if (compute_callsign_wer):
             # compute the average wer for callsigns
-            avg_callsign_wer = total_callsigns_wer / total_callsigns_count
+            avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
             print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
             return {'allds':{'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}}
         else:
@@ -549,12 +566,14 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
                 # compute the wer for callsigns
                 if (compute_callsign_wer):
                     # if we should ignore case, than compute wer agains lower case callsigns
+                    callsigns = []
                     if (ignore_case):
-                        callsigns = []
-                        for b in batch[callsign_name]:
-                            callsigns.append({k.lower():v for k,v in b.items()})
+                        for subbatch in batch[callsigns_name_in_ds]:
+                            callsigns.append({cal['key'].lower():cal['val'] for cal in subbatch})
                     else:
-                        callsigns = batch[callsign_name]
+                        for subbatch in batch[callsigns_name_in_ds]:
+                            callsigns.append({cal['key']:cal['val'] for cal in subbatch})
+                        
                         
                     _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
                     total_callsigns_wer += total_wer
@@ -572,7 +591,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             
             if (compute_callsign_wer):
                 # compute the average wer for callsigns
-                avg_callsign_wer = total_callsigns_wer / total_callsigns_count
+                avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
                 print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
                 out[ds_name] = {'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}
             else:
@@ -628,10 +647,11 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
                 # compute the wer for callsigns
                 if (compute_callsign_wer):
                     # if we should ignore case, than compute wer agains lower case callsigns
+                    callsigns = []
                     if (ignore_case):
-                        callsigns={k.lower():v for k,v in batch[callsign_name][idx].items()}
+                        callsigns.append({cal['key'].lower():cal['val'] for cal in batch[callsigns_name_in_ds][idx]})
                     else:
-                        callsigns = batch[callsign_name][idx]
+                        callsigns.append({cal['key']:cal['val'] for cal in batch[callsigns_name_in_ds][idx]})
                         
                     _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
                     total_callsigns_wer += total_wer
@@ -656,7 +676,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
         
         if (compute_callsign_wer):
             # compute the average wer for callsigns
-            avg_callsign_wer = total_callsigns_wer / total_callsigns_count
+            avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
             print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
             return {'allds':{'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}}
         else:
@@ -709,10 +729,11 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
                     # compute the wer for callsigns
                     if (compute_callsign_wer):
                         # if we should ignore case, than compute wer agains lower case callsigns
+                        callsigns = []
                         if (ignore_case):
-                            callsigns={k.lower():v for k,v in batch[callsign_name][idx].items()}
+                            callsigns.append({cal['key'].lower():cal['val'] for cal in batch[callsigns_name_in_ds][idx]})
                         else:
-                            callsigns = batch[callsign_name][idx]
+                            callsigns.append({cal['key']:cal['val'] for cal in batch[callsigns_name_in_ds][idx]})
                             
                         _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
                         total_callsigns_wer += total_wer
@@ -736,7 +757,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             
             if (compute_callsign_wer):
                 # compute the average wer for callsigns
-                avg_callsign_wer = total_callsigns_wer / total_callsigns_count
+                avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
                 print(f"callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
                 out[ds_name] = {'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}
             else:
@@ -766,14 +787,19 @@ def setup_model_processor(model_path) -> tuple[WhisperForConditionalGeneration, 
     
     return model, processor
 
-def result_printout(f_desc : TextIOWrapper, out_dict : dict[str, dict], evaluation_setup : EvaluationSetup):
+def result_printout(f_desc : TextIOWrapper, out_dict : dict[str, dict], evaluation_setup : EvaluationSetup, callsigns_wer=False):
     for k,v in out_dict.items():
         print(f"DATASET: {k} | WER: {v['wer']} LOSS: {v['loss']}") # PRINTOUT
 
     # write the output
     f_desc.write("******** Evaluation results ********\n")
     for k,v in out_dict.items():
-        f_desc.write(f"DATASET: {k} | WER: {v['wer']} LOSS: {v['loss']}\n")
+        base = f"DATASET: {k} | WER: {v['wer']} LOSS: {v['loss']}"
+        if (callsigns_wer):
+            cal_wer= f"CALLSIGN WER: {v['callsign_wer']} CALLSIGN COUNT: {v['callsign_count']} CALLSIGN COMPLETELY CORRECT: {v['callsign_completely_correct']}"
+            base += f" {cal_wer}"
+        
+        f_desc.write(f"{base}\n")
 
     f_desc.flush()
            
@@ -884,11 +910,13 @@ def main(evaluation_setup : EvaluationSetup):
                     metric, 
                     batch_size=evaluation_setup.batch_size, 
                     use_prompt=evaluation_setup.use_prompt,
-                    compute_callsign_wer=True
+                    compute_callsign_wer=evaluation_setup.eval_callsigns,
+                    callsigns_name_in_ds=evaluation_setup.callsigns_name_in_ds,
+                    ignore_case=evaluation_setup.eval_callsigns
                 )
 
                 # print results to the file
-                result_printout(out_file,out_dict,evaluation_setup)
+                result_printout(out_file,out_dict,evaluation_setup,callsigns_wer=evaluation_setup.eval_callsigns)
 
                 # new lines at the end of the file
                 out_file.write('\n\n')
@@ -951,17 +979,24 @@ def main(evaluation_setup : EvaluationSetup):
             metric = ComputeMetrics(processor.tokenizer)
 
             # compute the wer and loss
-            out_dict = compute(built_ds, model, processor, metric, batch_size=evaluation_setup.batch_size, use_prompt=evaluation_setup.use_prompt)
+            out_dict = compute(
+                built_ds, 
+                model, 
+                processor, 
+                metric, 
+                batch_size=evaluation_setup.batch_size, 
+                use_prompt=evaluation_setup.use_prompt,
+                compute_callsign_wer=evaluation_setup.eval_callsigns,
+                callsigns_name_in_ds=evaluation_setup.callsigns_name_in_ds,
+                ignore_case=evaluation_setup.eval_callsigns
+            )
 
-            result_printout(out_file, out_dict, evaluation_setup)
+            result_printout(out_file, out_dict, evaluation_setup, callsigns_wer=evaluation_setup.eval_callsigns)
 
             # new lines at the end of the file
             out_file.write('\n\n')
 
             out_file.close()
-
-    elif (evaluation_setup.metric == 'cer'):
-        metric = cer
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Parse evaluation configuration")
@@ -981,8 +1016,10 @@ def parse_args():
     parser.add_argument("--eval_description", type=str, default="")
     parser.add_argument("--use_prompt", action="store_true")
     parser.add_argument("--self_prompt", action="store_true")
-    parser.add_argument("--transcription_name_in_ds", type=str, default="full_ts")
-    parser.add_argument("--prompt_name_in_ds", type=str, default="prompt_fullts_1G_4B")
+    parser.add_argument("--eval_callsigns", action="store_true")
+    parser.add_argument('--callsigns_name_in_ds', type=str)
+    parser.add_argument("--transcription_name_in_ds", type=str)
+    parser.add_argument("--prompt_name_in_ds", type=str)
 
     return parser.parse_args()
 
@@ -1001,6 +1038,8 @@ def build_config(args):
         "eval_description": args.eval_description,
         "use_prompt": args.use_prompt,
         "self_prompt": args.self_prompt,
+        "eval_callsigns":args.eval_callsigns,
+        'callsigns_name_in_ds': args.callsigns_name_in_ds,
         "transcription_name_in_ds": args.transcription_name_in_ds,
         "prompt_name_in_ds": args.prompt_name_in_ds
     }

@@ -13,7 +13,7 @@
             "cwd": "${workspaceFolder}/scripts/",
             "args": [
                 "--setup",
-                "train_setup.json"
+                "eval_setup.json"
             ],
             "justMyCode": false
         }

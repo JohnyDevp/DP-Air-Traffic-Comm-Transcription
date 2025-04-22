@@ -79,6 +79,7 @@ class EvalCallsigns:
             wer_list[idx] = cal_wer
 
         # return as many lowest wer as num_of_occurences
+        print(wer_list)
         return sorted(wer_list)[0:min(num_of_occurences,len(wer_list))]
     
     
@@ -87,15 +88,7 @@ if __name__ == "__main__":
     metric = ComputeMetrics(tokenizer=WhisperTokenizer.from_pretrained("openai/whisper-tiny"))
     eval_callsigns = EvalCallsigns(metric=metric)
     callsigns = [{
-        "Kangaro Home 27": 2,
-        "Ostrov 3": 2,
-    },
-    {'problem': 1},
-    {
-        'New Jersey 1':1
-    }]
+        "CSA One Delta Zulu": 3}]
     transcription = [
-        "Hello Kangaro Home 27 my name Kangaro is K2GZ and I want to say hello to WHC45 and WHC45",
-        "I have a problem",
-        "This is New Jersey"]
+        " I asked if you want else to use, but..."]
     print(eval_callsigns(transcriptions=transcription, callsigns=callsigns))

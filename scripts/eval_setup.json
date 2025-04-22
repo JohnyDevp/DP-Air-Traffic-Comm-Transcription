@@ -10,8 +10,10 @@
 	"overwrite": true,
 	"batch_size": 4,
 	"eval_description": "Evaluation tiny model, trained on selfprompting, on atco_en_ruzyne without prompting",
-	"use_prompt": true,
+	"use_prompt": false,
 	"self_prompt": false,
 	"transcription_name_in_ds": "full_ts",
+	"eval_callsigns": true,
+	"callsigns_name_in_ds" : "long_callsigns",
 	"prompt_name_in_ds": "prompt_fullts_1G_4B"
 }

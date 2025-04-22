@@ -4,12 +4,18 @@
         "full_ts": "maintiens position Charlie India Juliett",
         "short_ts": "maintiens position CIJ",
         "prompt-data": {
-            "long_callsigns": {
-                "Charlie India Juliett": 1
-            },
-            "short_callsigns": {
-                "CIJ": 1
-            },
+            "long_callsigns": [
+                {
+                    "key": "Charlie India Juliett",
+                    "val": 1
+                }
+            ],
+            "short_callsigns": [
+                {
+                    "key": "CIJ",
+                    "val": 1
+                }
+            ],
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -74,17 +80,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Charlie India Juliett, Victor Charlie Golf Two Echo Golf , Med Rescue Echo Echo , Hotel Bravo Zulu Echo Foxtrot , Luxor Golf Two Two Sierra ",
-        "prompt_fullts_5B": "Nav Checker Five One One , Hotel Bravo Zulu Whiskey Papa , Victor Charlie Golf Two Echo Golf , Hotel Bravo Zulu Echo Foxtrot , Swiss Two Five Eight Echo ",
-        "prompt_fullts_50B": "Spring Air Three Eight One , Nav Checker Five One One , Luxor Golf Two Two Sierra , November One Four Echo Foxtrot , Victor Charlie Golf Two Echo Golf , Med Rescue Echo Echo , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Echo Foxtrot , Swiss Two Five Eight Echo , Hotel Bravo Delta Golf Victor "
+        "prompt_fullts_1G_4B": "Charlie India Juliett, Swiss Two Five Eight Echo , Hotel Bravo Zulu Echo Foxtrot , Hotel Bravo Zulu Whiskey Papa , Nav Checker Five One One ",
+        "prompt_fullts_5B": "Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Delta Golf Victor , Swiss Two Five Eight Echo , Nav Checker Five One One , Med Rescue Echo Echo ",
+        "prompt_fullts_50B": "Hotel Bravo Delta Golf Victor , Swiss Two Five Eight Echo , Hotel Bravo Zulu Echo Foxtrot , November One Four Echo Foxtrot , Victor Charlie Golf Two Echo Golf , Med Rescue Echo Echo , Spring Air Three Eight One , Luxor Golf Two Two Sierra , Nav Checker Five One One , Hotel Bravo Zulu Whiskey Papa "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Tower_118_3MHz_20210415_113505.wav",
         "full_ts": "cent trente six rappel termine nonante neuf",
         "short_ts": "cent trente 6 rappel termine nonante neuf",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -151,17 +157,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Zulu Victor Papa , Vista Malta Five Three Four , Royal Ghana Zero Four ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Yankee Lima Lima , Vista Malta Five Three Four , Hotel Bravo Zulu Mike Whiskey , Hotel Bravo Zulu Whiskey Foxtrot ",
-        "prompt_fullts_50B": "Colair Six One , Legend One Five Zero Seven , Royal Ghana Zero Four , Hotel Bravo Yankee Lima Lima , Colair Seven Two , Hotel Bravo Zulu Whiskey Papa , Vista Malta Five Three Four , Hotel Bravo Zulu Echo Foxtrot , Hotel Bravo Zulu Victor Papa , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Zulu Mike Whiskey "
+        "prompt_fullts_1G_4B": ", Hotel Bravo Zulu Whiskey Papa , Colair Six One , Hotel Bravo Zulu Echo Foxtrot , Hotel Bravo Zulu Mike Whiskey ",
+        "prompt_fullts_5B": "Royal Ghana Zero Four , Hotel Bravo Yankee Lima Lima , Colair Seven Two , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Whiskey Foxtrot ",
+        "prompt_fullts_50B": "Hotel Bravo Zulu Victor Papa , Colair Seven Two , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Echo Foxtrot , Royal Ghana Zero Four , Hotel Bravo Yankee Lima Lima , Hotel Bravo Zulu Mike Whiskey , Hotel Bravo Zulu Whiskey Foxtrot , Legend One Five Zero Seven , Colair Six One , Vista Malta Five Three Four "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201028_153007.wav",
-        "full_ts": "Oscar Whiskey India Tři Sedm QNH jedna nula jedna šest maximálně dva tisíce pět set stop povolení \njedna nula jedna šest maximálně dva tisíce pět set stop přímo  povolení  Oscar Kilo Whisky India Tři Sedm",
+        "full_ts": "Oscar Whiskey India Tři Sedm QNH jedna nula jedna šest maximálně dva tisíce pět set stop povolení jedna nula jedna šest maximálně dva tisíce pět set stop přímo povolení Oscar Kilo Whisky India Tři Sedm",
         "short_ts": "OWI37 QNH 1016 maximálně 2000500 stop povolení\n1016 maximálně 2000500 stop přímo povolení OKWI37",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -179,8 +185,8 @@
         "full_ts": "Kryštof Nula Jedna v CTR Ruzyně maximálně dva tisíce pět set stop QNH jedna nula jedna osm",
         "short_ts": "Kryštof 01 v CTR Ruzyně maximálně 2000500 stop QNH 1018",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -195,15 +201,21 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210505_142414.wav",
-        "full_ts": "Victor Oscar  for leaving\nVictor Oscar merci beaucoup bonne soiree",
+        "full_ts": "Victor Oscar for leaving Victor Oscar merci beaucoup bonne soiree",
         "short_ts": "VO for leaving\nVO merci beaucoup bonne soiree",
         "prompt-data": {
-            "long_callsigns": {
-                "Victor Oscar": 2
-            },
-            "short_callsigns": {
-                "VO": 2
-            },
+            "long_callsigns": [
+                {
+                    "key": "Victor Oscar",
+                    "val": 2
+                }
+            ],
+            "short_callsigns": [
+                {
+                    "key": "VO",
+                    "val": 2
+                }
+            ],
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -268,17 +280,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Victor Oscar, Lufthansa Zero Three Alpha , Bair Nine Five One , Alitalia Two Zero Six , Air France Four Five Hotel Romeo ",
-        "prompt_fullts_5B": "Vueling One Five Zero Two , Ryan Two Zero Foxtrot Hotel , Bair Nine Five One , Alpha Sierra Juliett Four Two One , Lufthansa Zero Three Alpha ",
-        "prompt_fullts_50B": "Air France Four Five Hotel Romeo , Lufthansa Zero Three Alpha , Afrilens Four One , Hotel Bravo Zulu Oscar Zulu , Alpha Sierra Juliett Four Two One , Ryan Two Zero Foxtrot Hotel , Vista Four Six Seven , Alitalia Two Zero Six , Bair Nine Five One , Vueling One Five Zero Two "
+        "prompt_fullts_1G_4B": "Victor Oscar, Alitalia Two Zero Six , Air France Four Five Hotel Romeo , Bair Nine Five One , Lufthansa Zero Three Alpha ",
+        "prompt_fullts_5B": "Hotel Bravo Zulu Oscar Zulu , Vueling One Five Zero Two , Alpha Sierra Juliett Four Two One , Afrilens Four One , Vista Four Six Seven ",
+        "prompt_fullts_50B": "Alpha Sierra Juliett Four Two One , Afrilens Four One , Bair Nine Five One , Hotel Bravo Zulu Oscar Zulu , Vista Four Six Seven , Air France Four Five Hotel Romeo , Ryan Two Zero Foxtrot Hotel , Lufthansa Zero Three Alpha , Alitalia Two Zero Six , Vueling One Five Zero Two "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201025_110406.wav",
-        "full_ts": "Oscar Kilo Oscar Kilo Bravo a v této poloze zahajte vyčkávání zatáčkama o tři sta šedesát doleva\nano vyčkávat  doleva tři sta šedesát stupňů",
+        "full_ts": "Oscar Kilo Oscar Kilo Bravo a v této poloze zahajte vyčkávání zatáčkama o tři sta šedesát doleva ano vyčkávat doleva tři sta šedesát stupňů",
         "short_ts": "OKOKB a v této poloze zahajte vyčkávání zatáčkama o 3 sta 60 doleva\nano vyčkávat doleva 3 sta 60 stupňů",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -296,8 +308,8 @@
         "full_ts": "Oscar Kilo Whiskey Alfa India Tři Pět pokračujte přímo Kunovice",
         "short_ts": "OKWAI35 pokračujte přímo Kunovice",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -312,11 +324,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201028_163859.wav",
-        "full_ts": "Kryštof Jedna Dva schváleno naslyšenou\nnaslyšenou",
+        "full_ts": "Kryštof Jedna Dva schváleno naslyšenou naslyšenou",
         "short_ts": "Kryštof 12 schváleno naslyšenou\nnaslyšenou",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -331,11 +343,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201028_131126.wav",
-        "full_ts": "a jak bylo na Losinji\nno líp jak tady\nno teď už je tady hezky bylo hůř",
+        "full_ts": "a jak bylo na Losinji no líp jak tady no teď už je tady hezky bylo hůř",
         "short_ts": "a jak bylo na Losinji\nno líp jak tady\nno teď už je tady hezky bylo hůř",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -353,8 +365,8 @@
         "full_ts": "Oscar Kilo Charlie Echo Sierra informace november QNH jedna nula jedna šest a jste povolení za VFR na sierru squawk čtyři tři dva nula",
         "short_ts": "OKCES informace N QNH 1016 a jste povolení za VFR na sierru squawk 4320",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -369,11 +381,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201027_161901.wav",
-        "full_ts": "Follow Věž\ndávej\njste v práci dva a nebo pracujete jenom jeden přes den\nnáš kolega je z \nsupr díky",
+        "full_ts": "Follow Věž dávej jste v práci dva a nebo pracujete jenom jeden přes den náš kolega je z supr díky",
         "short_ts": "Follow Věž\ndávej\njste v práci 2 a nebo pracujete jenom jeden přes den\nnáš kolega je z\nsupr díky",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -388,11 +400,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Approach_118_375MHz_20201029_200954.wav",
-        "full_ts": "jedna jedna osm čára tři sedm pět Brno náhrada na zkoušku\nsto osmnáct tři sedm pět z Brna pětkou\npětkou",
+        "full_ts": "jedna jedna osm čára tři sedm pět Brno náhrada na zkoušku sto osmnáct tři sedm pět z Brna pětkou pětkou",
         "short_ts": "118 čára 375 Brno náhrada na zkoušku\n0018375 z Brna pětkou\npětkou",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -410,8 +422,8 @@
         "full_ts": "no pokračuj akorát bezpečně vo nic nejde",
         "short_ts": "no pokračuj akorát bezpečně vo nic nejde",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -426,11 +438,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201027_094835.wav",
-        "full_ts": "Oskar Kilo Tango Oscar Charlie a za minutu opustíte CTR Ruzyně a squawk sedm tisíc a na slyšenou\na rozumím squawk sedm tisíc na slyšenou díky za spolupráci hezký den Oscar Kilo Tango Oscar Charlie\nhezký den",
+        "full_ts": "Oskar Kilo Tango Oscar Charlie a za minutu opustíte CTR Ruzyně a squawk sedm tisíc a na slyšenou a rozumím squawk sedm tisíc na slyšenou díky za spolupráci hezký den Oscar Kilo Tango Oscar Charlie hezký den",
         "short_ts": "Oskar KTOC a za minutu opustíte CTR Ruzyně a squawk 7000 a na slyšenou\na rozumím squawk 7001 slyšenou díky za spolupráci hezký den OKTOC\nhezký den",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -445,11 +457,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Radar_120_520MHz_20201025_165054.wav",
-        "full_ts": "Kryštofe Jedna pardon Kryštofe  Nula Sedm dobrý večer opět dejte finále Zítkovy sady\nfinále Zítkovy sady ohlásím Kryštof Sedm",
+        "full_ts": "Kryštofe Jedna pardon Kryštofe Nula Sedm dobrý večer opět dejte finále Zítkovy sady finále Zítkovy sady ohlásím Kryštof Sedm",
         "short_ts": "Kryštofe 1 pardon Kryštofe 07 dobrý večer opět dejte finále Zítkovy sady\nfinále Zítkovy sady ohlásím Kryštof 7",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -464,11 +476,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSZB_BERN_Tower_121_0MHz_20210425_063641.wav",
-        "full_ts": "isch  hockt der Dänu o dinne oder nid \n  i ho no dänkt  i ha vermuetet dä Abflugstil würd o no grad zum  passe",
+        "full_ts": "isch hockt der Dänu o dinne oder nid i ho no dänkt i ha vermuetet dä Abflugstil würd o no grad zum passe",
         "short_ts": "isch hockt der Dänu o dinne oder nid\ni ho no dänkt i ha vermuetet dä Abflugstil würd o no grad zum passe",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABARI",
                 "ALETO",
@@ -572,17 +584,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Foxtrot Papa India Mike Sierra , Hotel Bravo Kilo Golf November , Hotel Bravo Golf Lima Sierra , Hotel Bravo Zulu Whiskey Foxtrot ",
-        "prompt_fullts_5B": "Alpine Seven One Echo Foxtrot , Hotel Bravo Yankee Oscar Yankee , Swiss Seven Two Tango Lima , Contract Three Six Two , Hotel Bravo Zulu Whiskey Foxtrot ",
-        "prompt_fullts_50B": "Air Nostrum Eight Zero Quebec Yankee , Hotel Bravo Quebec Papa Bravo , Hotel Bravo Papa Foxtrot Sierra , Veteran Victor Golf , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Kilo Lima Echo , Swiss Seven Two Tango Lima , Lufthansa Zero Two Mike , Iberia Three Zero Papa Golf , Hotel Bravo Zulu Whiskey Juliett , Swiss Two Zero Six Zero , Hotel Bravo Yankee Oscar Yankee , Hotel Bravo Kilo Golf November , Contract Three Six Two , Foxtrot Papa India Mike Sierra , Speedwing Tango Hotel , Hotel Bravo Golf Lima Sierra , Alpine Seven One Echo Foxtrot "
+        "prompt_fullts_1G_4B": ", Speedwing Tango Hotel , Swiss Two Zero Six Zero , Hotel Bravo Golf Lima Sierra , Veteran Victor Golf ",
+        "prompt_fullts_5B": "Speedwing Tango Hotel , Veteran Victor Golf , Hotel Bravo Kilo Golf November , Hotel Bravo Golf Lima Sierra , Hotel Bravo Zulu Whiskey Foxtrot ",
+        "prompt_fullts_50B": "Hotel Bravo Golf Lima Sierra , Hotel Bravo Quebec Papa Bravo , Iberia Three Zero Papa Golf , Hotel Bravo Yankee Oscar Yankee , Lufthansa Zero Two Mike , Hotel Bravo Kilo Golf November , Hotel Bravo Zulu Whiskey Juliett , Veteran Victor Golf , Alpine Seven One Echo Foxtrot , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Kilo Lima Echo , Speedwing Tango Hotel , Air Nostrum Eight Zero Quebec Yankee , Hotel Bravo Papa Foxtrot Sierra , Swiss Seven Two Tango Lima , Foxtrot Papa India Mike Sierra , Swiss Two Zero Six Zero , Contract Three Six Two "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201027_144500.wav",
-        "full_ts": "Oscar Kilo Lima Papa Victor contact radar one two seven decimal three five zero\n\nOscar Kilo Echo Oscar Kilo vstupte na dráhu dva sedm",
+        "full_ts": "Oscar Kilo Lima Papa Victor contact radar one two seven decimal three five zero Oscar Kilo Echo Oscar Kilo vstupte na dráhu dva sedm",
         "short_ts": "OKLPV contact radar 127.350\nOKEOK vstupte na dráhu 27",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -597,11 +609,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSZB_BERN_Tower_121_0MHz_20210420_110549.wav",
-        "full_ts": "Hotel Mike Romeo  roger  ig söu nech no ä Gruss usrichte am Mario Gruess vom Michi",
+        "full_ts": "Hotel Mike Romeo roger ig söu nech no ä Gruss usrichte am Mario Gruess vom Michi",
         "short_ts": "HMR roger ig söu nech no ä Gruss usrichte am Mario Gruess vom Michi",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABARI",
                 "ALETO",
@@ -753,17 +765,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Speedwing Tango Hotel , Royal Ghana Quebec Lima , Hotel Bravo Golf Lima Sierra , Hotel Bravo Papa Foxtrot Sierra ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Sierra November , Hotel Bravo Kilo Mike Romeo , Hotel Bravo Golf Lima Sierra , Hotel Bravo Juliett India Mike , Delta India Bravo Bravo Hotel ",
-        "prompt_fullts_50B": "Delta Echo Oscar Papa Golf , Fraction Five Six Eight Lima , Hotel Bravo Whiskey Zulu Delta , Hotel Bravo Kilo Mike Romeo , Hotel Bravo Two Four Four Four , Hotel Bravo Sierra Hotel Bravo , November Two One Two Charlie Mike , Royal Ghana Zero Three , Hotel Bravo Zulu Sierra November , Hotel Bravo Juliett India Mike , Speedwing Tango Hotel , Hotel Bravo Zulu Whiskey Echo , Hotel Bravo Kilo Lima Echo , Delta India Bravo Bravo Hotel , Eurocat Four Zero Two , Hotel Bravo Yankee Tango Bravo , Delta Six Nine Zero Seven , Royal Ghana Quebec Lima , Hansa Eight Four Kilo , Hotel Bravo Papa Foxtrot Sierra , November Four Five Kilo Bravo , Hotel Bravo Three Two Nine Nine , Hotel Bravo Zulu Whiskey Juliett , Halisa Yankee Juliett , Hotel Bravo Foxtrot Whiskey Alpha , Royal Ghana Zero Two , Swiss One Nine Tango , Hotel Bravo Kilo Golf Oscar , Tango Seven Mike Sierra Papa , Hotel Bravo Three Three One Two , Two Juliett Alpha Charlie Kilo , Mosquito Six Zero Alpha , Hotel Bravo Golf Lima Sierra , Hotel Bravo Kilo Golf November , Hotel Bravo Kilo Charlie Juliett , Lima Alpha Sierra One Three Five , Hotel Bravo Yankee Oscar Uniform , Hotel Bravo Kilo Golf Papa , Halisa India Alpha , Delta Kilo Golf Lima Lima , Heliblue Victor Bravo , Hotel Bravo Zulu Whiskey Foxtrot "
+        "prompt_fullts_1G_4B": ", Eurocat Four Zero Two , Hotel Bravo Whiskey Zulu Delta , Delta India Bravo Bravo Hotel , Mosquito Six Zero Alpha ",
+        "prompt_fullts_5B": "Delta Echo Oscar Papa Golf , November Two One Two Charlie Mike , Hotel Bravo Whiskey Zulu Delta , Hotel Bravo Kilo Charlie Juliett , Royal Ghana Zero Two ",
+        "prompt_fullts_50B": "Hotel Bravo Kilo Charlie Juliett , Hotel Bravo Zulu Sierra November , Hotel Bravo Kilo Golf Oscar , Speedwing Tango Hotel , Hotel Bravo Papa Foxtrot Sierra , Delta Kilo Golf Lima Lima , Hotel Bravo Kilo Mike Romeo , Hotel Bravo Three Three One Two , Hotel Bravo Yankee Oscar Uniform , Hotel Bravo Whiskey Zulu Delta , November Four Five Kilo Bravo , Tango Seven Mike Sierra Papa , Hotel Bravo Kilo Lima Echo , Delta Echo Oscar Papa Golf , Royal Ghana Quebec Lima , Hotel Bravo Zulu Whiskey Echo , Halisa India Alpha , Halisa Yankee Juliett , Hotel Bravo Sierra Hotel Bravo , Hotel Bravo Three Two Nine Nine , November Two One Two Charlie Mike , Hotel Bravo Kilo Golf Papa , Two Juliett Alpha Charlie Kilo , Hotel Bravo Juliett India Mike , Delta Six Nine Zero Seven , Hotel Bravo Foxtrot Whiskey Alpha , Hotel Bravo Kilo Golf November , Hotel Bravo Yankee Tango Bravo , Hansa Eight Four Kilo , Lima Alpha Sierra One Three Five , Eurocat Four Zero Two , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Two Four Four Four , Royal Ghana Zero Two , Royal Ghana Zero Three , Fraction Five Six Eight Lima , Heliblue Victor Bravo , Swiss One Nine Tango , Hotel Bravo Zulu Whiskey Juliett , Hotel Bravo Golf Lima Sierra , Delta India Bravo Bravo Hotel , Mosquito Six Zero Alpha "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201028_151525.wav",
         "full_ts": "Oskar Hotel Uniform Čtyři Dva pokračujte po whiskey a oznamte opuštění ploch",
         "short_ts": "Oskar HU42 pokračujte po W a oznamte opuštění ploch",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -778,11 +790,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Radar_120_520MHz_20201029_174523.wav",
-        "full_ts": "Ruzyně Radar Oskar Kilo Whisky Kilo Foxtrot dobrý večer\nOskar Kilo Whisky Kilo Foxtrot  dobrý večer Praha Radar jste identifikován na radaru a čekejte já vás zavolám\nvyčkávám Oskar Kilo Whisky Kilo Foxtrot",
+        "full_ts": "Ruzyně Radar Oskar Kilo Whisky Kilo Foxtrot dobrý večer Oskar Kilo Whisky Kilo Foxtrot dobrý večer Praha Radar jste identifikován na radaru a čekejte já vás zavolám vyčkávám Oskar Kilo Whisky Kilo Foxtrot",
         "short_ts": "Ruzyně Radar Oskar KWKF dobrý večer\nOskar KWKF dobrý večer Praha Radar jste identifikován na radaru a čekejte já vás zavolám\nvyčkávám Oskar KWKF",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -797,11 +809,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201029_155930.wav",
-        "full_ts": "Oskar Kilo Golf Papa Sierra drahá dva sedm přistání povoleno vítr dva čtyři nula stupňů pět uzlů uvolněte pojezdovou bravo\npřistání povoleno dráha dva sedm",
+        "full_ts": "Oskar Kilo Golf Papa Sierra drahá dva sedm přistání povoleno vítr dva čtyři nula stupňů pět uzlů uvolněte pojezdovou bravo přistání povoleno dráha dva sedm",
         "short_ts": "Oskar KGPS drahá 27 přistání povoleno vítr 240 stupňů 5 uzlů uvolněte pojezdovou B\npřistání povoleno dráha 27",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -816,15 +828,21 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_152248.wav",
-        "full_ts": "Charlie Zulu un grand merci, a demain\na demain",
+        "full_ts": "Charlie Zulu un grand merci, a demain a demain",
         "short_ts": "CZ un grand merci, a demain\na demain",
         "prompt-data": {
-            "long_callsigns": {
-                "Charlie Zulu": 1
-            },
-            "short_callsigns": {
-                "CZ": 1
-            },
+            "long_callsigns": [
+                {
+                    "key": "Charlie Zulu",
+                    "val": 1
+                }
+            ],
+            "short_callsigns": [
+                {
+                    "key": "CZ",
+                    "val": 1
+                }
+            ],
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -903,17 +921,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Charlie Zulu, Luxor Golf Two Two Sierra , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Kilo Lima Echo ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Lima Echo , Hotel Bravo Yankee Tango Mike , Hotel Bravo Kilo Golf Oscar , Fraction Seven Nine One Golf ",
-        "prompt_fullts_50B": "Luxor Golf Two Two Sierra , Hotel Bravo Kilo Oscar Juliett , Hansa Two Six Echo , Hotel Bravo Zulu Victor Papa , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Yankee Yankee Alpha , Masterjet Two Four Nine Lima , Royal Ghana Zero Four , Nav Checker Five One One , Mosquito One Five Bravo , Hotel Bravo Two Four One Four , Hotel Bravo Kilo Golf Oscar , Fraction Seven Nine One Golf , Hotel Bravo Kilo Lima Echo , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Yankee Tango Mike , Hotel Bravo Delta Golf Victor "
+        "prompt_fullts_1G_4B": "Charlie Zulu, Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Yankee Tango Mike , Hotel Bravo Two Four One Four , Hansa Two Six Echo ",
+        "prompt_fullts_5B": "Luxor Golf Two Two Sierra , Hansa Two Six Echo , Nav Checker Five One One , Hotel Bravo Yankee Yankee Alpha , Masterjet Two Four Nine Lima ",
+        "prompt_fullts_50B": "Hotel Bravo Yankee Tango Mike , Hansa Two Six Echo , Hotel Bravo Kilo Golf Oscar , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Yankee Yankee Alpha , Royal Ghana Zero Four , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Kilo Lima Echo , Nav Checker Five One One , Hotel Bravo Kilo Oscar Juliett , Mosquito One Five Bravo , Masterjet Two Four Nine Lima , Hotel Bravo Two Four One Four , Fraction Seven Nine One Golf , Hotel Bravo Zulu Victor Papa , Luxor Golf Two Two Sierra , Hotel Bravo Delta Golf Victor "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201026_155816.wav",
-        "full_ts": "třetí kousek bude na Mike Jedna Bravo\nMike Jedna Bravo ok",
+        "full_ts": "třetí kousek bude na Mike Jedna Bravo Mike Jedna Bravo ok",
         "short_ts": "třetí kousek bude na M1B\nM1B ok",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -928,11 +946,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Radar_120_520MHz_20201025_125020.wav",
-        "full_ts": "a Praha Radar Oskar Kilo Whisky Yankee Zulu dobré odpoledne a pokračuji november\nOskar Kilo Whisky Yankee Zulu Praha radar identifikován oznamte hladinu\na momentálně tisíc šet set feetů na deset deset\nsprávně díky\ntaky Whisky Yankee Zulu",
+        "full_ts": "a Praha Radar Oskar Kilo Whisky Yankee Zulu dobré odpoledne a pokračuji november Oskar Kilo Whisky Yankee Zulu Praha radar identifikován oznamte hladinu a momentálně tisíc šet set feetů na deset deset správně díky taky Whisky Yankee Zulu",
         "short_ts": "a Praha Radar Oskar KWYZ dobré odpoledne a pokračuji N\nOskar KWYZ Praha radar identifikován oznamte hladinu\na momentálně 1600 feetů na 1010\nsprávně díky\ntaky WYZ",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -947,11 +965,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201025_132420.wav",
-        "full_ts": "po alfě pokračuju pravý base lag dráhy dva čtyři a ohlásím  finále Oskar Kilo Papa Alfa Zulu",
+        "full_ts": "po alfě pokračuju pravý base lag dráhy dva čtyři a ohlásím finále Oskar Kilo Papa Alfa Zulu",
         "short_ts": "po alfě pokračuju pravý base lag dráhy 24 a ohlásím finále Oskar KPAZ",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [],
             "nearby_short_callsigns": [],
             "nearby_long_callsigns": [],
@@ -966,11 +984,11 @@
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210421_174745.wav",
-        "full_ts": "Oscar Mike Golf ohláste finále radšej\nfinále radšej ohlásim Oscar Mike Golf",
+        "full_ts": "Oscar Mike Golf ohláste finále radšej finále radšej ohlásim Oscar Mike Golf",
         "short_ts": "OMG ohláste finále radšej\nfinále radšej ohlásim OMG",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1040,17 +1058,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Fedex Five One One Two , Mike Sierra Charlie Four Two Five , Austrian One Two Six , Ethiopian Seven Two Five ",
-        "prompt_fullts_5B": "Air Canada Seven Two Three Eight , Charlie Three Three , Austrian Six Juliett Mike , Nine Alpha Juliett India Mike , Ethiopian Seven Two Five ",
-        "prompt_fullts_50B": "Austrian One Seven Two , Austrian Three Bravo Uniform , Mike Sierra Charlie Four Two Five , Mike Sierra Charlie Four Two Four , Nine Alpha Juliett India Mike , Ethiopian Seven Two Five , Charlie Three Three , Quality Four Two Five One , Fedex Five One One Two , Air Canada Seven Two Three Eight , Austrian Six Juliett Mike , Austrian One Two Six "
+        "prompt_fullts_1G_4B": ", Austrian Three Bravo Uniform , Austrian One Two Six , Austrian One Seven Two , Air Canada Seven Two Three Eight ",
+        "prompt_fullts_5B": "Austrian One Seven Two , Charlie Three Three , Austrian Three Bravo Uniform , Quality Four Two Five One , Fedex Five One One Two ",
+        "prompt_fullts_50B": "Mike Sierra Charlie Four Two Four , Quality Four Two Five One , Austrian Three Bravo Uniform , Nine Alpha Juliett India Mike , Charlie Three Three , Austrian One Seven Two , Air Canada Seven Two Three Eight , Fedex Five One One Two , Ethiopian Seven Two Five , Mike Sierra Charlie Four Two Five , Austrian One Two Six , Austrian Six Juliett Mike "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210427_163630.wav",
         "full_ts": "šesť sedem tri štyri Oscar Mike Alpha Dva Echo",
         "short_ts": "šesť sedem tri štyri OMA2E",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1132,17 +1150,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Trans Europe Three Eight Five Two , Silk West Two Eight Zero , Aerodin Golf India , Victor Tango Bravo Romeo Kilo ",
-        "prompt_fullts_5B": "Aerodin Golf India , Sunexpress Four Echo Whiskey , Bair Seven One Two , Oscar Mike Delta Yankee Echo , Qatari Nine Six Foxtrot ",
-        "prompt_fullts_50B": "Oscar Yankee Juliett Juliett November , Delta Foxtrot Golf Romeo Oscar , Silk West Two Eight Zero , Oscar Mike Charlie India Alpha , Qatari Nine Six Foxtrot , Oscar Mike Bravo Juliett Mike , Oscar Kilo Romeo Lima Victor , Slovak Government Zero Zero Two , Mambra Sierra Echo , Sunexpress Four Echo Whiskey , Trans Europe Three Eight Five Two , Slovak Government Zero Four Alpha , Aerodin Golf India , Asterix Seven Eight Papa , Victor Tango Bravo Romeo Kilo , Bair Seven One Two , Oscar Mike Delta Yankee Echo , Elite Jet Four Zero Three "
+        "prompt_fullts_1G_4B": ", Mambra Sierra Echo , Oscar Mike Delta Yankee Echo , Slovak Government Zero Four Alpha , Oscar Mike Charlie India Alpha ",
+        "prompt_fullts_5B": "Aerodin Golf India , Oscar Yankee Juliett Juliett November , Slovak Government Zero Zero Two , Silk West Two Eight Zero , Oscar Mike Charlie India Alpha ",
+        "prompt_fullts_50B": "Slovak Government Zero Zero Two , Oscar Mike Bravo Juliett Mike , Bair Seven One Two , Mambra Sierra Echo , Oscar Yankee Juliett Juliett November , Aerodin Golf India , Oscar Mike Charlie India Alpha , Silk West Two Eight Zero , Qatari Nine Six Foxtrot , Victor Tango Bravo Romeo Kilo , Asterix Seven Eight Papa , Slovak Government Zero Four Alpha , Trans Europe Three Eight Five Two , Elite Jet Four Zero Three , Sunexpress Four Echo Whiskey , Oscar Kilo Romeo Lima Victor , Oscar Mike Delta Yankee Echo , Delta Foxtrot Golf Romeo Oscar "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210503_171652.wav",
-        "full_ts": "Krišof Nula Tri štefánik veža dobrý deň\nŠtefánik veža  sto deväť  mali by sme spustiť a bude to  let cez charlie do Popradu",
+        "full_ts": "Krišof Nula Tri štefánik veža dobrý deň Štefánik veža sto deväť mali by sme spustiť a bude to let cez charlie do Popradu",
         "short_ts": "Krišof 0 Tri štefánik veža dobrý deň\nŠtefánik veža 100 deväť mali by sme spustiť a bude to let cez C do Popradu",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1212,17 +1230,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Slovak Government Zero Zero Three , Bair Seven Five Two , Austrian Three Sierra Victor , Turkish Four One Golf Hotel ",
-        "prompt_fullts_5B": "Ethiopian Seven Two Five , Ryanair Nine Seven Five , Austrian Three Sierra Victor , Austrian One Seven Two , Oscar Echo X-ray Oscar X-ray ",
-        "prompt_fullts_50B": "Austrian One Two Six , Turkish Four One Golf Hotel , Bair Seven Five Two , Ryanair Nine Seven Five , Ethiopian Seven Two Five , Austrian One Seven Two , Austrian Six Juliett Mike , Austrian Three Sierra Victor , Austrian Five November Alpha , Oscar Echo X-ray Oscar X-ray , Cargolux Six Seven Two One , Slovak Government Zero Zero Three "
+        "prompt_fullts_1G_4B": ", Slovak Government Zero Zero Three , Bair Seven Five Two , Austrian One Seven Two , Austrian One Two Six ",
+        "prompt_fullts_5B": "Austrian One Seven Two , Oscar Echo X-ray Oscar X-ray , Turkish Four One Golf Hotel , Austrian One Two Six , Bair Seven Five Two ",
+        "prompt_fullts_50B": "Bair Seven Five Two , Austrian One Two Six , Slovak Government Zero Zero Three , Ethiopian Seven Two Five , Ryanair Nine Seven Five , Austrian Three Sierra Victor , Turkish Four One Golf Hotel , Austrian Six Juliett Mike , Cargolux Six Seven Two One , Oscar Echo X-ray Oscar X-ray , Austrian One Seven Two , Austrian Five November Alpha "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210423_115901.wav",
-        "full_ts": "Kryštof Nula Jedna budete chcieť palivo? \n áno pane ďakujeme poprosíme",
+        "full_ts": "Kryštof Nula Jedna budete chcieť palivo? áno pane ďakujeme poprosíme",
         "short_ts": "Kryštof 01 budete chcieť palivo?\náno pane ďakujeme poprosíme",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1304,17 +1322,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Oscar Echo Kilo Charlie Mike , Austrian Six One Uniform Kilo , Tango Seven Mike Mike Zulu , Lux Rescue One Five Two Bravo ",
-        "prompt_fullts_5B": "Lux Rescue One Five Two Bravo , Eva Zero Six Six , Austrian Six One Uniform Kilo , German Air Force Eight Five Four , Emirates One Two Eight ",
-        "prompt_fullts_50B": "Austrian Six One Uniform Kilo , Wizzair One Eight Two Zero , German Air Force Eight Five Four , Tango Seven Mike Mike Zulu , Slovak Government Zero Zero Three , Air China Five Nine Eight , Lux Rescue One Five Two Bravo , Austrian Seven Nine One , Sunturk Seven Four Echo , Oscar Mike Mike Two Three Three , Austrian Seven Victor Romeo , Seven Seven Four Five , Sunturk Three Two Lima , Emirates One Two Eight , Emirates Two Five Five Four , Eva Zero Six Six , Oscar Echo Kilo Charlie Mike , Ryanair Two Hotel Victor "
+        "prompt_fullts_1G_4B": ", Ryanair Two Hotel Victor , Seven Seven Four Five , Austrian Six One Uniform Kilo , Austrian Seven Nine One ",
+        "prompt_fullts_5B": "Wizzair One Eight Two Zero , Emirates One Two Eight , Air China Five Nine Eight , Oscar Mike Mike Two Three Three , Austrian Six One Uniform Kilo ",
+        "prompt_fullts_50B": "Sunturk Seven Four Echo , Wizzair One Eight Two Zero , Air China Five Nine Eight , Austrian Seven Victor Romeo , Tango Seven Mike Mike Zulu , Oscar Mike Mike Two Three Three , Emirates One Two Eight , Eva Zero Six Six , Sunturk Three Two Lima , Ryanair Two Hotel Victor , Slovak Government Zero Zero Three , Oscar Echo Kilo Charlie Mike , Lux Rescue One Five Two Bravo , Austrian Seven Nine One , Seven Seven Four Five , German Air Force Eight Five Four , Emirates Two Five Five Four , Austrian Six One Uniform Kilo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210503_093636.wav",
-        "full_ts": "Oscar Golf Echo squawk sedem tisíc dopočutia\nsedem tisíc dopočutia Oscar Golf",
+        "full_ts": "Oscar Golf Echo squawk sedem tisíc dopočutia sedem tisíc dopočutia Oscar Golf",
         "short_ts": "OGE squawk sedem 1000 dopočutia\nsedem 1000 dopočutia OG",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1388,17 +1406,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Dipfreight Bravo Bravo , Austrian Three Eight One , Ryan Five Seven Foxtrot Alpha , Aero Coach Bravo Tango ",
-        "prompt_fullts_5B": "lot Three One Eight , Eva Zero Six Six , Austrian Three Eight One , Orion Charter Alpha Foxtrot , Ryan Five Seven Foxtrot Alpha ",
-        "prompt_fullts_50B": "Lufthansa Two Five Four Four , Ryan Five Seven Foxtrot Alpha , lot Three One Eight , Austrian Three Eight One , Dipfreight Bravo Bravo , Orion Charter Alpha Foxtrot , Oscar Mike Juliett Golf Alpha , Austrian Six One Uniform Kilo , lot Two Two Four , Aero Coach Bravo Tango , Austrian Six Tango Mike , Eva Zero Six Six , Austrian Seven Victor Romeo , Austrian Six Five Five "
+        "prompt_fullts_1G_4B": ", Dipfreight Bravo Bravo , Orion Charter Alpha Foxtrot , Austrian Three Eight One , Lufthansa Two Five Four Four ",
+        "prompt_fullts_5B": "lot Three One Eight , Lufthansa Two Five Four Four , Austrian Six One Uniform Kilo , Eva Zero Six Six , Ryan Five Seven Foxtrot Alpha ",
+        "prompt_fullts_50B": "Austrian Seven Victor Romeo , Austrian Six Five Five , Orion Charter Alpha Foxtrot , lot Three One Eight , Dipfreight Bravo Bravo , Eva Zero Six Six , Austrian Six Tango Mike , lot Two Two Four , Aero Coach Bravo Tango , Austrian Three Eight One , Ryan Five Seven Foxtrot Alpha , Lufthansa Two Five Four Four , Oscar Mike Juliett Golf Alpha , Austrian Six One Uniform Kilo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210426_175622.wav",
-        "full_ts": "potvrdzujem keby bola dáká zmena dáme vedieť \n jasné",
+        "full_ts": "potvrdzujem keby bola dáká zmena dáme vedieť jasné",
         "short_ts": "potvrdzujem keby bola dáká zmena dáme vedieť\njasné",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1456,17 +1474,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Ryanair Nine Seven Five , Turkish Six Six Zero Four , Fedex Five One One Two , Tango Tango Juliett Three One Two Bravo ",
-        "prompt_fullts_5B": "Tango Tango Juliett Three One Five Alpha , Dream Team Zero One Five November , Tango Tango Juliett Three One Two Bravo , Fedex Five One One Two , Ryanair Nine Seven Five ",
-        "prompt_fullts_50B": "Fedex Five One One Two , Tango Tango Juliett Three One Five Alpha , Tango Tango Juliett Three One Two Bravo , Turkish Six Six Zero Four , Dream Team Zero One Five November , Ryanair Nine Seven Five "
+        "prompt_fullts_1G_4B": ", Tango Tango Juliett Three One Five Alpha , Turkish Six Six Zero Four , Tango Tango Juliett Three One Two Bravo , Fedex Five One One Two ",
+        "prompt_fullts_5B": "Dream Team Zero One Five November , Turkish Six Six Zero Four , Ryanair Nine Seven Five , Tango Tango Juliett Three One Two Bravo , Fedex Five One One Two ",
+        "prompt_fullts_50B": "Fedex Five One One Two , Tango Tango Juliett Three One Two Bravo , Ryanair Nine Seven Five , Tango Tango Juliett Three One Five Alpha , Dream Team Zero One Five November , Turkish Six Six Zero Four "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Approach_120_9MHz_20210422_145928.wav",
         "full_ts": "prevádzka je tu zmena na päť alfou čakajte budeme mať pristátie",
         "short_ts": "prevádzka je tu zmena na päť alfou čakajte budeme mať pristátie",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1538,17 +1556,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Mazoon Six Six Six , Austrian Two Five , Asterix Five One Sierra , Red Lion One Foxtrot ",
-        "prompt_fullts_5B": "Oscar Mike Bravo Yankee Delta , Austrian Three Eight Two , Seven Seven Four Five , Asterix Five One Sierra , Bair Nine Four One ",
-        "prompt_fullts_50B": "Qatari Four One Four Uniform , Asterix Five One Sierra , Oscar Mike Bravo Yankee Delta , Mazoon Six Six Six , Qatari Seven Six Golf Kilo , Oscar Echo Echo Mike Golf , Bair Nine Four One , Red Lion One Foxtrot , Seven Seven Four Five , Austrian Three Eight Two , Sowind Four , Austrian Two Five , Austrian Six Zero Two "
+        "prompt_fullts_1G_4B": ", Austrian Three Eight Two , Mazoon Six Six Six , Sowind Four , Qatari Four One Four Uniform ",
+        "prompt_fullts_5B": "Austrian Two Five , Oscar Mike Bravo Yankee Delta , Asterix Five One Sierra , Red Lion One Foxtrot , Austrian Three Eight Two ",
+        "prompt_fullts_50B": "Austrian Six Zero Two , Oscar Echo Echo Mike Golf , Red Lion One Foxtrot , Sowind Four , Qatari Seven Six Golf Kilo , Bair Nine Four One , Qatari Four One Four Uniform , Asterix Five One Sierra , Oscar Mike Bravo Yankee Delta , Austrian Two Five , Mazoon Six Six Six , Seven Seven Four Five , Austrian Three Eight Two "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210430_160326.wav",
-        "full_ts": "díki\nOscar Mike Kilo Lima Lima rolujte medzi hangáre cez alpha",
+        "full_ts": "díki Oscar Mike Kilo Lima Lima rolujte medzi hangáre cez alpha",
         "short_ts": "díki\nOMKLL rolujte medzi hangáre cez A",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1652,17 +1670,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Echo Lima Golf Five Two Alpha , Austrian Eight Mike Sierra , Siberian Airlines Three Six Five Zero , Silver Arrows Four Three Lima Delta ",
-        "prompt_fullts_5B": "Tango Tango Juliett Six Zero Three , Austrian Seven Nine Two , Oscar Kilo Romeo Delta Sierra , Asterix Eight One Romeo , Austrian Seven Nine Lima Golf ",
-        "prompt_fullts_50B": "Romeo Alpha Zero Two Eight Five Seven , Asterix Eight One Romeo , Qatari One Six Papa , Christophorus Oscar Golf , Echo Lima Golf Five Two Alpha , Siberian Airlines Three Six Five Zero , Austrian Six Charlie Delta , Austrian Six Six Juliett Tango , Mazoon Four Two Four , Austrian Eight Mike Sierra , Belarus Avia Eight Eight Zero , Austrian Eight One Zero Lima , Austrian Seven Nine Two , Austrian Seven Kilo Sierra , Mambra Uniform Charlie , Wizzair Six Two Seven Five , Mazoon Six Six Six , Wizzair Six Two Seven Six , Siberian Airlines Three Six Four Two , Oscar Kilo Romeo Delta Sierra , Austrian Eight Five Eight , Air Hamburg Six Nine Two Lima , Tango Tango Juliett Six Zero Three , Austrian Seven Nine Lima Golf , Alpha X-ray Alpha One One One , Silver Arrows Four Three Lima Delta , Austrian Eight Zero November , Austrian Four Six , Mitavia Nine Two Three Seven "
+        "prompt_fullts_1G_4B": ", Asterix Eight One Romeo , Austrian Eight Five Eight , Austrian Seven Nine Lima Golf , Mambra Uniform Charlie ",
+        "prompt_fullts_5B": "Austrian Six Six Juliett Tango , Wizzair Six Two Seven Five , Siberian Airlines Three Six Five Zero , Austrian Eight Mike Sierra , Romeo Alpha Zero Two Eight Five Seven ",
+        "prompt_fullts_50B": "Christophorus Oscar Golf , Austrian Six Charlie Delta , Austrian Eight One Zero Lima , Air Hamburg Six Nine Two Lima , Mazoon Four Two Four , Austrian Eight Five Eight , Belarus Avia Eight Eight Zero , Austrian Six Six Juliett Tango , Wizzair Six Two Seven Five , Oscar Kilo Romeo Delta Sierra , Austrian Seven Kilo Sierra , Alpha X-ray Alpha One One One , Echo Lima Golf Five Two Alpha , Austrian Eight Zero November , Asterix Eight One Romeo , Austrian Eight Mike Sierra , Mambra Uniform Charlie , Wizzair Six Two Seven Six , Mitavia Nine Two Three Seven , Siberian Airlines Three Six Five Zero , Romeo Alpha Zero Two Eight Five Seven , Tango Tango Juliett Six Zero Three , Austrian Four Six , Austrian Seven Nine Lima Golf , Austrian Seven Nine Two , Mazoon Six Six Six , Silver Arrows Four Three Lima Delta , Qatari One Six Papa , Siberian Airlines Three Six Four Two "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210430_190550.wav",
-        "full_ts": "dakujem Oscar Lima Lima to budete mat dost silne takze potom povedzte ked vam ju budem moct  stlmit",
+        "full_ts": "dakujem Oscar Lima Lima to budete mat dost silne takze potom povedzte ked vam ju budem moct stlmit",
         "short_ts": "dakujem OLL to budete mat dost silne takze potom povedzte ked vam ju budem moct stlmit",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -1720,17 +1738,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Eurotrans One Three Juliett , Oscar Kilo Romeo Delta Sierra , Alpha X-ray Alpha One One One , Asterix Eight One Romeo ",
-        "prompt_fullts_5B": "Oscar Kilo Romeo Delta Sierra , Austrian Six Four One , Air Serbia Six Zero Mike , Eurotrans One Three Juliett , Asterix Eight One Romeo ",
-        "prompt_fullts_50B": "Asterix Eight One Romeo , Air Serbia Six Zero Mike , Eurotrans One Three Juliett , Austrian Six Four One , Oscar Kilo Romeo Delta Sierra , Alpha X-ray Alpha One One One "
+        "prompt_fullts_1G_4B": ", Oscar Kilo Romeo Delta Sierra , Air Serbia Six Zero Mike , Alpha X-ray Alpha One One One , Austrian Six Four One ",
+        "prompt_fullts_5B": "Eurotrans One Three Juliett , Alpha X-ray Alpha One One One , Oscar Kilo Romeo Delta Sierra , Austrian Six Four One , Asterix Eight One Romeo ",
+        "prompt_fullts_50B": "Oscar Kilo Romeo Delta Sierra , Eurotrans One Three Juliett , Austrian Six Four One , Asterix Eight One Romeo , Alpha X-ray Alpha One One One , Air Serbia Six Zero Mike "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSZH_ZURICH_Tower_118_1MHz_20210416_073807.wav",
-        "full_ts": "Rega One you are leaving CTR  now you may leave \nunk bis spater danke Rega One",
+        "full_ts": "Rega One you are leaving CTR now you may leave unk bis spater danke Rega One",
         "short_ts": "Rega 1 you are leaving CTR now you may leave\nunk bis spater danke Rega 1",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "AFOLT",
                 "AGERI",
@@ -2091,17 +2109,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Swiss One Six Nine Alpha , Mike Lima Whiskey Charlie Whiskey , Swiss One Eight Two Golf , Eurowings Six November Lima ",
-        "prompt_fullts_5B": "Dream Team Two One Eight Delta , Eurowings Seven One Romeo , Swiss One Three Nine Kilo , Swiss Nine Seven Yankee , Centralmex Seven Eight Zero ",
-        "prompt_fullts_50B": "Swiss Air Force Seven Four One , Swiss Two Zero Six Zero , November Six Six Six Charlie Papa , Habicht Lima Alpha , Singapore Three Four Six , Tango Seven Four One , Tango Uniform One Seven , United One Three Four , Royal Ghana Zero One , Tango Echo Two Two , Delta India Victor Victor Victor , Swiss One Two Two Whiskey , Tango Echo Two Three , Flycom Romeo India Alpha November Eight , Mosquito Nine Two Uniform , Oscar Romeo India Oscar November One , Swiss Nine Seven Golf , Swiss Seven Two Tango Lima , Hotel Bravo Foxtrot Charlie Foxtrot , Swiss , Euroguinea Echo November One Seven , Flycom Romeo India Alpha November Nine , Papa Hotel Juliett Whiskey Lima , Zulu Uniform Echo Romeo India Six , Hotel Bravo Kilo Golf Papa , Galaxy Alpha Six , Swiss Two Zero Four Kilo , Colair Six One , Flycom Romeo India Five One Seven , Ghibli Four , Mike Lima Whiskey Charlie Whiskey , Fraction Six Eight Three Lima , Flycom Romeo India Five Six Eight , Turkish One Eight One , Blue Sky November Alpha One , Zulu Echo Bravo Romeo Alpha Eight , Swiss Nine Seven Yankee , Hotel Bravo Kilo Mike Romeo , Centralmex Seven Seven Nine , Swiss Three Three Victor , Hotel Bravo Victor Papa Echo , Turkish Two Seven X-ray , Airjetsul Five Two One , Swiss Two Zero Six Seven , Fraction Three Four Six Hotel , Alitalia Five Seven One , Alitalia Five Seven Two , Guja Tango India Two , Swiss One Nine November , Swiss One One Three Yankee "
+        "prompt_fullts_1G_4B": ", Swiss One Five Five , Delta India Victor Victor Victor , One One , Papa Hotel Juliett Whiskey Lima ",
+        "prompt_fullts_5B": "Mike Lima Whiskey Charlie Whiskey , Swiss Eight Three Golf Romeo , Turkish Nine Papa Kilo , Swiss Air Force Seven Four One , Galaxy Alpha Two One ",
+        "prompt_fullts_50B": "Swedjet Tango Oscar Romeo Three Five , Swiss One Nine November , Flycom Romeo India Alpha November One , Euroguinea Echo November Seven , Romeo Tango Tango One , Turkish Three Whiskey Quebec , Hotel Bravo Victor Papa Echo , Iberia Three Four Six Four , Mike Lima Whiskey Charlie Whiskey , Swiss Nine Kilo , Lufthansa Six Echo Echo , Papa Hotel Juliett Whiskey Lima , Swiss Nine Seven Yankee , Swiss One Three Two Six , Swiss Two Zero Six Seven , Fraction Six Eight Three Lima , Tango Echo Two Three , Halisa Quebec Mike , Tango Seven Four One , Swiss Seven Two Tango Lima , Delta Charlie Papa Mike India , Alitalia Five Seven Two , Speedwing Tango Hotel , Flycom Romeo India Five One Seven , Zulu Uniform Echo Romeo India Six , Swiss Two Nine Foxtrot , Romeo Tango Tango Two , Swiss Two Zero Six Zero , Swiss Two Zero Four Kilo , Euroguinea Echo November , Turkish Two Seven X-ray , Zulu Echo Bravo Romeo Alpha Eight , Uniform Romeo Sierra Uniform Lima Alpha One Three , Zulu Uniform Echo Romeo India Seven , Galaxy Alpha One Two , Wizzair One Alpha Bravo , Dream Team Four One Eight Yankee , Swiss , Golf Uniform India Delta Oscar Two , Eurowings Six November Lima , Swiss One Three One Zero , Oscar Romeo India Oscar November One , Arcus Air Eight Two Quebec Romeo , Euroguinea Echo November Five , Swiss Two Six Two Delta , Swiss One Two Two Whiskey , Galaxy Alpha One Seven , Flycom Romeo India Alpha November Nine , Tango Uniform One Seven , Flycom Romeo India One Zero Three "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210429_164905.wav",
-        "full_ts": "Oscar Mike Sierra  dva jedna päť rolujte na  apron charlie  po golf foxtrot delta križujte dráhu nula štyri",
+        "full_ts": "Oscar Mike Sierra dva jedna päť rolujte na apron charlie po golf foxtrot delta križujte dráhu nula štyri",
         "short_ts": "OMS21 päť rolujte na apron C po GFD križujte dráhu 0 štyri",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -2171,17 +2189,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Qatari Four Seven Eight Hotel , Qatari Seven Six Golf Kilo , Air Hamburg Seven Seven Seven Alpha , Quebec November Romeo Two Five Bravo ",
-        "prompt_fullts_5B": "Tango Tango Juliett Three One Five Bravo , Qatari Seven Six Golf Kilo , Mazoon Two One Five , Emirates One Two Five , Austrian Two Five ",
-        "prompt_fullts_50B": "Qatari Four Seven Eight Hotel , Qatari One Six Six Kilo , Mazoon Two One Five , Myanmar Victor Papa , Qatari Seven Six Golf Kilo , Eurocypria Two One Echo , Tango Tango Juliett Three One Five Bravo , Quebec November Romeo Two Five Bravo , Air Hamburg Seven Seven Seven Alpha , Austrian Two Five , Emirates One Two Five , Slok Gambia India Alpha "
+        "prompt_fullts_1G_4B": ", Myanmar Victor Papa , Qatari Seven Six Golf Kilo , Tango Tango Juliett Three One Five Bravo , Emirates One Two Five ",
+        "prompt_fullts_5B": "Eurocypria Two One Echo , Air Hamburg Seven Seven Seven Alpha , Emirates One Two Five , Slok Gambia India Alpha , Qatari Four Seven Eight Hotel ",
+        "prompt_fullts_50B": "Qatari Seven Six Golf Kilo , Mazoon Two One Five , Qatari Four Seven Eight Hotel , Slok Gambia India Alpha , Quebec November Romeo Two Five Bravo , Eurocypria Two One Echo , Air Hamburg Seven Seven Seven Alpha , Tango Tango Juliett Three One Five Bravo , Austrian Two Five , Qatari One Six Six Kilo , Emirates One Two Five , Myanmar Victor Papa "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210505_135310.wav",
-        "full_ts": "Bair Seven Five One we're rolling runway three one\n pekný let dopo \n ďakujeme pekný deň",
+        "full_ts": "Bair Seven Five One we're rolling runway three one pekný let dopo ďakujeme pekný deň",
         "short_ts": "Bair 751 we re rolling runway 31\npekný let dopo\nďakujeme pekný deň",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -2265,17 +2283,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Qatari One Six Papa , Elite Jet Two Zero One , Lima Tango Charlie Two Zero One , Elite Jet Two Zero Two ",
-        "prompt_fullts_5B": "Elite Jet Four Zero Two , Elite Jet Two Zero One , Emirates One Two Eight , Elite Jet Two Zero Two , Cargolux Seven Nine Seven Two ",
-        "prompt_fullts_50B": "Emirates One Eight , Slovak Government Zero Four Alpha , Emirates One Two Eight , Blue Air Eight Mike Echo , Lima Tango Charlie Two Zero One , Asiana Seven Nine Five , Elite Jet Two Zero Two , Qatari One Six Papa , Turkish Nine Eight Uniform , Elite Jet Four Zero Two , Bair Seven Five One , Elite Jet Two Zero One , Cargolux Seven Nine Seven Two , Eurocypria Two One Echo , China Eastern Seven Zero Four Four , November Four Nine X-ray Lima , Etihad Four Three Uniform "
+        "prompt_fullts_1G_4B": ", Elite Jet Two Zero One , China Eastern Seven Zero Four Four , Etihad Four Three Uniform , Elite Jet Two Zero Two ",
+        "prompt_fullts_5B": "Asiana Seven Nine Five , Elite Jet Four Zero Two , Qatari One Six Papa , Slovak Government Zero Four Alpha , Bair Seven Five One ",
+        "prompt_fullts_50B": "Cargolux Seven Nine Seven Two , China Eastern Seven Zero Four Four , Elite Jet Two Zero One , Lima Tango Charlie Two Zero One , Slovak Government Zero Four Alpha , Etihad Four Three Uniform , Emirates One Eight , Blue Air Eight Mike Echo , Asiana Seven Nine Five , Bair Seven Five One , November Four Nine X-ray Lima , Eurocypria Two One Echo , Elite Jet Four Zero Two , Emirates One Two Eight , Turkish Nine Eight Uniform , Elite Jet Two Zero Two , Qatari One Six Papa "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210504_120250.wav",
-        "full_ts": "Tatra Six Zero  Tatra Šesť Nula Nula vyčkávajte pred levelovacou delta\nbudeme vyčkávať pred rolovacou(rolovac-) rolovacou delta a dáme im prednosť týmto chlapom Tatra Šesť Nula Nula",
+        "full_ts": "Tatra Six Zero Tatra Šesť Nula Nula vyčkávajte pred levelovacou delta budeme vyčkávať pred rolovacou(rolovac-) rolovacou delta a dáme im prednosť týmto chlapom Tatra Šesť Nula Nula",
         "short_ts": "Tatra 60 Tatra Šesť 00 vyčkávajte pred levelovacou D\nbudeme vyčkávať pred rolovacou rolovac rolovacou D a dáme im prednosť týmto chlapom Tatra Šesť 00",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -2347,21 +2365,27 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Bair Nine Four One , Tango Tango Juliett Six Zero Zero , Tango Tango Juliett Six Zero Three , Egyptair Seven Nine Seven ",
-        "prompt_fullts_5B": "Orient Thai Romeo Whiskey , Bair Nine Four One , Elite Jet Two Zero Two , Tango Tango Juliett Six Zero Zero , Austrian Eight Five Eight ",
-        "prompt_fullts_50B": "Austrian Eight Five Eight , Orient Thai Romeo Whiskey , Austrian Seven Nine One , Russia Four Five Three Eight , Oscar Echo X-ray Yankee Foxtrot , Elite Jet Seven Zero Two , Egyptair Seven Nine Seven , Lufthansa Four Yankee Echo , Tango Tango Juliett Six Zero Three , Bair Nine Four One , Tango Tango Juliett Six Zero Zero , Elite Jet Two Zero Two , Oscar Kilo Romeo Lima Victor "
+        "prompt_fullts_1G_4B": ", Oscar Kilo Romeo Lima Victor , Austrian Eight Five Eight , Lufthansa Four Yankee Echo , Austrian Seven Nine One ",
+        "prompt_fullts_5B": "Tango Tango Juliett Six Zero Zero , Lufthansa Four Yankee Echo , Russia Four Five Three Eight , Austrian Seven Nine One , Elite Jet Two Zero Two ",
+        "prompt_fullts_50B": "Oscar Echo X-ray Yankee Foxtrot , Tango Tango Juliett Six Zero Three , Egyptair Seven Nine Seven , Tango Tango Juliett Six Zero Zero , Elite Jet Two Zero Two , Bair Nine Four One , Oscar Kilo Romeo Lima Victor , Orient Thai Romeo Whiskey , Lufthansa Four Yankee Echo , Russia Four Five Three Eight , Austrian Eight Five Eight , Elite Jet Seven Zero Two , Austrian Seven Nine One "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_163649.wav",
-        "full_ts": "runway one seven five  Nav Checker Five One One tschuss tschuss good bye thank you\ntschuss",
+        "full_ts": "runway one seven five Nav Checker Five One One tschuss tschuss good bye thank you tschuss",
         "short_ts": "runway 175 FCK511 tschuss tschuss good bye thank you\ntschuss",
         "prompt-data": {
-            "long_callsigns": {
-                "Nav Checker Five One One": 1
-            },
-            "short_callsigns": {
-                "FCK511": 1
-            },
+            "long_callsigns": [
+                {
+                    "key": "Nav Checker Five One One",
+                    "val": 1
+                }
+            ],
+            "short_callsigns": [
+                {
+                    "key": "FCK511",
+                    "val": 1
+                }
+            ],
             "waypoints": [
                 "ALETO",
                 "AOSTA",
@@ -2434,17 +2458,17 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Nav Checker Five One One, Hotel Bravo Kilo Oscar Juliett , Royal Ghana Zero Four , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Victor Papa ",
-        "prompt_fullts_5B": "Mosquito One Five Bravo , Hotel Bravo Kilo Oscar Juliett , Foxtrot Papa Alpha Delta Uniform , Royal Ghana Zero Four , Fraction Seven Nine One Golf ",
-        "prompt_fullts_50B": "Hotel Bravo Kilo Oscar Juliett , Royal Ghana Zero Four , Harmony One Eight Five , Hotel Bravo Delta Golf Victor , Hotel Bravo Zulu Victor Papa , Hotel Bravo Zulu Whiskey Papa , Foxtrot Papa Alpha Delta Uniform , Hansa Two Six Echo , Mosquito One Five Bravo , Fraction Seven Nine One Golf , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Kilo Lima Echo "
+        "prompt_fullts_1G_4B": "Nav Checker Five One One, Hotel Bravo Zulu Victor Papa , Hansa Two Six Echo , Harmony One Eight Five , Foxtrot Papa Alpha Delta Uniform ",
+        "prompt_fullts_5B": "Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Kilo Oscar Juliett , Fraction Seven Nine One Golf , Hansa Two Six Echo , Hotel Bravo Zulu Victor Papa ",
+        "prompt_fullts_50B": "Mosquito One Five Bravo , Foxtrot Papa Alpha Delta Uniform , Harmony One Eight Five , Fraction Seven Nine One Golf , Hotel Bravo Delta Golf Victor , Hansa Two Six Echo , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Zulu Whiskey Papa , Royal Ghana Zero Four , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Victor Papa , Oscar Oscar Papa Charlie Juliett "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210504_112126.wav",
-        "full_ts": "spravne a budu to touch and go\nbudu to touch and go ano tymze ctvrte bude plne plne touch and go  plne pristatie Tatra Sest Nula",
+        "full_ts": "spravne a budu to touch and go budu to touch and go ano tymze ctvrte bude plne plne touch and go plne pristatie Tatra Sest Nula",
         "short_ts": "spravne a budu to touch and go\nbudu to touch and go ano tymze ctvrte bude plne plne touch and go plne pristatie Tatra Sest 0",
         "prompt-data": {
-            "long_callsigns": {},
-            "short_callsigns": {},
+            "long_callsigns": [],
+            "short_callsigns": [],
             "waypoints": [
                 "ABETI",
                 "ABLOM",
@@ -2514,8 +2538,8 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Egyptair Seven Nine Seven , Oscar Kilo Romeo Lima Victor , Oscar Echo X-ray Yankee Foxtrot , Tango Tango Juliett Six Zero Three ",
-        "prompt_fullts_5B": "Russia Four Five Three Eight , Bair Nine Four One , Oscar Kilo Romeo Lima Victor , Orient Thai Romeo Whiskey , Tango Tango Juliett Six Zero Zero ",
-        "prompt_fullts_50B": "Oscar Kilo Romeo Lima Victor , Tango Tango Juliett Six Zero Three , Oscar Echo X-ray Yankee Foxtrot , Elite Jet Seven Zero Two , Tango Tango Juliett Six Zero Zero , Orient Thai Romeo Whiskey , Bair Nine Four One , goldeck One , Elite Jet Two Zero Two , Russia Four Five Three Eight , Egyptair Seven Nine Seven , Austrian Seven Nine One "
+        "prompt_fullts_1G_4B": ", Oscar Echo X-ray Yankee Foxtrot , Austrian Seven Nine One , Tango Tango Juliett Six Zero Zero , Russia Four Five Three Eight ",
+        "prompt_fullts_5B": "goldeck One , Orient Thai Romeo Whiskey , Bair Nine Four One , Tango Tango Juliett Six Zero Zero , Russia Four Five Three Eight ",
+        "prompt_fullts_50B": "Oscar Echo X-ray Yankee Foxtrot , Oscar Kilo Romeo Lima Victor , Tango Tango Juliett Six Zero Zero , Austrian Seven Nine One , Orient Thai Romeo Whiskey , Tango Tango Juliett Six Zero Three , Bair Nine Four One , Russia Four Five Three Eight , Egyptair Seven Nine Seven , Elite Jet Seven Zero Two , Elite Jet Two Zero Two , goldeck One "
     }
 ]

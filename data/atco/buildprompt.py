@@ -255,11 +255,15 @@ def make_shortts(text):
     return process_tag_content(text, 'alphanum',97)
 
 # ========================================================================================================      
-def run_xmlfile_process(xml_data, info_file_path):
+def run_xmlfile_process(xml_data, info_file_path,seg_idx=None):
     soup = BeautifulSoup(xml_data, "xml")
     out = {'short_ts': ''}
     count_of_all_previous_words_of_segments = 0 # for computation of the position of the callsign in the text
-    for segment in soup.find_all("segment"):
+    for idx,segment in enumerate(soup.find_all("segment")):
+        # skip all segments, that we dont want to process
+        if (seg_idx is not None and idx != seg_idx):
+            continue
+        
         # make new short transcription
         shortts = make_shortts(segment.find("text").text)
         if (shortts.strip() != ""):
@@ -460,12 +464,18 @@ if __name__ == '__main__':
                 # from xml file obtain all callsigns
                 with open(xml_file,'r') as f:
                     xml_data = f.read()
-                    out = run_xmlfile_process(xml_data, info_file_path)
+                    # if the file has been cut into multiple wavs previsouly, then still one xml file belongs to all of them
+                    # so we need to extract only the part belongig to wav we are currently processing
+                    segidx = None
+                    if ('segidx' in os.path.basename(meta['audio'])):
+                        segidx = int(os.path.basename(meta['audio']).split('segidx')[1].split('_')[0])
+                    out = run_xmlfile_process(xml_data, info_file_path, segidx)
                 
                 meta['short_ts'] = out['short_ts']
+                meta['full_ts'] = re.sub(r'\s+',' ',meta['full_ts']).strip() # remove multiple spaces from fullts as a precaution
                 meta['prompt-data'] = {
-                    'long_callsigns': out['long_callsigns'],
-                    'short_callsigns': out['short_callsigns'],
+                    'long_callsigns': [{'key':k,'val':v} for k,v in out['long_callsigns'].items()],#out['long_callsigns'],
+                    'short_callsigns': [{'key':k,'val':v} for k,v in out['short_callsigns'].items()],#out['short_callsigns'],
                     'waypoints': meta['prompt']['waypoints'],
                     'nearby_short_callsigns': meta['prompt']['short_callsigns'],
                     'nearby_long_callsigns': meta['prompt']['long_callsigns'],
@@ -475,11 +485,11 @@ if __name__ == '__main__':
                     'long_taxiway': []
                 }
                 len_waypoints = len(meta['prompt-data']['waypoints'])
-                len_long_callsign = len(meta['prompt-data']['long_callsigns'].keys())
+                len_long_callsign = len(out['long_callsigns'].keys())
                 
                 # build some prompts, that can be used during training
                 # this prompt is using 1 correct callsign and 4 incorrect callsigns
-                meta['prompt_fullts_1G_4B'] = ', '.join(meta['prompt-data']['long_callsigns'].keys()) + ', ' + \
+                meta['prompt_fullts_1G_4B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
                     ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],4))
                 # this prompt uses 5 incorrect callsigns
                 meta['prompt_fullts_5B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],5))
