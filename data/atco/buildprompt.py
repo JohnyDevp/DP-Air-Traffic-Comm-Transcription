@@ -19,7 +19,7 @@ number_map = {
     # English
     "zero": "0", "one": "1", "two": "2", "three": "3",
     "four": "4", "five": "5", "six": "6", "seven": "7",
-    "eight": "8", "nine": "9",
+    "eight": "8", "nine": "9", "niner":"9",
     
     # Teens and special numbers
     "ten": "10", "eleven": "11", "twelve": "12", "thirteen": "13",
@@ -135,9 +135,9 @@ def process_tag_content(full_ts, what : str ="alphanum",cutoff=None):
     current_transcript = ""
     
     # split the words and also punctuation separately
-    reg = re.compile(r"\w+|[.,!?]")
+    reg = re.compile(r"\w+(?:-\w+)*|[.,!?]")
     words : list[str] = reg.findall(full_ts)
-    
+
     idx = 0
     while idx < len(words):
         word = words[idx]
@@ -203,7 +203,7 @@ def make_info_vocab(info_file_path):
             code = line.split(":")[0].lower().strip()
             full = line.split(":")[1].lower().strip()
             info_vocab[_key_normalizer(full)] = code
-    
+            
     return info_vocab 
 # =====================================================================================================
 def shorten_callsign(match):
@@ -238,10 +238,9 @@ def shorten_callsign_2(match, info_file_path):
         full_vocab = make_info_vocab(info_file_path)
         if (_key_normalizer(callsign) in full_vocab):
             shorten_callsign = full_vocab[_key_normalizer(callsign)].replace(' ','').upper()
-            # out['short'].append(full_vocab[_key_normalizer(callsign)].upper())
         else:
             # it is not found in the dictionary, so we will process it in shortennign function
-            shorten_callsign = process_callsign_with_vocabs(callsign).replace(' ','').upper()
+            shorten_callsign = process_callsign_with_vocabs(callsign)
         return shorten_callsign
         
 def make_shortts(text, info_file_path):
@@ -254,8 +253,8 @@ def make_shortts(text, info_file_path):
     # go through all callsigns and try to find the match
     pattern= r'\[#callsign\](.*?)\[/#callsign\]'
     # find all callsigns
-    # text=re.sub(pattern, lambda match: shorten_callsign_2(match, info_file_path), text)
-    text=re.sub(pattern, shorten_callsign, text)
+    text=re.sub(pattern, lambda match: shorten_callsign_2(match, info_file_path), text)
+    # text=re.sub(pattern, shorten_callsign, text)
     
     # find all value tags
     pattern = r'\[#value\](.*?)\[/#value\]'
@@ -381,7 +380,7 @@ def get_callsigns_from_text(corrected_text_with_tags : str, info_file_path : str
             # out['short'].append(full_vocab[_key_normalizer(callsign)].upper())
         else:
             # it is not found in the dictionary, so we will process it in shortennign function
-            shorten_callsign = process_callsign_with_vocabs(callsign).replace(' ','').upper()
+            shorten_callsign = process_callsign_with_vocabs(callsign)
             
         if not shorten_callsign in out['short']:
             out['short'][shorten_callsign] = 1
@@ -394,7 +393,7 @@ def process_callsign_with_vocabs(callsign : str):
     # this function works for callsigns like Air France 1234, where the last word of digits
     # we obtain by calling process_tag_content, and Air France we translate to shortcut by 
     # looking into the info file
-    
+
     partly_processed_callsign = process_tag_content(callsign, "alphanum")
     # we assume that the last word is now built from numbers and letters recognized 
     # from air traffic alphabet and numbers
@@ -402,7 +401,6 @@ def process_callsign_with_vocabs(callsign : str):
     # we will try to find the airport code in the info file    
     airport_name = ' '.join(partly_processed_callsign.strip().lower().split(' ')[0:-1]).strip()
     airport_name_norm = _key_normalizer(airport_name)
-    
     if (airport_name_norm.strip() != ""):
         if (airport_name_norm in vocab_airline):
             airport_code = vocab_airline[airport_name_norm]
@@ -410,9 +408,11 @@ def process_callsign_with_vocabs(callsign : str):
         elif (airport_name_norm in vocab_callsign):
             airport_code = vocab_callsign[airport_name_norm]
             return (airport_code + partly_processed_callsign.split(' ')[-1]).replace(' ','').upper()
-    
-    # if we cant shorten whole callsign return it as it is
-    return partly_processed_callsign.strip()
+        else:
+            return (airport_name.capitalize() + ' ' + partly_processed_callsign.split(' ')[-1].upper())
+    else:
+        # if we cant shorten whole callsign return it as it is
+        return partly_processed_callsign.strip().upper()
 
 def get_value_from_text(value_sign_word: str, corrected_text_with_tags : str):
     """
@@ -442,7 +442,22 @@ def get_value_from_text(value_sign_word: str, corrected_text_with_tags : str):
 
 def sample_random_callsigns(set_of_callsigns, n, exclude = []):
     return random.sample([x for x in set_of_callsigns if x not in exclude], min(n,len(set_of_callsigns)))
-    
+
+global_vocab : dict =json.load(open('../tools/global_vocab.json'))
+global_vocab_full_callsigns = global_vocab.keys()
+global_vocab_short_callsigns = global_vocab.values()
+
+def build_bad_full_callsigns(default_set_of_callsigns,n):
+    default_list = sample_random_callsigns(default_set_of_callsigns, n)
+    remaining_n = n - len(default_list)
+    rest_list = sample_random_callsigns(global_vocab_full_callsigns, remaining_n, default_list)
+    return default_list + rest_list
+
+def build_bad_short_callsigns(default_set_of_callsigns,n):
+    default_list = sample_random_callsigns(default_set_of_callsigns, n)
+    remaining_n = n - len(default_list)
+    rest_list = sample_random_callsigns(global_vocab_short_callsigns, remaining_n, default_list)
+    return default_list + rest_list
 
 if __name__ == '__main__':
     METADATA_PATHS = [
@@ -458,6 +473,7 @@ if __name__ == '__main__':
     
     # create vocab
     make_vocab(json.load(open('../tools/callsigns_icao.json')), json.load(open('../tools/airline_icao.json')))
+    vocab_callsign['csa']='CSA' # ADD a special case for czech airlines
     
     for file in METADATA_PATHS:
         with open(file,'r') as f:
@@ -476,7 +492,7 @@ if __name__ == '__main__':
                 # open xml and info files
                 xml_file = path.replace('.wav','.xml')
                 info_file_path = path.replace('.wav','.info')
-                
+            
                 # from xml file obtain all callsigns
                 with open(xml_file,'r') as f:
                     xml_data = f.read()
@@ -503,18 +519,30 @@ if __name__ == '__main__':
                 len_waypoints = len(meta['prompt-data']['waypoints'])
                 len_long_callsign = len(out['long_callsigns'].keys())
                 
-                # build some prompts, that can be used during training
+                # BUILD FULLTS PROMPTS
                 # this prompts is using all correct callsign and all correct + 4 incorrect callsigns
                 meta['prompt_fullts_AG'] = ', '.join(out['long_callsigns'].keys())
                 meta['prompt_fullts_AG_4B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
-                    ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],4))
+                    ', '.join(build_bad_full_callsigns(meta['prompt-data']['nearby_long_callsigns'],4))
                 # this prompt uses 5 incorrect callsigns
-                meta['prompt_fullts_5B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],5))
+                meta['prompt_fullts_5B'] = ', '.join(build_bad_full_callsigns(meta['prompt-data']['nearby_long_callsigns'],5))
                 # this prompt uses 50 incorrect callsigns
-                meta['prompt_fullts_50B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],50))
+                meta['prompt_fullts_50B'] = ', '.join(build_bad_full_callsigns(meta['prompt-data']['nearby_long_callsigns'],50))
+                
+                # BUILD SHORTTS PROMPTS
+                # this prompt uses all correct callsign and all correct + 4 incorrect callsigns
+                meta['prompt_shortts_AG'] = ', '.join(out['short_callsigns'].keys())
+                meta['prompt_shortts_AG_4B'] = ', '.join(out['short_callsigns'].keys()) + ', ' + \
+                    ', '.join(build_bad_short_callsigns(meta['prompt-data']['nearby_short_callsigns'],4))
+                # this prompt uses 5 incorrect callsigns
+                meta['prompt_shortts_5B'] = ', '.join(build_bad_short_callsigns(meta['prompt-data']['nearby_short_callsigns'],5))
+                # this prompt uses 50 incorrect callsigns
+                meta['prompt_shortts_50B'] = ', '.join(build_bad_short_callsigns(meta['prompt-data']['nearby_short_callsigns'],50))
+                
                 
                 # remove the prompt from the metadata (because in the old version it was there with the content sorted above)
                 meta.pop('prompt')
             
             json.dump(js_file, open(SAVE_FOLDER+file,'w'),indent=4,ensure_ascii=False)
             f.close()
+            

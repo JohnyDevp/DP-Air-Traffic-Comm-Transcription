@@ -81,9 +81,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "Charlie India Juliett",
-        "prompt_fullts_AG_4B": "Charlie India Juliett, Victor Charlie Golf Two Echo Golf , Hotel Bravo Delta Golf Victor , Swiss Two Five Eight Echo , Nav Checker Five One One ",
-        "prompt_fullts_5B": "Med Rescue Echo Echo , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Delta Golf Victor , Swiss Two Five Eight Echo , Hotel Bravo Zulu Echo Foxtrot ",
-        "prompt_fullts_50B": "Swiss Two Five Eight Echo , Nav Checker Five One One , Med Rescue Echo Echo , Victor Charlie Golf Two Echo Golf , Hotel Bravo Delta Golf Victor , Hotel Bravo Zulu Echo Foxtrot , Spring Air Three Eight One , Luxor Golf Two Two Sierra , November One Four Echo Foxtrot , Hotel Bravo Zulu Whiskey Papa "
+        "prompt_fullts_AG_4B": "Charlie India Juliett, Luxor Golf Two Two Sierra , Victor Charlie Golf Two Echo Golf , Nav Checker Five One One , Swiss Two Five Eight Echo ",
+        "prompt_fullts_5B": "Luxor Golf Two Two Sierra , Hotel Bravo Zulu Echo Foxtrot , Med Rescue Echo Echo , Victor Charlie Golf Two Echo Golf , Hotel Bravo Zulu Whiskey Papa ",
+        "prompt_fullts_50B": "Victor Charlie Golf Two Echo Golf , Hotel Bravo Delta Golf Victor , Swiss Two Five Eight Echo , Luxor Golf Two Two Sierra , Hotel Bravo Zulu Whiskey Papa , November One Four Echo Foxtrot , Spring Air Three Eight One , Med Rescue Echo Echo , Nav Checker Five One One , Hotel Bravo Zulu Echo Foxtrot , Qlink Four Two Zero Delta, Habicht Oscar Papa, Sowind Four, Hotel Bravo Yankee Tango Bravo, Austrian Six Eight Four Alpha, Lufthansa One Yankee Yankee, Swiss Two Zero Uniform Tango Echo, Galaxy Alpha Two, Qantas Nine Two Two, Scan Two Eight One Four, Swiss Three Three Victor, Air Baltic Seven Lima Zulu, Air Malta Five Three Eight, Asterix Five Three Papa, Hotel Bravo Oscar India Alpha, Qlink Six Zero Delta, Oscar Kilo Mike Lima Delta, Qlink Four Four Six Delta, Swiss One Five Five, Vista Five Three Four, Mosquito Four One Uniform, Eurocat Eight Zero Two, Dream Team Nine Eight Two Kilo, Bravo Tango X-ray Three Charlie, Wizzair Four, Papa Two Two Zero, Fedex Six Zero One Three, Scan Six Zero One, Swiss Four Seven Golf Papa, Oscar Kilo Victor Sierra Bravo, Swiss Two One Three Delta, Swiss Three One Juliett, Qlink Three Zero, Oscar Kilo Bravo Romeo Oscar, Eclair Three Zero One, Austrian Eight Zulu, Lufthansa Two One Papa, Austrian One Seven Two, Hotel Bravo Two Three Two Five, Austrian Seven Papa Kilo",
+        "prompt_shortts_AG": "CIJ",
+        "prompt_shortts_AG_4B": "CIJ, VCG2EG, SWR258E, MREEE, SPG381",
+        "prompt_shortts_5B": "FCK511, LXG22S, HBDGV, VCG2EG, SPG381",
+        "prompt_shortts_50B": "HBZEF, HBDGV, SPG381, HBZWP, MREEE, FCK511, LXG22S, SWR258E, VCG2EG, N14EF, SPFBA, DLH56E, DLH74U, SWR212B, ETH574, KAL568, JST474, RXA6665, JST891, VJT957, UAE32, SWR243, HKY637, N915JG, JFA65R, RXA551, SFZ623, SDR4579, AEA1517, OKZUA75, AHO312G, QLK715, VJT426, NJE218Y, SAS41W, SIA286, VHNBR, DAL234, OECOO, NJE027W, GAC558R, QFA433, TCKJA, VJT492, JFA49Z, DFC92K, BCS961, RXA533, HBVPE, SSG06B"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Tower_118_3MHz_20210415_113505.wav",
@@ -159,9 +163,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Hotel Bravo Zulu Victor Papa , Vista Malta Five Three Four , Legend One Five Zero Seven , Hotel Bravo Zulu Echo Foxtrot ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Whiskey Foxtrot , Colair Six One , Legend One Five Zero Seven , Hotel Bravo Zulu Whiskey Papa , Vista Malta Five Three Four ",
-        "prompt_fullts_50B": "Royal Ghana Zero Four , Colair Six One , Hotel Bravo Yankee Lima Lima , Hotel Bravo Zulu Victor Papa , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Echo Foxtrot , Legend One Five Zero Seven , Vista Malta Five Three Four , Hotel Bravo Zulu Mike Whiskey , Colair Seven Two "
+        "prompt_fullts_AG_4B": ", Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Echo Foxtrot , Royal Ghana Zero Four , Hotel Bravo Zulu Whiskey Foxtrot ",
+        "prompt_fullts_5B": "Royal Ghana Zero Four , Colair Seven Two , Hotel Bravo Zulu Echo Foxtrot , Colair Six One , Legend One Five Zero Seven ",
+        "prompt_fullts_50B": "Royal Ghana Zero Four , Vista Malta Five Three Four , Hotel Bravo Zulu Mike Whiskey , Colair Seven Two , Colair Six One , Hotel Bravo Zulu Whiskey Papa , Legend One Five Zero Seven , Hotel Bravo Zulu Echo Foxtrot , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Zulu Victor Papa , Hotel Bravo Yankee Lima Lima , Oscar Echo India Tango Hotel, Jetstar Seven Two Four, Jetstar Six Zero Eight, Wizz Go Five Six November Juliett, Speedbird One Six Five Foxtrot, Foxtrot Delta Two One Eight, Alpha Mike Two Two Seven, Jetstar Six Zero Two, Lufthansa One Five Two Two, Jetex Seven Four Four Five, Hotel Bravo Papa Charlie Alpha, Mosquito Eight Five Papa, Aegean Six One Charlie Golf, Red Lion Two Foxtrot, Flycom Romeo India Alpha November Nine, Friendship Charlie November Zero One, Qantas Five Three Four, Qlink Two Two Three Delta, Air France Seven Eight Tango Foxtrot, Zulu Uniform Echo Romeo India Six, Ryan Air Nine Kilo Tango, Oscar Kilo Romeo Delta Sierra, Europa One Six Seven Six, Oscar Kilo Mike November Mike, Alpha Mike Two Four Two, Time Air Three Eight Eight Uniform, Austrian Airlines Six Juliett Alfa, Austrian Airlines One Charlie Victor, Lufthansa Two Five Four Four, Ryan Eight Lima Papa, November One One Five Delta Foxtrot, Sunturk Five Six Zero Three, Jetstar Seven Nine Zero, Lufthansa Two Three Six, Dream Catcher Whiskey Oscar, Galaxy Alpha Six, Aero Coach Bravo Tango, Air France Three One Kilo Whiskey, Hotel Tango Four Zero One",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", HBZMW, HBZWP, AXY1507, HBZWF",
+        "prompt_shortts_5B": "HBZWP, RGA04, COL61, COL72, HBZEF",
+        "prompt_shortts_50B": "HBZMW, HBZVP, COL61, HBZWF, HBYLL, AXY1507, RGA04, COL72, HBZWP, VJT534, HBZEF, PAL8212, VIKTOR30, JMP802, DENIF, RYR491Y, HBQVP, NJE411E, DLA4LL, ELJ403, QTR166K, TAY4078, JST423, EWG6NL, SBI8583, VOZ819, QLK443, WZZ8625, SPG463, QFA130, AMQ2W, RYR7797, HBOCI, SVA216, UAL842, LOT527, DLH22N, DLH3PN, SSG004, JST767, FJRSA, OECOG, QFA7290, SIA7273, CAL052, IGBMP, QFA7528, FDX73, VLB515, SXS7SL"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201028_153007.wav",
@@ -179,9 +187,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Skytravel Zero Four Bravo, Topswiss Seven Six Juliett Bravo, Emirates One Four Zero, Velocity Eight Nine Six",
+        "prompt_fullts_5B": "Rex Six One Seven Five, Qlink Six Seven Zero, Singapore Two Four One, Air Hamburg Eight Four Three Romeo, Oscar Kilo Mike Lima Delta",
+        "prompt_fullts_50B": "Victor Charlie Juliett Nine One Sierra, Sky Travel Three Nine Juliett, Private Wings Nine Six, Lot Five Two Papa, Qlink Two Two One, Swiss One Eight Two Golf, Eurotrans Nine Six One, American Seven Two, Tango Seven Foxtrot Bravo Quebec, Romeo Tango Tango Six, Orient Thai Lima Juliett, Qatari Four One Four Uniform, Juliett Papa Victor Four Two Three, Hansa Three Three Papa, Swiss Two Four Three, November Six Six Six Charlie Papa, Flycom Romeo India Five One Two, Air Hamburg Four Four Eight Victor, Hotel Bravo Three Three Six Two, Qantas Eight Four Three, Ryan Air Nine Foxtrot Delta, Hotel Bravo Whiskey Zulu Delta, Centralmex Four Uniform, Swiss One Five X-ray, Speedbird Eight Five Five, Hotel Bravo Three Three Four Two, Skytravel Zero Four Bravo, Topswiss Four One Juliett Zulu, November Nine Nine Kilo Whiskey, Hotel Bravo Kilo Papa November, Eurotrans Nine Two Nine, Hansa One Tango Victor, Silk West Two Eight Zero, Flycom Romeo India Five Three Nine, Qantas Seven Four Seven, Juliett Sierra Hotel Six Six One, Ghibli Four, Edelweiss Two Zero One, Car Line One Six Four Three, Velocity Five Four Eight, Sierra Papa Mike Bravo Alfa, Eurotrans One Three Juliett, Air France One Zero Bravo Echo, Golf Uniform India Delta Oscar Seven, Klm One Nine Eight One, Qantas Four Six Seven, Alpine Six One Victor Yankee, Singapore Seven Two Nine Eight, Thunder Wings Echo Zulu, Oscar Echo Golf Golf Golf",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", SWR50D, QLK192, QLK205D, WZZ3858",
+        "prompt_shortts_5B": "VKG4136, FIN6RL, DFC57G, JST207, VOZ565",
+        "prompt_shortts_50B": "SWR97Z9, DHK547, VDA8029, AMC538, AUA455, POL26, OKVSB, QJE1578, LGL922, VOZ1535, VOZ439, AUA6MA, TMN81, PEG23, DLH55A, HBLYZ, VJT467, QFA524, AHO749Q, AM242, DLH01P, HBKGN, YUPMK, SXS7U, QLK401, MMD6484, IBJ721X, SUI521, JST458, QFA483, AHO634S, SWR139, SWR112E, OKKEA, EDW2828, ANA880, OKHHH, QLK432, PCH186, FD213, HBCQM, VOZ531, SYCFS256, QLK248, ELJ704, JST762, THY5XV, QFA6124, AUA792, UAE9936"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201029_151000.wav",
@@ -199,9 +211,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Golf Lima India Lima Echo, Klm One Eight Four Seven, Turkish One Nine Two Three, Jetstar Nine Eight Nine",
+        "prompt_fullts_5B": "Hotel Bravo Zulu Sierra Oscar, Qantas Six Zero Zero Three, Space World Bravo Alpha, Hotel Bravo Two Five Three Four, Hotel Bravo Delta Hotel Alpha",
+        "prompt_fullts_50B": "Hotel Bravo Yankee Yankee Alpha, Zulu Echo Bravo Romeo Alpha Five, Scandinavian Eight Nine Bravo, Nippon Cargo Zero Four Nine, Echo Lima Golf Five Two Alpha, November One Five Zero Echo Kilo, Emirates Nine Two Four Two, Fraction Eight Three Four Romeo, Turkish Six Five Nine One, Tango Foxtrot X-ray One Five, Transaven Airline Mike Zero Eight, Tango Echo Two Six, Wizzair Three Foxtrot Romeo, Qatari One Six Six Kilo, Scan Six Six Charlie, Sierra Foxtrot Zulu Six Three Nine, Qjet One Seven Eight Seven, Air Malta Three Seven Six, Sunexpress Four Tango, Velocity Nine Three Nine, Wizzair One Bravo Kilo, Hotel Alpha India Lima Hotel, Qjet One Five Seven Three, China Eastern Five Six Two, Papa Victor Delta Six Eight Seven Hotel, Broadsword Two One, Air Hamburg Eight Four Three Romeo, Air Serbia Two Zero Hotel, Eurocat Four Zero Two, Austrian Seven Mike Delta, Findon Tango Victor, Yankee Uniform Tango Bravo Alpha, Tango Seven Victor Sierra Romeo, Rooster Nine One Zero, Edelweiss Two Zero One, Lot Five Two Seven, Qlink Two Zero Six Delta, Velocity Eight Eight Six, Jetstar Five Two Seven, Aeroflot Two Three Eight One, Swiss One Six Five Victor, Sundair Four Two Seven Two, Legend One Four One Two, Silver Cloud One Five Nine, Velocity Eight Five Eight, Qantas One Eight Zero, Okapi Hotel Mike, Rex Six Four Six Three, Qantas Seven Four Six, Klm Three Eight Whiskey",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", QLK205D, CPA139, RYR4MW, JTE7405",
+        "prompt_shortts_5B": "QFA540, HBYES, TOY226, AEE853, QFA536",
+        "prompt_shortts_50B": "QJE1501, SWR72TL, JST891, QTR8016, ACA7232, CSA6KG, OEIZY, BTI223, QFA730, ANZ231, EVA078, QTR3AU, GAC404K, QFA652, FYL61CB, VOZ841, VOZ882, HBLYZ, JTE7448, NJE8KE, VOZ505, SWR144F, N676MA, CHX54, LOT318, SUA771, SWR160, QLK262, JST408, DINEZ, SAZ65, MAS141, JST411, VOZ545, SWR2796, ANZ246, RYR94KV, QJE1504, QTR3BB, NOS02, TIE358P, BRU862, AUA3BU, TIE790J, LOT527, JST461, MJF6B, QFA733, JST207, TWG144"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210505_142414.wav",
@@ -285,9 +301,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "Victor Oscar",
-        "prompt_fullts_AG_4B": "Victor Oscar, Lufthansa Zero Three Alpha , Air France Four Five Hotel Romeo , Vista Four Six Seven , Afrilens Four One ",
-        "prompt_fullts_5B": "Vista Four Six Seven , Air France Four Five Hotel Romeo , Vueling One Five Zero Two , Alpha Sierra Juliett Four Two One , Hotel Bravo Zulu Oscar Zulu ",
-        "prompt_fullts_50B": "Afrilens Four One , Ryan Two Zero Foxtrot Hotel , Alpha Sierra Juliett Four Two One , Lufthansa Zero Three Alpha , Vista Four Six Seven , Vueling One Five Zero Two , Air France Four Five Hotel Romeo , Alitalia Two Zero Six , Bair Nine Five One , Hotel Bravo Zulu Oscar Zulu "
+        "prompt_fullts_AG_4B": "Victor Oscar, Lufthansa Zero Three Alpha , Bair Nine Five One , Afrilens Four One , Air France Four Five Hotel Romeo ",
+        "prompt_fullts_5B": "Lufthansa Zero Three Alpha , Afrilens Four One , Vueling One Five Zero Two , Bair Nine Five One , Ryan Two Zero Foxtrot Hotel ",
+        "prompt_fullts_50B": "Lufthansa Zero Three Alpha , Bair Nine Five One , Hotel Bravo Zulu Oscar Zulu , Alpha Sierra Juliett Four Two One , Air France Four Five Hotel Romeo , Afrilens Four One , Alitalia Two Zero Six , Vista Four Six Seven , Ryan Two Zero Foxtrot Hotel , Vueling One Five Zero Two , United Eight Four Two, French Bee Seven Zero Zero, Koreanair Five Six Eight, Croatia Four Eight Zero, Galaxy Alpha Two, Oscar Kilo Victor Sierra Bravo, Austrian Eight Tango Bravo, Alpha Mike Two Seven One, Euroguinea Echo November Seven, Hansa Six Charlie, Swiss One Zero Seven Juliett, Royal Ghana Zero Two, Air Silesia Seven Six Two, Jetstar Four Seven Four, Swiss Seven Eight November, Air Malta Four Nine One, Jetstar Six Zero Five, Oscar Kilo Yankee Uniform Romeo Nine Nine, Hotel Bravo Quebec November Tango, Qjet One Five Three Four, Tango Mike November Eight One, Hotel Bravo Three Three One Two, Air France Eight Seven Mike Uniform, Etihad Two Zero, Qjet One Five Zero Three, Swiss Ambulance Five Three, Austrian Airlines One Charlie Victor, Oscar Echo X-ray Yankee Foxtrot, Fraction Six Zero Two Tango, Mosquito Six Five Romeo, Rex Nine Nine Three Three, Lufthansa One Yankee Yankee, Velocity Eight Zero Zero, Ryan Air Six Eight Four Two, Bravo Sierra Mike November Eight One, Eurocat Eight Zero Zero, Transcon Kilo Alpha, Fraction Two Four Zero Golf, Midnight Eight, Austrian Four Six",
+        "prompt_shortts_AG": "VO",
+        "prompt_shortts_AG_4B": "VO, VLG1502, HBZOZ, ASJ421, DLH03A",
+        "prompt_shortts_5B": "VLG1502, VJT467, ABP951, AFR45HR, ASJ421",
+        "prompt_shortts_50B": "AFR45HR, ASJ421, DLH03A, VLG1502, ABP951, RYR20FH, VJT467, HBZOZ, AZA206, GIZ41, QFA538, ETD74, RXA1813, LOT412, JAL771, AE831, EJU5850, SCO049R, AHO269Z, DLH2218, HBLVB, AUA126, IRAN06, HBZWC, QFA530, DCWPS, HBGKG, JST424, NJE201W, DCJKP, DLH23U, RYR6VZ, DEJXA, BTI223, ECA5C, PEG72, QJE1501, TVS36J, RXA540, QLK45D, AUA235, QTR16P, OM1010, QLK65D, CPA3129, URSULA8, SON003, EWG1ZN, QJE1566, DLH55A"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201025_110406.wav",
@@ -305,9 +325,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Bmw-Flight Four Four, Qatari Four Seven Eight Hotel, Alpha Mike Two One Two, Swiss Two One Four Charlie",
+        "prompt_fullts_5B": "Hotel Bravo Kilo Mike November, Jetstar Six Zero Six, Lufthansa Three Three Foxtrot, Fraction Three Two Zero Hotel, Papa Echo Seven Two Zero",
+        "prompt_fullts_50B": "Fraction Five Eight Nine Whiskey, Austrian Nine Golf Romeo, Swiss Nine Three, Pakistan Airway Romeo Zero Six, Papa Zero Eight Eight, Jetex Seven Four Four Eight, Jetstar Eight Two Seven, Swiss Seven Two Eight Eight, Alitalia Two Zero Six, Klm One Eight Three Eight, Sunturk Nine Four Eight, Edelweiss Two Two Nine Foxtrot, Velocity Five Three Nine, Delta Echo November India Foxtrot, Space World Bravo Alpha, Taca Papa Five Three, November Whiskey Charlie Nine Zero One Six, November Seven One One Lima Sierra, Fraction Two Juliett Whiskey, Hansa Five November Foxtrot, Oscar Kilo November Tango Uniform, Austrian Six Tango Mike, Topswiss One Two One Seven, Austrian Eight Five Eight, Foxtrot Delta Two Nine One, Alpine Five Eight Five Zero, Qlink Two Four Seven, Tango Tango Juliett Six Zero Three, Hotel Bravo Foxtrot Uniform Uniform, Aegean Eight Five Three, Cathay Two Zero Two Two, Europa One Six Seven Six, Flying Bulgaria Three One Zero, Qatari Four One Four Uniform, Qlink Four Three Four Delta, Foxtrot Delta Two Eight Four, November Five Five Whiskey Hotel, Alpha Mike Two Seven Seven, Oscar Oscar Papa Charlie Mike, Topswiss Nine Zero Seven Zero, Swiss Two Six Two Delta, Air Hamburg Three One Two Golf, Orion Charter Tango Alfa, Swiss One Six Zero, Fraction Four Three Four Lima, Swiss One Zero Seven Juliett, Blue Air Two Hotel Echo, Hotel Bravo Echo Quebec Juliett, Kilo Oscar November Delta Oscar Romeo One One, Aeroflot Two Zero One Two",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", QJE1572, CPA3128, SWR289, HB2512",
+        "prompt_shortts_5B": "RXA1814, QTR5YK, COL73, RYR2GW, ANG2",
+        "prompt_shortts_50B": "EWG6HP, HBWGI, N115DF, SWR92, QTR8028, SWR78P, MAS6205, QFA511, DLH1591, JFA65R, DLH5UY, GAC032F, SWR45G, AFL2596, DLH23U, VLG9437, KLM73W, RXA6445, LGL92M, AHO312G, LOT420, QFA142, QLK429, PE218, TTJ600, PGT32L, WZZ8759, ETD43U, HBCYJ, GIZ51, RYR9481, VOZ830, TVS437F, QFA405, QFA122, MINSK, QLK7D, RYR3899, RXA9957, TRA6868, VJT405, FD251, ELJ504, DFABT, TE23, PE216, UAE125, LXA1F, SWR1326, QJE1534"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Approach-Radar_127_350MHz_20201028_143213.wav",
@@ -325,9 +349,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Bee-Line Three Two One Five, Fraction Eight Three Four Romeo, Air Serbia Five Five Golf, Fraction One Zero Three Mike",
+        "prompt_fullts_5B": "Rex Six Two Two Eight, Okayjet Oscar Alfa, Lufthansa Four Juliett November, Oscar Mike Mike Two Three Three, Topswiss Two Four Charlie November",
+        "prompt_fullts_50B": "Oscar Kilo Hotel Sierra India, Fraction One Zero Three Mike, Mosquito Zero Five Golf, Foxtrot Sierra Foxtrot Eight Zero Zero Mike, Fraction Five Six Nine Delta, Victor Hotel Zulu Golf Golf, Qantas Four Eight Two, Ryan Air Six One Two One, Delta Kilo Oscar X-ray Yankee, Tango Delta Zero Three, Rex Six Eight Three Six, Oscar Kilo Hotel Bravo Tango, Hansa Nine Papa Kilo, Air Malta Four Nine Zero, Echo Victor Yankee Three Nine, Turkish One Nine Two Three, Papa Victor Delta Eight Five Victor, Lux Rescue One Five Two Bravo, Hotel Bravo Three Three Six Two, Hotel Bravo Three Two Nine Nine, Rex Six One Seven Nine, Velocity Five Two Five, Hansa Zero Two Mike, New Zealand Two Three One, Dream Team Three Five Five Quebec, Qantas Five Four Seven, Austrian Six Mike Alpha, Stera Six Six Six, Wizzair One Alpha Bravo, Hansa Zero Three Alpha, Swiss Nine Four Uniform, Habicht Oscar Papa, Rex Six Four Seven Three, Velocity Nine Zero Zero One, Rex Six Three Six Two, Qantas Five Zero Zero, Oscar Echo Victor Sierra Oscar, Molokai Juliett Three Zero, Yankee Uniform Papa Charlie Charlie, Juliett Sierra Hotel Five Zero Two, Eurotrans Five Three Three Four, Ryanair Five Three Victor Mike, Jetstar Five Zero One, Qatari Three Six Three Tango, Qantas Four One Eight, Ryanair Four Mike Kilo, Nippon Cargo Zero Four Nine, Mosquito Nine Seven Romeo, Swiss Ambulance Seven Two, Qatari Eight One Nine Four",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", GIZ41, P220, QLK263, AUA75",
+        "prompt_shortts_5B": "DLH26E, DLH09M, RXA520, AZA154, GAC218D",
+        "prompt_shortts_50B": "QLK710, QLK424D, TU013, AZG7105, SWT560P, VOZ842, AZA44M, QFA7402, QLK263, ECA5D, TVS6VY, ANZ112, NJE320H, GSW444, QAJ2219, HBYOY, EDW28Y, EJU534U, SWR127X, JST746, RYR1JU, AM242, NJE858D, CCA613, SWR160, GAC263P, VOZ1140, PEG21, UAE9822, YUPZM, JST611, JST815, JST824, SIA241, QFA735, HBPMP, JST661, SUI784, VOZ866, QFA840, N1TF, QFA433, QLK119, QJE1509, SAS602, ZEBRA3, VOZ9007, OOPCN, VLZ133A, QLK441D"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201028_163859.wav",
@@ -345,9 +373,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Delta India Juliett Lima Juliett, Jetstar Four Six Two, Tango Uniform Zero One Six, Jetstar Five One Six",
+        "prompt_fullts_5B": "Aeroflot Two Five Nine Six, Hotel Bravo Zulu Sierra Oscar, Victor Charlie Juliett Nine Nine Alpha, New Zealand Two Four Four, Easy Jet / Easy Jet Three Four Sierra Mike",
+        "prompt_fullts_50B": "Sun Turk Five Seven Five Four, Hansa One Tango Victor, Euro Continental Charlie Juliett, Metman Alfa Lima, Air Serbia Seven Two Papa, Qatari Seven Uniform Kilo, Dream Team One Two Eight Zulu, Tango Three One Two, Rex Six Six Six One, Ryan Air Eight X-ray Mike, Time Air One Seven Zero Papa, Velocity One Four One Three, Alitalia One Five Four, Blue Air Eight Mike Echo, Eurowings Five Six Hotel, Rex Six One Seven Nine, Yankee Uniform Romeo Delta Alpha, Jetstar Six Zero Six, Swiss Six Two Uniform, Aegean Eight Delta Delta, November Nine Nine Kilo Whiskey, Lufthansa Six Charlie, Ryan Eight Kilo Mike, Velocity Five One Two, Mambra Sierra Echo, Austrian Airlines Six Juliett Alfa, Rex Six Seven Two Six, Tango Foxtrot Zero Four Zero One, Hotel Tango Four Zero Two, Edelweiss Two Nine Nine Zulu, Victor Hotel November Bravo Romeo, lot Four Two Zero, Aerovega Alfa Two Four, Austrian Six Zero Two, Oscar Kilo Yankee Uniform Alfa Two One, Edelweiss One Three Four Charlie, Turkish One Nine Two Three, Velocity Four Two Eight, Swiss Ambulance Six Four, Tango Foxtrot Romeo Two One, Foxtrot Papa India Mike Sierra, Sunturk One Seven Alpha, Qantas Four Three Two, Vista Four Seven Four, Csa / Czech Five Zero Eight, Lot Five Two Papa, Rex Six Five One Nine, Qantas Five Five One, Velocity Nine Five Eight, Euroguinea Echo November One Five",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", JST205, ETD72E, AXY1607, RXA6661",
+        "prompt_shortts_5B": "AUA77KT, VOZ1423, DFC54R, HVN773, SWR31Y",
+        "prompt_shortts_50B": "BAW856Z, BLA2HE, EJU94YT, JST503, GDK2, HBTCT, QFA501, DIRSG, QFA441, AMC538, DLH77M, QFA542, QLK402, QTR363T, QLK298, SDR4281, AUA51, QLK221D, JST761, RXA6417, QLK66D, MCVGL, SUI004, EWG67H, JTE7430, QFA726, QFA6112, EUGEN9, BAW696V, SUA671, TAY4091, QLK104D, SIA7298, N184KP, OEFLZ, AUA684A, VJT957, JST769, NJE834R, QLK213D, ANA879, JST423, JAL771, UAL90, VOZ562, AZA206, DLH1322, RXA1836, SWR287K, WZZ92"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201028_131126.wav",
@@ -365,9 +397,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Emirates Three Zero, Velocity Four Three Nine, Di Air Alpha Romeo, Bee-Line Eight November Bravo",
+        "prompt_fullts_5B": "Air Baltic Nine Hotel Papa, November Yankee X-ray Nine Nine Nine, Qantas Five Four Six, November Five Five Zero Zulu Bravo, Velocity Eight Four Six",
+        "prompt_fullts_50B": "Yankee Uniform Papa Bravo Bravo, Air Hamburg Four Four Eight Victor, Ryanair Six Seven Nine Four, Scandinavian Six Six Charlie, Air Hamburg Two Six Nine Zulu, KLM Two One Whiskey, Delta Mike Sierra November Hotel, Qlink Eight Delta, Alpha Mike Two Three One, Mosquito Three Nine Sierra, Austrian Four Uniform Kilo, Lufthansa Six Hotel Foxtrot, Swiss Three Four Seven Tango, Swiss Nine Seven Yankee, Sunexpress Four Tango, New Zealand Two Two Five, Turkish Six Three Three Eight, Swiss Two Nine Foxtrot, Velocity Five Two Five, New Zealand Two Two Nine, Qantas Seven Five Two Four, Swiss Four Nine Papa, Flycom Romeo India Alpha November One, German Cargo Six Nine One, Fraction One Five Six Tango, Swiss Two One Five Five, Eclair Two Zero Two, Qlink Six Five Delta, Klm One Three Five Zero, Ryanair Three Juliett Zulu, Qlink Seven One Five, Austrian Six Charlie Delta, Jetstar Eight One Eight, Connie Eight Three Four, November Yankee X-ray Nine Nine Nine, Air France Five Seven Bravo Papa, Austrian Airlines One Zulu, Velocity Eight Nine Nine, Dream Team Six Four Zero Whiskey, Qantas Four Zero Two, Rex Nine Nine Six Nine, Moonraker Seven Eight Eight Seven, Swiss One Four Eight Five, Qantas Seven Four One, Swiss Nine Three, Sundair Four One Nine Three, Oscar Kilo Hotel Sierra India, Mosquito Seven One Echo, Turkish Six Four Five Three, Eurowings Two Five Eight Nine",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", OKALY, EJU94YT, QFA646, QLK164D",
+        "prompt_shortts_5B": "QLK670, RRR4941, HBYLL, SWR35Q, QFA563",
+        "prompt_shortts_50B": "SWR256, PE313, NJE556B, QFA402, QFA7558, HBKMX, TU012, DLH21J, PVD687H, OMS666, DLH7KC, N99KW, NYX999, JST988, JST509, RYR5694, FLORI512, QFA551, QJE1775, OHRBX, ZUERI7, PEG33, QLK166D, FD238, DLH8RX, QFA510, NJE942R, AUA6BV, ICABC, CES561, QLK257, RXA6438, QFA530, NJE385G, QFA736, SWR139K, TUI7DE, EDW34N, RYR4FU, POL29, AHO850V, TRA6868, VOZ1139, RYR4MW, DLH41X, QFA494, QFA926, PCH076, CAL052, PWF101"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201028_140027.wav",
@@ -385,9 +421,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Tango Mike November One, Qantas Eight Four Three, Velocity Eight Five Three, World Express Five Four Seven",
+        "prompt_fullts_5B": "Mosquito One Nine X-ray, Velocity Nine Zero Eight, Fraction Three Seven Four Golf, Tango X-ray One Five, Transavia Zero Five One",
+        "prompt_fullts_50B": "Swiss Three Five Quebec, Molokai Juliett Three Zero, United Two Seven Nine Five, Qjet One Five Seven Two, Swiss Ambulance Seven Three, November Nine Nine Kilo Whiskey, Croatia Four Eight Zero, Turkish Eight Tango Mike, Two Foxtrot Echo Echo Lima, Qantas Two Two, Swiss Eight Five India Alpha, Philippine Eight Two One Three, Zulu Sierra Golf Uniform Alpha, Qantas Seven Two Nine Three, Delta Echo Bravo Kilo Kilo, Malaysian Six Two Zero Six, Chilcotin Sierra Charlie, Dream Catcher Whiskey Oscar, Saudia Three Zero Seven Six, Qlink Two Two Zero Delta, Topswiss One Two One Seven, Mosquito Six Five Romeo, Lufthansa Four Romeo Mike, Air Serbia Seven Six November, Silver Arrows Four Three Lima Delta, Velocity Nine Zero Zero Seven, Qantas Four Nine Five, Hansa Six Echo Echo, Euroguinea Echo November Two Zero, KLM Nine Four Foxtrot, Lufthansa Six Lima Lima, Air France One Nine Four, Rex Six Nine Eight Two, Rex Six Four Four Four, Aegean Five Sierra Zulu, Qlink One Two One, Qatari Zero Two Mike, Ryan Air Nine Kilo Tango, Swiss Two Five Five November, Jetstar Four Two Three, Eurocat Nine Zero One, Velocity Five Two Five, Swiss Air Force Five Four Eight, Hotel Bravo Two Zero Eight Three, November Four Seven Four Charlie Golf, Austrian One Four Nine Two, Qantas Six One One Two, Sunturk One Seven Alpha, Cathay One Three Eight, Colair Six Three",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", VJT486, THY6454, VPCMF, EWG1994",
+        "prompt_shortts_5B": "N666CP, LXJ650, JST671, PGT23F, QTR02M",
+        "prompt_shortts_50B": "AEE61CG, AUA224, OEFGR, QTR3PE, THY97F, ETD913, DINEZ, DLH03A, AFR194, BCS6823, JST672, AZE72QQ, SWR177, OMDYE, QFA6015, GIZ51, HB3299, ANA880, QTR16P, RXA6762, QFA7558, QLK260, AAL73, AUA858, HB3473, QJE1506, QFA925, OKKEA, WZZ66TX, QFA6002, SWR113F, AHO9615, HBLVC, QLK263, TFR47, VIKTOR38, NJE2JW, ZUERI8, ELY332, SWR2712, ACA7216, UAL52, QTR8020, HBTBV, UPS295, EJU84CB, LOT434, PE997, NJE693D, SIA317"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201027_161901.wav",
@@ -405,9 +445,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Qantas Seven Five Five Seven, Alitalia Nine Seven Uniform, United Five Two, Dirgantara Sierra Golf",
+        "prompt_fullts_5B": "Turkish Nine Echo Quebec, New Zealand Two Four Nine, Papa Echo Four Two One, Air India One Three One, Velocity Eight One Two",
+        "prompt_fullts_50B": "Nine Hotel Echo Alpha Alpha, Lufthansa One Eight Foxtrot, Sky Travel Three Three Juliett, Luxaviation Two Foxtrot, Quality Four Zero Nine One, Skytravel Two Five Seven One, Dream Team One Two Eight Zulu, Hotel Bravo Quebec November Tango, Austrian Six Eight Four Alpha, Air Hamburg Six Nine Two Lima, Emirates One Six Two, Jetstar Eight One Six, Oscar Mike Mike Six Zero Five, Rex One Eight Three Three, Zulu Uniform Echo Romeo India One, Flying Group Two Two Alpha, Swiss Three Zero Kilo, Mike Juliett Foxtrot Seven Lima, Emirates Nine Nine Two Zero, Bair Nine Five One, Qantas Seven Five Five Zero, Reach Five Zero Zero, Jetstar Seven Eight Eight, Topjet Five Zero Four, Alitalia Five Seven Two, Etihad Four Eight Sierra, Slovak Government Zero Four Alpha, Hotel Bravo Two Four Seven One, Delta Charlie Whiskey Papa Sierra, Swiss Two One Four Eight, Austrian Seven Mike Delta, Lufthansa Three November Lima, Galaxy Alpha Four Nine, Qantas Five Eight One, Qantas Seven Three Five, Camber One Three Two, Ryan Air Nine Two Bravo Quebec, Hotel Bravo Two Zero Eight Three, Swiss Three Eight Whiskey, Air Silesia Six Seven One, Qlink Four Four Three, Swiss Two Seven Zulu, Alpha Echo Nine Two One, Bavarian Six Zero, Speedbird Eight Five Four, Europa Two Seven Tango Papa, Air France Seven Eight Tango Foxtrot, Sirair Six Nine Three Two, Bohemia Seven One Two, Qlink One Six Zero",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", HB3158, SERVUS, VOZ557, ASTR303",
+        "prompt_shortts_5B": "RRR2700, AUA172, TVS39J, VJT467, DLH66T",
+        "prompt_shortts_50B": "ANZ248, TMN92, LXG22V, SAS602, OMS666, DLH6C, EJU5850, TRA6868, JST959, SBI3752, QLK231D, SWR2067, EWG80Y, AUA656, CES712, VOZ1282, ECC701, RXA9968, THY1909, UAE9269, HBLPY, SAS609, CTN82R, EUGEN9, QFA7341, HBJRJ, QFA443, DLH8HT, BSMN45, RXA1837, AE888, HB2338, N8SQ, VOZ500, JST207, SWT554, QLK10, GIA713, QLK438D, VOZ899, UAE8, DENIF, QLK401, SWR729, UPS34, SAS66C, ELJ404, ANG2, GALA23, TTJ613"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Approach_118_375MHz_20201029_200954.wav",
@@ -425,9 +469,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Qlink One Zero One Delta, Swiss Ambulance Five Three, Pakistan Airway Romeo Zero Six, Qantas Four One Five",
+        "prompt_fullts_5B": "Hotel Tango Four Zero Two, Emirates Two Five Eight Seven, Velocity Five Two Five, Euroguinea Echo November Seven, Etihad Two Zero",
+        "prompt_fullts_50B": "Airbridge Cargo Five Six Zero, Private Wings Nine Six, Qjet One Seven Eight Seven, Lifeguard Eight Eight Eight Zero, Jetstar Five One Two, Kilo Alpha Yankee Five Two, Oscar Mike Mike Six One One, Galaxy Alpha Four Nine, Twin-goose One Four Four, Swedjet Tango Oscar Romeo Three Six, Jetstar Six Six Zero, Ryanair Eight Lima Papa, Qantas Four Two Three, a b g Four Nine Two, Hansa Zero Seven Papa, Hotel Bravo Kilo Mike Uniform, Velocity Four Nine One, Mike Uniform Sierra India Charlie, Delta Echo Kilo Golf Kilo, Jetstar Eight Nine One, Finn Air One Delta Hotel, Qlink Four Two Four Delta, Lonex Eight Zero Romeo Sierra, Europa One Six Seven One, Two Foxtrot Echo Echo Lima, Papa Victor Delta Four Eight Kilo, Qlink Two One Three Delta, Oscar Kilo Foxtrot Romeo Oscar, Jetstar Eight Two One, Elite Jet Four Zero Three, Austrian Three Eight Two, Okapi Romeo Mike, Papa Two Two Zero, Amex Two Whiskey, Oscar Mike Echo Sierra Alfa, Time Air Three Six Four Foxtrot, Elite Jet Seven Zero Two, Swiss One Eight, Tango Mike November One, Halisa Yankee Juliett, Dream Team Seven Three Three Victor, Southern Frontier One Zero Two, Solstas Lab Charlie Tango, Qlink One Seven Eight, Jetex Seven Four Five Five, Two Four Two Three, Delta Foxtrot Echo Echo Lima, Foxtrot Oscar November Yankee Yankee, Rex Six Eight Five Two, Hansa Six Mike Mike",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", DLH22N, LOT527, SXS1GX, AFR96ND",
+        "prompt_shortts_5B": "NJE985N, LOT521, N153XP, OMESB, DUKE74",
+        "prompt_shortts_50B": "JST459, QFA733, DLH2HA, EJU7907, CKS834, LZB302, N629KC, VOZ524, QLK121, NJE517W, SWR145K, OKWUR38, N3YZ, JPV423, EJU534U, SFS41, JST989, SWR126Q, FJDTF, HBJES, QFA597, NJE902B, QLK429D, ABW560, BSMN45, QFA547, OEGTE, VOZ485, AE855, GAF602, DLH84K, QFA543, CSA918, JST206, EVY42, GALA26, FHENE, AUA7HN, HBZMW, HBYES, RXA6437, VOZ986, SALUT, VJT534, JST531, AUA576, N55WH, SUA681, OKDKB, ID246"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201026_155626.wav",
@@ -445,9 +493,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Jetstar Five Two Nine, Fraction Five Six Eight Lima, Qantas Nine Two Four, Malaysian Seven Nine Seven Two",
+        "prompt_fullts_5B": "Ethiopian Seven Two Five, Vista Malta Nine Zero Four, Eurotrans One Three Juliett, Klm Six Zero Charlie, Harmony One Eight Five",
+        "prompt_fullts_50B": "Foxtrot Papa India Mike Sierra, Fraction Five One Seven Whiskey, Elite Jet Four Zero One, Vista Jet Eight One Three, Golf Romeo Uniform Echo Zulu India, Etihad Zero Five Three, Csa / Czech Six Kilo Golf, French Bee Seven Zero Zero, Zulu Echo Bravo Romeo Alpha Nine, Qlink One Zero, Cathay One Zero One, Kharkiv Universal Uniform Delta, Hotel Bravo Juliett Echo Sierra, Gregg Air Oscar Echo, Gorlitsa Alpha Whiskey, Legend One Five Zero Seven, Swiss Nine Seven Golf, Victor Hotel November Bravo Romeo, Dynasty Zero Five Five, Velocity Four Eight Two, Scan Four One Whiskey, Wizzair Six One Two Eight, Tango Seven Foxtrot Bravo Quebec, Eurocypria One Two Charlie, Qjet One Five Six Six, Jetstar Six Seven One, Wizzair One Charlie Echo, Echo Victor Yankee Eight Five, Air Serbia Six Zero Mike, Qantas Four Five Nine, Turkish Six Three Five One, Dipfreight Bravo Bravo, Velocity Nine Eight Nine, Air Malta Four Nine One, Jetstar Six Zero Nine, Flying Bulgaria Four Four Zero, Qlink One Two One, France Soleil Four Five Sierra Yankee, Swiss Six Three Delta, All Charter One X-ray Quebec, Cathay Eight One Five Six, Qantas Four Three Five, Flying Group Two One Alpha, Oscar Mike One Zero One Zero, Delta Foxtrot Kilo Alpha Echo, Swiss One Three Nine Kilo, Klm One Eight Four Seven, Oklahoma Bravo Alfa, Oscar Kilo Whiskey Alfa Romeo Two Four, Seven Seven Four Five",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", RYR491Y, FJI1910, DLH4YE, PGT5754",
+        "prompt_shortts_5B": "FPADU, ORION1, ROT341P, HBKPH, D6907",
+        "prompt_shortts_50B": "EJU58EZ, IRA733, ECA1C, NOS02, ACA7301, AUA2LS, QFA475, QFA494, SPMMA, VOZ512, HBYLL, RYR92BQ, GAC032F, VOZ535, ANZ113, N666CP, SWR339, QFA549, GAC344R, N150EK, ACA7235, DIBBH, QLK66D, JST767, EDW23F, PCH040, JST891, RYR101, QLK65D, NOS687, BSMN45, UAE2580, ETD455A, NJE028C, HBTOP, AM634, DLH236, SAZ71, HBYMM, TIE334J, OEFEB, VLG86TM, COL81, JSY178D, PAL8213, SDR4865, PUSCIAF, DEXAC, QJE1565, AFR218"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201027_094835.wav",
@@ -465,9 +517,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Velocity Nine Eight Nine, Turkish Eight Papa Quebec, Five Four Four, Delcaribe Whiskey Oscar",
+        "prompt_fullts_5B": "Velocity Nine Six Five, Qantas Nine Two Four, Qantas Nine Two Five, Swiss One Zero One X-ray, Jetex Seven Four Five Zero",
+        "prompt_fullts_50B": "Heronair One Two Five, Golf Uniform Tango November Eight, Bravo Sierra Mike November Eight One, Hotel Bravo Quebec Zulu Sierra, Turkish Eight Papa Quebec, Eurotrans Nine Five Four, Qjet One Five Three Zero, Airindia One Eight Zero, Qantas Five Three Nine, Lion King Echo Six Zero, Jetstar Eight Two Three, Echo Victor Yankee Four Two, Flying Bulgaria Three One Zero, Two Juliett Sierra Echo Golf, Hotel Bravo Kilo Mike November, Elite Jet Seven Zero Three, Silk West Five Seven One Six, Foxtrot Delta Two Five One, Qantas Five Zero Four, Eva Zero Six Five, Elite Jet Four Zero One, Emirates Nine Two Five Four, Fairfleet Three Zero Zero, Falconjet Echo Charlie, Delta India Echo Tango Bravo, Alpha Mike Two Eight Eight, Csa / Czech One Delta Zulu, Eurocat Eight Zero Zero, Velocity Five Five Two, Jetstar Seven Six Three, Scan Six Six Charlie, Swiss One Five Nine, Rex Six Five Two Six, Time Air Eight One Zero Foxtrot, Vista Malta Four Zero Five, Swiss Air Force Zero Zero Four, Jetstar Seven Two Five, Jetstar Five Three One, Qantas Four Seven Eight, Jetstar Seven Five Nine, Velocity Four Two Eight, Qantas Five Two Four, Austrian Five Bravo Lima, Fraction Two Papa Hotel, Swiss Two One Two Bravo, Lufthansa Seven Five X-ray, Velocity Nine Zero One, Austrian Airlines Three Victor Alfa, Tarom Three Four One Papa, luxwing One Nine One",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", CAZ901, RYR4FU, CES7791, QTR487R",
+        "prompt_shortts_5B": "QLK37D, TTJ815, CSA2DZ, QLK2D, AM264",
+        "prompt_shortts_50B": "EUGEN, JST821, PEA302, QLK62D, SDR4579, ENT51KG, ECC701, QFA430, JST503, D6907, AM212, EZS18JW, SPSEE, CSA509, EDW15T, OKBVA, FHLTV, CHX54, AUA2LS, AUA5MJ, DMNPR, PGT5603, AUA7GT, OKPMA, TIE745Y, VOZ815, CRK2017, SSG06B, QTR7CB, HKY637, QLK30, AUA8HM, P222, AOJ41S, QLK41D, QFA899, AIB279, QTR3PE, AEE61CG, NJE103M, NJE2SD, ETD99E, N666CP, QFA745, KLM1350, HBDWC, JST416, AUA740, RXA9968, VJT474"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Radar_120_520MHz_20201025_165054.wav",
@@ -485,9 +541,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Connie Two Three Two, Swiss Eight Three One Romeo, Swiss One Eight Eight Nine, November One Three Three Kilo Quebec",
+        "prompt_fullts_5B": "Qatari Six Hotel Bravo, Jetstar Four Five Nine, November Nine Zero Golf Papa, Vista Four Eight Six, Scandinavian Five Three Papa",
+        "prompt_fullts_50B": "Lufthansa Two One Papa, Lima Delta X-ray One Three, Swiss One Two Nine Lima, November Nine Zero One Sierra Golf, Rex Six Three Six Two, Qantas Five One Zero, Europa One Six Seven One, Velocity Eight Five Nine, Qlink Four Three One Delta, Rex Nine Nine Five Nine, Sun Turk Four Two Whiskey, Jetstar Five Two One, Contract One Four Eight Two, Mosquito Zero Three Echo, Lufthansa Four Yankee Echo, Finnair Five Delta Lima, Qlink Six Zero Delta, Ryanair Eight Yankee Tango, Qlink Four Two Two, Mosquito Two Seven Foxtrot, Papa Echo Two One Four, Vista Four Eight Six, Pilatus Five Four Seven, Austrian Three Eight Two, Jump Run Eight Zero Three, Qantas Six One Zero One, Sun Turk One Four Juliett, Swiss Six Two Uniform, Hotel Bravo Kilo Foxtrot India, Ryanair Three Four Quebec Lima, Singapore Two One One, Qlink One Two One, Oscar Mike Charlie India Alpha, Qantas Five One Six, Etihad Four Four X-ray, Tango Echo Two Three, Flycom Romeo India Two Six Six, Eurocat Four Zero One, Turkish Nine Papa Kilo, Etihad Two Zero, Tomjet Seven Bravo Echo, Tyroljet Four Seven, Qantas Seven Nine One, Ryan Air Eight Zulu Kilo, Air Canada Seven Three One Three, Air Hamburg Seven Three Five Quebec, Wizzair Two Nine Nine, Qlink Four Four One Delta, Qantas Five Three Zero, Asterix Eight Five Sierra",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", VOZ526, EZS56XU, VOZ909, SOW4",
+        "prompt_shortts_5B": "RXA6134, AHO317E, SAZ53, SWR59GW, VOZ838",
+        "prompt_shortts_50B": "QLK712, HBKAB, QLK448, QFA447, N652MP, AM293, TAR701, GAC321H, DESSC, CHH7969, VOZ871, LGL922, JST7998, JST769, SAZ63, KLM23A, OKOUL45, QFA927, DCAWO, SDM4538, TVF32DQ, BAW88TP, JFA05X, SWR157W, AFR662, NJE693D, AUA125C, LX0000, SWR51D, JFA49Z, RYR20FH, THY6338, AOJ51S, T314, GSW445, BOX518, EZS24TA, BAW856Z, FDX6013, ANZ248, AMC491, SWR78N, QFA542, LDX13, AUA29CT, DAL234, SWR3, JST511, WZZ1CE, PGT76A"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSZB_BERN_Tower_121_0MHz_20210425_063641.wav",
@@ -600,9 +660,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Veteran Victor Golf , Foxtrot Papa India Mike Sierra , Speedwing Tango Hotel , Hotel Bravo Papa Foxtrot Sierra ",
-        "prompt_fullts_5B": "Hotel Bravo Kilo Golf November , Hotel Bravo Golf Lima Sierra , Hotel Bravo Zulu Whiskey Foxtrot , Alpine Seven One Echo Foxtrot , Hotel Bravo Kilo Lima Echo ",
-        "prompt_fullts_50B": "Hotel Bravo Zulu Whiskey Juliett , Foxtrot Papa India Mike Sierra , Hotel Bravo Quebec Papa Bravo , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Yankee Oscar Yankee , Hotel Bravo Golf Lima Sierra , Lufthansa Zero Two Mike , Hotel Bravo Kilo Golf November , Alpine Seven One Echo Foxtrot , Iberia Three Zero Papa Golf , Contract Three Six Two , Swiss Seven Two Tango Lima , Air Nostrum Eight Zero Quebec Yankee , Swiss Two Zero Six Zero , Speedwing Tango Hotel , Hotel Bravo Papa Foxtrot Sierra , Veteran Victor Golf "
+        "prompt_fullts_AG_4B": ", Lufthansa Zero Two Mike , Hotel Bravo Papa Foxtrot Sierra , Hotel Bravo Zulu Whiskey Foxtrot , Air Nostrum Eight Zero Quebec Yankee ",
+        "prompt_fullts_5B": "Iberia Three Zero Papa Golf , Hotel Bravo Quebec Papa Bravo , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Kilo Lima Echo , Speedwing Tango Hotel ",
+        "prompt_fullts_50B": "Contract Three Six Two , Hotel Bravo Kilo Lima Echo , Hotel Bravo Yankee Oscar Yankee , Iberia Three Zero Papa Golf , Speedwing Tango Hotel , Swiss Seven Two Tango Lima , Swiss Two Zero Six Zero , Hotel Bravo Golf Lima Sierra , Hotel Bravo Quebec Papa Bravo , Foxtrot Papa India Mike Sierra , Hotel Bravo Kilo Golf November , Hotel Bravo Zulu Whiskey Foxtrot , Veteran Victor Golf , Hotel Bravo Zulu Whiskey Juliett , Lufthansa Zero Two Mike , Hotel Bravo Papa Foxtrot Sierra , Air Nostrum Eight Zero Quebec Yankee , Alpine Seven One Echo Foxtrot , Papa Echo Three One One, Foxtrot Whiskey Whiskey Zulu Zulu, Swedjet Tango Oscar Romeo One Seven, Eurowings One Eight Alpha, Sundair Four Five Seven Nine, November Six Two Nine Kilo Charlie, Dream Catcher Whiskey Oscar, Mosquito Zero Seven Juliett, Jetstar Eight Two Zero, Ever Flight Four Alpha, Turkish Two Bravo Foxtrot, Velocity Eight Three Three, Arcus Air Four Two Romeo Mike, Orient Thai Lima Juliett, Rex Six Eight Seven Two, Hotel Bravo Yankee Tango Bravo, Qantas Five Eight Six, Singapore Seven Two Seven Four, Habicht Sierra Whiskey, Dynasty Zero Five One, Austrian Seven Eight Juliett, November Eight Four Two Tango Sierra, Austrian Seven Papa Kilo, Delta Mike Lima Alpha Lima, Hotel Bravo Zulu Oscar Zulu, Delta Four One, Lufthansa Zero Three Alpha, Oscar Echo Charlie Oscar Oscar, Hansa Five Zero Seven, Romeo Tango Tango One, Qlink One Six Two Delta, Qjet One Seven Eight Seven",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", HBZWJ, HBGLS, HBQPB, HBYOY",
+        "prompt_shortts_5B": "EJU71EF, HBQPB, FPIMS, HBGLS, HBZWF",
+        "prompt_shortts_50B": "IBE30PG, HBZWJ, SWR2060, VPBVG, SWR72TL, HBKGN, HBYOY, EJU71EF, HBPFS, HBKLE, HBGLS, SPWTH, FPIMS, DLH02M, ANE80QY, ABR362, HBZWF, HBQPB, AOJ54F, SWR47GP, DEOPG, SWR94U, QFA514, SCO049R, QFA996, DLH5YY, KLM1350, VOZ920, PFY7412, LMJ180F, OECOG, SWR841E, PEG22, CPA100, FLORI569, LOT434, ACA7235, HB3447, QFA466, DLH1TV, AHO448V, HBQTD, NJE212G, DLH06N, VOZ518, SWR831R, QLK178, AUA78J, THY181, OKSOL"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201027_144500.wav",
@@ -620,9 +684,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Turkish One Yankee Golf, Austrian Airlines Eight Hotel Mike, Jetstar Five One Nine, Fedex Seven Three",
+        "prompt_fullts_5B": "Aeroflot Two Zero One Three, Qantas Four Four Five, Contract Two Five Six, Oscar Kilo Victor Alfa Romeo Zero Eight, Hotel Bravo Oscar Alpha Golf",
+        "prompt_fullts_50B": "Pacific One Nine One Three, Eurocat One Zero One, Swiss Two Eight Seven Kilo, Dream Team Four Zero Four Kilo, Fraction Five Eight Nine Whiskey, Hotel Bravo Zulu Papa Kilo, Viking Nine One Four Zero, Swiss Two Seven Nine Seven, Swiss Two Zero Seven November, Sierra Foxtrot Zulu Six Two Two, Velocity Eight Nine Six, Swiss One Five Two Quebec, Qatari Eight Zero Two Eight, Lufthansa One Nine Papa, Cotam Zero Zero One Three, Emirates Nine Nine Three Six, Qjet One Seven Two One, Swiss Nine Seven Golf, Jetstar Seven Six Three, Swiss One Nine Seven, Airbridge Cargo Seven One Four, Victor Papa Charlie Yankee Juliett, Rex One Eight Three Six, Papa Victor Delta Six Eight Seven Hotel, KLM Two Three Alpha, Rex Five Two Zero, Rex Six Three Five Five, Topswiss Five Four Hotel Romeo, New Zealand One Zero Nine, Rex Three One, Oscar Kilo Foxtrot Alfa Romeo, Mistral Wings Lima Tango, Qantas Four Nine Five, Bair Nine Four Two, Solstas Lab Charlie Tango, Tango Uniform Zero One Six, Ryan Air Two Three One Nine, Flying Group Two Two Alpha, Two Juliett Alpha Charlie Kilo, Hotel Bravo Whiskey Alpha Whiskey, Delta Echo Juliett X-ray Alpha, Iranair Seven One One, Alpine One Zero Seven Six, Flyhello November Echo, Qlink Seven One Four, November Seven Five Eight Bravo Kilo, Papa Uniform Sierra Charlie India Alpha Foxtrot, Swiss One Three Two Seven, Qantas Five Three Zero, Toyota Two Two Six",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", TMN91, SIA7222, SAS53P, QFA6005",
+        "prompt_shortts_5B": "QFA426, DLH6C, TIE690J, SVA106, FHLBY",
+        "prompt_shortts_50B": "KLM21W, QTR4LA, HBYDU, EAT551, QLK420, SAS602, BLA1RK, RYR4FU, AFR57BP, AHO827V, HBZTW, QLK222D, QTR8185, DITRA, HBVPE, OKPMP, DFJTT, RXA1815, VOZ532, HBECJ, NJE977D, LOT434, QFA513, PGT93Z, OMJGA, RYR9FD, JFA29H, UPS33, VOZ565, UAL839, T313, JST509, CTN464, DENBH, QFA495, OKYUA21, ECA4C, HBPFZ, RYR92BQ, OMM215, WZZ346, HBYYA, VOZ992, QFA7344, SWR126Q, EUGEN17, URSULA13, QFA993, BLA1XQ, FONCP"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSZB_BERN_Tower_121_0MHz_20210420_110549.wav",
@@ -783,9 +851,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Hotel Bravo Sierra Hotel Bravo , Hotel Bravo Kilo Golf Oscar , Hansa Eight Four Kilo , Hotel Bravo Zulu Sierra November ",
-        "prompt_fullts_5B": "Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Whiskey Zulu Delta , Hotel Bravo Kilo Golf November , Hotel Bravo Yankee Tango Bravo ",
-        "prompt_fullts_50B": "Lima Alpha Sierra One Three Five , Royal Ghana Zero Two , Halisa India Alpha , Mosquito Six Zero Alpha , Hotel Bravo Three Three One Two , Swiss One Nine Tango , Hotel Bravo Kilo Charlie Juliett , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Zulu Whiskey Echo , Hotel Bravo Kilo Golf Oscar , November Four Five Kilo Bravo , Hotel Bravo Yankee Tango Bravo , Hotel Bravo Zulu Whiskey Juliett , Hotel Bravo Zulu Sierra November , Eurocat Four Zero Two , Hotel Bravo Three Two Nine Nine , Hotel Bravo Two Four Four Four , Delta Six Nine Zero Seven , Fraction Five Six Eight Lima , Hotel Bravo Kilo Lima Echo , Hotel Bravo Kilo Golf November , Speedwing Tango Hotel , Hotel Bravo Kilo Mike Romeo , Hotel Bravo Kilo Golf Papa , Hansa Eight Four Kilo , Royal Ghana Quebec Lima , November Two One Two Charlie Mike , Delta India Bravo Bravo Hotel , Tango Seven Mike Sierra Papa , Two Juliett Alpha Charlie Kilo , Delta Echo Oscar Papa Golf , Hotel Bravo Sierra Hotel Bravo , Hotel Bravo Whiskey Zulu Delta , Hotel Bravo Yankee Oscar Uniform , Hotel Bravo Papa Foxtrot Sierra , Hotel Bravo Golf Lima Sierra , Halisa Yankee Juliett , Heliblue Victor Bravo , Hotel Bravo Foxtrot Whiskey Alpha , Royal Ghana Zero Three , Hotel Bravo Juliett India Mike , Delta Kilo Golf Lima Lima "
+        "prompt_fullts_AG_4B": ", Delta Kilo Golf Lima Lima , Hotel Bravo Zulu Whiskey Echo , November Four Five Kilo Bravo , Speedwing Tango Hotel ",
+        "prompt_fullts_5B": "Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Zulu Whiskey Echo , Hotel Bravo Papa Foxtrot Sierra , Delta Kilo Golf Lima Lima , Hotel Bravo Kilo Mike Romeo ",
+        "prompt_fullts_50B": "Eurocat Four Zero Two , Hotel Bravo Zulu Whiskey Echo , Hotel Bravo Yankee Tango Bravo , Royal Ghana Zero Three , Delta Kilo Golf Lima Lima , Hotel Bravo Foxtrot Whiskey Alpha , Hansa Eight Four Kilo , Two Juliett Alpha Charlie Kilo , Hotel Bravo Two Four Four Four , Hotel Bravo Kilo Golf Oscar , Mosquito Six Zero Alpha , Hotel Bravo Kilo Golf Papa , Hotel Bravo Kilo Golf November , Speedwing Tango Hotel , Hotel Bravo Papa Foxtrot Sierra , November Four Five Kilo Bravo , Delta India Bravo Bravo Hotel , Hotel Bravo Sierra Hotel Bravo , Hotel Bravo Zulu Sierra November , Hotel Bravo Three Three One Two , Fraction Five Six Eight Lima , Hotel Bravo Whiskey Zulu Delta , Hotel Bravo Golf Lima Sierra , Hotel Bravo Kilo Mike Romeo , Halisa Yankee Juliett , Royal Ghana Zero Two , Halisa India Alpha , Hotel Bravo Kilo Charlie Juliett , Hotel Bravo Three Two Nine Nine , Delta Six Nine Zero Seven , Hotel Bravo Zulu Whiskey Foxtrot , Hotel Bravo Yankee Oscar Uniform , Hotel Bravo Zulu Whiskey Juliett , Tango Seven Mike Sierra Papa , Swiss One Nine Tango , Delta Echo Oscar Papa Golf , Royal Ghana Quebec Lima , Hotel Bravo Juliett India Mike , Lima Alpha Sierra One Three Five , Heliblue Victor Bravo , November Two One Two Charlie Mike , Hotel Bravo Kilo Lima Echo , Qlink Two Five Six, Qlink Two One Three Delta, Transavia Three Zero Romeo, Qlink Six Three Delta, Qantas One Two Two, November Six Seven Six Mike Alpha, Delta Charlie Whiskey Papa Sierra, Vietnam Airlines Seven Eight Seven",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", HBGLS, HB2444, HBWZD, NJE568L",
+        "prompt_shortts_5B": "HBZSN, HB3312, HBZWF, HBSHB, DKGLL",
+        "prompt_shortts_50B": "HBZWE, HB2444, HBKGO, DEOPG, HBSHB, HB3299, HBKCJ, HBKLE, HBGLS, CAZ402, HBWZD, RGA02, N45KB, HBFWA, JFA60A, HBKGN, T7MSP, HBYTB, HBKGP, HBCIA, HBPFS, HBYOU, DKGLL, N212CM, HBZSN, HB3312, HBJIM, SWR19T, DIBBH, HBLVB, DLH84K, HBZWF, HBZWJ, SPWTH, D6907, RGAQL, NJE568L, LAS135, 2JACK, HBKMR, HBCYJ, RGA03, KLM1847, HBYMM, MSR800, CRK2017, RYR1BA, JST788, QTR655V, QLK433D"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201028_151525.wav",
@@ -803,9 +875,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Qantas Seven Seven Zero Two, Heronair One Two One, Lufthansa One Nine Five Nine, Swiss One Zero Seven Six",
+        "prompt_fullts_5B": "Eurocat Six Zero One, Air Hamburg Zero Zero Nine Mike, Tango Echo One Two, Fraction Five Zero Six Yankee, Mosquito Zero Seven Juliett",
+        "prompt_fullts_50B": "Fraction One Zero Three Mike, Sky Travel Six Alfa Delta, Rex Five Three Three, Oscar Kilo Romeo Sierra Echo, Aircalin One Four One Sierra, Qlink Four Two Two, Mosquito Four Nine Zulu, Austrian Six Juliett Alpha, Swiss One Two Three Yankee, Elite Jet Seven Zero Two, Oscar Kilo November Tango Uniform, Hotel Bravo Quebec November Tango, Sierra Five Mike Mike Yankee, Turkish Six Two Two Nine, Delta India Tango Oscar Charlie, Swedjet Tango Oscar Romeo Seven Eight, Qlink Six Five Delta, Tyroljet Four Seven, Velocity Eight Nine One, Bravo Sierra Mike November Eight One, Qantas Seven Three Five, Oscar Kilo Zulu Uniform Alpha Seven Five, Swiss Ambulance Seven Two, Speedbird Four Zero One, Jetstar Four Five Seven, Qantas Four Seven Nine, Qantas Six Five Two, Qantas Four Seven Zero, Hotel Bravo Zulu Whiskey Echo, New Zealand Two Three Two, Sunturk Seven Four Echo, Qatari Eight Zero Zero Five, Enter Seven Three Lima Hotel, Mosquito Two Nine Hotel, Romeo Tango Tango One, Red Angel One One One Six, Qantas Seven Four Two, Qlink Six Six Delta, Air Portugal Nine Three One Charlie, Speedbird Six Nine Seven Victor, Qlink Two Two Three Delta, Ryanair Four Mike Kilo, Fraction Eight Nine One Lima, Dialogue Charlie Golf, Tango Three One Three, Hotel Bravo Victor Romeo Whiskey, Jetstar Four Zero Four, Iberia Three One Foxtrot Romeo, Habicht Bravo Victor, November Seven Five Five Delta Sierra",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", VLG6249, ABP941, HT402, LOT434",
+        "prompt_shortts_5B": "NJE683L, SWR196, PKAR04, JST500, ANZ231",
+        "prompt_shortts_50B": "OKWUR38, SDR4193, QLK438D, OEITH, DFQDP, NJE569D, DIEGA, JST421, NJE749P, RYR89CW, UAL52, IRA716, PCH039, HBEEZ, OEEMG, MLD864, QFA7521, AFR58MK, DLH3CF, ETD44X, BLA1XQ, DFKAE, BCS5334, AZE99TX, EAV20A, CSA508, THY1YG, KLM1350, SYCFS256, TWG144, GRUEZI, SIA317, PVD48K, VOZ1279, AE855, SWR188, AUA6K, DILCG, HVN787, JST413, QGA131P, AFR31KW, SDR4865, EDW229F, VDA8029, BOX513, RYR303, AM264, VOZ812, WZZ6128"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Radar_120_520MHz_20201029_174523.wav",
@@ -823,9 +899,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Mike Charlie Kilo Three Zero One, Swiss Seven One Nine Delta, Foxtrot Delta Two One Eight, Jetstar Seven Two Five",
+        "prompt_fullts_5B": "Rex Nine Nine One Eight, Velocity Eight Eight Two, Flycom Romeo India Alpha November Five, Qlink Four Three Two Delta, Flying Bulgaria Three One Nine",
+        "prompt_fullts_50B": "Swiss Two Zero Uniform Tango Echo, Tuifly Eight Nine Zero Four, Alpha Echo Eight Two Eight, Tatra Six Zero Three, Qantas Four Three Nine, Qlink Three Zero Delta, Flycom Romeo India Alpha November Eight, Air Nostrum Eight Zero Quebec Yankee, Qlink Three One, Oscar Echo Golf Delta Sierra, Quality Four Zero Seven Eight, Hotel Bravo Sierra Hotel Charlie, Lima Delta X-ray Two, Qantas Five Nine Three, Emirates One Two Eight, Qatari Eight Zero Two Eight, Victor Papa Charlie Mike Foxtrot, Swiss Air Force Seven Eight Four, Topswiss Seven Three X-ray Bravo, Swedjet Tango Oscar Romeo Three Zero, Mosquito One Nine X-ray, Delta Foxtrot Quebec Delta Papa, Time Air Six Nine Zero Juliett, Koreanair Five Six Seven, Alpha Mike Two Three One, Rex Six Seven Two Five, Air Hamburg Three One Two Golf, Uniform Lima Charlie Two Five, Croatia Four Eight Zero, Lion King Echo Three Six, Lufthansa Four Yankee Echo, Qlink Four Six Delta, Swiss One Zero One X-ray, Tango Uniform Zero One Five, Hotel Bravo Victor Whiskey Zulu, Uniform Romeo Sierra Uniform Lima Alpha Three, Prince Nine Charlie Juliett, Qantas Six Five Four, Papa Victor Delta Six Eight Seven Hotel, Cathay Three One Two Nine, Corendon Three One Zero Four, Qantas Five Zero Zero, American Seven Three, Fraction Zero Two Eight Charlie, Rex Six Three Eight Six, Pollot Four One One, Mosquito Eight Two Echo, Rex Six Four Six Three, Iranair Seven Three Three, Qatari Four One Four Uniform",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", SIA7298, AXY1406, ANZ113, BSMN45",
+        "prompt_shortts_5B": "NJE156T, QFA7325, RXA9937, BCS86N, BTI629",
+        "prompt_shortts_50B": "AZA44M, VPCFK, WZZ8625, SFZ622, OKMHZ, MAS6205, EZS73CP, QFA542, QFA593, GALA6, QFA6036, SUA771, DLH25M, SWR47GP, PGT32U, DLH52Y, LOT521, QFA840, ELJ801, OKSIA, QFA7558, KONDOR9, DLH9PK, FHLBY, QTR6BL, OKDSV, AUA1472, N223CM, CAZ101, DLH19P, MREEE, AUA156, SWR29E, JFA27F, HBOZG, DLH2218, MSR777, QFA642, VOZ973, RXA6416, VOZ548, AUA2LS, PKAR06, QLK408, SIA298, HBDWC, NJE858D, OMESA, QFA7344, SIA232"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKTB_BRNO_Tower_119_605MHz_20201029_155930.wav",
@@ -843,9 +923,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Air Canada Seven Three One Three, Tango Foxtrot Zero Four Zero One, Qantas Six One Three Six, Cathay One Zero Zero",
+        "prompt_fullts_5B": "Velocity Four Nine One, Fairfleet Four One Four, Arcus Air Eight Two Quebec Romeo, Velocity One Five Three Two, Swiss Three Three Nine",
+        "prompt_fullts_50B": "Wizzair Nine Delta Delta, Hotel Bravo Three Three Five One, Qlink Four Two Four Delta, Five Four Four, Papa Echo Two One One, Papa Hotel Juliett Whiskey Lima, Eurocat Four Zero One, Swiss One Four Echo, Qantas Five Three Four, Hotel Kilo Yankee Six Three Seven, Turkish Six Two Two Nine, Flyinglux Six One Charlie Bravo, Flycom Romeo India Two Three Eight, Qantas Five Three Six, Croatia Eight Two Romeo, Dream Team Seven Seven Three Foxtrot, Austrian Airlines Two Two Four, Jetstar Two Zero Seven, Qantas Six Zero Three Seven, Velocity Eight Three Four, Csa / Czech Nine Two Three, Qantas One Eight Zero, Delta Charlie Kilo Victor India, Velocity Nine Zero One Zero, Jetstar Six Zero Nine, Edelweiss One Three Five Foxtrot, Silk West Seven One Zero Five, Christophorus Oscar Golf, Mosquito Zero Three Echo, Papa Echo Two One Four, Velocity Nine Six Two, Rex Six Four One Three, Oscar Kilo Yankee Whiskey Charlie Seven Seven, Hotel Bravo Quebec Whiskey Papa, Speedbird Seven One Two, Hotel Bravo Kilo Golf Papa, Yankee Uniform Papa November Kilo, Velocity Eight Nine One, Qlink One Six Zero Delta, Wizzair One Alpha Bravo, Jetstar Eight One One, Topswiss One Eight Juliett Whiskey, Qantas Five Nine Six, November Eight Sierra Quebec, Swiss Two Nine Foxtrot, French Bee Seven Zero Zero, Swiss Two, Qlink Two Zero Three Delta, Qlink Four Four Eight, Qantas Seven Nine Zero",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", EJU5850, JST206, AHO261X, HBQUB",
+        "prompt_shortts_5B": "OKZUR66, QJE1504, QLK20, ROT342Y, ROT341P",
+        "prompt_shortts_50B": "FLORI568, LWG1372, ZEBRA5, N153XP, AM228, QFA520, BLA200, VOZ482, SWR19R, AUA656, RXA6456, JST419, DLA4LL, QJE1565, THY3JW, EJU5849, VJT474, KLM73W, RXA6469, AFR48WZ, QLK229D, THY6338, SAS2814, OKVSB, QFA145, OMM350, GALA12, LZB301, RXA6444, RGA01, GALA48, PEG23, THA476, ITOPF, RXA6625, WZZ17YL, RXA6375, VOZ867, FABIAN6, TTJ603, QQE405, AUA77KT, SWR257, RXA6179, 2JACK, QAJ2219, FIN8PY, DLH1591, SWR5202, PFY7411"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_152248.wav",
@@ -943,9 +1027,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "Charlie Zulu",
-        "prompt_fullts_AG_4B": "Charlie Zulu, Hotel Bravo Kilo Lima Echo , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Delta Golf Victor , Fraction Seven Nine One Golf ",
-        "prompt_fullts_5B": "Hotel Bravo Delta Golf Victor , Hotel Bravo Two Four One Four , Luxor Golf Two Two Sierra , Royal Ghana Zero Four , Masterjet Two Four Nine Lima ",
-        "prompt_fullts_50B": "Hotel Bravo Kilo Golf Oscar , Hotel Bravo Kilo Oscar Juliett , Masterjet Two Four Nine Lima , Oscar Oscar Papa Charlie Juliett , Hansa Two Six Echo , Royal Ghana Zero Four , Nav Checker Five One One , Luxor Golf Two Two Sierra , Hotel Bravo Zulu Victor Papa , Hotel Bravo Yankee Tango Mike , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Delta Golf Victor , Hotel Bravo Kilo Lima Echo , Hotel Bravo Yankee Yankee Alpha , Hotel Bravo Two Four One Four , Mosquito One Five Bravo , Fraction Seven Nine One Golf "
+        "prompt_fullts_AG_4B": "Charlie Zulu, Hotel Bravo Kilo Oscar Juliett , Fraction Seven Nine One Golf , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Yankee Tango Mike ",
+        "prompt_fullts_5B": "Hotel Bravo Kilo Oscar Juliett , Masterjet Two Four Nine Lima , Hotel Bravo Yankee Tango Mike , Hotel Bravo Two Four One Four , Hansa Two Six Echo ",
+        "prompt_fullts_50B": "Luxor Golf Two Two Sierra , Hotel Bravo Kilo Lima Echo , Masterjet Two Four Nine Lima , Foxtrot Papa Alpha Delta Uniform , Fraction Seven Nine One Golf , Mosquito One Five Bravo , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Delta Golf Victor , Hotel Bravo Yankee Tango Mike , Hotel Bravo Zulu Victor Papa , Royal Ghana Zero Four , Hotel Bravo Two Four One Four , Hotel Bravo Kilo Golf Oscar , Hotel Bravo Yankee Yankee Alpha , Nav Checker Five One One , Hansa Two Six Echo , Hotel Bravo Kilo Oscar Juliett , Fedex Six Zero One Three, Qantas Seven Three Four Four, Hotel Bravo Sierra Hotel Bravo, Hotel Bravo Two Four Two Three, Mazoon Two One Five, Malaysian Seven Nine Eight Two, Swiss Two Nine Echo, Jetstar Seven Two Four, Galaxy Alpha Two Six, Jetstar Four Seven Five, Dynasty Zero Five Two, Qlink Two Zero Five Delta, Jetstar Eight Four Nine, Delta India Bravo Bravo Hotel, Velocity Eight Seven Four, November One Zero One Foxtrot Uniform, November Two One Two Charlie Mike, Rex Six Seven Six Seven, Swiss Seven Two Tango Lima, Ghibli Four, Delta Foxtrot Kilo Alpha Echo, Quality Four Zero Eight Nine, Dream Catcher Whiskey November, Qlink One Seven Eight, Toyo Aviation One Five Eight, Eurocat Four Zero One, Alpha Mike Two Seven Seven, Alpha X-ray Alpha One One One, Hansa Two Three Tango, Qlink Four Five Delta, Hansa Two Five Mike, Juliett Papa Victor Four Two Three, Rex One Five Two",
+        "prompt_shortts_AG": "CZ",
+        "prompt_shortts_AG_4B": "CZ, RGA04, HBKGO, HBYYA, JFA15B",
+        "prompt_shortts_5B": "RGA04, HBDGV, HBYYA, HBKGO, LXG22S",
+        "prompt_shortts_50B": "NJE791G, HBZVP, FPADU, OOPCJ, JFA15B, DLH26E, HBKOJ, LMJ249L, HBDGV, HB2414, FCK511, LXG22S, HBYYA, HBYTM, HBKGO, HBKLE, RGA04, RXA1833, QLK10, HB1943, OMBYD, JFA18U, KONDOR9, RYR2122, CSA923, AEA27TP, PGT14J, RYR9481, WZZ1612, QFA926, UAL870, JST423, AUA830, SAS89B, ETD054, JST670, QFA502, RA02857, AZA206, HB3473, THY181, ANZ106, PAL8211, PGT32U, VKG9140, OKVAR12, PE318, DLH4JN, SWR9K, RXA6725"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201026_155816.wav",
@@ -963,9 +1051,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Fraction Five Bravo Foxtrot, Qantas Four Three Three, Tango Uniform Zero One Two, Arcus Air Two Nine Quebec Tango",
+        "prompt_fullts_5B": "Jetstar Two Zero Seven, Delta India Hotel Kilo Whiskey, Velocity One One Four Zero, Air Malta Five Three Eight, Swiss One Zero One X-ray",
+        "prompt_fullts_50B": "Qantas Four Eight Six, Fedex Seven Five, Oscar Echo Echo Mike Golf, Lufthansa Six Six Tango, Luxair Nine Two Mike, Vueling Eight Six Tango Mike, Hotel Bravo Foxtrot Charlie Foxtrot, Oscar Kilo Bravo Yankee Alfa, November One Eight Four Kilo Papa, November Three Six Zero Lima Alpha, Galaxy Alpha Two, Eurocypria One Charlie, Iberia Three One Sierra Kilo, Qantas Seven Three Six, Lufthansa Zero Six November, Swiss Ambulance Five Five, Velocity Four Seven Five, Qatari Seven Uniform Yankee, Ryanair Four Nine One Yankee, Trans Europe Three Eight Five Two, Hotel Bravo Whiskey Golf India, Yankee Uniform Tango Bravo Alpha, Mazoon Seven Three Seven, American Seven Two, Contract Three Six Two, Rex Six Four Four Four, Tomjet Seven Bravo Echo, Air Malta Four Nine Zero, Qantas Eight Four Five, Avia Three Zero Romeo, Jetstar Four Two Two, Velocity Eight One One, Eurowings Seven Six Four Five, Air Malta Five Three Eight, Topswiss Seven Three Charlie Papa, Malaysian Six Two Zero Five, Jetstar Eight Two Four, Rex Six Four Three Seven, Swiss Eight Four One Echo, Csa / Czech One Delta Zulu, Swiss Air Force Zero Zero Four, Emirates Nine Seven Four Four, Austrian Four Two Six, Dream Team Three Five Five Quebec, France Soleil Four Five Sierra Yankee, Air France Six Four Five, Qantas Seven Five Eight Nine, Star Lima One One, Swiss Air Force Five Four Eight, Fraction Nine Three Seven Golf",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", AAL72P, TUI544, OMM632, TE26",
+        "prompt_shortts_5B": "RYR73AH, OKMMI, HBWGI, OKHSI, ORF4",
+        "prompt_shortts_50B": "QLK162D, JST891, VOZ954, FLORI242, TROJ30, JST810, QFA653, JST521, QFA522, AUA51, QJE1900, FHENE, DLH1YY, HBYKG, SUI784, TFR34, QJE1571, EUGEN5, VLZ133A, CTN464, EVA066, EJU58EZ, TIE369J, RXA9981, QFA591, VOZ572, ULC91, IRA711, QFA458, AFR48WZ, T7VSR, UAE9826, SWR69KC, AUA7MD, HBZTW, AFL2012, QLK122, KLM46A, UAE2667, GIA710, CAL051, ACA7238, RYR101, QLK65D, RSCU203, MSR797, SWR55X, HB2087, GAC126L, NJE473E"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Radar_120_520MHz_20201025_125020.wav",
@@ -983,9 +1075,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Qlink Two Five Nine, Pollot Four Whiskey Romeo, Hotel Bravo Foxtrot X-ray Golf, Heliblue Victor Alpha",
+        "prompt_fullts_5B": "Qantas Seven Five Five Eight, Trans Europe Four Two Two, Lufthansa Six Charlie, China Southern Three Two Five, Wizzair Five Five Four",
+        "prompt_fullts_50B": "Qantas Six Zero Zero Two, Qlink One Six Zero Delta, Hotel Bravo Zulu Uniform Romeo, Rex Six Four Three Six, Nippon Cargo Zero Four Nine, Aerlineas Centrales Zero Zero Eight, Alpha Echo Nine One One, Qlink Four Two Nine, Vueling Six Two Four Eight, Jetset Two Foxtrot Delta, Velocity Five Three Nine, Air Malta Three Seven Six, Wizzair One Six Seven Seven, Austrian Airlines Three Zero Five, Fraction Four Eight Five November, Wizz Go Eight Six Seven Zero, Arcus Air Nine One Mike X-ray, Air Nostrum Seven Eight Whiskey Bravo, Eurobird One Seven Two Four, Hotel Bravo Whiskey Zulu Charlie, Qantas Seven Four Seven, Zulu Uniform Echo Romeo India Eight, Uniform Romeo Sierra Uniform Lima Alpha Three, Lufthansa Five November Foxtrot, Lufthansa Two Five Kilo, Edelweiss Two Zero One, Qantas Five Zero Three, Saudia Three Zero Seven Eight, Colair Eight One, Topswiss Seven Nine Foxtrot Golf, Oscar Echo X-ray Yankee Foxtrot, Okapi Victor November, Velocity Four Two Eight, Qlink Four Six Delta, Habicht Lima Mike, Rex Nine Nine Five Seven, Firstline Air Echo Bravo One Zero Zero, Mosquito Four Nine Zulu, Sunturk Five Seven Romeo, Ryanair Eight Kilo Mike, Ryan Air One Bravo Alfa, Austrian Four Uniform Kilo, Jetex Seven Four Three Zero, Ryan Air Seven Seven Nine Seven, Lufthansa Five Six Echo, Alpine Five Eight Four Nine, Air Serbia Seven Two Papa, Swiss Three Three Two, Swiss Ambulance Seven One, Hotel Bravo Three Three Five One",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", DFCOC, DCWIT, NJE473E, JFA71E",
+        "prompt_shortts_5B": "FYG22A, DLH74U, XGO4BR, DFJTT, FCK511",
+        "prompt_shortts_50B": "MREEE, DLH22N, LZB309, OKOUU37, HBGKG, AFR37TQ, DCWPS, SWR33K, AUA426, JST526, QJE1775, QFA522, QLK420, SWR257, HBKMX, DLH6HF, ANG1, ANZ222, RXA6139, NJE2JW, HB2423, DLH72M, GAC909K, DLH91V, PGT1527, QTR8194, ETH574, UAL2795, QFA516, NJE318E, SWR258E, TUI2423, RYR4MK, ELJ403, COL81, LXA2F, QFA6100, QLK222, SWR107C, HBKMO, OEDYU, ADB590F, IFA6106, AM242, AM288, PE720, QFA747, FLJ52R, SFZ639, TWG244"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA_nonEN/LKPR_RUZYNE_Tower_134_560MHz_20201025_132420.wav",
@@ -1003,9 +1099,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", ",
-        "prompt_fullts_5B": "",
-        "prompt_fullts_50B": ""
+        "prompt_fullts_AG_4B": ", Tango Mike November Nine One, Swiss Four Nine Papa, Qlink Six One Delta, Qantas Five Three Seven",
+        "prompt_fullts_5B": "Ryan Air Six Five Yankee, Swiss Nine Six Charlie, Air France Three Six Three Victor, Alpine One Eight Yankee Echo, Eurocat Eight Zero Zero",
+        "prompt_fullts_50B": "Euro Continental Charlie Juliett, Hotel Bravo Yankee Tango Bravo, Swiss Two Eight Seven Kilo, Hotel Bravo Zulu Echo Foxtrot, Qantas Four Three Six, Topswiss One Two Lima Tango, Emirates Two Zero, Indonesia Seven One Three, Qantas One Three Seven, Air France Two One Eight, Qantas Four Two Six, Lufthansa Seven Lima Papa, Topswiss Nine Zero Seven Zero, Eurotrans Eight One Quebec, Qantas Five One Three, Velocity One Two Eight Two, Mosquito Three Five X-ray, Afrilens Six Three, Ryanair Two Zero Foxtrot Hotel, Swiss Nine Four Uniform, Belarus Avia Eight Six One, Air Portugal One Two Four Four, Eurowings Four Foxtrot Uniform, Swiss Ambulance Six Two, Swiss Nine Seven Zulu Nine, Jetstar Seven Six Two, Swiss Two One Four Charlie, Russia Four Five Three Eight, Hotel Bravo Whiskey Golf India, Arcusair Four Three Lima, Oscar Echo Charlie Oscar Oscar, Velocity Five Six Zero, Alpha X-ray Alpha Two Two Two, Uniform Lima Charlie Two Five, Jetstar Four One One, Austrian Airlines Three Zero Five, Qlink Four Four Three Delta, Etihad Five Nine Victor, Europa Two Seven Tango Papa, Blue Air Eight Mike Echo, Taca Papa Five Three, United Five Three, Air Nostrum Eight Seven Whiskey Bravo, Dialogue Charlie Golf, Velocity Eight Two Nine, Tarascas Uniform Two Zero Eight, Sunshine Tours Zero Zero Three, Singapore Three Four Six, Pilatus Wings Zero Seven Six, Quality Four Zero Nine One",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", TIE283Y, RXA1838, AXE100P, SWR157W",
+        "prompt_shortts_5B": "DLH6MM, HB2444, BCS7, TFR22, SWR19R",
+        "prompt_shortts_50B": "JST409, TE25, SWR218L, TUI544, QFA7701, QFA502, QLK443, JST605, NJE556B, QTR8033, UAE9920, HBYVJ, VJT467, PCH186, JST475, QLK401, CLX6104, JST816, BTI8JX, AUA455, KLM23A, WZZ554, HBYOY, QFA7345, QTR8157, DLH6MM, N711LS, RXA9922, ELJ202, IBE31ZD, AUA1HM, HB3155, IFA1116, OKZUA75, VOZ1423, NJE201W, SXS3MU, RXA6362, BRU880, QFA643, EDW244, ACA7312, JIV7, TU012, TOY226, DLH22N, ACA58, JAL771, JTE7430, RXA6780"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210421_174745.wav",
@@ -1084,9 +1184,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Fedex Five One One Two , Nine Alpha Juliett India Mike , Austrian One Seven Two , Air Canada Seven Two Three Eight ",
-        "prompt_fullts_5B": "Charlie Three Three , Austrian Three Bravo Uniform , Air Canada Seven Two Three Eight , Mike Sierra Charlie Four Two Four , Austrian Six Juliett Mike ",
-        "prompt_fullts_50B": "Mike Sierra Charlie Four Two Five , Austrian Three Bravo Uniform , Austrian One Two Six , Austrian One Seven Two , Charlie Three Three , Mike Sierra Charlie Four Two Four , Ethiopian Seven Two Five , Fedex Five One One Two , Austrian Six Juliett Mike , Air Canada Seven Two Three Eight , Nine Alpha Juliett India Mike , Quality Four Two Five One "
+        "prompt_fullts_AG_4B": ", Charlie Three Three , Austrian One Two Six , Ethiopian Seven Two Five , Nine Alpha Juliett India Mike ",
+        "prompt_fullts_5B": "Austrian Six Juliett Mike , Nine Alpha Juliett India Mike , Mike Sierra Charlie Four Two Four , Air Canada Seven Two Three Eight , Austrian One Seven Two ",
+        "prompt_fullts_50B": "Austrian One Seven Two , Ethiopian Seven Two Five , Charlie Three Three , Austrian Three Bravo Uniform , Austrian One Two Six , Nine Alpha Juliett India Mike , Austrian Six Juliett Mike , Mike Sierra Charlie Four Two Four , Mike Sierra Charlie Four Two Five , Air Canada Seven Two Three Eight , Quality Four Two Five One , Fedex Five One One Two , Hansa Six Six Tango, Alitalia Seven Nine Alpha, Hansa Six Charlie, Dream Team Four Zero Four Kilo, Sunexpress One Foxtrot Lima, Qlink Three Delta, Scan Six Zero Nine, Victor Hotel Zulu Golf Golf, Helibird Oscar Oscar, Qlink Four Five Three, Tango Echo Two One, Edelweiss One Four Zero, Swiss One Eight Nine, Edelweiss Two Four, Swiss One Three One Zero, Alpine Five Eight Five Zero, Emirates Nine Two Five Seven, Qantas Six One One Six, Arcus Air Four Two Kilo Mike, Hotel Bravo Foxtrot Oscar Golf, Ryan Eight Kilo Mike, Hotel Bravo Juliett Foxtrot Papa, Hotel Bravo Kilo Papa November, Sky Travel Four Three Seven Eight, Pilatus Five Four Seven, New Zealand Two Two Five, Qlink Two Nine Eight, Velocity Nine Five One, Dark Blue Five Seven November, Pollot Four One Nine, Foxtrot Sierra Foxtrot Five Eight Four Papa, Swiss One Seven Seven, American Seven Three Papa, Alpha X-ray Alpha One One One, Eurowings Six Seven Hotel, Soko Air Oscar Charlie, Lot Two Victor Mike, Qlink Four Zero Delta",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", MSC425, TAY4251, FDX5112, AUA3BU",
+        "prompt_shortts_5B": "AUA172, AUA3BU, AUA126, ACA7238, 9AJIM",
+        "prompt_shortts_50B": "ETH725, ACA7238, AUA172, AUA126, FDX5112, C33, 9AJIM, MSC425, MSC424, AUA3BU, AUA6JM, TAY4251, SWR127X, HYP027, QFA419, QFA7593, CFH23, QTR02M, SWR1889, IRA711, N52PP, SIA212, QFA7324, QAJ574, RXA9922, QFA540, QJE1572, TFR41, FSF800M, FTY8, JST420, HBLNL, FLJ61H, VJT486, VLG1502, AFR662, CAL055, VLG8653, OKIUR13, KAL591, VOZ807, AUA426, TAIP53, DLH3NL, CPA3122, QFA146, CTN465, HBGAC, DLH7VA, HBVPE"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210427_163630.wav",
@@ -1177,9 +1281,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Slovak Government Zero Zero Two , Oscar Kilo Romeo Lima Victor , Oscar Yankee Juliett Juliett November , Mambra Sierra Echo ",
-        "prompt_fullts_5B": "Elite Jet Four Zero Three , Oscar Mike Delta Yankee Echo , Oscar Mike Bravo Juliett Mike , Qatari Nine Six Foxtrot , Aerodin Golf India ",
-        "prompt_fullts_50B": "Slovak Government Zero Four Alpha , Aerodin Golf India , Sunexpress Four Echo Whiskey , Victor Tango Bravo Romeo Kilo , Elite Jet Four Zero Three , Oscar Mike Delta Yankee Echo , Slovak Government Zero Zero Two , Mambra Sierra Echo , Oscar Mike Bravo Juliett Mike , Asterix Seven Eight Papa , Trans Europe Three Eight Five Two , Delta Foxtrot Golf Romeo Oscar , Silk West Two Eight Zero , Oscar Kilo Romeo Lima Victor , Oscar Yankee Juliett Juliett November , Bair Seven One Two , Oscar Mike Charlie India Alpha , Qatari Nine Six Foxtrot "
+        "prompt_fullts_AG_4B": ", Victor Tango Bravo Romeo Kilo , Asterix Seven Eight Papa , Bair Seven One Two , Mambra Sierra Echo ",
+        "prompt_fullts_5B": "Elite Jet Four Zero Three , Slovak Government Zero Four Alpha , Delta Foxtrot Golf Romeo Oscar , Slovak Government Zero Zero Two , Qatari Nine Six Foxtrot ",
+        "prompt_fullts_50B": "Oscar Kilo Romeo Lima Victor , Trans Europe Three Eight Five Two , Sunexpress Four Echo Whiskey , Bair Seven One Two , Slovak Government Zero Zero Two , Asterix Seven Eight Papa , Oscar Yankee Juliett Juliett November , Aerodin Golf India , Oscar Mike Delta Yankee Echo , Qatari Nine Six Foxtrot , Mambra Sierra Echo , Oscar Mike Charlie India Alpha , Silk West Two Eight Zero , Delta Foxtrot Golf Romeo Oscar , Elite Jet Four Zero Three , Victor Tango Bravo Romeo Kilo , Slovak Government Zero Four Alpha , Oscar Mike Bravo Juliett Mike , Fraction Eight Three Four Romeo, Wizzair Nine Six Five Four, Ryan Four Mike Kilo, Arcus Air Seven Two Quebec Quebec, Rex One Zero, Vista Malta Nine Five Seven, Victor Hotel November Bravo Romeo, Turkish One Lima X-ray, Quadriga One Three One Papa, Airindia One Eight Zero, Malaysian Six Two Zero Five, Qantas Seven Five Eight Six, Qlink Two Five Four, Emirates Nine Eight Two Zero, Velocity Nine Five One, Airwork One Alpha, Hotel Oscar Victor Echo Romeo Two One, Hotel Bravo Zulu November Whiskey, Time Air Seven Eight Four Yankee, November One Eight Four Kilo Papa, Qlink One Zero Five Delta, Air Serbia Six Zero Mike, German Air Force Six Zero Two, Ryan Air Six Tango November, Qantas Five Three Five, Mosquito Zero Five Golf, Hansa Four Yankee Victor, Alpha Mike Two Seven Seven, Air Europe India Alpha Zero Seven, Scandinavian Six Zero One, Phillips Alpha Bravo, Lufthansa Five Yankee Yankee",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", SXS4EW, QTR96F, EAT3852, AZG280",
+        "prompt_shortts_5B": "QTR96F, AOJ78P, AZG280, SSG002, OMDYE",
+        "prompt_shortts_50B": "OKRLV, AOJ78P, OMCIA, SXS4EW, QTR96F, OMBJM, DFGRO, EAT3852, VTBRK, OMDYE, ELJ403, AZG280, ABP712, OMLSE, SSG002, OYJJN, SSG04A, DINGI, HB3131, EWG1CY, SWR2796, VJT492, BCS67R, TFX16, JST762, NJE411E, FHDBL, CTN465, SWR69KC, OOPCK, OKNTU, AEA1676, AUA2LS, ABP951, QFA510, KAL591, AFR570, QFA580, ANZ231, JST506, QFA654, OEIZY, SPARK, HBVPE, NJE517W, AUA7NC, QLK431D, HT401, THY3HS, FD218"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210503_171652.wav",
@@ -1258,9 +1366,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Cargolux Six Seven Two One , Slovak Government Zero Zero Three , Oscar Echo X-ray Oscar X-ray , Austrian One Seven Two ",
-        "prompt_fullts_5B": "Ethiopian Seven Two Five , Ryanair Nine Seven Five , Austrian Six Juliett Mike , Austrian One Seven Two , Cargolux Six Seven Two One ",
-        "prompt_fullts_50B": "Bair Seven Five Two , Slovak Government Zero Zero Three , Ryanair Nine Seven Five , Turkish Four One Golf Hotel , Austrian Six Juliett Mike , Austrian Five November Alpha , Cargolux Six Seven Two One , Ethiopian Seven Two Five , Oscar Echo X-ray Oscar X-ray , Austrian Three Sierra Victor , Austrian One Seven Two , Austrian One Two Six "
+        "prompt_fullts_AG_4B": ", Bair Seven Five Two , Oscar Echo X-ray Oscar X-ray , Cargolux Six Seven Two One , Austrian Three Sierra Victor ",
+        "prompt_fullts_5B": "Cargolux Six Seven Two One , Slovak Government Zero Zero Three , Austrian Five November Alpha , Austrian One Two Six , Bair Seven Five Two ",
+        "prompt_fullts_50B": "Austrian One Seven Two , Slovak Government Zero Zero Three , Bair Seven Five Two , Ryanair Nine Seven Five , Austrian One Two Six , Cargolux Six Seven Two One , Turkish Four One Golf Hotel , Austrian Five November Alpha , Austrian Three Sierra Victor , Ethiopian Seven Two Five , Oscar Echo X-ray Oscar X-ray , Austrian Six Juliett Mike , Delta India Victor Victor Victor, Dark Blue Five Seven Golf, Velocity Eight Zero Three, Emirates Nine Eight Two Six, Qantas One Three Zero, Slovak Government Zero Four Alpha, Austrian Airlines Six Bravo Victor, Hotel Bravo Kilo Mike Alpha, Siberian Airlines Three Six Six Two, Turkish Nine Echo Quebec, Qlink Two Five Five, Air France One Seven Delta Tango, Fraction One Eight Two November, Mermaid Six Four Eight Six, Hotel Bravo Yankee Papa Lima, Okapi Romeo Mike, Hotel Bravo Zulu Sierra November, Jetstar Nine Five Nine, Iberia Three Four Seven Seven, Qantas Six Four Five, Oklahoma India Oscar, Bauhinia Two Zero One Four, Sunexpress Eight Juliett Charlie, Qlink Four Five Three Delta, Turkish Six Six Zero Four, Air France One Zero Eight Zulu, Flycom Romeo India Alpha November One, Oscar Kilo Oscar Uniform Uniform Three Seven, Velocity Eight Four Two, Austrian Five Hotel, Qantas Five Three Five, India Whiskey Lima Foxtrot X-ray, Mike Uniform Sierra India Charlie, Jetstar Eight One Eight, Flyhello November Echo, Afrilens Four One, November Nine Nine Kilo Whiskey, Tango Echo Two Three",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", AUA126, OEXOX, RYR975, AUA5NA",
+        "prompt_shortts_5B": "OEXOX, SSG003, ETH725, ABP752, AUA3SV",
+        "prompt_shortts_50B": "AUA6JM, ETH725, THY41GH, AUA126, ABP752, AUA3SV, OEXOX, RYR975, SSG003, CLX6721, AUA172, AUA5NA, AAR6013, QFA508, ENT532P, OEGWV, HBKPH, SWR113F, VOZ412, AM223, RXA6625, VOZ562, QFA7701, HBTLA, SWR1069, VIKTOR78, UAE9209, DLH55X, EFD2D, WZZ299, EVA088, JST746, IFA1116, THA475, FLORI569, DLH6C, DLH1322, NOS687, HKY14, KLM1847, DLH18F, JST415, SIA242, QFA179, AFL2718, JFA17V, SXS1GX, SWR14E, RXA6316, RYR2MW"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210423_115901.wav",
@@ -1351,9 +1463,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Oscar Echo Kilo Charlie Mike , Air China Five Nine Eight , Tango Seven Mike Mike Zulu , German Air Force Eight Five Four ",
-        "prompt_fullts_5B": "Eva Zero Six Six , Tango Seven Mike Mike Zulu , Wizzair One Eight Two Zero , Ryanair Two Hotel Victor , Lux Rescue One Five Two Bravo ",
-        "prompt_fullts_50B": "Tango Seven Mike Mike Zulu , German Air Force Eight Five Four , Seven Seven Four Five , Austrian Seven Victor Romeo , Slovak Government Zero Zero Three , Lux Rescue One Five Two Bravo , Wizzair One Eight Two Zero , Emirates One Two Eight , Sunturk Three Two Lima , Austrian Seven Nine One , Oscar Echo Kilo Charlie Mike , Ryanair Two Hotel Victor , Eva Zero Six Six , Sunturk Seven Four Echo , Oscar Mike Mike Two Three Three , Emirates Two Five Five Four , Air China Five Nine Eight , Austrian Six One Uniform Kilo "
+        "prompt_fullts_AG_4B": ", Lux Rescue One Five Two Bravo , Austrian Seven Nine One , Slovak Government Zero Zero Three , Emirates Two Five Five Four ",
+        "prompt_fullts_5B": "Air China Five Nine Eight , German Air Force Eight Five Four , Seven Seven Four Five , Oscar Echo Kilo Charlie Mike , Emirates One Two Eight ",
+        "prompt_fullts_50B": "Lux Rescue One Five Two Bravo , Austrian Seven Nine One , Oscar Echo Kilo Charlie Mike , Seven Seven Four Five , Austrian Six One Uniform Kilo , Austrian Seven Victor Romeo , Ryanair Two Hotel Victor , Emirates Two Five Five Four , Sunturk Seven Four Echo , Tango Seven Mike Mike Zulu , Eva Zero Six Six , Wizzair One Eight Two Zero , Emirates One Two Eight , German Air Force Eight Five Four , Slovak Government Zero Zero Three , Sunturk Three Two Lima , Oscar Mike Mike Two Three Three , Air China Five Nine Eight , Turkish Papa Kilo, Okayjet Oscar Alfa, Air France Five Seven Bravo Papa, Hotel Bravo Oscar Alpha Golf, November Two One Two Charlie Mike, Flycom Romeo India Alpha November Five, Romeo Eight Eight Two Seven, Delta Echo X-ray Alpha Charlie, Skytravel Six Victor Yankee, Emirates Three Zero, Papa Echo Golf Three One, Lot Two Victor Mike, Asiana Six Zero One Three, Luxor Golf Two Two Sierra, France Soleil Four Zero Three Eight, Qlink Four Five Three Delta, Mazoon Four Two Four, Dynasty Zero Five One, Sundair Four Two Seven Zero, Heliblue Whiskey Sierra, Qantas Eight Four Four, Oscar Kilo Whiskey Yankee Zulu, Malaysian Seven Nine Seven Two, Qlink Four Four Six Delta, New Zealand Two Four Nine, China Southern Three Zero Two, Edelweiss Two Three Foxtrot, Hotel Bravo Two Four Seven Five, Victor Tango Bravo Romeo Kilo, Alpha Mike Two Seven Seven, Csa / Czech Nine One Eight, Rex Six Six Seven Four",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", AUA61UK, GAF854, UAE128, EVA066",
+        "prompt_shortts_5B": "7745, AUA791, UAE128, RYR2HV, WZZ1820",
+        "prompt_shortts_50B": "CCA598, RYR2HV, 7745, OMM233, OEKCM, UAE2554, LRQ152B, AUA7VR, EVA066, AUA61UK, WZZ1820, AUA791, SSG003, PGT74E, UAE128, PGT32L, T7MMZ, GAF854, VHVIJ, KONDOR11, LOT224, ETD455, FLORI103, VIP973, QFA6025, VOZ1210, TOM7BE, LOT412, QFA6005, SWR85IA, HBWGI, HBFXG, QLK9, FDX5112, QTR478H, SWR262D, FTY8, RXA6228, SAZ64, DLH8HT, AE888, RSCU201, JST521, QTR8157, N260AM, DIEGA, LOT225, AFL2392, PE218, QJE1506"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210503_093636.wav",
@@ -1436,9 +1552,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Austrian Six Tango Mike , Eva Zero Six Six , Austrian Six One Uniform Kilo , Orion Charter Alpha Foxtrot ",
-        "prompt_fullts_5B": "lot Three One Eight , Dipfreight Bravo Bravo , Eva Zero Six Six , Austrian Seven Victor Romeo , Lufthansa Two Five Four Four ",
-        "prompt_fullts_50B": "Oscar Mike Juliett Golf Alpha , Austrian Three Eight One , Austrian Six Tango Mike , lot Two Two Four , Aero Coach Bravo Tango , Austrian Six One Uniform Kilo , Lufthansa Two Five Four Four , Orion Charter Alpha Foxtrot , Austrian Seven Victor Romeo , Austrian Six Five Five , Ryan Five Seven Foxtrot Alpha , Eva Zero Six Six , lot Three One Eight , Dipfreight Bravo Bravo "
+        "prompt_fullts_AG_4B": ", Austrian Six Tango Mike , Dipfreight Bravo Bravo , lot Two Two Four , Austrian Six Five Five ",
+        "prompt_fullts_5B": "lot Three One Eight , Oscar Mike Juliett Golf Alpha , Aero Coach Bravo Tango , lot Two Two Four , Austrian Six One Uniform Kilo ",
+        "prompt_fullts_50B": "Austrian Six Five Five , Lufthansa Two Five Four Four , Orion Charter Alpha Foxtrot , Austrian Six One Uniform Kilo , Austrian Three Eight One , Ryan Five Seven Foxtrot Alpha , Austrian Seven Victor Romeo , Eva Zero Six Six , Oscar Mike Juliett Golf Alpha , lot Two Two Four , Dipfreight Bravo Bravo , lot Three One Eight , Aero Coach Bravo Tango , Austrian Six Tango Mike , November Eight Four Two Tango Sierra, Qlink Two Two One Delta, Ryan Air Five Five Zero Seven, Foxtrot Delta Two Six Four, Iberia Three Four Six Four, Mike Sierra Charlie Four Two Four, Croatia Four Six Four, Transaven Airline Mike Zero Eight, Oscar Echo Echo Papa Golf, United Eight Four Two, November Nine One Five Juliett Golf, Orient Thai Romeo Whiskey, Panairsa Nine Charlie Juliett, Luxair Nine Two Mike, Rex Six Eight Six Nine, Iranair Seven One One, Aerlineas Centrales Zero Zero Eight, Rex One Eight One Five, Delta Mike November Papa Romeo, Bauhinia Two Zero One Four, Hotel Bravo Echo Quebec Juliett, Austrian Airlines Six Zero Two, Swiss One Eight Two Golf, Fraction Six Nine Three Delta, Oscar Kilo Bravo Romeo Oscar, November One Tango Foxtrot, All Nippon Eight Eight Zero, Ghibli Four, New Zealand Two Four Five, Koreanair Five Six Seven, Austrian Four Six, Jetstar Five Two Nine, Airbridge Cargo Five Six Zero, Ryan Air Six Five Yankee, Qjet One Nine Zero Zero, Jetstar Six Seven Zero",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", AUA7VR, AUA381, AUA6TM, AUA655",
+        "prompt_shortts_5B": "EVA066, AUA61UK, DIPBB, AUA6TM, LOT224",
+        "prompt_shortts_50B": "RYR57FA, EVA066, OMJGA, LOT318, AUA61UK, AUA655, DFABT, AUA381, DIPBB, DLH2544, LOT224, AUA6TM, OEDAF, AUA7VR, RYR20FH, HBLWW, N900TR, JST745, GDMAZ, ETD12, AE831, JSH400, SXS6LZ, SIA7298, JST958, OKDSV, HBZSO, SWR8846, AIC180, YUEAG, DLH74U, QTR9VU, AXE100P, QLK7D, RYR6VZ, NCA049, HBYOU, VOZ803, SWR155, AMC376, SWR29E, VCJ50M, EDW266N, THY6591, VJT492, BAW165F, DHK547, SDR4579, QLK40D, OEVSO"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210426_175622.wav",
@@ -1505,9 +1625,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Dream Team Zero One Five November , Tango Tango Juliett Three One Two Bravo , Ryanair Nine Seven Five , Tango Tango Juliett Three One Five Alpha ",
-        "prompt_fullts_5B": "Tango Tango Juliett Three One Two Bravo , Tango Tango Juliett Three One Five Alpha , Ryanair Nine Seven Five , Fedex Five One One Two , Dream Team Zero One Five November ",
-        "prompt_fullts_50B": "Dream Team Zero One Five November , Turkish Six Six Zero Four , Fedex Five One One Two , Ryanair Nine Seven Five , Tango Tango Juliett Three One Two Bravo , Tango Tango Juliett Three One Five Alpha "
+        "prompt_fullts_AG_4B": ", Tango Tango Juliett Three One Two Bravo , Fedex Five One One Two , Dream Team Zero One Five November , Ryanair Nine Seven Five ",
+        "prompt_fullts_5B": "Tango Tango Juliett Three One Five Alpha , Dream Team Zero One Five November , Turkish Six Six Zero Four , Ryanair Nine Seven Five , Tango Tango Juliett Three One Two Bravo ",
+        "prompt_fullts_50B": "Fedex Five One One Two , Turkish Six Six Zero Four , Tango Tango Juliett Three One Two Bravo , Tango Tango Juliett Three One Five Alpha , Dream Team Zero One Five November , Ryanair Nine Seven Five , Emirates Three Zero, Jung Sky Two Eight Five Delta, Arrow Jet Six Zero One, Topswiss Nine Zero Seven Zero, Swiss One Five Seven Four, France Soleil Three Five Yankee Romeo, Romeo Alpha Zero Two Eight Five Seven, Zulu Uniform Echo Romeo India One, Swiss One Five Nine, Oscar Kilo Yankee Uniform Sierra Four Five, November One Three Three Kilo Quebec, Velocity Nine Nine Seven, Golf Uniform Tango November Eight, Swiss One Five X-ray, Qantas Nine Nine Four, Singapore Two Nine Eight, Rex Six Five One Nine, Oscar Kilo Uniform Uniform Romeo One Four, Rex Six Four Four Five, Millardair Golf Victor, Austrian Six Charlie Delta, Lufthansa One Victor Victor, Emirates One Seven, Swiss One Three Eight, Egyptair Five Three Nine, Delta Mike November Papa Romeo, Qantas Five Nine Three, Fairfleet Four One Four, Blue Air Eight Mike Echo, Philippine Eight Two One Two, Saudia Three Zero Seven Six, Velocity Four One Two, Ryan Two Mike Whiskey, Fraction Two Juliett Whiskey, Heliblue Victor Alpha, Papa Echo Golf Three Three, Aussie Zero One Eight, November Nine Zero Golf Papa, Velocity Eight Two Zero, Malaysian Six Two Zero Three, Victor Papa Charlie Yankee Juliett, Jetstar Six One One, Fedex Nine Zero Seven Seven, Qatari Eight Two Five One",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", THY6604, TTJ315A, FDX5112, RYR975",
+        "prompt_shortts_5B": "TTJ312B, FDX5112, GAC015N, THY6604, TTJ315A",
+        "prompt_shortts_50B": "THY6604, GAC015N, RYR975, TTJ312B, FDX5112, TTJ315A, QFA7345, HBTSW, TCNKA, AUA96Z, VOZ912, AZG5716, SWR547L, DLH93T, SWR72TL, DLH18F, QLK41D, QLK439D, HBZVP, EVY42, TVS432P, DLH19P, AMC539, SAS9135, HBKMR, HBYOU, OEFGR, CCA613, HBZEF, HBZOZ, DLH21P, RXA1834, IBE30HT, JTE7443, PAL8211, ANE87UH, VOZ932, QFA7524, VOZ401, SUI004, VIR510, QLK165D, KAL541, AJU521, SWR31Y, AOJ41S, VOZ439, SIA212, FIREB100, RYR303"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Approach_120_9MHz_20210422_145928.wav",
@@ -1588,9 +1712,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Mazoon Six Six Six , Asterix Five One Sierra , Austrian Six Zero Two , Austrian Three Eight Two ",
-        "prompt_fullts_5B": "Qatari Four One Four Uniform , Oscar Mike Bravo Yankee Delta , Sowind Four , Qatari Seven Six Golf Kilo , Red Lion One Foxtrot ",
-        "prompt_fullts_50B": "Austrian Six Zero Two , Red Lion One Foxtrot , Oscar Echo Echo Mike Golf , Oscar Mike Bravo Yankee Delta , Sowind Four , Asterix Five One Sierra , Austrian Three Eight Two , Qatari Seven Six Golf Kilo , Austrian Two Five , Bair Nine Four One , Qatari Four One Four Uniform , Mazoon Six Six Six , Seven Seven Four Five "
+        "prompt_fullts_AG_4B": ", Qatari Seven Six Golf Kilo , Austrian Two Five , Red Lion One Foxtrot , Seven Seven Four Five ",
+        "prompt_fullts_5B": "Mazoon Six Six Six , Austrian Six Zero Two , Austrian Three Eight Two , Oscar Mike Bravo Yankee Delta , Qatari Four One Four Uniform ",
+        "prompt_fullts_50B": "Oscar Mike Bravo Yankee Delta , Qatari Seven Six Golf Kilo , Red Lion One Foxtrot , Mazoon Six Six Six , Seven Seven Four Five , Bair Nine Four One , Austrian Three Eight Two , Asterix Five One Sierra , Austrian Two Five , Austrian Six Zero Two , Qatari Four One Four Uniform , Sowind Four , Oscar Echo Echo Mike Golf , Air Hamburg Eight Two Seven Victor, Qlink Two Two One Delta, Air France Four Five Alpha Alpha, Thai Four Seven Five, Qantas One Zero Four Three, Di Air Alpha Romeo, Oscar Oscar Papa Charlie Kilo, Hansa One Three Two Six, Fraction Two Papa Hotel, Oscar Kilo Yankee Whiskey Charlie Seven Seven, Vista Malta Four Six Seven, Oscar Mike Mike Three Five Zero, Fraction Zero Nine Nine Golf, Qantas One Three Six, Qlink Two Two Three Delta, Qantas Four Three Two, Qantas Five Three Five, Air Malta Four Nine Zero, Quality Four Zero Eight Nine, Fraction Zero Four Four Golf, Two Foxtrot Echo Echo Lima, Dream Team Zero One Seven Alpha, Pelflight Seven Four One One, Hotel Bravo Yankee Juliett Foxtrot, Oscar Kilo X-ray Uniform Sierra Two Nine, Sunturk Nine Four Eight, Avcon One Two One, Lufthansa One Yankee Yankee, Srilankan Five Zero Four, Tango Uniform One Seven, Jetstar Five One Four, Cathay One Six Two, Sunexpress Seven Victor Romeo, Turkish One Nine Two Three, China Eastern Seven Five Six One, Emirates Nine Two Five Seven, Fraction Five Seven Six Hotel",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", QTR76GK, OMBYD, AUA602, AUA25",
+        "prompt_shortts_5B": "7745, OMS666, LXA1F, AUA602, AUA25",
+        "prompt_shortts_50B": "QTR414U, OEEMG, AUA25, OMBYD, SOW4, 7745, OMS666, AOJ51S, QTR76GK, AUA382, AUA602, LXA1F, ABP941, QJE1721, JST785, PUSCIAF, QFA466, WUK99WL, SXS7D, OHSSS, QFA925, SWR105K, JST418, N755DS, VOZ557, ATL3Z, OKVAR08, HBKGP, MSC425, ANZ222, VOZ920, QFA439, HBKFI, OKTJL, QTR8157, THY9EQ, AFL2718, IGBMP, VJT431, PE821, FD227, IBE30HT, CES561, JST507, SAS1811, DFC85T, PGT31H, GAC714B, BRU861, QFA504"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210430_160326.wav",
@@ -1703,9 +1831,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Tango Tango Juliett Six Zero Three , Wizzair Six Two Seven Five , Echo Lima Golf Five Two Alpha , Air Hamburg Six Nine Two Lima ",
-        "prompt_fullts_5B": "Wizzair Six Two Seven Six , Austrian Seven Nine Lima Golf , Qatari One Six Papa , Air Hamburg Six Nine Two Lima , Alpha X-ray Alpha One One One ",
-        "prompt_fullts_50B": "Mazoon Four Two Four , Oscar Kilo Romeo Delta Sierra , Echo Lima Golf Five Two Alpha , Austrian Eight Mike Sierra , Austrian Six Six Juliett Tango , Austrian Eight One Zero Lima , Alpha X-ray Alpha One One One , Austrian Seven Nine Lima Golf , Air Hamburg Six Nine Two Lima , Austrian Four Six , Austrian Seven Kilo Sierra , Mazoon Six Six Six , Christophorus Oscar Golf , Mitavia Nine Two Three Seven , Wizzair Six Two Seven Five , Belarus Avia Eight Eight Zero , Austrian Seven Nine Two , Siberian Airlines Three Six Five Zero , Qatari One Six Papa , Romeo Alpha Zero Two Eight Five Seven , Austrian Six Charlie Delta , Austrian Eight Five Eight , Austrian Eight Zero November , Siberian Airlines Three Six Four Two , Silver Arrows Four Three Lima Delta , Asterix Eight One Romeo , Wizzair Six Two Seven Six , Mambra Uniform Charlie , Tango Tango Juliett Six Zero Three "
+        "prompt_fullts_AG_4B": ", Austrian Eight Zero November , Air Hamburg Six Nine Two Lima , Austrian Six Charlie Delta , Echo Lima Golf Five Two Alpha ",
+        "prompt_fullts_5B": "Austrian Six Six Juliett Tango , Austrian Eight Mike Sierra , Siberian Airlines Three Six Four Two , Qatari One Six Papa , Mitavia Nine Two Three Seven ",
+        "prompt_fullts_50B": "Silver Arrows Four Three Lima Delta , Air Hamburg Six Nine Two Lima , Austrian Eight Five Eight , Mambra Uniform Charlie , Mitavia Nine Two Three Seven , Echo Lima Golf Five Two Alpha , Romeo Alpha Zero Two Eight Five Seven , Wizzair Six Two Seven Six , Mazoon Four Two Four , Alpha X-ray Alpha One One One , Austrian Six Six Juliett Tango , Wizzair Six Two Seven Five , Austrian Eight Zero November , Austrian Four Six , Siberian Airlines Three Six Five Zero , Mazoon Six Six Six , Belarus Avia Eight Eight Zero , Austrian Eight Mike Sierra , Austrian Seven Kilo Sierra , Tango Tango Juliett Six Zero Three , Asterix Eight One Romeo , Austrian Seven Nine Two , Christophorus Oscar Golf , Oscar Kilo Romeo Delta Sierra , Qatari One Six Papa , Austrian Six Charlie Delta , Austrian Eight One Zero Lima , Austrian Seven Nine Lima Golf , Siberian Airlines Three Six Four Two , Foxtrot Sierra Foxtrot Eight Zero Zero Mike, Oscar Kilo Yankee Uniform Romeo Nine Nine, Lufthansa Zero Three Alpha, Velocity Eight One One, Qantas Seven Five Five Zero, Ryan Air Six Victor Zulu, Quality Four Zero Eight Nine, Tango Tango Juliett Three One Five Bravo, November Eight Eight Seven Golf X-ray, Rex Six Six Six Four, Victor Lima Zulu One Three Three Alpha, Hansa Two Romeo Yankee, Pollot Four Whiskey Romeo, Wing Lebanon Yankee Three One, All Charter Four Alfa Papa, Qlink Two Four Eight, Flying Group Two Two Alpha, Qantas Five One Nine, Galaxy Alpha Two, KLM Five Seven Charlie, Hotel Bravo Zulu Mike Whiskey",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", MTL9237, OMS424, AUA792, OKRDS",
+        "prompt_shortts_5B": "MTL9237, SVW43LD, AUA8MS, BRU880, ELG52A",
+        "prompt_shortts_50B": "OMS666, SBI3642, TTJ603, AUA46, AUA8MS, SBI3650, AHO692L, AUA7KS, AUA858, AXA111, AOJ81R, AUA792, WZZ6275, AUA810L, OECOG, WZZ6276, BRU880, OMS424, MTL9237, AUA6CD, AUA80N, SVW43LD, OKRDS, OMLUC, RA02857, AUA79LG, AUA66JT, ELG52A, QTR16P, DLH17N, QTR166K, UAE9269, AEE5SZ, NJE441N, RSCU204, JFA07J, JST660, NJE498A, HB2459, NJE8KE, NJE942R, LXPCF, ELJ702, EZS54HR, JST810, VIKTOR35, VOZ401, QFA995, RTT1, THY1909"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210430_190550.wav",
@@ -1772,9 +1904,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Eurotrans One Three Juliett , Austrian Six Four One , Asterix Eight One Romeo , Oscar Kilo Romeo Delta Sierra ",
-        "prompt_fullts_5B": "Alpha X-ray Alpha One One One , Oscar Kilo Romeo Delta Sierra , Air Serbia Six Zero Mike , Asterix Eight One Romeo , Eurotrans One Three Juliett ",
-        "prompt_fullts_50B": "Oscar Kilo Romeo Delta Sierra , Air Serbia Six Zero Mike , Alpha X-ray Alpha One One One , Asterix Eight One Romeo , Austrian Six Four One , Eurotrans One Three Juliett "
+        "prompt_fullts_AG_4B": ", Asterix Eight One Romeo , Austrian Six Four One , Air Serbia Six Zero Mike , Oscar Kilo Romeo Delta Sierra ",
+        "prompt_fullts_5B": "Alpha X-ray Alpha One One One , Oscar Kilo Romeo Delta Sierra , Austrian Six Four One , Air Serbia Six Zero Mike , Asterix Eight One Romeo ",
+        "prompt_fullts_50B": "Austrian Six Four One , Asterix Eight One Romeo , Alpha X-ray Alpha One One One , Oscar Kilo Romeo Delta Sierra , Eurotrans One Three Juliett , Air Serbia Six Zero Mike , Oscar Kilo X-ray Alfa India Zero Four, Oscar Echo India Zulu Yankee, Mosquito Seven Seven Golf, Csa / Czech Nine One Nine, Turkish Six Six Zero Six, Jetstar Seven Nine Zero, Qlink One Nine Three, Zulu Uniform Echo Romeo India Five, Hotel Bravo Foxtrot Uniform Uniform, November Five Five Golf Victor, Qlink Four Zero Seven, Austrian Airlines Two Two Four, Swiss Two Eight Three Whiskey, Hansa Zero Two Mike, Habicht Charlie Tango, Velocity One Two Seven Nine, November Seven One One Lima Sierra, Papa Eight Nine Foxtrot, Hotel Bravo Delta Hotel Alpha, Red Angel Six One One Five, Dark Blue Nine Two Kilo, Alpine Three Seven Yankee Alpha, Fraction Three One Eight Echo, Air Hamburg Four Four Eight Victor, Swiss One Zero Five Alpha, Galaxy Alpha One Three, Alitalia Five Seven One, Ryan Air Seven Seven Sierra Juliett, Rex Six One Seven Five, Qantas Five Four Three, Tango Mike November Eight One, Galaxy Alpha Six, Hotel Bravo Zulu Victor Kilo, Bohemia Seven One One, Oscar Kilo Delta Sierra Victor, Austrian Seven Golf Tango, India Whiskey Lima Foxtrot X-ray, Austrian Airlines Six Bravo Victor, Royal Ghana Zero One, Qlink One One Nine, Jetset Two Foxtrot Delta, Qantas Five Two Nine, Connie Eight Three Five, Ryan Air Nine Two Bravo Quebec",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", ASL60M, AUA641, OKRDS, BCS13J",
+        "prompt_shortts_5B": "OKRDS, AOJ81R, ASL60M, AXA111, BCS13J",
+        "prompt_shortts_50B": "AXA111, AOJ81R, ASL60M, AUA641, BCS13J, OKRDS, SUI548, RXA6783, VOZ1281, QFA7451, AMQ2W, QFA726, TAP557E, VOZ540, EWG71R, WZZ9654, TFX16, OMLKJ, SUI583, TJS47, SWR109A, ETD43U, BEL8NB, AZG280, SWR62U, SWR97Z9, HBKCJ, WZZ2184, AZA206, HBHZC, AEE534, SBI3662, PE317, RYR5694, RYR8YT, AEE8DD, AZE99TX, DFCOC, HBVYS, WUK56NJ, ADN23R, VLG1502, VPBVG, WZZ6128, ACA7232, JST403, JST419, AUA4SL, TUI66V, AUA8NF"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSZH_ZURICH_Tower_118_1MHz_20210416_073807.wav",
@@ -2144,9 +2280,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Habicht Zulu Lima , Swiss One Three One Zero , Flycom Romeo India Five Six Eight , Euroguinea Echo November Five ",
-        "prompt_fullts_5B": "Euroguinea Echo November Five , Flycom Romeo India Five Six Eight , Zulu Uniform Echo Romeo India Seven , Zulu Echo Bravo Romeo Alpha Eight , Hotel Bravo Kilo Mike X-ray ",
-        "prompt_fullts_50B": "Euroguinea Echo November Five , Alitalia Five Seven Two , Tango Uniform Zero One Two , Flycom Romeo India Alpha November Five , Swiss Three Three Victor , Sunturk Nine Four Seven , Airjetsul Five Two One , Euroguinea Echo November Eight , Tango Seven Four One , Swiss One Nine Seven , Ghibli Four , United One Three Five , Euroguinea Echo November Nine , Romeo Tango Tango Seven , United One Three Four , Swiss One Two Two Whiskey , Croatia Four Six Zero , Fraction Three Four Six Hotel , Pollot Four One One , Uniform Romeo Sierra Uniform Lima Alpha One Three , Singapore Three Four Five , Swiss One Eight Two Golf , Tango Uniform One Seven , Guja Tango India Two , Delta Charlie Papa Mike India , Galaxy Alpha Six , Centralmex Seven Eight Zero , Galaxy Alpha One Two , Dream Team Two One Eight Delta , Colair Six One , Swiss One Three Two Six , Delta India Tango Oscar Charlie , Swiss Air Force Seven Five Two , Foxtrot Sierra Echo One Charlie , Arrow Jet Six Zero One , Qatari Six Hotel Bravo , Golf Uniform India Delta Oscar Two , Hotel Bravo Victor Papa Echo , Turkish Three Whiskey Quebec , Galaxy Alpha One Seven , Romeo Tango Tango One , Swiss Nine Kilo , Eurowings One Eight Alpha , Tango Echo Two Three , Quality Eight Two Four Papa , Swiss One Five X-ray , Hotel Bravo Kilo Mike X-ray , Swiss One Three Nine Kilo , Dream Team Four One Eight Yankee , Swiss One Nine November "
+        "prompt_fullts_AG_4B": ", Zulu Uniform Echo Romeo India Six , Papa Hotel Juliett Whiskey Lima , Habicht Lima Mike , November Six Six Six Charlie Papa ",
+        "prompt_fullts_5B": "Dream Team Two One Eight Delta , Alitalia Five Seven Two , Delta India Victor Victor Victor , Oscar Echo Echo Papa Golf , Galaxy Alpha One Seven ",
+        "prompt_fullts_50B": "Tango Uniform One Seven , Wizzair One Alpha Bravo , Habicht Lima Alpha , Arrow Jet Six Zero One , Swedjet Tango Oscar Romeo Three Five , Tango Echo Two Two , Sunturk Nine Four Seven , Swiss Three Zero Kilo , Swiss Nine Seven Yankee , Turkish Six Foxtrot Lima , Hotel Bravo Victor Papa Echo , Oscar Echo Echo Papa Golf , Euroguinea Echo November Five , Swiss Nine Seven Golf , Lufthansa Six Echo Echo , Swiss One Three Nine Kilo , Romeo Tango Tango Seven , Swiss Nine Kilo , Swiss Two Nine Foxtrot , Flycom Romeo India Alpha November Nine , Swiss One Three Two Six , Swiss Air Force Seven Five Two , Zulu Uniform Echo Romeo India Seven , Swiss One Three One Zero , Swiss Air Force Seven Four One , Tango Seven Four One , Euroguinea Echo November Seven , Colair Six One , Singapore Three Four Five , One One , Delta Charlie Papa Mike India , Hotel Bravo Kilo Mike Romeo , Turkish Nine Papa Kilo , Arcus Air Eight Two Quebec Romeo , Delta India Victor Victor Victor , Turkish Three Whiskey Quebec , Pollot Four One One , Turkish Two Seven X-ray , Dream Team Five Two Nine X-ray , Galaxy Alpha One Seven , Royal Ghana Zero One , Euroguinea Echo November One Seven , Dream Team Two One Eight Delta , Flycom Romeo India One Zero Three , Luxaviation One Foxtrot , Swiss Two Zero Six Seven , Oscar Romeo India Oscar November One , Eurowings One Eight Alpha , Swiss Three Three Two , Alitalia Five Seven Two ",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", FLORIAN8, LXA1F, SWR1310, N666CP",
+        "prompt_shortts_5B": "DIVVV, ZUERI6, SWR197, PHJWL, ORION1",
+        "prompt_shortts_50B": "EWG18A, HBVPE, SWR204K, ATL779, PGT947, DCPMI, SWR72TL, AZA571, TE25, FLORIAN1, GSW601, SWR15X, KLM57C, SWR33V, SWR65, SIA345, PHJWL, FLORI569, GAC529X, SWR169A, AZA572, SAS793, NJE346H, GAC218D, THY181, AZE82QR, TE23, SWR1326, RTT7, FLORIAN9, REGA07, UAL135, GUIDO2, URSULA13, ZEBRA8, HBCQM, SWR29F, HBTLM, 11, DLH5C, DITOC, SWR139K, LXA1F, N666CP, FLORI103, HBKGP, SWR332, RTT1, EWG6NL, DLH6EE"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210429_164905.wav",
@@ -2225,9 +2365,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Myanmar Victor Papa , Emirates One Two Five , Tango Tango Juliett Three One Five Bravo , Quebec November Romeo Two Five Bravo ",
-        "prompt_fullts_5B": "Quebec November Romeo Two Five Bravo , Austrian Two Five , Eurocypria Two One Echo , Slok Gambia India Alpha , Qatari Four Seven Eight Hotel ",
-        "prompt_fullts_50B": "Mazoon Two One Five , Tango Tango Juliett Three One Five Bravo , Quebec November Romeo Two Five Bravo , Eurocypria Two One Echo , Air Hamburg Seven Seven Seven Alpha , Qatari Seven Six Golf Kilo , Qatari One Six Six Kilo , Myanmar Victor Papa , Emirates One Two Five , Qatari Four Seven Eight Hotel , Austrian Two Five , Slok Gambia India Alpha "
+        "prompt_fullts_AG_4B": ", Emirates One Two Five , Eurocypria Two One Echo , Qatari Four Seven Eight Hotel , Mazoon Two One Five ",
+        "prompt_fullts_5B": "Myanmar Victor Papa , Slok Gambia India Alpha , Qatari Four Seven Eight Hotel , Quebec November Romeo Two Five Bravo , Eurocypria Two One Echo ",
+        "prompt_fullts_50B": "Austrian Two Five , Qatari Four Seven Eight Hotel , Qatari Seven Six Golf Kilo , Air Hamburg Seven Seven Seven Alpha , Mazoon Two One Five , Qatari One Six Six Kilo , Slok Gambia India Alpha , Eurocypria Two One Echo , Tango Tango Juliett Three One Five Bravo , Quebec November Romeo Two Five Bravo , Emirates One Two Five , Myanmar Victor Papa , Hansa Two Five Kilo, Jetstar Five Zero Four, Mazoon Seven Three Seven, Csa / Czech Nine Five Delta, Foxtrot Delta Two Five Four, All Charter Two Zero Zero, Vueling Six Two Four Eight, China Eastern Seven Five Six Two, Thai Four Seven Five, Oscar Kilo Kilo Mike Charlie, Alpha Echo Eight Three One, Hansa Seven Four Uniform, Mosquito Seven Seven Golf, Hotel Bravo Juliett Echo Sierra, Arsam One, Sky Travel Five Romeo Uniform, Ryan Eight Yankee Tango, Topswiss Nine Zero Seven Zero, November Seven Mike Tango, Heliblue Papa Yankee, Rex Nine Nine Five Seven, Qantas Four Four One, Fraction Two Four Two Kilo, Qlink Four Four Six Delta, Qantas Five Zero Seven, Croatia Four Six One, Oscar Kilo Mike Mike India, Austrian One Four Seven Two, Slovak Government Zero Zero Four, Luxair Nine Two One, Qatari Five Nine Golf, Singapore Two Three Two, Velocity Five Six Two, Bravo Sierra Mike November Four Five, Aero Coach Bravo Tango, Swiss Nine Two, Velocity Five Six Nine, Rex Six Four Five Six",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", MMAVP, ECA21E, QTR166K, TTJ315B",
+        "prompt_shortts_5B": "UAE125, QNR25B, AUA25, OMS215, QTR166K",
+        "prompt_shortts_50B": "MMAVP, ECA21E, QNR25B, OKSIA, TTJ315B, UAE125, AUA25, QTR166K, QTR76GK, QTR478H, AHO777A, OMS215, BAW713, AZA75KC, OKSOL, EWG1278, RYR8XM, FDX73, RYR73AH, TUI2423, QFA994, RXA6355, DLH772, KLM1628, RYR3JZ, BCS7552, AUA75, PNC9CJ, DLH1TV, SWR5202, VOZ569, JST604, RXA533, DLH8RX, CAZ901, FDX5279, SWR217C, QJE1505, EWG4FU, HBGLS, HB2249, TIE364F, QJE1533, GAC017A, EVY37, NJE345T, ASJ421, T7OWN, TMN92, BAW400"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210505_135310.wav",
@@ -2320,9 +2464,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", November Four Nine X-ray Lima , Turkish Nine Eight Uniform , Eurocypria Two One Echo , Asiana Seven Nine Five ",
-        "prompt_fullts_5B": "Turkish Nine Eight Uniform , Qatari One Six Papa , Lima Tango Charlie Two Zero One , China Eastern Seven Zero Four Four , Slovak Government Zero Four Alpha ",
-        "prompt_fullts_50B": "November Four Nine X-ray Lima , Blue Air Eight Mike Echo , China Eastern Seven Zero Four Four , Turkish Nine Eight Uniform , Elite Jet Two Zero Two , Eurocypria Two One Echo , Asiana Seven Nine Five , Etihad Four Three Uniform , Qatari One Six Papa , Elite Jet Four Zero Two , Cargolux Seven Nine Seven Two , Emirates One Two Eight , Lima Tango Charlie Two Zero One , Emirates One Eight , Slovak Government Zero Four Alpha , Bair Seven Five One , Elite Jet Two Zero One "
+        "prompt_fullts_AG_4B": ", Blue Air Eight Mike Echo , Emirates One Eight , Elite Jet Four Zero Two , Elite Jet Two Zero Two ",
+        "prompt_fullts_5B": "Emirates One Eight , Eurocypria Two One Echo , Emirates One Two Eight , Lima Tango Charlie Two Zero One , Bair Seven Five One ",
+        "prompt_fullts_50B": "Elite Jet Two Zero Two , Asiana Seven Nine Five , China Eastern Seven Zero Four Four , Cargolux Seven Nine Seven Two , November Four Nine X-ray Lima , Etihad Four Three Uniform , Turkish Nine Eight Uniform , Lima Tango Charlie Two Zero One , Slovak Government Zero Four Alpha , Elite Jet Four Zero Two , Qatari One Six Papa , Emirates One Eight , Blue Air Eight Mike Echo , Eurocypria Two One Echo , Emirates One Two Eight , Elite Jet Two Zero One , Bair Seven Five One , Galaxy Alpha Two One, Rex Six Eight Five Two, India Golf Bravo Mike Papa, Topjet Four Zero One, New Zealand One Zero Four, Nine Lima Alpha, Jetstar Nine One Two, Rex Six Six Two Five, Pilatus Wings Five Four Seven, Heliblue Whiskey Whiskey, Alpha Echo Nine Five Two, Eurocat Nine Zero One, Singapore Three Four Six, Aeroflot Two Three Nine Zero, Victor Hotel Oscar Lima Juliett, Qlink One One Nine, Air Hamburg Two Six Nine Zulu, Dream Team Zero One Five Lima, Hansa Six Six Tango, Topjet Five Zero One, Qjet One Seven Eight Eight, Qantas Six One One Six, Tango Seven Oscar Whiskey November, Dark Blue Two Lima Bravo, Dagobert Five Seven Four, Swiss One Three Nine, Swiss Two Zero Six Zero, Hotel Bravo Oscar Charlie India, Swiss One Eight, Delta Echo November India Foxtrot, Swiss Two Eight Seven Kilo, Delta Foxtrot Kilo Alpha Echo, Qlink One Six Four Delta",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", UAE18, CES7044, BLA8ME, SSG04A",
+        "prompt_shortts_5B": "CES7044, ELJ402, CLX7972, THY98U, N49XL",
+        "prompt_shortts_50B": "ELJ402, ABP751, UAE128, UAE18, THY98U, AAR795, ELJ201, LTC201, ELJ202, ECA21E, QTR16P, N49XL, BLA8ME, CLX7972, CES7044, SSG04A, ETD43U, RXA6355, AHO371R, VOZ965, AUA732, EZS1217, VOZ517, UAE415, FDX9075, PE824, THY65V, DIMEP, HBKMX, PNC9CJ, CMB543, AEE61CG, AE911, NJE485N, IWLFX, COL73, JST520, QFA7402, TAY4078, NJE568L, OKLLZ, SWR145K, SWR2067, QFA746, EDW134C, RYR4MK, QLK30D, QLK42D, QJE1531, RXA6167"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210504_120250.wav",
@@ -2403,9 +2551,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Lufthansa Four Yankee Echo , Orient Thai Romeo Whiskey , Russia Four Five Three Eight , Egyptair Seven Nine Seven ",
-        "prompt_fullts_5B": "Elite Jet Two Zero Two , Oscar Kilo Romeo Lima Victor , Elite Jet Seven Zero Two , Lufthansa Four Yankee Echo , Austrian Seven Nine One ",
-        "prompt_fullts_50B": "Bair Nine Four One , Oscar Echo X-ray Yankee Foxtrot , Lufthansa Four Yankee Echo , Austrian Seven Nine One , Russia Four Five Three Eight , Tango Tango Juliett Six Zero Three , Austrian Eight Five Eight , Elite Jet Seven Zero Two , Orient Thai Romeo Whiskey , Elite Jet Two Zero Two , Tango Tango Juliett Six Zero Zero , Oscar Kilo Romeo Lima Victor , Egyptair Seven Nine Seven "
+        "prompt_fullts_AG_4B": ", Tango Tango Juliett Six Zero Zero , Oscar Kilo Romeo Lima Victor , Lufthansa Four Yankee Echo , Elite Jet Seven Zero Two ",
+        "prompt_fullts_5B": "Russia Four Five Three Eight , Oscar Kilo Romeo Lima Victor , Austrian Eight Five Eight , Egyptair Seven Nine Seven , Lufthansa Four Yankee Echo ",
+        "prompt_fullts_50B": "Oscar Kilo Romeo Lima Victor , Bair Nine Four One , Russia Four Five Three Eight , Oscar Echo X-ray Yankee Foxtrot , Orient Thai Romeo Whiskey , Egyptair Seven Nine Seven , Austrian Eight Five Eight , Elite Jet Seven Zero Two , Elite Jet Two Zero Two , Tango Tango Juliett Six Zero Three , Lufthansa Four Yankee Echo , Tango Tango Juliett Six Zero Zero , Austrian Seven Nine One , Hotel Bravo Delta Whiskey Charlie, Swiss Two Zero Six Zero, Oscar Mike One Zero One Zero, Ryan Air Eight Three Three Two, Jetstar Eight One Nine, Ryan Air Five Five Zero Eight, Heliblue Victor Bravo, Turkish Six Foxtrot Lima, Wizzair One Three Alfa, Camber One Three Two, Velocity Nine Zero Five, Swiss One One Five Zulu, Csa / Czech Nine Two Three, Rex Six Four Six Three, UPS Three Three, Topjet Four Zero Two, Swiss Nine Seven Golf, Qjet One Nine One Zero, Quebec Foxtrot Seven Four Zero Zero, New Zealand Two Four Six, Charlie Hotel X-ray One One, Qlink Seven One Four, Topswiss Nine Three Alfa Victor, Qatari Seven Golf Uniform, Di Air Alpha Romeo, November One Zero One Foxtrot Uniform, Alpine Seven Nine Zero Seven, Dream Team Seven Three Three Victor, Transavia Zero Five Three, Oscar Echo Foxtrot Delta India, Sunexpress Eight Juliett Charlie, Qlink Seven One Five, Qjet One Five Zero Four, Turkish Six Juliett Delta, Csa / Czech Six Kilo Golf, Euroguinea Echo November, Qantas Seven Four Seven",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", SDM4538, TTJ600, ELJ202, MSR797",
+        "prompt_shortts_5B": "AUA858, OEARW, ELJ702, TTJ600, MSR797",
+        "prompt_shortts_50B": "ABP941, AUA791, AUA858, SDM4538, ELJ202, DLH4YE, OEARW, OEXYF, ELJ702, MSR797, TTJ600, TTJ603, OKRLV, SAZ71, RXA6725, D6907, SIA319, AFL2596, VJT957, QFA405, JST410, RSCU206, AOJ51S, QTR8232, QFA6101, JST510, HB2087, HB1943, SWR145K, DLH9YA, VOZ867, HBLYZ, QAJ574, QFA746, QFA529, QFA733, JST463, TUI2423, KLM46A, QFA498, ANZ249, FLORI242, SBI3642, PE996, EVY47, TRA051, KLM50G, DITRA, EJU37YA, SUI548"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LSGS_SION_Ground_Control_121_7MHz_20210503_163649.wav",
@@ -2497,9 +2649,13 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "Nav Checker Five One One",
-        "prompt_fullts_AG_4B": "Nav Checker Five One One, Hotel Bravo Delta Golf Victor , Harmony One Eight Five , Mosquito One Five Bravo , Hotel Bravo Kilo Lima Echo ",
-        "prompt_fullts_5B": "Foxtrot Papa Alpha Delta Uniform , Oscar Oscar Papa Charlie Juliett , Royal Ghana Zero Four , Hotel Bravo Kilo Lima Echo , Hotel Bravo Kilo Oscar Juliett ",
-        "prompt_fullts_50B": "Hansa Two Six Echo , Royal Ghana Zero Four , Mosquito One Five Bravo , Harmony One Eight Five , Foxtrot Papa Alpha Delta Uniform , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Delta Golf Victor , Oscar Oscar Papa Charlie Juliett , Hotel Bravo Kilo Lima Echo , Hotel Bravo Zulu Victor Papa , Fraction Seven Nine One Golf , Hotel Bravo Kilo Oscar Juliett "
+        "prompt_fullts_AG_4B": "Nav Checker Five One One, Royal Ghana Zero Four , Harmony One Eight Five , Hotel Bravo Zulu Victor Papa , Oscar Oscar Papa Charlie Juliett ",
+        "prompt_fullts_5B": "Hotel Bravo Delta Golf Victor , Royal Ghana Zero Four , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Kilo Lima Echo , Hansa Two Six Echo ",
+        "prompt_fullts_50B": "Hansa Two Six Echo , Mosquito One Five Bravo , Hotel Bravo Zulu Whiskey Papa , Hotel Bravo Zulu Victor Papa , Hotel Bravo Kilo Oscar Juliett , Hotel Bravo Kilo Lima Echo , Hotel Bravo Delta Golf Victor , Harmony One Eight Five , Foxtrot Papa Alpha Delta Uniform , Royal Ghana Zero Four , Fraction Seven Nine One Golf , Oscar Oscar Papa Charlie Juliett , Aerodin Golf India, Fraction Zero Six Five Tango, Wizzair Three Eight Five Eight, Finn Air Six Romeo Lima, Qlink Four Five Three Delta, Koreanair Five Six Seven, Jetstar Eight Nine One, Topswiss One Two Lima Tango, Austrian Airlines Seven November Charlie, Lima Delta X-ray Two, Fedex Five Two Seven Nine, Galaxy Alpha Five Two, Rex Six Five Two Seven, Lot Five Two Eight, Ryan Air One Juliett Uniform, Turkish Five Delta Bravo, Dream Team One Two Six Lima, All Charter One Three One, Turkish Six Two Two Nine, Fraction Six Three Five Bravo, Silver Arrow Seven Two Victor Papa, Qlink Four Two Three, Pelflight Seven Four One One, Swiss Two Zero Four Kilo, Air Hamburg Eight Nine Nine Lima, Air Moldova Eight Six Three, Qlink One Zero One Delta, Oscar Mike Delta Yankee Echo, Velocity Eight Seven Zero, Alpine Eight Six X-ray Mike, Austrian Eight Tango Bravo, Elite Jet Seven Zero Three, Air Hamburg Eight Four Two Uniform, Sierra Foxtrot Zulu Nine Zero Zero Five, Hotel Bravo Yankee Sierra Charlie, Elite Jet Eight Zero One, Rex Nine Nine Five Six, Mosquito Eight Four Tango",
+        "prompt_shortts_AG": "FCK511",
+        "prompt_shortts_AG_4B": "FCK511, DLH26E, HBZVP, HBZWP, HBDGV",
+        "prompt_shortts_5B": "HBKOJ, JFA15B, HBZVP, HBZWP, HBKLE",
+        "prompt_shortts_50B": "OOPCJ, HBKOJ, NJE791G, FPADU, HBDGV, HBKLE, DLH26E, HBZWP, JFA15B, HBZVP, HMJ185, RGA04, VIKTOR38, QFA437, DESSC, JFA04F, OKWUS17, RYR3JZ, DLH66T, AMC539, EVA088, COL81, QLK712, SUA762, QLK109D, DIETB, CTN461, TUI66V, VOZ525, AUA575L, AUA562, PTA15, QFA512, QFA546, ANZ232, DLH22N, JFA06H, SWR152C, VOZ938, JFA77G, SWR129L, EVY37, OKXUS29, BTI8JX, N597DX, JST607, QLK222, VOZ1531, SWR2796, GSW630"
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA-data-nonEN/LZIB_STEFANIK_Tower_118_3MHz_20210504_112126.wav",
@@ -2578,8 +2734,12 @@
             "long_taxiway": []
         },
         "prompt_fullts_AG": "",
-        "prompt_fullts_AG_4B": ", Oscar Echo X-ray Yankee Foxtrot , Elite Jet Two Zero Two , goldeck One , Austrian Seven Nine One ",
-        "prompt_fullts_5B": "Austrian Seven Nine One , Elite Jet Two Zero Two , Elite Jet Seven Zero Two , Tango Tango Juliett Six Zero Zero , Bair Nine Four One ",
-        "prompt_fullts_50B": "Austrian Seven Nine One , goldeck One , Tango Tango Juliett Six Zero Three , Elite Jet Two Zero Two , Elite Jet Seven Zero Two , Egyptair Seven Nine Seven , Oscar Echo X-ray Yankee Foxtrot , Oscar Kilo Romeo Lima Victor , Tango Tango Juliett Six Zero Zero , Bair Nine Four One , Orient Thai Romeo Whiskey , Russia Four Five Three Eight "
+        "prompt_fullts_AG_4B": ", Russia Four Five Three Eight , Egyptair Seven Nine Seven , Oscar Kilo Romeo Lima Victor , Austrian Seven Nine One ",
+        "prompt_fullts_5B": "Elite Jet Two Zero Two , Austrian Seven Nine One , Russia Four Five Three Eight , Tango Tango Juliett Six Zero Zero , goldeck One ",
+        "prompt_fullts_50B": "Russia Four Five Three Eight , Egyptair Seven Nine Seven , Elite Jet Seven Zero Two , Tango Tango Juliett Six Zero Three , goldeck One , Oscar Kilo Romeo Lima Victor , Elite Jet Two Zero Two , Tango Tango Juliett Six Zero Zero , Bair Nine Four One , Orient Thai Romeo Whiskey , Austrian Seven Nine One , Oscar Echo X-ray Yankee Foxtrot , France Soleil Three Five Yankee Romeo, Vista Four Two Six, November Four Eight Five Golf Charlie, Hotel Bravo Delta Foxtrot Kilo, Flycom Romeo India Two Three Eight, Zulu Sierra Golf Uniform Alpha, Speedbird Eight Five Six Zulu, Orion Charter Alpha Foxtrot, Qlink Six Delta, Edelweiss Two Eight Yankee, Hotel Bravo Yankee Tango Mike, Lufthansa Nine One Victor, Hotel Bravo Golf Kilo Golf, Swiss Two Five Zero Papa, Air Hamburg Three Six Seven Bravo, Jetstar Six Seven Zero, Fraction Zero Two Eight Charlie, Air France Five Seven Zero, Austrian Five Mike Juliett, Velocity Five Two Eight, Qantas Four Eight Seven, Velocity One Four One Eight, Csa / Czech Nine One Eight, Tango Mike November Eight One, Iberia Three One Zulu Delta, Ryan Air Two Three One Nine, Velocity Eight Nine Six, Euroguinea Echo November One Three, Oscar Kilo Bravo Yankee Alfa, Rex Six Seven Two Six, November One Four Echo Foxtrot, Hotel Bravo Zulu Yankee Papa, Qjet One Five Three Three, Masterjet One Eight Zero Foxtrot, Qantas Five Zero Four, Jetstar Two Zero Five, Qlink One Six Zero, Hotel Bravo Echo Echo Zulu",
+        "prompt_shortts_AG": "",
+        "prompt_shortts_AG_4B": ", MSR797, TTJ600, TTJ603, ABP941",
+        "prompt_shortts_5B": "SDM4538, OKRLV, AUA791, ELJ202, TTJ603",
+        "prompt_shortts_50B": "MSR797, ELJ702, ELJ202, TTJ603, AUA791, SDM4538, OEARW, OEXYF, GDK1, ABP941, TTJ600, OKRLV, RXA6469, JST500, AZG204, AUA78J, EDW11Y, FDX5112, VPCJS, PVD687H, QAJ2219, GALA13, IBE30HT, NCA049, GAC640W, QFA6112, VOZ862, TFR47, LOT318, SWR63D, QFA745, QTR2CC, KLM1981, UAE20, SWR257, DLH18F, UAL2726, QFA431, IFA613, SWR69KC, D6907, SWR1311, BOV6790, SWR2148, JST660, SWR73VK, CTN82R, RA02857, AZA59E, VOZ412"
     }
 ]
