@@ -1,0 +1,124 @@
+=========================================================
+**** TRAINING RUN, datetime: 2025-04-21 17:40:25 ****
+=========================================================
+Training setup:
+{
+    "model_path": "/mnt/scratch/tmp/xholan11/models/allds-shortts/checkpoint-2115",
+    "continue_from_checkpoint": false,
+    "train_datasets": [
+        "atco_en"
+    ],
+    "dropout": 0.0,
+    "datasets_root_dir": "/mnt/scratch/tmp/xholan11/data",
+    "use_prompt": false,
+    "self_prompt": false,
+    "transcription_name_in_ds": "short_ts",
+    "prompt_name_in_ds": "prompt_shortts_1G_4B"
+}
+Training arguments:
+{
+    "output_dir": "/mnt/scratch/tmp/xholan11/models/planned-allds-shortts/epochs/ep3",
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 6.25e-06,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.0,
+    "gradient_checkpointing": true,
+    "fp16": true,
+    "save_strategy": "epoch",
+    "num_train_epochs": 35,
+    "per_device_eval_batch_size": 8,
+    "predict_with_generate": true,
+    "generation_max_length": 448,
+    "logging_steps": 15,
+    "report_to": [
+        "tensorboard"
+    ],
+    "metric_for_best_model": "wer",
+    "greater_is_better": false,
+    "push_to_hub": false
+}
+=========================================================
+**** TRAINING RUN, datetime: 2025-04-21 17:41:25 ****
+=========================================================
+Training setup:
+{
+    "model_path": "/mnt/scratch/tmp/xholan11/models/allds-shortts/checkpoint-2115",
+    "continue_from_checkpoint": false,
+    "train_datasets": [
+        "atco_en"
+    ],
+    "dropout": 0.0,
+    "datasets_root_dir": "/mnt/scratch/tmp/xholan11/data",
+    "use_prompt": false,
+    "self_prompt": false,
+    "transcription_name_in_ds": "short_ts",
+    "prompt_name_in_ds": "prompt_shortts_1G_4B"
+}
+Training arguments:
+{
+    "output_dir": "/mnt/scratch/tmp/xholan11/models/planned-allds-shortts/epochs/ep3",
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 6.25e-06,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.0,
+    "gradient_checkpointing": true,
+    "fp16": true,
+    "save_strategy": "epoch",
+    "num_train_epochs": 35,
+    "per_device_eval_batch_size": 8,
+    "predict_with_generate": true,
+    "generation_max_length": 448,
+    "logging_steps": 15,
+    "report_to": [
+        "tensorboard"
+    ],
+    "metric_for_best_model": "wer",
+    "greater_is_better": false,
+    "push_to_hub": false
+}
+=========================================================
+**** TRAINING RUN, datetime: 2025-04-21 17:43:32 ****
+=========================================================
+Training setup:
+{
+    "model_path": "/mnt/scratch/tmp/xholan11/models/allds-shortts/8/checkpoint-1692",
+    "continue_from_checkpoint": false,
+    "train_datasets": [
+        "atco_en"
+    ],
+    "dropout": 0.0,
+    "datasets_root_dir": "/mnt/scratch/tmp/xholan11/data",
+    "use_prompt": false,
+    "self_prompt": false,
+    "transcription_name_in_ds": "short_ts",
+    "prompt_name_in_ds": "prompt_shortts_1G_4B"
+}
+Training arguments:
+{
+    "output_dir": "/mnt/scratch/tmp/xholan11/models/planned-allds-shortts/epochs/ep3",
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 6.25e-06,
+    "warmup_ratio": 0.1,
+    "weight_decay": 0.0,
+    "gradient_checkpointing": true,
+    "fp16": true,
+    "save_strategy": "epoch",
+    "num_train_epochs": 35,
+    "per_device_eval_batch_size": 8,
+    "predict_with_generate": true,
+    "generation_max_length": 448,
+    "logging_steps": 15,
+    "report_to": [
+        "tensorboard"
+    ],
+    "metric_for_best_model": "wer",
+    "greater_is_better": false,
+    "push_to_hub": false
+}
+Training finished, datetime: 2025-04-21 22:24:58 ****
+============================================
+============================================
+
