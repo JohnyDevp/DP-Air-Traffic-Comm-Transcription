@@ -1,4 +1,3 @@
-from enum import nonmember
 from io import TextIOWrapper
 import re
 import torch
@@ -303,6 +302,7 @@ class EvaluationSetup:
     callsigns_name_in_ds : str = None
     use_prompt : bool = False
     self_prompt : bool = False
+    ignore_case : bool = False
 
 class EvalCallsigns:
     wer_metric : ComputeMetrics
@@ -907,7 +907,7 @@ def main(evaluation_setup : EvaluationSetup):
                     use_prompt=evaluation_setup.use_prompt,
                     compute_callsign_wer=evaluation_setup.eval_callsigns,
                     callsigns_name_in_ds=evaluation_setup.callsigns_name_in_ds,
-                    ignore_case=evaluation_setup.eval_callsigns
+                    ignore_case=evaluation_setup.ignore_case
                 )
 
                 # print results to the file
@@ -983,7 +983,7 @@ def main(evaluation_setup : EvaluationSetup):
                 use_prompt=evaluation_setup.use_prompt,
                 compute_callsign_wer=evaluation_setup.eval_callsigns,
                 callsigns_name_in_ds=evaluation_setup.callsigns_name_in_ds,
-                ignore_case=evaluation_setup.eval_callsigns
+                ignore_case=evaluation_setup.ignore_case
             )
 
             result_printout(out_file, out_dict, evaluation_setup, callsigns_wer=evaluation_setup.eval_callsigns)
@@ -1010,6 +1010,7 @@ def parse_args():
     parser.add_argument("--batch_size", type=int, default=4)
     parser.add_argument("--eval_description", type=str, default="")
     parser.add_argument("--use_prompt", action="store_true")
+    parser.add_argument('--ignore_case', action='store_true')
     parser.add_argument("--self_prompt", action="store_true")
     parser.add_argument("--eval_callsigns", action="store_true")
     parser.add_argument('--callsigns_name_in_ds', type=str)
@@ -1033,6 +1034,7 @@ def build_config(args):
         "eval_description": args.eval_description,
         "use_prompt": args.use_prompt,
         "self_prompt": args.self_prompt,
+        "ignore_case":args.ignore_case,
         "eval_callsigns":args.eval_callsigns,
         'callsigns_name_in_ds': args.callsigns_name_in_ds,
         "transcription_name_in_ds": args.transcription_name_in_ds,

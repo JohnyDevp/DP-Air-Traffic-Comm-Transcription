@@ -1,49 +1,43 @@
 WORKING ON FULLTS
-===
+
+-   WER na vetach
+    -   odkud zlepseni (jen callsign, jina mista ve vete)
+    -   AG4B vs zadny prompt
+-   natrenovat na spatnych a evaluace na dobry a obracene
+-   zkusit nahodna slova (uplna nahoda)
+-   PROMPT otestuj bez PROMPTU
+-   shortts -> smaz entry odevsad, .,? smazat , lower case mezery
+
+### AZ SE VRATIS TAK MUSIS
+
+-   pridej vsude ignore_case, obecne nechceme evaluovat lower/upper case
+
 ### FULLTS VANILLA MEDIUM, experiments of 5 parameters
-- hotovo: learning rate, warmup, dropout 
-- aktualni stav: 
+
+-   hotovo: learning rate, warmup, dropout
+-   aktualni stav:
+
 ### FULLTS ALLDS MEDIUM, experiments of 5 parameters
-- hotovo: learning rate, warmup
-- aktualni stav: dropout train
+
+-   hotovo: learning rate, warmup
+-   aktualni stav: dropout train
+
 ### FULLTS VANILLA MEDIUM, experiments with MALORCA+ATCO
-- hotovo: 30 epoch ev+tr
-- aktualni stav: NO CONTINUE
+
+-   hotovo: 30 epoch ev+tr
+-   aktualni stav: NO CONTINUE
+
 ### FULLTS ALLDS MEDIUM, experiments with MALORCA+ATCO
-- hotovo: 30 epoch ev+tr
-- aktualni stav: NO CONTINUE
 
-WORKING ON SHORTTS
-===
+-   hotovo: 30 epoch ev+tr
+-   aktualni stav: NO CONTINUE
+
+# WORKING ON SHORTTS
+
 ### SHORTTS VANILLA MEDIUM, finetune for 8 epochs of alldata
-- hotovo: train
-- aktualni stav: eval
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-   hotovo: train
+-   aktualni stav: eval
 
 ## NAZEV KAZDE SLOZKY
 
