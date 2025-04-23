@@ -97,9 +97,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Echo Golf Tango Echo, Oscar Tango Echo, Oscar Yankee Juliett Juliett November , Qatari Six Five Five Victor , Oscar Kilo Yankee Uniform Alpha Two One , Elite Jet Seven Zero Two ",
-        "prompt_fullts_5B": "Oscar Echo Golf Tango Echo , Austrian Eight Five Eight , Foxtrot Hotel Victor Yankee Charlie , Oscar Kilo Yankee Uniform Alpha Two One , Oscar Yankee Juliett Juliett November ",
-        "prompt_fullts_50B": "Oscar Echo X-ray Yankee Foxtrot , Oscar Mike Mike Two Three Three , Oscar Echo Golf Tango Echo , Elite Jet Seven Zero Two , Oscar Kilo Yankee Uniform Alpha Two One , November Tango Foxtrot One Four Six Sierra , Austrian Eight Five Eight , Qatari Six Five Five Victor , Oscar Yankee Juliett Juliett November , Delta Echo November India Foxtrot , Foxtrot Hotel Victor Yankee Charlie , Hansa Four Yankee Echo "
+        "prompt_fullts_AG": "Oscar Echo Golf Tango Echo, Oscar Tango Echo",
+        "prompt_fullts_AG_4B": "Oscar Echo Golf Tango Echo, Oscar Tango Echo, Foxtrot Hotel Victor Yankee Charlie , Delta Echo November India Foxtrot , Qatari Six Five Five Victor , Oscar Echo X-ray Yankee Foxtrot ",
+        "prompt_fullts_5B": "Oscar Echo Golf Tango Echo , Oscar Kilo Yankee Uniform Alpha Two One , Hansa Four Yankee Echo , Austrian Eight Five Eight , Oscar Yankee Juliett Juliett November ",
+        "prompt_fullts_50B": "Oscar Yankee Juliett Juliett November , Oscar Mike Mike Two Three Three , Oscar Echo X-ray Yankee Foxtrot , Oscar Kilo Yankee Uniform Alpha Two One , Delta Echo November India Foxtrot , Oscar Echo Golf Tango Echo , Foxtrot Hotel Victor Yankee Charlie , Hansa Four Yankee Echo , Elite Jet Seven Zero Two , November Tango Foxtrot One Four Six Sierra , Austrian Eight Five Eight , Qatari Six Five Five Victor "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_172604.wav",
@@ -201,9 +202,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Galileo Three Four Six Papa, Oscar Mike Charlie, Mike Juliett, Asterix Nine Six Mike , Siberian Airlines Three Seven Five Two , Oscar Mike Juliett Golf Alpha , Oscar Mike Charlie Mike Juliett ",
-        "prompt_fullts_5B": "Oscar Mike Charlie Mike Juliett , Oscar Kilo Romeo Delta Sierra , Asterix Nine Six Mike , Siberian Airlines Three Seven Five Two , Galileo Three Four Six Papa ",
-        "prompt_fullts_50B": "Aeroflot Two Three Five Three , Wizz Go Five Zero Six Seven , Oscar Mike Echo Sierra Alpha , Galileo Three Four Six Papa , Oscar Mike Charlie Mike Juliett , Oscar Mike Juliett Golf Alpha , Siberian Airlines Three Seven Five Two , Oscar Kilo Romeo Delta Sierra , Asterix Nine Six Mike "
+        "prompt_fullts_AG": "Galileo Three Four Six Papa, Oscar Mike Charlie, Mike Juliett",
+        "prompt_fullts_AG_4B": "Galileo Three Four Six Papa, Oscar Mike Charlie, Mike Juliett, Galileo Three Four Six Papa , Oscar Mike Echo Sierra Alpha , Aeroflot Two Three Five Three , Asterix Nine Six Mike ",
+        "prompt_fullts_5B": "Oscar Mike Juliett Golf Alpha , Wizz Go Five Zero Six Seven , Siberian Airlines Three Seven Five Two , Galileo Three Four Six Papa , Oscar Mike Charlie Mike Juliett ",
+        "prompt_fullts_50B": "Oscar Mike Juliett Golf Alpha , Oscar Mike Echo Sierra Alpha , Siberian Airlines Three Seven Five Two , Wizz Go Five Zero Six Seven , Asterix Nine Six Mike , Oscar Kilo Romeo Delta Sierra , Aeroflot Two Three Five Three , Oscar Mike Charlie Mike Juliett , Galileo Three Four Six Papa "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_143155.wav",
@@ -317,9 +319,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Mike Charlie India Alpha, Oscar Kilo Romeo Delta Sierra , Slovak Government Zero Zero Four , Mermaid Six Four Eight Four , Victor Tango Bravo Romeo Kilo ",
-        "prompt_fullts_5B": "Egyptair Seven Nine Seven , Oscar Mike Charlie India Alpha , Delta Foxtrot Golf Romeo Oscar , Slovak Government Zero Zero Four , Oscar Kilo Romeo Delta Sierra ",
-        "prompt_fullts_50B": "Egyptair Seven Nine Seven , Mambra Sierra Echo , Elite Jet Seven Zero One , Slovak Government Zero Zero Four , Oscar Yankee Juliett Juliett November , Juliett Sierra Hotel Six Six One , Victor Tango Bravo Romeo Kilo , Time Air Three Nine Four Yankee , Trans Europe Three Eight Five Two , Austrian Eight Five Eight , Sunexpress Four Echo Whiskey , Dream Team Three Two One Hotel , Mazoon Four Two Four , Oscar Mike Delta Yankee Echo , Bair Seven One Two , Aero Coach Bravo Tango , Mermaid Six Four Eight Four , Oscar Kilo Romeo Delta Sierra , Delta Foxtrot Golf Romeo Oscar , Qatari Nine Six Foxtrot , Asterix Seven Eight Papa , Oscar Mike Charlie India Alpha , Orient Thai Lima Juliett "
+        "prompt_fullts_AG": "Oscar Mike Charlie India Alpha",
+        "prompt_fullts_AG_4B": "Oscar Mike Charlie India Alpha, Elite Jet Seven Zero One , Mermaid Six Four Eight Four , Mazoon Four Two Four , Dream Team Three Two One Hotel ",
+        "prompt_fullts_5B": "Qatari Nine Six Foxtrot , Oscar Mike Delta Yankee Echo , Egyptair Seven Nine Seven , Delta Foxtrot Golf Romeo Oscar , Victor Tango Bravo Romeo Kilo ",
+        "prompt_fullts_50B": "Oscar Kilo Romeo Delta Sierra , Mermaid Six Four Eight Four , Bair Seven One Two , Oscar Mike Delta Yankee Echo , Oscar Yankee Juliett Juliett November , Egyptair Seven Nine Seven , Aero Coach Bravo Tango , Oscar Mike Charlie India Alpha , Qatari Nine Six Foxtrot , Mambra Sierra Echo , Trans Europe Three Eight Five Two , Time Air Three Nine Four Yankee , Slovak Government Zero Zero Four , Victor Tango Bravo Romeo Kilo , Sunexpress Four Echo Whiskey , Mazoon Four Two Four , Elite Jet Seven Zero One , Dream Team Three Two One Hotel , Orient Thai Lima Juliett , Austrian Eight Five Eight , Delta Foxtrot Golf Romeo Oscar , Asterix Seven Eight Papa , Juliett Sierra Hotel Six Six One "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_120635.wav",
@@ -429,9 +432,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "November Four Niner X-ray Lima, Elite Jet Seven Zero One , Juliett Sierra Hotel Five Zero Two , Bair Seven Five One , Austrian Seven Victor Romeo ",
-        "prompt_fullts_5B": "Lima Tango Charlie Two Zero One , Elite Jet Seven Zero One , Austrian Seven Victor Romeo , Austrian Seven Nine One , Juliett Sierra Hotel Five Zero Two ",
-        "prompt_fullts_50B": "Singapore Two Five , Turkish Nine Eight Uniform , Juliett Sierra Hotel Five Zero Two , Slovak Government Zero Four Alpha , Emirates One Two Eight , Austrian Six Tango Mike , Austrian Eight November Foxtrot , Elite Jet Two Zero One , Oscar Kilo Oscar Uniform Lima Four Five , Austrian Seven Victor Romeo , Elite Jet Seven Zero One , Austrian Six Five Five , Ryan Four Golf Zulu , Austrian Eight Tango Bravo , November Four Nine X-ray Lima , Etihad Four Three Uniform , Cargolux Seven Nine Seven Two , Lima Tango Charlie Two Zero One , Air China Five Nine Eight , Bair Seven Five One , Austrian Seven Nine One , China Eastern Seven Zero Four Four , Jetset Two Foxtrot Delta "
+        "prompt_fullts_AG": "November Four Niner X-ray Lima",
+        "prompt_fullts_AG_4B": "November Four Niner X-ray Lima, Austrian Six Tango Mike , Lima Tango Charlie Two Zero One , Turkish Nine Eight Uniform , China Eastern Seven Zero Four Four ",
+        "prompt_fullts_5B": "Turkish Nine Eight Uniform , November Four Nine X-ray Lima , Elite Jet Seven Zero One , Ryan Four Golf Zulu , China Eastern Seven Zero Four Four ",
+        "prompt_fullts_50B": "Slovak Government Zero Four Alpha , Austrian Seven Nine One , Lima Tango Charlie Two Zero One , Austrian Six Tango Mike , Etihad Four Three Uniform , Oscar Kilo Oscar Uniform Lima Four Five , Austrian Eight November Foxtrot , China Eastern Seven Zero Four Four , Ryan Four Golf Zulu , Turkish Nine Eight Uniform , Elite Jet Two Zero One , Jetset Two Foxtrot Delta , Austrian Eight Tango Bravo , Juliett Sierra Hotel Five Zero Two , Emirates One Two Eight , Elite Jet Seven Zero One , Austrian Six Five Five , Singapore Two Five , Austrian Seven Victor Romeo , Cargolux Seven Nine Seven Two , November Four Nine X-ray Lima , Bair Seven Five One , Air China Five Nine Eight "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_203102.wav",
@@ -529,9 +533,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "two zero three six, Eurotrans Eight Six November , Eurotrans One Three Juliett , Austrian Two Nine Six , Austrian Four Delta Lima ",
-        "prompt_fullts_5B": "Asiana Seven Eight Nine , Lima Delta X-ray One Three , Austrian One Seven Two , Cargolux Six One Zero Four , Austrian Three November Charlie ",
-        "prompt_fullts_50B": "Turkish Three Juliett Whiskey , Lima Delta X-ray One Three , Austrian One Two Six , Mitavia Nine Two Three Seven , Austrian Five Zero Bravo , Cargolux Six One Zero Four , Austrian Three November Charlie , Eurotrans Eight Six November , Fedex Five One One Two , Austrian Three Sierra Victor , Asiana Seven Eight Nine , Austrian One Seven Two , Cargolux Seven Eight Four Four , Eurotrans One Three Juliett , Austrian Four Delta Lima , Austrian One Five Six , Austrian Two Nine Six "
+        "prompt_fullts_AG": "two zero three six",
+        "prompt_fullts_AG_4B": "two zero three six, Austrian One Five Six , Austrian One Two Six , Fedex Five One One Two , Mitavia Nine Two Three Seven ",
+        "prompt_fullts_5B": "Austrian One Seven Two , Lima Delta X-ray One Three , Austrian Two Nine Six , Eurotrans Eight Six November , Austrian Five Zero Bravo ",
+        "prompt_fullts_50B": "Austrian Four Delta Lima , Mitavia Nine Two Three Seven , Austrian Two Nine Six , Austrian Three November Charlie , Cargolux Seven Eight Four Four , Austrian Five Zero Bravo , Cargolux Six One Zero Four , Turkish Three Juliett Whiskey , Eurotrans One Three Juliett , Austrian Three Sierra Victor , Austrian One Two Six , Fedex Five One One Two , Austrian One Seven Two , Lima Delta X-ray One Three , Austrian One Five Six , Eurotrans Eight Six November , Asiana Seven Eight Nine "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_181207.wav",
@@ -619,9 +624,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Golf Echo, Oscar Mike Alpha Golf Echo, Siberian Airlines Three Six Four Two , Siberian Airlines Three Six Five Zero , Alpha X-ray Alpha One One One , Silver Arrows Four Three Lima Delta ",
-        "prompt_fullts_5B": "Siberian Airlines Three Six Five Zero , Mitavia Nine Two Three Seven , Asterix Eight One Romeo , Siberian Airlines Three Six Four Two , Silver Arrows Four Three Lima Delta ",
-        "prompt_fullts_50B": "Mitavia Nine Two Three Seven , Asterix Eight One Romeo , Alpha X-ray Alpha One One One , Mazoon Six Six Six , Oscar Kilo Romeo Delta Sierra , Siberian Airlines Three Six Five Zero , Siberian Airlines Three Six Four Two , Silver Arrows Four Three Lima Delta "
+        "prompt_fullts_AG": "Oscar Golf Echo, Oscar Mike Alpha Golf Echo",
+        "prompt_fullts_AG_4B": "Oscar Golf Echo, Oscar Mike Alpha Golf Echo, Silver Arrows Four Three Lima Delta , Siberian Airlines Three Six Five Zero , Asterix Eight One Romeo , Siberian Airlines Three Six Four Two ",
+        "prompt_fullts_5B": "Alpha X-ray Alpha One One One , Siberian Airlines Three Six Five Zero , Asterix Eight One Romeo , Mazoon Six Six Six , Silver Arrows Four Three Lima Delta ",
+        "prompt_fullts_50B": "Mitavia Nine Two Three Seven , Silver Arrows Four Three Lima Delta , Oscar Kilo Romeo Delta Sierra , Siberian Airlines Three Six Five Zero , Siberian Airlines Three Six Four Two , Alpha X-ray Alpha One One One , Mazoon Six Six Six , Asterix Eight One Romeo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210422_142821.wav",
@@ -709,9 +715,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Oscar Mike Bravo Yankee Delta , Qatari Four One Four Uniform , Austrian Six Zero Two , Turkish One Yankee Golf ",
-        "prompt_fullts_5B": "Sowind Four , Qatari Four One Four Uniform , Turkish One Yankee Golf , Austrian Six Zero Two , Austrian Two Five ",
-        "prompt_fullts_50B": "Austrian Three Eight Two , Luxaviation One Foxtrot , Sowind Four , Austrian Two Five , Qatari Seven Six Golf Kilo , Turkish One Yankee Golf , Bair Nine Four One , Oscar Mike Bravo Yankee Delta , Seven Seven Four Five , Asterix Five One Sierra , Oscar Echo Echo Mike Golf , Qatari Four One Four Uniform , Austrian Six Zero Two , Elite Jet Eight Zero Two , Mazoon Six Six Six "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Oscar Mike Bravo Yankee Delta , Oscar Echo Echo Mike Golf , Qatari Four One Four Uniform , Seven Seven Four Five ",
+        "prompt_fullts_5B": "Elite Jet Eight Zero Two , Oscar Mike Bravo Yankee Delta , Oscar Echo Echo Mike Golf , Asterix Five One Sierra , Austrian Two Five ",
+        "prompt_fullts_50B": "Asterix Five One Sierra , Austrian Six Zero Two , Seven Seven Four Five , Mazoon Six Six Six , Oscar Mike Bravo Yankee Delta , Sowind Four , Oscar Echo Echo Mike Golf , Qatari Seven Six Golf Kilo , Turkish One Yankee Golf , Austrian Two Five , Bair Nine Four One , Qatari Four One Four Uniform , Austrian Three Eight Two , Luxaviation One Foxtrot , Elite Jet Eight Zero Two "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_132814.wav",
@@ -813,9 +820,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Top Jet Four Zero One, Asterix Eight Five Sierra , Qatari One Six Six Kilo , Wizzair Eight Two , Austrian Eight November Foxtrot ",
-        "prompt_fullts_5B": "Austrian Six Six Juliett Tango , Qatari One Six Six Kilo , Wizzair Eight Two , Slovak Government Zero Zero Six , Austrian Seven Kilo Sierra ",
-        "prompt_fullts_50B": "Qatari One Six Papa , Oscar Kilo Romeo Delta Sierra , Asterix Eight Five Sierra , Austrian One Four Nine Two , Austrian Six Six Juliett Tango , Wizzair Eight Two , Sunturk Seven Four Echo , Austrian Seven Kilo Sierra , Ukraine International Four Golf Victor , Austrian Seven Nine Two , Elite Jet Four Zero One , Austrian Eight November Foxtrot , Austrian Seven Nine Lima Golf , Qatari One Six Six Kilo , Slovak Government Zero Zero Six , Tarom Three Four Two Yankee , Emirates One Two Eight , Etihad Nine Nine Six Two , Austrian Five One "
+        "prompt_fullts_AG": "Top Jet Four Zero One",
+        "prompt_fullts_AG_4B": "Top Jet Four Zero One, Qatari One Six Six Kilo , Oscar Kilo Romeo Delta Sierra , Sunturk Seven Four Echo , Tarom Three Four Two Yankee ",
+        "prompt_fullts_5B": "Austrian Seven Nine Two , Asterix Eight Five Sierra , Sunturk Seven Four Echo , Austrian Seven Nine Lima Golf , Etihad Nine Nine Six Two ",
+        "prompt_fullts_50B": "Austrian Five One , Austrian Seven Kilo Sierra , Austrian Six Six Juliett Tango , Etihad Nine Nine Six Two , Asterix Eight Five Sierra , Sunturk Seven Four Echo , Austrian One Four Nine Two , Elite Jet Four Zero One , Tarom Three Four Two Yankee , Austrian Eight November Foxtrot , Austrian Seven Nine Two , Austrian Seven Nine Lima Golf , Wizzair Eight Two , Emirates One Two Eight , Qatari One Six Six Kilo , Slovak Government Zero Zero Six , Ukraine International Four Golf Victor , Oscar Kilo Romeo Delta Sierra , Qatari One Six Papa "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_130418.wav",
@@ -917,9 +925,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Aeroflot Two Four Zero Eight , Bair Seven Five One , Ryanair Five Three Victor Mike , Alpine Eight Three Bravo Delta ",
-        "prompt_fullts_5B": "Aeroflot Two Four Zero Eight , Austrian Six Zero Two , Siberian Airlines Three Six Six Two , Oscar Mike Echo Sierra Bravo , Turkish Nine Delta Whiskey ",
-        "prompt_fullts_50B": "Turkish Nine Delta Whiskey , Aeroflot Two Four Zero Eight , Air France Three Three Golf X-ray , Oscar Kilo Romeo Sierra Echo , Sunexpress Seven Uniform , Emirates Nine Three Three Zero , Emirates Nine Two Five Seven , Bair Seven Five One , Qatari One Six Papa , Wizzair One Five One Eight , Air China Five Nine Eight , Juliett Mike Lima One Zero Zero , Siberian Airlines Three Six Six Two , Siberian Airlines Three Five Four Two , Slovak Government Zero Zero Four , Ryanair Five Three Victor Mike , Lion King Echo Seven Four , Ryanair Three Four Quebec Lima , Austrian Six Zero Two , Alpine Eight Three Bravo Delta , Elite Jet Two Zero Two , Oscar Mike Echo Sierra Bravo , Oscar Mike Mike Two Three Three , Galileo Four Six One One "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Ryanair Five Three Victor Mike , Oscar Mike Echo Sierra Bravo , Air France Three Three Golf X-ray , Turkish Nine Delta Whiskey ",
+        "prompt_fullts_5B": "Turkish Nine Delta Whiskey , Slovak Government Zero Zero Four , Alpine Eight Three Bravo Delta , Oscar Kilo Romeo Sierra Echo , Galileo Four Six One One ",
+        "prompt_fullts_50B": "Alpine Eight Three Bravo Delta , Ryanair Five Three Victor Mike , Qatari One Six Papa , Sunexpress Seven Uniform , Oscar Kilo Romeo Sierra Echo , Ryanair Three Four Quebec Lima , Air France Three Three Golf X-ray , Oscar Mike Mike Two Three Three , Emirates Nine Two Five Seven , Aeroflot Two Four Zero Eight , Juliett Mike Lima One Zero Zero , Austrian Six Zero Two , Siberian Airlines Three Five Four Two , Wizzair One Five One Eight , Lion King Echo Seven Four , Bair Seven Five One , Oscar Mike Echo Sierra Bravo , Slovak Government Zero Zero Four , Air China Five Nine Eight , Elite Jet Two Zero Two , Galileo Four Six One One , Turkish Nine Delta Whiskey , Siberian Airlines Three Six Six Two , Emirates Nine Three Three Zero "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_151209.wav",
@@ -1049,8 +1058,8 @@
                 "Wizzair Six Two Seven Six "
             ],
             "short_runway": [
-                "31",
-                "316.5"
+                "316.5",
+                "31"
             ],
             "long_runway": [
                 "three one six point five",
@@ -1059,9 +1068,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Burg Six Nine Two Lima, Air Hamburg Six Niner Two Lima, Air Hamburg Six Nine Two Lima , Mambra Uniform Charlie , Oscar Kilo Romeo Delta Sierra , Austrian Seven Nine Two ",
-        "prompt_fullts_5B": "Tango Tango Juliett Six Zero Three , Austrian Seven Kilo Sierra , Romeo Alpha Zero Two Eight Five Seven , Mazoon Six Six Six , Etihad Two Zero ",
-        "prompt_fullts_50B": "Emirates Nine Seven Four Four , Mazoon Six Six Six , Belarus Avia Eight Eight Zero , Mitavia Nine Two Three Seven , Romeo Alpha Zero Two Eight Five Seven , Air Hamburg Six Nine Two Lima , Mazoon Four Two Four , Siberian Airlines Three Six Four Two , Mambra Uniform Charlie , Austrian Seven Nine Lima Golf , Etihad Two Zero , Austrian Eight Mike Sierra , Austrian Seven Nine Two , Emirates One Two Eight , Alpha X-ray Alpha One One One , Wizzair Six Two Seven Five , Wizzair Six Two Seven Six , Christophorus Oscar Golf , Silver Arrows Four Three Lima Delta , Tango Tango Juliett Six Zero Three , Austrian Seven Kilo Sierra , Qatari One Six Papa , Austrian Eight One Zero Lima , Austrian Six Charlie Delta , Siberian Airlines Three Six Five Zero , Oscar Kilo Romeo Delta Sierra , Echo Lima Golf Five Two Alpha , Austrian Eight Five Eight , Austrian Six Six Juliett Tango , Austrian Eight Zero November , Austrian Four Six "
+        "prompt_fullts_AG": "Burg Six Nine Two Lima, Air Hamburg Six Niner Two Lima",
+        "prompt_fullts_AG_4B": "Burg Six Nine Two Lima, Air Hamburg Six Niner Two Lima, Emirates One Two Eight , Mazoon Six Six Six , Wizzair Six Two Seven Six , Austrian Eight Zero November ",
+        "prompt_fullts_5B": "Mambra Uniform Charlie , Echo Lima Golf Five Two Alpha , Mazoon Four Two Four , Austrian Seven Nine Lima Golf , Siberian Airlines Three Six Four Two ",
+        "prompt_fullts_50B": "Etihad Two Zero , Belarus Avia Eight Eight Zero , Austrian Seven Nine Lima Golf , Air Hamburg Six Nine Two Lima , Emirates One Two Eight , Emirates Nine Seven Four Four , Austrian Eight Five Eight , Oscar Kilo Romeo Delta Sierra , Austrian Seven Nine Two , Alpha X-ray Alpha One One One , Romeo Alpha Zero Two Eight Five Seven , Silver Arrows Four Three Lima Delta , Siberian Airlines Three Six Five Zero , Echo Lima Golf Five Two Alpha , Mazoon Six Six Six , Mitavia Nine Two Three Seven , Qatari One Six Papa , Mambra Uniform Charlie , Austrian Eight One Zero Lima , Wizzair Six Two Seven Six , Austrian Eight Mike Sierra , Tango Tango Juliett Six Zero Three , Christophorus Oscar Golf , Austrian Six Six Juliett Tango , Mazoon Four Two Four , Siberian Airlines Three Six Four Two , Austrian Seven Kilo Sierra , Austrian Six Charlie Delta , Austrian Four Six , Austrian Eight Zero November , Wizzair Six Two Seven Five "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210423_120826.wav",
@@ -1161,9 +1171,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Slovak Airforce [hes] Seven Four Four Five, Austrian Seven Nine One , Tango Seven Mike Mike Zulu , Seven Seven Four Five , Oscar Echo Kilo Charlie Mike ",
-        "prompt_fullts_5B": "German Air Force Eight Five Four , Emirates One Two Eight , Air China Five Nine Eight , Tango Seven Mike Mike Zulu , Austrian Seven Victor Romeo ",
-        "prompt_fullts_50B": "Emirates Two Five Five Four , German Air Force Eight Five Four , Emirates One Two Eight , Austrian Six One Uniform Kilo , Oscar Mike Mike Two Three Three , Slovak Government Zero Zero Three , Sunturk Three Two Lima , Air China Five Nine Eight , Seven Seven Four Five , Austrian Seven Nine One , Eva Zero Six Six , Sunturk Seven Four Echo , Oscar Echo Kilo Charlie Mike , Lux Rescue One Five Two Bravo , Wizzair One Eight Two Zero , Ryanair Two Hotel Victor , Tango Seven Mike Mike Zulu , Austrian Seven Victor Romeo "
+        "prompt_fullts_AG": "Slovak Airforce [hes] Seven Four Four Five",
+        "prompt_fullts_AG_4B": "Slovak Airforce [hes] Seven Four Four Five, Austrian Seven Nine One , Ryanair Two Hotel Victor , Seven Seven Four Five , Lux Rescue One Five Two Bravo ",
+        "prompt_fullts_5B": "Seven Seven Four Five , Emirates One Two Eight , Emirates Two Five Five Four , Wizzair One Eight Two Zero , Lux Rescue One Five Two Bravo ",
+        "prompt_fullts_50B": "Emirates Two Five Five Four , Ryanair Two Hotel Victor , Sunturk Three Two Lima , Emirates One Two Eight , Oscar Mike Mike Two Three Three , German Air Force Eight Five Four , Slovak Government Zero Zero Three , Austrian Seven Nine One , Eva Zero Six Six , Air China Five Nine Eight , Sunturk Seven Four Echo , Oscar Echo Kilo Charlie Mike , Wizzair One Eight Two Zero , Seven Seven Four Five , Austrian Seven Victor Romeo , Tango Seven Mike Mike Zulu , Lux Rescue One Five Two Bravo , Austrian Six One Uniform Kilo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_073318.wav",
@@ -1261,9 +1272,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Five Four Romeo, Delta Foxtrot Charlie Five Four Romeo , Belarus Avia Eight Eight Zero , Skytravel Six Victor Yankee , Flying Bulgaria Four Four Zero ",
-        "prompt_fullts_5B": "Belarus Avia Eight Eight Zero , Orion Charter Alpha Foxtrot , Oscar Echo X-ray Oscar X-ray , November Four Nine X-ray Lima , Flying Bulgaria Four Four Zero ",
-        "prompt_fullts_50B": "Oscar Echo X-ray Oscar X-ray , November Four Nine X-ray Lima , Delta Foxtrot Charlie Five Four Romeo , Tarom Three Four Two Yankee , Delta Charlie Juliett Kilo Papa , Aeroflot Two Five Nine Six , Orion Charter Alpha Foxtrot , Wizzair Four Juliett Zulu , Ryan Two Golf Whiskey , Elite Jet Eight Zero One , Elite Jet Four Zero One , Belarus Avia Eight Eight Zero , Skytravel Six Victor Yankee , Hotel Uniform Alpha Foxtrot Two Three Zero , Flying Bulgaria Four Four Zero "
+        "prompt_fullts_AG": "Five Four Romeo",
+        "prompt_fullts_AG_4B": "Five Four Romeo, Belarus Avia Eight Eight Zero , Delta Foxtrot Charlie Five Four Romeo , Delta Charlie Juliett Kilo Papa , Aeroflot Two Five Nine Six ",
+        "prompt_fullts_5B": "Wizzair Four Juliett Zulu , Belarus Avia Eight Eight Zero , Delta Foxtrot Charlie Five Four Romeo , Flying Bulgaria Four Four Zero , Oscar Echo X-ray Oscar X-ray ",
+        "prompt_fullts_50B": "Hotel Uniform Alpha Foxtrot Two Three Zero , Aeroflot Two Five Nine Six , Elite Jet Four Zero One , November Four Nine X-ray Lima , Oscar Echo X-ray Oscar X-ray , Belarus Avia Eight Eight Zero , Delta Foxtrot Charlie Five Four Romeo , Tarom Three Four Two Yankee , Delta Charlie Juliett Kilo Papa , Elite Jet Eight Zero One , Skytravel Six Victor Yankee , Ryan Two Golf Whiskey , Flying Bulgaria Four Four Zero , Orion Charter Alpha Foxtrot , Wizzair Four Juliett Zulu "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_205033.wav",
@@ -1345,9 +1357,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Eurotrans One Three Juliett, Blue Sky Hotel Tango , Eurotrans Nine Six One , Eurotrans One Three Juliett , Fedex Five One One Two ",
-        "prompt_fullts_5B": "Oscar Kilo Romeo Lima Victor , Eurotrans Nine Six One , Austrian Seven Papa Kilo , Austrian Six Four One , Eurotrans One Three Juliett ",
-        "prompt_fullts_50B": "Eurotrans One Three Juliett , Oscar Kilo Romeo Lima Victor , Eurotrans Nine Six One , Blue Sky Hotel Tango , Austrian Six Four One , Fedex Five One One Two , Golf Delta Mike Alpha Zulu , Bair Nine Four Two , Austrian Seven Papa Kilo "
+        "prompt_fullts_AG": "Eurotrans One Three Juliett",
+        "prompt_fullts_AG_4B": "Eurotrans One Three Juliett, Eurotrans Nine Six One , Eurotrans One Three Juliett , Fedex Five One One Two , Austrian Seven Papa Kilo ",
+        "prompt_fullts_5B": "Bair Nine Four Two , Eurotrans Nine Six One , Golf Delta Mike Alpha Zulu , Austrian Six Four One , Austrian Seven Papa Kilo ",
+        "prompt_fullts_50B": "Eurotrans One Three Juliett , Bair Nine Four Two , Austrian Six Four One , Fedex Five One One Two , Eurotrans Nine Six One , Austrian Seven Papa Kilo , Oscar Kilo Romeo Lima Victor , Golf Delta Mike Alpha Zulu , Blue Sky Hotel Tango "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_144950.wav",
@@ -1455,9 +1468,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Stefanik Tower Trans Europe Three Eight Five Two, Qatari Nine Six Foxtrot , Bair Seven One Two , Elite Jet Seven Zero One , Aero Coach Bravo Tango ",
-        "prompt_fullts_5B": "Austrian Eight Five Eight , Mambra Sierra Echo , Asterix Seven Eight Papa , Oscar Mike Delta Yankee Echo , Qatari Nine Six Foxtrot ",
-        "prompt_fullts_50B": "Oscar Mike Delta Yankee Echo , Oscar Mike Charlie India Alpha , Aerodin Golf India , Mambra Sierra Echo , Aero Coach Bravo Tango , Delta Foxtrot Golf Romeo Oscar , Trans Europe Three Eight Five Two , Oscar Kilo Romeo Delta Sierra , Time Air Three Nine Four Yankee , Mermaid Six Four Eight Four , Elite Jet Seven Zero One , Victor Tango Bravo Romeo Kilo , Slovak Government Zero Zero Four , Orient Thai Lima Juliett , Oscar Yankee Juliett Juliett November , Qatari Nine Six Foxtrot , Sunexpress Four Echo Whiskey , Mazoon Four Two Four , Asterix Seven Eight Papa , Bair Seven One Two , Austrian Eight Five Eight , Juliett Sierra Hotel Six Six One "
+        "prompt_fullts_AG": "Stefanik Tower Trans Europe Three Eight Five Two",
+        "prompt_fullts_AG_4B": "Stefanik Tower Trans Europe Three Eight Five Two, Qatari Nine Six Foxtrot , Bair Seven One Two , Oscar Mike Charlie India Alpha , Mazoon Four Two Four ",
+        "prompt_fullts_5B": "Aerodin Golf India , Sunexpress Four Echo Whiskey , Mambra Sierra Echo , Aero Coach Bravo Tango , Juliett Sierra Hotel Six Six One ",
+        "prompt_fullts_50B": "Orient Thai Lima Juliett , Trans Europe Three Eight Five Two , Mermaid Six Four Eight Four , Oscar Kilo Romeo Delta Sierra , Aerodin Golf India , Elite Jet Seven Zero One , Bair Seven One Two , Delta Foxtrot Golf Romeo Oscar , Sunexpress Four Echo Whiskey , Aero Coach Bravo Tango , Austrian Eight Five Eight , Mazoon Four Two Four , Oscar Yankee Juliett Juliett November , Oscar Mike Charlie India Alpha , Asterix Seven Eight Papa , Juliett Sierra Hotel Six Six One , Time Air Three Nine Four Yankee , Slovak Government Zero Zero Four , Qatari Nine Six Foxtrot , Victor Tango Bravo Romeo Kilo , Oscar Mike Delta Yankee Echo , Mambra Sierra Echo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210423_115253.wav",
@@ -1547,9 +1561,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Seven Seven Four Five , Oscar Mike Mike Two Three Three , Sunturk Seven Four Echo , Lux Rescue One Five Two Bravo ",
-        "prompt_fullts_5B": "Seven Seven Four Five , Wizzair One Eight Two Zero , Tango Seven Mike Mike Zulu , Oscar Echo Kilo Charlie Mike , Sunturk Seven Four Echo ",
-        "prompt_fullts_50B": "Sunturk Seven Four Echo , Austrian Seven Victor Romeo , German Air Force Eight Five Four , Seven Seven Four Five , Wizzair One Eight Two Zero , Austrian Seven Nine One , Air China Five Nine Eight , Lux Rescue One Five Two Bravo , Emirates One Two Eight , Ryanair Two Hotel Victor , Tango Seven Mike Mike Zulu , Oscar Mike Mike Two Three Three , Sunturk Three Two Lima , Eva Zero Six Six , Austrian Six One Uniform Kilo , Oscar Echo Kilo Charlie Mike , Slovak Government Zero Zero Three , Emirates Two Five Five Four "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Ryanair Two Hotel Victor , Austrian Six One Uniform Kilo , Oscar Mike Mike Two Three Three , Oscar Echo Kilo Charlie Mike ",
+        "prompt_fullts_5B": "Wizzair One Eight Two Zero , Austrian Six One Uniform Kilo , Lux Rescue One Five Two Bravo , Tango Seven Mike Mike Zulu , Slovak Government Zero Zero Three ",
+        "prompt_fullts_50B": "Lux Rescue One Five Two Bravo , Austrian Seven Victor Romeo , Austrian Seven Nine One , Austrian Six One Uniform Kilo , German Air Force Eight Five Four , Emirates Two Five Five Four , Oscar Echo Kilo Charlie Mike , Eva Zero Six Six , Sunturk Three Two Lima , Emirates One Two Eight , Air China Five Nine Eight , Tango Seven Mike Mike Zulu , Ryanair Two Hotel Victor , Slovak Government Zero Zero Three , Wizzair One Eight Two Zero , Oscar Mike Mike Two Three Three , Sunturk Seven Four Echo , Seven Seven Four Five "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_195343.wav",
@@ -1617,9 +1632,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Turkish Six Yankee Papa , Air Serbia Five Two Juliett , Etihad Six Nine Kilo , Air Serbia Six Zero Mike ",
-        "prompt_fullts_5B": "Austrian Six Four One , Turkish Six Yankee Papa , Air Serbia Six Zero Mike , Eurotrans One Three Juliett , Austrian Seven Five ",
-        "prompt_fullts_50B": "Etihad Six Nine Kilo , Eurotrans One Three Juliett , Austrian Seven Five , Turkish Six Yankee Papa , Air Serbia Six Zero Mike , Air Serbia Five Two Juliett , Austrian Six Four One "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Turkish Six Yankee Papa , Eurotrans One Three Juliett , Austrian Six Four One , Air Serbia Six Zero Mike ",
+        "prompt_fullts_5B": "Etihad Six Nine Kilo , Air Serbia Six Zero Mike , Eurotrans One Three Juliett , Austrian Six Four One , Air Serbia Five Two Juliett ",
+        "prompt_fullts_50B": "Eurotrans One Three Juliett , Austrian Six Four One , Air Serbia Five Two Juliett , Austrian Seven Five , Turkish Six Yankee Papa , Etihad Six Nine Kilo , Air Serbia Six Zero Mike "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_225241.wav",
@@ -1693,9 +1709,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Elite Jet Seven Zero Four, Eurotrans Five Three Three Five , Eurotrans One Three Juliett , Elite Jet Seven Zero Four , Eurotrans Five Three Three Four ",
-        "prompt_fullts_5B": "Eurotrans One Three Juliett , Eurotrans Five Three Three Four , Eurotrans Five Three Three Five , Singapore Three One Nine , Elite Jet Seven Zero Four ",
-        "prompt_fullts_50B": "Eurotrans Five Three Three Four , Eurotrans Five Three Three Five , Eurotrans One Three Juliett , Singapore Three One Nine , Elite Jet Seven Zero Four "
+        "prompt_fullts_AG": "Elite Jet Seven Zero Four",
+        "prompt_fullts_AG_4B": "Elite Jet Seven Zero Four, Eurotrans Five Three Three Four , Eurotrans One Three Juliett , Singapore Three One Nine , Eurotrans Five Three Three Five ",
+        "prompt_fullts_5B": "Singapore Three One Nine , Elite Jet Seven Zero Four , Eurotrans One Three Juliett , Eurotrans Five Three Three Four , Eurotrans Five Three Three Five ",
+        "prompt_fullts_50B": "Singapore Three One Nine , Elite Jet Seven Zero Four , Eurotrans Five Three Three Five , Eurotrans Five Three Three Four , Eurotrans One Three Juliett "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210428_092625.wav",
@@ -1785,9 +1802,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Time Air Three Niner Seven Foxtrot, Qatari Three Papa Echo , Austrian Seven Victor Romeo , Oscar Kilo Romeo Lima Victor , November Three Nine Zero Lima Yankee ",
-        "prompt_fullts_5B": "Sunturk Five Three X-ray , November Three Nine Zero Lima Yankee , Austrian Seven Nine One , Austrian One Four Seven Two , Oscar Kilo Romeo Lima Victor ",
-        "prompt_fullts_50B": "Czech Air Force Zero Five Bravo , Oscar Kilo Romeo Lima Victor , Austrian Seven Victor Romeo , Time Air Three Nine Seven Foxtrot , Carpatair Three One Zero Five , Qatari Three Papa Echo , November Three Nine Zero Lima Yankee , Oscar Mike Charlie India Alpha , Austrian One Four Seven Two , Qatari One Romeo Alpha , Austrian Seven Nine One , Sunturk Five Three X-ray , Oscar Kilo Bravo Romeo Oscar "
+        "prompt_fullts_AG": "Time Air Three Niner Seven Foxtrot",
+        "prompt_fullts_AG_4B": "Time Air Three Niner Seven Foxtrot, Austrian Seven Nine One , Qatari One Romeo Alpha , Qatari Three Papa Echo , Austrian Seven Victor Romeo ",
+        "prompt_fullts_5B": "Austrian One Four Seven Two , Carpatair Three One Zero Five , Qatari Three Papa Echo , Oscar Kilo Romeo Lima Victor , Sunturk Five Three X-ray ",
+        "prompt_fullts_50B": "Oscar Mike Charlie India Alpha , Oscar Kilo Romeo Lima Victor , Austrian One Four Seven Two , Czech Air Force Zero Five Bravo , Oscar Kilo Bravo Romeo Oscar , Carpatair Three One Zero Five , Qatari One Romeo Alpha , Sunturk Five Three X-ray , Austrian Seven Victor Romeo , Time Air Three Nine Seven Foxtrot , Qatari Three Papa Echo , Austrian Seven Nine One , November Three Nine Zero Lima Yankee "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203029.wav",
@@ -1855,9 +1873,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Eurotrans One Three Juliett , Fedex Five One One Two , Ethiopian Seven Two Five , Srilankan Five Zero Four ",
-        "prompt_fullts_5B": "Ethiopian Seven Two Five , Austrian Six Four One , Emirates Three Two , Eurotrans One Three Juliett , Etihad Zero Five Four ",
-        "prompt_fullts_50B": "Etihad Zero Five Four , Srilankan Five Zero Four , Eurotrans One Three Juliett , Ethiopian Seven Two Five , Fedex Five One One Two , Emirates Three Two , Austrian Six Four One "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Eurotrans One Three Juliett , Austrian Six Four One , Ethiopian Seven Two Five , Emirates Three Two ",
+        "prompt_fullts_5B": "Emirates Three Two , Ethiopian Seven Two Five , Etihad Zero Five Four , Austrian Six Four One , Eurotrans One Three Juliett ",
+        "prompt_fullts_50B": "Srilankan Five Zero Four , Fedex Five One One Two , Etihad Zero Five Four , Ethiopian Seven Two Five , Emirates Three Two , Austrian Six Four One , Eurotrans One Three Juliett "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_150258.wav",
@@ -1937,9 +1956,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Oscar Echo Golf Tango Echo , Oscar Echo X-ray Yankee Foxtrot , Qatari Six Five Five Victor , Oscar Mike Mike Two Three Three ",
-        "prompt_fullts_5B": "Hansa Four Yankee Echo , Oscar Kilo Yankee Uniform Alpha Two One , Oscar Echo Golf Tango Echo , November Tango Foxtrot One Four Six Sierra , Austrian Eight Five Eight ",
-        "prompt_fullts_50B": "Qatari Six Five Five Victor , Elite Jet Two Zero Two , Oscar Echo X-ray Yankee Foxtrot , Elite Jet Seven Zero Two , Austrian Eight Five Eight , Hansa Four Yankee Echo , Oscar Mike Mike Two Three Three , Oscar Yankee Juliett Juliett November , Foxtrot Hotel Victor Yankee Charlie , Delta Echo November India Foxtrot , Oscar Echo Golf Tango Echo , November Tango Foxtrot One Four Six Sierra , Oscar Kilo Yankee Uniform Alpha Two One "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Oscar Yankee Juliett Juliett November , Oscar Kilo Yankee Uniform Alpha Two One , Oscar Echo X-ray Yankee Foxtrot , Oscar Mike Mike Two Three Three ",
+        "prompt_fullts_5B": "Oscar Echo Golf Tango Echo , Oscar Mike Mike Two Three Three , Elite Jet Two Zero Two , Oscar Yankee Juliett Juliett November , Qatari Six Five Five Victor ",
+        "prompt_fullts_50B": "Oscar Echo X-ray Yankee Foxtrot , Oscar Kilo Yankee Uniform Alpha Two One , Oscar Yankee Juliett Juliett November , Qatari Six Five Five Victor , Elite Jet Two Zero Two , November Tango Foxtrot One Four Six Sierra , Oscar Echo Golf Tango Echo , Elite Jet Seven Zero Two , Oscar Mike Mike Two Three Three , Foxtrot Hotel Victor Yankee Charlie , Austrian Eight Five Eight , Delta Echo November India Foxtrot , Hansa Four Yankee Echo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_163922.wav",
@@ -2039,9 +2059,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Mike Kilo Lima Lima, Silk West Two Eight Zero , Delta Foxtrot Golf Romeo Oscar , Oscar Mike Charlie India Alpha , Slovak Government Zero Four Alpha ",
-        "prompt_fullts_5B": "Sunexpress Four Echo Whiskey , Oscar Yankee Juliett Juliett November , Delta Foxtrot Golf Romeo Oscar , Bair Seven One Two , Oscar Mike Delta Yankee Echo ",
-        "prompt_fullts_50B": "Slovak Government Zero Zero Two , Trans Europe Three Eight Five Two , Oscar Mike Bravo Juliett Mike , Mambra Sierra Echo , Oscar Kilo Romeo Lima Victor , Asterix Seven Eight Papa , Bair Seven One Two , Aerodin Golf India , Victor Tango Bravo Romeo Kilo , Oscar Mike Delta Yankee Echo , Oscar Yankee Juliett Juliett November , Silk West Two Eight Zero , Qatari Nine Six Foxtrot , Elite Jet Four Zero Three , Oscar Mike Charlie India Alpha , Delta Foxtrot Golf Romeo Oscar , Slovak Government Zero Four Alpha , Sunexpress Four Echo Whiskey "
+        "prompt_fullts_AG": "Oscar Mike Kilo Lima Lima",
+        "prompt_fullts_AG_4B": "Oscar Mike Kilo Lima Lima, Oscar Kilo Romeo Lima Victor , Slovak Government Zero Four Alpha , Bair Seven One Two , Oscar Yankee Juliett Juliett November ",
+        "prompt_fullts_5B": "Asterix Seven Eight Papa , Slovak Government Zero Zero Two , Slovak Government Zero Four Alpha , Elite Jet Four Zero Three , Oscar Yankee Juliett Juliett November ",
+        "prompt_fullts_50B": "Asterix Seven Eight Papa , Silk West Two Eight Zero , Qatari Nine Six Foxtrot , Oscar Mike Charlie India Alpha , Victor Tango Bravo Romeo Kilo , Oscar Kilo Romeo Lima Victor , Slovak Government Zero Four Alpha , Trans Europe Three Eight Five Two , Oscar Mike Bravo Juliett Mike , Sunexpress Four Echo Whiskey , Oscar Mike Delta Yankee Echo , Delta Foxtrot Golf Romeo Oscar , Elite Jet Four Zero Three , Mambra Sierra Echo , Oscar Yankee Juliett Juliett November , Bair Seven One Two , Slovak Government Zero Zero Two , Aerodin Golf India "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210427_143012.wav",
@@ -2151,9 +2172,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Mike Charlie India Alpha, Victor Tango Bravo Romeo Kilo , Oscar Mike Charlie India Alpha , Juliett Sierra Hotel Six Six One , Elite Jet Seven Zero One ",
-        "prompt_fullts_5B": "Bair Seven One Two , Juliett Sierra Hotel Six Six One , Oscar Yankee Juliett Juliett November , Asterix Seven Eight Papa , Oscar Mike Charlie India Alpha ",
-        "prompt_fullts_50B": "Oscar Mike Delta Yankee Echo , Juliett Sierra Hotel Six Six One , Asterix Seven Eight Papa , Mermaid Six Four Eight Four , Oscar Mike Charlie India Alpha , Elite Jet Seven Zero One , Mazoon Four Two Four , Dream Team Three Two One Hotel , Time Air Three Nine Four Yankee , Sunexpress Four Echo Whiskey , Delta Foxtrot Golf Romeo Oscar , Victor Tango Bravo Romeo Kilo , Trans Europe Three Eight Five Two , Aero Coach Bravo Tango , Oscar Kilo Romeo Delta Sierra , Orient Thai Lima Juliett , Egyptair Seven Nine Seven , Oscar Yankee Juliett Juliett November , Austrian Eight Five Eight , Bair Seven One Two , Mambra Sierra Echo , Qatari Nine Six Foxtrot , Slovak Government Zero Zero Four "
+        "prompt_fullts_AG": "Oscar Mike Charlie India Alpha",
+        "prompt_fullts_AG_4B": "Oscar Mike Charlie India Alpha, Egyptair Seven Nine Seven , Qatari Nine Six Foxtrot , Oscar Yankee Juliett Juliett November , Elite Jet Seven Zero One ",
+        "prompt_fullts_5B": "Oscar Mike Charlie India Alpha , Victor Tango Bravo Romeo Kilo , Time Air Three Nine Four Yankee , Qatari Nine Six Foxtrot , Slovak Government Zero Zero Four ",
+        "prompt_fullts_50B": "Qatari Nine Six Foxtrot , Oscar Mike Charlie India Alpha , Juliett Sierra Hotel Six Six One , Bair Seven One Two , Elite Jet Seven Zero One , Victor Tango Bravo Romeo Kilo , Orient Thai Lima Juliett , Egyptair Seven Nine Seven , Trans Europe Three Eight Five Two , Time Air Three Nine Four Yankee , Mambra Sierra Echo , Oscar Kilo Romeo Delta Sierra , Aero Coach Bravo Tango , Dream Team Three Two One Hotel , Asterix Seven Eight Papa , Austrian Eight Five Eight , Oscar Yankee Juliett Juliett November , Delta Foxtrot Golf Romeo Oscar , Sunexpress Four Echo Whiskey , Mermaid Six Four Eight Four , Mazoon Four Two Four , Slovak Government Zero Zero Four , Oscar Mike Delta Yankee Echo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_202823.wav",
@@ -2251,9 +2273,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Eurotrans One Three Juliett, Eurotrans Eight Six November , Austrian One Five Six , Austrian Three November Charlie , Eurotrans One Three Juliett ",
-        "prompt_fullts_5B": "Austrian Three November Charlie , Austrian One Seven Two , Asiana Seven Eight Nine , Austrian Three Sierra Victor , Cargolux Seven Eight Four Four ",
-        "prompt_fullts_50B": "Fedex Five One One Two , Mitavia Nine Two Three Seven , Asiana Seven Eight Nine , Austrian One Seven Two , Lima Delta X-ray One Three , Austrian One Two Six , Turkish Three Juliett Whiskey , Eurotrans One Three Juliett , Austrian Four Delta Lima , Cargolux Seven Eight Four Four , Austrian Five Zero Bravo , Eurotrans Eight Six November , Austrian Three Sierra Victor , Cargolux Six One Zero Four , Austrian One Five Six , Austrian Three November Charlie , Austrian Two Nine Six "
+        "prompt_fullts_AG": "Eurotrans One Three Juliett",
+        "prompt_fullts_AG_4B": "Eurotrans One Three Juliett, Austrian Two Nine Six , Turkish Three Juliett Whiskey , Fedex Five One One Two , Cargolux Six One Zero Four ",
+        "prompt_fullts_5B": "Turkish Three Juliett Whiskey , Austrian Four Delta Lima , Eurotrans One Three Juliett , Mitavia Nine Two Three Seven , Fedex Five One One Two ",
+        "prompt_fullts_50B": "Turkish Three Juliett Whiskey , Austrian One Seven Two , Austrian Four Delta Lima , Fedex Five One One Two , Austrian One Five Six , Lima Delta X-ray One Three , Austrian Three Sierra Victor , Mitavia Nine Two Three Seven , Eurotrans Eight Six November , Eurotrans One Three Juliett , Austrian Three November Charlie , Austrian One Two Six , Cargolux Seven Eight Four Four , Cargolux Six One Zero Four , Asiana Seven Eight Nine , Austrian Two Nine Six , Austrian Five Zero Bravo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_075711.wav",
@@ -2347,9 +2370,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Slovak Government Zero Zero Four, Slovak Government Zero Zero Four , Tango Tango Juliett Six One Three , Elite Jet Four Zero Three , Vista Malta Nine Two Nine ",
-        "prompt_fullts_5B": "Airbaltic Nine Hotel Papa , Slovak Government Zero Zero Four , Moonraker Seven Eight Eight Seven , Austrian Eight Two Nine , Elite Jet Eight Zero One ",
-        "prompt_fullts_50B": "Tango Tango Juliett Six One Three , Turkish Eight Papa Quebec , Austrian Eight Two Nine , Elite Jet Four Zero Three , Elite Jet Eight Zero One , Airbaltic Nine Hotel Papa , Mike Oscar Zulu Three Three One , Moonraker Seven Eight Eight Seven , Eurocypria Two One Echo , Vista Malta Nine Two Nine , Victor Charlie Juliett Nine Nine Alpha , Okayjet Charlie Tango , Slovak Government Zero Zero Four "
+        "prompt_fullts_AG": "Slovak Government Zero Zero Four",
+        "prompt_fullts_AG_4B": "Slovak Government Zero Zero Four, Turkish Eight Papa Quebec , Elite Jet Four Zero Three , Vista Malta Nine Two Nine , Tango Tango Juliett Six One Three ",
+        "prompt_fullts_5B": "Mike Oscar Zulu Three Three One , Victor Charlie Juliett Nine Nine Alpha , Airbaltic Nine Hotel Papa , Vista Malta Nine Two Nine , Elite Jet Four Zero Three ",
+        "prompt_fullts_50B": "Airbaltic Nine Hotel Papa , Tango Tango Juliett Six One Three , Victor Charlie Juliett Nine Nine Alpha , Austrian Eight Two Nine , Elite Jet Eight Zero One , Okayjet Charlie Tango , Mike Oscar Zulu Three Three One , Vista Malta Nine Two Nine , Slovak Government Zero Zero Four , Turkish Eight Papa Quebec , Eurocypria Two One Echo , Moonraker Seven Eight Eight Seven , Elite Jet Four Zero Three "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210421_121412.wav",
@@ -2437,9 +2461,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", German Cargo Five One Eight , Oscar Kilo Bravo Victor Alpha , Austrian Eight Mike Sierra , Oscar Echo India November Kilo ",
-        "prompt_fullts_5B": "Dream Team Seven Five Three Victor , Emirates One Two Eight , Austrian Seven Five , Sierra Pacific Romeo Kilo , Austrian Seven Seven Kilo Tango ",
-        "prompt_fullts_50B": "Tarom Three Four Two Yankee , German Cargo Five One Eight , Austrian Six Five Five , Twin Star Five Zero Three , Oscar Echo India November Kilo , Austrian Eight Mike Sierra , Oscar Kilo Romeo Sierra Echo , Oscar Mike Bravo Juliett Mike , Sierra Pacific Romeo Kilo , Austrian Seven Seven Kilo Tango , Oscar Kilo Bravo Victor Alpha , Red Lion One Foxtrot , Austrian Seven Five , Emirates One Two Eight , Dream Team Seven Five Three Victor , Austrian Seven Victor Romeo , Austrian Seven Nine One "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Tarom Three Four Two Yankee , Austrian Seven Five , Red Lion One Foxtrot , Austrian Six Five Five ",
+        "prompt_fullts_5B": "Dream Team Seven Five Three Victor , Sierra Pacific Romeo Kilo , Oscar Kilo Bravo Victor Alpha , Austrian Seven Five , Austrian Seven Seven Kilo Tango ",
+        "prompt_fullts_50B": "Twin Star Five Zero Three , Dream Team Seven Five Three Victor , Oscar Mike Bravo Juliett Mike , Austrian Six Five Five , Oscar Kilo Romeo Sierra Echo , Emirates One Two Eight , Austrian Seven Five , Austrian Seven Nine One , Austrian Seven Seven Kilo Tango , Austrian Seven Victor Romeo , Tarom Three Four Two Yankee , Oscar Echo India November Kilo , Sierra Pacific Romeo Kilo , German Cargo Five One Eight , Red Lion One Foxtrot , Oscar Kilo Bravo Victor Alpha , Austrian Eight Mike Sierra "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_155946.wav",
@@ -2561,9 +2586,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Alpha Golf Lima, Alpha X-ray Alpha One One One , Asterix Eight One Romeo , Mazoon Six Six Six , Siberian Airlines Three Six Four Two ",
-        "prompt_fullts_5B": "Austrian Four Six , Christophorus Oscar Golf , Qatari One Six Papa , Romeo Alpha Zero Two Eight Five Seven , Mambra Uniform Charlie ",
-        "prompt_fullts_50B": "Mitavia Nine Two Three Seven , Echo Lima Golf Five Two Alpha , Asterix Eight One Romeo , Oscar Kilo Romeo Delta Sierra , Austrian Six Six Juliett Tango , Mazoon Four Two Four , Silver Arrows Four Three Lima Delta , Siberian Airlines Three Six Five Zero , Austrian Seven Nine Lima Golf , Austrian Eight Zero November , Air Hamburg Six Nine Two Lima , Qatari One Six Papa , Austrian Eight Mike Sierra , Austrian Six Charlie Delta , Mazoon Six Six Six , Siberian Airlines Three Six Four Two , Alpha X-ray Alpha One One One , Mambra Uniform Charlie , Austrian Four Six , Austrian Eight One Zero Lima , Belarus Avia Eight Eight Zero , Wizzair Six Two Seven Six , Romeo Alpha Zero Two Eight Five Seven , Christophorus Oscar Golf , Wizzair Six Two Seven Five , Austrian Seven Kilo Sierra , Tango Tango Juliett Six Zero Three , Austrian Seven Nine Two , Austrian Eight Five Eight "
+        "prompt_fullts_AG": "Oscar Kilo Alpha Golf Lima",
+        "prompt_fullts_AG_4B": "Oscar Kilo Alpha Golf Lima, Oscar Kilo Romeo Delta Sierra , Wizzair Six Two Seven Six , Air Hamburg Six Nine Two Lima , Mazoon Four Two Four ",
+        "prompt_fullts_5B": "Romeo Alpha Zero Two Eight Five Seven , Qatari One Six Papa , Austrian Eight One Zero Lima , Mambra Uniform Charlie , Austrian Eight Five Eight ",
+        "prompt_fullts_50B": "Siberian Airlines Three Six Five Zero , Belarus Avia Eight Eight Zero , Oscar Kilo Romeo Delta Sierra , Austrian Eight Mike Sierra , Tango Tango Juliett Six Zero Three , Austrian Six Six Juliett Tango , Wizzair Six Two Seven Six , Austrian Eight Zero November , Alpha X-ray Alpha One One One , Austrian Four Six , Austrian Seven Nine Lima Golf , Austrian Six Charlie Delta , Austrian Eight Five Eight , Silver Arrows Four Three Lima Delta , Mazoon Four Two Four , Qatari One Six Papa , Asterix Eight One Romeo , Mazoon Six Six Six , Air Hamburg Six Nine Two Lima , Mambra Uniform Charlie , Christophorus Oscar Golf , Wizzair Six Two Seven Five , Mitavia Nine Two Three Seven , Romeo Alpha Zero Two Eight Five Seven , Austrian Seven Kilo Sierra , Austrian Eight One Zero Lima , Siberian Airlines Three Six Four Two , Echo Lima Golf Five Two Alpha , Austrian Seven Nine Two "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_202836.wav",
@@ -2641,9 +2667,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", KLM Two Five Foxtrot , Austrian One Seven Two , Emirates Four , Ryan Two Hotel Victor ",
-        "prompt_fullts_5B": "Austrian Three November Charlie , Eurotrans One Three Juliett , KLM Two Five Foxtrot , Austrian Three Sierra Victor , Austrian One Two Six ",
-        "prompt_fullts_50B": "Austrian Three November Charlie , Austrian One Two Six , Ryan Two Hotel Victor , Austrian One Seven Two , Austrian Three Sierra Victor , KLM Two Five Foxtrot , Emirates Four , Austrian Six Juliett Mike , Fedex Five One One Two , Eurotrans One Three Juliett , Ethiopian Seven Two Five , Austrian Five November Alpha "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Emirates Four , Austrian One Two Six , KLM Two Five Foxtrot , Fedex Five One One Two ",
+        "prompt_fullts_5B": "Eurotrans One Three Juliett , Austrian Five November Alpha , Austrian One Two Six , Austrian Six Juliett Mike , Austrian Three Sierra Victor ",
+        "prompt_fullts_50B": "Fedex Five One One Two , Austrian Three November Charlie , KLM Two Five Foxtrot , Austrian Five November Alpha , Austrian Three Sierra Victor , Eurotrans One Three Juliett , Austrian One Seven Two , Ryan Two Hotel Victor , Austrian Six Juliett Mike , Emirates Four , Austrian One Two Six , Ethiopian Seven Two Five "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210428_092638.wav",
@@ -2723,9 +2750,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Oscar Kilo Bravo Romeo Oscar , Austrian Seven Nine One , November Three Nine Zero Lima Yankee , Austrian Seven Victor Romeo ",
-        "prompt_fullts_5B": "Oscar Kilo Bravo Romeo Oscar , Austrian One Four Seven Two , Oscar Kilo Romeo Lima Victor , Qatari One Romeo Alpha , Austrian Seven Victor Romeo ",
-        "prompt_fullts_50B": "November Three Nine Zero Lima Yankee , Oscar Mike Charlie India Alpha , Sunturk Five Three X-ray , Austrian Seven Victor Romeo , Qatari Three Papa Echo , Qatari One Romeo Alpha , Austrian Seven Nine One , Oscar Kilo Romeo Lima Victor , Austrian One Four Seven Two , Time Air Three Nine Seven Foxtrot , Carpatair Three One Zero Five , Oscar Kilo Bravo Romeo Oscar , Czech Air Force Zero Five Bravo "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Oscar Kilo Romeo Lima Victor , Time Air Three Nine Seven Foxtrot , Qatari One Romeo Alpha , Qatari Three Papa Echo ",
+        "prompt_fullts_5B": "Austrian Seven Victor Romeo , Austrian One Four Seven Two , Qatari Three Papa Echo , Oscar Kilo Romeo Lima Victor , Sunturk Five Three X-ray ",
+        "prompt_fullts_50B": "Oscar Kilo Bravo Romeo Oscar , Oscar Mike Charlie India Alpha , Time Air Three Nine Seven Foxtrot , Austrian Seven Nine One , November Three Nine Zero Lima Yankee , Austrian Seven Victor Romeo , Czech Air Force Zero Five Bravo , Austrian One Four Seven Two , Carpatair Three One Zero Five , Oscar Kilo Romeo Lima Victor , Sunturk Five Three X-ray , Qatari One Romeo Alpha , Qatari Three Papa Echo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_101342.wav",
@@ -2835,9 +2863,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar India Alpha, Oscar Mike Charlie India Alpha, Orion Charter Tango Alpha , Etihad Nine One Three , Sunturk Five Three X-ray , Emirates Two Zero Two ",
-        "prompt_fullts_5B": "Belarus Avia Eight Seven Zero , Air France Four Five Alpha Alpha , Austrian Seven Nine One , Orion Charter Tango Alpha , Sunturk Seven Four Echo ",
-        "prompt_fullts_50B": "Oscar Mike Echo Sierra Bravo , Turkish Two Bravo Foxtrot , Austrian Eight Tango Bravo , Oscar Mike Echo Sierra Alpha , Eva Zero Six Six , Oscar Mike Charlie Mike Juliett , Oscar Mike Charlie India Alpha , Echo Lima Golf Five Two Alpha , Sunturk Seven Four Echo , Sunturk Five Three X-ray , Belarus Avia Eight Seven Zero , Air France Four Five Alpha Alpha , Mazoon Four Two Four , Orion Charter Tango Alpha , Iranair Seven One Six , Austrian Seven Nine One , Skytravel Two Five Seven One , Etihad Nine One Three , Emirates Two Zero Two "
+        "prompt_fullts_AG": "Oscar India Alpha, Oscar Mike Charlie India Alpha",
+        "prompt_fullts_AG_4B": "Oscar India Alpha, Oscar Mike Charlie India Alpha, Sunturk Seven Four Echo , Belarus Avia Eight Seven Zero , Etihad Nine One Three , Oscar Mike Charlie Mike Juliett ",
+        "prompt_fullts_5B": "Sunturk Seven Four Echo , Etihad Nine One Three , Belarus Avia Eight Seven Zero , Orion Charter Tango Alpha , Mazoon Four Two Four ",
+        "prompt_fullts_50B": "Echo Lima Golf Five Two Alpha , Emirates Two Zero Two , Austrian Seven Nine One , Sunturk Five Three X-ray , Oscar Mike Echo Sierra Bravo , Skytravel Two Five Seven One , Oscar Mike Echo Sierra Alpha , Etihad Nine One Three , Air France Four Five Alpha Alpha , Mazoon Four Two Four , Eva Zero Six Six , Sunturk Seven Four Echo , Orion Charter Tango Alpha , Austrian Eight Tango Bravo , Iranair Seven One Six , Turkish Two Bravo Foxtrot , Oscar Mike Charlie India Alpha , Belarus Avia Eight Seven Zero , Oscar Mike Charlie Mike Juliett "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_163524.wav",
@@ -2935,9 +2964,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Tower, Dream Team Zero One Five November, Dream Team Zero One Five November Stefanik Tower, Ryanair Nine Seven Five , Dream Team Zero One Five November , Austrian Six Six Juliett Tango , Tango Tango Juliett Three One Two Bravo ",
-        "prompt_fullts_5B": "Austrian Six Six Juliett Tango , Tango Tango Juliett Three One Five Alpha , Austrian Seven Kilo Sierra , Turkish Six Six Zero Four , Ryanair Nine Seven Five ",
-        "prompt_fullts_50B": "Turkish Six Six Zero Four , Austrian Seven Kilo Sierra , Dream Team Zero One Five November , Tango Tango Juliett Three One Five Alpha , Austrian Six Six Juliett Tango , Ryanair Nine Seven Five , Tango Tango Juliett Three One Two Bravo "
+        "prompt_fullts_AG": "Tower, Dream Team Zero One Five November, Dream Team Zero One Five November Stefanik Tower",
+        "prompt_fullts_AG_4B": "Tower, Dream Team Zero One Five November, Dream Team Zero One Five November Stefanik Tower, Turkish Six Six Zero Four , Ryanair Nine Seven Five , Dream Team Zero One Five November , Tango Tango Juliett Three One Five Alpha ",
+        "prompt_fullts_5B": "Tango Tango Juliett Three One Two Bravo , Turkish Six Six Zero Four , Tango Tango Juliett Three One Five Alpha , Dream Team Zero One Five November , Austrian Seven Kilo Sierra ",
+        "prompt_fullts_50B": "Tango Tango Juliett Three One Two Bravo , Dream Team Zero One Five November , Ryanair Nine Seven Five , Tango Tango Juliett Three One Five Alpha , Turkish Six Six Zero Four , Austrian Seven Kilo Sierra , Austrian Six Six Juliett Tango "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210424_151420.wav",
@@ -3051,9 +3081,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Bair Niner Four One, Bair Nine Four One, Alpha X-ray Alpha Two Two Two , Bair Seven Five One , Siberian Airlines Three Five Eight Six , Austrian Seven Nine Lima Golf ",
-        "prompt_fullts_5B": "Oscar Mike Mike Two One Five , Elite Jet Seven Zero One , Kilo Alpha Yankee Five Two , Austrian Seven Nine Two , Austrian Three Eight Two ",
-        "prompt_fullts_50B": "Oscar Mike Mike Six Zero Five , Wizz Go Three Eight One Five , Oscar Mike Echo Sierra Bravo , Elite Jet Seven Zero One , Siberian Airlines Three Five Eight Six , Slovak Government Zero Six Bravo , Austrian Seven Nine Lima Golf , Austrian Three Eight Two , KLM Two Three Alpha , Bair Seven Five One , Oscar Mike Mike Two One Five , Wizzair One Six Seven Seven , Alpha X-ray Alpha Two Two Two , Austrian Seven Nine Two , Bair Nine Four One , Austrian Seven Hotel November , Kilo Alpha Yankee Five Two , Elite Jet Eight Zero Two , Slovak Government Zero Six Alpha "
+        "prompt_fullts_AG": "Bair Niner Four One, Bair Nine Four One",
+        "prompt_fullts_AG_4B": "Bair Niner Four One, Bair Nine Four One, Slovak Government Zero Six Alpha , Elite Jet Eight Zero Two , Wizz Go Three Eight One Five , Kilo Alpha Yankee Five Two ",
+        "prompt_fullts_5B": "Kilo Alpha Yankee Five Two , Bair Nine Four One , Elite Jet Seven Zero One , Alpha X-ray Alpha Two Two Two , Austrian Seven Nine Two ",
+        "prompt_fullts_50B": "Alpha X-ray Alpha Two Two Two , Bair Nine Four One , Slovak Government Zero Six Alpha , Elite Jet Eight Zero Two , Bair Seven Five One , Austrian Seven Nine Two , Oscar Mike Echo Sierra Bravo , Wizz Go Three Eight One Five , Oscar Mike Mike Six Zero Five , Kilo Alpha Yankee Five Two , Austrian Three Eight Two , Elite Jet Seven Zero One , Oscar Mike Mike Two One Five , Austrian Seven Nine Lima Golf , Siberian Airlines Three Five Eight Six , Austrian Seven Hotel November , Wizzair One Six Seven Seven , KLM Two Three Alpha , Slovak Government Zero Six Bravo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_173822.wav",
@@ -3149,9 +3180,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Juliett Sierra Hotel Six Five Five , Austrian Three November Charlie , Tango Tango Juliett Six Zero Zero , Austrian Eight Echo November ",
-        "prompt_fullts_5B": "Eurocypria Two One Echo , Austrian Three Sierra Victor , Austrian Three Bravo Uniform , Belarus Avia Eight Seven Zero , Austrian Six Juliett Alpha ",
-        "prompt_fullts_50B": "Twingoose One Four Four , Austrian Three Sierra Victor , Austrian Two Nine Six , Aero Citro Papa Foxtrot , Austrian One Five Six , Bravo Tango X-ray Nine Yankee , Austrian One Two Six , Fedex Five One One Two , Austrian Three November Charlie , Austrian Eight Echo November , Austrian Six Juliett Alpha , Tango Tango Juliett Six Zero Zero , Eurocypria Two One Echo , Austrian Six Juliett Mike , Austrian Three Bravo Uniform , Juliett Sierra Hotel Six Five Five , Bair Seven Five Two , Belarus Avia Eight Seven Zero , Austrian One Hotel Mike "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Fedex Five One One Two , Eurocypria Two One Echo , Austrian Three Sierra Victor , Austrian Six Juliett Mike ",
+        "prompt_fullts_5B": "Bravo Tango X-ray Nine Yankee , Austrian One Five Six , Eurocypria Two One Echo , Austrian Eight Echo November , Aero Citro Papa Foxtrot ",
+        "prompt_fullts_50B": "Austrian Two Nine Six , Austrian Six Juliett Alpha , Austrian One Hotel Mike , Bair Seven Five Two , Austrian Three Sierra Victor , Austrian Three November Charlie , Austrian One Five Six , Aero Citro Papa Foxtrot , Juliett Sierra Hotel Six Five Five , Bravo Tango X-ray Nine Yankee , Austrian Three Bravo Uniform , Fedex Five One One Two , Austrian Six Juliett Mike , Austrian One Two Six , Austrian Eight Echo November , Eurocypria Two One Echo , Twingoose One Four Four , Belarus Avia Eight Seven Zero , Tango Tango Juliett Six Zero Zero "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_130351.wav",
@@ -3279,9 +3311,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Mike Echo Lima Echo good day, Oscar Mike Echo Lima Echo, Oscar Lima Echo, Emirates Nine Two Five Seven , Elite Jet Two Zero Two , Oscar Mike Mike Two Three Three , Oscar Kilo Romeo Sierra Echo ",
-        "prompt_fullts_5B": "Sunexpress Seven Uniform , Alpine Eight Three Bravo Delta , Ryanair Three Four Quebec Lima , Galileo Four Six One One , Oscar Kilo Romeo Sierra Echo ",
-        "prompt_fullts_50B": "Wizzair One Five One Eight , Sunexpress Seven Uniform , Ryanair Five Three Victor Mike , Air France Three Three Golf X-ray , Slovak Government Zero Zero Four , Siberian Airlines Three Six Six Two , Galileo Four Six One One , Siberian Airlines Three Five Four Two , Bair Seven Five One , Juliett Mike Lima One Zero Zero , Alpine Eight Three Bravo Delta , Ryanair Three Four Quebec Lima , Aeroflot Two Four Zero Eight , Oscar Mike Mike Two Three Three , Oscar Mike Echo Sierra Bravo , Turkish Nine Delta Whiskey , Qatari One Six Papa , Emirates Nine Two Five Seven , Austrian Six Zero Two , Elite Jet Two Zero Two , Air China Five Nine Eight , Oscar Kilo Romeo Sierra Echo , Lion King Echo Seven Four , Emirates Nine Three Three Zero "
+        "prompt_fullts_AG": "Oscar Mike Echo Lima Echo good day, Oscar Mike Echo Lima Echo, Oscar Lima Echo",
+        "prompt_fullts_AG_4B": "Oscar Mike Echo Lima Echo good day, Oscar Mike Echo Lima Echo, Oscar Lima Echo, Air China Five Nine Eight , Emirates Nine Two Five Seven , Air France Three Three Golf X-ray , Alpine Eight Three Bravo Delta ",
+        "prompt_fullts_5B": "Ryanair Five Three Victor Mike , Qatari One Six Papa , Slovak Government Zero Zero Four , Oscar Kilo Romeo Sierra Echo , Siberian Airlines Three Five Four Two ",
+        "prompt_fullts_50B": "Bair Seven Five One , Air France Three Three Golf X-ray , Oscar Mike Mike Two Three Three , Wizzair One Five One Eight , Sunexpress Seven Uniform , Lion King Echo Seven Four , Air China Five Nine Eight , Siberian Airlines Three Six Six Two , Galileo Four Six One One , Emirates Nine Two Five Seven , Ryanair Three Four Quebec Lima , Juliett Mike Lima One Zero Zero , Alpine Eight Three Bravo Delta , Ryanair Five Three Victor Mike , Siberian Airlines Three Five Four Two , Aeroflot Two Four Zero Eight , Elite Jet Two Zero Two , Emirates Nine Three Three Zero , Qatari One Six Papa , Oscar Mike Echo Sierra Bravo , Turkish Nine Delta Whiskey , Austrian Six Zero Two , Oscar Kilo Romeo Sierra Echo , Slovak Government Zero Zero Four "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_121412.wav",
@@ -3391,9 +3424,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Elite Jet Two Zero One, Juliett Sierra Hotel Five Zero Two , China Eastern Seven Zero Four Four , Cargolux Seven Nine Seven Two , Jetset Two Foxtrot Delta ",
-        "prompt_fullts_5B": "Jetset Two Foxtrot Delta , Asiana Seven Nine Five , Emirates One Two Eight , Lima Tango Charlie Two Zero One , Austrian Seven Victor Romeo ",
-        "prompt_fullts_50B": "Austrian Eight Tango Bravo , Juliett Sierra Hotel Five Zero Two , Singapore Two Five , Cargolux Seven Nine Seven Two , Elite Jet Two Zero One , Etihad Four Three Uniform , Austrian Six Five Five , Lima Tango Charlie Two Zero One , Emirates One Two Eight , Slovak Government Zero Four Alpha , Jetset Two Foxtrot Delta , Oscar Kilo Oscar Uniform Lima Four Five , Air China Five Nine Eight , November Four Nine X-ray Lima , Bair Seven Five One , Turkish Nine Eight Uniform , Austrian Seven Victor Romeo , Asiana Seven Nine Five , Austrian Six Tango Mike , China Eastern Seven Zero Four Four , Austrian Eight November Foxtrot , Austrian Seven Nine One , Elite Jet Seven Zero One "
+        "prompt_fullts_AG": "Elite Jet Two Zero One",
+        "prompt_fullts_AG_4B": "Elite Jet Two Zero One, Singapore Two Five , Slovak Government Zero Four Alpha , Etihad Four Three Uniform , Jetset Two Foxtrot Delta ",
+        "prompt_fullts_5B": "Elite Jet Two Zero One , Austrian Seven Nine One , Elite Jet Seven Zero One , China Eastern Seven Zero Four Four , Oscar Kilo Oscar Uniform Lima Four Five ",
+        "prompt_fullts_50B": "Austrian Eight November Foxtrot , Turkish Nine Eight Uniform , Austrian Seven Nine One , Jetset Two Foxtrot Delta , Austrian Six Tango Mike , Singapore Two Five , Cargolux Seven Nine Seven Two , Slovak Government Zero Four Alpha , Asiana Seven Nine Five , Bair Seven Five One , Austrian Eight Tango Bravo , Elite Jet Two Zero One , Oscar Kilo Oscar Uniform Lima Four Five , Air China Five Nine Eight , November Four Nine X-ray Lima , Lima Tango Charlie Two Zero One , Emirates One Two Eight , Austrian Seven Victor Romeo , Elite Jet Seven Zero One , Austrian Six Five Five , Etihad Four Three Uniform , China Eastern Seven Zero Four Four , Juliett Sierra Hotel Five Zero Two "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_181535.wav",
@@ -3475,9 +3509,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Golf Echo, Siberian Airlines Three Six Four Two , Asterix Eight One Romeo , Siberian Airlines Three Six Five Zero , Mitavia Nine Two Three Seven ",
-        "prompt_fullts_5B": "Siberian Airlines Three Six Four Two , Mitavia Nine Two Three Seven , Asterix Eight One Romeo , Alpha X-ray Alpha One One One , Oscar Kilo Romeo Delta Sierra ",
-        "prompt_fullts_50B": "Asterix Eight One Romeo , Mitavia Nine Two Three Seven , Oscar Kilo Romeo Delta Sierra , Siberian Airlines Three Six Four Two , Alpha X-ray Alpha One One One , Mazoon Six Six Six , Siberian Airlines Three Six Five Zero "
+        "prompt_fullts_AG": "Oscar Golf Echo",
+        "prompt_fullts_AG_4B": "Oscar Golf Echo, Siberian Airlines Three Six Five Zero , Asterix Eight One Romeo , Mazoon Six Six Six , Oscar Kilo Romeo Delta Sierra ",
+        "prompt_fullts_5B": "Mitavia Nine Two Three Seven , Oscar Kilo Romeo Delta Sierra , Alpha X-ray Alpha One One One , Siberian Airlines Three Six Four Two , Mazoon Six Six Six ",
+        "prompt_fullts_50B": "Siberian Airlines Three Six Five Zero , Asterix Eight One Romeo , Alpha X-ray Alpha One One One , Siberian Airlines Three Six Four Two , Mazoon Six Six Six , Mitavia Nine Two Three Seven , Oscar Kilo Romeo Delta Sierra "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_093554.wav",
@@ -3573,9 +3608,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Austrian Six One Uniform Kilo , Qatari One Romeo Alpha , Elite Jet Eight Zero One , Slovak Government Zero Zero Six ",
-        "prompt_fullts_5B": "Tango Tango Juliett Six Zero Three , Flying Bulgaria Three Zero One , Austrian Six One Uniform Kilo , Elite Jet Eight Zero One , Slok Gambia Oscar Lima ",
-        "prompt_fullts_50B": "Sierra Pacific Romeo Kilo , Kilo Alpha Yankee Five Two , Qatari One Romeo Alpha , Tarom Three Four Two Yankee , Yankee Uniform Romeo Delta Alpha , Ryan Five Seven Foxtrot Alpha , Tango Tango Juliett Six Zero Three , Tango Tango Juliett Six One Three , Slok Gambia Oscar Lima , Elite Jet Eight Zero One , Flying Bulgaria Three Zero One , Slovak Government Zero Zero Six , Austrian Six One Uniform Kilo , Turkish Eight Papa Quebec , Sunturk Nine Zero One , Ryan Two Hotel Victor , Emirates One Two Seven , Austrian Seven Victor Romeo , Aeroflot Two Six One One "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Emirates One Two Seven , Elite Jet Eight Zero One , Austrian Six One Uniform Kilo , Ryan Five Seven Foxtrot Alpha ",
+        "prompt_fullts_5B": "Qatari One Romeo Alpha , Ryan Two Hotel Victor , Yankee Uniform Romeo Delta Alpha , Sunturk Nine Zero One , Kilo Alpha Yankee Five Two ",
+        "prompt_fullts_50B": "Flying Bulgaria Three Zero One , Aeroflot Two Six One One , Qatari One Romeo Alpha , Sunturk Nine Zero One , Austrian Seven Victor Romeo , Emirates One Two Seven , Ryan Two Hotel Victor , Elite Jet Eight Zero One , Slok Gambia Oscar Lima , Yankee Uniform Romeo Delta Alpha , Tango Tango Juliett Six One Three , Austrian Six One Uniform Kilo , Slovak Government Zero Zero Six , Sierra Pacific Romeo Kilo , Turkish Eight Papa Quebec , Ryan Five Seven Foxtrot Alpha , Kilo Alpha Yankee Five Two , Tarom Three Four Two Yankee , Tango Tango Juliett Six Zero Three "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_204845.wav",
@@ -3667,9 +3703,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Eurotrans One Three Juliett, Austrian Five November Alpha , KLM Two Five Foxtrot , Ryan Two Hotel Victor , Ethiopian Seven Two Five ",
-        "prompt_fullts_5B": "Austrian One Seven Two , Fedex Five One One Two , Austrian Five November Alpha , Eurotrans One Three Juliett , Austrian One Two Six ",
-        "prompt_fullts_50B": "Austrian One Two Six , Austrian One Seven Two , Fedex Five One One Two , KLM Two Five Foxtrot , Ethiopian Seven Two Five , Austrian Five November Alpha , Emirates Four , Austrian Three Sierra Victor , Ryan Two Hotel Victor , Eurotrans One Three Juliett , Austrian Three November Charlie , Austrian Six Juliett Mike "
+        "prompt_fullts_AG": "Eurotrans One Three Juliett",
+        "prompt_fullts_AG_4B": "Eurotrans One Three Juliett, Austrian Six Juliett Mike , Ryan Two Hotel Victor , Fedex Five One One Two , Eurotrans One Three Juliett ",
+        "prompt_fullts_5B": "Austrian Three November Charlie , Austrian One Seven Two , Austrian Five November Alpha , Austrian Three Sierra Victor , Ryan Two Hotel Victor ",
+        "prompt_fullts_50B": "Austrian Five November Alpha , Ethiopian Seven Two Five , Emirates Four , Ryan Two Hotel Victor , Austrian Three Sierra Victor , Austrian Six Juliett Mike , KLM Two Five Foxtrot , Austrian One Two Six , Austrian Three November Charlie , Eurotrans One Three Juliett , Austrian One Seven Two , Fedex Five One One Two "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_171541.wav",
@@ -3743,9 +3780,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Aeroflot Two Three Five Three , Asterix Nine Six Mike , Oscar Mike Charlie Mike Juliett , Oscar Mike Mike Six Zero Five ",
-        "prompt_fullts_5B": "Siberian Airlines Three Seven Five Two , Oscar Kilo Romeo Delta Sierra , Asterix Nine Six Mike , Galileo Three Four Six Papa , Oscar Mike Echo Sierra Alpha ",
-        "prompt_fullts_50B": "Wizz Go Five Zero Six Seven , Asterix Nine Six Mike , Oscar Kilo Romeo Delta Sierra , Galileo Three Four Six Papa , Siberian Airlines Three Seven Five Two , Aeroflot Two Three Five Three , Oscar Mike Charlie Mike Juliett , Oscar Mike Echo Sierra Alpha , Oscar Mike Mike Six Zero Five , Oscar Mike Juliett Golf Alpha "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Oscar Mike Charlie Mike Juliett , Galileo Three Four Six Papa , Siberian Airlines Three Seven Five Two , Oscar Mike Juliett Golf Alpha ",
+        "prompt_fullts_5B": "Oscar Mike Charlie Mike Juliett , Oscar Mike Juliett Golf Alpha , Asterix Nine Six Mike , Galileo Three Four Six Papa , Siberian Airlines Three Seven Five Two ",
+        "prompt_fullts_50B": "Wizz Go Five Zero Six Seven , Galileo Three Four Six Papa , Oscar Kilo Romeo Delta Sierra , Oscar Mike Juliett Golf Alpha , Aeroflot Two Three Five Three , Siberian Airlines Three Seven Five Two , Oscar Mike Echo Sierra Alpha , Oscar Mike Mike Six Zero Five , Oscar Mike Charlie Mike Juliett , Asterix Nine Six Mike "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Approach_120_9MHz_20210426_203133.wav",
@@ -3827,19 +3865,20 @@
                 "Emirates Three Two "
             ],
             "short_runway": [
-                "31",
-                "3"
+                "3",
+                "31"
             ],
             "long_runway": [
-                "three",
-                "three one"
+                "three one",
+                "three"
             ],
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Eurotrans [hes] One Three Juliett, Eurotrans One Three Juliett, Etihad Zero Five Four , Eurotrans One Three Juliett , Fedex Five One One Two , Srilankan Five Zero Four ",
-        "prompt_fullts_5B": "Eurotrans One Three Juliett , Srilankan Five Zero Four , Ethiopian Seven Two Five , Etihad Zero Five Four , Fedex Five One One Two ",
-        "prompt_fullts_50B": "Srilankan Five Zero Four , Eurotrans One Three Juliett , Austrian Six Four One , Fedex Five One One Two , Etihad Zero Five Four , Emirates Three Two , Ethiopian Seven Two Five "
+        "prompt_fullts_AG": "Eurotrans [hes] One Three Juliett, Eurotrans One Three Juliett",
+        "prompt_fullts_AG_4B": "Eurotrans [hes] One Three Juliett, Eurotrans One Three Juliett, Etihad Zero Five Four , Ethiopian Seven Two Five , Fedex Five One One Two , Eurotrans One Three Juliett ",
+        "prompt_fullts_5B": "Etihad Zero Five Four , Emirates Three Two , Fedex Five One One Two , Eurotrans One Three Juliett , Austrian Six Four One ",
+        "prompt_fullts_50B": "Austrian Six Four One , Ethiopian Seven Two Five , Emirates Three Two , Fedex Five One One Two , Etihad Zero Five Four , Srilankan Five Zero Four , Eurotrans One Three Juliett "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_230611.wav",
@@ -3929,9 +3968,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Stefanik Tower, Eurotrans Five Three Three Four, Eurotrans Five Three Three Four Stefanik Tower, Elite Jet Seven Zero Four , Eurotrans Five Three Three Five , Eurotrans Five Three Three Four ",
-        "prompt_fullts_5B": "Elite Jet Seven Zero Four , Eurotrans Five Three Three Four , Eurotrans Five Three Three Five ",
-        "prompt_fullts_50B": "Eurotrans Five Three Three Four , Eurotrans Five Three Three Five , Elite Jet Seven Zero Four "
+        "prompt_fullts_AG": "Stefanik Tower, Eurotrans Five Three Three Four, Eurotrans Five Three Three Four Stefanik Tower",
+        "prompt_fullts_AG_4B": "Stefanik Tower, Eurotrans Five Three Three Four, Eurotrans Five Three Three Four Stefanik Tower, Eurotrans Five Three Three Five , Elite Jet Seven Zero Four , Eurotrans Five Three Three Four ",
+        "prompt_fullts_5B": "Eurotrans Five Three Three Five , Elite Jet Seven Zero Four , Eurotrans Five Three Three Four ",
+        "prompt_fullts_50B": "Eurotrans Five Three Three Five , Elite Jet Seven Zero Four , Eurotrans Five Three Three Four "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_202859.wav",
@@ -4019,9 +4059,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Austrian One Two Six , Austrian Three November Charlie , Cargolux Seven Eight Four Four , Cargolux Six One Zero Four ",
-        "prompt_fullts_5B": "Lima Delta X-ray One Three , Austrian Four Delta Lima , Asiana Seven Eight Nine , Austrian One Two Six , Austrian Five Zero Bravo ",
-        "prompt_fullts_50B": "Turkish Three Juliett Whiskey , Fedex Five One One Two , Austrian Two Nine Six , Eurotrans One Three Juliett , Asiana Seven Eight Nine , Austrian Five Zero Bravo , Eurotrans Eight Six November , Austrian Three November Charlie , Austrian Four Delta Lima , Cargolux Seven Eight Four Four , Austrian One Seven Two , Mitavia Nine Two Three Seven , Austrian Three Sierra Victor , Lima Delta X-ray One Three , Austrian One Two Six , Austrian One Five Six , Cargolux Six One Zero Four "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Mitavia Nine Two Three Seven , Austrian Three Sierra Victor , Austrian One Five Six , Austrian One Seven Two ",
+        "prompt_fullts_5B": "Austrian Four Delta Lima , Eurotrans One Three Juliett , Cargolux Six One Zero Four , Asiana Seven Eight Nine , Eurotrans Eight Six November ",
+        "prompt_fullts_50B": "Austrian Four Delta Lima , Cargolux Seven Eight Four Four , Austrian Three Sierra Victor , Fedex Five One One Two , Cargolux Six One Zero Four , Turkish Three Juliett Whiskey , Austrian Five Zero Bravo , Mitavia Nine Two Three Seven , Asiana Seven Eight Nine , Lima Delta X-ray One Three , Eurotrans One Three Juliett , Austrian One Two Six , Austrian One Seven Two , Eurotrans Eight Six November , Austrian One Five Six , Austrian Three November Charlie , Austrian Two Nine Six "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210429_103144.wav",
@@ -4129,9 +4170,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Austrian Seven Nine One , Moonraker Seven Eight Eight Seven , Oscar Mike Mike Six One One , Elite Jet Eight Zero One ",
-        "prompt_fullts_5B": "Sunturk Seven Four Echo , Oscar Mike Mike Six One One , Austrian Eight Tango Bravo , Austrian Three Eight One , Elite Jet Eight Zero Two ",
-        "prompt_fullts_50B": "Elite Jet Eight Zero Two , Tango Tango Juliett Six One Three , Vista Malta Nine Two Nine , Turkish Eight Papa Quebec , Austrian Six One Uniform Kilo , Elite Jet Four Zero Three , Austrian Seven Nine One , Mike Oscar Zulu Three Three One , Austrian Three Eight One , Okayjet Charlie Tango , Austrian Six Five Five , Austrian Seven Five , Elite Jet Four Zero One , Sunturk Seven Four Echo , Victor Charlie Juliett Nine Nine Alpha , Eva Zero Six Six , Moonraker Seven Eight Eight Seven , Air China Five Nine Eight , Hansa Four Yankee Victor , Mazoon Two One Five , Elite Jet Eight Zero One , Singapore Three One Seven , Austrian Eight Tango Bravo , Oscar Mike Mike Six One One "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Elite Jet Eight Zero Two , Air China Five Nine Eight , Vista Malta Nine Two Nine , Oscar Mike Mike Six One One ",
+        "prompt_fullts_5B": "Austrian Three Eight One , Austrian Seven Nine One , Oscar Mike Mike Six One One , Victor Charlie Juliett Nine Nine Alpha , Okayjet Charlie Tango ",
+        "prompt_fullts_50B": "Vista Malta Nine Two Nine , Austrian Three Eight One , Austrian Seven Nine One , Elite Jet Eight Zero One , Austrian Six One Uniform Kilo , Mike Oscar Zulu Three Three One , Moonraker Seven Eight Eight Seven , Hansa Four Yankee Victor , Sunturk Seven Four Echo , Tango Tango Juliett Six One Three , Elite Jet Eight Zero Two , Austrian Seven Five , Singapore Three One Seven , Okayjet Charlie Tango , Austrian Six Five Five , Eva Zero Six Six , Mazoon Two One Five , Oscar Mike Mike Six One One , Austrian Eight Tango Bravo , Turkish Eight Papa Quebec , Air China Five Nine Eight , Elite Jet Four Zero One , Elite Jet Four Zero Three , Victor Charlie Juliett Nine Nine Alpha "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210426_203652.wav",
@@ -4213,19 +4255,20 @@
                 "Emirates Three Two "
             ],
             "short_runway": [
-                "31",
-                "04"
+                "04",
+                "31"
             ],
             "long_runway": [
-                "zero four",
-                "three one"
+                "three one",
+                "zero four"
             ],
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Eurotrans Two One, One Three Juliett, Emirates Three Two , Ethiopian Seven Two Five , Srilankan Five Zero Four , Etihad Zero Five Four ",
-        "prompt_fullts_5B": "Fedex Five One One Two , Srilankan Five Zero Four , Etihad Zero Five Four , Emirates Three Two , Eurotrans One Three Juliett ",
-        "prompt_fullts_50B": "Srilankan Five Zero Four , Austrian Six Four One , Ethiopian Seven Two Five , Eurotrans One Three Juliett , Etihad Zero Five Four , Fedex Five One One Two , Emirates Three Two "
+        "prompt_fullts_AG": "Eurotrans Two One, One Three Juliett",
+        "prompt_fullts_AG_4B": "Eurotrans Two One, One Three Juliett, Austrian Six Four One , Ethiopian Seven Two Five , Srilankan Five Zero Four , Fedex Five One One Two ",
+        "prompt_fullts_5B": "Ethiopian Seven Two Five , Eurotrans One Three Juliett , Fedex Five One One Two , Etihad Zero Five Four , Emirates Three Two ",
+        "prompt_fullts_50B": "Eurotrans One Three Juliett , Etihad Zero Five Four , Fedex Five One One Two , Emirates Three Two , Ethiopian Seven Two Five , Srilankan Five Zero Four , Austrian Six Four One "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210502_141218.wav",
@@ -4391,9 +4434,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Tatra Six One Three, Six One Three, Tango Tango Juliett Six One Three , Austrian Six Mike Alpha , Qatari One Three Hotel Foxtrot , Austrian Six Eight Four Alpha ",
-        "prompt_fullts_5B": "Wizzair Five Three Seven Nine , Austrian Four Two Six , Silk West Two Eight Four , Austrian Eight Five Eight , Austrian Five Victor Golf ",
-        "prompt_fullts_50B": "Austrian Eight Three Zero , Qatari Nine Golf Alpha , Austrian Seven Hotel November , Etihad Two Zero , November Five Nine Seven Delta X-ray , Austrian Seven Three Two , Echo Lima Golf Five Two Alpha , Wizzair Five Three Seven Nine , Austrian Seven Seven Kilo Tango , Silk West Two Eight Four , Oscar Echo Hotel Echo Yankee , Elite Jet Four Zero Four , Juliett Sierra Hotel Four Zero Zero , Austrian Four Six , Austrian Seven Kilo Sierra , Austrian Seven Golf Tango , Austrian Six Five Six , Qatari One Three Hotel Foxtrot , Turkish Nine Eight Uniform , Austrian Six Mike Alpha , Yankee Uniform Papa November Kilo , Tango Tango Juliett Six One Three , Austrian Seven Nine Two , Austrian Seven Mike Delta , Koreanair Five Six Seven , Austrian Four Two Six , Austrian Eight One Zero Lima , Austrian Eight Zulu , Austrian Six Eight Four Alpha , Austrian Eight Mike Sierra , Austrian Seven Eight Juliett , Qatari Seven Six Golf Kilo , Eurowings Eight Zero Yankee , Austrian Eight Zero November , Austrian Eight Five Eight , Austrian Five Victor Golf , Austrian Six Six Juliett Tango , Austrian Six Zero Two , Sunshine Tours Zero Zero Three , Emirates One Six Two , Fraction Three Seven Four Golf , Austrian Seven Nine Lima Golf , Austrian Nine Golf Romeo , Emirates One Eight "
+        "prompt_fullts_AG": "Tatra Six One Three, Six One Three",
+        "prompt_fullts_AG_4B": "Tatra Six One Three, Six One Three, Austrian Eight Three Zero , Austrian Eight Five Eight , Austrian Six Zero Two , Yankee Uniform Papa November Kilo ",
+        "prompt_fullts_5B": "Austrian Eight Zulu , Austrian Seven Seven Kilo Tango , Elite Jet Four Zero Four , Austrian Seven Nine Lima Golf , Austrian Five Victor Golf ",
+        "prompt_fullts_50B": "Wizzair Five Three Seven Nine , Sunshine Tours Zero Zero Three , Austrian Seven Golf Tango , Austrian Six Zero Two , Austrian Six Mike Alpha , Austrian Seven Nine Two , Emirates One Six Two , Emirates One Eight , Austrian Seven Hotel November , Tango Tango Juliett Six One Three , Qatari One Three Hotel Foxtrot , Juliett Sierra Hotel Four Zero Zero , Austrian Six Five Six , Austrian Seven Kilo Sierra , Echo Lima Golf Five Two Alpha , Austrian Eight One Zero Lima , Austrian Eight Zulu , November Five Nine Seven Delta X-ray , Turkish Nine Eight Uniform , Elite Jet Four Zero Four , Austrian Six Eight Four Alpha , Austrian Seven Mike Delta , Qatari Nine Golf Alpha , Austrian Nine Golf Romeo , Austrian Four Six , Austrian Seven Eight Juliett , Austrian Eight Mike Sierra , Austrian Eight Zero November , Yankee Uniform Papa November Kilo , Austrian Six Six Juliett Tango , Austrian Seven Nine Lima Golf , Austrian Four Two Six , Austrian Seven Three Two , Eurowings Eight Zero Yankee , Austrian Eight Five Eight , Etihad Two Zero , Oscar Echo Hotel Echo Yankee , Austrian Eight Three Zero , Silk West Two Eight Four , Koreanair Five Six Seven , Fraction Three Seven Four Golf , Austrian Seven Seven Kilo Tango , Qatari Seven Six Golf Kilo , Austrian Five Victor Golf "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_202731.wav",
@@ -4481,9 +4525,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Mike Echo Lima Echo, Austrian Five November Alpha , Austrian Six Juliett Mike , Emirates Four , Austrian One Seven Two ",
-        "prompt_fullts_5B": "Austrian Six Juliett Mike , Austrian One Seven Two , Eurotrans One Three Juliett , Ryan Two Hotel Victor , Fedex Five One One Two ",
-        "prompt_fullts_50B": "Ryan Two Hotel Victor , Austrian Six Juliett Mike , KLM Two Five Foxtrot , Austrian Five November Alpha , Austrian Three Sierra Victor , Eurotrans One Three Juliett , Austrian One Seven Two , Fedex Five One One Two , Austrian One Two Six , Emirates Four , Austrian Three November Charlie , Ethiopian Seven Two Five "
+        "prompt_fullts_AG": "Oscar Mike Echo Lima Echo",
+        "prompt_fullts_AG_4B": "Oscar Mike Echo Lima Echo, Ethiopian Seven Two Five , Ryan Two Hotel Victor , Austrian Three November Charlie , Austrian One Two Six ",
+        "prompt_fullts_5B": "Emirates Four , Ryan Two Hotel Victor , Fedex Five One One Two , Ethiopian Seven Two Five , Austrian One Two Six ",
+        "prompt_fullts_50B": "Ethiopian Seven Two Five , Austrian One Seven Two , Ryan Two Hotel Victor , Fedex Five One One Two , Austrian One Two Six , Emirates Four , Austrian Three November Charlie , KLM Two Five Foxtrot , Austrian Three Sierra Victor , Eurotrans One Three Juliett , Austrian Six Juliett Mike , Austrian Five November Alpha "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_104342.wav",
@@ -4593,9 +4638,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Austrian One Four One One, Tango Tango Juliett Six One Three , Tango Tango Juliett Six Zero Three , Ryanair Two Hotel Victor , Turkish Eight Papa Quebec ",
-        "prompt_fullts_5B": "Oscar Mike Echo Sierra Bravo , Elite Jet Eight Zero One , Tango Tango Juliett Six Zero Three , Emirates Nine Nine Two Zero , Slok Gambia Oscar Lima ",
-        "prompt_fullts_50B": "Aeroflot Two Six One One , Tango Tango Juliett Six Zero Three , Air China Five Nine Eight , Slok Gambia Oscar Lima , Ryanair Five Seven Foxtrot Alpha , Emirates One Two Seven , Yankee Uniform Romeo Delta Alpha , Elite Jet Eight Zero One , Qatari One Romeo Alpha , Kilo Alpha Yankee Five Two , Sunturk Nine Zero One , Quebec November Romeo Two Five Bravo , Austrian Six One Uniform Kilo , Oscar Mike Echo Sierra Alpha , Turkish Eight Papa Quebec , Tango Tango Juliett Three One Six Alpha , Oscar Mike Echo Sierra Bravo , Ryanair Two Hotel Victor , Mike Oscar Zulu Three Three One , Tango Tango Juliett Six One Three , Sierra Pacific Romeo Kilo , Austrian Seven Victor Romeo , Emirates Nine Nine Two Zero "
+        "prompt_fullts_AG": "Austrian One Four One One",
+        "prompt_fullts_AG_4B": "Austrian One Four One One, Turkish Eight Papa Quebec , Qatari One Romeo Alpha , Sierra Pacific Romeo Kilo , Austrian Seven Victor Romeo ",
+        "prompt_fullts_5B": "Ryanair Two Hotel Victor , Austrian Six One Uniform Kilo , Oscar Mike Echo Sierra Bravo , Quebec November Romeo Two Five Bravo , Tango Tango Juliett Six One Three ",
+        "prompt_fullts_50B": "Qatari One Romeo Alpha , Tango Tango Juliett Six Zero Three , Oscar Mike Echo Sierra Bravo , Oscar Mike Echo Sierra Alpha , Emirates One Two Seven , Air China Five Nine Eight , Sunturk Nine Zero One , Tango Tango Juliett Three One Six Alpha , Elite Jet Eight Zero One , Ryanair Five Seven Foxtrot Alpha , Slok Gambia Oscar Lima , Turkish Eight Papa Quebec , Quebec November Romeo Two Five Bravo , Mike Oscar Zulu Three Three One , Kilo Alpha Yankee Five Two , Austrian Six One Uniform Kilo , Yankee Uniform Romeo Delta Alpha , Emirates Nine Nine Two Zero , Ryanair Two Hotel Victor , Tango Tango Juliett Six One Three , Austrian Seven Victor Romeo , Aeroflot Two Six One One , Sierra Pacific Romeo Kilo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210503_203710.wav",
@@ -4683,9 +4729,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Mike Echo Lima Echo, Austrian Six Juliett Mike , Austrian One Two Six , Austrian One Seven Two , Emirates Four ",
-        "prompt_fullts_5B": "Austrian Three November Charlie , Austrian Three Sierra Victor , Ryan Two Hotel Victor , Austrian Six Juliett Mike , Austrian One Two Six ",
-        "prompt_fullts_50B": "Austrian Six Juliett Mike , Eurotrans One Three Juliett , Fedex Five One One Two , Austrian One Seven Two , Austrian Five November Alpha , Austrian One Two Six , Emirates Four , Austrian Three Sierra Victor , Ryan Two Hotel Victor , Austrian Three November Charlie , Ethiopian Seven Two Five , KLM Two Five Foxtrot "
+        "prompt_fullts_AG": "Oscar Mike Echo Lima Echo",
+        "prompt_fullts_AG_4B": "Oscar Mike Echo Lima Echo, Austrian Six Juliett Mike , Eurotrans One Three Juliett , Ethiopian Seven Two Five , Austrian Three November Charlie ",
+        "prompt_fullts_5B": "Eurotrans One Three Juliett , Austrian One Two Six , KLM Two Five Foxtrot , Austrian Five November Alpha , Fedex Five One One Two ",
+        "prompt_fullts_50B": "Fedex Five One One Two , Austrian One Seven Two , Emirates Four , Austrian Five November Alpha , Austrian Three Sierra Victor , Austrian Three November Charlie , Ryan Two Hotel Victor , Austrian One Two Six , Eurotrans One Three Juliett , Austrian Six Juliett Mike , KLM Two Five Foxtrot , Ethiopian Seven Two Five "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210505_224858.wav",
@@ -4763,9 +4810,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Topjet [hes] Seven Zero Four, Eurotrans Five Three Three Four , Eurotrans Five Three Three Five , Singapore Three One Nine , Elite Jet Seven Zero Four ",
-        "prompt_fullts_5B": "Eurotrans Five Three Three Five , Singapore Three One Nine , Eurotrans Five Three Three Four , Eurotrans One Three Juliett , Elite Jet Seven Zero Four ",
-        "prompt_fullts_50B": "Eurotrans One Three Juliett , Elite Jet Seven Zero Four , Singapore Three One Nine , Eurotrans Five Three Three Four , Eurotrans Five Three Three Five "
+        "prompt_fullts_AG": "Topjet [hes] Seven Zero Four",
+        "prompt_fullts_AG_4B": "Topjet [hes] Seven Zero Four, Eurotrans Five Three Three Five , Eurotrans One Three Juliett , Elite Jet Seven Zero Four , Eurotrans Five Three Three Four ",
+        "prompt_fullts_5B": "Eurotrans Five Three Three Four , Eurotrans Five Three Three Five , Singapore Three One Nine , Elite Jet Seven Zero Four , Eurotrans One Three Juliett ",
+        "prompt_fullts_50B": "Eurotrans Five Three Three Four , Elite Jet Seven Zero Four , Eurotrans Five Three Three Five , Singapore Three One Nine , Eurotrans One Three Juliett "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210504_192342.wav",
@@ -4849,9 +4897,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Oscar Kilo Romeo Lima Victor, Oscar Kilo Romeo Lima Victor , Blue Sky Hotel Tango , Austrian Seven Papa Kilo , Bair Nine Four Two ",
-        "prompt_fullts_5B": "Eurotrans Nine Six One , Blue Sky Hotel Tango , Emirates Two Zero , Eurotrans One Three Juliett , Austrian Six Four One ",
-        "prompt_fullts_50B": "Blue Sky Hotel Tango , Oscar Kilo Romeo Lima Victor , Fedex Five One One Two , Austrian Seven Papa Kilo , Emirates Two Zero , Eurotrans One Three Juliett , Eurotrans Nine Six One , Austrian Six Four One , Golf Delta Mike Alpha Zulu , Bair Nine Four Two "
+        "prompt_fullts_AG": "Oscar Kilo Romeo Lima Victor",
+        "prompt_fullts_AG_4B": "Oscar Kilo Romeo Lima Victor, Austrian Six Four One , Fedex Five One One Two , Blue Sky Hotel Tango , Emirates Two Zero ",
+        "prompt_fullts_5B": "Bair Nine Four Two , Eurotrans One Three Juliett , Emirates Two Zero , Fedex Five One One Two , Austrian Seven Papa Kilo ",
+        "prompt_fullts_50B": "Fedex Five One One Two , Austrian Seven Papa Kilo , Golf Delta Mike Alpha Zulu , Austrian Six Four One , Eurotrans One Three Juliett , Emirates Two Zero , Blue Sky Hotel Tango , Bair Nine Four Two , Oscar Kilo Romeo Lima Victor , Eurotrans Nine Six One "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210501_115915.wav",
@@ -4947,9 +4996,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": ", Emirates Two Zero Two , Austrian Eight Tango Bravo , Oscar Mike Mike Six Zero Five , Oscar Mike Echo Sierra Bravo ",
-        "prompt_fullts_5B": "Iranair Seven One Six , Belarus Avia Eight Seven Zero , Oscar Mike Charlie Mike Juliett , Mazoon Two One Five , Oscar Kilo Romeo Delta Sierra ",
-        "prompt_fullts_50B": "Belarus Avia Eight Seven Zero , Eva Zero Six Six , Etihad Nine One Three , Oscar Mike Mike Six Zero Five , Sunturk Seven Four Echo , Arcus Air Seven One Bravo , Oscar Mike Echo Sierra Bravo , Turkish Two Bravo Foxtrot , Emirates Two Zero Two , Oscar Mike Charlie India Alpha , Iranair Seven One Six , Austrian Eight Tango Bravo , Sunturk Five Three X-ray , Oscar Mike Echo Sierra Alpha , Oscar Mike Charlie Mike Juliett , Mazoon Two One Five , Oscar Kilo Romeo Delta Sierra , Orion Charter Tango Alpha , Echo Lima Golf Five Two Alpha , Wizzair Six Six Tango X-ray , Austrian Seven Nine One "
+        "prompt_fullts_AG": "",
+        "prompt_fullts_AG_4B": ", Sunturk Five Three X-ray , Emirates Two Zero Two , Arcus Air Seven One Bravo , Oscar Kilo Romeo Delta Sierra ",
+        "prompt_fullts_5B": "Turkish Two Bravo Foxtrot , Sunturk Seven Four Echo , Mazoon Two One Five , Sunturk Five Three X-ray , Oscar Mike Echo Sierra Alpha ",
+        "prompt_fullts_50B": "Oscar Mike Mike Six Zero Five , Oscar Mike Echo Sierra Bravo , Eva Zero Six Six , Emirates Two Zero Two , Austrian Seven Nine One , Etihad Nine One Three , Austrian Eight Tango Bravo , Oscar Mike Charlie Mike Juliett , Oscar Kilo Romeo Delta Sierra , Sunturk Five Three X-ray , Arcus Air Seven One Bravo , Iranair Seven One Six , Oscar Mike Echo Sierra Alpha , Mazoon Two One Five , Echo Lima Golf Five Two Alpha , Wizzair Six Six Tango X-ray , Oscar Mike Charlie India Alpha , Sunturk Seven Four Echo , Belarus Avia Eight Seven Zero , Orion Charter Tango Alpha , Turkish Two Bravo Foxtrot "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210425_120446.wav",
@@ -5067,9 +5117,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Slovak Government Zero Zero Four, Turkish Nine Delta Whiskey , Emirates Nine Two Five Seven , Austrian Six One Uniform Kilo , Austrian Six Five Five ",
-        "prompt_fullts_5B": "Air China Five Nine Eight , Aeroflot Two Four Zero Eight , Austrian Seven Nine One , Juliett Mike Lima One Zero Zero , Alpine Eight Three Bravo Delta ",
-        "prompt_fullts_50B": "Turkish Nine Delta Whiskey , Galileo Four Six One One , Wizzair One Five One Eight , Austrian Six One Uniform Kilo , Oscar Mike Echo Sierra Alpha , Siberian Airlines Three Five Four Two , Austrian Six Five Five , Lion King Echo Seven Four , Oscar Mike Echo Sierra Bravo , Austrian Seven Victor Romeo , Slovak Government Zero Zero Four , Emirates Nine Three Three Zero , Juliett Mike Lima One Zero Zero , Oscar Mike Mike Two Three Three , Elite Jet Two Zero Two , Austrian Seven Nine One , Oscar Kilo Romeo Sierra Echo , Alpine Eight Three Bravo Delta , Ryanair Three Four Quebec Lima , Sunexpress Seven Uniform , Ryanair Five Three Victor Mike , Aeroflot Two Four Zero Eight , Emirates Nine Two Five Seven , Air China Five Nine Eight , Air France Three Three Golf X-ray "
+        "prompt_fullts_AG": "Slovak Government Zero Zero Four",
+        "prompt_fullts_AG_4B": "Slovak Government Zero Zero Four, Siberian Airlines Three Five Four Two , Emirates Nine Two Five Seven , Wizzair One Five One Eight , Slovak Government Zero Zero Four ",
+        "prompt_fullts_5B": "Emirates Nine Three Three Zero , Emirates Nine Two Five Seven , Lion King Echo Seven Four , Galileo Four Six One One , Elite Jet Two Zero Two ",
+        "prompt_fullts_50B": "Emirates Nine Three Three Zero , Austrian Six Five Five , Oscar Mike Echo Sierra Bravo , Lion King Echo Seven Four , Aeroflot Two Four Zero Eight , Air France Three Three Golf X-ray , Air China Five Nine Eight , Austrian Seven Nine One , Austrian Six One Uniform Kilo , Oscar Mike Mike Two Three Three , Sunexpress Seven Uniform , Slovak Government Zero Zero Four , Juliett Mike Lima One Zero Zero , Oscar Mike Echo Sierra Alpha , Oscar Kilo Romeo Sierra Echo , Emirates Nine Two Five Seven , Siberian Airlines Three Five Four Two , Austrian Seven Victor Romeo , Turkish Nine Delta Whiskey , Alpine Eight Three Bravo Delta , Ryanair Three Four Quebec Lima , Elite Jet Two Zero Two , Ryanair Five Three Victor Mike , Wizzair One Five One Eight , Galileo Four Six One One "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210424_140755.wav",
@@ -5205,9 +5256,10 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Stefanik Tower, Top Jet Seven Zero One, Top Jet Seven Zero One Stefanik Tower, Bair Seven Five One , Siberian Airlines Three Five Eight Six , German Cargo Five One Three , Oscar Mike Mike Two One Five ",
-        "prompt_fullts_5B": "Egyptair Seven Nine Seven , Austrian Seven Nine Two , Oscar Mike Mike Two One Five , Slovak Government Zero Six Alpha , Alpha X-ray Alpha Two Two Two ",
-        "prompt_fullts_50B": "Siberian Airlines Three Five Eight Six , Kilo Alpha Yankee Five Two , Oscar Mike Mike Two Five One , Oscar Mike Echo Sierra Bravo , Austrian Seven Hotel November , Alpha X-ray Alpha Two Two Two , KLM Two Three Alpha , Austrian Three Eight Two , Austrian Seven Nine Two , Oscar Kilo Zulu Uniform Alpha Seven Five , Sunturk Seven Four Echo , Wizzair Six Six Tango X-ray , Egyptair Seven Nine Seven , Slovak Government Zero Six Bravo , Bair Nine Four One , Oscar Mike Mike Two One Five , Bair Seven Five One , Elite Jet Eight Zero Two , Slovak Government Zero Six Alpha , Wizzair One Six Seven Seven , Oscar Mike Mike Six Zero Five , Turkish Nine Echo Quebec , Elite Jet Seven Zero One , Austrian Seven Nine Lima Golf , German Cargo Five One Three , Wizz Go Three Eight One Five "
+        "prompt_fullts_AG": "Stefanik Tower, Top Jet Seven Zero One, Top Jet Seven Zero One Stefanik Tower",
+        "prompt_fullts_AG_4B": "Stefanik Tower, Top Jet Seven Zero One, Top Jet Seven Zero One Stefanik Tower, Egyptair Seven Nine Seven , Slovak Government Zero Six Alpha , Austrian Three Eight Two , Kilo Alpha Yankee Five Two ",
+        "prompt_fullts_5B": "Turkish Nine Echo Quebec , Wizzair Six Six Tango X-ray , Austrian Three Eight Two , Austrian Seven Hotel November , Oscar Kilo Zulu Uniform Alpha Seven Five ",
+        "prompt_fullts_50B": "Austrian Seven Nine Two , German Cargo Five One Three , Siberian Airlines Three Five Eight Six , KLM Two Three Alpha , Oscar Kilo Zulu Uniform Alpha Seven Five , Bair Seven Five One , Alpha X-ray Alpha Two Two Two , Bair Nine Four One , Kilo Alpha Yankee Five Two , Austrian Three Eight Two , Wizzair One Six Seven Seven , Oscar Mike Mike Two Five One , Wizzair Six Six Tango X-ray , Elite Jet Seven Zero One , Sunturk Seven Four Echo , Egyptair Seven Nine Seven , Austrian Seven Nine Lima Golf , Austrian Seven Hotel November , Wizz Go Three Eight One Five , Oscar Mike Mike Two One Five , Oscar Mike Mike Six Zero Five , Slovak Government Zero Six Bravo , Turkish Nine Echo Quebec , Slovak Government Zero Six Alpha , Elite Jet Eight Zero Two , Oscar Mike Echo Sierra Bravo "
     },
     {
         "audio": "ATCO2-ASRdataset-v1_final/DATA/LZIB_STEFANIK_Tower_118_3MHz_20210430_150028.wav",
@@ -5333,8 +5385,9 @@
             "short_taxiway": [],
             "long_taxiway": []
         },
-        "prompt_fullts_1G_4B": "Wizzair Six Two Seven Six, Qatari One Six Papa , Etihad Two Zero , Austrian Seven Nine Lima Golf , Mazoon Six Six Six ",
-        "prompt_fullts_5B": "Austrian Six Six Juliett Tango , Austrian Six Charlie Delta , Christophorus Oscar Golf , Air Hamburg Six Nine Two Lima , Silver Arrows Four Three Lima Delta ",
-        "prompt_fullts_50B": "Emirates One Two Eight , Mazoon Six Six Six , Mitavia Nine Two Three Seven , Mambra Uniform Charlie , Qatari One Six Papa , Austrian Six Six Juliett Tango , Oscar Kilo Romeo Delta Sierra , Siberian Airlines Three Six Five Zero , Emirates Nine Seven Four Four , Belarus Avia Eight Eight Zero , Austrian Four Six , Wizzair Six Two Seven Five , Air Hamburg Six Nine Two Lima , Silver Arrows Four Three Lima Delta , Siberian Airlines Three Six Four Two , Austrian Seven Nine Lima Golf , Austrian Six Charlie Delta , Austrian Eight Mike Sierra , Christophorus Oscar Golf , Echo Lima Golf Five Two Alpha , Austrian Eight Five Eight , Tango Tango Juliett Six One Three , Austrian Eight One Zero Lima , Wizzair Six Two Seven Six , Austrian Eight Zero November , Austrian Seven Nine Two , Tango Tango Juliett Six Zero Three , Etihad Two Zero , Mazoon Four Two Four , Austrian Seven Kilo Sierra , Romeo Alpha Zero Two Eight Five Seven "
+        "prompt_fullts_AG": "Wizzair Six Two Seven Six",
+        "prompt_fullts_AG_4B": "Wizzair Six Two Seven Six, Echo Lima Golf Five Two Alpha , Austrian Eight One Zero Lima , Austrian Eight Zero November , Romeo Alpha Zero Two Eight Five Seven ",
+        "prompt_fullts_5B": "Tango Tango Juliett Six One Three , Austrian Seven Nine Lima Golf , Air Hamburg Six Nine Two Lima , Mazoon Six Six Six , Wizzair Six Two Seven Five ",
+        "prompt_fullts_50B": "Romeo Alpha Zero Two Eight Five Seven , Austrian Eight Zero November , Emirates One Two Eight , Wizzair Six Two Seven Six , Siberian Airlines Three Six Five Zero , Mambra Uniform Charlie , Austrian Six Six Juliett Tango , Austrian Eight Mike Sierra , Mazoon Six Six Six , Austrian Eight Five Eight , Qatari One Six Papa , Tango Tango Juliett Six Zero Three , Wizzair Six Two Seven Five , Austrian Six Charlie Delta , Echo Lima Golf Five Two Alpha , Etihad Two Zero , Mazoon Four Two Four , Air Hamburg Six Nine Two Lima , Silver Arrows Four Three Lima Delta , Emirates Nine Seven Four Four , Mitavia Nine Two Three Seven , Christophorus Oscar Golf , Siberian Airlines Three Six Four Two , Tango Tango Juliett Six One Three , Oscar Kilo Romeo Delta Sierra , Belarus Avia Eight Eight Zero , Austrian Seven Kilo Sierra , Austrian Four Six , Austrian Seven Nine Lima Golf , Austrian Eight One Zero Lima , Austrian Seven Nine Two "
     }
 ]

@@ -229,7 +229,22 @@ def shorten_callsign(match):
             # so we just process the callsign as usual
             return process_tag_content(callsign, 'alphanum').replace(' ','').upper()
 
-def make_shortts(text):
+def shorten_callsign_2(match, info_file_path):
+    if match:
+        match = match.group(1)
+        # remove spaces and normalize the string (hex characters)
+        callsign = re.sub(r'\s+', ' ', normalize('NFC',match)).lower().strip()
+        # shorten the callsign
+        full_vocab = make_info_vocab(info_file_path)
+        if (_key_normalizer(callsign) in full_vocab):
+            shorten_callsign = full_vocab[_key_normalizer(callsign)].replace(' ','').upper()
+            # out['short'].append(full_vocab[_key_normalizer(callsign)].upper())
+        else:
+            # it is not found in the dictionary, so we will process it in shortennign function
+            shorten_callsign = process_callsign_with_vocabs(callsign).replace(' ','').upper()
+        return shorten_callsign
+        
+def make_shortts(text, info_file_path):
     # first merge all possible tags
     pattern = r'\[\/#(\w+)\]\s*\[#\1\]'
     text = re.sub(pattern, ' ', text)
@@ -239,6 +254,7 @@ def make_shortts(text):
     # go through all callsigns and try to find the match
     pattern= r'\[#callsign\](.*?)\[/#callsign\]'
     # find all callsigns
+    # text=re.sub(pattern, lambda match: shorten_callsign_2(match, info_file_path), text)
     text=re.sub(pattern, shorten_callsign, text)
     
     # find all value tags
@@ -265,7 +281,7 @@ def run_xmlfile_process(xml_data, info_file_path,seg_idx=None):
             continue
         
         # make new short transcription
-        shortts = make_shortts(segment.find("text").text)
+        shortts = make_shortts(segment.find("text").text, info_file_path)
         if (shortts.strip() != ""):
             out['short_ts'] += shortts + '\n'
         
@@ -488,11 +504,13 @@ if __name__ == '__main__':
                 len_long_callsign = len(out['long_callsigns'].keys())
                 
                 # build some prompts, that can be used during training
-                # this prompt is using 1 correct callsign and 4 incorrect callsigns
-                meta['prompt_fullts_1G_4B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
+                # this prompts is using all correct callsign and all correct + 4 incorrect callsigns
+                meta['prompt_fullts_AG'] = ', '.join(out['long_callsigns'].keys())
+                meta['prompt_fullts_AG_4B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
                     ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],4))
                 # this prompt uses 5 incorrect callsigns
                 meta['prompt_fullts_5B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],5))
+                # this prompt uses 50 incorrect callsigns
                 meta['prompt_fullts_50B'] = ', '.join(sample_random_callsigns(meta['prompt-data']['nearby_long_callsigns'],50))
                 
                 # remove the prompt from the metadata (because in the old version it was there with the content sorted above)
