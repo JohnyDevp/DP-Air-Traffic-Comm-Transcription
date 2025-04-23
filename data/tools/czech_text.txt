@@ -1,0 +1,68 @@
+ V 70. letech minulého století chtěly Spojené státy využít silného, atomovou bombou iniciovaného rentgenového laseru na obranu proti balistickým střelám. Projekt Excalibur nebyl nikdy dokončen a ještě dnes nám připadají úvahy o velkých výkonných laserových zařízeních jako z vědecko-fantastického románu. Právem? Nedávno špičkové laserové centrum HiLASE stalo místem setkání vědců z celého světa, aby diskutovali technologické možnosti využití silných laserových zdrojů pro aplikace budoucnosti.
+
+Americký kosmolog Philip Lubin představil a detailně popsal technologická úskalí i výhody konceptu flotily stovek malých satelitů o hmotnosti kolem 10 g, které by mohly působením pole vláknových laserů o ploše kolem 900 m2 a celkovém výkonu kolem 100 GW dosáhnout během několika minut relativistických rychlostí. Z Lubinovy přednášky vyplynulo zajímavé zjištění: Tato mezihvězdná mise by se dala již za pomoci současných technologií připravit dvou dekád. Po asi 20 letech technologického vývoje, jehož kroky jsou podle Lubina zcela jasně vymezeny, bychom mohli flotilu satelitů vyslat k nejbližším hvězdám systému Alfa Centauri. Po dalších asi 25 letech bychom měli k dispozici první snímky a měření. Odpovězme si však sami, jestli jsou toho lidé současnosti schopni. Možná, že naši dědové létající s tehdejší (v porovnání s dneškem) relativně primitivní technikou na Měsíc by se takové výzvy nebáli.
+
+Motorem současnosti je globalizace a dobrý byznys. I v této oblasti však mají výkonové laserové zdroje co nabídnout. Často se diskutuje o vyčerpání nerostného bohatství na Zemi. Mnozí dobře vědí o problému s ropou či uhlím, ne tolik se ale hovoří o jiné plíživé hrozbě: vyčerpání zásob rud mědi, zinku a zejména pak vzácných kovů například pro elektroniku či optiku. Čeho se na Zemi nedostává, to je ve vesmíru celkem běžné. V pásu asteroidů se zřejmě nachází nepřeberná pokladnice rud. Ale kde je máme v oblasti někde mezi 2,1 a 3,3 AU hledat? Na tuto otázku by možná mohla odpovědět flotila sond určených pro prospekci nerostného bohatství. Přistávat na každém asteroidu družice nemohou. Mohly by však pomocí silného laserového zdroje ablovat jejich povrch a spektrometrem detekovat emisní linie vyzařované atomy kovů v plazmatu vzniklého odpařením povrchu studovaného tělesa. Rychlé, relativně levné a efektivní.
+
+Od konceptu k realitě však vede dlouhá cesta. Jedno z úskalí takové mise se snaží vyřešit také čeští vědci z Ústavu fyzikální chemie J. Heyrovského pod vedením Martina Feruse a Miroslava Krůse z Ústavu fyziky plazmatu. Badatelé testují podmínky a parametry ablace reálných vzorků meteoritů pomocí výkonového sálového laseru PALS. Jaký laser bude skutečně ten nejlepší pro odpaření velké masy povrchu? Liší se nějak působení laserů na horniny a minerály běžné v meziplanetárním prostoru od nerostů na Zemi? Češi na workshopu představili prvotní závěry svých výzkumů provedených pomocí dvou extrémně výkonných českých laserů: PALSu (Prague Asterix Lasers System) a také interakční testy určené pro mechanické působení na centru HiLASE.
+
+Srovnání s malými laboratorními zdroji jasně ukazuje, že výkonné lasery jsou pro taková měření velmi vhodné, protože odpaří velkou část povrchu a velký výkon vede k vyzáření velmi širokého spektra atomárních čar. Kromě toho se ukazuje, že enormní výkon těchto laserů dovoluje studovat přírodní jevy, které se v laboratoři za kontrolovaných podmínek jinak velmi obtížně napodobují, ať už se jedná o dopad asteroidu na povrch planety či jen „pouhou“ padající hvězdu, tedy meteor.
+
+ Velký laser na palubě satelitů, na odvrácené straně Měsíce či na Zemi by však nemusel sloužit jen k cestování ke hvězdám nebo prospekci nerostů na asteroidech. Možná jsme žili v blažené nevědomosti, ale rozvoj současných observačních technologií odhalil, jak často se kolem naší planety prožene asteroid pocházející z naší sluneční soustavy, ale i z mezihvězdných dálav. Mnohé z blízko zemních objektů velmi dobře známe – těch tzv. nebezpečných jsou evidovány tisíce. Ochranu před nimi by mohly poskytnout právě pole výkonových laserů.
+
+Vědci na setkání představili celou řadu konceptů a také celou řadu technických problémů, od koncentrování a slučování svazku až po problematiku mezinárodního práva. Je vysoce pravděpodobné, že i kdybychom takový laser měli, pravděpodobně by fungoval na principu postupného ablování povrchu spojeného s odkloněním dráhy. Například těleso o průměru 200 m by se podařilo laserem o výkonu 500 kW odklonit během 1 roku. Současná raketa Ariane 5 by mohla do vesmíru vynést „pouze“ satelit vybavený laserovým polem s výkonem 300 kW napájeného solárním článkem o průměru 25 m. Tento laser by asteroid odklonil za asi 3 roky. Je tedy jasné, že obrovské těleso řítící se z kosmických dálav odhalené třeba jen měsíc před dopadem tak s největší pravděpodobností nezničíme ani v příštích dekád. Lidem tak nezbude nic jiného než spoléhat na štěstí, které je zatím provází celých 200 000 let existence Homo sapiens.  
+
+Obecně vzato, šíření filmové gramotnosti na základních a středních školách by mělo být postaveno na přirozené schopnosti žáků vyjadřovat své vidění a cítění tvůrčím způsobem, v našem případě se bude jednat o filmovou řeč. Jednotlivé žánry (animovaný film, hraný film, dokumentární film a reportáž) mají jedno společné: vyjadřování pomocí obrazu a zvuku na přenosném médiu, mimo reálný čas. Je potřeba uvědomit si specifické možnosti filmové tvorby – především využití detailu. Žáci při své práci často napodobují televizní pořady. Tato práce je však velmi vzdálená od tvorby filmové. Tady je důležité podat vysvětlení pedagogy – v čem spočívá originalita filmu.
+
+Televize – její řeč je postavena na potřebě zaplnit velký časový úsek. Dlouhé záběry převážně v celku doprovázené neustálým komentováním.
+
+Film – vyjadřovací schopnosti jsou postaveny na citlivé montáži jednotlivých vyjadřovacích prostředků – obraz a jeho zpracování (využívání detailu jako přímé řeči) a zvuk sloužící k podpoře obrazu.
+
+Myslím, že právě ujasnění si rozdílu mezi televizí a filmem, by mělo být úvodem k samotné výuce filmu.
+
+Je důležité, aby se žáci aktivně zúčastňovali každé části filmové výchovy, zpočátku jako ukázkové figuríny. Je důležité vyzývat je k dialogu, jakési besedě. Právě citlivá součinnost mezi pedagogem a žáky je základní podmínkou úspěšné tvorby, i když není vždy jednoduché připustit, že hlavním tvůrcem je žák. Úspěšnost filmové výchovy je založena na citlivém přístupu učitele, na jeho toleranci a uznání mladého názoru, neboť právě tato dětská myšlenka je základním kamenem uměleckého díla. Vyučující pak zastává funkci poradce především v otázkách technických. Právě technické znalosti jsou nezbytné u filmové tvorby a tady se nabízí přistoupit k filmové historii – vysvětlení černé komory (kamera obskura), způsob zachytávání pohybu – kamera nahrazuje lidské oko pomocí rotační závěrky. Vysvětlit, proč při projekci filmu (videa) nevidíme pouze rozmazané šmouhy.
+
+Od technické historie se pedagog dostane k filmovým dějinám. Určitě není vhodné zabíhat do detailů formou historických dat, ale spíše upřednostnit ty tvůrce a filmy, které přinesly revoluční poznání v oblasti filmové řeči. Např. Příjezd vlaku do stanice (bratři Lumiérů) je jeden z prvních filmů, který vlastně bezděky ukázal všechny základní velikosti záběrů – od celku až po detail! Jiný vhodný příklad je film Křižník Poťomkin jednoho z prvních filmových režisérů S. Ejzenštejna, který ukazuje obrovský význam detailu! Tady je vhodné přirovnání filmu k divadlu:
+
+    divadelní představení probíhá v reálném čase;
+    divadlo nemá takový prostředek, jakým je detail, má pouze celek;
+
+    film pracuje s časem podle potřeby a je zaznamenáván na médium
+    film používá různých pohledů a velikostí záběrů jako vyjadřovacích prostředků
+
+Možná se stálé přirovnávání filmu k jiným formám vizuálních umění bude zdát zbytečné, ale právě ujasnění si, co je film a jeho řeč, pomůže žákům od začátku se správně orientovat při tvorbě. Ještě si dovolím poznámku: teorie je velmi důležitá, ale sama o sobě bez praktických ukázek vyprchá! Je na vyučujícím, aby dokázal teorii s praxí propojit. Reagovat na reflexi žáků – využít ji k dokonalejšímu seznámení s danou tematikou. Stálá spolupráce mezi pedagogem a žákem přináší úžasné výsledky. Samozřejmě, že je důležitý počet žáků, který by neměl překročit 12 posluchačů.
+
+Zatím jsme se zabývali filmovou řečí, která platí pro všechny žánry a je jakýmsi úvodem do samotné filmové tvorby. Další krok je soustředit se postupně na jednotlivé žánry a vyučovat je samostatně, protože každý má své specifické možnosti.
+Animovaný film
+
+Výtvarná složka je u animovaného filmu základní. Vytváří charakter prostředí, jeho atmosféru – předurčení celého filmu. Aktéři (kreslení nebo loutky) se vyjadřují především pohybem – jeho dynamikou a mírou stylizace. Animovaný film je založen právě na stylizaci! A jako jediný ze všech žánrů nezachytává pohyb, ale časosběrným snímáním pohyb vytváří – oživuje neživé!
+
+Pro praktické ukázky je vhodné využít žáky jako loutky. Žák-loutka musí být "mrtvý" a teprve po zákroku animátora "drží" jednotlivé pohybové fáze. Toto předvádění umožní ukázat rozdíly mezi rychlostmi pohybu, názorně předvede využití fyzikálních zákonů (akce–reakce, setrvačnost, těžiště atd.). V roli loutky i animátora se žáci postupně vystřídají na různých akcích (lomení rukama, chycení se za hlavu, úklona, vyznání lásky – velmi oblíbené a mnoho dalších).
+Hraný film
+
+Mimika a motorika herců je jedním z hlavních vyjadřovacích prostředků. Samozřejmě je důležitá i výtvarná složka, není však dominantní. Hraný film se snímá v reálném čase na médium, které je po zpracování možno používat na různých místech a v různých časech. U hraného filmu je výraznou složkou světlo, které dotváří charakter prostředí i herců. Zvuková složka, pokud se jedná opravdu o hraný film, je pouze doplňková. Tím nechci říci, že podřadná! Naopak – jako vhodný doplněk obrazu vše ještě podtrhne. Filmová hudba je samostatná tvůrčí disciplína a musí být "poslušná" obrazu.
+
+Vzhledem k tomu, že žáci budou své filmy ozvučovat, je i problematika hudby důležitá. Jde především o správné návyky, které by žáci měli získat už na základních školách.
+
+I zde si mohou žáci vyzkoušet různé dějové situace – např. přečtení si smutné, nebo i tragické zprávy a následně adekvátní reakce. Rozhodnout, jak sekvenci rozdělit do jednotlivých záběrů. (Místo kamery poslouží i rámeček z černého papíru o poměru stran 4 : 3.)
+
+Stále je důležité připomínat význam příběhu – námětu – myšlenky. Jít za podstatou a vyhýbat se "omáčce", která je bohužel v televizních seriálech základní.
+Dokumentární film
+
+Mládeží často opomíjený žánr. I zde platí význam námětu – pokud bude svým tématem zajímavý pro dětského diváka, bude i zájmem dětského tvůrce. Dokumentární film se věnuje konkrétní osobě, konkrétnímu případu či události. Tady je komentář důležitý a tvoří rovnocennou složku díla. I žáci určitě mezi sebou najdou zajímavého spolužáka, třeba sportovce, a vyzkoušejí si sled záběrů a jejich velikosti (pomocí rámečku), ale také rozhovor a komentář. Opět je důležité zapojit do akce celou skupinu – výměna rolí i témat.
+
+Je důležité také vysvětlit rozdíl mezi dokumentem a reportáží.
+Reportáž
+
+Zachycuje určitou událost bez zásahu do děje – prostě jen monitoruje a přidává komentář. Tento žánr je předurčen televizní tvorbě, ale i žáci si jej mohou vyzkoušet, například reportáž o školním přeboru v čemkoliv. Tento žánr dává možnost se projevit dětským komentátorům, hlavně těm, kteří se rádi předvádějí, ale v tomto případě to není na škodu.
+
+I tuto činnost lze zkoušet ve třídě bez techniky.
+
+Jednotlivé žánry jsme si představili jaksi "nasucho", ale pro první krůčky filmovou tvorbou je to finančně nenáročné a nezpůsobí to žádné škody a přitom názorně, a doufám i zábavně vysvětlí filmové zákonitosti.
+Výuka animace
+
+Určitě nejbližší tvorbou pro děti je oživování – animování. Vzpomínám si na svá dětská léta, kdy jsme v rámci "výtvarky" kreslili podle modelů třeba jablka. Domnívám se, že dnes je to podobné, ale podobný už nemusí být konec takové hodiny. Může nastoupit oživený příběh – z jablka vykoukne červík a něco zlomyslného provede. To, co provede, je otázkou fantazie každého žáka – pokud nebude opisovat.
+
+Vše se provede následovně:
+
+Každý žák bude mít k dispozici prosvětlovací pult z matného plexiskla s fixačními kolíky.
