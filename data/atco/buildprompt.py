@@ -78,6 +78,7 @@ aviation_map = {
 leave_untouch_words = ["and", "on", "or"]
 
 def parse_forward(words,idx):
+    # word to be parsed
     wtbp = []
     myidx = 0
     while idx + myidx < len(words):
@@ -154,7 +155,9 @@ def process_tag_content(full_ts, what : str ="alphanum",cutoff=None):
                 idx = next_idx
                 continue          
         
-        if bestmatch:
+        # append the bestmatch even itself... but it cannot be just 'point' ... because point can mean 
+        # direction, but it depends on its context, and when it gets here, it means no number is in point's surroundings
+        if bestmatch and not (combined_map[bestmatch[0]] == '.' and current_transcript == ''):
             current_transcript += combined_map[bestmatch[0]]  # Add the matched transcription
             idx += 1
             continue
@@ -282,7 +285,7 @@ def run_xmlfile_process(xml_data, info_file_path,seg_idx=None):
         # make new short transcription
         shortts = make_shortts(segment.find("text").text, info_file_path)
         if (shortts.strip() != ""):
-            out['short_ts'] += shortts + '\n'
+            out['short_ts'] += shortts + ' '
         
         found_tags,num_of_words_in_segment = get_knowledge(segment, info_file_path, count_of_all_previous_words_of_segments)
         
@@ -303,7 +306,7 @@ def run_xmlfile_process(xml_data, info_file_path,seg_idx=None):
                 out[tag] = content
     
     # remove ending new lines
-    out['short_ts'] = out['short_ts'].strip()
+    out['short_ts'] = re.sub(r'\s+',' ',out['short_ts']).strip()
     
     return out
 
@@ -359,7 +362,7 @@ def get_callsigns_from_text(corrected_text_with_tags : str, info_file_path : str
     for it in re.findall(pattern, corrected_text_with_tags):
         
         # append the found callsign to the dictionary, remove multiple spaces and normalize the string (hex characters)
-        callsign = re.sub(r'\s+', ' ', normalize('NFC',it)).strip()
+        callsign = re.sub(r'\s+', ' ', normalize('NFC',it)).strip().lower()
         
         if not callsign in out['long']:
             out['long'][callsign]  = 1
@@ -376,11 +379,11 @@ def get_callsigns_from_text(corrected_text_with_tags : str, info_file_path : str
         # shorten the callsign
         full_vocab = make_info_vocab(info_file_path)
         if (_key_normalizer(callsign) in full_vocab):
-            shorten_callsign = full_vocab[_key_normalizer(callsign)].replace(' ','').upper()
+            shorten_callsign = full_vocab[_key_normalizer(callsign)].replace(' ','').lower()
             # out['short'].append(full_vocab[_key_normalizer(callsign)].upper())
         else:
             # it is not found in the dictionary, so we will process it in shortennign function
-            shorten_callsign = process_callsign_with_vocabs(callsign)
+            shorten_callsign = process_callsign_with_vocabs(callsign).lower()
             
         if not shorten_callsign in out['short']:
             out['short'][shorten_callsign] = 1
@@ -441,24 +444,31 @@ def get_value_from_text(value_sign_word: str, corrected_text_with_tags : str):
     return out
 
 def sample_random_callsigns(set_of_callsigns, n, exclude = []):
-    return random.sample([x for x in set_of_callsigns if x not in exclude], min(n,len(set_of_callsigns)))
+    list_for_sampling = [x for x in set_of_callsigns if x not in exclude]
+    return random.sample(list_for_sampling, min(n,len(list_for_sampling)))
 
 global_vocab : dict =json.load(open('../tools/global_vocab.json'))
-global_vocab_full_callsigns = global_vocab.keys()
-global_vocab_short_callsigns = global_vocab.values()
+global_vocab_full_callsigns = [key.lower() for key in global_vocab.keys()]
+global_vocab_short_callsigns = [val.lower() for val in global_vocab.values()]
 
-def build_bad_full_callsigns(default_set_of_callsigns,n):
-    default_list = sample_random_callsigns(default_set_of_callsigns, n)
+def build_bad_full_callsigns(exclude,default_set_of_callsigns,n):
+    default_list = sample_random_callsigns(default_set_of_callsigns, n, exclude=exclude)
     remaining_n = n - len(default_list)
-    rest_list = sample_random_callsigns(global_vocab_full_callsigns, remaining_n, default_list)
+    rest_list = sample_random_callsigns(global_vocab_full_callsigns, remaining_n, exclude=list(default_list)+list(exclude))
     return default_list + rest_list
 
-def build_bad_short_callsigns(default_set_of_callsigns,n):
-    default_list = sample_random_callsigns(default_set_of_callsigns, n)
+def build_bad_short_callsigns(exclude,default_set_of_callsigns,n):
+    default_list = sample_random_callsigns(default_set_of_callsigns, n,exclude=exclude)
     remaining_n = n - len(default_list)
-    rest_list = sample_random_callsigns(global_vocab_short_callsigns, remaining_n, default_list)
+    rest_list = sample_random_callsigns(global_vocab_short_callsigns, remaining_n, exclude=list(default_list)+list(exclude))
     return default_list + rest_list
 
+random_words_list : list = json.load(open('../tools/random_czech_words.json'))
+def build_random_czech_words_prompt(exclude:str|list[str], n) -> list[str]:
+    if (isinstance(exclude,str)):
+        exclude = exclude.split(' ')
+    return sample_random_callsigns(random_words_list,n,exclude=exclude)
+    
 if __name__ == '__main__':
     METADATA_PATHS = [
         'metadata_en_ruzyne_test.json', 'metadata_en_stefanik_test.json','metadata_en_zurich_test.json',
@@ -503,8 +513,11 @@ if __name__ == '__main__':
                         segidx = int(os.path.basename(meta['audio']).split('segidx')[1].split('_')[0])
                     out = run_xmlfile_process(xml_data, info_file_path, segidx)
                 
-                meta['short_ts'] = out['short_ts']
-                meta['full_ts'] = re.sub(r'\s+',' ',meta['full_ts']).strip() # remove multiple spaces from fullts as a precaution
+                # store a bit updated short_ts, and full_ts with multiple spaces removed
+                # both in lower case
+                meta['short_ts'] = out['short_ts'].lower()
+                meta['full_ts'] = re.sub(r'\s+',' ',meta['full_ts']).strip().lower() # remove multiple spaces from fullts as a precaution
+                
                 meta['prompt-data'] = {
                     'long_callsigns': [{'key':k,'val':v} for k,v in out['long_callsigns'].items()],#out['long_callsigns'],
                     'short_callsigns': [{'key':k,'val':v} for k,v in out['short_callsigns'].items()],#out['short_callsigns'],
@@ -520,28 +533,52 @@ if __name__ == '__main__':
                 len_long_callsign = len(out['long_callsigns'].keys())
                 
                 # BUILD FULLTS PROMPTS
+                list_of_fulcal_for_exclude = [cal.strip().lower() for cal in out['long_callsigns'].keys()]
+                list_of_fulcal_for_bad_fulcal_add = [
+                    re.sub(r'\s+',' ',cal.lower().replace('/ czech', ' ')).strip() for cal in meta['prompt-data']['nearby_long_callsigns']
+                ]
+                
                 # this prompts is using all correct callsign and all correct + 4 incorrect callsigns
                 meta['prompt_fullts_AG'] = ', '.join(out['long_callsigns'].keys())
                 meta['prompt_fullts_AG_4B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
-                    ', '.join(build_bad_full_callsigns(meta['prompt-data']['nearby_long_callsigns'],4))
+                    ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=4))
+                meta['prompt_fullts_AG_50B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
+                    ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=50))
+                meta['prompt_fullts_AG_50CZB'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
+                    ', '.join(build_random_czech_words_prompt(exclude=meta['full_ts'],n=50))
+                meta['prompt_fullts_50CZB'] = ', '.join(build_random_czech_words_prompt(exclude=meta['full_ts'],n=50))
                 # this prompt uses 5 incorrect callsigns
-                meta['prompt_fullts_5B'] = ', '.join(build_bad_full_callsigns(meta['prompt-data']['nearby_long_callsigns'],5))
+                meta['prompt_fullts_5B'] = ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=5))
                 # this prompt uses 50 incorrect callsigns
-                meta['prompt_fullts_50B'] = ', '.join(build_bad_full_callsigns(meta['prompt-data']['nearby_long_callsigns'],50))
+                meta['prompt_fullts_50B'] = ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=50))
                 
                 # BUILD SHORTTS PROMPTS
+                list_of_shortcal_for_exclude = [cal.strip().lower() for cal in out['short_callsigns'].keys()]
+                list_of_shortcal_for_bad_shortcal_add = [
+                    re.sub(r'\s+',' ',cal.lower()).strip() for cal in meta['prompt-data']['nearby_short_callsigns']
+                ]
                 # this prompt uses all correct callsign and all correct + 4 incorrect callsigns
                 meta['prompt_shortts_AG'] = ', '.join(out['short_callsigns'].keys())
                 meta['prompt_shortts_AG_4B'] = ', '.join(out['short_callsigns'].keys()) + ', ' + \
-                    ', '.join(build_bad_short_callsigns(meta['prompt-data']['nearby_short_callsigns'],4))
+                    ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=4))
+                meta['prompt_shortts_AG_50B'] = ', '.join(out['short_callsigns'].keys()) + ', ' + \
+                    ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=50))
+                meta['prompt_shortts_AG_50CZB'] = ', '.join(out['short_callsigns'].keys()) + ', ' + \
+                    ', '.join(build_random_czech_words_prompt(exclude=meta['short_ts'],n=50))
+                meta['prompt_shortts_50CZB'] = ', '.join(build_random_czech_words_prompt(exclude=meta['short_ts'],n=50))
                 # this prompt uses 5 incorrect callsigns
-                meta['prompt_shortts_5B'] = ', '.join(build_bad_short_callsigns(meta['prompt-data']['nearby_short_callsigns'],5))
+                meta['prompt_shortts_5B'] = ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=5))
                 # this prompt uses 50 incorrect callsigns
-                meta['prompt_shortts_50B'] = ', '.join(build_bad_short_callsigns(meta['prompt-data']['nearby_short_callsigns'],50))
+                meta['prompt_shortts_50B'] = ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=50))
                 
                 
                 # remove the prompt from the metadata (because in the old version it was there with the content sorted above)
                 meta.pop('prompt')
+                
+                # convert everything to lower
+                for key in meta:
+                    if (isinstance(meta[key], str) and key != 'audio'):
+                        meta[key] = meta[key].lower()
             
             json.dump(js_file, open(SAVE_FOLDER+file,'w'),indent=4,ensure_ascii=False)
             f.close()
