@@ -1,632 +1,632 @@
 [
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_90.wav",
-        "full_ts": "Foxtrot Mike Delta established on final two six\nDelta Charlie Foxtrot Mike Delta Foxtrot Mike Tower two two zero degrees seven knots runway two six point  five feet two down\nDelta runway two six Delta Mike Delta\n",
-        "short_ts": "FMD established on final 26\nDCFMDFM Tower 220 degrees 7 knots runway 26.5 feet 2 down\nD runway 26DMD",
+        "full_ts": "foxtrot mike delta established on final two six delta charlie foxtrot mike delta foxtrot mike tower two two zero degrees seven knots runway two six point five feet two down delta runway two six delta mike delta",
+        "short_ts": "fmd established on final 26 dcfmdfm tower 220 degrees 7 knots runway 26.5 feet 2 down d runway 26dmd",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_55.wav",
-        "full_ts": "Delta India Echo Lima Bravo line up runway two eight airport\n",
-        "short_ts": "DIELB line up runway 28 airport",
+        "full_ts": "delta india echo lima bravo line up runway two eight airport",
+        "short_ts": "dielb line up runway 28 airport",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_69.wav",
-        "full_ts": "Poček  Delta Echo Mike Hotel Kilo Hotel\n",
-        "short_ts": "Poček DEMHKH",
+        "full_ts": "poček delta echo mike hotel kilo hotel",
+        "short_ts": "poček demhkh",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_51.wav",
-        "full_ts": "signing up and ready to copy Skye two seven six\nSkye two two seven six \n",
-        "short_ts": "signing up and ready to copy Skye 276\nSkye 2276",
+        "full_ts": "signing up and ready to copy skye two seven six skye two two seven six",
+        "short_ts": "signing up and ready to copy skye 276 skye 2276",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_19.wav",
-        "full_ts": "yes\n",
+        "full_ts": "yes",
         "short_ts": "yes",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_102.wav",
-        "full_ts": " Delta Kilo Delta Ivano Sierra  kare kare kare než a než volím  set zavolím fort\n",
-        "short_ts": "DKD Ivano S kare kare kare než a než volím 100 zavolím fort",
+        "full_ts": "delta kilo delta ivano sierra kare kare kare než a než volím set zavolím fort",
+        "short_ts": "dkd ivano s kare kare kare než a než volím 100 zavolím fort",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_74.wav",
-        "full_ts": "Delta Foxtrot India wind three zero dva eight knots in Pistel \nano frej Pistel to poachting air for Delta Foxtrot India\n",
-        "short_ts": "DFI wind 3028 knots in Pistel\nano frej Pistel to poachting air for DFI",
+        "full_ts": "delta foxtrot india wind three zero dva eight knots in pistel ano frej pistel to poachting air for delta foxtrot india",
+        "short_ts": "dfi wind 3028 knots in pistel ano frej pistel to poachting air for dfi",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_61.wav",
-        "full_ts": "Delta Echo Charlie flygy the in the north part point of point of view the Pistell in two thousand feet\nling a north part under call turning Pistell in two thousand Foxtrot Echo Charlie\nDelta Romeo Mike call to mášteb plác Vivane  Charlie\nDelta Romeo Mike call to mášteb plác Vivane Charlie\n",
-        "short_ts": "DEC flygy the in the north part. of. of view the Pistell in 2000 feet\nling a north part under call turning Pistell in 2000 FEC\nDRM call to mášteb plác Vivane C\nDRM call to mášteb plác Vivane C",
+        "full_ts": "delta echo charlie flygy the in the north part point of point of view the pistell in two thousand feet ling a north part under call turning pistell in two thousand foxtrot echo charlie delta romeo mike call to mášteb plác vivane charlie delta romeo mike call to mášteb plác vivane charlie",
+        "short_ts": "dec flygy the in the north part. of. of view the pistell in 2000 feet ling a north part under call turning pistell in 2000 fec drm call to mášteb plác vivane c drm call to mášteb plác vivane c",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_84.wav",
-        "full_ts": "Delta Lima Bravo u Sierra 1 a bude vel vylásíme \nDelta Foxtrot India vylásíme si jest na místo štori\n",
-        "short_ts": "DLB u S 1 a bude vel vylásíme\nDFI vylásíme si jest na místo štori",
+        "full_ts": "delta lima bravo u sierra 1 a bude vel vylásíme delta foxtrot india vylásíme si jest na místo štori",
+        "short_ts": "dlb u s 1 a bude vel vylásíme dfi vylásíme si jest na místo štori",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_78.wav",
-        "full_ts": "Delta Echo Tango Alpha November Brunschweig few minutes\nDelta Echo Tango Alpha November a Piper arrow a jetplet zpět na minar Lupho tak levý vzlet na Třižský na Břižným Roln\nDelta Echo Tango Alpha November rolling si tom rojdejspět two six Brunschweig Lima Charlie Uniform\nLima Charlie Uniform ozom rojdejspět to už ještě Delta Alpha November\n",
-        "short_ts": "DETAN Brunschweig few minutes\nDETAN a Piper arrow a jetplet zpět na minar Lupho tak levý vzlet na Třižský na Břižným Roln\nDETAN rolling si tom rojdejspět 26 Brunschweig LCU\nLCU ozom rojdejspět to už ještě DAN",
+        "full_ts": "delta echo tango alpha november brunschweig few minutes delta echo tango alpha november a piper arrow a jetplet zpět na minar lupho tak levý vzlet na třižský na břižným roln delta echo tango alpha november rolling si tom rojdejspět two six brunschweig lima charlie uniform lima charlie uniform ozom rojdejspět to už ještě delta alpha november",
+        "short_ts": "detan brunschweig few minutes detan a piper arrow a jetplet zpět na minar lupho tak levý vzlet na třižský na břižným roln detan rolling si tom rojdejspět 26 brunschweig lcu lcu ozom rojdejspět to už ještě dan",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_48.wav",
-        "full_ts": "Ever Tower Skye sevens two seven six stand two two request startup\nskye two two seven six \n",
-        "short_ts": "Ever Tower Skye sevens 276 stand 22 request startup\nskye 2276",
+        "full_ts": "ever tower skye sevens two seven six stand two two request startup skye two two seven six",
+        "short_ts": "ever tower skye sevens 276 stand 22 request startup skye 2276",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_56.wav",
-        "full_ts": "Delta Lima Bravo lining up runway two eight in aero\n",
-        "short_ts": "DLB lining up runway 28 in aero",
+        "full_ts": "delta lima bravo lining up runway two eight in aero",
+        "short_ts": "dlb lining up runway 28 in aero",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_76.wav",
-        "full_ts": "what you see in finales pro- approach Bidsen Xray one four six\n",
-        "short_ts": "what you see in finales pro approach Bidsen X146",
+        "full_ts": "what you see in finales pro- approach bidsen xray one four six",
+        "short_ts": "what you see in finales pro approach bidsen x146",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_50.wav",
-        "full_ts": "ažak two fourty Delta Echo Mike Kilo Hotel\nskye two two seven six startup \n",
-        "short_ts": "ažak 240DEMKH\nskye 2276 startup",
+        "full_ts": "ažak two fourty delta echo mike kilo hotel skye two two seven six startup",
+        "short_ts": "ažak 240demkh skye 2276 startup",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_68.wav",
-        "full_ts": " cleared for takeoff runway two eight in aero Papa Mike Bravo\n",
-        "short_ts": "cleared for takeoff runway 28 in aero PMB",
+        "full_ts": "cleared for takeoff runway two eight in aero papa mike bravo",
+        "short_ts": "cleared for takeoff runway 28 in aero pmb",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_77.wav",
-        "full_ts": "Poček to Uniform Delta Echo Tango Alpha November\n",
-        "short_ts": "Poček to UDETAN",
+        "full_ts": "poček to uniform delta echo tango alpha november",
+        "short_ts": "poček to udetan",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_40.wav",
-        "full_ts": "Papa Mike Bravo taxi to holding point runway two eight airport via Sierra and Alpha\nvia Sierra and Alpha to runway holding point two eight in airport Papa Mike Bravo\n",
-        "short_ts": "PMB taxi to holding. runway 28 airport via S and A\nvia S and A to runway holding.28 in airport PMB",
+        "full_ts": "papa mike bravo taxi to holding point runway two eight airport via sierra and alpha via sierra and alpha to runway holding point two eight in airport papa mike bravo",
+        "short_ts": "pmb taxi to holding. runway 28 airport via s and a via s and a to runway holding.28 in airport pmb",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_15.wav",
-        "full_ts": "Delta Echo Hotel Bravo Mike \nDelta Echo Hotel Bravo Mike Piper arrow  have you place for the arrow  Delta have a flight to Hano  please rollo \nDelta Echo Hotel Bravo Mike  do you want to hold down two six Brvaužský Mike over Charlie and Bravo\nwe Charlie and Bravo  do you want to hold down two six Delta Papa Mike\nDelta Bravo Mike  do you take the runway  Sierra\nyes runway Sierra Delta Papa Mike\n",
-        "short_ts": "DEHBM\nDEHBM Piper arrow have you place for the arrow D have a flight to Hano please rollo\nDEHBM do you want to hold down 26 Brvaužský M over C and B\nwe C and B do you want to hold down 26DPM\nDBM do you take the runway S\nyes runway SDPM",
+        "full_ts": "delta echo hotel bravo mike delta echo hotel bravo mike piper arrow have you place for the arrow delta have a flight to hano please rollo delta echo hotel bravo mike do you want to hold down two six brvaužský mike over charlie and bravo we charlie and bravo do you want to hold down two six delta papa mike delta bravo mike do you take the runway sierra yes runway sierra delta papa mike",
+        "short_ts": "dehbm dehbm piper arrow have you place for the arrow d have a flight to hano please rollo dehbm do you want to hold down 26 brvaužský m over c and b we c and b do you want to hold down 26dpm dbm do you take the runway s yes runway sdpm",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_28.wav",
-        "full_ts": "wind check airforce three one zero degrees eight knots\n",
+        "full_ts": "wind check airforce three one zero degrees eight knots",
         "short_ts": "wind check airforce 310 degrees 8 knots",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_35.wav",
-        "full_ts": "Delta Romeo Mike fling in the right placht zone the place is full six point five\nfling in the right placht zone the place is full six point five Delta Romeo Mike\n",
-        "short_ts": "DRM fling in the right placht zone the place is full 6.5\nfling in the right placht zone the place is full 6.5DRM",
+        "full_ts": "delta romeo mike fling in the right placht zone the place is full six point five fling in the right placht zone the place is full six point five delta romeo mike",
+        "short_ts": "drm fling in the right placht zone the place is full 6.5 fling in the right placht zone the place is full 6.5drm",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_10.wav",
-        "full_ts": "Nula Five Seven Five is ready for taxi\nNula Five Seven Five taxi to holding point runway two six runway \nvia Charlie and Alpha\nvia Charlie and Alpha runway two six Nula Five Seven Five\n",
-        "short_ts": "0575 is ready for taxi\n0575 taxi to holding. runway 26 runway\nvia C and A\nvia C and A runway 260575",
+        "full_ts": "nula five seven five is ready for taxi nula five seven five taxi to holding point runway two six runway via charlie and alpha via charlie and alpha runway two six nula five seven five",
+        "short_ts": "0575 is ready for taxi 0575 taxi to holding. runway 26 runway via c and a via c and a runway 260575",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_87.wav",
-        "full_ts": "runway in use one four six wind three one zero degrees eight knots runway two eight airport cleared to land\ncleared to land runway two eight sam Xray one four six\n",
-        "short_ts": "runway in use 146 wind 310 degrees 8 knots runway 28 airport cleared to land\ncleared to land runway 28 sam X146",
+        "full_ts": "runway in use one four six wind three one zero degrees eight knots runway two eight airport cleared to land cleared to land runway two eight sam xray one four six",
+        "short_ts": "runway in use 146 wind 310 degrees 8 knots runway 28 airport cleared to land cleared to land runway 28 sam x146",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_86.wav",
-        "full_ts": "Věž Echo Alpha India Delta Charlie Foxtrot Mike Delta\n",
-        "short_ts": "Věž EAIDCFMD",
+        "full_ts": "věž echo alpha india delta charlie foxtrot mike delta",
+        "short_ts": "věž eaidcfmd",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_4.wav",
-        "full_ts": "Airforce  Delta Echo Kilo Alpha Yankee soutly Sierra one VFR flight a little bit  spongebulonimbus to landing please\n",
-        "short_ts": "Airforce DEKAY soutly S1 VFR flight a little bit spongebulonimbus to landing please",
+        "full_ts": "airforce delta echo kilo alpha yankee soutly sierra one vfr flight a little bit spongebulonimbus to landing please",
+        "short_ts": "airforce dekay soutly s1 vfr flight a little bit spongebulonimbus to landing please",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_23.wav",
-        "full_ts": "say again please\n",
+        "full_ts": "say again please",
         "short_ts": "say again please",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_8.wav",
-        "full_ts": "cleared to Munich via povol to Whiskey departure and squawk six zero zero one zero five seven five\nzero five seven five point\n",
-        "short_ts": "cleared to Munich via povol to W departure and squawk 60010575\n0575.",
+        "full_ts": "cleared to munich via povol to whiskey departure and squawk six zero zero one zero five seven five zero five seven five point",
+        "short_ts": "cleared to munich via povol to w departure and squawk 60010575 0575.",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_7.wav",
-        "full_ts": "Papa ready to copy zero five seven five and startup approved\nzero five seven five cleared to mention via toho VL to Whiskey departure flight plan  six zero zero one\n",
-        "short_ts": "P ready to copy 0575 and startup approved\n0575 cleared to mention via toho VL to W departure flight plan 6001",
+        "full_ts": "papa ready to copy zero five seven five and startup approved zero five seven five cleared to mention via toho vl to whiskey departure flight plan six zero zero one",
+        "short_ts": "p ready to copy 0575 and startup approved 0575 cleared to mention via toho vl to w departure flight plan 6001",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_1.wav",
-        "full_ts": "smartion läuft\n",
+        "full_ts": "smartion läuft",
         "short_ts": "smartion läuft",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_57.wav",
-        "full_ts": "roger tome for the Delta Echo Mike Kilo Hotel\n",
-        "short_ts": "roger tome for the DEMKH",
+        "full_ts": "roger tome for the delta echo mike kilo hotel",
+        "short_ts": "roger tome for the demkh",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_73.wav",
-        "full_ts": "Delta Foxtrot India Pět set Foxtrot QNH jedna nula aktuálně po vyčím jedna nula jedna nula\nKunovice Nula Jedna Nula Pět set Foxtrot 8 in Airforce Delta Foxtrot India\n",
-        "short_ts": "DFI 500 F QNH 10 aktuálně po vyčím 1010\nKunovice 010 500 F 8 in Airforce DFI",
+        "full_ts": "delta foxtrot india pět set foxtrot qnh jedna nula aktuálně po vyčím jedna nula jedna nula kunovice nula jedna nula pět set foxtrot 8 in airforce delta foxtrot india",
+        "short_ts": "dfi 500 f qnh 10 aktuálně po vyčím 1010 kunovice 010 500 f 8 in airforce dfi",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_37.wav",
-        "full_ts": "exforce will exit to the left and via Sierra to the apron zero one six three\n",
-        "short_ts": "exforce will exit to the left and via S to the apron 0163",
+        "full_ts": "exforce will exit to the left and via sierra to the apron zero one six three",
+        "short_ts": "exforce will exit to the left and via s to the apron 0163",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_45.wav",
-        "full_ts": "Oscar Kunovice Delta Echo Charlie Echo Charlie\n",
-        "short_ts": "O Kunovice DECEC",
+        "full_ts": "oscar kunovice delta echo charlie echo charlie",
+        "short_ts": "o kunovice decec",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_30.wav",
-        "full_ts": "Airforce on Delta India Echo Lima Bravo stand 41 hello\nDelta India Echo Lima Bravo Airforce on Delta Lima hello\n",
-        "short_ts": "Airforce on DIELB stand 41 hello\nDIELB Airforce on DL hello",
+        "full_ts": "airforce on delta india echo lima bravo stand 41 hello delta india echo lima bravo airforce on delta lima hello",
+        "short_ts": "airforce on dielb stand 41 hello dielb airforce on dl hello",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_39.wav",
-        "full_ts": "Papa Mike Bravo ready for taxi\n",
-        "short_ts": "PMB ready for taxi",
+        "full_ts": "papa mike bravo ready for taxi",
+        "short_ts": "pmb ready for taxi",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_64.wav",
-        "full_ts": "via Sierra Alpha to holding point two eight Skye two seven six\nOscar Golf Bravo runway two zero three India Whiskey twenty one four zero\n",
-        "short_ts": "via SA to holding.28 Skye 276\nOGB runway 203IW20140",
+        "full_ts": "via sierra alpha to holding point two eight skye two seven six oscar golf bravo runway two zero three india whiskey twenty one four zero",
+        "short_ts": "via sa to holding.28 skye 276 ogb runway 203iw20140",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_32.wav",
-        "full_ts": "Delta India Echo Lima Bravo rolling se som Rollhagen Bristell coacht airfoad via Sierra on Bravo\nvia Sierra on Bravo to Rollhagen Bristell coacht in airport Delta India Echo Lima Bravo\n",
-        "short_ts": "DIELB rolling se som Rollhagen Bristell coacht airfoad via S on B\nvia S on B to Rollhagen Bristell coacht in airport DIELB",
+        "full_ts": "delta india echo lima bravo rolling se som rollhagen bristell coacht airfoad via sierra on bravo via sierra on bravo to rollhagen bristell coacht in airport delta india echo lima bravo",
+        "short_ts": "dielb rolling se som rollhagen bristell coacht airfoad via s on b via s on b to rollhagen bristell coacht in airport dielb",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_38.wav",
-        "full_ts": "Delta Romeo Mike wind two three hundred feet two six point five line up five\nline up five feet two six point five Delta Romeo Mike\n",
-        "short_ts": "DRM wind 2 300 feet 26.5 line up 5\nline up 5 feet 26.5DRM",
+        "full_ts": "delta romeo mike wind two three hundred feet two six point five line up five line up five feet two six point five delta romeo mike",
+        "short_ts": "drm wind 2 300 feet 26.5 line up 5 line up 5 feet 26.5drm",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_103.wav",
-        "full_ts": "Delta Echo Charlie wind sport two nula ground \nblan o five \nblan o five \n",
-        "short_ts": "DEC wind sport 20 ground\nblan o 5\nblan o 5",
+        "full_ts": "delta echo charlie wind sport two nula ground blan o five blan o five",
+        "short_ts": "dec wind sport 20 ground blan o 5 blan o 5",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_101.wav",
-        "full_ts": "Delta Mike Delta roger to the apron line up Charlie\nroger to the apron Delta Mike Delta\nDelta Kilo Hotel Uniform Lima\n",
-        "short_ts": "DMD roger to the apron line up C\nroger to the apron DMD\nDKHUL",
+        "full_ts": "delta mike delta roger to the apron line up charlie roger to the apron delta mike delta delta kilo hotel uniform lima",
+        "short_ts": "dmd roger to the apron line up c roger to the apron dmd dkhul",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_31.wav",
-        "full_ts": "Delta India Echo Lima Lima Bravo a Beech bodnanca a start point for aleméne Lofat \n",
-        "short_ts": "DIELLB a Beech bodnanca a start. for aleméne Lofat",
+        "full_ts": "delta india echo lima lima bravo a beech bodnanca a start point for aleméne lofat",
+        "short_ts": "diellb a beech bodnanca a start. for aleméne lofat",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_79.wav",
-        "full_ts": "Echo Tower Skye two seven six ready for departure\nSkye two seven six Echo \n",
-        "short_ts": "E Tower Skye 276 ready for departure\nSkye 276E",
+        "full_ts": "echo tower skye two seven six ready for departure skye two seven six echo",
+        "short_ts": "e tower skye 276 ready for departure skye 276e",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_25.wav",
-        "full_ts": " cleared to nurn back via Pílant to Whiskey departure squawk six zero zero two starting up and Papa Hotel Lima Mike Bravo\nPapa Mike Bravo correct\n",
-        "short_ts": "cleared to nurn back via Pílant to W departure squawk 6002 starting up and PHLMB\nPMB correct",
+        "full_ts": "cleared to nurn back via pílant to whiskey departure squawk six zero zero two starting up and papa hotel lima mike bravo papa mike bravo correct",
+        "short_ts": "cleared to nurn back via pílant to w departure squawk 6002 starting up and phlmb pmb correct",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_93.wav",
-        "full_ts": "Delta Echo Charlie Echo Charlie feetmen right in front of you two six \nfeetmen right in front of you two six Delta Echo Charlie\n",
-        "short_ts": "DECEC feetmen right in front of you 26\nfeetmen right in front of you 26DEC",
+        "full_ts": "delta echo charlie echo charlie feetmen right in front of you two six feetmen right in front of you two six delta echo charlie",
+        "short_ts": "decec feetmen right in front of you 26 feetmen right in front of you 26dec",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_3.wav",
-        "full_ts": "ahoj to zero five seven five\n",
+        "full_ts": "ahoj to zero five seven five",
         "short_ts": "ahoj to 0575",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_65.wav",
-        "full_ts": "Oscar Kilo Bravo will give way to taxiing out aero street and twenty one\nDelta Lima Bravo twenty right\n",
-        "short_ts": "OKB will give way to taxiing out aero street and 21\nDLB 28",
+        "full_ts": "oscar kilo bravo will give way to taxiing out aero street and twenty one delta lima bravo twenty right",
+        "short_ts": "okb will give way to taxiing out aero street and 21 dlb 28",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_83.wav",
-        "full_ts": "Delta Echo Mike Kilo Hotel\nDelta Echo Mike Kilo Hotel runway two hello\nDelta Echo Mike Kilo Hotel a few plus four de aerodata hala jedna bíč  zavrůl na Hamburg a byt mojlen\nDelta Echo Mike Kilo Hotel rohli to rohlejpřist two six runway twova Charlie and Bravo QNH jedna nula díl\nrohlejpři to rohlejpři to dvosech squawkna jedna nula dím Delta Echo Mike Kilo Hotel\n",
-        "short_ts": "DEMKH\nDEMKH runway 2 hello\nDEMKH a few plus 4 de aerodata hala 1 bíč zavrůl na Hamburg a byt mojlen\nDEMKH rohli to rohlejpřist 26 runway twova C and B QNH 10 díl\nrohlejpři to rohlejpři to dvosech squawkna 10 dím DEMKH",
+        "full_ts": "delta echo mike kilo hotel delta echo mike kilo hotel runway two hello delta echo mike kilo hotel a few plus four de aerodata hala jedna bíč zavrůl na hamburg a byt mojlen delta echo mike kilo hotel rohli to rohlejpřist two six runway twova charlie and bravo qnh jedna nula díl rohlejpři to rohlejpři to dvosech squawkna jedna nula dím delta echo mike kilo hotel",
+        "short_ts": "demkh demkh runway 2 hello demkh a few plus 4 de aerodata hala 1 bíč zavrůl na hamburg a byt mojlen demkh rohli to rohlejpřist 26 runway twova c and b qnh 10 díl rohlejpři to rohlejpři to dvosech squawkna 10 dím demkh",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_80.wav",
-        "full_ts": "Delta Foxtrot India  let me  so that  you will not leave \npistil bish lining  pistil bish lining for last Delta Foxtrot India\npistil Bess one four six expect landing clearance on short final number one is over flight\n",
-        "short_ts": "DFI let me so that you will not leave\npistil bish lining pistil bish lining for last DFI\npistil Bess 146 expect landing clearance on short final number 1 is over flight",
+        "full_ts": "delta foxtrot india let me so that you will not leave pistil bish lining pistil bish lining for last delta foxtrot india pistil bess one four six expect landing clearance on short final number one is over flight",
+        "short_ts": "dfi let me so that you will not leave pistil bish lining pistil bish lining for last dfi pistil bess 146 expect landing clearance on short final number 1 is over flight",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_34.wav",
-        "full_ts": "Oscar Echo Foxtrot Golf Bravo \n",
-        "short_ts": "OEFGB",
+        "full_ts": "oscar echo foxtrot golf bravo",
+        "short_ts": "oefgb",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_20.wav",
-        "full_ts": "Airforce Tower Papa Hotel Lima Mike Bravo stand fourty three hello\nPapa Hotel Lima Mike Bravo airport one six point five hello\n",
-        "short_ts": "Airforce Tower PHLMB stand 43 hello\nPHLMB airport 16.5 hello",
+        "full_ts": "airforce tower papa hotel lima mike bravo stand fourty three hello papa hotel lima mike bravo airport one six point five hello",
+        "short_ts": "airforce tower phlmb stand 43 hello phlmb airport 16.5 hello",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_53.wav",
-        "full_ts": " you",
+        "full_ts": "you",
         "short_ts": "you",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_26.wav",
-        "full_ts": "Delta Echo Foxtrot Romeo Mike\nDelta Echo Foxtrot Romeo Mike \nDelta Echo Foxtrot Romeo Mike one minute for November One Two Five Hundred Foxtrot Piper arrow to lando\n",
-        "short_ts": "DEFRM\nDEFRM\nDEFRM1 minute for N12 500 F Piper arrow to lando",
+        "full_ts": "delta echo foxtrot romeo mike delta echo foxtrot romeo mike delta echo foxtrot romeo mike one minute for november one two five hundred foxtrot piper arrow to lando",
+        "short_ts": "defrm defrm defrm1 minute for n12 500 f piper arrow to lando",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_11.wav",
-        "full_ts": "Delta Alpha Yankee wind three one four five eight knots two eight airforce runway five\nrunway five runway two eight in aero for Delta Alpha Yankee\n",
-        "short_ts": "DAY wind 31458 knots 28 airforce runway 5\nrunway 5 runway 28 in aero for DAY",
+        "full_ts": "delta alpha yankee wind three one four five eight knots two eight airforce runway five runway five runway two eight in aero for delta alpha yankee",
+        "short_ts": "day wind 31458 knots 28 airforce runway 5 runway 5 runway 28 in aero for day",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_49.wav",
-        "full_ts": " Information Mike Information Mike received and QNH one zero one zero Oscar Eight Two Seven Six\n",
-        "short_ts": "Information M Information M received and QNH 1010O8276",
+        "full_ts": "information mike information mike received and qnh one zero one zero oscar eight two seven six",
+        "short_ts": "information m information m received and qnh 1010o8276",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_72.wav",
-        "full_ts": "let's our landing \n",
+        "full_ts": "let's our landing",
         "short_ts": "let s our landing",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_13.wav",
-        "full_ts": "project  zero five seven five is ready for departure\nzero five seven five wind two two zero degrees seven knots runway two six plunge via takeoff \ncan for takeoff runway two six zero five seven five five\n",
-        "short_ts": "project 0575 is ready for departure\n0575 wind 220 degrees 7 knots runway 26 plunge via takeoff\ncan for takeoff runway 2605755",
+        "full_ts": "project zero five seven five is ready for departure zero five seven five wind two two zero degrees seven knots runway two six plunge via takeoff can for takeoff runway two six zero five seven five five",
+        "short_ts": "project 0575 is ready for departure 0575 wind 220 degrees 7 knots runway 26 plunge via takeoff can for takeoff runway 2605755",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_47.wav",
-        "full_ts": "Kunovice Nula Nula Sedm Pět Sedm Osem Tři Foxtrot Echo Charlie\nDelta Lima Bravo is a flight borařad\nDelta Lima Bravo \n",
-        "short_ts": "Kunovice 00757 Osem 3FEC\nDLB is a flight borařad\nDLB",
+        "full_ts": "kunovice nula nula sedm pět sedm osem tři foxtrot echo charlie delta lima bravo is a flight borařad delta lima bravo",
+        "short_ts": "kunovice 00757 osem 3fec dlb is a flight borařad dlb",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_62.wav",
-        "full_ts": " Papa Mike Bravo is lining up\nPapa Mike Bravo \n",
-        "short_ts": "PMB is lining up\nPMB",
+        "full_ts": "papa mike bravo is lining up papa mike bravo",
+        "short_ts": "pmb is lining up pmb",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_36.wav",
-        "full_ts": "Sierra one six three eight next on the left taxi to the apron via Sierra\n",
-        "short_ts": "S1638 next on the left taxi to the apron via S",
+        "full_ts": "sierra one six three eight next on the left taxi to the apron via sierra",
+        "short_ts": "s1638 next on the left taxi to the apron via s",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_75.wav",
-        "full_ts": "Airforce Tower Sunexpress one four six feet is one eight zero IFR is fully established and passing four thousand nine hundred feet\nSunexpress one four six Foxtrot Charlie Airforce standby hello ready for final approach please\n",
-        "short_ts": "Airforce Tower Sunexpress 146 feet is 180 IFR is fully established and passing 4900 feet\nSunexpress 146FC Airforce standby hello ready for final approach please",
+        "full_ts": "airforce tower sunexpress one four six feet is one eight zero ifr is fully established and passing four thousand nine hundred feet sunexpress one four six foxtrot charlie airforce standby hello ready for final approach please",
+        "short_ts": "airforce tower sunexpress 146 feet is 180 ifr is fully established and passing 4900 feet sunexpress 146fc airforce standby hello ready for final approach please",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_58.wav",
-        "full_ts": "Papa Hotel Lima Mike Bravo line up runway two eight airport number two four departure behind Cessna four two one out of Bravo\n",
-        "short_ts": "PHLMB line up runway 28 airport number 24 departure behind Cessna 421 out of B",
+        "full_ts": "papa hotel lima mike bravo line up runway two eight airport number two four departure behind cessna four two one out of bravo",
+        "short_ts": "phlmb line up runway 28 airport number 24 departure behind cessna 421 out of b",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_46.wav",
-        "full_ts": "Delta Echo Charlie Echo Charlie \nDelta Echo Charlie Echo Charlie VFR jedna Piper arrow pět majlů Tři Sierra two thousand feet so long no\nDelta Echo Charlie Echo Charlie \n",
-        "short_ts": "DECEC\nDECEC VFR 1 Piper arrow 5 majlů 3S 2000 feet so long no\nDECEC",
+        "full_ts": "delta echo charlie echo charlie delta echo charlie echo charlie vfr jedna piper arrow pět majlů tři sierra two thousand feet so long no delta echo charlie echo charlie",
+        "short_ts": "decec decec vfr 1 piper arrow 5 majlů 3s 2000 feet so long no decec",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_27.wav",
-        "full_ts": "Delta Romeo Mike Pět set two six Foxtrot backtrack QNH one zero zero seven fling Zulu control zone over November\nPět QNH one zero zero seven Foxtrot control zone over November One November Two Pět set two six simpatríp Delta Romeo Mike\n",
-        "short_ts": "DRM50026F backtrack QNH 1007 fling Z control zone over N\n5 QNH 1007F control zone over N1N250026 simpatríp DRM",
+        "full_ts": "delta romeo mike pět set two six foxtrot backtrack qnh one zero zero seven fling zulu control zone over november pět qnh one zero zero seven foxtrot control zone over november one november two pět set two six simpatríp delta romeo mike",
+        "short_ts": "drm50026f backtrack qnh 1007 fling z control zone over n 5 qnh 1007f control zone over n1n250026 simpatríp drm",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_81.wav",
-        "full_ts": "Lawry R Seneca Express one four six\n",
-        "short_ts": "Lawry R Seneca Express 146",
+        "full_ts": "lawry r seneca express one four six",
+        "short_ts": "lawry r seneca express 146",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_67.wav",
-        "full_ts": "Papa Hotel Lima Mike Bravo wind three one zero degrees eight knots runway two eight air \n",
-        "short_ts": "PHLMB wind 310 degrees 8 knots runway 28 air",
+        "full_ts": "papa hotel lima mike bravo wind three one zero degrees eight knots runway two eight air",
+        "short_ts": "phlmb wind 310 degrees 8 knots runway 28 air",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_91.wav",
-        "full_ts": "Sun Xray one four six next possibility to B left to V8 and via Foxtrot and Sierra\nvia Foxtrot Sierra and next to left Sun Xray one four six\nDelta Foxtrot India to B apron via Sierra\nvia Sierra to the apron Delta Foxtrot India\nDelta Two Two Seven Six line up runway two eight airforce\n",
-        "short_ts": "Sun X146 next possibility to B left to V8 and via F and S\nvia FS and next to left Sun X146\nDFI to B apron via S\nvia S to the apron DFI\nD2276 line up runway 28 airforce",
+        "full_ts": "sun xray one four six next possibility to b left to v8 and via foxtrot and sierra via foxtrot sierra and next to left sun xray one four six delta foxtrot india to b apron via sierra via sierra to the apron delta foxtrot india delta two two seven six line up runway two eight airforce",
+        "short_ts": "sun x146 next possibility to b left to v8 and via f and s via fs and next to left sun x146 dfi to b apron via s via s to the apron dfi d2276 line up runway 28 airforce",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_18.wav",
-        "full_ts": "Echo Tower Cirrus one six three eight seven miles final IFR established hello\nCirrus one six three eight airport via flight from behind hello wind three one zero degrees eight knots runway two eight airport \nDelta land runway two eight Cirrus one six three eight\n",
-        "short_ts": "E Tower Cirrus 16387 miles final IFR established hello\nCirrus 1638 airport via flight from behind hello wind 310 degrees 8 knots runway 28 airport\nD land runway 28 Cirrus 1638",
+        "full_ts": "echo tower cirrus one six three eight seven miles final ifr established hello cirrus one six three eight airport via flight from behind hello wind three one zero degrees eight knots runway two eight airport delta land runway two eight cirrus one six three eight",
+        "short_ts": "e tower cirrus 16387 miles final ifr established hello cirrus 1638 airport via flight from behind hello wind 310 degrees 8 knots runway 28 airport d land runway 28 cirrus 1638",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_85.wav",
-        "full_ts": "verlaste the roilvan na links beschlejning Delta Foxtrot India\n",
-        "short_ts": "verlaste the roilvan na links beschlejning DFI",
+        "full_ts": "verlaste the roilvan na links beschlejning delta foxtrot india",
+        "short_ts": "verlaste the roilvan na links beschlejning dfi",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_9.wav",
-        "full_ts": "Delta Alpha Yankee fling direct in the QNH flight plan \ndirect in the QNH flight plan to Achten Airforce Delta Alpha Yankee\n",
-        "short_ts": "DAY fling direct in the QNH flight plan\ndirect in the QNH flight plan to Achten Airforce DAY",
+        "full_ts": "delta alpha yankee fling direct in the qnh flight plan direct in the qnh flight plan to achten airforce delta alpha yankee",
+        "short_ts": "day fling direct in the qnh flight plan direct in the qnh flight plan to achten airforce day",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_5.wav",
-        "full_ts": "Delta Echo Kilo Alpha Yankee Airforce hello Pistel 28Eurostar one zero one zero feetů control zone \ninver Sierra any control zone Pistel 28 in Airforce QNH one zero one zero Delta Echo Kilo Alpha Yankee\nDelta Echo Kilo Alpha Yankee \n",
-        "short_ts": "DEKAY Airforce hello Pistel 28Eurostar 1010 feetů control zone\ninver S any control zone Pistel 28 in Airforce QNH 1010DEKAY\nDEKAY",
+        "full_ts": "delta echo kilo alpha yankee airforce hello pistel 28eurostar one zero one zero feetů control zone inver sierra any control zone pistel 28 in airforce qnh one zero one zero delta echo kilo alpha yankee delta echo kilo alpha yankee",
+        "short_ts": "dekay airforce hello pistel 28eurostar 1010 feetů control zone inver s any control zone pistel 28 in airforce qnh 1010dekay dekay",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_104.wav",
-        "full_ts": "Zlín Alpha \n",
-        "short_ts": "Zlín A",
+        "full_ts": "zlín alpha",
+        "short_ts": "zlín a",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_16.wav",
-        "full_ts": "Delta Alpha Yankee next the links will be some aftere plaz over Sierra\nnext the links to mášte plaz over Sierra Delta Alpha Yankee\n",
-        "short_ts": "DAY next the links will be some aftere plaz over S\nnext the links to mášte plaz over SDAY",
+        "full_ts": "delta alpha yankee next the links will be some aftere plaz over sierra next the links to mášte plaz over sierra delta alpha yankee",
+        "short_ts": "day next the links will be some aftere plaz over s next the links to mášte plaz over sday",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_59.wav",
-        "full_ts": "lining up behind an aircraft Papa Mike Bravo\nDelta Lima Bravo prelásen se the control zone  with a left squawk over Sierra wind three one zero eight knots two eight airport start flight plan \n",
-        "short_ts": "lining up behind an aircraft PMB\nDLB prelásen se the control zone with a left squawk over S wind 3108 knots 28 airport start flight plan",
+        "full_ts": "lining up behind an aircraft papa mike bravo delta lima bravo prelásen se the control zone with a left squawk over sierra wind three one zero eight knots two eight airport start flight plan",
+        "short_ts": "lining up behind an aircraft pmb dlb prelásen se the control zone with a left squawk over s wind 3108 knots 28 airport start flight plan",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_42.wav",
-        "full_ts": "Cessna six three eight roger\nOscar Echo Foxtrot Golf Bravo wind three one zero degrees eight knots runway two eight air \ngood to land runway two eight Oscar Echo Foxtrot Golf Bravo\n",
-        "short_ts": "Cessna 638 roger\nOEFGB wind 310 degrees 8 knots runway 28 air\ngood to land runway 28OEFGB",
+        "full_ts": "cessna six three eight roger oscar echo foxtrot golf bravo wind three one zero degrees eight knots runway two eight air good to land runway two eight oscar echo foxtrot golf bravo",
+        "short_ts": "cessna 638 roger oefgb wind 310 degrees 8 knots runway 28 air good to land runway 28oefgb",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_44.wav",
-        "full_ts": "roger Delta Lima Bravo\n",
-        "short_ts": "roger DLB",
+        "full_ts": "roger delta lima bravo",
+        "short_ts": "roger dlb",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_22.wav",
-        "full_ts": " Papa Mike Alpha \n",
-        "short_ts": "PMA",
+        "full_ts": "papa mike alpha",
+        "short_ts": "pma",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_98.wav",
-        "full_ts": "Věž Echo Charlie Cessna Vstup\n",
-        "short_ts": "Věž EC Cessna Vstup",
+        "full_ts": "věž echo charlie cessna vstup",
+        "short_ts": "věž ec cessna vstup",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_71.wav",
-        "full_ts": "Delta Foxtrot India kurzá anflug\nDelta Foxtrot India Zulu státilník zula landing\n",
-        "short_ts": "DFI kurzá anflug\nDFIZ státilník zula landing",
+        "full_ts": "delta foxtrot india kurzá anflug delta foxtrot india zulu státilník zula landing",
+        "short_ts": "dfi kurzá anflug dfiz státilník zula landing",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_52.wav",
-        "full_ts": " squawk is six zero zero three and cleared via Pílento Whiskey departure flight to India Skye two seven six\nskye two two seven six \n",
-        "short_ts": "squawk is 6003 and cleared via Pílento W departure flight to I Skye 276\nskye 2276",
+        "full_ts": "squawk is six zero zero three and cleared via pílento whiskey departure flight to india skye two seven six skye two two seven six",
+        "short_ts": "squawk is 6003 and cleared via pílento w departure flight to i skye 276 skye 2276",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_70.wav",
-        "full_ts": "Delta Foxtrot India mámím kurz na \n",
-        "short_ts": "DFI mámím kurz na",
+        "full_ts": "delta foxtrot india mámím kurz na",
+        "short_ts": "dfi mámím kurz na",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_24.wav",
-        "full_ts": "Papa Hotel Lima Mike Bravo startup approved report ready to copy\nready to copy Papa Hotel Lima Mike Bravo\nPapa Mike Bravo  to  runway two Whiskey departure flight plan two two zero zero two\n",
-        "short_ts": "PHLMB startup approved report ready to copy\nready to copy PHLMB\nPMB to runway 2W departure flight plan 22002",
+        "full_ts": "papa hotel lima mike bravo startup approved report ready to copy ready to copy papa hotel lima mike bravo papa mike bravo to runway two whiskey departure flight plan two two zero zero two",
+        "short_ts": "phlmb startup approved report ready to copy ready to copy phlmb pmb to runway 2w departure flight plan 22002",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_66.wav",
-        "full_ts": "Delta Lima Bravo dráhyerech\nDelta Lima Bravo \ndráhyerech siera\n",
-        "short_ts": "DLB dráhyerech\nDLB\ndráhyerech S",
+        "full_ts": "delta lima bravo dráhyerech delta lima bravo dráhyerech siera",
+        "short_ts": "dlb dráhyerech dlb dráhyerech s",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_97.wav",
-        "full_ts": "Delta Echo Charlie Uniform Four Six\n",
-        "short_ts": "DECU46",
+        "full_ts": "delta echo charlie uniform four six",
+        "short_ts": "decu46",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_41.wav",
-        "full_ts": "Echo to Romeo Zero One Six Three Eight runway vacated into Echo\n",
-        "short_ts": "E to R01638 runway vacated into E",
+        "full_ts": "echo to romeo zero one six three eight runway vacated into echo",
+        "short_ts": "e to r01638 runway vacated into e",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_21.wav",
-        "full_ts": "Papa Hotel Lima Mike Mike Bravo information microceph Kunovice one zero one zero request startup\n",
-        "short_ts": "PHLMMB information microceph Kunovice 1010 request startup",
+        "full_ts": "papa hotel lima mike mike bravo information microceph kunovice one zero one zero request startup",
+        "short_ts": "phlmmb information microceph kunovice 1010 request startup",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_2.wav",
-        "full_ts": "Kunovice Tower ready to use Five Seven Five\nto use Five Seven Five Foxtrot Quebec Mike hello\nto use Five Seven Five information Mike received QNH as one zero zero seven requesting startup\nto use Five Seven Five Quebec Foxtrot startup Mike Quebec\n",
-        "short_ts": "Kunovice Tower ready to use 575\nto use 575FQM hello\nto use 575 information M received QNH as 1007 requesting startup\nto use 575QF startup MQ",
+        "full_ts": "kunovice tower ready to use five seven five to use five seven five foxtrot quebec mike hello to use five seven five information mike received qnh as one zero zero seven requesting startup to use five seven five quebec foxtrot startup mike quebec",
+        "short_ts": "kunovice tower ready to use 575 to use 575fqm hello to use 575 information m received qnh as 1007 requesting startup to use 575qf startup mq",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_63.wav",
-        "full_ts": "Echo Tower Skye two seven six ready for taxi\nSkye two two seven six taxi to holding point runway two eight airport via Sierra India Echo\n",
-        "short_ts": "E Tower Skye 276 ready for taxi\nSkye 2276 taxi to holding. runway 28 airport via SIE",
+        "full_ts": "echo tower skye two seven six ready for taxi skye two two seven six taxi to holding point runway two eight airport via sierra india echo",
+        "short_ts": "e tower skye 276 ready for taxi skye 2276 taxi to holding. runway 28 airport via sie",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_94.wav",
-        "full_ts": "San Xpress one four six runway vacated in Fox\n",
-        "short_ts": "San Xpress 146 runway vacated in F",
+        "full_ts": "san xpress one four six runway vacated in fox",
+        "short_ts": "san xpress 146 runway vacated in f",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_33.wav",
-        "full_ts": "Echo Tower Oscar Echo Foxtrot Golf Bravo seven miles final IFS fully established good morning\n",
-        "short_ts": "E Tower OEFGB7 miles final IFS fully established good morning",
+        "full_ts": "echo tower oscar echo foxtrot golf bravo seven miles final ifs fully established good morning",
+        "short_ts": "e tower oefgb7 miles final ifs fully established good morning",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_100.wav",
-        "full_ts": "Delta Mike Delta runway vacated in Charlie\n",
-        "short_ts": "DMD runway vacated in C",
+        "full_ts": "delta mike delta runway vacated in charlie",
+        "short_ts": "dmd runway vacated in c",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_6.wav",
-        "full_ts": "Delta Alpha Yankee Foxtrot\nCirrus five seven five startup approved clearance available\n",
-        "short_ts": "DAYF\nCirrus 575 startup approved clearance available",
+        "full_ts": "delta alpha yankee foxtrot cirrus five seven five startup approved clearance available",
+        "short_ts": "dayf cirrus 575 startup approved clearance available",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_54.wav",
-        "full_ts": "Airforce to Delta India Charlie Foxtrot India Uniform November One One Four Airflug to landing please\n",
-        "short_ts": "Airforce to DICFIUN114 Airflug to landing please",
+        "full_ts": "airforce to delta india charlie foxtrot india uniform november one one four airflug to landing please",
+        "short_ts": "airforce to dicfiun114 airflug to landing please",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_95.wav",
-        "full_ts": "Oscar Two Two Seven Six One Three one zero degrees eight knots runway two eight airport three four takeoff\n",
-        "short_ts": "O22761310 degrees 8 knots runway 28 airport 34 takeoff",
+        "full_ts": "oscar two two seven six one three one zero degrees eight knots runway two eight airport three four takeoff",
+        "short_ts": "o22761310 degrees 8 knots runway 28 airport 34 takeoff",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_92.wav",
-        "full_ts": "lining up runway two eight Skye two two seven six\n",
-        "short_ts": "lining up runway 28 Skye 2276",
+        "full_ts": "lining up runway two eight skye two two seven six",
+        "short_ts": "lining up runway 28 skye 2276",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_60.wav",
-        "full_ts": "frůje linksko volfe  Verlaste the control zone over Sierra start frej pět set to achnem air- airforce Delta Lima Bravo\nOscar Echo Foxtrot Golf Bravo to the apron via Sierra\nvia Sierra to the apron Oscar Golf Bravo\nDelta Echo Charlie over Sierra two thousand feet\n",
-        "short_ts": "frůje linksko volfe Verlaste the control zone over S start frej 500 to achnem air airforce DLB\nOEFGB to the apron via S\nvia S to the apron OGB\nDEC over S 2000 feet",
+        "full_ts": "frůje linksko volfe verlaste the control zone over sierra start frej pět set to achnem air- airforce delta lima bravo oscar echo foxtrot golf bravo to the apron via sierra via sierra to the apron oscar golf bravo delta echo charlie over sierra two thousand feet",
+        "short_ts": "frůje linksko volfe verlaste the control zone over s start frej 500 to achnem air airforce dlb oefgb to the apron via s via s to the apron ogb dec over s 2000 feet",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_12.wav",
-        "full_ts": "Cessna five seven five three four thirty\nCessna five seven five three two\n",
-        "short_ts": "Cessna 5753430\nCessna 57532",
+        "full_ts": "cessna five seven five three four thirty cessna five seven five three two",
+        "short_ts": "cessna 5753430 cessna 57532",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_89.wav",
-        "full_ts": "Delta Alpha November Alpha Šest Osm\n",
-        "short_ts": "DANA68",
+        "full_ts": "delta alpha november alpha šest osm",
+        "short_ts": "dana68",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_105.wav",
-        "full_ts": " Tango\n",
-        "short_ts": "T",
+        "full_ts": "tango",
+        "short_ts": "t",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_96.wav",
-        "full_ts": " cleared for takeoff Skye two two seven six\n",
-        "short_ts": "cleared for takeoff Skye 2276",
+        "full_ts": "cleared for takeoff skye two two seven six",
+        "short_ts": "cleared for takeoff skye 2276",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_29.wav",
-        "full_ts": "Delta Bravo Mike Zulu runway control zone of flight plan \nDelta runway \n",
-        "short_ts": "DBMZ runway control zone of flight plan\nD runway",
+        "full_ts": "delta bravo mike zulu runway control zone of flight plan delta runway",
+        "short_ts": "dbmz runway control zone of flight plan d runway",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_99.wav",
-        "full_ts": "Delta \n",
-        "short_ts": "D",
+        "full_ts": "delta",
+        "short_ts": "d",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_17.wav",
-        "full_ts": "Delta Alpha Yankee  Delta Bravo Mike aflug bereight\nDelta Bravo Mike aflugbereight in Bravo\nDelta Bravo Mike verlásíme kontrol zone over Sierra wind two three nula three seven knots is two six point five start five\nverlásíme kontrol to November Sierra on start five is two six Delta Bravo Mike\n",
-        "short_ts": "DAYDBM aflug bereight\nDBM aflugbereight in B\nDBM verlásíme kontrol zone over S wind 23037 knots is 26.5 start 5\nverlásíme kontrol to NS on start 5 is 26DBM",
+        "full_ts": "delta alpha yankee delta bravo mike aflug bereight delta bravo mike aflugbereight in bravo delta bravo mike verlásíme kontrol zone over sierra wind two three nula three seven knots is two six point five start five verlásíme kontrol to november sierra on start five is two six delta bravo mike",
+        "short_ts": "daydbm aflug bereight dbm aflugbereight in b dbm verlásíme kontrol zone over s wind 23037 knots is 26.5 start 5 verlásíme kontrol to ns on start 5 is 26dbm",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_14.wav",
-        "full_ts": "project Uniform Delta Echo Hotel Bravo Mike\n",
-        "short_ts": "project UDEHBM",
+        "full_ts": "project uniform delta echo hotel bravo mike",
+        "short_ts": "project udehbm",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_88.wav",
-        "full_ts": "Delta Alpha November in Bravo approved flight\n",
-        "short_ts": "DAN in B approved flight",
+        "full_ts": "delta alpha november in bravo approved flight",
+        "short_ts": "dan in b approved flight",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_82.wav",
-        "full_ts": "Delta Echo Charlie halaen si jedna majlín dva tři post plachtis\nhalta jedna  helta nula díky plachtis jedna majlín Delta Echo Charlie\n",
-        "short_ts": "DEC halaen si 1 majlín 23 post plachtis\nhalta 1 helta 0 díky plachtis 1 majlín DEC",
+        "full_ts": "delta echo charlie halaen si jedna majlín dva tři post plachtis halta jedna helta nula díky plachtis jedna majlín delta echo charlie",
+        "short_ts": "dec halaen si 1 majlín 23 post plachtis halta 1 helta 0 díky plachtis 1 majlín dec",
         "prompt": null
     },
     {
         "audio": "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA/recording_43.wav",
-        "full_ts": " Delta Lima Bravo \n",
-        "short_ts": "DLB",
+        "full_ts": "delta lima bravo",
+        "short_ts": "dlb",
         "prompt": null
     }
 ]

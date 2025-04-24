@@ -1,14 +1,14 @@
 [
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_002_LN.wav",
-        "full_ts": "select HF1 five four three four",
-        "short_ts": "select HF1 5434",
+        "full_ts": "select hf1 five four three four",
+        "short_ts": "select hf1 5434",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_012_LN.wav",
-        "full_ts": "select VHF3 one two three",
-        "short_ts": "select VHF3 123",
+        "full_ts": "select vhf3 one two three",
+        "short_ts": "select vhf3 123",
         "prompt": null
     },
     {
@@ -43,8 +43,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_072_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
@@ -127,14 +127,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_212_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_222_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
@@ -169,8 +169,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_282_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -241,8 +241,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_402_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -260,7 +260,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_432_LN.wav",
         "full_ts": "position charlie zero five papa nine",
-        "short_ts": "position C05P9",
+        "short_ts": "position c05p9",
         "prompt": null
     },
     {
@@ -272,13 +272,13 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_452_LN.wav",
         "full_ts": "request direct to echo foxtrot oscar due to aircraft performance",
-        "short_ts": "request direct to EFO due to aircraft performance",
+        "short_ts": "request direct to efo due to aircraft performance",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_462_LN.wav",
-        "full_ts": "ETA echo bravo xray kilo juliet at eight seven",
-        "short_ts": "ETA EBXKJ at 87",
+        "full_ts": "eta echo bravo xray kilo juliet at eight seven",
+        "short_ts": "eta ebxkj at 87",
         "prompt": null
     },
     {
@@ -290,7 +290,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_482_LN.wav",
         "full_ts": "position kilo november lima uniform hotel",
-        "short_ts": "position KNLUH",
+        "short_ts": "position knluh",
         "prompt": null
     },
     {
@@ -320,7 +320,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_532_LN.wav",
         "full_ts": "position fox yankee november yankee victor",
-        "short_ts": "position FYNYV",
+        "short_ts": "position fynyv",
         "prompt": null
     },
     {
@@ -343,8 +343,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_572_LN.wav",
-        "full_ts": "ETA seven romeo victor india uniform at one one hours seven",
-        "short_ts": "ETA 7RVIU at 11 hours 7",
+        "full_ts": "eta seven romeo victor india uniform at one one hours seven",
+        "short_ts": "eta 7rviu at 11 hours 7",
         "prompt": null
     },
     {
@@ -361,26 +361,26 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_602_LN.wav",
-        "full_ts": "VOR",
-        "short_ts": "VOR",
+        "full_ts": "vor",
+        "short_ts": "vor",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_612_LN.wav",
-        "full_ts": "select HF1 five four seven zero ",
-        "short_ts": "select HF1 5470",
+        "full_ts": "select hf1 five four seven zero",
+        "short_ts": "select hf1 5470",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_622_LN.wav",
         "full_ts": "position xray fox six tango seven",
-        "short_ts": "position XF6T7",
+        "short_ts": "position xf6t7",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_632_LN.wav",
         "full_ts": "position quebec nine victor alpha whiskey",
-        "short_ts": "position Q9VAW",
+        "short_ts": "position q9vaw",
         "prompt": null
     },
     {
@@ -427,8 +427,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_712_LN.wav",
-        "full_ts": "VHF3 one nine six dot three seven",
-        "short_ts": "VHF3 196.37",
+        "full_ts": "vhf3 one nine six dot three seven",
+        "short_ts": "vhf3 196.37",
         "prompt": null
     },
     {
@@ -439,8 +439,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_732_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
@@ -457,14 +457,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_762_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_772_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -475,8 +475,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_792_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
@@ -529,20 +529,20 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_882_LN.wav",
-        "full_ts": "HF2 five eight nine six",
-        "short_ts": "HF2 5896",
+        "full_ts": "hf2 five eight nine six",
+        "short_ts": "hf2 5896",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_892_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_902_LN.wav",
-        "full_ts": "VHF1",
-        "short_ts": "VHF1",
+        "full_ts": "vhf1",
+        "short_ts": "vhf1",
         "prompt": null
     },
     {
@@ -571,14 +571,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_952_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_962_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -595,8 +595,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMHF/FMHF_992_LN.wav",
-        "full_ts": "select VHF2 one two five",
-        "short_ts": "select VHF2 125",
+        "full_ts": "select vhf2 one two five",
+        "short_ts": "select vhf2 125",
         "prompt": null
     },
     {
@@ -613,8 +613,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_028_LN.wav",
-        "full_ts": "select VHF3 one eight nine decimal nine nine",
-        "short_ts": "select VHF3 189.99",
+        "full_ts": "select vhf3 one eight nine decimal nine nine",
+        "short_ts": "select vhf3 189.99",
         "prompt": null
     },
     {
@@ -643,14 +643,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_078_LN.wav",
-        "full_ts": "VHF1 one seven four point seven eight",
-        "short_ts": "VHF1 174.78",
+        "full_ts": "vhf1 one seven four point seven eight",
+        "short_ts": "vhf1 174.78",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_088_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
@@ -697,14 +697,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_168_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_178_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
@@ -751,8 +751,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_258_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -763,8 +763,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_278_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -781,8 +781,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_308_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
@@ -823,14 +823,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_378_LN.wav",
-        "full_ts": "ILS on",
-        "short_ts": "ILS on",
+        "full_ts": "ils on",
+        "short_ts": "ils on",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_388_LN.wav",
-        "full_ts": "select HF2 two eight three two",
-        "short_ts": "select HF2 2832",
+        "full_ts": "select hf2 two eight three two",
+        "short_ts": "select hf2 2832",
         "prompt": null
     },
     {
@@ -871,8 +871,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_458_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -913,26 +913,26 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_528_LN.wav",
-        "full_ts": "select VHF3",
-        "short_ts": "select VHF3",
+        "full_ts": "select vhf3",
+        "short_ts": "select vhf3",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_538_LN.wav",
-        "full_ts": "ETA zulu india zulu alpha sierra at two six zero minutes",
-        "short_ts": "ETA ZIZAS at 260 minutes",
+        "full_ts": "eta zulu india zulu alpha sierra at two six zero minutes",
+        "short_ts": "eta zizas at 260 minutes",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_548_LN.wav",
         "full_ts": "position uniform echo mike victor oscar",
-        "short_ts": "position UEMVO",
+        "short_ts": "position uemvo",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_558_LN.wav",
         "full_ts": "request direct to romeo xray delta four zero due to performance",
-        "short_ts": "request direct to RXD40 due to performance",
+        "short_ts": "request direct to rxd40 due to performance",
         "prompt": null
     },
     {
@@ -944,19 +944,19 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_578_LN.wav",
         "full_ts": "position three fox kilo four",
-        "short_ts": "position 3FK4",
+        "short_ts": "position 3fk4",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_588_LN.wav",
         "full_ts": "position yankee three two yankee november",
-        "short_ts": "position Y32YN",
+        "short_ts": "position y32yn",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_598_LN.wav",
         "full_ts": "position foxtrot one fox oscar lima",
-        "short_ts": "position F1FOL",
+        "short_ts": "position f1fol",
         "prompt": null
     },
     {
@@ -967,8 +967,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_618_LN.wav",
-        "full_ts": "select HF2 two zero seven eight five",
-        "short_ts": "select HF2 20785",
+        "full_ts": "select hf2 two zero seven eight five",
+        "short_ts": "select hf2 20785",
         "prompt": null
     },
     {
@@ -1003,8 +1003,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_678_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -1015,14 +1015,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_698_LN.wav",
-        "full_ts": "ETA zulu one golf foxtrot romeo at two three hours four one minutes",
-        "short_ts": "ETA Z1GFR at 23 hours 41 minutes",
+        "full_ts": "eta zulu one golf foxtrot romeo at two three hours four one minutes",
+        "short_ts": "eta z1gfr at 23 hours 41 minutes",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_708_LN.wav",
-        "full_ts": "ETA echo romeo quebec echo nine at three seven minutes",
-        "short_ts": "ETA ERQE9 at 37 minutes",
+        "full_ts": "eta echo romeo quebec echo nine at three seven minutes",
+        "short_ts": "eta erqe9 at 37 minutes",
         "prompt": null
     },
     {
@@ -1033,8 +1033,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_728_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
@@ -1057,8 +1057,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_768_LN.wav",
-        "full_ts": "VHF1",
-        "short_ts": "VHF1",
+        "full_ts": "vhf1",
+        "short_ts": "vhf1",
         "prompt": null
     },
     {
@@ -1105,8 +1105,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_848_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
@@ -1117,8 +1117,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_868_LN.wav",
-        "full_ts": "HF1 one one zero three six",
-        "short_ts": "HF1 11036",
+        "full_ts": "hf1 one one zero three six",
+        "short_ts": "hf1 11036",
         "prompt": null
     },
     {
@@ -1141,8 +1141,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_908_LN.wav",
-        "full_ts": "select VHF2 one eight seven",
-        "short_ts": "select VHF2 187",
+        "full_ts": "select vhf2 one eight seven",
+        "short_ts": "select vhf2 187",
         "prompt": null
     },
     {
@@ -1177,14 +1177,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_968_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_978_LN.wav",
-        "full_ts": "VOR",
-        "short_ts": "VOR",
+        "full_ts": "vor",
+        "short_ts": "vor",
         "prompt": null
     },
     {
@@ -1195,14 +1195,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSPM/FSPM_998_LN.wav",
-        "full_ts": "VHF1 one one four decimal five three",
-        "short_ts": "VHF1 114.53",
+        "full_ts": "vhf1 one one four decimal five three",
+        "short_ts": "vhf1 114.53",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_000_LN.wav",
         "full_ts": "position hotel fox kilo whiskey quebec",
-        "short_ts": "position HFKWQ",
+        "short_ts": "position hfkwq",
         "prompt": null
     },
     {
@@ -1219,8 +1219,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_030_LN.wav",
-        "full_ts": "ETA echo romeo yankee at four two",
-        "short_ts": "ETA ERY at 42",
+        "full_ts": "eta echo romeo yankee at four two",
+        "short_ts": "eta ery at 42",
         "prompt": null
     },
     {
@@ -1238,13 +1238,13 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_060_LN.wav",
         "full_ts": "position nine four victor six oscar",
-        "short_ts": "position 94V6O",
+        "short_ts": "position 94v6o",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_070_LN.wav",
         "full_ts": "request direct to one charlie sierra two five due to weather",
-        "short_ts": "request direct to 1CS25 due to weather",
+        "short_ts": "request direct to 1cs25 due to weather",
         "prompt": null
     },
     {
@@ -1268,49 +1268,49 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_110_LN.wav",
         "full_ts": "position foxtrot whiskey two seven zero",
-        "short_ts": "position FW270",
+        "short_ts": "position fw270",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_120_LN.wav",
         "full_ts": "position juliet golf november foxtrot november",
-        "short_ts": "position JGNFN",
+        "short_ts": "position jgnfn",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_130_LN.wav",
         "full_ts": "position tango quebec papa golf fox",
-        "short_ts": "position TQPGF",
+        "short_ts": "position tqpgf",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_140_LN.wav",
-        "full_ts": "ETA seven zulu kilo juliet xray at zero hours five eight",
-        "short_ts": "ETA 7ZKJX at 0 hours 58",
+        "full_ts": "eta seven zulu kilo juliet xray at zero hours five eight",
+        "short_ts": "eta 7zkjx at 0 hours 58",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_150_LN.wav",
-        "full_ts": "select VHF2 one eight seven",
-        "short_ts": "select VHF2 187",
+        "full_ts": "select vhf2 one eight seven",
+        "short_ts": "select vhf2 187",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_160_LN.wav",
-        "full_ts": "VHF1 one five zero point seven zero",
-        "short_ts": "VHF1 150.70",
+        "full_ts": "vhf1 one five zero point seven zero",
+        "short_ts": "vhf1 150.70",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_170_LN.wav",
         "full_ts": "request direct to victor lima bravo romeo due to aircraft performance",
-        "short_ts": "request direct to VLBR due to aircraft performance",
+        "short_ts": "request direct to vlbr due to aircraft performance",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_180_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
@@ -1322,7 +1322,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_200_LN.wav",
         "full_ts": "position delta mike papa alpha four",
-        "short_ts": "position DMPA4",
+        "short_ts": "position dmpa4",
         "prompt": null
     },
     {
@@ -1345,8 +1345,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_240_LN.wav",
-        "full_ts": "ETA seven papa two india tango at zero six eight minutes",
-        "short_ts": "ETA 7P2IT at 068 minutes",
+        "full_ts": "eta seven papa two india tango at zero six eight minutes",
+        "short_ts": "eta 7p2it at 068 minutes",
         "prompt": null
     },
     {
@@ -1357,14 +1357,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_260_LN.wav",
-        "full_ts": "HF1",
-        "short_ts": "HF1",
+        "full_ts": "hf1",
+        "short_ts": "hf1",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_270_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
@@ -1375,8 +1375,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_290_LN.wav",
-        "full_ts": "FD on",
-        "short_ts": "FD on",
+        "full_ts": "fd on",
+        "short_ts": "fd on",
         "prompt": null
     },
     {
@@ -1400,7 +1400,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_330_LN.wav",
         "full_ts": "position two uniform sierra charlie seven",
-        "short_ts": "position 2USC7",
+        "short_ts": "position 2usc7",
         "prompt": null
     },
     {
@@ -1453,8 +1453,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_420_LN.wav",
-        "full_ts": "VHF3",
-        "short_ts": "VHF3",
+        "full_ts": "vhf3",
+        "short_ts": "vhf3",
         "prompt": null
     },
     {
@@ -1483,8 +1483,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_470_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
@@ -1507,14 +1507,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_510_LN.wav",
-        "full_ts": "HF2 two one five zero three",
-        "short_ts": "HF2 21503",
+        "full_ts": "hf2 two one five zero three",
+        "short_ts": "hf2 21503",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_520_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -1543,8 +1543,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_570_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -1597,8 +1597,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_660_LN.wav",
-        "full_ts": "VOR",
-        "short_ts": "VOR",
+        "full_ts": "vor",
+        "short_ts": "vor",
         "prompt": null
     },
     {
@@ -1609,8 +1609,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_680_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
@@ -1621,8 +1621,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_700_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
@@ -1645,8 +1645,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_740_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -1681,8 +1681,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_800_LN.wav",
-        "full_ts": "ILS",
-        "short_ts": "ILS",
+        "full_ts": "ils",
+        "short_ts": "ils",
         "prompt": null
     },
     {
@@ -1694,7 +1694,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_820_LN.wav",
         "full_ts": "request direct to lima foxtrot uniform bravo nine due to aircraft performance",
-        "short_ts": "request direct to LFUB9 due to aircraft performance",
+        "short_ts": "request direct to lfub9 due to aircraft performance",
         "prompt": null
     },
     {
@@ -1706,7 +1706,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_840_LN.wav",
         "full_ts": "request direct to yankee due to weather",
-        "short_ts": "request direct to Y due to weather",
+        "short_ts": "request direct to y due to weather",
         "prompt": null
     },
     {
@@ -1717,8 +1717,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_860_LN.wav",
-        "full_ts": "ETA sierra three bravo zulu alpha at zero five zero minutes",
-        "short_ts": "ETA S3BZA at 050 minutes",
+        "full_ts": "eta sierra three bravo zulu alpha at zero five zero minutes",
+        "short_ts": "eta s3bza at 050 minutes",
         "prompt": null
     },
     {
@@ -1730,19 +1730,19 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_880_LN.wav",
         "full_ts": "request direct to mike victor seven delta delta due to performance",
-        "short_ts": "request direct to MV7DD due to performance",
+        "short_ts": "request direct to mv7dd due to performance",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_890_LN.wav",
-        "full_ts": "ILS on",
-        "short_ts": "ILS on",
+        "full_ts": "ils on",
+        "short_ts": "ils on",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_900_LN.wav",
         "full_ts": "position echo echo five echo three",
-        "short_ts": "position EE5E3",
+        "short_ts": "position ee5e3",
         "prompt": null
     },
     {
@@ -1753,14 +1753,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_920_LN.wav",
-        "full_ts": "ETA mike sierra eight oscar five at five four four",
-        "short_ts": "ETA MS8O5 at 544",
+        "full_ts": "eta mike sierra eight oscar five at five four four",
+        "short_ts": "eta ms8o5 at 544",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_930_LN.wav",
-        "full_ts": "ILS off",
-        "short_ts": "ILS off",
+        "full_ts": "ils off",
+        "short_ts": "ils off",
         "prompt": null
     },
     {
@@ -1771,8 +1771,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_950_LN.wav",
-        "full_ts": "select VHF3 one eight nine",
-        "short_ts": "select VHF3 189",
+        "full_ts": "select vhf3 one eight nine",
+        "short_ts": "select vhf3 189",
         "prompt": null
     },
     {
@@ -1783,8 +1783,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FTEM/FTEM_970_LN.wav",
-        "full_ts": "select VHF2 one six five",
-        "short_ts": "select VHF2 165",
+        "full_ts": "select vhf2 one six five",
+        "short_ts": "select vhf2 165",
         "prompt": null
     },
     {
@@ -1801,14 +1801,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_002_LN.wav",
-        "full_ts": "select HF1 five four three four",
-        "short_ts": "select HF1 5434",
+        "full_ts": "select hf1 five four three four",
+        "short_ts": "select hf1 5434",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_012_LN.wav",
-        "full_ts": "select VHF3 one two three",
-        "short_ts": "select VHF3 123",
+        "full_ts": "select vhf3 one two three",
+        "short_ts": "select vhf3 123",
         "prompt": null
     },
     {
@@ -1843,8 +1843,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_072_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
@@ -1927,14 +1927,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_212_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_222_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
@@ -1969,8 +1969,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_282_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -2041,8 +2041,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_402_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -2060,7 +2060,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_432_LN.wav",
         "full_ts": "position charlie zero five papa nine",
-        "short_ts": "position C05P9",
+        "short_ts": "position c05p9",
         "prompt": null
     },
     {
@@ -2072,13 +2072,13 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_452_LN.wav",
         "full_ts": "request direct to echo foxtrot oscar due to aircraft performance",
-        "short_ts": "request direct to EFO due to aircraft performance",
+        "short_ts": "request direct to efo due to aircraft performance",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_462_LN.wav",
-        "full_ts": "ETA echo bravo xray kilo juliet at eight seven",
-        "short_ts": "ETA EBXKJ at 87",
+        "full_ts": "eta echo bravo xray kilo juliet at eight seven",
+        "short_ts": "eta ebxkj at 87",
         "prompt": null
     },
     {
@@ -2090,7 +2090,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_482_LN.wav",
         "full_ts": "position kilo november lima uniform hotel",
-        "short_ts": "position KNLUH",
+        "short_ts": "position knluh",
         "prompt": null
     },
     {
@@ -2120,7 +2120,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_532_LN.wav",
         "full_ts": "position fox yankee november yankee victor",
-        "short_ts": "position FYNYV",
+        "short_ts": "position fynyv",
         "prompt": null
     },
     {
@@ -2143,8 +2143,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_572_LN.wav",
-        "full_ts": "ETA seven romeo victor india uniform at one one hours seven",
-        "short_ts": "ETA 7RVIU at 11 hours 7",
+        "full_ts": "eta seven romeo victor india uniform at one one hours seven",
+        "short_ts": "eta 7rviu at 11 hours 7",
         "prompt": null
     },
     {
@@ -2161,26 +2161,26 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_602_LN.wav",
-        "full_ts": "VOR",
-        "short_ts": "VOR",
+        "full_ts": "vor",
+        "short_ts": "vor",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_612_LN.wav",
-        "full_ts": "select HF1 five four seven zero",
-        "short_ts": "select HF1 5470",
+        "full_ts": "select hf1 five four seven zero",
+        "short_ts": "select hf1 5470",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_622_LN.wav",
         "full_ts": "position xray fox six tango seven",
-        "short_ts": "position XF6T7",
+        "short_ts": "position xf6t7",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_632_LN.wav",
         "full_ts": "position quebec nine victor alpha whiskey",
-        "short_ts": "position Q9VAW",
+        "short_ts": "position q9vaw",
         "prompt": null
     },
     {
@@ -2227,8 +2227,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_712_LN.wav",
-        "full_ts": "VHF3 one nine six dot three seven",
-        "short_ts": "VHF3 196.37",
+        "full_ts": "vhf3 one nine six dot three seven",
+        "short_ts": "vhf3 196.37",
         "prompt": null
     },
     {
@@ -2239,8 +2239,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_732_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
@@ -2257,14 +2257,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_762_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_772_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -2275,8 +2275,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_792_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
@@ -2329,20 +2329,20 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_882_LN.wav",
-        "full_ts": "HF2 five eight nine six",
-        "short_ts": "HF2 5896",
+        "full_ts": "hf2 five eight nine six",
+        "short_ts": "hf2 5896",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_892_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_902_LN.wav",
-        "full_ts": "VHF1",
-        "short_ts": "VHF1",
+        "full_ts": "vhf1",
+        "short_ts": "vhf1",
         "prompt": null
     },
     {
@@ -2371,14 +2371,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_952_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_962_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -2395,8 +2395,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FMKF/FMKF_992_LN.wav",
-        "full_ts": "select VHF2 one two five",
-        "short_ts": "select VHF2 125",
+        "full_ts": "select vhf2 one two five",
+        "short_ts": "select vhf2 125",
         "prompt": null
     },
     {
@@ -2473,8 +2473,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_129_LN.wav",
-        "full_ts": "ILS",
-        "short_ts": "ILS",
+        "full_ts": "ils",
+        "short_ts": "ils",
         "prompt": null
     },
     {
@@ -2533,8 +2533,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_229_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -2545,8 +2545,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_249_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -2563,8 +2563,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_279_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
@@ -2581,20 +2581,20 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_309_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_319_LN.wav",
         "full_ts": "position papa three echo yankee papa",
-        "short_ts": "position P3EYP",
+        "short_ts": "position p3eyp",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_329_LN.wav",
-        "full_ts": "ETA bravo nine quebec papa xray at zero two one six",
-        "short_ts": "ETA B9QPX at 0216",
+        "full_ts": "eta bravo nine quebec papa xray at zero two one six",
+        "short_ts": "eta b9qpx at 0216",
         "prompt": null
     },
     {
@@ -2605,26 +2605,26 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_349_LN.wav",
-        "full_ts": "ETA fox six hotel xray mike at one zero nine",
-        "short_ts": "ETA F6HXM at 109",
+        "full_ts": "eta fox six hotel xray mike at one zero nine",
+        "short_ts": "eta f6hxm at 109",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_359_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_369_LN.wav",
-        "full_ts": "ETA delta golf alpha kilo alpha at six three",
-        "short_ts": "ETA DGAKA at 63",
+        "full_ts": "eta delta golf alpha kilo alpha at six three",
+        "short_ts": "eta dgaka at 63",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_379_LN.wav",
         "full_ts": "request direct to sierra two charlie fox romeo due to performance",
-        "short_ts": "request direct to S2CFR due to performance",
+        "short_ts": "request direct to s2cfr due to performance",
         "prompt": null
     },
     {
@@ -2642,7 +2642,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_409_LN.wav",
         "full_ts": "request direct to sierra foxtrot uniform tango juliet due to weather",
-        "short_ts": "request direct to SFUTJ due to weather",
+        "short_ts": "request direct to sfutj due to weather",
         "prompt": null
     },
     {
@@ -2671,8 +2671,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_459_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
@@ -2731,14 +2731,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_559_LN.wav",
-        "full_ts": "select HF1 two eight three zero",
-        "short_ts": "select HF1 2830",
+        "full_ts": "select hf1 two eight three zero",
+        "short_ts": "select hf1 2830",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_569_LN.wav",
-        "full_ts": "select VHF2 one two nine decimal three",
-        "short_ts": "select VHF2 129.3",
+        "full_ts": "select vhf2 one two nine decimal three",
+        "short_ts": "select vhf2 129.3",
         "prompt": null
     },
     {
@@ -2755,8 +2755,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_599_LN.wav",
-        "full_ts": "select VHF3",
-        "short_ts": "select VHF3",
+        "full_ts": "select vhf3",
+        "short_ts": "select vhf3",
         "prompt": null
     },
     {
@@ -2779,20 +2779,20 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_639_LN.wav",
-        "full_ts": "HF2 six five zero nine",
-        "short_ts": "HF2 6509",
+        "full_ts": "hf2 six five zero nine",
+        "short_ts": "hf2 6509",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_649_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_659_LN.wav",
-        "full_ts": "VOR",
-        "short_ts": "VOR",
+        "full_ts": "vor",
+        "short_ts": "vor",
         "prompt": null
     },
     {
@@ -2851,14 +2851,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_759_LN.wav",
-        "full_ts": "ILS",
-        "short_ts": "ILS",
+        "full_ts": "ils",
+        "short_ts": "ils",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_769_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
@@ -2893,8 +2893,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_829_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -2935,8 +2935,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_899_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -2989,8 +2989,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FOMF/FOMF_989_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
@@ -3001,14 +3001,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_005_LN.wav",
-        "full_ts": "VHF1",
-        "short_ts": "VHF1",
+        "full_ts": "vhf1",
+        "short_ts": "vhf1",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_015_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -3019,8 +3019,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_035_LN.wav",
-        "full_ts": "VOR",
-        "short_ts": "VOR",
+        "full_ts": "vor",
+        "short_ts": "vor",
         "prompt": null
     },
     {
@@ -3037,8 +3037,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_065_LN.wav",
-        "full_ts": "select VHF3",
-        "short_ts": "select VHF3",
+        "full_ts": "select vhf3",
+        "short_ts": "select vhf3",
         "prompt": null
     },
     {
@@ -3055,8 +3055,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_095_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
@@ -3079,14 +3079,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_135_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_145_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -3103,8 +3103,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_175_LN.wav",
-        "full_ts": "select HF2 nine zero one two",
-        "short_ts": "select HF2 9012",
+        "full_ts": "select hf2 nine zero one two",
+        "short_ts": "select hf2 9012",
         "prompt": null
     },
     {
@@ -3211,8 +3211,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_355_LN.wav",
-        "full_ts": "ILS on",
-        "short_ts": "ILS on",
+        "full_ts": "ils on",
+        "short_ts": "ils on",
         "prompt": null
     },
     {
@@ -3253,8 +3253,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_425_LN.wav",
-        "full_ts": "select HF1 five zero nine two",
-        "short_ts": "select HF1 5092",
+        "full_ts": "select hf1 five zero nine two",
+        "short_ts": "select hf1 5092",
         "prompt": null
     },
     {
@@ -3295,8 +3295,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_495_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
@@ -3307,32 +3307,32 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_515_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_525_LN.wav",
-        "full_ts": "HF2 three six seven six",
-        "short_ts": "HF2 3676",
+        "full_ts": "hf2 three six seven six",
+        "short_ts": "hf2 3676",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_535_LN.wav",
         "full_ts": "request direct to juliet eight",
-        "short_ts": "request direct to J8",
+        "short_ts": "request direct to j8",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_545_LN.wav",
         "full_ts": "request direct to foxtrot one sierra quebec november due to performance",
-        "short_ts": "request direct to F1SQN due to performance",
+        "short_ts": "request direct to f1sqn due to performance",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_555_LN.wav",
         "full_ts": "request direct to one tango six oscar india due to weather",
-        "short_ts": "request direct to 1T6OI due to weather",
+        "short_ts": "request direct to 1t6oi due to weather",
         "prompt": null
     },
     {
@@ -3343,14 +3343,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_575_LN.wav",
-        "full_ts": "ETA papa lima xray november sierra at three eight minutes",
-        "short_ts": "ETA PLXNS at 38 minutes",
+        "full_ts": "eta papa lima xray november sierra at three eight minutes",
+        "short_ts": "eta plxns at 38 minutes",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_585_LN.wav",
-        "full_ts": "ILS off",
-        "short_ts": "ILS off",
+        "full_ts": "ils off",
+        "short_ts": "ils off",
         "prompt": null
     },
     {
@@ -3368,7 +3368,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_615_LN.wav",
         "full_ts": "request direct to nine whiskey romeo due to performance",
-        "short_ts": "request direct to 9WR due to performance",
+        "short_ts": "request direct to 9wr due to performance",
         "prompt": null
     },
     {
@@ -3385,20 +3385,20 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_645_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_655_LN.wav",
         "full_ts": "position india bravo foxtrot fox uniform",
-        "short_ts": "position IBFFU",
+        "short_ts": "position ibffu",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_665_LN.wav",
-        "full_ts": "VHF3",
-        "short_ts": "VHF3",
+        "full_ts": "vhf3",
+        "short_ts": "vhf3",
         "prompt": null
     },
     {
@@ -3427,8 +3427,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_715_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -3487,8 +3487,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_815_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -3499,8 +3499,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_835_LN.wav",
-        "full_ts": "select VHF2 one six nine decimal nine four",
-        "short_ts": "select VHF2 169.94",
+        "full_ts": "select vhf2 one six nine decimal nine four",
+        "short_ts": "select vhf2 169.94",
         "prompt": null
     },
     {
@@ -3529,8 +3529,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_885_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
@@ -3571,14 +3571,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_955_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSHM/FSHM_965_LN.wav",
-        "full_ts": "VHF3 one three six dot nine five",
-        "short_ts": "VHF3 136.95",
+        "full_ts": "vhf3 one three six dot nine five",
+        "short_ts": "vhf3 136.95",
         "prompt": null
     },
     {
@@ -3673,8 +3673,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_129_LN.wav",
-        "full_ts": "ILS",
-        "short_ts": "ILS",
+        "full_ts": "ils",
+        "short_ts": "ils",
         "prompt": null
     },
     {
@@ -3733,8 +3733,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_229_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -3745,8 +3745,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_249_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -3763,8 +3763,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_279_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
@@ -3781,20 +3781,20 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_309_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_319_LN.wav",
         "full_ts": "position papa three echo yankee papa",
-        "short_ts": "position P3EYP",
+        "short_ts": "position p3eyp",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_329_LN.wav",
-        "full_ts": "ETA bravo nine quebec papa xray at zero two one six",
-        "short_ts": "ETA B9QPX at 0216",
+        "full_ts": "eta bravo nine quebec papa xray at zero two one six",
+        "short_ts": "eta b9qpx at 0216",
         "prompt": null
     },
     {
@@ -3805,26 +3805,26 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_349_LN.wav",
-        "full_ts": "ETA fox six hotel xray mike at one zero nine",
-        "short_ts": "ETA F6HXM at 109",
+        "full_ts": "eta fox six hotel xray mike at one zero nine",
+        "short_ts": "eta f6hxm at 109",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_359_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_369_LN.wav",
-        "full_ts": "ETA delta golf alpha kilo alpha at six three",
-        "short_ts": "ETA DGAKA at 63",
+        "full_ts": "eta delta golf alpha kilo alpha at six three",
+        "short_ts": "eta dgaka at 63",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_379_LN.wav",
         "full_ts": "request direct to sierra two charlie fox romeo due to performance",
-        "short_ts": "request direct to S2CFR due to performance",
+        "short_ts": "request direct to s2cfr due to performance",
         "prompt": null
     },
     {
@@ -3842,7 +3842,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_409_LN.wav",
         "full_ts": "request direct to sierra foxtrot uniform tango juliet due to weather",
-        "short_ts": "request direct to SFUTJ due to weather",
+        "short_ts": "request direct to sfutj due to weather",
         "prompt": null
     },
     {
@@ -3871,8 +3871,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_459_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
@@ -3931,14 +3931,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_559_LN.wav",
-        "full_ts": "select HF1 two eight three zero",
-        "short_ts": "select HF1 2830",
+        "full_ts": "select hf1 two eight three zero",
+        "short_ts": "select hf1 2830",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_569_LN.wav",
-        "full_ts": "select VHF2 one two nine decimal three",
-        "short_ts": "select VHF2 129.3",
+        "full_ts": "select vhf2 one two nine decimal three",
+        "short_ts": "select vhf2 129.3",
         "prompt": null
     },
     {
@@ -3955,8 +3955,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_599_LN.wav",
-        "full_ts": "select VHF3",
-        "short_ts": "select VHF3",
+        "full_ts": "select vhf3",
+        "short_ts": "select vhf3",
         "prompt": null
     },
     {
@@ -3979,20 +3979,20 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_639_LN.wav",
-        "full_ts": "HF2 six five zero nine",
-        "short_ts": "HF2 6509",
+        "full_ts": "hf2 six five zero nine",
+        "short_ts": "hf2 6509",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_649_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_659_LN.wav",
-        "full_ts": "VOR",
-        "short_ts": "VOR",
+        "full_ts": "vor",
+        "short_ts": "vor",
         "prompt": null
     },
     {
@@ -4051,14 +4051,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_759_LN.wav",
-        "full_ts": "ILS",
-        "short_ts": "ILS",
+        "full_ts": "ils",
+        "short_ts": "ils",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_769_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
@@ -4093,8 +4093,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_829_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
@@ -4135,8 +4135,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_899_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -4189,8 +4189,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FSVF/FSVF_989_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
@@ -4202,7 +4202,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_004_LN.wav",
         "full_ts": "request direct to uniform kilo bravo two oscar due to weather",
-        "short_ts": "request direct to UKB2O due to weather",
+        "short_ts": "request direct to ukb2o due to weather",
         "prompt": null
     },
     {
@@ -4220,13 +4220,13 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_034_LN.wav",
         "full_ts": "position one uniform foxtrot charlie seven",
-        "short_ts": "position 1UFC7",
+        "short_ts": "position 1ufc7",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_044_LN.wav",
-        "full_ts": "ETA romeo papa four seven xray at one seven two five minutes",
-        "short_ts": "ETA RP47X at 1725 minutes",
+        "full_ts": "eta romeo papa four seven xray at one seven two five minutes",
+        "short_ts": "eta rp47x at 1725 minutes",
         "prompt": null
     },
     {
@@ -4244,7 +4244,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_074_LN.wav",
         "full_ts": "position hotel victor fox three charlie",
-        "short_ts": "position HVF3C",
+        "short_ts": "position hvf3c",
         "prompt": null
     },
     {
@@ -4268,7 +4268,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_114_LN.wav",
         "full_ts": "position sierra two kilo papa one",
-        "short_ts": "position S2KP1",
+        "short_ts": "position s2kp1",
         "prompt": null
     },
     {
@@ -4297,8 +4297,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_164_LN.wav",
-        "full_ts": "ETA one kilo mike zero juliet at eight five three minutes",
-        "short_ts": "ETA 1KM0J at 853 minutes",
+        "full_ts": "eta one kilo mike zero juliet at eight five three minutes",
+        "short_ts": "eta 1km0j at 853 minutes",
         "prompt": null
     },
     {
@@ -4310,13 +4310,13 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_184_LN.wav",
         "full_ts": "request direct to echo uniform six delta uniform due to aircraft performance",
-        "short_ts": "request direct to EU6DU due to aircraft performance",
+        "short_ts": "request direct to eu6du due to aircraft performance",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_194_LN.wav",
-        "full_ts": "VHF3 one two seven",
-        "short_ts": "VHF3 127",
+        "full_ts": "vhf3 one two seven",
+        "short_ts": "vhf3 127",
         "prompt": null
     },
     {
@@ -4351,8 +4351,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_254_LN.wav",
-        "full_ts": "VHF1",
-        "short_ts": "VHF1",
+        "full_ts": "vhf1",
+        "short_ts": "vhf1",
         "prompt": null
     },
     {
@@ -4363,8 +4363,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_274_LN.wav",
-        "full_ts": "PFD",
-        "short_ts": "PFD",
+        "full_ts": "pfd",
+        "short_ts": "pfd",
         "prompt": null
     },
     {
@@ -4393,8 +4393,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_324_LN.wav",
-        "full_ts": "ETA charlie seven mike fox five at three hours four one minutes",
-        "short_ts": "ETA C7MF5 at 3 hours 41 minutes",
+        "full_ts": "eta charlie seven mike fox five at three hours four one minutes",
+        "short_ts": "eta c7mf5 at 3 hours 41 minutes",
         "prompt": null
     },
     {
@@ -4405,8 +4405,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_344_LN.wav",
-        "full_ts": "VOR",
-        "short_ts": "VOR",
+        "full_ts": "vor",
+        "short_ts": "vor",
         "prompt": null
     },
     {
@@ -4423,26 +4423,26 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_374_LN.wav",
-        "full_ts": "select HF1 three six nine six",
-        "short_ts": "select HF1 3696",
+        "full_ts": "select hf1 three six nine six",
+        "short_ts": "select hf1 3696",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_384_LN.wav",
-        "full_ts": "AOC",
-        "short_ts": "AOC",
+        "full_ts": "aoc",
+        "short_ts": "aoc",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_394_LN.wav",
-        "full_ts": "FMS",
-        "short_ts": "FMS",
+        "full_ts": "fms",
+        "short_ts": "fms",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_404_LN.wav",
-        "full_ts": "select HF2 three six five eight",
-        "short_ts": "select HF2 3658",
+        "full_ts": "select hf2 three six five eight",
+        "short_ts": "select hf2 3658",
         "prompt": null
     },
     {
@@ -4459,8 +4459,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_434_LN.wav",
-        "full_ts": "VHF2 one four five decimal one three",
-        "short_ts": "VHF2 145.13",
+        "full_ts": "vhf2 one four five decimal one three",
+        "short_ts": "vhf2 145.13",
         "prompt": null
     },
     {
@@ -4483,8 +4483,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_474_LN.wav",
-        "full_ts": "TAF",
-        "short_ts": "TAF",
+        "full_ts": "taf",
+        "short_ts": "taf",
         "prompt": null
     },
     {
@@ -4495,8 +4495,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_494_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
@@ -4507,8 +4507,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_514_LN.wav",
-        "full_ts": "ND",
-        "short_ts": "ND",
+        "full_ts": "nd",
+        "short_ts": "nd",
         "prompt": null
     },
     {
@@ -4555,14 +4555,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_594_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_604_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -4645,14 +4645,14 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_744_LN.wav",
-        "full_ts": "select VHF2 one zero three decimal nine six",
-        "short_ts": "select VHF2 103.96",
+        "full_ts": "select vhf2 one zero three decimal nine six",
+        "short_ts": "select vhf2 103.96",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_754_LN.wav",
-        "full_ts": "ETA victor zulu one five foxtrot at five seven minutes",
-        "short_ts": "ETA VZ15F at 57 minutes",
+        "full_ts": "eta victor zulu one five foxtrot at five seven minutes",
+        "short_ts": "eta vz15f at 57 minutes",
         "prompt": null
     },
     {
@@ -4664,7 +4664,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_774_LN.wav",
         "full_ts": "position romeo lima hotel delta mike",
-        "short_ts": "position RLHDM",
+        "short_ts": "position rlhdm",
         "prompt": null
     },
     {
@@ -4699,8 +4699,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_834_LN.wav",
-        "full_ts": "ETA juliet sierra five papa quebec at five six",
-        "short_ts": "ETA JS5PQ at 56",
+        "full_ts": "eta juliet sierra five papa quebec at five six",
+        "short_ts": "eta js5pq at 56",
         "prompt": null
     },
     {
@@ -4717,8 +4717,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_864_LN.wav",
-        "full_ts": "ETA delta romeo tango whiskey zero at eight hours three six",
-        "short_ts": "ETA DRTW0 at 8 hours 36",
+        "full_ts": "eta delta romeo tango whiskey zero at eight hours three six",
+        "short_ts": "eta drtw0 at 8 hours 36",
         "prompt": null
     },
     {
@@ -4729,8 +4729,8 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_884_LN.wav",
-        "full_ts": "SID",
-        "short_ts": "SID",
+        "full_ts": "sid",
+        "short_ts": "sid",
         "prompt": null
     },
     {
@@ -4753,26 +4753,26 @@
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_924_LN.wav",
-        "full_ts": "FD engage",
-        "short_ts": "FD engage",
+        "full_ts": "fd engage",
+        "short_ts": "fd engage",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_934_LN.wav",
         "full_ts": "request direct to delta sierra india nine hotel due to weather",
-        "short_ts": "request direct to DSI9H due to weather",
+        "short_ts": "request direct to dsi9h due to weather",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_944_LN.wav",
         "full_ts": "request direct to tango bravo alpha papa xray due to performance",
-        "short_ts": "request direct to TBAPX due to performance",
+        "short_ts": "request direct to tbapx due to performance",
         "prompt": null
     },
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_954_LN.wav",
-        "full_ts": "FD disengage",
-        "short_ts": "FD disengage",
+        "full_ts": "fd disengage",
+        "short_ts": "fd disengage",
         "prompt": null
     },
     {
@@ -4784,7 +4784,7 @@
     {
         "audio": "HIWIRE_ELDA_S0293/speechdata/LN/FR/FVCM/FVCM_974_LN.wav",
         "full_ts": "position quebec zulu kilo bravo november",
-        "short_ts": "position QZKBN",
+        "short_ts": "position qzkbn",
         "prompt": null
     },
     {

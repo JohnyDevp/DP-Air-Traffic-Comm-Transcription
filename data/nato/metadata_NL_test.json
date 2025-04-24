@@ -2,211 +2,211 @@
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male.wav",
         "full_ts": "papa alfa sierra zulu this is papa alfa romeo delta over",
-        "short_ts": "PASZ this is PARD over",
+        "short_ts": "pasz this is pard over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female.wav",
         "full_ts": "papa alfa sierra zulu this is papa alfa victor oscar over",
-        "short_ts": "PASZ this is PAVO over",
+        "short_ts": "pasz this is pavo over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_0.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa victor oscar roger over",
-        "short_ts": "ORJH this is PAVO roger over",
+        "short_ts": "orjh this is pavo roger over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_1.wav",
         "full_ts": "papa alfa foxt(rot) disregard this transmission out",
-        "short_ts": "PA foxt rot disregard this transmission out",
+        "short_ts": "pa foxt rot disregard this transmission out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_2.wav",
         "full_ts": "papa alfa foxtrot foxtrot this is papa alfa romeo delta radio check over",
-        "short_ts": "PAFF this is PARD radio check over",
+        "short_ts": "paff this is pard radio check over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female.wav",
         "full_ts": "papa alfa romeo delta this is papa alfa foxtrot foxtrot weak but readable over",
-        "short_ts": "PARD this is PAFF weak but readable over",
+        "short_ts": "pard this is paff weak but readable over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_4.wav",
         "full_ts": "papa alfa foxtrot foxtrot this is papa alfa romeo delta loud and distorted out",
-        "short_ts": "PAFF this is PARD loud and distorted out",
+        "short_ts": "paff this is pard loud and distorted out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_2.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa victor oscar say again from liberty to break over",
-        "short_ts": "AMAA this is PAVO say again from liberty to break over",
+        "short_ts": "amaa this is pavo say again from liberty to break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_5.wav",
-        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa use abbreviated call signs authentication time zero seven zero six I au(thenticate) I authenticate foxtrot papa over",
-        "short_ts": "HBXJ this is AMAA use abbreviated call signs authentication time 0706 I au thenticate I authenticate FP over",
+        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa use abbreviated call signs authentication time zero seven zero six i au(thenticate) i authenticate foxtrot papa over",
+        "short_ts": "hbxj this is amaa use abbreviated call signs authentication time 0706 i au thenticate i authenticate fp over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_1.wav",
         "full_ts": "ro(meo) alfa alfa this is foxtrot foxtrot roger out",
-        "short_ts": "ro meo AA this is FF roger out",
+        "short_ts": "ro meo aa this is ff roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_4.wav",
         "full_ts": "alfa alfa this victor oscar out",
-        "short_ts": "AA this VO out",
+        "short_ts": "aa this vo out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female.wav",
-        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa use full call signs authentication time is se(ven) seven zero five correction zero seven zero five I authenticate zulu disregard this transmission out",
-        "short_ts": "HBXJ this is AMAA use full call signs authentication time is se ven 705 correction 0705 I authenticate Z disregard this transmission out",
+        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa use full call signs authentication time is se(ven) seven zero five correction zero seven zero five i authenticate zulu disregard this transmission out",
+        "short_ts": "hbxj this is amaa use full call signs authentication time is se ven 705 correction 0705 i authenticate z disregard this transmission out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_1.wav",
-        "full_ts": "xray juliett this alfa alfa use full call signs authentication time is zero seven zero five I authenticate zulu india over",
-        "short_ts": "XJ this AA use full call signs authentication time is 0705 I authenticate ZI over",
+        "full_ts": "xray juliett this alfa alfa use full call signs authentication time is zero seven zero five i authenticate zulu india over",
+        "short_ts": "xj this aa use full call signs authentication time is 0705 i authenticate zi over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_5.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa victor oscar say again from break to break over",
-        "short_ts": "AMAA this is PAVO say again from break to break over",
+        "short_ts": "amaa this is pavo say again from break to break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_6.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa victor oscar roger out`",
-        "short_ts": "AMAA this is PAVO roger out",
+        "short_ts": "amaa this is pavo roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_3.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa foxtrot foxtrot verify word after control over",
-        "short_ts": "AMAA this is PAFF verify word after control over",
+        "short_ts": "amaa this is paff verify word after control over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_3.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa correction my zero niner one eight zulu from break to will break call sign papa alfa romeo delta will over",
-        "short_ts": "HBXJ this is AMAA correction my 0 niner 18Z from break to will break call sign PARD will over",
+        "short_ts": "hbxj this is amaa correction my 0 niner 18z from break to will break call sign pard will over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_4.wav",
-        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa kick echo four I say again kick echo four authentication time zero seven one eight I authenticate uniform tango over",
-        "short_ts": "HBXJ this is AMAA kick E4 I say again kick E4 authentication time 0718 I authenticate UT over",
+        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa kick echo four i say again kick echo four authentication time zero seven one eight i authenticate uniform tango over",
+        "short_ts": "hbxj this is amaa kick e4 i say again kick e4 authentication time 0718 i authenticate ut over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_8.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa victor oscar say again from alfa delta five to break over",
-        "short_ts": "AMAA this is PAVO say again from AD 500 break over",
+        "short_ts": "amaa this is pavo say again from ad 500 break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_5.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa foxtrot foxtrot verify your two two three four zulu from one one echo to break over",
-        "short_ts": "AMAA this is PAFF verify your 2234Z from 11E to break over",
+        "short_ts": "amaa this is paff verify your 2234z from 11e to break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_6.wav",
-        "full_ts": "papa alfa foxtrot foxtrot this is alfa mike alfa alfa I verify my two two three four zulu from one one echo to break one one echo tack Walrus break over",
-        "short_ts": "PAFF this is AMAA I verify my 2234Z from 11E to break 11E tack Walrus break over",
+        "full_ts": "papa alfa foxtrot foxtrot this is alfa mike alfa alfa i verify my two two three four zulu from one one echo to break one one echo tack walrus break over",
+        "short_ts": "paff this is amaa i verify my 2234z from 11e to break 11e tack walrus break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_7.wav",
         "full_ts": "papa alfa foxtrot fox.. foxtrot this is alfa mike alfa roger out",
-        "short_ts": "PAFF.. F this is AMA roger out",
+        "short_ts": "paff.. f this is ama roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_8.wav",
         "full_ts": "papa alfa foxtrot foxtrot this is alfa mike alfa alfa roger out",
-        "short_ts": "PAFF this is AMAA roger out",
+        "short_ts": "paff this is amaa roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_10.wav",
-        "full_ts": "alfa mike alfa alfa this is papa alfa victor oscar I say again from tack to tack tack charlie oscar two tack over",
-        "short_ts": "AMAA this is PAVO I say again from tack to tack tack CO2 tack over",
+        "full_ts": "alfa mike alfa alfa this is papa alfa victor oscar i say again from tack to tack tack charlie oscar two tack over",
+        "short_ts": "amaa this is pavo i say again from tack to tack tack co2 tack over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_10.wav",
         "full_ts": "papa alfa romeo delta this is alfa mike alfa alfa roger out",
-        "short_ts": "PARD this is AMAA roger out",
+        "short_ts": "pard this is amaa roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_9.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa foxtrot foxtrot break corpan zero nine zero break standby standby execute out",
-        "short_ts": "HBXJ this is PAFF break corpan 090 break standby standby execute out",
+        "short_ts": "hbxj this is paff break corpan 090 break standby standby execute out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_13.wav",
         "full_ts": "papa alfa mike golf interrogative roger",
-        "short_ts": "PAMG interrogative roger",
+        "short_ts": "pamg interrogative roger",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_15.wav",
         "full_ts": "papa alfa mike golf interrogative roger",
-        "short_ts": "PAMG interrogative roger",
+        "short_ts": "pamg interrogative roger",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_17.wav",
         "full_ts": "papa alfa victor papa over",
-        "short_ts": "PAVP over",
+        "short_ts": "pavp over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_19.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa victor oscar dis(regard) disregard this transmission",
-        "short_ts": "HBXJ this is PAVO dis regard disregard this transmission",
+        "short_ts": "hbxj this is pavo dis regard disregard this transmission",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_22.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa victor oscar standby standby execute papa alfa zulu juliett over",
-        "short_ts": "HBXJ this is PAVO standby standby execute PAZJ over",
+        "short_ts": "hbxj this is pavo standby standby execute pazj over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_23.wav",
         "full_ts": "papa alfa sierra zulu this is papa alfa victor oscar roger out",
-        "short_ts": "PASZ this is PAVO roger out",
+        "short_ts": "pasz this is pavo roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_25.wav",
         "full_ts": "papa alfa sierra zulu this is papa alfa victor oscar roger out",
-        "short_ts": "PASZ this is PAVO roger out",
+        "short_ts": "pasz this is pavo roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_27.wav",
         "full_ts": "papa alfa sierra zulu this is papa alfa victor oscar roger out",
-        "short_ts": "PASZ this is PAVO roger out",
+        "short_ts": "pasz this is pavo roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_29.wav",
         "full_ts": "papa alfa victor papa this is papa alfa victor oscar roger out",
-        "short_ts": "PAVP this is PAVO roger out",
+        "short_ts": "pavp this is pavo roger out",
         "prompt": null
     },
     {
@@ -224,79 +224,79 @@
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_35.wav",
         "full_ts": "eeh sierra zulu of zo",
-        "short_ts": "eeh SZ of zo",
+        "short_ts": "eeh sz of zo",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_37.wav",
         "full_ts": "papa alfa sierra ehm correction papa alfa zulu juliett this is papa alfa victor oscar say again all after immediate execute over",
-        "short_ts": "PAS ehm correction PAZJ this is PAVO say again all after immediate execute over",
+        "short_ts": "pas ehm correction pazj this is pavo say again all after immediate execute over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_10.wav",
         "full_ts": "golf uhmm correction oscar this is papa alfa foxtrot foxtrot over",
-        "short_ts": "G uhmm correction O this is PAFF over",
+        "short_ts": "g uhmm correction o this is paff over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_39.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa victor oscar over",
-        "short_ts": "ORJH this is PAVO over",
+        "short_ts": "orjh this is pavo over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_41.wav",
         "full_ts": "papa alfa mike charlie this is papa alfa victor oscar radio check over",
-        "short_ts": "PAMC this is PAVO radio check over",
+        "short_ts": "pamc this is pavo radio check over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_43.wav",
         "full_ts": "papa alfa mike charlie this is papa alfa victor oscar roger out",
-        "short_ts": "PAMC this is PAVO roger out",
+        "short_ts": "pamc this is pavo roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_12.wav",
         "full_ts": "this is foxtrot foxtrot roger out",
-        "short_ts": "this is FF roger out",
+        "short_ts": "this is ff roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_45.wav",
         "full_ts": "this is victor correction this is victor oscar roger out",
-        "short_ts": "this is V correction this is VO roger out",
+        "short_ts": "this is v correction this is vo roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_8.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa use indefinite call signs over",
-        "short_ts": "HBXJ this is AMAA use indefinite call signs over",
+        "short_ts": "hbxj this is amaa use indefinite call signs over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_47.wav",
-        "full_ts": "papa alfa mike charlie this is papa alfa victor oscar I say again word after figures one zero zero three papa india alfa whiskey papa oscar over",
-        "short_ts": "PAMC this is PAVO I say again word after figures 1003PIAWPO over",
+        "full_ts": "papa alfa mike charlie this is papa alfa victor oscar i say again word after figures one zero zero three papa india alfa whiskey papa oscar over",
+        "short_ts": "pamc this is pavo i say again word after figures 1003piawpo over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_14.wav",
         "full_ts": "this is papa alfa foxtrot foxtrot roger out",
-        "short_ts": "this is PAFF roger out",
+        "short_ts": "this is paff roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_16.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa foxtrot foxtrot time one four zero one zulu correction word after serial two one one eight papa alfa victor oscar over",
-        "short_ts": "HBXJ this is PAFF time 1401Z correction word after serial 2118PAVO over",
+        "short_ts": "hbxj this is paff time 1401z correction word after serial 2118pavo over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_50.wav",
         "full_ts": "papa alfa foxtrot foxtrot roger out ehm correction this is papa alfa victor oscar roger out",
-        "short_ts": "PAFF roger out ehm correction this is PAVO roger out",
+        "short_ts": "paff roger out ehm correction this is pavo roger out",
         "prompt": null
     },
     {
@@ -307,32 +307,32 @@
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_10.wav",
-        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa immediate execute break turn port four tack speed two two break authentication time zero seven four six I authenticate foxtrot golf",
-        "short_ts": "HBXJ this is AMAA immediate execute break turn port 4 tack speed 22 break authentication time 0746 I authenticate FG",
+        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa immediate execute break turn port four tack speed two two break authentication time zero seven four six i authenticate foxtrot golf",
+        "short_ts": "hbxj this is amaa immediate execute break turn port 4 tack speed 22 break authentication time 0746 i authenticate fg",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_11.wav",
-        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa immediate execute break turn port four tack speed two two break authentication time zero seven four eight I authenticate oscar foxtrot stand by",
-        "short_ts": "HBXJ this is AMAA immediate execute break turn port 4 tack speed 22 break authentication time 0748 I authenticate OF stand by",
+        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa immediate execute break turn port four tack speed two two break authentication time zero seven four eight i authenticate oscar foxtrot stand by",
+        "short_ts": "hbxj this is amaa immediate execute break turn port 4 tack speed 22 break authentication time 0748 i authenticate of stand by",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_54.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa victor oscar say again over",
-        "short_ts": "ORJH this is PAVO say again over",
+        "short_ts": "orjh this is pavo say again over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_56.wav",
         "full_ts": "oscar romeo juliett hotel this is papa alfa victor oscar roger out",
-        "short_ts": "ORJH this is PAVO roger out",
+        "short_ts": "orjh this is pavo roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_13.wav",
-        "full_ts": "hotel bravo xray juliett this is al(fa) disregard this (trans) mission out hotel bravo xray juliett this is alfa mike alfa alfa immediate execute speed one two I say again speed one two stand by",
-        "short_ts": "HBXJ this is al fa disregard this trans mission out HBXJ this is AMAA immediate execute speed 12 I say again speed 1 2000 by",
+        "full_ts": "hotel bravo xray juliett this is al(fa) disregard this (trans) mission out hotel bravo xray juliett this is alfa mike alfa alfa immediate execute speed one two i say again speed one two stand by",
+        "short_ts": "hbxj this is al fa disregard this trans mission out hbxj this is amaa immediate execute speed 12 i say again speed 1 2000 by",
         "prompt": null
     },
     {
@@ -343,32 +343,32 @@
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_14.wav",
-        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow break November alfa two two tack four tack bravo alfa tack tango alfa three six tack eight break over",
-        "short_ts": "HBXJ this is AMAA execute to follow break NA22 tack 4 tack BA tack TA36 tack 8 break over",
+        "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow break november alfa two two tack four tack bravo alfa tack tango alfa three six tack eight break over",
+        "short_ts": "hbxj this is amaa execute to follow break na22 tack 4 tack ba tack ta36 tack 8 break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_16.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa break negat bravo alfa break time zero seven five zero over",
-        "short_ts": "HBXJ this is AMAA break negat BA break time 0750 over",
+        "short_ts": "hbxj this is amaa break negat ba break time 0750 over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_18.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow break bravo bravo break over",
-        "short_ts": "HBXJ this is AMAA execute to follow break BB break over",
+        "short_ts": "hbxj this is amaa execute to follow break bb break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_21.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow break station uniform tack speed hotel one zero break over",
-        "short_ts": "HBXJ this is AMAA execute to follow break station U tack speed H10 break over",
+        "short_ts": "hbxj this is amaa execute to follow break station u tack speed h10 break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_23.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa break station uniform break stand by stand by",
-        "short_ts": "HBXJ this is AMAA break station U break stand by stand by",
+        "short_ts": "hbxj this is amaa break station u break stand by stand by",
         "prompt": null
     },
     {
@@ -386,73 +386,73 @@
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_29.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow break echo delta one eight tack tango alfa eight eight tack one zero break over",
-        "short_ts": "HBXJ this is AMAA execute to follow break ED18 tack TA88 tack 10 break over",
+        "short_ts": "hbxj this is amaa execute to follow break ed18 tack ta88 tack 10 break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_30.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa break negat tango alfa eight eight tack one zero break time zero seven five three over",
-        "short_ts": "HBXJ this is AMAA break negat TA88 tack 10 break time 0753 over",
+        "short_ts": "hbxj this is amaa break negat ta88 tack 10 break time 0753 over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_31.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow break tango alfa eight eight tack one two break over",
-        "short_ts": "HBXJ this is AMAA execute to follow break TA88 tack 12 break over",
+        "short_ts": "hbxj this is amaa execute to follow break ta88 tack 12 break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_32.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa stand by stand by",
-        "short_ts": "HBXJ this is AMAA stand by stand by",
+        "short_ts": "hbxj this is amaa stand by stand by",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_16.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow break bravo alfa tack charlie oscar two tack seven tack four five xray tack two three two three break time zero seven five six over",
-        "short_ts": "HBXJ this is AMAA execute to follow break BA tack CO2 tack 7 tack 45X tack 2323 break time 0756 over",
+        "short_ts": "hbxj this is amaa execute to follow break ba tack co2 tack 7 tack 45x tack 2323 break time 0756 over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_18.wav",
-        "full_ts": "papa alfa romeo yankee this is alfa mike alfa alfa I say again from break to tack break bravo alfa tack over",
-        "short_ts": "PARY this is AMAA I say again from break to tack break BA tack over",
+        "full_ts": "papa alfa romeo yankee this is alfa mike alfa alfa i say again from break to tack break bravo alfa tack over",
+        "short_ts": "pary this is amaa i say again from break to tack break ba tack over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_20.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa correction my zero seven five six from four five xray to break over",
-        "short_ts": "HBXJ this is AMAA correction my 0756 from 45X to break over",
+        "short_ts": "hbxj this is amaa correction my 0756 from 45x to break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_58.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa victor oscar execute to follow break screen papa one tack one bravo break over",
-        "short_ts": "HBXJ this is PAVO execute to follow break screen P1 tack 1B break over",
+        "short_ts": "hbxj this is pavo execute to follow break screen p1 tack 1b break over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_60.wav",
         "full_ts": "alfa mike alfa alfa this is papa alfa victor oscar roger out",
-        "short_ts": "AMAA this is PAVO roger out",
+        "short_ts": "amaa this is pavo roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_61.wav",
         "full_ts": "hotel bravo xray juliett this is papa alfa victor oscar break negat tack one bravo break time zero seven five niner over",
-        "short_ts": "HBXJ this is PAVO break negat tack 1B break time 075 niner over",
+        "short_ts": "hbxj this is pavo break negat tack 1b break time 075 niner over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_22.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow break turn whiskey one tack speed one five tack sierra speed two seven break golf charlie oscar bravo over",
-        "short_ts": "HBXJ this is AMAA execute to follow break turn W1 tack speed 15 tack S speed 27 break GCOB over",
+        "short_ts": "hbxj this is amaa execute to follow break turn w1 tack speed 15 tack s speed 27 break gcob over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_23.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa execute to follow speed one five stand by",
-        "short_ts": "HBXJ this is AMAA execute to follow speed 1 5000 by",
+        "short_ts": "hbxj this is amaa execute to follow speed 1 5000 by",
         "prompt": null
     },
     {
@@ -464,19 +464,19 @@
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_male_27.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa break negat turn whiskey one break time zero eight zero two zulu over",
-        "short_ts": "HBXJ this is AMAA break negat turn W1 break time 0802Z over",
+        "short_ts": "hbxj this is amaa break negat turn w1 break time 0802z over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_34.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa corpan juliett one eight zero stand by",
-        "short_ts": "HBXJ this is AMAA corpan J18 0000 by",
+        "short_ts": "hbxj this is amaa corpan j18 0000 by",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_35.wav",
         "full_ts": "hotel bravo xray juliett this is alfa mike alfa alfa break negat tango alfa one two tack four tack speed two zero break time zero eight zero two zulu over",
-        "short_ts": "HBXJ this is AMAA break negat TA12 tack 4 tack speed 20 break time 0802Z over",
+        "short_ts": "hbxj this is amaa break negat ta12 tack 4 tack speed 20 break time 0802z over",
         "prompt": null
     },
     {
@@ -487,14 +487,14 @@
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_31_male_2.wav",
-        "full_ts": "~doorgaan in het Engels ja",
-        "short_ts": "doorgaan in het Engels ja",
+        "full_ts": "~doorgaan in het engels ja",
+        "short_ts": "doorgaan in het engels ja",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_31_male_3.wav",
-        "full_ts": "vergeet niet de zendknop in te drukken en uw [eh] nummer op te geven u kunt net als hij gewoon in het Nederlands en het Engels uw verhaaltje houden",
-        "short_ts": "vergeet niet de zendknop in te drukken en uw nummer op te geven u kunt net als hij gewoon in het Nederlands en het Engels uw verhaaltje houden",
+        "full_ts": "vergeet niet de zendknop in te drukken en uw [eh] nummer op te geven u kunt net als hij gewoon in het nederlands en het engels uw verhaaltje houden",
+        "short_ts": "vergeet niet de zendknop in te drukken en uw nummer op te geven u kunt net als hij gewoon in het nederlands en het engels uw verhaaltje houden",
         "prompt": null
     },
     {
@@ -547,38 +547,38 @@
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_38.wav",
-        "full_ts": "golf charlie oscar bravo this is alfa mike alfa alfa I say again my one one two three zulu from break to tack break bravo alfa tack over",
-        "short_ts": "GCOB this is AMAA I say again my 1123Z from break to tack break BA tack over",
+        "full_ts": "golf charlie oscar bravo this is alfa mike alfa alfa i say again my one one two three zulu from break to tack break bravo alfa tack over",
+        "short_ts": "gcob this is amaa i say again my 1123z from break to tack break ba tack over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_AMAA_female_40.wav",
         "full_ts": "papa alfa romeo delta this is alfa mike alfa alfa roger out",
-        "short_ts": "PARD this is AMAA roger out",
+        "short_ts": "pard this is amaa roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_20.wav",
         "full_ts": "golf charlie oscar bravo this is papa alfa foxtrot foxtrot say again from time two two over",
-        "short_ts": "GCOB this is PAFF say again from time 22 over",
+        "short_ts": "gcob this is paff say again from time 22 over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAFF_female_22.wav",
         "full_ts": "this is papa alfa foxtrot foxtrot roger out",
-        "short_ts": "this is PAFF roger out",
+        "short_ts": "this is paff roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_66.wav",
         "full_ts": "papa alfa mike bravo this is papa alfa victor oscar say again from corpan of port zero tree five to golf over",
-        "short_ts": "PAMB this is PAVO say again from corpan of port 0 tree 500 G over",
+        "short_ts": "pamb this is pavo say again from corpan of port 0 tree 500 g over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Speech_Segments/0_PAVO_female_68.wav",
         "full_ts": "papa alfa mike bravo this is papa alfa victor oscar roger out",
-        "short_ts": "PAMB this is PAVO roger out",
+        "short_ts": "pamb this is pavo roger out",
         "prompt": null
     }
 ]

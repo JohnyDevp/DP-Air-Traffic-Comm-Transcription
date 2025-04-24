@@ -3,6 +3,7 @@ import json
 
 # the path to the disk with datasets of wavs and etc..
 DISK_DIR="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
+DISK_DIR=''
 METADATA_PATH="./metadata_train.json"
 DATASET_SAVE_PATH="./apimod_train_ds"
 

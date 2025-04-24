@@ -2,589 +2,589 @@
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_male.wav",
         "full_ts": "alfa seven zulu, this is oscar six november. rome echo three four, tack desig one six echo, tango one lima, correction, time one zero one six , tango one lima, over",
-        "short_ts": "A7Z, this is O6N. rome E34, tack desig 16E, T1L, correction, time 1016, T1L, over",
+        "short_ts": "a7z, this is o6n. rome e34, tack desig 16e, t1l, correction, time 1016, t1l, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female.wav",
         "full_ts": "flash, this is lima zero hotel. unknown two two seven one , two one zero viper, three zero, out",
-        "short_ts": "flash, this is L0H. unknown 2271, 210 viper, 30, out",
+        "short_ts": "flash, this is l0h. unknown 2271, 210 viper, 30, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_0.wav",
         "full_ts": "flash, this is lima zero hotel , joker two two seven one , two one zero viper, two zero, out",
-        "short_ts": "flash, this is L0H, joker 2271, 210 viper, 20, out",
+        "short_ts": "flash, this is l0h, joker 2271, 210 viper, 20, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_1.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel . echo november three four, tack alfa one, time one zero two zero, kilo nine delta, over",
-        "short_ts": "A7Z, this is L0H. EN34, tack A1, time 1020, K9D, over",
+        "short_ts": "a7z, this is l0h. en34, tack a1, time 1020, k9d, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_2.wav",
         "full_ts": "flash, this is lima zero hotel. zippo charlie based on agavey two one zero, out",
-        "short_ts": "flash, this is L0H. zippo C based on agavey 210, out",
+        "short_ts": "flash, this is l0h. zippo c based on agavey 210, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_3.wav",
         "full_ts": "flash, this is lima zero hotel. joker two two seven one, two one zero, viper one zero, out",
-        "short_ts": "flash, this is L0H. joker 2271, 210, viper 10, out",
+        "short_ts": "flash, this is l0h. joker 2271, 210, viper 10, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_4.wav",
         "full_ts": "flash, this is lima zero hotel. zippo four based on serano two one zero, out",
-        "short_ts": "flash, this is L0H. zippo 4 based on serano 210, out",
+        "short_ts": "flash, this is l0h. zippo 4 based on serano 210, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_5.wav",
         "full_ts": "flash, this is lima zero hotel. bruiser two two seven two, two one zero, zulu zulu, seven zero, out",
-        "short_ts": "flash, this is L0H. bruiser 2272, 210, ZZ, 70, out",
+        "short_ts": "flash, this is l0h. bruiser 2272, 210, zz, 70, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_7.wav",
         "full_ts": "flash, this is lima zero hotel. bruiser two two seven two, two one five, zulu zulu six zero, out",
-        "short_ts": "flash, this is L0H. bruiser 2272, 215, ZZ60, out",
+        "short_ts": "flash, this is l0h. bruiser 2272, 215, zz60, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_8.wav",
         "full_ts": "flash, this is lima zero hotel. bruiser two two seven two, two one zero, zulu zulu five zero, out",
-        "short_ts": "flash, this is L0H. bruiser 2272, 210, ZZ50, out",
+        "short_ts": "flash, this is l0h. bruiser 2272, 210, zz50, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_10.wav",
         "full_ts": "this is lima zero hotel, roger out",
-        "short_ts": "this is L0H, roger out",
+        "short_ts": "this is l0h, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_12.wav",
         "full_ts": "flash, this is lima zero hotel. bruiser two two seven two, two one zero, zulu zulu four zero, out",
-        "short_ts": "flash, this is L0H. bruiser 2272, 210, ZZ40, out",
+        "short_ts": "flash, this is l0h. bruiser 2272, 210, zz40, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male.wav",
         "full_ts": "alfa seven zulu, this is hotel seven victor. alfa alfa",
-        "short_ts": "A7Z, this is H7V. AA",
+        "short_ts": "a7z, this is h7v. aa",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_14.wav",
         "full_ts": "two two, two one zero, zulu zulu three zero, out",
-        "short_ts": "22, 210, ZZ30, out",
+        "short_ts": "22, 210, zz30, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_0.wav",
         "full_ts": "alfa seven zulu, this is hotel seven victor. seven sierra, time one zero three nine, ho(tel)...uniform six victor, over",
-        "short_ts": "A7Z, this is H7V. 7S, time 1039, ho tel... U6V, over",
+        "short_ts": "a7z, this is h7v. 7s, time 1039, ho tel... u6v, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_16.wav",
         "full_ts": "alfa seven sierra, this is lima zero hotel. seven sierra, time one zero four one, uniform six victor, over",
-        "short_ts": "A7S, this is L0H. 7S, time 1041, U6V, over",
+        "short_ts": "a7s, this is l0h. 7s, time 1041, u6v, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_17.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. negat zippo charlie, tack negat zippo four, tack echo november three four, tack alfa two, time one zero four two, hotel seven victor, over",
-        "short_ts": "A7Z, this is L0H. negat zippo C, tack negat zippo 4, tack EN34, tack A2, time 1042, H7V, over",
+        "short_ts": "a7z, this is l0h. negat zippo c, tack negat zippo 4, tack en34, tack a2, time 1042, h7v, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_1.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_18.wav",
         "full_ts": "this is lima zero hotel, roger out",
-        "short_ts": "this is L0H, roger out",
+        "short_ts": "this is l0h, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_2.wav",
         "full_ts": "lima ...disregard over",
-        "short_ts": "L... disregard over",
+        "short_ts": "l... disregard over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_4.wav",
         "full_ts": "alfa seven zulu, this is hotel seven victor. sugar, november one four, time one zero four five, mike nine juliett, over",
-        "short_ts": "A7Z, this is H7V. sugar, N14, time 1045, M9J, over",
+        "short_ts": "a7z, this is h7v. sugar, n14, time 1045, m9j, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_male_0.wav",
         "full_ts": "lima zero hotel, this is oscar six november. sugar , november one four, time one zero four six, over",
-        "short_ts": "L0H, this is O6N. sugar, N14, time 1046, over",
+        "short_ts": "l0h, this is o6n. sugar, n14, time 1046, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_20.wav",
         "full_ts": "this is lima zero hotel, roger out",
-        "short_ts": "this is L0H, roger out",
+        "short_ts": "this is l0h, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_21.wav",
         "full_ts": "flash, this is lima zero hotel. unknown, two two seven six, one four zero, viper six zero, out",
-        "short_ts": "flash, this is L0H. unknown, 2276, 140, viper 60, out",
+        "short_ts": "flash, this is l0h. unknown, 2276, 140, viper 60, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_22.wav",
         "full_ts": "flash, this is lima zero hotel. shadower two two seven six, one four zero, viper six zero, out",
-        "short_ts": "flash, this is L0H. shadower 2276, 140, viper 60, out",
+        "short_ts": "flash, this is l0h. shadower 2276, 140, viper 60, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_24.wav",
         "full_ts": "flash, this is lima zero hotel. unknown two two seven seven, one six zero, viper seven zero, out",
-        "short_ts": "flash, this is L0H. unknown 2277, 160, viper 70, out",
+        "short_ts": "flash, this is l0h. unknown 2277, 160, viper 70, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_26.wav",
         "full_ts": "flash, this is lima zero hotel. unknown two two seven seven now joker two two seven seven, one five zero, viper five zero, out",
-        "short_ts": "flash, this is L0H. unknown 2277 now joker 2277, 150, viper 50, out",
+        "short_ts": "flash, this is l0h. unknown 2277 now joker 2277, 150, viper 50, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_28.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. echo november three four, tack alfa one, time one one two six, uniform six victor, over",
-        "short_ts": "A7Z, this is L0H. EN34, tack A1, time 1126, U6V, over",
+        "short_ts": "a7z, this is l0h. en34, tack a1, time 1126, u6v, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_29.wav",
         "full_ts": "flash, this is lima zero hotel. joker two two seven seven, one five zero, viper four zero, out",
-        "short_ts": "flash, this is L0H. joker 2277, 150, viper 40, out",
+        "short_ts": "flash, this is l0h. joker 2277, 150, viper 40, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_31.wav",
         "full_ts": "flash, this is lima zero hotel. zippo charlie based on agabey one five zero, out",
-        "short_ts": "flash, this is L0H. zippo C based on agabey 150, out",
+        "short_ts": "flash, this is l0h. zippo c based on agabey 150, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_32.wav",
         "full_ts": "flash, this is lima zero hotel. joker two two seven seven, one five zero, viper one zero, out",
-        "short_ts": "flash, this is L0H. joker 2277, 150, viper 10, out",
+        "short_ts": "flash, this is l0h. joker 2277, 150, viper 10, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_34.wav",
         "full_ts": "flash, this is lima zero hotel. zippo four based on serano one five zero, out",
-        "short_ts": "flash, this is L0H. zippo 4 based on serano 150, out",
+        "short_ts": "flash, this is l0h. zippo 4 based on serano 150, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_35.wav",
         "full_ts": "flash, this is lima zero hotel. bruiser two two seven eight , one five five, zulu zulu six zero, out",
-        "short_ts": "flash, this is L0H. bruiser 2278, 155, ZZ60, out",
+        "short_ts": "flash, this is l0h. bruiser 2278, 155, zz60, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_37.wav",
         "full_ts": "this is lima zero hotel, bruiser two two seven eight , one five five, zulu zulu four zero, out",
-        "short_ts": "this is L0H, bruiser 2278, 155, ZZ40, out",
+        "short_ts": "this is l0h, bruiser 2278, 155, zz40, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_male_1.wav",
         "full_ts": "alfa seven zulu, this is oscar six november. alfa alfa one, tack three, desig two two seven nine, time one one three four, tango one tango, over",
-        "short_ts": "A7Z, this is O6N. AA1, tack 3, desig 2279, time 1134, T1T, over",
+        "short_ts": "a7z, this is o6n. aa1, tack 3, desig 2279, time 1134, t1t, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_39.wav",
         "full_ts": "flash, this is lima zero hotel. bruiser two two seven eight , one five five, zulu zulu two zero, out",
-        "short_ts": "flash, this is L0H. bruiser 2278, 155, ZZ20, out",
+        "short_ts": "flash, this is l0h. bruiser 2278, 155, zz20, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_5.wav",
         "full_ts": "flash, this is hotel seven victor. heads up track two two eight zero, out",
-        "short_ts": "flash, this is H7V. heads up track 2280, out",
+        "short_ts": "flash, this is h7v. heads up track 2280, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_40.wav",
         "full_ts": "is lima zero hotel, roger out",
-        "short_ts": "is L0H, roger out",
+        "short_ts": "is l0h, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_41.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. negat zippo charlie, tack negat zippo four, tack echo november three four, tack alfa two, time one one three nine, tango one lima, over",
-        "short_ts": "A7Z, this is L0H. negat zippo C, tack negat zippo 4, tack EN34, tack A2, time 1139, T1L, over",
+        "short_ts": "a7z, this is l0h. negat zippo c, tack negat zippo 4, tack en34, tack a2, time 1139, t1l, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_43.wav",
         "full_ts": "tango one lima, this is lima zero hotel. interrogative roger my one one three nine, over",
-        "short_ts": "T1L, this is L0H. interrogative roger my 1139, over",
+        "short_ts": "t1l, this is l0h. interrogative roger my 1139, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_7.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_8.wav",
         "full_ts": "hotel seven victor, roger out",
-        "short_ts": "H7V, roger out",
+        "short_ts": "h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_female.wav",
         "full_ts": "oscar six november, roger out",
-        "short_ts": "O6N, roger out",
+        "short_ts": "o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_9.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_10.wav",
         "full_ts": "to unknown station, this is hotel seven victor. say again your one one two zero, over",
-        "short_ts": "to unknown station, this is H7V. say again your 1120, over",
+        "short_ts": "to unknown station, this is h7v. say again your 1120, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_12.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_13.wav",
         "full_ts": "tango one lima, this is hotel seven victor. bravo foxtrot, time one one three one, over",
-        "short_ts": "T1L, this is H7V. BF, time 1131, over",
+        "short_ts": "t1l, this is h7v. bf, time 1131, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_44.wav",
         "full_ts": "flash, this is lima zero hotel. unknown, two two seven zero, three one zero, viper seven zero, out",
-        "short_ts": "flash, this is L0H. unknown, 2270, 310, viper 70, out",
+        "short_ts": "flash, this is l0h. unknown, 2270, 310, viper 70, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_45.wav",
         "full_ts": "flash, this is lima zero hotel. unknown, now chick two two seven zero, out",
-        "short_ts": "flash, this is L0H. unknown, now chick 2270, out",
+        "short_ts": "flash, this is l0h. unknown, now chick 2270, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_46.wav",
         "full_ts": "flash, this is lima zero hotel. unknown, two two seven one, two one zero, viper six zero, out",
-        "short_ts": "flash, this is L0H. unknown, 2271, 210, viper 60, out",
+        "short_ts": "flash, this is l0h. unknown, 2271, 210, viper 60, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_47.wav",
         "full_ts": "flash, this is lima zero hotel. unknown, two two seven one, now joker two two seven one, out",
-        "short_ts": "flash, this is L0H. unknown, 2271, now joker 2271, out",
+        "short_ts": "flash, this is l0h. unknown, 2271, now joker 2271, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_49.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. echo november three four, tack alfa one, time one one four four, tango one lima over",
-        "short_ts": "A7Z, this is L0H. EN34, tack A1, time 1144, T1L over",
+        "short_ts": "a7z, this is l0h. en34, tack a1, time 1144, t1l over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_50.wav",
         "full_ts": "flash, this is lima zero hotel. downbeat two one zero, out",
-        "short_ts": "flash, this is L0H. downbeat 210, out",
+        "short_ts": "flash, this is l0h. downbeat 210, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_14.wav",
         "full_ts": "flash, this is hotel seven victor. emergency six, out",
-        "short_ts": "flash, this is H7V. emergency 6, out",
+        "short_ts": "flash, this is h7v. emergency 6, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_52.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. alfa corpan one one zero, time one one four five, tango one lima, over",
-        "short_ts": "A7Z, this is L0H. A corpan 110, time 1145, T1L, over",
+        "short_ts": "a7z, this is l0h. a corpan 110, time 1145, t1l, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_15.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_53.wav",
         "full_ts": "flash, this is lima zero hotel. joker two two seven one, two one zero, viper six zero, out",
-        "short_ts": "flash, this is L0H. joker 2271, 210, viper 60, out",
+        "short_ts": "flash, this is l0h. joker 2271, 210, viper 60, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_16.wav",
         "full_ts": "hotel seven victor, roger out",
-        "short_ts": "H7V, roger out",
+        "short_ts": "h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_55.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. callsign oscar five lima, turn juliett , time one one four eight, foxtrot three juliett, over",
-        "short_ts": "A7Z, this is L0H. callsign O5L, turn J, time 1148, F3J, over",
+        "short_ts": "a7z, this is l0h. callsign o5l, turn j, time 1148, f3j, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_56.wav",
         "full_ts": "flash, this is lima zero hotel. kingfish lock-on out",
-        "short_ts": "flash, this is L0H. kingfish lock on out",
+        "short_ts": "flash, this is l0h. kingfish lock on out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_58.wav",
         "full_ts": "flash, this is lima zero hotel. bruiser two one zero, zulu zulu two zero, out",
-        "short_ts": "flash, this is L0H. bruiser 210, ZZ20, out",
+        "short_ts": "flash, this is l0h. bruiser 210, zz20, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_17.wav",
         "full_ts": "alfa seven zulu, this is hotel seven victor. alfa alfa one, tack three, desig two two eight zero, time one one five zero, mike nine juliett, over",
-        "short_ts": "A7Z, this is H7V. AA1, tack 3, desig 2280, time 1150, M9J, over",
+        "short_ts": "a7z, this is h7v. aa1, tack 3, desig 2280, time 1150, m9j, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_59.wav",
         "full_ts": "flash, this is lima zero hotel . zippo charlie, based on bruiser raid, out",
-        "short_ts": "flash, this is L0H. zippo C, based on bruiser raid, out",
+        "short_ts": "flash, this is l0h. zippo c, based on bruiser raid, out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_18.wav",
         "full_ts": "alfa seven zulu, this is hotel seven victor. seven sierra, time one one five one, kilo nine delta, over",
-        "short_ts": "A7Z, this is H7V. 7S, time 1151, K9D, over",
+        "short_ts": "a7z, this is h7v. 7s, time 1151, k9d, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_female_1.wav",
         "full_ts": "this is oscar six november, roger out",
-        "short_ts": "this is O6N, roger out",
+        "short_ts": "this is o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_female_2.wav",
         "full_ts": "oscar six november, roger out",
-        "short_ts": "O6N, roger out",
+        "short_ts": "o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_20.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_61.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. alfa corpan three two zero, time zero eight three five, unifor(m)...uniform six victor, over",
-        "short_ts": "A7Z, this is L0H. A corpan 320, time 0835, unifor m... U6V, over",
+        "short_ts": "a7z, this is l0h. a corpan 320, time 0835, unifor m... u6v, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_62.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. alfa alfa five, tack one, tack alfa alfa six, tack three, tack zero zero three six, time zero eight four five, tango one lima, over",
-        "short_ts": "A7Z, this is L0H. AA5, tack 1, tack AA6, tack 3, tack 0036, time 0845, T1L, over",
+        "short_ts": "a7z, this is l0h. aa5, tack 1, tack aa6, tack 3, tack 0036, time 0845, t1l, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_63.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel. alfa alfa five, tack one, tack alfa alfa six, tack three, tack zero nine one eight , tack echo november three four, tack alfa two, time zero eight four six, oscar six november, over",
-        "short_ts": "A7Z, this is L0H. AA5, tack 1, tack AA6, tack 3, tack 0918, tack EN34, tack A2, time 0846, O6N, over",
+        "short_ts": "a7z, this is l0h. aa5, tack 1, tack aa6, tack 3, tack 0918, tack en34, tack a2, time 0846, o6n, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_female_3.wav",
         "full_ts": "this is oscar six november, roger out",
-        "short_ts": "this is O6N, roger out",
+        "short_ts": "this is o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_21.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_female_4.wav",
         "full_ts": "this is oscar six november, roger out",
-        "short_ts": "this is O6N, roger out",
+        "short_ts": "this is o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_22.wav",
         "full_ts": "alfa seven zulu, this is hotel seven victor. alfa sierra five seven, tack one, time zero nine zero three, quebec eight echo, tango one lima, charlie eight golf, over",
-        "short_ts": "A7Z, this is H7V. AS57, tack 1, time 0903, Q8E, T1L, C8G, over",
+        "short_ts": "a7z, this is h7v. as57, tack 1, time 0903, q8e, t1l, c8g, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_24.wav",
         "full_ts": "hotel seven victor, roger out",
-        "short_ts": "H7V, roger out",
+        "short_ts": "h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_26.wav",
         "full_ts": "alfa seven zulu, this is hotel seven victor. bravo alfa, tack one bravo, tack two, time zero nine zero eight , quebec eight echo, over",
-        "short_ts": "A7Z, this is H7V. BA, tack 1B, tack 2, time 0908, Q8E, over",
+        "short_ts": "a7z, this is h7v. ba, tack 1b, tack 2, time 0908, q8e, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_28.wav",
-        "full_ts": "nine hotel delta, this is hotel seven victor. I say again my last. alfa seven zulu, this is hotel seven victor. bravo alfa, tack one bravo, tack two, time zero nine zero eight, over",
-        "short_ts": "9HD, this is H7V. I say again my last. A7Z, this is H7V. BA, tack 1B, tack 2, time 0908, over",
+        "full_ts": "nine hotel delta, this is hotel seven victor. i say again my last. alfa seven zulu, this is hotel seven victor. bravo alfa, tack one bravo, tack two, time zero nine zero eight, over",
+        "short_ts": "9hd, this is h7v. i say again my last. a7z, this is h7v. ba, tack 1b, tack 2, time 0908, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_29.wav",
         "full_ts": "alfa seven zulu, this is hotel seven victor. negat, alfa five five seven, time zero nine two three, quebec eight echo , tango one lima, charlie eight golf, over",
-        "short_ts": "A7Z, this is H7V. negat, A557, time 0923, Q8E, T1L, C8G, over",
+        "short_ts": "a7z, this is h7v. negat, a557, time 0923, q8e, t1l, c8g, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_30.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_31.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_32.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_33.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_34.wav",
         "full_ts": "hotel seven victor, roger out",
-        "short_ts": "H7V, roger out",
+        "short_ts": "h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_35.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_36.wav",
         "full_ts": "hotel seven victor, roger out",
-        "short_ts": "H7V, roger out",
+        "short_ts": "h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_male_2.wav",
         "full_ts": "oscar six november, roger out",
-        "short_ts": "O6N, roger out",
+        "short_ts": "o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_37.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_male_3.wav",
         "full_ts": "oscar six november, roger out",
-        "short_ts": "O6N, roger out",
+        "short_ts": "o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_38.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_male_4.wav",
         "full_ts": "tango one lima, this is oscar six november. bravo foxtrot, time zero eight five six, over",
-        "short_ts": "T1L, this is O6N. BF, time 0856, over",
+        "short_ts": "t1l, this is o6n. bf, time 0856, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_39.wav",
         "full_ts": "tango one lima, this is hotel seven victor. bravo foxtrot, time zero eight five six, over",
-        "short_ts": "T1L, this is H7V. BF, time 0856, over",
+        "short_ts": "t1l, this is h7v. bf, time 0856, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_65.wav",
         "full_ts": "alfa seven zulu this is lima zero hotel. echo november three four, tack alfa two, time zero nine one five . kilo nine delta, over",
-        "short_ts": "A7Z this is L0H. EN34, tack A2, time 0915. K9D, over",
+        "short_ts": "a7z this is l0h. en34, tack a2, time 0915. k9d, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_male_5.wav",
         "full_ts": "this is oscar six november, roger out",
-        "short_ts": "this is O6N, roger out",
+        "short_ts": "this is o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_40.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_O6N_male_6.wav",
         "full_ts": "this is oscar six november, roger out",
-        "short_ts": "this is O6N, roger out",
+        "short_ts": "this is o6n, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_66.wav",
         "full_ts": "alfa seven zulu this is lima zero hotel. alfa corpan three two zero, time zero nine three seven, eight victor lima, over",
-        "short_ts": "A7Z this is L0H. A corpan 320, time 0937, 8VL, over",
+        "short_ts": "a7z this is l0h. a corpan 320, time 0937, 8vl, over",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_H7V_male_42.wav",
         "full_ts": "this is hotel seven victor, roger out",
-        "short_ts": "this is H7V, roger out",
+        "short_ts": "this is h7v, roger out",
         "prompt": null
     },
     {
         "audio": "n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Speech_Segments/0_L0H_female_67.wav",
         "full_ts": "alfa seven zulu, this is lima zero hotel . alfa alfa six, tack one, tack zero nine two seven, time zero nine four three, mike nine juliett, over",
-        "short_ts": "A7Z, this is L0H. AA6, tack 1, tack 0927, time 0943, M9J, over",
+        "short_ts": "a7z, this is l0h. aa6, tack 1, tack 0927, time 0943, m9j, over",
         "prompt": null
     }
 ]
