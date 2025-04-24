@@ -4,13 +4,15 @@ ROOT=/mnt/scratch/tmp/xholan11
 
 # FULLTS + SHORT
 # "vanmed-allds-full","vanmed-allds-short", "vanmed-atcoen-short"
-EVALUATED_MODEL_NAMES=("vanmed-atcoen-full")
-for folder in "${list[@]}"; do
-    scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/mypar/eval.txt                           ./fullts/$EVALUATED_MODEL_NAME/mp_eval.txt
-    scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/mypar/training_details.txt               ./fullts/$EVALUATED_MODEL_NAME/mp_td.txt
-    scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/verpar/eval.txt                           ./fullts/$EVALUATED_MODEL_NAME/vp_eval.txt
-    scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/verpar/training_details.txt               ./fullts/$EVALUATED_MODEL_NAME/vp_td.txt
-done
+EVALUATED_MODEL_NAME="vanmed-allds-short"
+DST_DIR="./shortts/vanmed-allds"
+
+# for folder in "${EVALUATED_MODEL_NAMES[@]}"; do
+scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/mypar/eval.txt                           $DST_DIR/mp_eval.txt
+scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/mypar/training_details.txt               $DST_DIR/mp_td.txt
+scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/verpar/eval.txt                          $DST_DIR/vp_eval.txt
+scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/verpar/training_details.txt              $DST_DIR/vp_td.txt
+# done
 
 # scp $SERVER:$ROOT/models/PROMPT/$EVALUATED_MODEL_NAME/AG/eval.txt               ./$EVALUATED_MODEL_NAME/AG_eval.txt
 # scp $SERVER:$ROOT/models/PROMPT/$EVALUATED_MODEL_NAME/AG/training_details.txt   ./$EVALUATED_MODEL_NAME/AG_td.txt
