@@ -542,15 +542,15 @@ if __name__ == '__main__':
                 meta['prompt_fullts_AG'] = ', '.join(out['long_callsigns'].keys())
                 meta['prompt_fullts_AG_4B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
                     ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=4))
-                meta['prompt_fullts_AG_50B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
-                    ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=50))
+                meta['prompt_fullts_AG_40B'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
+                    ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=40))
                 meta['prompt_fullts_AG_50CZB'] = ', '.join(out['long_callsigns'].keys()) + ', ' + \
                     ', '.join(build_random_czech_words_prompt(exclude=meta['full_ts'],n=50))
                 meta['prompt_fullts_50CZB'] = ', '.join(build_random_czech_words_prompt(exclude=meta['full_ts'],n=50))
                 # this prompt uses 5 incorrect callsigns
                 meta['prompt_fullts_5B'] = ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=5))
                 # this prompt uses 50 incorrect callsigns
-                meta['prompt_fullts_50B'] = ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=50))
+                meta['prompt_fullts_40B'] = ', '.join(build_bad_full_callsigns(exclude=list_of_fulcal_for_exclude,default_set_of_callsigns=list_of_fulcal_for_bad_fulcal_add,n=40))
                 
                 # BUILD SHORTTS PROMPTS
                 list_of_shortcal_for_exclude = [cal.strip().lower() for cal in out['short_callsigns'].keys()]
@@ -561,15 +561,15 @@ if __name__ == '__main__':
                 meta['prompt_shortts_AG'] = ', '.join(out['short_callsigns'].keys())
                 meta['prompt_shortts_AG_4B'] = ', '.join(out['short_callsigns'].keys()) + ', ' + \
                     ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=4))
-                meta['prompt_shortts_AG_50B'] = ', '.join(out['short_callsigns'].keys()) + ', ' + \
-                    ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=50))
+                meta['prompt_shortts_AG_40B'] = ', '.join(out['short_callsigns'].keys()) + ', ' + \
+                    ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=40))
                 meta['prompt_shortts_AG_50CZB'] = ', '.join(out['short_callsigns'].keys()) + ', ' + \
                     ', '.join(build_random_czech_words_prompt(exclude=meta['short_ts'],n=50))
                 meta['prompt_shortts_50CZB'] = ', '.join(build_random_czech_words_prompt(exclude=meta['short_ts'],n=50))
                 # this prompt uses 5 incorrect callsigns
                 meta['prompt_shortts_5B'] = ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=5))
                 # this prompt uses 50 incorrect callsigns
-                meta['prompt_shortts_50B'] = ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=50))
+                meta['prompt_shortts_40B'] = ', '.join(build_bad_short_callsigns(exclude=list_of_shortcal_for_exclude,default_set_of_callsigns=list_of_shortcal_for_bad_shortcal_add,n=40))
                 
                 
                 # remove the prompt from the metadata (because in the old version it was there with the content sorted above)

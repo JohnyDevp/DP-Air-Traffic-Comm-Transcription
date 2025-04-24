@@ -12,11 +12,13 @@ def read_text_file(file_path):
 def extract_words(text):
     # Split text into words, assuming words are separated by whitespace
     words = re.sub(r'\s+',' ', text).split(' ')
+    final = []
     for idx,word in enumerate(words):
-        words[idx] = re.sub(r'[^\w\s]','',word).lower()
-        if (words[idx] == "" or words[idx].isnumeric()): words.pop(idx)
+        ready = re.sub(r'[^\w\s]|[.,:,?,!,-]', '', words[idx]).lower().strip()
+        if (ready == "" or ready.isnumeric()): continue
+        final.append(ready)
         
-    return list(set(words))
+    return list(set(final))
 
 def save_to_json(data, output_path):
     with open(output_path, 'w', encoding='utf-8') as file:
