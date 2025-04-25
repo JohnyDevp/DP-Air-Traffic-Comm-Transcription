@@ -4,8 +4,8 @@ ROOT=/mnt/scratch/tmp/xholan11
 
 # FULLTS + SHORT
 # "vanmed-allds-full","vanmed-allds-short", "vanmed-atcoen-short"
-EVALUATED_MODEL_NAME="vanmed-allds-short"
-DST_DIR="./shortts/vanmed-allds"
+EVALUATED_MODEL_NAME="allds-atcoen-short"
+DST_DIR="./shortts/allds-atcoen"
 
 # for folder in "${EVALUATED_MODEL_NAMES[@]}"; do
 scp $SERVER:$ROOT/models/$EVALUATED_MODEL_NAME/mypar/eval.txt                           $DST_DIR/mp_eval.txt
