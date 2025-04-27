@@ -713,6 +713,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
                     labels_str = processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)
                     
                     # change case if we should ignore it when computing wer
+                    print('IGNORE CASE:',ignore_case)
                     if (ignore_case):
                         preds_str = preds_str.lower()
                         labels_str = labels_str.lower()

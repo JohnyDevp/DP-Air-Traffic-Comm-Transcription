@@ -9,7 +9,8 @@ python eval.py \
   --eval_description "" \
   --callsigns_name_in_ds long_callsigns \
   --transcription_name_in_ds full_ts \
-  --prompt_name_in_ds prompt_fullts_1G_4B \
+  --prompt_name_in_ds prompt_fullts_AG_4B \
   --separate_ds \
-  # --eval_callsigns \
-  # --use_prompt 
+  --ignore_case \
+  --eval_callsigns \
+  --use_prompt 
