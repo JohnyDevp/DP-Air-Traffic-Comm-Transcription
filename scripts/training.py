@@ -276,6 +276,7 @@ class TrainingSetup:
     continue_from_checkpoint: bool = False
     use_prompt: bool = True
     self_prompt: bool = False
+    freeze_encoder: bool = False
 
 def build_eval_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, separate_ds=False) -> dict[str,Dataset]|Dataset:  
     allds_test = {}
@@ -408,7 +409,7 @@ def build_train_dataset(list_of_ds : list[str], prepare_dataset_fn, path_to_ds :
     else:
         return concatenate_datasets(allds_train)
 
-def get_model_processor_tokenizerfr(model_path, dropout=0.0) -> tuple[WhisperForConditionalGeneration, WhisperProcessor, WhisperTokenizer]:
+def get_model_processor_tokenizerfr(model_path, training_setup : TrainingSetup) -> tuple[WhisperForConditionalGeneration, WhisperProcessor, WhisperTokenizer]:
     tokenizer_fr = WhisperTokenizer.from_pretrained(model_path, language="French", task="transcribe") # MODIF
     processor = WhisperProcessor.from_pretrained(model_path, language="English", task="transcribe")  # MODIF
 
@@ -417,7 +418,9 @@ def get_model_processor_tokenizerfr(model_path, dropout=0.0) -> tuple[WhisperFor
     model.generation_config.task = "transcribe"
     model.generation_config.forced_decoder_ids = None
     
-    model.config.dropout = dropout
+    model.config.dropout = training_setup.dropout
+    if (training_setup.freeze_encoder):
+        model.freeze_encoder()
     
     # maybe this can be used for light data augmentation... maybe it can be enough
     # if you want to use this, you also need to uncomment lines in datacollators for obtaining attention_mask
@@ -429,7 +432,7 @@ def get_model_processor_tokenizerfr(model_path, dropout=0.0) -> tuple[WhisperFor
 
 def train(training_setup : TrainingSetup, training_args : Seq2SeqTrainingArguments):
     # get the model, processor and tokenizer
-    model, processor, tokenizer_fr = get_model_processor_tokenizerfr(training_setup.model_path, training_setup.dropout)
+    model, processor, tokenizer_fr = get_model_processor_tokenizerfr(training_setup.model_path, training_setup)
     
     # load the dataset preparator, use prepare function according to prompt usage
     prepare_dataset = PrepareDatasetAsInput(processor.feature_extractor, processor.tokenizer, tokenizer_fr)
@@ -496,7 +499,8 @@ def parse_args():
     parser.add_argument("--self_prompt", action='store_true')
     parser.add_argument("--transcription_name_in_ds", type=str, default="full_ts")
     parser.add_argument("--prompt_name_in_ds", type=str, default="prompt_fullts_1G_4B")
-
+    parser.add_argument("--freeze_encoder", action='store_true')
+    
     # training_args
     parser.add_argument("--output_dir", type=str, default="./test-nomask")
     parser.add_argument("--per_device_train_batch_size", type=int, default=4)
@@ -530,7 +534,8 @@ def build_config(args):
             "use_prompt": args.use_prompt,
             "self_prompt": args.self_prompt,
             "transcription_name_in_ds": args.transcription_name_in_ds,
-            "prompt_name_in_ds": args.prompt_name_in_ds
+            "prompt_name_in_ds": args.prompt_name_in_ds,
+            "freeze_encoder": args.freeze_encoder,
         },
         "training_args": {
             "output_dir": args.output_dir,
