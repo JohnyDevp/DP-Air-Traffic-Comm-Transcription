@@ -4,7 +4,7 @@ python training.py \
   --datasets_root_dir ./data \
   --transcription_name_in_ds full_ts \
   --prompt_name_in_ds prompt_fullts_1G_4B \
-  --output_dir ./test-nomask3 \
+  --output_dir ./test-ENCODER2 \
   --per_device_train_batch_size 4 \
   --gradient_accumulation_steps 4 \
   --learning_rate 1e-5 \
@@ -19,4 +19,5 @@ python training.py \
   --generation_max_length 448 \
   --logging_steps 30 \
   --report_to tensorboard \
-  --metric_for_best_model wer
+  --metric_for_best_model wer \
+  # --freeze_encoder 

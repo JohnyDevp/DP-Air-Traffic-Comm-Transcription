@@ -2,15 +2,16 @@ python eval.py \
   --metric wer \
   --datasets atco_en_ruzyne \
   --datasets_basedir ./data/ \
-  --models openai/whisper-tiny \
+  --models test-ENCODER \
+  --checkpoints_eval \
   --same_processor \
-  --output_file ./tiny-cal-ev/NEWFILE3.txt \
+  --output_file ./test-ENCODER/eval.txt \
   --batch_size 4 \
   --eval_description "" \
   --callsigns_name_in_ds long_callsigns \
   --transcription_name_in_ds full_ts \
   --prompt_name_in_ds prompt_fullts_AG_4B \
   --separate_ds \
-  --ignore_case \
-  --eval_callsigns \
-  --use_prompt 
+  --ignore_case 
+  # --eval_callsigns \
+  # --use_prompt 

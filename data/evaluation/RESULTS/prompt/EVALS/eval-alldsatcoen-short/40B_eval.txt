@@ -1,0 +1,13 @@
+#### EVALUATION STARTED - TIME 2025-04-27 11:16:02 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/allds-atcoen-short/mypar/checkpoint-350'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT/eval-alldsatcoen-short/40B_eval.txt', transcription_name_in_ds='short_ts', checkpoints_eval=False, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_40B', eval_description='', overwrite=False, separate_ds=True, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True)
+******** Evaluation description ********
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/allds-atcoen-short/mypar/checkpoint-350 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 33.63309352517986 LOSS: 1.0082965748650687 CALLSIGN WER: 58.44155844155844 CALLSIGN COUNT: 77 CALLSIGN COMPLETELY CORRECT: 32
+DATASET: atco_en_stefanik | WER: 31.203703703703706 LOSS: 0.9927188456058502 CALLSIGN WER: 66.62393162393163 CALLSIGN COUNT: 78 CALLSIGN COMPLETELY CORRECT: 21
+DATASET: atco_en_zurich | WER: 34.696620583717355 LOSS: 1.3511769814150674 CALLSIGN WER: 57.43110236220473 CALLSIGN COUNT: 508 CALLSIGN COMPLETELY CORRECT: 200
+
+

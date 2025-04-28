@@ -4,8 +4,8 @@ ROOT=/mnt/scratch/tmp/xholan11
 
 # FULLTS + SHORT
 # "vanmed-allds-full","vanmed-allds-short", "vanmed-atcoen-short"
-EVALUATED_MODEL_NAME="alldsatcoen-short"
-DST_DIR="./shortts/alldsatcoen-short"
+EVALUATED_MODEL_NAME="allds-full/15"
+DST_DIR="./fullts/allds-full/15"
 
 list=("40B" "5B" "50CZB" "AG40B" "AG4B" "AG" "AG50CZB")
 for folder in "${list[@]}"; do

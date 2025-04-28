@@ -1,0 +1,26 @@
+#### EVALUATION STARTED - TIME 2025-04-25 09:52:45 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['openai/whisper-medium'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT/eval-vanmed-full/AG4B_eval.txt', transcription_name_in_ds='full_ts', checkpoints_eval=False, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_fullts_AG_4B', eval_description='', overwrite=False, separate_ds=True, eval_callsigns=True, callsigns_name_in_ds='long_callsigns', use_prompt=True, self_prompt=False, ignore_case=False)
+******** Evaluation description ********
+
+
+#### EVAL MODEL openai/whisper-medium ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 65.53829078801331 LOSS: 1.1481790116855077 CALLSIGN WER: 21.515151515151512 CALLSIGN COUNT: 77 CALLSIGN COMPLETELY CORRECT: 24
+DATASET: atco_en_stefanik | WER: 48.05608667941364 LOSS: 1.0435885389645894 CALLSIGN WER: 35.50518925518925 CALLSIGN COUNT: 78 CALLSIGN COMPLETELY CORRECT: 20
+DATASET: atco_en_zurich | WER: 56.20062695924764 LOSS: 1.2471938246772403 CALLSIGN WER: 27.321975378077752 CALLSIGN COUNT: 508 CALLSIGN COMPLETELY CORRECT: 151
+
+
+#### EVALUATION STARTED - TIME 2025-04-26 09:43:10 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['openai/whisper-medium'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT/eval-vanmed-full/AG4B_eval.txt', transcription_name_in_ds='full_ts', checkpoints_eval=False, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_fullts_AG_4B', eval_description='', overwrite=False, separate_ds=True, eval_callsigns=True, callsigns_name_in_ds='long_callsigns', use_prompt=True, self_prompt=False, ignore_case=True)
+******** Evaluation description ********
+
+
+#### EVAL MODEL openai/whisper-medium ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 64.03995560488346 LOSS: 1.148197455065591 CALLSIGN WER: 21.515151515151512 CALLSIGN COUNT: 77 CALLSIGN COMPLETELY CORRECT: 24
+DATASET: atco_en_stefanik | WER: 46.52644996813257 LOSS: 1.0436194439729054 CALLSIGN WER: 35.50518925518925 CALLSIGN COUNT: 78 CALLSIGN COMPLETELY CORRECT: 20
+DATASET: atco_en_zurich | WER: 55.81191222570533 LOSS: 1.2472268229439145 CALLSIGN WER: 27.36134545681791 CALLSIGN COUNT: 508 CALLSIGN COMPLETELY CORRECT: 151
+
+
