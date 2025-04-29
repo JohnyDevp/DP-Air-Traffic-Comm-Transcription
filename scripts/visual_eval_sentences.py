@@ -183,7 +183,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
 if __name__ == '__main__':
     argparser = argparse.ArgumentParser(description='Visualize the evaluation of sentences.')
     argparser.add_argument('--model', type=str, required=True, help='Model name or path')
-    argparser.add_argument('--dataset', type=str, required=True, help='Path to the dataset')
+    argparser.add_argument('--dataset', nargs='+', required=True, help='Datasets to evaluate')
     argparser.add_argument('--dataset_root', type=str, required=True, help='Path to the dataset root')
     argparser.add_argument('--output_file', type=str, required=True, help='Output directory for the results')
     argparser.add_argument('--use_prompt', action='store_true', required=False, help='Use prompt for evaluation')
@@ -195,12 +195,12 @@ if __name__ == '__main__':
     processor = WhisperProcessor.from_pretrained(args.model)
     tokenizer_en = processor.tokenizer
     pd = PrepareDatasetAsInput(processor.feature_extractor, tokenizer_en, tokenizer_en)
-    pd.set_transcription_name(args.transcription_name) # TODO
+    pd.set_transcription_name(args.transcription_name)
     if (args.use_prompt):
-        pd.set_prompt_name(args.prompt_name) # TODO
-        datasets_dict = build_dataset([args.dataset],pd.prepare_dataset_with_prompt, args.dataset_root, separate_ds=True)
+        pd.set_prompt_name(args.prompt_name) 
+        datasets_dict = build_dataset(args.dataset,pd.prepare_dataset_with_prompt, args.dataset_root, separate_ds=True)
     else:
-        datasets_dict = build_dataset([args.dataset],pd.prepare_dataset, args.dataset_root, separate_ds=True)
+        datasets_dict = build_dataset(args.dataset,pd.prepare_dataset, args.dataset_root, separate_ds=True)
     
     # setup output file
     if os.path.dirname(args.output_file) != '' and not os.path.exists(os.path.dirname(args.output_file)):
