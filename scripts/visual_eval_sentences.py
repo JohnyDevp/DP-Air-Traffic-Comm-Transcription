@@ -186,18 +186,24 @@ if __name__ == '__main__':
     argparser.add_argument('--dataset', type=str, required=True, help='Path to the dataset')
     argparser.add_argument('--dataset_root', type=str, required=True, help='Path to the dataset root')
     argparser.add_argument('--output_file', type=str, required=True, help='Output directory for the results')
+    argparser.add_argument('--use_prompt', action='store_true', required=False, help='Use prompt for evaluation')
+    argparser.add_argument('--prompt_name', type=str, required=False, help='Prompt name to use for evaluation')
+    argparser.add_argument('--transcription_name', type=str, required=True, help='Transcription name to use for evaluation')
     args=argparser.parse_args()
     
     # build the datasets
     processor = WhisperProcessor.from_pretrained(args.model)
     tokenizer_en = processor.tokenizer
     pd = PrepareDatasetAsInput(processor.feature_extractor, tokenizer_en, tokenizer_en)
-    pd.set_transcription_name("full_ts") # TODO
-    pd.set_prompt_name("prompt_fullts_AG_4B") # TODO
-    datasets_dict = build_dataset([args.dataset],pd.prepare_dataset_with_prompt, args.dataset_root, separate_ds=True)
+    pd.set_transcription_name(args.transcription_name) # TODO
+    if (args.use_prompt):
+        pd.set_prompt_name(args.prompt_name) # TODO
+        datasets_dict = build_dataset([args.dataset],pd.prepare_dataset_with_prompt, args.dataset_root, separate_ds=True)
+    else:
+        datasets_dict = build_dataset([args.dataset],pd.prepare_dataset, args.dataset_root, separate_ds=True)
     
     # setup output file
-    if not os.path.exists(os.path.dirname(args.output_file)):
+    if os.path.dirname(args.output_file) != '' and not os.path.exists(os.path.dirname(args.output_file)):
         os.makedirs(os.path.dirname(args.output_file))
     file = open(args.output_file,'a')
     
@@ -205,6 +211,7 @@ if __name__ == '__main__':
     model = WhisperForConditionalGeneration.from_pretrained(args.model)
     for name, ds in datasets_dict.items():
         print(f"Evaluating {name} dataset")
+        print(args)
         print('**************************')
         for item in tqdm(ds):
             prompt_ids = torch.tensor(item['prompt_ids'])
