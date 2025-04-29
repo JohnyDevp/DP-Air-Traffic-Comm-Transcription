@@ -209,15 +209,16 @@ if __name__ == '__main__':
     
     # load the model up
     model = WhisperForConditionalGeneration.from_pretrained(args.model)
+    model.to('cuda')
     for name, ds in datasets_dict.items():
-        print(f"Evaluating {name} dataset")
-        print(args)
-        print('**************************')
+        file.write(f"Evaluating {name} dataset\n")
+        file.write(args)
+        file.write('\n**************************\n')
         for item in tqdm(ds):
-            prompt_ids = torch.tensor(item['prompt_ids'])
-            input_features = torch.tensor(item['input_features']).unsqueeze(0)
+            prompt_ids = torch.tensor(item['prompt_ids']).cuda()
+            input_features = torch.tensor(item['input_features']).unsqueeze(0).cuda()
             preds=model.generate(input_features=input_features,prompt_ids=prompt_ids)
             file.write(f"O: {item['transcription']}\nP: {processor.decode(preds[0], skip_special_tokens=True)}\n\n")
             
-    
+        file.write('\n##############################################################\n\n')
     file.close()
