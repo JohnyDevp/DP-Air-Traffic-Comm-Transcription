@@ -2,6 +2,7 @@ import os
 import re, json
 from bs4 import BeautifulSoup, ResultSet
 
+
 meta_files=['metadata_en_ruzyne_test.json','metadata_en_stefanik_test.json','metadata_en_zurich_test.json','metadata_en_train.json']
 ROOT = '../data/atco/PROMPT/'
 ROOT_DISK ='/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/'
@@ -22,6 +23,7 @@ for file in meta_files:
     percentage_total = 0.0
     weighted_percentage_total = 0.0
     weights_total = 0
+    total_records =0
     for xml_file in xml_files:
         if ('segidx' in xml_file and xml_file in portioned): continue
         elif ('segidx' in xml_file and xml_file not in portioned):
@@ -33,6 +35,8 @@ for file in meta_files:
                 if os.path.exists(p):
                     xml_file = p
                     break
+        
+        total_records += 1
         
         xml_content = open(os.path.join(ROOT_DISK,xml_file),'r').read()
         bs=BeautifulSoup(xml_content,features='xml')
@@ -75,6 +79,7 @@ for file in meta_files:
         
     # print the results
     print(f'File: {file}')
+    print(f'Total records: {total_records}')
     print(f'Full TS without callsigns: {fullts_total_chars_length} chars, {fullts_total_word_length} words')
     print(f'Calls signs: {callsigns_chars_length} chars, {callsigns_word_length} words')
     print(f'AVG Percentage of callsigns: {(percentage_total/len(xml_files)):.2f}%; Weighted: {(weighted_percentage_total/weights_total * 100):.2f}%')     

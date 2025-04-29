@@ -1,0 +1,32 @@
+File: metadata_en_ruzyne_test.json
+Total records: 70
+Full TS without callsigns: 22774 chars, 3852 words
+Calls signs: 4612 chars, 805 words
+AVG Percentage of callsigns: 23.15%; Weighted: 20.25%
+Total percentage in chars: 20.25%
+Total percentage in words: 20.90%
+
+File: metadata_en_stefanik_test.json
+Total records: 53
+Full TS without callsigns: 9143 chars, 1554 words
+Calls signs: 1993 chars, 359 words
+AVG Percentage of callsigns: 22.67%; Weighted: 21.80%
+Total percentage in chars: 21.80%
+Total percentage in words: 23.10%
+
+File: metadata_en_zurich_test.json
+Total records: 412
+Full TS without callsigns: 45456 chars, 7948 words
+Calls signs: 10345 chars, 1989 words
+AVG Percentage of callsigns: 23.24%; Weighted: 22.76%
+Total percentage in chars: 22.76%
+Total percentage in words: 25.03%
+
+File: metadata_en_train.json
+Total records: 1579
+Full TS without callsigns: 175485 chars, 30257 words
+Calls signs: 46644 chars, 8838 words
+AVG Percentage of callsigns: 29.74%; Weighted: 26.58%
+Total percentage in chars: 26.58%
+Total percentage in words: 29.21%
+
