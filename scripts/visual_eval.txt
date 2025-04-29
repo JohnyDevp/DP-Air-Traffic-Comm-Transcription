@@ -475,3 +475,24 @@ P:  Khramé papa ten rád 1020 klída se proksurán vě 1065 maksylvan 600.000 k
 O: qatari qatari six bravo lima just confirm we are cleared to land qatari six bravo lima affirm runway two four cleared to land wind one nine zero deegres seven knots cleared to land qatari six bravo lima
 P:  Tää tarvitseksi katsotaan. Katsareksi kraboli main saan län liidun fokli tuan, se on näin eri sivän op.
 
+Evaluating atco_en_ruzyne dataset
+Namespace(model='openai/whisper-tiny', dataset=['atco_en_ruzyne'], dataset_root='./data/', output_file='visual_eval.txt', use_prompt=True, prompt_name='prompt_fullts_AG', transcription_name='full_ts')
+**************************
+O: radar csa one delta zulu established csa one delta zulu roger contact ruzyne tower one three four decimal five six zero three four five six zero csa one delta zulu pekný deň
+P:  vai ver se o anel se zulu está posto e a zulu é que contactou o zulu em esta 1, 3, 4, 10, 5, 6, 6, 6, 6, 1, 2, 2, 1, 2, 1
+
+O: oscar kilo uniform tango charlie re- release from frequency flying information service available at one two six decimal one praha information dobrý den
+P:  oskar kilo uniform tango charlie ris, reli tvo freikvansi, flajnoj informajšu, se vve boel vatno sivd asil movan, praj in formajšenno vrigen.
+
+O: air france one zero eight zulu standby now descend to descend flight level seven zero air france one zero eight zulu
+P:  france one zero eight zulu stand by now this and two uh this and five or seven zero
+
+O: praha radar oscar kilo uniform tango charlie dobrý den passing three thousand nine hundred climbing flight level seven zero inbound vlasim ready for ifr oscar kilo uniform tango charlie dobrý den praha radar identified climb flight level seven zero and cleared to destination benesov via flight plan route ifr flight starts now time one three one four
+P:  Arraydaro's curricular from the Coachanero Bridema have a 5-3-0-100-2-0-8-0-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-
+
+O: oscar kilo papa romeo mike turn right heading zero six zero zero six zero right turn oscar papa romeo mike
+P:  oscar kilo papa romeo mike, ten radym 0.0
+
+O: skytravel three five juliett turn right heading one eight zero vectoring for spacing turning right heading one eight zero skytravel three five juliett
+P:  4-3 five juliett, 20-18-18-18
+

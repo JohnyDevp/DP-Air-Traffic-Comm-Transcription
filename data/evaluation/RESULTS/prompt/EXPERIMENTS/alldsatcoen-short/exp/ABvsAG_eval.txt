@@ -1,0 +1,6 @@
+#### EVALUATION STARTED - TIME 2025-04-29 12:21:01 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/PROMPT/alldsatcoen-short/40B/checkpoint-600'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT/alldsatcoen-short/exp/ABvsAG_eval.txt', transcription_name_in_ds='short_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_AG', eval_description='', overwrite=False, separate_ds=True, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True)
+******** Evaluation description ********
+
+

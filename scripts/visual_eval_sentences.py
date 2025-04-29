@@ -212,8 +212,8 @@ if __name__ == '__main__':
     model.to('cuda')
     for name, ds in datasets_dict.items():
         file.write(f"Evaluating {name} dataset\n")
-        file.write(args)
-        file.write('\n**************************\n')
+        file.write(args.__str__() + '\n')
+        file.write('**************************\n')
         for item in tqdm(ds):
             prompt_ids = torch.tensor(item['prompt_ids']).cuda()
             input_features = torch.tensor(item['input_features']).unsqueeze(0).cuda()
