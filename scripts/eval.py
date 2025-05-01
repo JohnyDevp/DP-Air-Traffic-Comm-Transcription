@@ -1,5 +1,6 @@
 from io import TextIOWrapper
 import re
+from jiwer import wer
 import torch
 from torch.utils.data import DataLoader
 import os, json, argparse, time
@@ -303,6 +304,7 @@ class EvaluationSetup:
     use_prompt : bool = False
     self_prompt : bool = False
     ignore_case : bool = False
+    wer_for_AG_existing_only : bool = False
 
 class EvalCallsigns:
     wer_metric : ComputeMetrics
@@ -441,7 +443,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
     else:
         return concatenate_datasets([allds_test[key] for key in allds_test])
 
-def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProcessor, metric : ComputeMetrics, batch_size=3, use_prompt=False, compute_callsign_wer=True, compute_runway_wer=False, callsigns_name_in_ds = None, ignore_case=False) -> dict[str,dict]:
+def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProcessor, metric : ComputeMetrics, batch_size=3, use_prompt=False, compute_callsign_wer=True, wer_for_AG_existing_only=False, callsigns_name_in_ds = None, ignore_case=False) -> dict[str,dict]:
     # define collator
     if (not use_prompt):
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
@@ -655,9 +657,13 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
                     totaly_callsigns_correct += completely_correct
                 
                 # extend all the predictions and labels for later wer computation
-                all_preds.extend([preds_str])
-                all_lables.extend([labels_str])
-                
+                if len(batch[callsigns_name_in_ds][idx]) == 0 and wer_for_AG_existing_only:
+                    # we dont want to compute wer, where predictions were not correctly affected by prompts
+                    # meaining, if no good callsigns exists, then evaluating doesn't make sense
+                    continue
+                else:
+                    all_preds.extend([preds_str])
+                    all_lables.extend([labels_str])                
 
             # compute the loss
             with torch.no_grad():
@@ -713,7 +719,6 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
                     labels_str = processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)
                     
                     # change case if we should ignore it when computing wer
-                    print('IGNORE CASE:',ignore_case)
                     if (ignore_case):
                         preds_str = preds_str.lower()
                         labels_str = labels_str.lower()
@@ -733,8 +738,14 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
                         totaly_callsigns_correct += completely_correct
                     
                     # extend all the predictions and labels for later wer computation
-                    all_preds.extend([preds_str])
-                    all_lables.extend([labels_str])
+                    if len(batch[callsigns_name_in_ds][idx]) == 0 and wer_for_AG_existing_only:
+                        # we dont want to compute wer, where predictions were not correctly affected by prompts
+                        # meaining, if no good callsigns exists, then evaluating doesn't make sense
+                        print('skipping')
+                        continue
+                    else:
+                        all_preds.extend([preds_str])
+                        all_lables.extend([labels_str])
 
                 # compute the loss
                 with torch.no_grad():
@@ -907,6 +918,7 @@ def main(evaluation_setup : EvaluationSetup):
                     batch_size=evaluation_setup.batch_size, 
                     use_prompt=evaluation_setup.use_prompt,
                     compute_callsign_wer=evaluation_setup.eval_callsigns,
+                    wer_for_AG_existing_only=evaluation_setup.wer_for_AG_existing_only,
                     callsigns_name_in_ds=evaluation_setup.callsigns_name_in_ds,
                     ignore_case=evaluation_setup.ignore_case
                 )
@@ -983,6 +995,7 @@ def main(evaluation_setup : EvaluationSetup):
                 batch_size=evaluation_setup.batch_size, 
                 use_prompt=evaluation_setup.use_prompt,
                 compute_callsign_wer=evaluation_setup.eval_callsigns,
+                wer_for_AG_existing_only=evaluation_setup.wer_for_AG_existing_only,
                 callsigns_name_in_ds=evaluation_setup.callsigns_name_in_ds,
                 ignore_case=evaluation_setup.ignore_case
             )
@@ -1017,7 +1030,8 @@ def parse_args():
     parser.add_argument('--callsigns_name_in_ds', type=str)
     parser.add_argument("--transcription_name_in_ds", type=str)
     parser.add_argument("--prompt_name_in_ds", type=str)
-
+    parser.add_argument('--wer_for_AG_existing_only', action='store_true')
+    
     return parser.parse_args()
 
 def build_config(args):
@@ -1039,7 +1053,8 @@ def build_config(args):
         "eval_callsigns":args.eval_callsigns,
         'callsigns_name_in_ds': args.callsigns_name_in_ds,
         "transcription_name_in_ds": args.transcription_name_in_ds,
-        "prompt_name_in_ds": args.prompt_name_in_ds
+        "prompt_name_in_ds": args.prompt_name_in_ds,
+        "wer_for_AG_existing_only": args.wer_for_AG_existing_only
     }
 
 if __name__ == '__main__':
