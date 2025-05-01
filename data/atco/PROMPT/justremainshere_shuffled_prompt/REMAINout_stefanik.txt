@@ -1,0 +1,6 @@
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LZIB_STEFANIK_Tower_118_3MHz_20210422_142821.xml
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LZIB_STEFANIK_Tower_118_3MHz_20210425_130418.xml
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LZIB_STEFANIK_Tower_118_3MHz_20210430_195343.xml
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LZIB_STEFANIK_Tower_118_3MHz_20210504_150258.xml
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LZIB_STEFANIK_Tower_118_3MHz_20210505_173822.xml
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LZIB_STEFANIK_Tower_118_3MHz_20210429_103144.xml

@@ -1,0 +1,5 @@
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LKPR_RUZYNE_Tower_134_560MHz_20201025_212419.xml
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LKPR_RUZYNE_Radar_120_520MHz_20201029_110858.xml ... it has callsign 3x
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LKPR_RUZYNE_Radar_120_520MHz_20201029_113144.xml
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LKPR_RUZYNE_Tower_134_560MHz_20201028_071936.xml ... it has callsign 2x
+/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/DATA-original/LKPR_RUZYNE_Radar_120_520MHz_20201027_152202.xml ... it has callsign 3x

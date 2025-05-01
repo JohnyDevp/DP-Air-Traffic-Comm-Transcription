@@ -1,9 +1,8 @@
 python eval.py \
   --metric wer \
   --datasets atco_en_ruzyne \
-  --datasets_basedir ./data/ \
-  --models test-ENCODER \
-  --checkpoints_eval \
+  --datasets_basedir ../data/atco/PROMPT/newshuffled_prompt \
+  --models openai/whisper-tiny \
   --same_processor \
   --output_file ./test-ENCODER/eval.txt \
   --batch_size 4 \
@@ -12,6 +11,6 @@ python eval.py \
   --transcription_name_in_ds full_ts \
   --prompt_name_in_ds prompt_fullts_AG_4B \
   --separate_ds \
-  --ignore_case 
+  --ignore_case \
+  --use_prompt \
   # --eval_callsigns \
-  # --use_prompt 

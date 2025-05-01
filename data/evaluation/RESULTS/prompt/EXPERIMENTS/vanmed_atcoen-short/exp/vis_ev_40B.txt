@@ -1,0 +1,1623 @@
+Evaluating atco_en_ruzyne dataset
+Namespace(model='models/PROMPT/vanmed-short/40B/checkpoint-2079', dataset=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], dataset_root='data', output_file='models/PROMPT/vanmed-short/exp/vis_ev_40B.txt', use_prompt=True, prompt_name='prompt_shortts_40B', transcription_name='short_ts')
+**************************
+O: radar csa1dz established csa1dz roger contact ruzyne tower 134.560 34560 csa1dz pekný deň
+P: radar csa1d z established csa1d z contact ruzyne tower 134.560 34560 csa1d z
+
+O: okutc re release from frequency flying information service available at 126.1 praha information dobrý den
+P: okturk release from frequency line information service available 126s1 for information dobrý deň
+
+O: afr108z standby now descend to descend flight level 70 afr108z
+P: affirmation 080 standby now descend to descend 5l70 affirmation 080
+
+O: praha radar okutc dobrý den passing 3900 climbing flight level 70 inbound vlasim ready for ifr okutc dobrý den praha radar identified climb flight level 70 and cleared to destination benesov via flight plan route ifr flight starts now time 1314
+P: praha radar okuntc dobrý den passing 3900 climbing flight level 70 inbound vlasim ready for ifr okuntc dobrý den praha radar identified climb flight level 70 and cleared to destination benesov via flight plan route ifr flight starts now time 1314
+
+O: okprm turn right heading 060 060 right turn oprm
+P: okprm turn right heading 060 060 right turn okprm
+
+O: tvs35j turn right heading 180 vectoring for spacing turning right heading 180 tvs35j
+P: 35j turn right heading 180 vectoring for spacing turn right heading 180 skytravel 35j
+
+O: air france 108z descend to flight level 70 reduce 240 knots or less or less and descend flight level 70 air france 108z czech air 4675 descend to 4000 feet qnh 1012 and contact kbely tower 120.880 descending 4000 feet 1012 and changing kbely 120880 bye naslysenou slysenou
+P: french 108z descend to flight level 70 reduce 240 not for less 0 not for less and descend to flight level 70 french 1080 checker 4675 descend to 4000 feet qnh 1012 and contact gobeli tower 120.880 descend in 4000 feet 1012 and change in gobeli 120880 bye roger
+
+O: silesia 762 continue clqq5 behind follow me stand m1b
+P: sui762 continue chanin we lqq5 behind for me stand m1b
+
+O: ruzyne tower ovka affirm and continue w2 departure continue w2 departure ovk
+P: ruzyne tower oxk overhead a affirm and continue w2 departure continue w2 departure oxk
+
+O: ruzyne tower okavk 2300 feet qnh 1014 inbound t and we will hold on t okavk ruzyne tower dobry den roger continue t and hold
+P: ruzyne tower okaa lk 2300 feet qnh 1014 inbound t and we will hold on t okaa lk ruzyne tower dobrý deň roger continue t and hold continue t thank you
+
+O: good evening dlh8hr passing 2500 climbing 5000 dlh8hr praha radar good evening identified climb to flight level 160 dlh8hr climb flight level 160
+P: good evening vrt passing 2500 climbing 5 tower vrt praha radar good evening identified climb to flight level 160 vrt climb flight level 160
+
+O: gac404k descend 4000 feet qnh 1004 1004 gac404k
+P: 13404k descend 4000 feet qnh 1004 4000 feet qnh 10404k
+
+O: 0422 taxi holding point runway 24 via taxiway qlgb
+P: tower 422 taxi holding point runway 24 via taxiway qlgb
+
+O: tvs2827 and there is closed e airspace below flight level 100 so if you wish to avoid class e airspace next descend in 20 miles
+P: skydrow 2827 and there is class e airspace below flight level 100 so if you wish to avoid class e airspace next descend in 20 miles
+
+O: oktur approaching to vlm start holding there and remain my frequency and report when ready for come back to prague remain on frequency and hold as published at vlm and we report tur ok
+P: oktur approaching to vlm start holding there and remain my frequency and report when ready for comeback to prak remain in frequency and hold established vlm report when ready ok
+
+O: okfca you are leaving tma praha switch to praha info 126.1 naslysenou 126.1 naslysenou dekuji
+P: okfa you are leaving tma praha switch to praha info 126.1 naslysenou 126.1 naslysenou recleared
+
+O: okmcc praha radar dobry den you are identified flight level 70 after baltu proceed to benesov
+P: okmcc praha radar dobrý den you are identified flight level 70 after baltu proceed to benesov
+
+O: omp turn right heading 020 cleared ils approach runway 06 speed maximum 160 knots right heading 020 cleared ils approach 06 and maximum 160 speed confirm i do confirm
+P: okp10 right heading 020 clearance approach runway 06 speed maximum 160 knots right heading 020 clearance approach 06 and maximum 160 speed confirm i do confirm
+
+O: qatari qtr6bl just confirm we are cleared to land qtr6bl affirm runway 24 cleared to land wind 190 deegres 7 knots cleared to land qtr6bl
+P: and from qtr6bl just confirm we will cleared to land qtr6bl affirm runway 24 cleared to land wind 190 degrees 7 knots cleared to land qtr6bl
+
+O: gac404k taxi cl and q behind follow me car to stand s3
+P: sydney team the 404k taxi cl and q behind full mccar to stand s3
+
+O: csa918 taxi holding point runway 2 400 the right via db taxi db holding point 24 csa918
+P: csa918 taxi holding point runway 24 to the right via db taxi db holding point 24 csa918
+
+O: say again okbal okbal descend to 4000 feet qnh 1012 descending 4000 feet qnh 1012 okbal
+P: say again okbal okbal descend to 4000 feet qnh 1012 descend to 4000 feet qnh 1012 okbal
+
+O: and ooe released from my frequency flight information services available on 126.1 naslysenou
+P: ohe release from my frequency flight information service is available on 126.1 ohe
+
+O: 10ok0oky diky naslysenou
+P: 10ovo qnh 35
+
+O: okact praha
+P: okb
+
+O: go ahead okact
+P: egh go ahead o2fck
+
+O: contact ostrava 119.375 naslysenou
+P: contact o119.37 fast can hear
+
+O: 119.375 okact
+P: 119 n375 okbc
+
+O: can you confirm okact ostrava 119375
+P: affirmable okaacgo 1193 75
+
+O: affirm correct
+P: affirm correct
+
+O: okact
+P: okact
+
+O: tie804p contact praha 120.275 naslysenou
+P: climber 804p contact praha 120.275 naslysenou
+
+O: 120.275 tie804p naslys
+P: 120n75090 for
+
+O: klm1350 sorry go ahead yeah contact radar 120275 ahoj 120275 ahoj klm1350
+P: qlm1350 sorry go ahead contact radar 120275 ahoy 120275 ahoy qlm1350
+
+O: ryr73ah turn left heading 360 ryr73ah
+P: ryan air 73a h turn left heading 360 ryr73a h
+
+O: heading to 318 roger continue on present heading vectoring for ils approach runway 24 heading and vectoring for ils 24 thank you quality 4091 proceed to rapet rapet quality 4091
+P: 318 roger continue present heading vectoring for ils approach runway 24 heading and vectoring for ils 24qe quality 4091 proceed to rapet rapet quality 4091
+
+O: ruzyne tower csa1dz dobrý podvečer established localizer 24 dobrý den csa1dz ruzyne tower runway 24 cleared to land wind 220 degrees 14 knots are cleared to land runway 24 csa1dz
+P: ruzyne tower csa1dz dobrý pôr vecer established localizer 24 dobry den csa1dz ruzyne tower runway 24 cleared to land wind 220 degrees 14 knots cleared to land runway 24 csa1dz
+
+O: quality 4089 turn right heading 210 cleared ils approach runway 24 report established yes 210 cleared ils 24 report established quality
+P: 404089 turn right heading 210 clear ils approach runway 24 report established yes 210 cleared ils 24 report established 4089
+
+O: i d suggest deviation to south i d say but my weather radar is not very precise
+P: i suggest deviation to south i d say but my weather radar is not really precise
+
+O: and klm73w reduce speed 160 knots till 4 dme 60 to 4 dme klm73w
+P: ql73w reduce speed 160 knots till 40 and E 60 to 40 unk ql73w
+
+O: tower good day klm 46a good day klm 46a ruzyne tower klm 46a qnh 1018 time check 46 cleared to amsterdam departure route baltu 4a initial climb to 5000 feet squawk 1000 the qnh is 101 810 via baltu 4a departure 5000 feet and squawk 1000 correct
+P: tower good day qlfa good day qlfa ruzyne tower qlfa qnh 1018 time check 46 cleared to amstraden departure route baltu 4a initial climb 5000 feet squawk 1000 correct
+
+O: ok triple h please confirm 1 more holding okhhh affirm 1 holding and then it should be possible to follow ils runway 06 roger thank you
+P: okhh please confirm 1 more holding okhh affirm 1 holding and then it should be possible to follow ils runway 06 roger thank you
+
+O: okkun proceed direct baltu proceed direct baltu okkun
+P: okkun proceed direct baltu proceed direct baltu okkun
+
+O: okkea praha radar identified climb flight level 100 ifr flight starts now time 05 cleared to destination via flight plan route
+P: okka praha radar identified climb flight level 100 if our flight that is now time 05 go to destination via flight plan route
+
+O: tvs4378 roger call tower 134.560 naslysenou 560 tvs4378 hezky den taky hezky diky
+P: established skytower 4378 roger call tower 134.560 naslysenou 560 skytower 4378 hezki den raki hezki diki
+
+O: qatari 8232 request taxi qatari 8232 taxi via zta to holding point runway 24 via zta to holding point runway 24 qatari 8232 sorry you are on the othe way so continue straight ahead via only via z to holding point runway 24 okay yeah via z and holding point runway 24 qatari 8232
+P: qtr8232 request taxi qtr8232 taxi via zta to holding point runway 24 via zta to holding point runway 24 qtr8232 sorry you are on the other way so continue straight ahead via only via z to holding point runway 24 okay via z to holding point runway 24 qtr8232
+
+O: air france 10be we are on stand 18 embraer 1 7000 paris air france 10be good day ruzyne tower time 01 information l qnh 1017 cleared to paris charles de gaule baltu 4a departure initial climb 5000 feet and squawk 1000
+P: affirmation berni airfrance 10b we are on stand 18 and 1 c touch and go shone by airfrance 10b call good day ruzyne tower time 01 information l qnh 1017 cleared to push shone go balt24a departure initial climb 5000 feet and squawk 1000
+
+O: belavia 861 now descend 4000 feet qnh 1012 and via pr532 cleared ils approach runway 24 1000 feet nosig qnh 1012 proceed pr532 cleared ils runway 24 belavia 861
+P: blvd 861 now descend 4000 feet qnh 1012 and wpr532 cleared ils approach runway 24 1000 feet wpr532 cleared ils runway 24 blvd 861
+
+O: tvs4378 descend flight level 70 flight level 70 tvs4378
+P: skytravel 4378 descend flight level 70 level 70 skytravel 4378
+
+O: tie690j contact ruzyne tower 134.560 hezký večer ahoj 134560 tie690j bye díky
+P: tie690j contact ruzyne tower 134.560 wvc rar 134560 tie690j okay thank you
+
+O: ryr92bq turn right heading 090 90 degrees ryr92bq
+P: unk 9bq i am right heading 090 990 degrees 9bq
+
+O: hi tower good morning nje150w
+P: mcd good morning cpa150w
+
+O: morning nje150w ruzyne tower go ahead
+P: morning n150w roger
+
+O: good morning we tried to call ground while at the lobby no reply
+P: morning we got call way ground left lowly no reply
+
+O: squawk for us to vienna
+P: 4
+
+O: inform that frequencies are closed so just tower and nje150w time check is 20 information o with qnh 1013 and you are cleared to vienna schwechat vozice 3a departure initial climb to 5000 feet and squawk is 1000
+P: affirm that frequency tower call so just tower information 150w time check is 20 information o with qnh 1013 and you are cleared to vienna schweigart w3a departure initially climb to 5000 feet and squawk is 1000
+
+O: ewg7ab turn right heading 210 cleared ils approach runway 24 report established heading ding 210 cleared for the ils 24 report established ewg7ab
+P: awk7a b turn right heading 210 cleared ils approach runway 24 report established change 210 cleared for the ils 24 report established ewg7a b
+
+O: okiaf hello
+P: okaf hello
+
+O: okiaf tecnam 208 2000 eca e25 up to 2500 feet with info o qnh 1012 requesting the e2 arrival and n2 departure
+P: okiaf texas 2084 to cess etae25 up to 2500 feet with information after qnh 1012 request the e2 arrival and n2 departure
+
+O: roger 100 squawk 3317 and say again the type of aircraft please
+P: roger squawk 3317 and say again type of aircraft please
+
+O: tecnam 208 and squawk 3317okiaf
+P: take number 208 and 3317 after k unk
+
+O: all is correct and traffic information 12 o clock distance half a mile same level unverified unknown traffic probably ultralight traffic
+P: all is correct and traffic information 12 o clock distance half a mile same level unverified unknown traffic probably ultra light traffic
+
+O: copy traffic information we are visual okiaf
+P: copy traffic information we are visual okia
+
+O: thank you
+P: thank you
+
+O: oktop proceed direct lanux direct lanux oktop
+P: oktop proceed direct to lanux direct to lanux oktop
+
+O: radar dobre odpoledne tvs432p passing 1900 climbing to 5000 tvs432p dobre odpoledne praha radar identified climb flight level 160 climb to flight level 160 tvs432p
+P: okprm skytower 432p passing 1900 5000 skytower 432p dobré rpne praha radar identified climb flight level 160 qantas 5 level 160 skytower 432p
+
+O: ryr1ba stand 57 qnh 1012 request engine start
+P: runway 1b a stand 5 7 qnh 1012 request engine start
+
+O: tower good afternoon emirates 139 runway 2412 miles out emirates 139 heavy ruzyne tower continue approach wind 180 degrees 5 knots continue approach emirates 139
+P: tower good afternoon emirates 139 runway 24 12 miles out free emirates 139 heavy ruzyne tower continue approach wind 180 degrees 5 knots continue approach emirates 139
+
+O: 118.1 650 that s it bye bye děkujem na slyšenou na slyšenou
+P: 118.650 that is it bye bye
+
+O: okpmb descend flight level 100 level 100 okpmb
+P: okpmb return flight level 100 flight level 100 okpmb
+
+
+##############################################################
+
+Evaluating atco_en_stefanik dataset
+Namespace(model='models/PROMPT/vanmed-short/40B/checkpoint-2079', dataset=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], dataset_root='data', output_file='models/PROMPT/vanmed-short/exp/vis_ev_40B.txt', use_prompt=True, prompt_name='prompt_shortts_40B', transcription_name='short_ts')
+**************************
+O: oegte taxi to holding point runway 13 via df via df holding point runway 13 ote
+P: okegte taxi to holding point runway 13 via df via df holding point runway 13 oktte
+
+O: dobry vecer stefanik tower axe346p ils established runway 31 dme 7.5 axe346p stefanik tower dobry vecer wind 130 degrees 4 knots runway 31 cleared to land cleared to land runway 31 is copying axe346p omc mj dopocutia
+P: dobry vecer stefanik tower galileo 346p ils established runway 31 the emir 7.5 galileo 346p stefanik tower dobry vecer wind 130 degrees 4 knots runway 31 cleared to land cleared to land runway 31 we will copy galileo 346p omaj
+
+O: stefanik tower omcia final runway 13 omcia omcia runway 13 cleared to land wind 130 degrees 8 knots
+P: sydney tower obcii final runway 13 obcii obcii runway 13 cleared to land wind 130 degrees 8 knots
+
+O: n49xl taxi via d line up 04 report ready via d line up 04 call you when ready n49xl
+P: n49xl taxi via d line up 04 report ready via d line up 04 call we when ready n49xl
+
+O: 2036 thanks for your help 13j start and push and start call you for taxi roger squawk 4404
+P: 2036 thanks for your help 13j starting position start call you for taxi roger squawk 4404
+
+O: oge roger descend to traffic altitude 1500 feet start descending 1500 feet altitude omage
+P: oke roger descend to traffic altitude 1500 feet descending 1500 feet altitude omgaoke
+
+O: i would like request airborn on runway 04 exit af
+P: we would like to request a high power on runway 04 exit a between f
+
+O: stefanik tower top jet 401 dobrý deň apron c in front of the hangar ready for startup cleared destination ostrava hes l on board qnh 1017
+P: stefanik tower topjet 401 dobrý deň report c in front of dohanger ready for startup clearance destination lbqnh 1017
+
+O: qnh 10 hes 18 after keep the proceeding to v
+P: unh 1018 and after proceeding to v
+
+O: stefanik tower dobrý deň burg 692l stop established runway 316.5 dme aho692l stefanik tower dobrý deň wind 220 degrees 5 knots variable between 170 and 230 degrees maximum 10 minimum 3 runway 31 cleared to land
+P: stefanik z dobrý derne hex 692 l established ils runway 31 6.5 dme erhamburg 692 l stefanik tower dobrý derne wind 220 degrees 5 knots variable between 170 and 230 degrees maximum 10 minimum 3 runway 31 cleared to land
+
+O: slovak airforce hes 7445 frequency change approved dopočutia pekný let
+P: fck7445 frequency change approved
+
+O: bratislava tower dobrý den 54r visual approach runway 31 runway in sight
+P: bratislava tower dobrý deň elj54r visual approach runway 31 runway side
+
+O: bcs13j request push and start good evening bcs13j startup and push back approved position to f squawk 4425 squawk 4425 and start and push pre approved position ff2f
+P: uair 13j request push and start good evening uair 13j startup and push back approved position 2f squawk 4425 squawk 4425 and starting position approved position 2f
+
+O: stefanik tower trans europe 3852 pekne odpoludnie established ils 31
+P: stefanik tower bcs03852 technic poludne established ils 31
+
+O: 445 stefanik tower dobrý
+P: lg445 stefanik tower dobrý
+
+O: x13 if you prefer thank you and then that s witch departure again
+P: run way for me mx13 if you prefer thank you and then it s which departure are you
+
+O: elj704 taxi via d to apron c
+P: hj704 taxi via d to turn
+
+O: tie397f call me on tower frequency please roger
+P: tower frequency please
+
+O: no actually the 1a was planned for us but i see now as well the 1k is going ya is by atc and going straight ahead to that s correct eurotrans 13j affirm and if you are able to comply with the restrictions you can choose to 1k alright just give us 5 seconds discuss with a colleague eurotrans 13j thank you
+P: so actually the tovka 1a was planned for us but i see now as well the 1k is going by atc and going straight ahead to tovka is that correct eurotrans 13j affirm and if you are able to comply with the restrictions you can choose tovka 1k if you wish all right just give us 5 seconds discuss with eurotrans 13j thank you
+
+O: squawk 4417 squawk 4417
+P: sq4417 sorry squawk 4417
+
+O: looking out for a traffic omkll roger just traffic is on your 11 o clock 1 mile
+P: looking out for the traffic okromajk il l roger just traffic is on your 11 o clock 1 mile
+
+O: stefanik tower omcia request yes go ahead
+P: stefanik tower oi cia request
+
+O: bcs13j startup approved own discretion startup own discretion bcs13j
+P: bcs13j startup with own discretion startup own discretion bcs13j
+
+O: stefanik tower ssg004 dobré ráno ssg004 stefanik tower dobré ráno our stand information l1007 ready for startup clearance destination kosice ssg004 information m time 57 qnh 1008 cleared to kosice from runway 13 via nitra 1y departure initially climb altitude 5000 feet startup approved squawk 6746
+P: stefanik tower ssg004 dobré ráno ssg004 stefanik tower dobré ráno our stand information l1007 ready for startup clearance destination kocica ssg004 information m time 57 qnh 1008 cleared to kocica from runway 13 when i1y departure initial climb altitude 5000 feet startup approved squawk 6746
+
+O: stefanik tower good day 3amcg 3amcg stefanik tower good day helicopter a1 ready to start only 1 pesron on board 2 hours over
+P: stefanik tower good day 3amcg 3amcg stefanik tower good day helicopter a109 ready to start with no flight leaving bound only 1 person on board 2 hours of
+
+O: okagl squad 46746 6746
+P: okga l for 6746 6746
+
+O: stefanik tower good evening eurotrans 13j information z is copied request klm 2
+P: stefanik tower good evening eurotrans 13j information z is received request clearance to
+
+O: tower time air 397f dobrý den dobrý deň opäť time air 397f tower goahead time air 397f waypoint c stand 45 different information y qnh 1011 request technical startup
+P: stefanik tower time 397f dobrý den dobrý den 5t 397f tower go ahead time 397f hc stand 45 with information n qnh 1011 i request
+
+O: oia and contact stefanik radar 134.925 ahoj contacting radar 134. dec decimal 925 omcia thank you bye
+P: oia contact stefanik radar 134.925 oi contacting radar 134.925 oia thank you bye
+
+O: tower hello gac015n established on ils 31 dream team 015n stefanik tower dobry den wind 190 degrees 9 knots runway 31 cleared to land runway 31 cleared land gac015n and dobry den
+P: tower hello dream team 015n established on ils 31 dream team 015n stefanik tower dobrý deň wind 190 degrees 9 knots runway 31 cleared to land runway 31 cleared to land dream team 015n dobrý deň
+
+O: dobré popoludnie stefanik tower abp941 ils 31 abp941 stefanik tower pekné popoludnie wind 310 degrees 8 knots variable between 270 and 330 degrees runway 31 cleared to land runway 31 cleared to land abp941
+P: dobre po pohli stefanik tower abp941 ils 31 abp941 stefanik tower prekne pohli pohli wind 310 degrees 8 knots variable between 270 and 330 degrees runway 31 cleared to land runway 31 cleared to land abp941
+
+O: cleared to land runway 31 and please say again the wind 280 degrees 11 knots maximum 18 minimum 6 knots
+P: cleared to land runway 31 and please say again the wind 280 degrees 11 knots maximum 18 minimum 6 knots
+
+O: stefanik tower omele good day omele stefanik tower good day stefanik tower omele actual position inbound keep descending to 2000 feet altitude and requesting exit point v omele ole qnh 1018 after proceed to v
+P: stefanik tower omele good day omele stefanik tower good day stefanik tower omele actual position inbound kice descending to 2000 feet altitude and requesting exit point v omele omele qnh 1018 after kice proceed to v
+
+O: elj201 and via f line up 31 report ready
+P: objet 201 and via f line up 31 report ready
+
+O: oge continue to final runway 22 traffic is just now before shortly before landing
+P: oke continue to final runway 22 traffic is just now before shortly before landing
+
+O: omrwi wind 170 degrees 6 knots variable between 140 and 240 degrees runway 31 cleared to land
+P: omw wind 170 degrees 6 knots variable between 140 and 240 degrees runway 31 cleared to land
+
+O: bcs13j taxi to holding point runway 04 via ad ad holding point 04 bcs13j
+P: etc13j taxi to holding point runway 04 via ad ad holding point 04 etc13j
+
+O: opakujte volaciu značku tower omcmj dobrý deň omcmj štefánikovo dobrý deň omcmj flight plan position bound c 1300 feet qnh 1007 information g416
+P: okdevolec oommj jfa503 jmj stefanik wierd dobry deň oommj jfa503 jfa503 jfa503 jma503 jma5 plan position 3 minutes bound c 1300 feet in 1007 information g
+
+O: right so then yeah tovka 1k would be much better eurotrans hes 13j thank you bcs13j roger so recleared via tovka 1k departure of runway 31 initial climb 5000 feet recleared at tovka 1k departure runway 3 initial climb 5000 feet and request push and start bcs13j bcs13j push and start approved facing f and squawk 4403
+P: all right so then tovka 1k would be much better eurotrans 13j thank you eurotrans 13j roger so recleared when tovka 1k departure of runway 31 initially climb 5000 feet recleared the tovka 1k departure runway 31 initially climb 5000 feet and request push start eurotrans 12j eurotrans 13j push and start approved facing f and squawk 4403
+
+O: stefanik tower good morning bcs5334 established on the final inbound 31 good morning eurotrans 5334 stefanik tower wind variable 3 knots runway 31 cleared to land cleared to land 31 bcs5334
+P: stefanik tower good morning bcs5334 established on the final inbound 31 good morning bcs5334 stefanik tower wind variable 3 knots runway 31 cleared to land cleared to land 31 bcs5334
+
+O: 12j any chance to send a ready message will do thanks
+P: and use f12j any chance to send a ready message will do thanks
+
+O: double dot 401 line up runway 13 wind variable 2 knots runway 13 cleared for takeoff dopo via f line up run runway 13 and run runway runway 13 cleared for takeoff
+P: wjt401 line up runway 13 wind variable 2 knots runway 13 cleared for takeoff
+
+O: holding point runway 31 via f and cross runway 04 eurotrans 21 correction 13j thank you
+P: hj runway 31 via f and cross runway 04 bcs31 correction 13j thank you
+
+O: stefanik tower pekné popoludnie tatra 613 establish ils 31 tatra 613 dobré popoludnie stefanik tower runway 31 cleared to land wind 300 degrees 19 knots maximum 33 knots runway hes 31 clear to land tatra 613 and after landing vacate via d after landing via d 613
+P: stefanik tower pekne po peludne t613 established ils 31 t613 dobre po peludne stefanik tower runway 31 cleared to land wind 300 degrees 19 knots maximum 33 knots runway 31 cleared to land t613 and after landing vacate via d after landing via d 613
+
+O: stefanik tower omele altitude 6000 feet and descending to 2000 feet we would be at about v in hes 40 seconds and requesting approach information information q qnh 1020
+P: stefanik tower omhel altitude 6000 feet and descending to 2000 feet we will be at the point v in 40 seconds and request an approach information information qnh 1020
+
+O: stefanik tower good day aua1411 ils 31
+P: stefanik tower good day austrin 1411 ils 31
+
+O: omele taxi between anchors via f taxi between anchors via f omele
+P: omhel taxi between hangars via f taxi between hangars via f omhel
+
+O: runway 31 cleared to land we copied topjet hes 704
+P: runway 31 cleared to land wind copied top jet 704
+
+O: okrlv taxi via df holding 13 via df holding 13 okrlv
+P: oklv taxi via df holding 13 via df holding 13 oklv
+
+O: omdbv štefánik veža dobrý deň stefanik tower omdbv be reported there ve been hazards on board on a vfr flight to senica over devin with information c qnh 1009 requesting departure instructions
+P: omdbv stefanik ve omdbv via 4013 handgaffed to overgevin with information c at 1 009 requesting departure instructions
+
+O: taxi holding point 31 via f cross runway 04 ssg004
+P: taxi hold you point 31 via f cross runway 04 follow government 004
+
+O: stefanik tower ahoj top jet 701 established ils 31 top jet 701 stefanik tower ahojte wind 230 degrees 7 knots variable between 190 and 280 degrees runway 31 cleared to land runway 31 cleared to land top jet 701
+P: stefanik tower ahoj topjet 701 established ils 31 topjet 701 stefanik tower ahoj wind 230 degrees 7 knots variable between 190 and 280 degrees runway 31 cleared to land runway 31 cleared to land topjet 701
+
+O: roger position start approved position 5f and squawk 4423 for wzz6276
+P: roger push and start approved position 5f and squawk 4423 forw6276
+
+
+##############################################################
+
+Evaluating atco_en_zurich dataset
+Namespace(model='models/PROMPT/vanmed-short/40B/checkpoint-2079', dataset=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], dataset_root='data', output_file='models/PROMPT/vanmed-short/exp/vis_ev_40B.txt', use_prompt=True, prompt_name='prompt_shortts_40B', transcription_name='short_ts')
+**************************
+O: vjt437 turn left via taxiway ae6 hold short runway 16
+P: vjt437 turn left via taxiway a e6 hold short runway 16
+
+O: hbzkq zurich tower rudsi leave controls and by route s qnh 1026 wind 080 degrees 13 gusting 19 knots fato cleared for takeoff
+P: hbzk q direct tower leave control zone by route s qnh 1026 wind 080 degrees 13 gusting 19 knots cleared for takeoff
+
+O: vjt492 no landing vacated own discretion
+P: vjt492 after landing vacate your own discretion copy vjt492
+
+O: swiss 19t hello behind climb up
+P: sion 19t hello behind you heli 80 climb up to 8 behind hello behind you heli 60 line up and wait for behind 6 19t
+
+O: 420 tower good evening we had line up runway 28 behind
+P: 420 tower good evening we are line up runway 28 behind
+
+O: zurich tower rega 1 departed via back to dubendorf rega 1 tower hello again qnh is 1027 routing approved and you may leave the frequency bis spaeter spaet 1027 routing approved leaving frequency schoenen abend ciao
+P: sydney tower grüß regen rega 1 departures via sydney tower back to duvendorf rega 1 tower hello again qnh is 1027 routing approved and you may leave the frequency bis spater vielleicht go der schone abig 1027 routing approved leaving frequency abe unk später schone abig ciao merci
+
+O: div contact apron 121.755 tschuss_ bye
+P: unk contact apron 121.755 cheers
+
+O: finnair 8py wind 050 degrees 10 knots runway 10 cleared for takeoff
+P: fin8py wind 050 degrees 10 knots runway 10 cleared for takeoff cleared for takeoff runway 10 fin8py
+
+O: 05 degrees 7 knots runway run cleared for takeoff 343 ready for takeoff 3 2000
+P: 05 degrees 7 knots runway 4 cleared takeoff runway 4 cleared for takeoff
+
+O: hqi did you phone in today or few days ago
+P: hqi did you phone in today or few days ago
+
+O: swiss 18 heavy holding short 10 windcheck please
+P: unk 1 is heavy holding short 10 and wind check please
+
+O: swr218r can we vacate via h2 swr218r affirm vacated as convenient
+P: fck218r can we vacate via h2 fck218r affirm vacate as convenient
+
+O: d well the last 1 is at 13 miles if you wait for 2 minutes it s gonnabe possible
+P: redundant remain outbound hcpw otherwise well the last one is at 13 miles if you wait for 2 minutes it is gonna be possible
+
+O: t358 tower guten morgen corridor 4 approved corridor 5 sorry qnh 1026 qnh 1026 corridor 5 approved t358
+P: t358 tower gm corridor 4 approved corridor 5 sorry qnh 1026 1026 corridor 5 approved t358
+
+O: hqi opposite cessna 11 o clock 3 miles indicating 3600 feet
+P: hqi opposite cessna 11 o clock 3 miles indicating 3600 feet
+
+O: swiss 188 tower gruezi line up runway 10
+P: sui8 tower good to see line up runway 10
+
+O: zurich tower hbpoe hbpoe zurich tower go ahead
+P: sydney tower hbpo e hbpoe zaryk tower go ahead
+
+O: hbv you re leaving ctr shortly frequency change approved leaving frequency thank you and good bye hbv
+P: hbv you leaving ctr shortly frequency change approved ade frequency thank you and good bye hbv
+
+O: 335a tower hello wind 180 degrees 4 knots runway 14 cleared to land runway 14 cleared to land
+P: runway 335a tower hello wind 180 degrees 4 knots runway 14 cleared to land
+
+O: nje250f descend flight level 90
+P: nje240f descend unk 90
+
+O: tower very good morning sia346 again approaching runway 28 singapore 346 tower hello again taxiway j cross runway 28 and contact apron 121.755 bye bye cross runway 28 j 121755 bye bye sia346
+P: tower very good morning singapore 346 again approaching runway 28 singapore 346 tower hello again taxi j cross runway 28 then contact apron 121.755 bye bye cross runway 28 j 121755 bye bye singapore 346
+
+O: arrival guten abend swiss 31y heavy level 190 descending 130 inbound zh268 information l airbus 330
+P: 0i guten abend swiss 31y heavy level 190 descending 130 inbound z268 information l airbus 330
+
+O: turn left towards w2 proceed a and with w
+P: hdromeo turn left towards w2 proceed outbound with w
+
+O: hkg roger additional trafic is a piper approaching w1 opposite
+P: hqg roger additional traffic is a piper approaching w1 opposite
+
+O: caz401 midpoint 750 meters wind 010 degrees 2 knots runway 28 cleared for takeoff
+P: unk 01 navi point 750 meters wind 010 degrees 2 knots runway 28 cleared for takeoff
+
+O: swr160 wind 050 degrees 2 knots runway 32 cleared takeoff runway 32 cleared for f takeoff swr160
+P: swiss 160 wind 050 degrees 2 knots runway 32 cleared takeoff runway 32 cleared takeoff swiss 160
+
+O: h465 tower hello line up runway 10
+P: tower hello line up runway 10
+
+O: sui521 tower grutzi and runway 34 and taxi left via l holding point runway 10
+P: swiss air 521 tower grécy enter runway 34 and taxi left via then l holding point runway 10
+
+O: air nostrum 87wb contact departure good bye bye 7wb
+P: ernost runway 7wb contact departure good bye depart to bavaria 7wb
+
+O: dtt taxi via ae6 hold short of runway 16
+P: dtt taxi via a e6 hold short of runway 16
+
+O: jetset 437 delivery cleared athens runway 10 albix 2e departure 5000 feet squawk 3041
+P: jet437 delivery cleared to land runway 10 runway 2 e departure 5000 feet squawk 3041
+
+O: swr150y turn right heading 170
+P: suiy downwind 170
+
+O: ane87wb just to confirm your clearance vebit 3w departure and initial climb to 5000 feet 3w departure thank you
+P: sui87wb just to confirm your clearance vivid 3w departure and initial climb to 5000 feet thank you
+
+O: pgt947 via h to apron 121.855
+P: unk 947 via h2 apron 121.855
+
+O: ane87wb wind 03037 knots runway 10 cleared for takeoff
+P: unk wb wind 030 degrees 7 knots runway 10 cleared for takeoff
+
+O: lot420 contact departure goodbye contact departure goodbye lot420
+P: load 420 contact departure good bye contact departure good bye 420
+
+O: guten tag after landing vacate at the end via h3 long landing would be approved as well g long landing via h3
+P: deg after landing vacate at the end via h3 long landing would be approved as well dg long landing via h3 dg
+
+O: saxonian 7929 direct to goxli climb to t flight level 320
+P: sion 7929 direct to gxly climb level 320
+
+O: wind 6 knots runway 14 cleared to land vacated at your convenience okay cleared to land runway 14 vacate on convenience f unk unk
+P: in 6 knots runway 14 cleared to land vacate at your convenience okay cleared to land runway 14 vacate on convenience runway 14 it s about 8 knots tailwind
+
+O: good night descend altitude 6000 feet qnh 1028
+P: kfq back descend altitude 6000 feet qnh 1028
+
+O: qnh 1026 route w approved expect landing runway 10 hiv
+P: qnh 1026 route w approved expect landing runway 10 hiv
+
+O: affirm 121.755 thy3wq have a nice thank you thank you
+P: approach 121.1755 to reduce 3wj back 7n7 thank you thank you
+
+O: hbfvd start approved confirm sector 1
+P: hbfvxdhbf vxd affirm sector 1
+
+O: xt xt
+P: swr12tl
+
+O: yupbb delivery hello go ahead ybb on general aviation xero x on board destination budapest ready to copy at clearence ybb roger cleared budapest runway 10 for departure deges 1e climb 5000 feet and squawk 1000
+P: yup bd delivery hello go ahead ybb on general aviation xx on board destination budapest ready to copy cc cleared ybb roger cleared budapest runway 10 for departure takeoff 1e climb 5000 feet and walk 1000
+
+O: swiss 18 wind 050 degrees 8 knots gusting 14 knots runway 10 cleared for takeoff
+P: sui18 wind 050 degrees 8 knots gusting 14 knots runway 10 cleared for takeoff
+
+O: zurrich tower hello then gsw601 on f gsw601 tower on f cross runway 10 contact apron 121.755 sorry on f cross runway 1012175 aza572
+P: sion tower hello then ha601 on f ha601 tower on f cross runway 10 connect apron 121.755 heli on f runway 10 wind 121 755 heli cal572
+
+O: that s copy we will vacate via the end and cleared to land runway 14 saz628
+P: lets copy we will vacate by the end and cleared to land runway 14 sui63
+
+O: finnair 6kp tower good evening line up runway 28 report ready
+P: finder 6kp tower good evening line up runway 28 report ready
+
+O: and hlp the helicopter is now between w1 and w2 inbound
+P: hlp the helicopter is now between w1 and w2 inbound
+
+O: croatia 464 tower good evening wind 030 degrees 11 knots runway 14 cleared to land
+P: korea 464 tower good evening wind 030 degrees 11 knots runway 14 cleared to land 14 k
+
+O: hbv approaching s at 3300 feet h tel bv roger report w
+P: hbv approaching s at 3300 feet hbv roger report w
+
+O: caz401 line up and wait runway 28 line up and wait runway 28 caz401
+P: urk 401 line up and wait runway 28 line up and wait runway 28 urk 401
+
+O: swr18 line up and wait runway 10 line up and wait runway 10 swr18
+P: sui18 line up and wait runway 10 line up and wait runway 10 sui18
+
+O: cleared to land runway 14 air nostrum 78 julliet m and vacated your convenience thank you very much 78zm yzm wind 030 degrees 7 knots 0 cleared for takeoff
+P: runway 14 knots 78jm and vacate at your convenience thank you ramaz 78jm yzm wind 030 degrees 7 knots runway 10 cleared takeoff
+
+O: looking out heli hd heli hd traffic helicopter overhead e to correction overhead w to preceding towards airfield roger that we keep an eye on him heli hd
+P: looking out hyd heli hd traffic helicopter overhead e2 correction overhead w2 proceeding towards the field roger that we keep an eye on him heli hd
+
+O: hbkhr roger expect rnp 28 and about 55 miles to go
+P: bktr check rex rnp 28 and about 55 miles
+
+O: unk 21 tower hello again on k cross runway 10 connect apron 121755 good bye
+P: v21 tower hello again on k cross runway 10 contact apron 121755 bye bye
+
+O: tie307f wind 040 degrees 14 knots runway 28 cleared takeoff
+P: tie307f wind 040 degrees 14 knots runway 28 cleared takeoff
+
+O: ewg6nl wind 030 degrees 8 knots runway 28 cleared takeoff cleared for takeoff runway 28 ewg6nl
+P: aw6nl wind 030 degrees 8 knots runway 2 cleared takeoff cleared to takeoff runway 28 aw6nl
+
+O: hhd sir your leaving you may leave the frequency now good bye
+P: hhd absorb your leaving ctr or you may leave the frequency tower good bye
+
+O: thank you z the wind 140 degrees 4 knots 32 cleared takeoff
+P: thank you point 5hex 0 the wind 140 degrees 4 knots 32
+
+O: etihad 39b just to confirm correct after is correct now the left into taxiway f and turn left again via n f and then n etihad 39b thanks
+P: h unk b just to confirm a vigner is f correct after vigner it s correct now to the left into taxiway f and then left again via n f and then n unk b thanks
+
+O: sunturk 31h ground taxiway e7 cross runway 16 taxiway taxiway l to hold short runway 10
+P: 331h ground taxiway e7 cross runway 16 taxiway l to hold short runway 10
+
+O: sunturk 31h tower hello line up runway 10 report ready
+P: firmly touch and tell tower hello line up runway 10 report
+
+O: cleared to zagreb runway 10 deges 1e5000 1000 squawk ctn465 read back correct report ready
+P: cleared to z runway 10 degust 1e 5000 1000 o clock runway 465 report ready
+
+O: ane80qy contact apron 121.855
+P: bernos drum 80qy contact apron 121.855 121855 bernos drum 80qy
+
+O: tap931c wind 050 degrees 14 gusting 19 knots runway 10 cleared for takeoff cleared for takeoff runway 10 air portugal
+P: p931c wind 050 degrees 14 gusting 19 knots runway 10 cleared for takeoff cleared for takeoff runway 10
+
+O: ready to touchdown er 47 on j 947 tower taxiway j cross runway 28 contact apron 121.75 5 bye
+P: tower touch 947 on j sion tower taxiway j cross runway 28 contact apron 121.755 bye
+
+O: fin5dl vacated own discretion wind 140 degrees 5 knots runway 14 cleared to land
+P: sydney 5dl vacate at own discretion wind 140 degrees 5 knots runway 14 cleared to land
+
+O: habicht final for 10 lowpass over the tower
+P: after w final 410 low pass hd
+
+O: 05 degrees 8 knots runway 10 cleared for takeoff
+P: 05 degrees 8 knots runway 10 cleared for takeoff
+
+O: direct swiss 98r establish rnp swiss 98r tower continue after landing vacate around runway 16 is available after landing to the left once available
+P: tower etablished on the rnp 28 698r tower good to know we continue after landing with k2r runway 16 is available after landing to the left 16 is available etablished
+
+O: ncg taxiway k cross runway 10 contact apron 121755
+P: ncg taxiway k cross runway 10 contact apron 12175 bye
+
+O: hhx request to proceed now through hhx approved
+P: hhx i request you proceed now to hx approved
+
+O: stand by and holding over w2 for the moment hhz
+P: roger by hand holding our w2 for the moment load to z
+
+O: after w2 direct e to hbphd
+P: after w2 direct e2 hbhd
+
+O: tui9y direct to dm458 be level within the next 45 miles
+P: tj9y direct to dm458 be level within the next 45 miles
+
+O: sia346 contact apron 121.755 bye bye
+P: sui6 contact apron 121.755 bye bye
+
+O: hbchx you may leave the frequency frequency change approved
+P: hbcx malaysian frequency
+
+O: inbound zh266 and then the join the amiki 28 transition runway 28 klm71q
+P: inbound z 266 and then join the 28 transition runway 28 cal71c
+
+O: thanks very much cleared to land runway 14 vacate unk 87
+P: thank you very much cleared to land runway 14 vacate as you can see nje8
+
+O: swr150y descend to 5000 feet qnh 1025 descending 5000 feet qnh 1025 swr150y
+P: qnh 15y descend to 5000 feet qnh 1025 descending 5000 feet qnh 1025 this is 15y
+
+O: c roger frequency change approved good bye leaving frequency good bye
+P: hlw frequency change approved good bye change frequency good bye hlw
+
+O: flight taxi on zb hold short of k
+P: flight relayed taxi on zb whole shot of k
+
+O: hhw roger traffic just now at w inbound route w okay kay roger we re looking for the traffic how
+P: haw taxi level 4 3100 feet no traffic inbound haw roger traffic just now at w inbound hw roger we are looking for traffic haw
+
+O: hhx proceeding now north of landing
+P: hhox proceeding now north of ligand to
+
+O: fraction 103m zurich tower and wait runway 28
+P: nje103m direct tower line up and wait runway 28
+
+O: austrian 5na is ready for departure danke austrian 5na the wind 140 degrees 5 knots runway 28 cleared for takeoff austrian 5na
+P: a5n a ready for departure danke a5na the wind 140 degrees 5 knots runway 28 cleared for takeoff thank you takeoff 25 n
+
+O: ual135 wind 030 degrees 10 knots runway 28 cleared takeoff
+P: united 135 wind 030 degrees 10 knots runway 28 cleared takeoff
+
+O: dwl via intersection e line up runway 10
+P: dwl via intersection e line up runway 10
+
+O: bkhr tower grutzli say again taxiway k cross runway 28 and contact apron 121.755
+P: bkh runway again taxiway k cross runway 28 then contact apron 12 on decimal 755
+
+O: wind check for runway 1434 degrees 2 knots
+P: wind check for runway 14 34 the degrees 2 knots
+
+O: gsw631 descend to flight level 90 descend gsw63
+P: sui631 descend to flight 790 descend to flight 631
+
+O: swiss 218l contact ground 121.905 fertig 121905
+P: 3218l contact ground 121.905 party 121.905 3218l
+
+O: qaj1553 roger are you able to depart from intersection e
+P: dlh1553 roger are you able for to depart from intersection e
+
+O: edelweiss 248 hallo pushback can startup is approved push and start approved
+P: unk 2 48 then hello 2 seconds startup is approved
+
+O: swr101x contact departure bye bye departure swr101x
+P: sui101x contact departure bye bye departure sui101x all right
+
+O: n4cg contact tower 118.105
+P: n4cg contact tower when you need touch unk
+
+O: hello swiss 2067 established on the 14 swiss 2067 tower wind 15 degrees 7 knots runway 14 cleared to land runway 14 cleared to land swiss 2067
+P: hello swiss 2067 established on the rnp 14 swiss 2067 tower good to know between 150 degrees 7 knots runway 14 cleared to land runway 14 cleared to land swiss 2067
+
+O: left towards w2 and then outbound route w hgr
+P: lefth toward w2 and then upon route w hbhr
+
+O: nje250f descend altitude 5000 feet and left turn now heading 300 ils 28 report established correcting approach report established on final track
+P: nje250f descend to 5000 feet and left turn now heading 300 qnh 28 report established nje3rp approach runway 2 report established in final track
+
+O: europa 94km wind 140 degrees 6 knots runway 28 cleared for takeoff cleared for takeoff europa 94km air nostrum 78jm contact apron 121.855 121855 thank you
+P: ae94km wind 140 degrees 6 knots runway 28 cleared for takeoff cleared for takeoff euronet from 78 to 8 contact apron 121.855 see ya
+
+O: hbpqy tower have you filed the flight plan
+P: hbpicy tower grzy have you filed the flight plan
+
+O: morning baw712 69 miles il 44 baw712 tower hello wind 060 degrees 15 knots runway 14 cleared to land runway 14 baw712
+P: morning unk 712 6 nautical mile left 14 speedbird 712 tower hello wind 060 degrees 15 knots runway 14 cleared to land cleared to land 14 speedbird 712
+
+O: tower good day thy27x hold before runway 28 hello again turkish 27x tower taxiway j cross runway 28 contact apron again this time 121.755 ciao
+P: tower good day turk 27x8 before runway 28 hello again turk 27x8 tower taxiway j cross runway 28 contact apron again this time 121.755 ciao
+
+O: hdc your re at the ctr frequency change approved bye bye
+P: hhctr frequency change approved bye bye
+
+O: cleared to cross runway 10 on j and contact apron 121755 after crossing qtr02m good afternoon
+P: cleared to cross runway 10 on j and unk apron 121755 after crossing qtr02m good afternoon
+
+O: lining up runway 16 edelweis 24 guten tag
+P: line up runway 16 advise too far
+
+O: zurich tower er established on the ils runway 14 rq tower and after go-around fly over runway 14 to join directly the outbound track the climbout area runway 10 for the zurich east 1d sid
+P: sydney tower q tower grutzewald and have to go around fly along runway 14 to join directly the outbound track the climb out area runway 1040 sydney east 1d sid
+
+O: dtakw we have q on board vebit 3w departure and initially 5000 feet going 1000 dkw report ready for startup
+P: dkw we have q on board unk 3w departure initially 5000 feet scoring 1000 dkw report ready for startup
+
+O: say again yea hzc und frequency change approved shönen tag frequency change approved hzc
+P: say again ja hzc and frequency change approved schöne tag
+
+O: ram352 contact apron 121.855 good bye 121.855 good bye ram352
+P: roger e52 contact 08run 121.855 good bye 121.855 good bye roger e52
+
+O: alitalia 571 apron hello push back and startup is approved
+P: heli 571 hello push back and startup is approved
+
+O: thy6fl is in hello taxi second right via inner f and m to stand b32
+P: 36fl and hello taxi second right via inner f and right to stand b32
+
+O: 2726 wind 040 degrees 5 knots runway 32 for takeoff cleared takeoff runway 32 united 207 26
+P: 2726 wind 040 degrees 5 knots runway 32 cleared for takeoff cleared for takeoff runway 32 united 207 22
+
+O: hsk wind 030 degrees 11 knots runway 2 cleared takeoff
+P: hsk wind 030 degrees 11 knots runway 2 cleared takeoff
+
+O: 1218.52 speedbird 73
+P: tower 1 2 1 855 swiss b
+
+O: ock wind 030 degrees 5 knots runway 28 cleared for takeoff
+P: ock wind 030 degrees 5 knots runway 28 cleared for takeoff
+
+O: fhond zurich tower bonjour line up runway 28
+P: hob nd reclare bonjour line up runway 28
+
+O: austrian 562 taxi via to holding position a2
+P: roger 5 62 taxi via inbound to holding position a2
+
+O: tower hello again 208n on j swiss 208n tower hello again taxiway j cross runway
+P: tower hello again ss08n on june ss08n tower hello again taxiway j cross runway 2
+
+O: hb2504 turkish 5hb124jc
+P: hb2534 traffic to hcpwb
+
+O: hbyjg good afternoon behind you lining up pg 24 line up runway 28 behind
+P: hbjg good afternoon behind you lining up pc 24 line up runway 28 behind
+
+O: direct zh266 and we continue to amiki 28 transition and we request rnv approach for runway 28 swr150y swr150y roger rnv approach descen to flight level 120 descending flight level 120 danke swr150y
+P: yes direct z h266 and we continue with the amity 28 transition and we request rnp approach for runway 28 swiss 150y swiss150y roger rnp approach descend to flight level 120 descend to flight level 120 lx swiss150y
+
+O: hhx request long landing hhx long landing is approved long landing approved hhx sui521 contact apron 121.855
+P: hhx request long landing hx long landing is approved long landing approved hx to therefore 521 contact apron 121.855
+
+O: roger looking out hyh and we re approaching w2
+P: roger we are looking out hjh and we are approaching w2
+
+O: baw713 ready affirm baw713 baw713 roger wind 020 degrees 10 gusting 15 knots runway 10 cleared for takeoff cleared takeoff 10 baw713
+P: sui713 ready heli sir sui713 sui713 roger wind 020 degrees 10 gusting 15 knots runway 10 cleared for takeoff okay takeoff 10 sui713
+
+O: swr204k departure bye departure good bye swr204k
+P: fck departure bye departure goodbye fck
+
+O: swr196 zurich tower line up and wait runway 10 report ready
+P: swiss 19 63 tower cleared to land and wait runway 10 report ready
+
+O: line up and wait runway 28 and report ready
+P: ruwnay runway 28 and report ready
+
+O: hdl contact apron 121.855
+P: hdl contact apron 121 destination
+
+O: klm 50g apron good morning pushback startup approved good morning pushback and nd startup approved klm50g
+P: kll50 go good morning push back startup approved good morning push back startup approved kll50 go
+
+O: runway 10 cleared for takeoff swr196
+P: runway 10 cleared for takeoff runway 196
+
+O: ock contact tower 118.1 good bye
+P: ock contact tower 118.1 good bye
+
+O: ewg8np according do you read
+P: urx8np sydney tower calling on
+
+O: hoe the second traffic is now to overhead w1 oposite
+P: hoe the second traffic is now just overhead w1 opposite
+
+O: hiv w 3500 feet hiv roger expect landing runway 10 runway 1
+P: hiv w 3500 feet hiv roger expect landing runway 10 runway 10
+
+O: hzc wind 08 cleared for lowpass left turn after rumlang to w2 outbound route w
+P: hzc wind 068 cleared for low pass left turn after rymlong to w2 outbound route w
+
+O: klm71q expect inbound turn within 6 miles from now and in total distance 304 fo
+P: qanem 7q expect inbound turn about 16 miles from unk distance 30 feet
+
+O: fl hello again taxiway j cross runway 28 contact apron 121.755 good day taxiway j cross runway 28 after crossing 121755 thy6fl thank you
+P: tower hello again fld6fl hello again taxiway j cross runway 28 contact apron 121.755 good day taxiway j cross runway 28 after contact 121 755 thank you
+
+O: n46pl tower taxiway k cross runway 10 contact apron 121.755
+P: sap46pl tower taxi k cross runway 10 contact apron 121.755
+
+O: hblvc zurrich tower you ready for departure
+P: hblvc 08t grutz are you ready for departure
+
+O: hdl turn left for base turning left for base hdl
+P: hdl turn left for base turning left for base hdl
+
+O: spfba tower hello hold position i ll call you back
+P: sba tower hello hold position i call you back
+
+O: tui73m rate of descent 2040 more
+P: tweeted 73 miles race descend 2000 or more
+
+O: that s maximum 3500 and report s.
+P: 35 nothing is at maximum 3500 and report s point
+
+O: thy3wq contact departure bye contact departure have a nice day thy3wq you too
+P: turkish 3wq contact departure bye contact departure have a nice day turkish 3wq you too
+
+O: dkw we are ready for start roger please update the tobt via your handling agent
+P: dkw we are ready for start roger please update the tobt via your hand lmj
+
+O: hzc again hello i didn t hear the last part say again please
+P: hzc again for a low pass i didn t hear the last part say again please
+
+O: lxa2f contact apron 121.855 ciao
+P: rln2f contact apron 121.855 ciao
+
+O: lot420 contact ground 121.905 good bye
+P: 420 contact ground 121.905 good bye
+
+O: abelag 492 contact apron 121.855 121855
+P: hebilack 492 contact apron 121.855 121855
+
+O: lot420 wind 01034 knots runway 10 cleared for takeoff
+P: 420 wind 010 degrees 4 knots runway 10 cleared for takeoff
+
+O: nje250f turn left heading 065
+P: nje250f turn left heading 065
+
+O: swr218r contact apron 121.855 121845 218r
+P: sui218r contact apron 121.855 121815 218r
+
+O: hbczz passing w 2500 hzz
+P: hbcpzcz passing 5000 hzz
+
+O: lh lh should be around 122 o clock make a right turn now to w2
+P: heli lh heli lh should be around 12 to 2 o clock make a right turn out to w2
+
+O: u on board 121755 wunderschoenen nachmittag edw24 thank you bye b
+P: uon board 12155 on the turn of nautical at least 2 feet thank you
+
+O: hlh wind 04 degrees xt
+P: hle wind 040 degrees 10 knots runway 10 cleared for takeoff route 2
+
+O: unk 55 correction 584p takes a k cross runway 10 and contact apron 121.755
+P: okay 485 correction 584p taxi mk cross runway 10 and contact apron 121.755
+
+O: delivery good day pgt31h stand number b31 information u destination ltfj boeing 738 ready to copy clearance sunturk 31h delivery good morning information v is now current cleared to istanbul runway 10 deges 1e departure climb cl 5000 feet squawk 3024
+P: sydney very good day t31h number b31 information u destination ltfj boeing 738 ready to contact lernar 31h delivery good morning information v is now current cleared to istanbul runway 10 the first e departure by 5000 feet 3024
+
+O: established 928 klm7 1q klm71q roger contact tower 1181 tschuess schoenen dank tschuess 118.1 klm71q
+P: established runway 28 cal71q cal71q roger contact tower 1181 see you see you 1181 cal71q
+
+O: okay cleared to push after 737 passes behind is cleared to start is 52
+P: okay cleared to push after the 737 passes behind us cleared to start unk 8 53
+
+O: ah maybe later on the way back we have sorry roger
+P: maybe later on on the way back we have a mission sorry
+
+O: hhr vacate left into f and contact apron 12 1.755 good night
+P: hhv vacate left into f and contact apron 121.75 good night
+
+O: dihkw tower hello again hold short of runway 10
+P: dlh9kw tower hello again hold short of runway 10
+
+O: unk tower line up and wait runway 34 departure in around hes
+P: sui38 tower gute mittag line up and wait runway 34 departure in around 5 minutes
+
+O: hbkma line up runway 10 and report upon route
+P: hbkma grutzlii line up runway 10 and report out
+
+O: e1c go ahead e1c cleared to madrid runway 32 ready 3n climb 5000 feet squawk 3002
+P: fck1c go ahead fck1c cleared to land runway 32 vacate 3n climb 5000 feet squawk 3002
+
+O: singapore 346 apron hello taxi on j hold short runway 28 taxi on j hold short runway 28 singapore apore 346
+P: sia67 hello taxi on j hold short runway 28 taxi on j hold short runway 28 for 346
+
+O: eurotrans 45v contact rhein 120.930 bye
+P: air chance 45v contact rhyne 120.930 fly
+
+O: ewg71r climb up to 2000 meters wind calm runway 28 cleared for takeoff runway 28 cleared for takeoff ewg71r
+P: 7r we are midpoint above 2000 meters wind calm runway 28 cleared for takeoff runway 28 cleared for takeoff 7r
+
+O: hivw 3500 feet hiv danke
+P: hiv w 3500 feet hiv danke
+
+O: good evening line up and wait runway 10
+P: affirmation wb good evening line up and wait runway 10
+
+O: zurich tower the hbvts guten morgen now established ils runway 34 zurich ich tower guten morgen vts number 2 continue continue ts danke
+P: sydney tower jbvts with the market around established ils 34h good talk jbvts number 2 continue continue ts danke
+
+O: start approved qnh 1025
+P: wish has approved qnh 1025
+
+O: hhr when ready descend 6000 feet qnh 1025
+P: hhr when ready descend 6000 feet qnh 1025
+
+O: xt
+P: b
+
+O: gsw445 holding short runway 10 gsw445 taxi j cross runway 10 contact apron 121755 bye bye on j cross runway 10121755 eiger 445 bye by
+P: tie445 for short runway 10 t445 taxi with j cross runway 10 contact apron 121755 way 4j cross runway 10 121755 tie445
+
+O: e1c taxiway k cross runway 10 contract apron 125 crossing 10 taxiway k1217c goodbye
+P: f1c taxiway k cross runway 10 contact apron 125 crossing 10 intersection k runway 12175 high 1c goodbye
+
+O: hello good day this is ane78jm 9 miles final 14 fully established
+P: hello to read this is arnast 78j my 9 miles final 14 fully established
+
+O: startup and pushback approved
+P: 362u if you start up and push back approved
+
+O: ijm613 climb to flight level 120
+P: jetstar 613 time to fly level 120
+
+O: hbphd unknown vfr traffic without altitude indications 12 o clock 2 miles crossing left to right
+P: hbphd unknown vfr traffic without altitude indication 12 o clock 2 miles crossing left to right
+
+O: roger
+P: hgb we have the traffic in sight roger
+
+O: hello apron lot 420 fully ready lot420 roger then for push and start stand by for apron 121.755
+P: hello 8lb420 fully ready 420 roger 104 push and stop 104 apron 121.755
+
+O: dfjtt tower hallo line up and wait runway 10
+P: dfjtt tower hello line up and wait runway 10
+
+O: qatari 8268 swiss radar identified climb to flight level 290
+P: tower 8268 search radar identified climb climb level 290
+
+O: sprintair 6261 swiss radar identified confirm requested level
+P: sprint out 6261 this radar identified confirm requested level
+
+O: yes looks good wind check 030 degrees 10 knots head wind of about 6 knots runway 3 400 after w2 turn left base 34
+P: that looks good wind check 030 degrees 10 knots headwind of about 6 knots runway 34 so after w2 join left base 34
+
+O: df the hcp12 correction 11 it s about 1 oclock 1 unk miles out
+P: df the helicopter 12 correction 11 no it s about 1 o clock wind off
+
+O: hbsdf tower hello line up runway 10
+P: hbsdf tower hello line up runway 10
+
+O: continue as cleared descending level 120 and expecting vectors ils 28 swr31y
+P: sydney tower cleared descending level 120 and expecting vector 728231y
+
+O: sas602 tower hello line up runway 28 line up 28
+P: scandinavian 602 tower hello line up runway 28 line up 28
+
+O: 14 sia345 tower good morning line up runway 10 sia345 we call you
+P: sia345 tower good morning line up runway 10 sia345 we call you fully ready
+
+O: hyh wind 040 degrees 11 knots runway 10 cleared to land runway 10 cleared to land hyh
+P: hyh wind 040 degrees 11 knots runway 10 cleared to land runway 10 cleared to land hyh
+
+O: for push 121755 lot420 bye
+P: air 4 push 12175 5 knots 420 bye
+
+O: aze72qq tower hello l9 line up and wait runway 10
+P: tower hello l9 line up and wait runway 10
+
+O: tower 2013d 4 miles on 14 swiss 213d tower hello wind 120 degrees 6 knots runway 14 cleared to land h2 available cleared to land with h2 swr213d cleared to land 14
+P: tower sydney 6013d 4 miles and 14 swiss 13d tower hello wind 120 degrees 6 knots runway 14 cleared to land h22 available we land with h213d cleared to land 14
+
+O: zurich tower axy1202 good afternoon established ils 14 axy1202 tower hello wind 160 degrees 4 knots runway 14 cleared to land vacate at own discretion cleared to land runway 14 and vacate at own discretion axy1202
+P: hex tower le1202 good afternoon established ils 14 correction 1202 tower hello wind 16 degrees 4 knots runway 14 cleared to land vacate and own discretion runway 14 vacate and own discretion le1202
+
+O: qtr02m on taxiway j cross runway 10 contact apron 121.755 good bye
+P: qtr02m contact way j cross runway 10 contact apron 121.755 good bye
+
+O: tower swiss 257 j 257 cross 28 apron 121.755 schoenen tag chau
+P: tower 257j bcs257 cross 8 apron 121.75
+
+O: 5c hello wind 130 degrees 4 knots runway 14 cleared to land you can make the end
+P: dlh5c hello wind 130 degrees 4 knots runway 14 cleared to land you can vacate at the end
+
+O: ntx contact apron 121.855 1855
+P: ntex contact apron 121.855
+
+O: jmp802 climb to flight level 150
+P: jump run 802 climb to flight level 150
+
+O: huu contact departure and schone_tag_ bye departure huu schone_tag_ bye
+P: huu contact departure and change at the top departure huu schöne tag
+
+O: huj after w2 proceed via to e2
+P: hud after w2 proceed via overhead to e2
+
+O: xt 7 tower hello taxi j cross runway 28 when crossing contact apron 121.755 good day
+P: tower hello on taxiway j cross runway 28 when crossing contact apron 121.755 good day
+
+O: tower good afternoon qtr6hm we are a2 we are ready for departure hello qatari 6hm zurich tower line up and wait runway 28 line up r
+P: tower good afternoon qatari 6hm we are a2 we are ready for departure hello qatari 6hm zurich tower line up and wait for 828
+
+O: finnair 8py contact departure bye bye contact departure finnair 8py bye bye
+P: julliet crossing runway 10 fina 8py contact departure bye bye contact departure fina 8py bye bye
+
+O: hzp after w2 proceed via threshold runway
+P: hzp after w2 proceed via threshold runway
+
+O: ock contact departure 125.955 good bye 125955 oskar pck
+P: ock contact departure 125.955 bye bye 125955 ock
+
+O: hww wind 050 degrees 9 knots gusting 15 runway 14 cleared to land cleared to land 14 hw
+P: hw wind 050 degrees 9 knots gusting 15 runway 14 cleared to land
+
+O: tower amex 2w good afternoon established on ils runway 14 xt 0 degrees 6 knots runway 14 cleared to land runway 14 cleared to land arm2
+P: uae14 runway 14 runway 14
+
+O: nostrum 87wb contact tower 118.1 good bye
+P: roger 8wb connect tower 118 move on good bye
+
+O: roger then taxi via all a and e on taxiway e hold short runway 10
+P: roger then taxiway a and e on taxiway e hold sure runway 10
+
+O: hbjsk tower guten morgen line up runway 28 line up and wait 28 sk
+P: hbjsok tower good morning line up runway 28
+
+O: h tel kg traffic is a helicopter approaching w1 opposite looking out hkg
+P: hkg traffic is helicopter approaching w1 opposite looking out hkg
+
+O: diahg zurich tower hello intersection e line up runway 10 report ready
+P: diahg zy tower hello via intersection e line up runway 10 report ready
+
+O: tka contact tower 118.1 good bye
+P: tka contact tower 118.1 good bye
+
+O: hello you may vacate the runway later on not via the first but via the second for faster taxi and the second exit is called h2 okay we ll do the we ll go to the end thanks
+P: no no you may vacate the runway later on not via the first but via the second for faster taxi and 6th taxi is called h2 okay we ll do the we ll call it again thanks
+
+O: eiger 600 zurich tower schoenen guten morgen line up runway 34
+P: hg600 sydney tower line up runway 34
+
+O: tka wind 040 degrees 10 knots on the 10 cleared for takeoff
+P: tka wind 040 degrees 10 knots runway 10 cleared for takeoff
+
+O: approved qnh 1026
+P: rega 13 tower cleared to routing approved qnh 1026
+
+O: tower singapore 346 holding short runway 28 singapore 346 tower hello again taxiway j cross runway 28
+P: tower singapore 346 holding tower runway 28 singapore 346 tower hello again taxiway j cross runway 28
+
+O: hallo bwzp tower hello into control zone route e clearence limit e2
+P: hbwzp tower hello wzp tower hello intercontroll zone route e clearance limit e2
+
+O: cleared ils runway 28 cal you established klm71q
+P: cleared to land runway 28 cleared to land qantas 1q
+
+O: tcnka apron hello turn left via ay210f73
+P: tcnkaa turn left via a and y 210f 73
+
+O: just to confirm the clearance limit is w2 i will give you a short short call prior
+P: just to confirm the clearance limit is w2 i will give you a short call prior how to
+
+O: saz61 wind 030 degrees 4 knots runway 32 cleared takeoff hi 32 cleared takeoff saz61
+P: sui61 wind 030 degrees 49 72 clear takeoff 32 cleared takeoff sui61
+
+O: n46pl affirm vacate at convenience and contract apron 121.855 121855
+P: n46pl affirm vacate as convenient contact apron 121.855
+
+O: swr2067 contact apron 121.855 121.855 swr2067
+P: swiss 2067 contact apron 121.855 121.855 swiss 2067
+
+O: ual135 apron hello push back and startup is approved
+P: united 135 evening hello push back and startup is approved
+
+O: swiss 1076 taxi via link 3e7 hold short of runway 16
+P: swr1076 taxi via link 3 e7 hold short of runway 16
+
+O: tower guten morgen swiss 197 heavy rnp 14 established swr197 tower guten morgen wind 080 degrees 12 knots gusting 19 runway 14 cleared to land vacate h2
+P: tower good morning swiss 197 heavy rnp 14 established swiss 197 tower guten morgen wind 080 degrees 12 knots gusting 19 runway 14 cleared to land vacate h2
+
+O: swr1327 apron 121.855 121.855
+P: 1327 apron 121.855 121.855
+
+O: dtal frequency change approved bis spaeter leaving frequency bis spaeter hdl
+P: lm frequency change approved bis später leaving frequency bis später hll
+
+O: swr150y established rnp runway 28 swr150y roger contact tower 1181 tschuess 118.1 swr150y
+P: sui150y established upon runway 28 sui150y roger contact tower 11812 11812 sui150y
+
+O: ascot 1914 zurich tower hello again on taxiway j cross runway 10 contact apron 121.755 cheerio
+P: a 1914 zy tower hello again on taxiway j cross runway 10 contact apron 121.755 j
+
+O: tka contact apron 121.855
+P: tka contact apron 121.855
+
+O: hiv after w2 join right base for runway 10 number 1
+P: hiv after w2 join right base for runway 10 number 1
+
+O: axy1202 hello again on j approaching runway 28 axy1202 tower hello again cross runway 281j connect apron 121.755 good bye
+P: h tel 1202 hello again on j approaching runway 28 regent 1202 tower hello again cross runway 28 on j contact apron 121.755 good bye
+
+O: fsf584p tower good morning for shorter taxi you may vacate at the very end h3 wind 040 degrees 8 knots runway 14 cleared to land
+P: f0f584p tower good morning for shorter taxi you may vacate at the very end h3 wind 040 degrees 8 knots runway 14 cleared to land
+
+O: nje498a hold position there will be crossing traffic i call you back
+P: nje498a hold position they will be crossing traffic i call you back
+
+O: fty8 wind 050 5 knots runway 10 cleared for takeoff roger 10 for takeoff fty8 gsw445 calling
+P: 508 wind 05 degrees 5 knots runway 10 cleared for takeoff runway 10 cleared for takeoff runway 445 good morning
+
+O: hvc vacate first right and to h1 and contact apron 121.855
+P: hvc vacate first right into h1 and contact apron 121.855
+
+O: zurrich tower hello ane78jm on ils 11 unk ane78jm tower hello wind 013 degrees 10 knots about 5 knots tailwind runway 14 cleared to land
+P: 3 tower hello unk 7879 julliet 9 runway 14755 unk 7879 julliet 9 tower hello wind 010 degrees 10 knots about 5 knots tailwind runway 14 cleared to land
+
+O: turning to the right c to de-icing lane number 3 edw12p
+P: unk to the right c to the ising lane number 3 ils 12p
+
+O: klm71q just to be sure which position you want us to fly because we are now inbound zh266
+P: okay le bairse 1g be sure with 361 to fly because we are now inbound jh 266
+
+O: hdl contact departure departure dl
+P: hdl contact departure adieu departure ready hdl
+
+O: hbznc zurich tower cleared vfr routing is approved qnh 1027
+P: hbznc zeri tower grutzis qvfr routing is approved qnh 1027
+
+O: sxs3 wind 160 degrees 4 knots runway 28 cleared for takeoff
+P: sion express 3 wind 16 degrees 4 knots runway 28 cleared for takeoff
+
+O: hblww apron cleared speed taxi behind inbound xy to jersey vector 3
+P: hblw8 grutzli taxi behind the diamond on taxiway y to unk sector 3
+
+O: after w2 proceed via overhead to e2 hblu form j
+P: after w2 proceed via overhead to e2 hblvj
+
+O: hhr roger you have any wishes on the landing runway
+P: hhd you have any wishes on the landing runway
+
+O: pnc9cj line up and wait runway 28
+P: pw9cj line up and wait runway 28
+
+O: hyd you re reaching w you may change the frequency bye bye guten morgen yd
+P: hyd you are reaching w you may change the frequency bye bye sydney morga hyd
+
+O: established rnp 28 swr98r 98r roger contact tower 1181 tschuess 181 schoenen abend swr98r bye by danke
+P: departure start unk 28 swiss 98r 98r contact tower 1181 swiss 81 swiss 98r roger thank you
+
+O: hvc give way to the diamond from the left
+P: hvc give way to the diamond from the left
+
+O: thy3hs wind 030 degrees 10 knots runway 10 cleared for takeoff
+P: t3hs wind 030 degrees 10 knots runway 10 cleared for takeoff
+
+O: nje498a line up and wait runway 10
+P: nje498a line up and wait runway 10
+
+O: yes sir we re cleared to cross 28 and will go to apron 201755 on the other side thanks fine
+P: yes sir we re cleared to cross 28 and we ll go to apron 201755 on the other side thanks
+
+O: zurich tower police helicopter hbznc approaching kollbrunn 3000 feet for landing dubendorf
+P: 30 tower police helicopter obzn c approaching holding 3000 feet for landing jupiter
+
+O: hyh leave control zone via route w wind is calm runway 28 cleared for takeoff runway 28 cleared takeoff leaving route w hyh
+P: hyh leave control zone via route w wind is calm runway 28 cleared for takeoff runway 28 cleared takeoff wind 28hyh
+
+O: swr31y turn right heading 250 cleared ils approach runway 28 report established right heading 250 cleared ils approach runway 28 wilco swr31y
+P: swiss 31y turn right heading 250 cleared ils approach runway 28 report established right heading 250 cleared ils approach runway 28 will go swiss 31y
+
+O: swr67 may we vacate h2 swr2067 affirm h2 is available
+P: swiss 2067 may we vacate h2 swiss 2067 affirm h2 available
+
+O: sxs9w apron hello your startup and push back is approved
+P: sion express 9w apron hello your startup and push back is approved
+
+O: swr36a standby apron 121.755 121755 swr36a
+P: 36a 7p121 pass 1755 11755 36a roger
+
+O: i guess x08 startup is approved hello push and start approved fraction 498a startup is approved
+P: aiga 6308p and startup is approved hello push and startup approved aiga 6308 correction 498a startup is approved
+
+O: htu contact arrival 119.92
+P: hdu contact direct arrival 119.924
+
+O: hiv after w2 join wide right base runway 10 number 1
+P: hiv after w2 join wide right base runway 10 number 1
+
+O: hgr e2 2800 feet hgr roger
+P: hgr e2 2800 feet hgr roger
+
+O: swr31y good evening continue inbound to zh268 expect ils approach runway 28 descend to flight level 120 vectors via righthand downwind
+P: sui1y good evening continue inbound to sot268 expect ils approach runway 28 descend to flight level 120 vector 5 right hand downwind
+
+O: aza571 070312 knots runway 10 cleared to takeoff
+P: italia 571 0703012 knots runway 10 cleared to takeoff
+
+O: we are ready fin8py roger then stand by on 121.755 call apron 121755 standing by fin8py
+P: we are ready sydney tower thank you roger then standby on 121.755 4a 121755 standby sydney tower thank you
+
+O: request to taxi back to the gate we can not finish our toubleshooting without maintenance roger are you able to taxi by yourself
+P: request to taxi back to the gate we cannot proceed without permission roger i will be taxi by yourself
+
+O: hyd we ll do that and you may leave the frequency alright leaving the frequency hyd
+P: hdu will do that and you may leave your frequency
+
+O: aea94km contact tower 118.1
+P: e94km contact tower 118.1
+
+O: iwlfx tower good morning wind 350 degrees 2 knots runway 14 cleared to land
+P: ilf dek tower good morning wind 350 degrees 2 knots runway 14 cleared to land
+
+O: ane78jm direct hello wind 180 degrees 4 knots runway 14 cleared to land cleared to land 14 ane78jm
+P: 787jm sir i hello wind 18 degrees 4 knots runway 14 cleared to land 14 787jm
+
+O: wb contact departure bye bye departure bye bye thank you very much
+P: ane73b contact departure bye bye departure bye bye thank you very much
+
+O: ground hello ram352 stand e46 fully ready
+P: ground hello runway 352 stand e46 for
+
+O: hqs after w2 via overhead to e2 outbound route e
+P: hqs after w2 via overhead to e2 upon route e
+
+O: 200 thy6329 wind 070 degrees 13 gusting 20 knots runway 1
+P: 313 Turkish 6329 wind 070 degrees 13 gusting 20 knots runway 11
+
+O: sia346 contact apron 121.855
+P: sia346 contact apron 121.855
+
+O: swr197 holding short runway 283j swiss 197 tower taxiway j cross runway 28 contact 121755 addio via j crossing runway 28121.755 schoenen tag swr197 merci ebenso
+P: swiss 1 97 holding short runway 28j swiss 197 tower taxiway j cross runway 28 contact 121755 adieu via j crossing runway 28121755 swiss 197 merci ebenso
+
+O: hww after e runway 14
+P: hww after e2 management runway 14
+
+O: swr289 the wind 320 degrees 3 knots runway 14 you are cleared to land
+P: 3289 the wind 3 to the degrees 3 knots runway 14 you cleared to land
+
+O: swr160 with own navigation direct to xebix direct xebix swr160 thank you
+P: swiss 160 resume navigation direct x direct x swiss 160 thank you
+
+O: oeith tower on taxiway k cross runway 28 contact apron 121.755 bye bye
+P: oex t tower on taxiway k cross runway 28 connect apron 121.755 bye bye
+
+O: swr332 behind challenger line up to 8 behind
+P: swiss 332 behind challenger line up 28 behind line up 28 behind
+
+O: rega 1 in case you still with me you may leave the frequency
+P: rega 1 in case you are still with me you may leave the frequency
+
+O: hq unk you re outside of ctr frequency change approved schoenen tag
+P: hq you are outside of ctr frequency change approved schone
+
+O: runway 14 cleared to land thy1909
+P: runway 14 cleared to land turkish 190
+
+O: wi danke schoen you may leave bye bye leave frequency wi
+P: heli ql thank you you may leave bye bye
+
+O: csddeliver hello thy3hs stand b38 information y destination ltfm request atc clearance turkish 3hs delivery hello you re cleared istanbul runway 10 deges 1e departure climb 5000 feet squawk 3061
+P: hello circuit 3hs stand b38 information y destination f.exit circuit 3hs delivery hello you re cleared east unk runway 10 d1e departure climb 5000 feet squawk 3061
+
+O: qaj1553 to confirm on taxiway e hold short runway 10
+P: t155 feet confirm on taxiway e hold short runway 10
+
+O: hdl you may shorten for short approach at your discretion
+P: hdl you may short-jump for short approach at your discretion
+
+O: ram352 zurich tower good afternoon line up runway 10 report ready
+P: roar lro 3520 tower good afternoon line up runway 10 report ready
+
+O: tower thy1909 runway 14 thy1909 tower wind 160 degrees 5 knots runway 14 cleared to land
+P: tower turkish 1909 ils runway 14 turkish 1909 tower hello wind 167 degrees 5 knots runway 14 cleared to land
+
+O: hdl contact tower 118.1
+P: hdl contact tower 118.1 abe
+
+O: cross runway 28 via j and contact apron 121
+P: cross runway 28 via j and contact apron 121 755 for 11
+
+O: tower guten tag caz402 established rnp 14 10 miles
+P: tower good to talk ureka 402 established aran p14 7 miles
+
+O: hgo frequency change approved
+P: hgo frequency change approved jfa
+
+O: klm71q you re cleared ils approach runway 28 report established
+P: cdmk your cleared ils approach runway 28 report established
+
+O: tower hello ewg71r ewg71r tower guten morgen line up runway 28 and confirm ready affirm we are ready lining up runway 28 thank you
+P: tower bonjour unk 7r 7r tower good morning line up runway 28 and confirm ready we are ready lining up runway 28 thank you
+
+O: hbkhr apron hello qnh 1024 taxi to holding position p1 and report ready for departure once your re clear after inbound hdl
+P: hbkhr 8p hello qnh 1024 taxi to holding position p1 and report ready for departure 10 clear of the inbound hdl
+
+O: tower good afternoon unk b established localizer 314
+P: tower good afternoon cpab cleared to land
+
+O: hgd contact departure 125.955 tschuess 125
+P: hgd contact departure 125.955 cheers 125 d
+
+O: dkw roger wind 070 degrees 10 knots runway 28 cleared takeoff
+P: dkw roger wind 070 degrees 10 knots runway 28 cleared takeoff
+
+O: tower hello ijm903e fully established ils 14 ijm903e tower hello
+P: tower hello jetstar 14 7.5 jet management 903e tower hello
+
+O: hbv roger after w1 proceed direct s vilco hbv
+P: hbv roger after w1 proceed direct s wilco hbv
+
+O: hbsdl startup approved report ready for taxi
+P: hbsdl when startup approved report ready for taxi
+
+O: hhx wiskey 2 2800 feet request to start photo mission at regensburg hhx photo mission regensburg approved hhx xt
+P: hx at w2 1800 feet request to start photo mission at regenstaff hx photo mission regenstaff approved hx photo mission approved
+
+O: thy3wq taxi via e and e7 hold short of runway 16
+P: 33wq taxi via e and e7 hold short of runway 16
+
+O: hgn w 3300 feet hgn
+P: hgn w 3300 feet hgn
+
+O: hello edelweiss 131g tower cross runway 2j contact apron 121755 cross 28121755 ga
+P: tower ils 131g again ils 121g tower cross runway 28j contact apron 121755 cross 28121755 cleared for takeoff
+
+O: thy6329 contact departure good bye contract departure bye bye thy6329
+P: t6329 contact departure good bye contact departure good bye t6329
+
+O: fin6ap contact apron 121.855
+P: sia6ap contact apron 121.855
+
+O: edw73z is available? edw73z approved
+P: heli 73z hz available heli 73z approved
+
+O: 24 contact departure edelweiss 24
+P: ruwnay 24 contact departure schöne flug departure unk 24
+
+O: hlh wind 010 degrees 10 knots runway 10 cleared to land
+P: hlt wind 010 degrees 10 knots runway 10 cleared to land
+
+O: ewg71r tower good morning line up runway 28 ready
+P: rex 1r tower good morning line up runway 28 report ready
+
+O: tower hello ram353352 royalair maroc 352 zurich tower good afternoon wind 050 degrees 12 knots runway 14 cleared to land
+P: hello runway 353 352 roll emirates 352 zerich tower good afternoon wind 050 degrees 12 knots runway 14 cleared to land
+
+O: ane80qy tower hello wind 070 degrees right 09 runway 14 cleared to land
+P: h unk 0qy tower hello wind 070 degrees 10 knots runway 14 cleared to land
+
+O: uae88 wind 0403 is 9 knots runway 10 cleared for takeoff cleared for takeoff 10 uae88
+P: emirates 88 wind 040 degrees 9 knots runway 10 cleared for takeoff cleared for takeoff 10 emirates 88
+
+O: fin5dl contact apron 121.855 and apron 121855 bye
+P: final 5dl contact apron 121.855 apron 121855
+
+O: dkw contact apron 121.855
+P: tkw contact ap on the 1.855
+
+O: left heading 310 then cleared rnp 28 hhr
+P: n7310 cleared ils 28 we call hh r
+
+O: hlh vacate first right taxiway j contact apron 121.755 first right roll through taxiway j121.755 hlh
+P: hleh vacate first right taxiway j contact apron 121.755 ade
+
+O: eiger 631 arrival good evening continue inbound to zh281 and expect ils approach runway 28
+P: air 631 arrival good evening continue inbound to zh281 and expect ils approach runway 28
+
+O: well there s marchall on it s way and in zurich it is handled like this all the time but it s any second with you
+P: well there is a march on its way and in zurich it is handled like this all the time but it is any second with you
+
+O: swr218l push second startup is approved
+P: sui18l atl3 push back and startup is approved
+
+O: thy27x tower 1181 bye bye
+P: taxi 27x tower 1181 bye bye
+
+O: and tower united 52 we broke out about 250 feet at least we got the approach lights at 250 feet thanks ual52 for the info
+P: and tower united 52 we broke out about 250 feet at least we got the approach lights at 250 feet thanks united 52 for the info
+
+O: hgs approve any time approved to leave the frequency and turn over
+P: hgs right turn approved any time approved to leave the frequency and
+
+O: yb readback is correct report ready for startup and if you want a departure from intersection e is available is up to you
+P: yb wind back is correct report ready for startup and if you want departure from intersection e is available it is up to you
+
+O: swr188 wind 060 degrees 13 knots gusting 20 runway 10 cleared takeoff cleared for takeoff runway 10 swr188
+P: sui188 wind 060 degrees 13 knots casting 20 runway 10 cleared takeoff cleared for takeoff runway 10 sui188
+
+O: aea94km tower hello line up and wait runway 10 line up and wait runway 10 aea94km
+P: e94km tower hello line up and wait runway 10
+
+O: h gd via mid point 1500 meters the wind 340 degrees 3 knots runway 28 cleared for takeoff
+P: hgd rv our meet point 1500 meters wind 340 degrees 3 knots runway 28 cleared for takeoff
+
+O: apron guten tag swr138 we are ready for startup swiss 138 apron guten tag push startup approved push and startup approved swr138
+P: apanne good day dark unk 138 we are ready for startup 3438apanne good day dark startup approved push in startup approved unk 138
+
+O: sia346 rvr touchdown zone above 2000 meters wind 010 degrees 2 knots runway 14 cleared to land
+P: sia346 avir touch and zone above 2000 meters wind 010 degrees 2 knots runway 14 cleared to land
+
+O: qaj1553 wind 050 degrees 11 gusting 19 knots runway 10 intersection e cleared for takeoff qaj1553 cleared for takeoff runway 10 intersection e
+P: tower good 1553 roger wind 050 degrees 11 gusting 19 knots runway 10 intersection e cleared for takeoff tower good 1553 cleared for takeoff runway 10 intersection e
+
+O: zurich tower hbshr 2 nautical miles north of before crossing ctr via
+P: sirik tower hbs go r 2 nautical miles north of 4 crossing vtr via
+
+O: hbsgf paragliders are reported in the region of your look out please
+P: hbsgf power gliders were reported in region of uttel base look out please
+
+O: dihkw tower gruezie line up runway 28 report ready
+P: dihk tower grutz line up runway 28 report ready
+
+O: dihkw ground hello again on taxiway e6 cross runway 16 taxi via taxiway l to holding point runway 10
+P: dheli kw 0 ground hello again on taxiway 6 cross runway 16 taxi via taxiway l to holding point runway 10
+
+O: and n6nn now long landing is approved as well now long landing approved
+P: n6nm now long landing is approved as well now long landing is approved n6nm
+
+O: 19r contact apron 121.855 121855 swr19r ade
+P: 19r connect apron 121.855 121855 19r ade
+
+O: eurotrans 1181 would you prefer 32 or 340
+P: eurotrans 1181 would you prefer 32 or 340
+
+O: hlh w 3500 feet hlh danke schoen you may leave wiederhoeren
+P: hlh with 10500 feet hlh danke you malif wiederhören
+
+O: swr92 identified climb to flight level 120 and report passing altitude
+P: sui92 identified climb to flight level 120 and report passing altitude
+
+O: copy 77 taxi on z and b hold short runway 16
+P: hb77 taxi on z and b hold short runway 16
+
+O: klm71q descend to flight level 120
+P: sui1q descend to flight level 120
+
+O: aca7216 when did you see the lights
+P: canada 7216 when did you see the light
+
+O: tower hello again tap926 approaching right 28k tap926 at k cross runway 28 then contact the apron 121.755
+P: hello again p926 approaching right 28k ap926 cross from 28 and contact apron 121.755
+
+O: dhg wind 050 degrees 12 knots gusting 17 runway 14 cleared to land cleared to land runway 14 dhg
+P: dhg wind 050 degrees 12 knots gusting 17 runway 14 cleared to land runway 14 dhg
+
+O: hbclh via e line up and wait runway 10
+P: hbclh via e line up and wait runway 10
+
+O: ijm613 contact departure servus departure ciao ijm613
+P: jet management 613 contact departure servus departure ciao jet management 613
+
+O: ual135 tower hello behind lufthansa line up runway 28 behind ual135 behind lufthansa line up runway
+P: united 135 tower hello behind the lufthansa line up runway 28 behind united 135 behind lufthansa line up runway
+
+O: cross k121755 unk bye bye
+P: cross k121755 how do you go on bye bye
+
+O: klm94f on e7 hold short of runway 16
+P: kal94f on e7 hold short of runway 16
+
+O: cleared to land runway 14 i will call vjt426
+P: cleared for that runway 14 we call vjt437
+
+O: jump run 802 contact swiss radar 128.050
+P: jh802 contact radar 128.050
+
+O: nje103m wind 140 degrees 4 knots runway 28 cleared for takeoff
+P: nje103m wind 140 degrees 4 knots runway 28 cleared for takeoff
+
+O: dwo turn left own navigation rotos left own navigation rotos d
+P: dwe turn left own navigation r left own navigation r
+
+O: approaching kempttal level 70 swr98r swr98r descend 5000 feet qnh 1025 cleared rnp approach runway 28 report established
+P: approaching 7000 level 70 fck8r fck8r descend 5000 feet qnh 1025 cleared on the approach runway 28 report established
+
+O: fsf584p tower hello again actually hold position shortly
+P: f0f584p tower hello again actually hold position shortly
+
+O: tap931c contact departure good bye departure bye tap931c thank you
+P: airport good bye 31c contact departure good bye departure bye airport 31c thank you
+
+O: swiss 36a tower gruezi line up runway 28
+P: sui6a tower grutzli line up runway twit
+
+O: p tower runway 32 report ready
+P: sia12p tower runway 32 report ready
+
+O: yupzm apron hello startup is approved confirm sector 1
+P: yu pzm hello startup is approved confirm taxi sector 1
+
+O: vjt492 contact apron 121.855 121855 vjt492
+P: wjt492 contact apron 121.855 12185
+
+O: hhx is on the ground do you want me right on j dx you may be get to the right a1
+P: hhx on the ground do you want me right on j hx you may vacate at the end to the right a1
+
+O: tower guten morgen air canada 7216 heavy with you we re established 6 miles 14 aca7216 tower good morning wind 350 degrees 3 knots runway 14 cleared to land
+P: sui7216 heavy with you we re established 6 miles 14 air canada 7216 tower good morning wind 350 degrees 3 knots runway 14 cleared to land
+
+O: wind check for npl wind 020 degrees 7 knots
+P: viches for npl wind 020 degrees 7 knots
+
+O: 655 descend to 5000 feet qnh 1028 cleared ils approach runway 28 report established
+P: fintas 655 descend to 5000 feet qnh 1028 cleared ils approach 1228 report established
+
+O: hblhw tower grütsie line up and wait runway 28 and to confirm outbound route is e
+P: hblhw tower good to see you line up and wait runway 28 and to confirm upon routing e
+
+O: hello ane87wb zurich tower line up runway 10
+P: hello anos from 87wb during tower line up runway 10
+
+O: tower good day the klm57c is established on the rnp 14 klm 57c tower hello wind 050 degrees 12 knots gusting 18 runway 14 cleared to land expedite to vacate 14 cleared to land and wilco klm 57c
+P: tower good day to kalem 57c is established on the rnp 14 kalem 57c tower hello wind 050 degrees 12 knots casting 18 runway 14 cleared to land expedite to vacate 14 cleared to land and will go kalem 57c
+
+O: eju58ez turn left from present own navigation direct waypoint rotos
+P: now point 5e z to turn left for present and navigation direct way point r
+
+O: turkish 9pk ground taxiway e7 cross runway 16 taxi via taxiway l to hold short l9
+P: t9pkg taxiway e7 cross runway 16 taxiway tl to hold short l9
+
+O: hbsgz cleared for runway 10 wind 020 degrees 7 knots
+P: hbsgz cleared for low pass runway 10 wind 020 degrees 7 knots
+
+O: rega drega 1 you may leave frequency bis spaeter leaving frequency bis spaeter spaet rega 1
+P: rega 1 you may leave frequency bis spater leaving frequency bis spater ad rega 1
+
+O: legend 1412 zurich tower hello line up and wait runway 10 report ready
+P: lejn 1412 08 tower hello line up and wait runway 10 report ready
+
+O: fsf584p behind the falcon on the runway line up runway 28 behind
+P: fzsf 584p behind falcon on the runway line up runway 28 behind
+
+O: 73 tower hello line up runway 28
+P: nje973 tower hello line up runway 28
+
+O: xt l established 14 swiss 22l tower the wind 040 degrees 14 knots runway 14 cleared to land xt
+P: established on sui14 sui12l target wind 040 degrees 14 knots
+
+O: swr196 able for departure runway 10 affirm swr196 196 roger cleared to peking runway 10 deges 1e climb 5000 feet squawk 3034
+P: 196 cleared to all able for departure runway 10 affirmat 116 196 cleared to picking runway 10 biggest 1e climb 5000 feet squawk 3034
+
+O: ijm613 hello startup is approved confirm parking 100 course 7
+P: jet management 613 apron hello tower rapid approved confirm parked in sector 7
+
+O: delivery sunturk 31h stand number b31 ready for push and start
+P: degrees on turn 31h tbl31 ready for push and start
+
+O: hww affirm vacate next right into taxi way h2 and contact apron 121.855
+P: hw affirm vacate next right into taxi h2 and contact apron 121.855
+
+O: nc level climb to 3000 feet nc that is approved roger
+P: heli nc will climb to 3000 feet heli nc that is approved roger
+
+O: ryr7nw squawk 2766 confirm requested level
+P: 7dw squawk 2766 confirm requested level
+
+O: aea94km contact ground 121.905 good bye
+P: air robin 94km contact ground 121.905 good bye
+
+O: i guess 630 taxi via ne7 hold short of runway 16
+P: riga 630 taxi via n7 hold short of runway 16
+
+O: hhr turn left heading 010 for base
+P: hhr heading 010 for base
+
+O: hhx vacacated at 000 the right and contact apron 121.755 bye bye
+P: hhx vacate at 0 and to the right and contact apron 121.755 sorry
+
+O: ane80qy you may vacate second right h2 second right h2 0
+P: hello this z 0qy you may vacate second right h2 second right h2
+
+O: hdlw helicopter is your right 4 o clock trailing by 2 miles
+P: hdl rescue helicopters you are right for clock trading by 2 miles
+
+O: hbchx grutlzi hold position call you back
+P: hbcx eastbound unk hold position call you back
+
+O: ane78jm 020 degrees 13
+P: firmly 78jm 023 degrees 13 miles
+
+O: thank you hlh you may leave the frequency good day
+P: thank you hle you may leave the frequency good day
+
+O: tower ane87uh is ready i call you back
+P: tower adn 87u h is ready e2 track holding back
+
+O: hbvpe wind calm runway 32 cleared for takeoff
+P: hbvpe wind calm runway 32 cleared for takeoff
+
+O: lot 419 tower hello he hello again cross runway 28 on j contact apron 121755 good evening
+P: 419 tower hello again cross runway 28 on j connect apron 121.755 good evening
+
+O: eurotrans 1181 contact rhein 120930 bye b bye
+P: sion 1181 contact ryan 120930 bye bye
+
+O: zurich tower hblvc established on the argev approach runway 151 hes 44m hblvc tower hello continue approach
+P: sion tower hblvc established on the approach runway 151445 hblvc tower hello continue approach
+
+O: tower hello again swiss 213d j hold short 28 swiss 13d tower cross runway 28 on j contact apron 121.755 schoenen abend ne crossing j via crossing 28 via j 1217555 swr213d
+P: tower hello again swiss team 213d j hold short 28 313d tower cross runway 28 on j connect apron 121.755 shone over crossing j via crossing 28 via j 121755 with 213d
+
+O: 63d hello hold short of runway 28
+P: runway 6 redate hello all short of runway 28
+
+O: hhw confirm you have the cessnik cessna on sight your 12 oclock 1 mile turning northwest
+P: hhw confirm we have the cessna on sight at 12 o clock 1 mile turning now base
+
+
+##############################################################
+

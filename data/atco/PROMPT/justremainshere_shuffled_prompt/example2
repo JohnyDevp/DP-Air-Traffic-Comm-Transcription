@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<segment>
+		<start>0.45</start>
+		<end>6.86</end>
+		<speaker>B</speaker>
+		<speaker_label>HBZEF</speaker_label>
+		<text>Sion good morning [#callsign] Heli Hotel Echo Foxtrot X-ray [/#callsign] ready for departure runway golf sierra then towards [hes]</text>
+		<tags>
+			<correct>0</correct>
+			<correct_transcript>1</correct_transcript>
+			<correct_tagging>0</correct_tagging>
+			<non_english>0</non_english>
+		</tags>
+	</segment>
+	<segment>
+		<start>10.37</start>
+		<end>16.89</end>
+		<speaker>A</speaker>
+		<speaker_label>ATCO Tower</speaker_label>
+		<text>[#callsign] Heli Echo Foxtrot [/#callsign] Sion tower good morning QNH one zero two three wind current five two two five departure on discretion report leaving</text>
+		<tags>
+			<correct>0</correct>
+			<correct_transcript>1</correct_transcript>
+			<correct_tagging>0</correct_tagging>
+			<non_english>0</non_english>
+		</tags>
+	</segment>
+	<segment>
+		<start>18.23</start>
+		<end>24.42</end>
+		<speaker>B</speaker>
+		<speaker_label>HBZEF</speaker_label>
+		<text>one two two three at nighty six [unk] two five next leaving [#callsign] Heli Hotel Echo Foxtrot[/#callsign] </text>
+		<tags>
+			<correct>0</correct>
+			<correct_transcript>1</correct_transcript>
+			<correct_tagging>0</correct_tagging>
+			<non_english>0</non_english>
+		</tags>
+	</segment>
+</data>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<data>
+	<segment>
+		<start>0.12</start>
+		<end>4.46</end>
+		<speaker>D</speaker>
+		<speaker_label>UNK-1</speaker_label>
+		<text>[hes] [#unnamed]Sion[/#unnamed] [#unnamed]tower[/#unnamed] [#unnamed]good[/#unnamed] [#unnamed]morning[/#unnamed] [#callsign]Helicopter[/#callsign] [#callsign]Hotel[/#callsign] [#callsign]Bravo[/#callsign] [#callsign]Zulu[/#callsign] [#callsign]Hotel[/#callsign] [#callsign]Yankee[/#callsign]</text>
+		<tags>
+			<correct>0</correct>
+			<correct_transcript>1</correct_transcript>
+			<correct_tagging>0</correct_tagging>
+			<non_english>0</non_english>
+		</tags>
+	</segment>
+	<segment>
+		<start>4.8</start>
+		<end>7.19</end>
+		<speaker>A</speaker>
+		<speaker_label>ATCO Ground</speaker_label>
+		<text>[#callsign]Helicopter[/#callsign] [#callsign]Hotel[/#callsign] [#callsign]Yankee[/#callsign] [#unnamed]salut[/#unnamed]</text>
+		<tags>
+			<correct>0</correct>
+			<correct_transcript>1</correct_transcript>
+			<correct_tagging>0</correct_tagging>
+			<non_english>0</non_english>
+		</tags>
+	</segment>
+	<segment>
+		<start>7.32</start>
+		<end>14.28</end>
+		<speaker>D</speaker>
+		<speaker_label>UNK-1</speaker_label>
+		<text>[#unnamed]salutation[/#unnamed] [unk] [#value]fato[/#value] [unk] [#value]Ovronnaz[/#value]</text>
+		<tags>
+			<correct>0</correct>
+			<correct_transcript>1</correct_transcript>
+			<correct_tagging>0</correct_tagging>
+			<non_english>0</non_english>
+		</tags>
+	</segment>
+	<segment>
+		<start>14.53</start>
+		<end>25.23</end>
+		<speaker>A</speaker>
+		<speaker_label>ATCO Ground</speaker_label>
+		<text>[#callsign]Hotel[/#callsign] [#callsign]Yankee[/#callsign] [#unnamed]QNH[/#unnamed] [#value]one[/#value] [#value]zero[/#value] zer- [#value]one[/#value] [#value]eight[/#value] [#unnamed]wind[/#unnamed] [#value]zero[/#value] [#value]eight[/#value] [#value]zero[/#value] [#value]degrees[/#value] [#value]four[/#value] knots [spk] fato [#value]two[/#value] [#value]five[/#value] [#command]departure on descretion [unk] proceed runway heading[/#command] [#command]report[/#command] [#value]Ovronnaz[/#value]</text>
+		<tags>
+			<correct>0</correct>
+			<correct_transcript>1</correct_transcript>
+			<correct_tagging>0</correct_tagging>
+			<non_english>0</non_english>
+		</tags>
+	</segment>
+	<segment>
+		<start>25.91</start>
+		<end>32.4</end>
+		<speaker>D</speaker>
+		<speaker_label>UNK-1</speaker_label>
+		<text>[#value]one[/#value] [#value]zero[/#value] [#value]one[/#value] [#value]nine[/#value] [unk] [#value]Ovronnaz[/#value] [#callsign]Hotel[/#callsign] [#callsign]Yankee[/#callsign]</text>
+		<tags>
+			<correct>0</correct>
+			<correct_transcript>1</correct_transcript>
+			<correct_tagging>0</correct_tagging>
+			<non_english>0</non_english>
+		</tags>
+	</segment>
+</data>
