@@ -12,5 +12,6 @@ python eval.py \
   --prompt_name_in_ds prompt_fullts_AG_4B \
   --separate_ds \
   --ignore_case \
-  --use_prompt \
+  # --NOP_wer_for_AG_existing_only \
+  # --use_prompt \
   # --eval_callsigns \

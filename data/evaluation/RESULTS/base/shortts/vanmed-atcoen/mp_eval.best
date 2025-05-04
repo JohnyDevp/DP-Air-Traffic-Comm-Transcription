@@ -3,3 +3,8 @@ total 39.17842149611778
 atco_en_ruzyne 37.85971223021583
 atco_en_stefanik 33.51851851851852
 atco_en_zurich 40.13056835637481
+Best WER - epoch 14, 1_iter_700:
+total 38.79751423558417
+atco_en_ruzyne 37.85971223021583
+atco_en_stefanik 33.51851851851852
+atco_en_zurich 40.13056835637481

@@ -1,0 +1,86 @@
+=========================================================
+**** TRAINING RUN, datetime: 2025-05-01 02:22:03 ****
+=========================================================
+Training setup:
+{
+    "model_path": "/mnt/scratch/tmp/xholan11/models/allds-atcoen-full/mypar/checkpoint-400",
+    "continue_from_checkpoint": false,
+    "train_datasets": [
+        "atco_en"
+    ],
+    "dropout": 0.0,
+    "datasets_root_dir": "/mnt/scratch/tmp/xholan11/data",
+    "use_prompt": true,
+    "self_prompt": false,
+    "transcription_name_in_ds": "full_ts",
+    "prompt_name_in_ds": "prompt_fullts_AG_4B",
+    "freeze_encoder": false
+}
+Training arguments:
+{
+    "output_dir": "/mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-full/AG4B/",
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 6.25e-06,
+    "warmup_ratio": 0.1,
+    "weight_decay": 1e-06,
+    "gradient_checkpointing": true,
+    "fp16": true,
+    "save_strategy": "epoch",
+    "num_train_epochs": 15,
+    "per_device_eval_batch_size": 8,
+    "predict_with_generate": true,
+    "generation_max_length": 448,
+    "logging_steps": 15,
+    "report_to": [
+        "tensorboard"
+    ],
+    "metric_for_best_model": "wer",
+    "greater_is_better": false,
+    "push_to_hub": false
+}
+=========================================================
+**** TRAINING RUN, datetime: 2025-05-01 02:45:53 ****
+=========================================================
+Training setup:
+{
+    "model_path": "/mnt/scratch/tmp/xholan11/models/allds-atcoen-full/mypar/checkpoint-400",
+    "continue_from_checkpoint": false,
+    "train_datasets": [
+        "atco_en"
+    ],
+    "dropout": 0.0,
+    "datasets_root_dir": "/mnt/scratch/tmp/xholan11/data",
+    "use_prompt": true,
+    "self_prompt": false,
+    "transcription_name_in_ds": "full_ts",
+    "prompt_name_in_ds": "prompt_fullts_AG_4B",
+    "freeze_encoder": false
+}
+Training arguments:
+{
+    "output_dir": "/mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-full/AG4B/",
+    "per_device_train_batch_size": 4,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 6.25e-06,
+    "warmup_ratio": 0.1,
+    "weight_decay": 1e-06,
+    "gradient_checkpointing": true,
+    "fp16": true,
+    "save_strategy": "epoch",
+    "num_train_epochs": 15,
+    "per_device_eval_batch_size": 8,
+    "predict_with_generate": true,
+    "generation_max_length": 448,
+    "logging_steps": 15,
+    "report_to": [
+        "tensorboard"
+    ],
+    "metric_for_best_model": "wer",
+    "greater_is_better": false,
+    "push_to_hub": false
+}
+Training finished, datetime: 2025-05-01 04:36:40 ****
+============================================
+============================================
+

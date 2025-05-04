@@ -1,0 +1,13 @@
+#### EVALUATION STARTED - TIME 2025-05-02 04:35:22 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/vanmed-allds-short/verpar/checkpoint-5915'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT2/EVALS/eval-allds-short/AG_eval.txt', transcription_name_in_ds='short_ts', checkpoints_eval=False, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_AG', eval_description='', overwrite=False, separate_ds=True, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True, wer_for_AG_existing_only=True)
+******** Evaluation description ********
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/vanmed-allds-short/verpar/checkpoint-5915 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 25.07462686567164 LOSS: 0.8043120929173061 CALLSIGN WER: 34.46601941747573 CALLSIGN COUNT: 103 CALLSIGN COMPLETELY CORRECT: 67
+DATASET: atco_en_stefanik | WER: 23.828920570264767 LOSS: 0.7595072090625763 CALLSIGN WER: 34.92907801418439 CALLSIGN COUNT: 94 CALLSIGN COMPLETELY CORRECT: 59
+DATASET: atco_en_zurich | WER: 29.741558982909545 LOSS: 0.9552196846121833 CALLSIGN WER: 30.959952885747935 CALLSIGN COUNT: 566 CALLSIGN COMPLETELY CORRECT: 373
+
+

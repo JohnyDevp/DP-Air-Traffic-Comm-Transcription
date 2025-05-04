@@ -305,6 +305,7 @@ class EvaluationSetup:
     self_prompt : bool = False
     ignore_case : bool = False
     wer_for_AG_existing_only : bool = False
+    NOP_wer_for_AG_existing_only : bool = False
 
 class EvalCallsigns:
     wer_metric : ComputeMetrics
@@ -443,7 +444,7 @@ def build_dataset(ds_list : list[str], prepare_dataset_fn, path_to_ds :str, sepa
     else:
         return concatenate_datasets([allds_test[key] for key in allds_test])
 
-def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProcessor, metric : ComputeMetrics, batch_size=3, use_prompt=False, compute_callsign_wer=True, wer_for_AG_existing_only=False, callsigns_name_in_ds = None, ignore_case=False) -> dict[str,dict]:
+def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProcessor, metric : ComputeMetrics, batch_size=3, use_prompt=False, compute_callsign_wer=True, wer_for_AG_existing_only=False, NOP_wer_for_AG_existing_only=False, callsigns_name_in_ds = None, ignore_case=False) -> dict[str,dict]:
     # define collator
     if (not use_prompt):
         data_collator = DataCollatorSpeechSeq2SeqWithPaddingWOPrompt(
@@ -463,7 +464,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
         raise ValueError("Please set the callsigns name in the dataset using 'callsigns_name_in_ds' parameter.")
     
     # run the evaluation
-    if (isinstance(test_ds, Dataset) and not use_prompt):
+    if (isinstance(test_ds, Dataset) and not use_prompt and not NOP_wer_for_AG_existing_only):
         print(f"SINGLE DATASET, NO PROMPT, batch size {batch_size}")
         # setup the dataloader
         dataloader = DataLoader(test_ds, batch_size=batch_size, collate_fn=data_collator)
@@ -531,7 +532,7 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
             print(f"allds > wer: {wer} loss: {loss}") # PRINTOUT
             return {'allds':{'wer':wer,'loss':loss}}
 
-    elif (isinstance(test_ds, dict) and not use_prompt):
+    elif (isinstance(test_ds, dict) and not use_prompt and not NOP_wer_for_AG_existing_only):
         print(f"MULTIPLE DATASETS, NO PROMPT, batch size {batch_size}")
         out = {}
         for ds_name, ds in test_ds.items():
@@ -768,6 +769,90 @@ def compute(test_ds : dict[str,Dataset]|Dataset, model, processor : WhisperProce
                 out[ds_name] = {'wer':wer,'loss':loss}
 
         return out
+    
+    elif (isinstance(test_ds, dict) and not use_prompt and NOP_wer_for_AG_existing_only):
+        print(f"MULTIPLE DATASETS, NO PROMPT EVAL, ONLY AG EXISTING, batch size {batch_size}")
+        # WHEN using PROMPT, so far we can test only one sample at a time with one promp
+        # because yet we cannot handle different prompts for different samples in the same batch
+        # setup the dataloader
+        out = {}
+        for ds_name,ds in test_ds.items():
+            dataloader = DataLoader(ds, batch_size=batch_size, collate_fn=data_collator)
+
+            # Iterate over batches
+            all_preds = []
+            all_lables = []
+            all_loss = []
+            total_callsigns_wer = 0.0
+            total_callsigns_count = 0
+            totaly_callsigns_correct = 0
+            for batch in tqdm(dataloader):
+
+                # loop through the batch and compute the predicitons
+                # it is necessary because model.generate() cannot handle multiple input features with multiple prompt
+                for idx in range(batch_size):
+                    # check whether the index doesnt go above the number of items in current batch
+                    if (idx >= len(batch['input_features'])): break
+
+                    input_features = batch["input_features"][idx].unsqueeze(0).cuda()
+                    preds = model.generate(input_features)
+                    preds = preds.detach().cpu()
+
+                    # extract string of predictions and labels
+                    preds_str = processor.tokenizer.decode(preds[0], skip_special_tokens=True)
+                    labels_str = processor.tokenizer.decode(batch["labels"][idx], skip_special_tokens=True)
+                    
+                    # change case if we should ignore it when computing wer
+                    if (ignore_case):
+                        preds_str = preds_str.lower()
+                        labels_str = labels_str.lower()
+                        
+                    # compute the wer for callsigns
+                    if (compute_callsign_wer):
+                        # if we should ignore case, than compute wer agains lower case callsigns
+                        callsigns = []
+                        if (ignore_case):
+                            callsigns.append({cal['key'].lower():cal['val'] for cal in batch[callsigns_name_in_ds][idx]})
+                        else:
+                            callsigns.append({cal['key']:cal['val'] for cal in batch[callsigns_name_in_ds][idx]})
+                            
+                        _, completely_correct, total_wer, count_wer = ev_cal(preds_str, callsigns)
+                        total_callsigns_wer += total_wer
+                        total_callsigns_count += count_wer
+                        totaly_callsigns_correct += completely_correct
+                    
+                    # extend all the predictions and labels for later wer computation
+                    if len(batch[callsigns_name_in_ds][idx]) == 0:
+                        # we dont want to compute wer, where predictions were not correctly affected by prompts
+                        # meaining, if no good callsigns exists, then evaluating doesn't make sense
+                        print('skipping')
+                        continue
+                    else:
+                        all_preds.extend([preds_str])
+                        all_lables.extend([labels_str])
+
+                # compute the loss
+                with torch.no_grad():
+                    outputs = model(input_features = batch['input_features'].cuda(), labels=batch['labels'].cuda())
+                
+                # append the loss result to the whole result obtained so far
+                all_loss.extend(outputs.loss.detach().cpu().repeat(len(batch)))
+
+            # compute the wer and loss for current dataset
+            wer=metric.compute_metrics_from_text(all_preds, all_lables)
+            loss = torch.mean(torch.tensor(all_loss),dtype=float)
+            
+            if (compute_callsign_wer):
+                # compute the average wer for callsigns
+                avg_callsign_wer = total_callsigns_wer / max(total_callsigns_count,1)
+                print(f"{ds_name} > wer: {wer} loss: {loss} | callsign wer: {avg_callsign_wer} completely correct: {totaly_callsigns_correct}/{total_callsigns_count}")
+                out[ds_name] = {'wer':wer,'loss':loss,'callsign_wer':avg_callsign_wer,'callsign_count':total_callsigns_count,'callsign_completely_correct':totaly_callsigns_correct}
+            else:
+                print(f"{ds_name} > wer: {wer} loss: {loss}") # PRINTOUT
+                out[ds_name] = {'wer':wer,'loss':loss}
+
+        return out
+    
     else:
         raise ValueError('Wrong dataset format')
 
@@ -919,6 +1004,7 @@ def main(evaluation_setup : EvaluationSetup):
                     use_prompt=evaluation_setup.use_prompt,
                     compute_callsign_wer=evaluation_setup.eval_callsigns,
                     wer_for_AG_existing_only=evaluation_setup.wer_for_AG_existing_only,
+                    NOP_wer_for_AG_existing_only=evaluation_setup.NOP_wer_for_AG_existing_only,
                     callsigns_name_in_ds=evaluation_setup.callsigns_name_in_ds,
                     ignore_case=evaluation_setup.ignore_case
                 )
@@ -996,6 +1082,7 @@ def main(evaluation_setup : EvaluationSetup):
                 use_prompt=evaluation_setup.use_prompt,
                 compute_callsign_wer=evaluation_setup.eval_callsigns,
                 wer_for_AG_existing_only=evaluation_setup.wer_for_AG_existing_only,
+                NOP_wer_for_AG_existing_only=evaluation_setup.NOP_wer_for_AG_existing_only,
                 callsigns_name_in_ds=evaluation_setup.callsigns_name_in_ds,
                 ignore_case=evaluation_setup.ignore_case
             )
@@ -1031,6 +1118,7 @@ def parse_args():
     parser.add_argument("--transcription_name_in_ds", type=str)
     parser.add_argument("--prompt_name_in_ds", type=str)
     parser.add_argument('--wer_for_AG_existing_only', action='store_true')
+    parser.add_argument('--NOP_wer_for_AG_existing_only', action='store_true')
     
     return parser.parse_args()
 
@@ -1054,7 +1142,8 @@ def build_config(args):
         'callsigns_name_in_ds': args.callsigns_name_in_ds,
         "transcription_name_in_ds": args.transcription_name_in_ds,
         "prompt_name_in_ds": args.prompt_name_in_ds,
-        "wer_for_AG_existing_only": args.wer_for_AG_existing_only
+        "wer_for_AG_existing_only": args.wer_for_AG_existing_only,
+        "NOP_wer_for_AG_existing_only": args.NOP_wer_for_AG_existing_only
     }
 
 if __name__ == '__main__':
