@@ -12,12 +12,12 @@ files = [
 ]
 
 to_shuffle = [
-    "prompt_fullts_AG_4B",
-    "prompt_fullts_AG_40B",
-    "prompt_fullts_AG_50CZB",
-    "prompt_shortts_AG_4B",
-    "prompt_shortts_AG_40B",
-    "prompt_shortts_AG_50CZB"
+    # "prompt_fullts_AG_4B",
+    "prompt_fullts_AG_35B",
+    # "prompt_fullts_AG_50CZB",
+    # "prompt_shortts_AG_4B",
+    "prompt_shortts_AG_35B",
+    # "prompt_shortts_AG_50CZB"
 ]
 
 if __name__ == "__main__":

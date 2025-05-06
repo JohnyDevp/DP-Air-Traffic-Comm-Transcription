@@ -479,7 +479,7 @@ if __name__ == '__main__':
     DISK_PATH = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/'
     # where to look for files that belongs to the one recording (like .seg, .info,...)
     FOLDERS_TO_SEARCH = ['ATCO2-ASRdataset-v1_final/DATA_nonEN-original','ATCO2-ASRdataset-v1_final/DATA-original']
-    SAVE_FOLDER = './PROMPT/final_prompt/'
+    SAVE_FOLDER = './PROMPT/final_prompt2_neweval/'
     
     # create vocab
     make_vocab(json.load(open('../tools/callsigns_icao.json')), json.load(open('../tools/airline_icao.json')))
