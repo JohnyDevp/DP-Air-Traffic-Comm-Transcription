@@ -1,0 +1,49 @@
+import re
+
+# =================================================================================================================
+# INSERT YOUR CHECKPOINT DATA HERE
+# =================================================================================================================
+text = """
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/allds-atcoen-full/mypar/checkpoint-300 ####
+******** Evaluation results ********
+DATASET: atco_en_ruzyne | WER: 17.203107658157602 LOSS: 0.6780286771910531 CALLSIGN WER: 12.993527508090613 CALLSIGN COUNT: 103 CALLSIGN COMPLETELY CORRECT: 61
+DATASET: atco_en_stefanik | WER: 17.01720841300191 LOSS: 0.65269007285436 CALLSIGN WER: 10.158308004052685 CALLSIGN COUNT: 94 CALLSIGN COMPLETELY CORRECT: 70
+DATASET: atco_en_zurich | WER: 21.55485893416928 LOSS: 0.8843121642158145 CALLSIGN WER: 16.609526613943576 CALLSIGN COUNT: 566 CALLSIGN COMPLETELY CORRECT: 325
+"""
+# =================================================================================================================
+
+lengths = {
+    'atco_en_ruzyne': 718,
+    'atco_en_stefanik': 629,
+    'atco_en_zurich': 2996,
+}
+
+extracted_data = {}
+for line in text.splitlines():
+    match = re.search(r"DATASET:\s*(\S+)\s*\|\s*WER:\s*([0-9.]+).*?CALLSIGN WER:\s*([0-9.]+).*?CALLSIGN COUNT:\s*([0-9.]+).*?CALLSIGN COMPLETELY CORRECT:\s*([0-9.]+)", line)
+    if match:
+        extracted_data[match.group(1)] = {
+            "wer": float(match.group(2)),
+            "callsign_wer": float(match.group(3)),
+            "callsign_count": int(match.group(4)),
+            "callsign_completely_correct": int(match.group(5)),
+        }
+        
+# compute total everyhing
+total_wer = 0
+total_callsign_wer = 0
+total_callsign_count = 0
+total_callsign_completely_correct = 0
+for key, value in extracted_data.items():
+    if key in lengths:
+        total_wer += value["wer"] * (lengths[key] / sum(lengths.values()))
+        total_callsign_wer += value["callsign_wer"] * (lengths[key] / sum(lengths.values()))
+        total_callsign_count += value["callsign_count"]
+        total_callsign_completely_correct += value["callsign_completely_correct"]
+        
+# Print the results
+print(f"Total WER: \t\t\t\t{total_wer:.2f}")
+print(f"Total CALLSIGN WER: \t\t\t{total_callsign_wer:.2f}")
+print("Total CALLSIGN COUNT: \t\t\t", total_callsign_count)
+print(f"Total CALLSIGN COMPLETELY CORRECT: \t {total_callsign_completely_correct} ({total_callsign_completely_correct / total_callsign_count:.2%})")
+# print(extracted_data)

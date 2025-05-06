@@ -1,0 +1,20 @@
+===== AG_eval_wholeds.txt =====
+Weighted WER: 53.43%
+Weighted CALLSIGN WER: 21.46%
+CALLSIGNS COMPLETELY CORRECT: 338 / 763 (44.30%)
+
+===== AG35B_eval_wholeds.txt =====
+Weighted WER: 44.14%
+Weighted CALLSIGN WER: 26.99%
+CALLSIGNS COMPLETELY CORRECT: 201 / 763 (26.34%)
+
+===== AG50CZB_eval_wholeds.txt =====
+Weighted WER: 62.22%
+Weighted CALLSIGN WER: 39.89%
+CALLSIGNS COMPLETELY CORRECT: 88 / 763 (11.53%)
+
+===== AG4B_eval_wholeds.txt =====
+Weighted WER: 49.76%
+Weighted CALLSIGN WER: 29.73%
+CALLSIGNS COMPLETELY CORRECT: 184 / 763 (24.12%)
+

@@ -1,0 +1,10 @@
+Best WER - epoch 9, 1_iter_450:
+total 30.551146061909293
+atco_en_ruzyne 28.545288197621225
+atco_en_stefanik 24.743230625583568
+atco_en_zurich 32.251207729468604
+Best CALLSIGN WER - epoch 7, 1_iter_350:
+total 42.20476534952275
+atco_en_ruzyne 44.66019417475728
+atco_en_stefanik 35.1063829787234
+atco_en_zurich 43.10659599528858

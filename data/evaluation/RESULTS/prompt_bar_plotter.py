@@ -45,8 +45,13 @@ if args.eval_files:
     ]
     files = [os.path.join(root_dir, f) for f in files]
 else:
-    files = [os.path.join(root_dir, dirname, "eval.best") for dirname in os.listdir(root_dir)]
-
+    for dirname in os.listdir(root_dir):
+        file_to_append = os.path.join(root_dir, dirname, "eval.best")
+        if not os.path.exists(file_to_append):
+            file_to_append = os.path.join(root_dir, dirname, "eval_wholeds.best")
+        files.append(file_to_append)
+        
+print(files)
 # Traverse directories
 for filepath in files:
     dirpath, filename = os.path.split(filepath)
@@ -166,5 +171,5 @@ def plot_metric(data, title, name='wer'):
 title_add = os.path.basename(args.dir).split('-')[0].upper()
 if args.eval_files:
     title_add = os.path.basename(args.dir).split('-')[1].upper() + ' - BASE'
-plot_metric(wer_data, f"WER PŘEPISŮ, {title_add}", name='wer_ts')
-plot_metric(callsign_data, f"WER VOLACÍCH ZNAKŮ, {title_add}", name='wer_cal')
+plot_metric(wer_data, f"WER PŘEPISŮ, P-{title_add}", name='wer_ts')
+plot_metric(callsign_data, f"WER VOLACÍCH ZNAKŮ, P-{title_add}", name='wer_cal')
