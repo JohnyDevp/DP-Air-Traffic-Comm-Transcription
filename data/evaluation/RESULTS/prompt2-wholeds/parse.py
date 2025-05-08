@@ -38,6 +38,7 @@ if args.eval_files:
     ]
 else:
     for dir in os.listdir(eval_dir):
+        print(dir)
         dir_path = os.path.join(eval_dir, dir)
         if os.path.isdir(dir_path):
             for file in os.listdir(dir_path):

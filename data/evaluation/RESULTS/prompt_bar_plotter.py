@@ -45,10 +45,14 @@ if args.eval_files:
     ]
     files = [os.path.join(root_dir, f) for f in files]
 else:
+    print(os.listdir(root_dir))
     for dirname in os.listdir(root_dir):
+        if ('-' in dirname) or ('_' in dirname):
+            continue
         file_to_append = os.path.join(root_dir, dirname, "eval.best")
         if not os.path.exists(file_to_append):
             file_to_append = os.path.join(root_dir, dirname, "eval_wholeds.best")
+        print(dirname)
         files.append(file_to_append)
         
 print(files)

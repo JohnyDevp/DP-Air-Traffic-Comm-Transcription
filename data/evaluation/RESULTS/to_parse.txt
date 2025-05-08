@@ -1,3 +1,6 @@
+ALLDS-ATCOEN
+VANILLA
+
 ./prompt2/allds-short/5B/eval.txt
 ./prompt2/allds-short/AG/eval.txt
 ./prompt2/allds-short/AG4B/eval.txt

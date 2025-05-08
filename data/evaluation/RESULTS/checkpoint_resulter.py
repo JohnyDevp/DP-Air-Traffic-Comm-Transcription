@@ -4,11 +4,11 @@ import re
 # INSERT YOUR CHECKPOINT DATA HERE
 # =================================================================================================================
 text = """
-#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/allds-atcoen-full/mypar/checkpoint-300 ####
+#### EVAL MODEL openai/whisper-medium ####
 ******** Evaluation results ********
-DATASET: atco_en_ruzyne | WER: 17.203107658157602 LOSS: 0.6780286771910531 CALLSIGN WER: 12.993527508090613 CALLSIGN COUNT: 103 CALLSIGN COMPLETELY CORRECT: 61
-DATASET: atco_en_stefanik | WER: 17.01720841300191 LOSS: 0.65269007285436 CALLSIGN WER: 10.158308004052685 CALLSIGN COUNT: 94 CALLSIGN COMPLETELY CORRECT: 70
-DATASET: atco_en_zurich | WER: 21.55485893416928 LOSS: 0.8843121642158145 CALLSIGN WER: 16.609526613943576 CALLSIGN COUNT: 566 CALLSIGN COMPLETELY CORRECT: 325
+DATASET: atco_en_ruzyne | WER: 73.43565525383707 LOSS: 1.4866019146783012 CALLSIGN WER: 88.07443365695794 CALLSIGN COUNT: 103 CALLSIGN COMPLETELY CORRECT: 0
+DATASET: atco_en_stefanik | WER: 71.48732008224812 LOSS: 1.3571279346942902 CALLSIGN WER: 87.82674772036472 CALLSIGN COUNT: 94 CALLSIGN COMPLETELY CORRECT: 1
+DATASET: atco_en_zurich | WER: 81.8025182239894 LOSS: 1.6739440872555686 CALLSIGN WER: 88.19016770430194 CALLSIGN COUNT: 566 CALLSIGN COMPLETELY CORRECT: 11
 """
 # =================================================================================================================
 
@@ -42,6 +42,7 @@ for key, value in extracted_data.items():
         total_callsign_completely_correct += value["callsign_completely_correct"]
         
 # Print the results
+print(f"FILE:{text.splitlines()[1]}")
 print(f"Total WER: \t\t\t\t{total_wer:.2f}")
 print(f"Total CALLSIGN WER: \t\t\t{total_callsign_wer:.2f}")
 print("Total CALLSIGN COUNT: \t\t\t", total_callsign_count)

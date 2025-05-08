@@ -1,0 +1,22 @@
+### PROMPT
+- zde byl použitý dataset s nižším počtem callsignů + všechny AG byly na první pozici, nedošlo k jejich přeházení
+
+- ovšem po doplnění byl vygenerovaný celý nový dataset (to je ten final)
+- použitelné ovšem byly natrénované modely pro 5B, 40B, 50CZB, protože zde se technicky nic nezměnilo, všechny AG na druhou stranu byly trénovanány s jasnou pozicí a stejně tak testovány
+- ovšem stále to je NEPOROVNATELNÉ s tím novým datasetem, protože i když budeš chtít dát porovnat jen test callsignů na jiném místě, máš jich jiný počet, takže WER testovací sady nebude stejný \
+    |  ---  MODELY AG   
+    - **trénovány** + **testovány**
+        - na NIŽŠÍM počtu callsignů, callsigny na stabilní první pozici v promptu 
+    - **při pokusu o porovnání** 
+        - &cross; testovací sada obsahuje VYŠŠÍ počet callsignů,                   
+        - &check; callsigny na jiných pozicích
+
+### PROMPT2
+- testovací sada pojmenována jako atco-final-prompt
+    - dataset s vyšším počtem callsignů
+    - callsigny s AG *shuffled* 
+- způsob testování: AG je testováno jen na promluvách, které AG skutečně obsahují
+
+### PROMPT2-wholeds
+- všechno stejné jako u PROMPT2 co se týká skladby datasetu
+- jedná se jen o jiný způsob **evaluace**, při testování jsou brány všechny promluvy v rámci všech testovacích datasetů
