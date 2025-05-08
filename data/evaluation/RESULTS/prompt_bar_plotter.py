@@ -11,7 +11,7 @@ argparser.add_argument(
     help="Directory containing folders like '5B', '35B', etc.",
 )
 argparser.add_argument('--eval_files',action='store_true', help='Use eval files instead of best files')
-
+argparser.add_argument('--name',type=str,default='wer',help='Name of the model plotted')
 args = argparser.parse_args()
 # Directory containing folders like "5B", "35B", etc.
 root_dir = args.dir  # change if needed
@@ -45,17 +45,16 @@ if args.eval_files:
     ]
     files = [os.path.join(root_dir, f) for f in files]
 else:
-    print(os.listdir(root_dir))
     for dirname in os.listdir(root_dir):
         if ('-' in dirname) or ('_' in dirname):
             continue
         file_to_append = os.path.join(root_dir, dirname, "eval.best")
         if not os.path.exists(file_to_append):
             file_to_append = os.path.join(root_dir, dirname, "eval_wholeds.best")
-        print(dirname)
         files.append(file_to_append)
-        
+
 print(files)
+   
 # Traverse directories
 for filepath in files:
     dirpath, filename = os.path.split(filepath)
@@ -172,8 +171,10 @@ def plot_metric(data, title, name='wer'):
     # plt.show()
 
 # Plot WER and CALLSIGN WER
-title_add = os.path.basename(args.dir).split('-')[0].upper()
+title_add = 'P-'+os.path.basename(args.dir).split('-')[0].upper()
 if args.eval_files:
-    title_add = os.path.basename(args.dir).split('-')[1].upper() + ' - BASE'
-plot_metric(wer_data, f"WER PŘEPISŮ, P-{title_add}", name='wer_ts')
-plot_metric(callsign_data, f"WER VOLACÍCH ZNAKŮ, P-{title_add}", name='wer_cal')
+    title_add = os.path.basename(args.dir).split('-')[1].upper() #+ ' - BASE'
+if args.name:
+    title_add = args.name.upper()
+plot_metric(wer_data, f"WER PŘEPISŮ, {title_add}", name='wer_ts')
+plot_metric(callsign_data, f"WER VOLACÍCH ZNAKŮ, {title_add}", name='wer_cal')
