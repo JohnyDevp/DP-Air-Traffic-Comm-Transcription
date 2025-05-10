@@ -10,11 +10,16 @@ from argparse import ArgumentParser
 #     'atco_en_stefanik': 53,
 #     'atco_en_zurich': 412,
 # }
-lengths = {
-    'atco_en_ruzyne': 718,
-    'atco_en_stefanik': 629,
-    'atco_en_zurich': 2996,
-}
+ds_name_list = [
+    'atco_en_ruzyne',
+    'atco_en_stefanik',
+    'atco_en_zurich',
+]
+# lengths = {
+#     'atco_en_ruzyne': 718,
+#     'atco_en_stefanik': 629,
+#     'atco_en_zurich': 2996,
+# }
 
 def compute_wer_loss(data):
     out = {}
@@ -45,7 +50,7 @@ def compute_wer_loss(data):
                 out[name][dataset.group(1)].update({'cal_wer': float(cal_wer.group(1))})
     return out
 
-def compute_total_wer(out):
+def compute_total_wer2(out):
     # total wer
     checkpoints =[]
     wer = {'total':[]}
@@ -84,6 +89,48 @@ def compute_total_wer(out):
         completely_correct_cals['total'].append(total_completely_correct_cals)
         if 'cal_wer' in wer_loss:
             cal_wer['total'].append(total_cal_wer / sum(lengths.values()))
+    return checkpoints, wer, loss, cal_wer, completely_correct_cals
+
+def compute_total_wer(out, total_file):
+    # total wer
+    checkpoints =[]
+    wer = {'total':[]}
+    cal_wer = {'total':[]}
+    loss = {'total':[]}
+    completely_correct_cals = {'total':[]}
+    for checkpoint,ds_set in out.items():
+        checkpoints.append(checkpoint)
+        for ds_name,wer_loss in ds_set.items():
+            if ds_name not in ds_name_list:
+                continue
+            if ds_name not in wer:
+                wer[ds_name] = []
+            if ds_name not in loss:
+                loss[ds_name] = []
+            if ds_name not in cal_wer:
+                cal_wer[ds_name] = []
+            if ds_name not in completely_correct_cals:
+                completely_correct_cals[ds_name] = []
+            wer[ds_name].append(wer_loss['wer'])
+            loss[ds_name].append(wer_loss['loss'])
+            if 'cal_wer' in wer_loss:
+                completely_correct_cals[ds_name].append(wer_loss['completely_correct_cal'])
+                cal_wer[ds_name].append(wer_loss['cal_wer'])
+
+    # parse total file
+    for line in open(total_file).readlines():
+        if ("DATASET: allds |" in line):
+            # _dataset = re.search(r'DATASET: ([a-zA-Z_]+)', line)
+            _wer = re.search(r'WER: ([\d.]+)', line)
+            _loss = re.search(r'LOSS: ([\d.]+)', line)
+            _cal_wer = re.search(r'CALLSIGN WER: ([\d.]+)', line)
+            # call_count = re.search(r'CALLSIGN COUNT: (\d+)', line)
+            call_correct = re.search(r'CALLSIGN COMPLETELY CORRECT: (\d+)', line)
+            
+            wer['total'].append(float(_wer.group(1)))
+            loss['total'].append(float(_loss.group(1)))
+            cal_wer['total'].append(float(_cal_wer.group(1)))
+            completely_correct_cals['total'].append(int(call_correct.group(1)))
     return checkpoints, wer, loss, cal_wer, completely_correct_cals
 
 def myplot(checkpoints, 
@@ -154,27 +201,31 @@ def myplot(checkpoints,
         
     ax2.tick_params(axis='y', labelsize=16)
     
-    with open(os.path.dirname(src_file) + '/' + os.path.basename(src_file).split('.')[0] + '.best', 'w') as f:
-        f.write(f"Best WER - epoch {np.argmin(wer['total'])+1}, {checkpoints[np.argmin(wer['total'])]}:\n")
-        for ds_name in best_wer:
-            # print (ds_name, best[ds_name])
-            f.write(f"{ds_name} {best_wer[ds_name]}\n")
-        
-        f.write(f"Best CALLSIGN WER - epoch {np.argmin(cal_wer['total'])+1}, {checkpoints[np.argmin(cal_wer['total'])]}:\n")
-        for ds_name in best_calwer:
-            # print (ds_name, best[ds_name])
-            f.write(f"{ds_name} {best_calwer[ds_name]}\n")
-        
-        f.write(f"Best COMPLETELY CORRECT CALLSIGN - epoch {np.argmin(wer['total'])+1}, {checkpoints[np.argmin(wer['total'])]}:\n")
-        for ds_name in best_calwer:
-            # print (ds_name, best[ds_name])
-            f.write(f"{ds_name} {best_completely_correct_cals[ds_name]}\n")
+    if True:
+        # path=os.path.dirname(src_file) + '/' + os.path.basename(src_file).split('.')[0] + '.best', 'w'
+        # print(path)
+        with open(os.path.dirname(src_file) + '/' + os.path.basename(src_file).split('.')[0] + '.best', 'w') as f:
+            f.write(f"Best WER - epoch {np.argmin(wer['total'])+1}, {checkpoints[np.argmin(wer['total'])]}:\n")
+            for ds_name in best_wer:
+                # print (ds_name, best_wer[ds_name])
+                f.write(f"{ds_name} {best_wer[ds_name]}\n")
+            
+            f.write(f"Best CALLSIGN WER - epoch {np.argmin(cal_wer['total'])+1}, {checkpoints[np.argmin(cal_wer['total'])]}:\n")
+            for ds_name in best_calwer:
+                # print (ds_name, best_calwer[ds_name])
+                f.write(f"{ds_name} {best_calwer[ds_name]}\n")
+            
+            f.write(f"Best COMPLETELY CORRECT CALLSIGN - epoch {np.argmin(wer['total'])+1}, {checkpoints[np.argmin(wer['total'])]}:\n")
+            for ds_name in best_calwer:
+                # print (ds_name, best[ds_name])
+                f.write(f"{ds_name} {best_completely_correct_cals[ds_name]}\n")
     return legend_lines
 
 if __name__ == '__main__':
 
     argparse = ArgumentParser(description='Parse WER and Loss from log files')
-    argparse.add_argument('--file', type=str, default='.', help='Directory containing the log files')
+    argparse.add_argument('--file', type=str, required=True, help='Directory containing the log files')
+    argparse.add_argument('--second', type=str, required=True, help='Directory containing the log files')
     args = argparse.parse_args()
     
     TITLES = [
@@ -191,7 +242,7 @@ if __name__ == '__main__':
 
     data = open(args.file).readlines()
     out=compute_wer_loss(data)
-    checkpoints, wer, loss, cal_wer, completely_correct_cals = compute_total_wer(out)
+    checkpoints, wer, loss, cal_wer, completely_correct_cals = compute_total_wer(out,total_file=args.second)
     
     for idx in range(3):
         legend_lines = myplot(
