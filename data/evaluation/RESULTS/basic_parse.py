@@ -33,11 +33,13 @@ def compute_wer_loss(data):
             wer = re.search(r'WER: ([\d.]+)', line)
             loss = re.search(r'LOSS: ([\d.]+)', line)
             cal_wer = re.search(r'CALLSIGN WER: ([\d.]+)', line)
+            completely_correct_cal = re.search(r'CALLSIGN COMPLETELY CORRECT: ([\d.]+)', line)
             if dataset is None or wer is None and loss is None:
                 continue
             out[name][dataset.group(1)]={
                 'wer': float(wer.group(1) if wer is not None else 0.0),
                 'loss': float(loss.group(1) if loss is not None else 0.0),
+                'completely_correct_cal': int(completely_correct_cal.group(1)) if completely_correct_cal is not None else 0,
             }    
             if cal_wer is not None:
                 out[name][dataset.group(1)].update({'cal_wer': float(cal_wer.group(1))})
@@ -49,11 +51,13 @@ def compute_total_wer(out):
     wer = {'total':[]}
     cal_wer = {'total':[]}
     loss = {'total':[]}
+    completely_correct_cals = {'total':[]}
     for checkpoint,ds_set in out.items():
         checkpoints.append(checkpoint)
         total_wer = 0
         total_loss = 0
         total_cal_wer = 0
+        total_completely_correct_cals = 0
         for ds_name,wer_loss in ds_set.items():
             if ds_name not in lengths.keys():
                 continue
@@ -63,22 +67,27 @@ def compute_total_wer(out):
                 loss[ds_name] = []
             if ds_name not in cal_wer:
                 cal_wer[ds_name] = []
+            if ds_name not in completely_correct_cals:
+                completely_correct_cals[ds_name] = []
             wer[ds_name].append(wer_loss['wer'])
             loss[ds_name].append(wer_loss['loss'])
+            completely_correct_cals[ds_name].append(wer_loss['completely_correct_cal'])
             if 'cal_wer' in wer_loss:
                 cal_wer[ds_name].append(wer_loss['cal_wer'])
                 total_cal_wer += wer_loss['cal_wer'] * lengths[ds_name]
             total_wer += wer_loss['wer'] * lengths[ds_name]
+            total_completely_correct_cals += wer_loss['completely_correct_cal']
             total_loss += wer_loss['loss'] * lengths[ds_name]
         # average wer and loss
         wer['total'].append(total_wer / sum(lengths.values()))
         loss['total'].append(total_loss / sum(lengths.values()))
+        completely_correct_cals['total'].append(total_completely_correct_cals)
         if 'cal_wer' in wer_loss:
             cal_wer['total'].append(total_cal_wer / sum(lengths.values()))
-    return checkpoints, wer, loss, cal_wer
+    return checkpoints, wer, loss, cal_wer, completely_correct_cals
 
 def myplot(checkpoints, 
-           wer, loss, cal_wer, ax, title='', src_file='',
+           wer, loss, cal_wer, completely_correct_cals, ax, title='', src_file='',
            plot_total_wer=True, plot_partial_wer=True, 
            plot_total_loss=True, plot_partial_loss=False, 
            plot_total_cal_wer=False, plot_partial_cal_wer=False,
@@ -122,7 +131,12 @@ def myplot(checkpoints,
         if plot_partial_cal_wer:
             line, = ax.plot(x_arange,cal_wer[ds_name],linestyle='--', linewidth=line_width_partial,marker='',alpha=0.7, label=ds_name)
             legend_lines.append([line, ds_name])
-            
+    
+    # compute completely correct callsign
+    best_completely_correct_cals = {}
+    for ds_name in completely_correct_cals:
+        best_completely_correct_cals[ds_name] = completely_correct_cals[ds_name][np.argmin(wer['total'])]  
+        
     # plot loss
     ax2 = ax.twinx()
     for ds_name in loss:
@@ -150,7 +164,11 @@ def myplot(checkpoints,
         for ds_name in best_calwer:
             # print (ds_name, best[ds_name])
             f.write(f"{ds_name} {best_calwer[ds_name]}\n")
-            
+        
+        f.write(f"Best COMPLETELY CORRECT CALLSIGN - epoch {np.argmin(wer['total'])+1}, {checkpoints[np.argmin(wer['total'])]}:\n")
+        for ds_name in best_calwer:
+            # print (ds_name, best[ds_name])
+            f.write(f"{ds_name} {best_completely_correct_cals[ds_name]}\n")
     return legend_lines
 
 if __name__ == '__main__':
@@ -173,11 +191,11 @@ if __name__ == '__main__':
 
     data = open(args.file).readlines()
     out=compute_wer_loss(data)
-    checkpoints, wer, loss, cal_wer = compute_total_wer(out)
+    checkpoints, wer, loss, cal_wer, completely_correct_cals = compute_total_wer(out)
     
     for idx in range(3):
         legend_lines = myplot(
-            checkpoints, wer, loss, cal_wer, axs[idx],title=TITLES[idx], src_file=args.file,
+            checkpoints, wer, loss, cal_wer, completely_correct_cals, axs[idx],title=TITLES[idx], src_file=args.file,
             plot_total_wer=TO_PLOT[idx]=='wer', plot_partial_wer=TO_PLOT[idx]=='wer',
             plot_total_loss=TO_PLOT[idx]=='loss', plot_partial_loss=TO_PLOT[idx]=='loss',
             plot_total_cal_wer=TO_PLOT[idx]=='cal_wer', plot_partial_cal_wer=TO_PLOT[idx]=='cal_wer',
@@ -200,4 +218,4 @@ if __name__ == '__main__':
     to_add = ''
     if (os.path.exists(OUT_FILE+'.png')):
         to_add = str(time.time())
-    fig.savefig(f'{OUT_FILE}{'_'+to_add if to_add else ''}.png', dpi=300, bbox_inches='tight')
+    # fig.savefig(f'{OUT_FILE}{'_'+to_add if to_add else ''}.png', dpi=300, bbox_inches='tight')

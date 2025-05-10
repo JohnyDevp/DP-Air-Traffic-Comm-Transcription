@@ -1,0 +1,35 @@
+===== ./EXPERIMENTS/vanmed-short/exp/noprompt_5Bwholeds.txt =====
+Weighted WER: 37.37%
+Weighted CALLSIGN WER: 71.50%
+CALLSIGNS COMPLETELY CORRECT: 197 / 763 (25.82%)
+
+===== ./EXPERIMENTS/vanmed-short/exp/noprompt_35Bwholeds.txt =====
+Weighted WER: 40.34%
+Weighted CALLSIGN WER: 71.01%
+CALLSIGNS COMPLETELY CORRECT: 199 / 763 (26.08%)
+
+===== ./EXPERIMENTS/vanmed-short/exp/noprompt_50CZB.txt =====
+Weighted WER: 37.85%
+Weighted CALLSIGN WER: 70.56%
+CALLSIGNS COMPLETELY CORRECT: 203 / 763 (26.61%)
+
+===== ./EXPERIMENTS/vanmed-short/exp/noprompt_AGwholeds.txt =====
+Weighted WER: 43.33%
+Weighted CALLSIGN WER: 87.14%
+CALLSIGNS COMPLETELY CORRECT: 75 / 763 (9.83%)
+
+===== ./EXPERIMENTS/vanmed-short/exp/noprompt_AG35Bwholeds_shuffled.txt =====
+Weighted WER: 40.94%
+Weighted CALLSIGN WER: 83.89%
+CALLSIGNS COMPLETELY CORRECT: 98 / 763 (12.84%)
+
+===== ./EXPERIMENTS/vanmed-short/exp/noprompt_AG50CZBwholeds.txt =====
+Weighted WER: 40.40%
+Weighted CALLSIGN WER: 85.57%
+CALLSIGNS COMPLETELY CORRECT: 174 / 1526 (11.40%)
+
+===== ./EXPERIMENTS/vanmed-short/exp/noprompt_AG4Bwholeds.txt =====
+Weighted WER: 42.63%
+Weighted CALLSIGN WER: 85.36%
+CALLSIGNS COMPLETELY CORRECT: 176 / 1526 (11.53%)
+

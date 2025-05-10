@@ -1,0 +1,35 @@
+===== ./EXPERIMENTS/alldsatcoen-full/exp/noprompt_5Bwholeds.txt =====
+Weighted WER: 19.93%
+Weighted CALLSIGN WER: 14.93%
+CALLSIGNS COMPLETELY CORRECT: 452 / 763 (59.24%)
+
+===== ./EXPERIMENTS/alldsatcoen-full/exp/noprompt_35Bwholeds.txt =====
+Weighted WER: 20.21%
+Weighted CALLSIGN WER: 14.67%
+CALLSIGNS COMPLETELY CORRECT: 457 / 763 (59.90%)
+
+===== ./EXPERIMENTS/alldsatcoen-full/exp/noprompt_50CZB.txt =====
+Weighted WER: 20.24%
+Weighted CALLSIGN WER: 14.72%
+CALLSIGNS COMPLETELY CORRECT: 449 / 763 (58.85%)
+
+===== ./EXPERIMENTS/alldsatcoen-full/exp/noprompt_AGwholeds.txt =====
+Weighted WER: 20.57%
+Weighted CALLSIGN WER: 16.40%
+CALLSIGNS COMPLETELY CORRECT: 430 / 763 (56.36%)
+
+===== ./EXPERIMENTS/alldsatcoen-full/exp/noprompt_AG35Bwholeds_shuffled.txt =====
+Weighted WER: 20.10%
+Weighted CALLSIGN WER: 15.22%
+CALLSIGNS COMPLETELY CORRECT: 452 / 763 (59.24%)
+
+===== ./EXPERIMENTS/alldsatcoen-full/exp/noprompt_AG50CZBwholeds.txt =====
+Weighted WER: 21.02%
+Weighted CALLSIGN WER: 14.99%
+CALLSIGNS COMPLETELY CORRECT: 453 / 763 (59.37%)
+
+===== ./EXPERIMENTS/alldsatcoen-full/exp/noprompt_AG4Bwholeds.txt =====
+Weighted WER: 21.05%
+Weighted CALLSIGN WER: 15.87%
+CALLSIGNS COMPLETELY CORRECT: 445 / 763 (58.32%)
+

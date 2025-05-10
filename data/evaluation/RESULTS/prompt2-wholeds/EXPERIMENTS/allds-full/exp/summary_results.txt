@@ -1,0 +1,35 @@
+===== ./EXPERIMENTS/allds-full/exp/noprompt_5Bwholeds.txt =====
+Weighted WER: 20.10%
+Weighted CALLSIGN WER: 14.03%
+CALLSIGNS COMPLETELY CORRECT: 457 / 763 (59.90%)
+
+===== ./EXPERIMENTS/allds-full/exp/noprompt_35Bwholeds.txt =====
+Weighted WER: 20.18%
+Weighted CALLSIGN WER: 14.68%
+CALLSIGNS COMPLETELY CORRECT: 453 / 763 (59.37%)
+
+===== ./EXPERIMENTS/allds-full/exp/noprompt_50CZB.txt =====
+Weighted WER: 20.41%
+Weighted CALLSIGN WER: 14.93%
+CALLSIGNS COMPLETELY CORRECT: 457 / 763 (59.90%)
+
+===== ./EXPERIMENTS/allds-full/exp/noprompt_AGwholeds.txt =====
+Weighted WER: 20.20%
+Weighted CALLSIGN WER: 14.25%
+CALLSIGNS COMPLETELY CORRECT: 459 / 763 (60.16%)
+
+===== ./EXPERIMENTS/allds-full/exp/noprompt_AG35Bwholeds_shuffled.txt =====
+Weighted WER: 23.60%
+Weighted CALLSIGN WER: 15.11%
+CALLSIGNS COMPLETELY CORRECT: 445 / 763 (58.32%)
+
+===== ./EXPERIMENTS/allds-full/exp/noprompt_AG50CZBwholeds.txt =====
+Weighted WER: 20.36%
+Weighted CALLSIGN WER: 14.77%
+CALLSIGNS COMPLETELY CORRECT: 455 / 763 (59.63%)
+
+===== ./EXPERIMENTS/allds-full/exp/noprompt_AG4Bwholeds.txt =====
+Weighted WER: 20.75%
+Weighted CALLSIGN WER: 15.41%
+CALLSIGNS COMPLETELY CORRECT: 450 / 763 (58.98%)
+
