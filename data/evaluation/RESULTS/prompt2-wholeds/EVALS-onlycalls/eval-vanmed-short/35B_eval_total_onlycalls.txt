@@ -1,0 +1,11 @@
+#### EVALUATION STARTED - TIME 2025-05-11 13:18:12 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['openai/whisper-medium'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT2/EVALS/eval-vanmed-short/35B_eval_total_onlycalls.txt', transcription_name_in_ds='short_ts', checkpoints_eval=False, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_35B', eval_description='', overwrite=False, separate_ds=False, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True, wer_for_AG_existing_only=True, NOP_wer_for_AG_existing_only=False)
+******** Evaluation description ********
+
+
+#### EVAL MODEL openai/whisper-medium ####
+******** Evaluation results ********
+DATASET: allds | WER: 83.61090641120119 LOSS: 2.389982773198022 CALLSIGN WER: 98.12581913499345 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 7
+
+

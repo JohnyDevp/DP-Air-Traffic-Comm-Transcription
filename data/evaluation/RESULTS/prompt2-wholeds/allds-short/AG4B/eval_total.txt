@@ -1,0 +1,109 @@
+#### EVALUATION STARTED - TIME 2025-05-10 15:34:45 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/eval_total.txt', transcription_name_in_ds='short_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_AG_4B', eval_description='', overwrite=False, separate_ds=False, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True, wer_for_AG_existing_only=False, NOP_wer_for_AG_existing_only=False)
+******** Evaluation description ********
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-50 ####
+#### EVALUATION STARTED - TIME 2025-05-11 03:31:15 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/eval_total.txt', transcription_name_in_ds='short_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_AG_4B', eval_description='', overwrite=False, separate_ds=False, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True, wer_for_AG_existing_only=False, NOP_wer_for_AG_existing_only=False)
+******** Evaluation description ********
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-50 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.012399509469958 LOSS: 0.9612219090814944 CALLSIGN WER: 42.40498034076017 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 411
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-100 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.63087614116365 LOSS: 1.0002520432074864 CALLSIGN WER: 41.73656618610748 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 419
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-150 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.15397193078076 LOSS: 0.9735215350433633 CALLSIGN WER: 38.76802096985585 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 442
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-200 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.371985284098653 LOSS: 0.9843788853398076 CALLSIGN WER: 36.352118829183055 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 462
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-250 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.371985284098653 LOSS: 1.0222921272118886 CALLSIGN WER: 39.09785932721713 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 442
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-300 ####
+******** Evaluation results ********
+DATASET: allds | WER: 29.990461915792345 LOSS: 1.018107329805692 CALLSIGN WER: 37.76539973787681 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 454
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-350 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.530181223599946 LOSS: 1.0307250530631453 CALLSIGN WER: 37.92922673656619 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 453
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-400 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.353045374029158 LOSS: 1.0333475746490337 CALLSIGN WER: 37.129750982961994 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 459
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-450 ####
+******** Evaluation results ********
+DATASET: allds | WER: 29.89508107371576 LOSS: 1.041448082085009 CALLSIGN WER: 36.53997378768021 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 462
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-500 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.194849434527864 LOSS: 1.0483657226518348 CALLSIGN WER: 36.20139799038882 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 464
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-550 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.36667120861153 LOSS: 1.0543950338054586 CALLSIGN WER: 36.965923984272614 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 460
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-600 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.07221692328655 LOSS: 1.0561481399668589 CALLSIGN WER: 36.92223678462211 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 460
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-650 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.43480038152337 LOSS: 1.0594560415656478 CALLSIGN WER: 36.8348623853211 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 461
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-700 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.462052050688104 LOSS: 1.0618116712128673 CALLSIGN WER: 36.507208387942335 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 464
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-735 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.462052050688104 LOSS: 1.061912461563393 CALLSIGN WER: 36.507208387942335 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 464
+
+
+#### EVALUATION STARTED - TIME 2025-05-11 07:53:05 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/eval_total.txt', transcription_name_in_ds='short_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_AG_4B', eval_description='', overwrite=False, separate_ds=False, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True, wer_for_AG_existing_only=False, NOP_wer_for_AG_existing_only=False)
+******** Evaluation description ********
+
+
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-50 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-100 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-150 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-200 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-250 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-300 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-350 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-400 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-450 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-500 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-550 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-600 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-650 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-700 ALREADY EVALUATED ####
+#### CHECKPOINT /mnt/scratch/tmp/xholan11/models/PROMPT2/allds-short/AG4B/checkpoint-735 ALREADY EVALUATED ####

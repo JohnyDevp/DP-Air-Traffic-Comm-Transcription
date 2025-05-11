@@ -1,0 +1,156 @@
+#### EVALUATION STARTED - TIME 2025-05-10 18:32:30 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/eval_total.txt', transcription_name_in_ds='short_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_AG', eval_description='', overwrite=False, separate_ds=False, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True, wer_for_AG_existing_only=False, NOP_wer_for_AG_existing_only=False)
+******** Evaluation description ********
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-99 ####
+******** Evaluation results ********
+DATASET: allds | WER: 42.97588227278921 LOSS: 0.8995721489191055 CALLSIGN WER: 15.146352118829181 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 637
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-198 ####
+******** Evaluation results ********
+DATASET: allds | WER: 44.052323204796295 LOSS: 0.7411051083494116 CALLSIGN WER: 11.009174311926605 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 671
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-297 ####
+******** Evaluation results ********
+DATASET: allds | WER: 43.861561520643136 LOSS: 0.7231197064673459 CALLSIGN WER: 11.730013106159895 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 666
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-396 ####
+******** Evaluation results ********
+DATASET: allds | WER: 37.06227006404143 LOSS: 0.7871095146293994 CALLSIGN WER: 10.463084316295328 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 677
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-495 ####
+******** Evaluation results ********
+DATASET: allds | WER: 32.592996321024664 LOSS: 0.7835462866006074 CALLSIGN WER: 9.578418523372655 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 683
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-594 ####
+******** Evaluation results ********
+DATASET: allds | WER: 37.13039923695327 LOSS: 0.8246450633914383 CALLSIGN WER: 11.450415028396678 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 668
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-693 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.973838397601853 LOSS: 0.8588047756089104 CALLSIGN WER: 8.98864132809087 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 689
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-792 ####
+******** Evaluation results ********
+DATASET: allds | WER: 28.995775991279466 LOSS: 0.8698405137768498 CALLSIGN WER: 9.895150720838796 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 682
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-891 ####
+******** Evaluation results ********
+DATASET: allds | WER: 44.7336149339147 LOSS: 0.8800231008617966 CALLSIGN WER: 13.324595893403234 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 655
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-990 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.63087614116365 LOSS: 0.9027445277682057 CALLSIGN WER: 9.79030144167759 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 681
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1089 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.49693418721897 LOSS: 0.9244850835314503 CALLSIGN WER: 9.392747924858018 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 685
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1188 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.360675841395288 LOSS: 0.9307857525569422 CALLSIGN WER: 7.863695937090434 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 698
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1287 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.810328382613434 LOSS: 0.9562163866228528 CALLSIGN WER: 9.16339012669288 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 686
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1386 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.25166916473634 LOSS: 0.9721012441096483 CALLSIGN WER: 7.590650939274793 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 699
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1485 ####
+******** Evaluation results ********
+DATASET: allds | WER: 28.49162011173184 LOSS: 0.9872371190124087 CALLSIGN WER: 9.287898645696812 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 685
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1584 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.428805014307127 LOSS: 0.997083220216963 CALLSIGN WER: 6.378331148973351 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 709
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1683 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.08815914974792 LOSS: 0.9932680345243878 CALLSIGN WER: 6.994320664045435 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 703
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1782 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.03365581141845 LOSS: 0.9975678010119332 CALLSIGN WER: 7.252075141983399 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 701
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1881 ####
+******** Evaluation results ********
+DATASET: allds | WER: 26.883771631012397 LOSS: 1.0118006064935967 CALLSIGN WER: 7.426823940585409 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 699
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-1980 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.074533315165557 LOSS: 1.0218732853730519 CALLSIGN WER: 6.989951944080384 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 703
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2079 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.020029976836078 LOSS: 1.0302852033464998 CALLSIGN WER: 7.121013543031891 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 703
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2178 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.03365581141845 LOSS: 1.0407925071539703 CALLSIGN WER: 6.400174748798602 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 708
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2277 ####
+******** Evaluation results ********
+DATASET: allds | WER: 27.10178498433029 LOSS: 1.0413351792980123 CALLSIGN WER: 6.662297946701616 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 706
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2376 ####
+******** Evaluation results ********
+DATASET: allds | WER: 26.842894127265293 LOSS: 1.0440605619439371 CALLSIGN WER: 6.662297946701616 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 706
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2475 ####
+******** Evaluation results ********
+DATASET: allds | WER: 26.856519961847663 LOSS: 1.04526986181736 CALLSIGN WER: 6.596767147225862 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 707
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2574 ####
+******** Evaluation results ********
+DATASET: allds | WER: 26.82926829268293 LOSS: 1.0501041136406086 CALLSIGN WER: 6.727828746177369 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 706
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2673 ####
+******** Evaluation results ********
+DATASET: allds | WER: 26.96552663850661 LOSS: 1.0518390558384083 CALLSIGN WER: 6.858890345128878 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 705
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2772 ####
+******** Evaluation results ********
+DATASET: allds | WER: 26.883771631012397 LOSS: 1.0547609588614217 CALLSIGN WER: 6.727828746177369 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 706
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2871 ####
+******** Evaluation results ********
+DATASET: allds | WER: 26.911023300177135 LOSS: 1.055351612744508 CALLSIGN WER: 6.727828746177369 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 706
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/vanmed-short/AG/checkpoint-2940 ####
+******** Evaluation results ********
+DATASET: allds | WER: 26.911023300177135 LOSS: 1.0554743795483201 CALLSIGN WER: 6.727828746177369 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 706
+
+

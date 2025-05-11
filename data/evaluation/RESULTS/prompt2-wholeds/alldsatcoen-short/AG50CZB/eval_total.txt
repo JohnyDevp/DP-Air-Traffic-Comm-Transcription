@@ -1,0 +1,81 @@
+#### EVALUATION STARTED - TIME 2025-05-10 14:36:34 ####
+******** Evaluation setup ********
+EvaluationSetup(metric='wer', datasets=['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich'], datasets_basedir='/mnt/scratch/tmp/xholan11/data', models=['/mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB'], output_file='/mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/eval_total.txt', transcription_name_in_ds='short_ts', checkpoints_eval=True, batch_size=10, same_processor=True, prompt_name_in_ds='prompt_shortts_AG_50CZB', eval_description='', overwrite=False, separate_ds=False, eval_callsigns=True, callsigns_name_in_ds='short_callsigns', use_prompt=True, self_prompt=False, ignore_case=True, wer_for_AG_existing_only=False, NOP_wer_for_AG_existing_only=False)
+******** Evaluation description ********
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-50 ####
+******** Evaluation results ********
+DATASET: allds | WER: 32.11609211064177 LOSS: 1.0602749917242262 CALLSIGN WER: 44.545653123634786 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 396
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-100 ####
+******** Evaluation results ********
+DATASET: allds | WER: 32.061588772312305 LOSS: 1.0570179086040568 CALLSIGN WER: 43.20227173438183 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 406
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-150 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.69369123858836 LOSS: 1.0691399237623922 CALLSIGN WER: 44.128440366972484 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 400
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-200 ####
+******** Evaluation results ********
+DATASET: allds | WER: 32.25235045646546 LOSS: 1.1047401864219595 CALLSIGN WER: 48.660987330712096 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 365
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-250 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.848889494481536 LOSS: 1.0668720382231254 CALLSIGN WER: 43.641328090869386 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 406
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-300 ####
+******** Evaluation results ********
+DATASET: allds | WER: 31.584684561929414 LOSS: 1.0768297292568065 CALLSIGN WER: 43.221930974224556 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 407
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-350 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.712631148657856 LOSS: 1.0871063537067838 CALLSIGN WER: 42.22149410222804 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 416
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-400 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.63087614116365 LOSS: 1.1012912878283747 CALLSIGN WER: 42.39624290083006 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 414
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-450 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.589998637416542 LOSS: 1.107761366499795 CALLSIGN WER: 42.46177370030581 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 413
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-500 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.73988281782259 LOSS: 1.1131237353439685 CALLSIGN WER: 42.2433377020533 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 415
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-550 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.658127810328384 LOSS: 1.1163317092038967 CALLSIGN WER: 42.304499781564004 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 414
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-600 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.876141163646274 LOSS: 1.1196221538163997 CALLSIGN WER: 42.522935779816514 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 413
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-650 ####
+******** Evaluation results ********
+DATASET: allds | WER: 30.75350865240496 LOSS: 1.1213603759253468 CALLSIGN WER: 42.74137177806903 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 411
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-700 ####
+******** Evaluation results ********
+DATASET: allds | WER: 32.60662215560703 LOSS: 1.122646528261679 CALLSIGN WER: 42.74137177806903 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 411
+
+
+#### EVAL MODEL /mnt/scratch/tmp/xholan11/models/PROMPT2/alldsatcoen-short/AG50CZB/checkpoint-735 ####
+******** Evaluation results ********
+DATASET: allds | WER: 32.68837716310124 LOSS: 1.1228623152882964 CALLSIGN WER: 42.74137177806903 CALLSIGN COUNT: 763 CALLSIGN COMPLETELY CORRECT: 411
+
+

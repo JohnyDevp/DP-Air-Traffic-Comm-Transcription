@@ -17,15 +17,15 @@ args = argparser.parse_args()
 root_dir = args.dir  # change if needed
 
 # Weights for computing weighted average
-lengths = {
-    'atco_en_ruzyne': 718,
-    'atco_en_stefanik': 629,
-    'atco_en_zurich': 2996,
-}
+# lengths = {
+#     'atco_en_ruzyne': 718,
+#     'atco_en_stefanik': 629,
+#     'atco_en_zurich': 2996,
+# }
 
 # Normalize weights
-total_len = sum(lengths.values())
-weights = {k: v / total_len for k, v in lengths.items()}
+# total_len = sum(lengths.values())
+# weights = {k: v / total_len for k, v in lengths.items()}
 
 # To store results
 wer_data = {}
@@ -65,7 +65,7 @@ for filepath in files:
     
     if os.path.isdir(dirpath) and os.path.exists(filepath):
         with open(filepath, "r") as f:
-            lines = f.read().splitlines()
+            lines = f.readlines()
 
         # Extract WER values
         wer_values = {}
@@ -87,27 +87,38 @@ for filepath in files:
             continue
         
         else:
-            if "Best WER" in lines[0]:
-                for line in lines[1:5]:
-                    name, val = line.split()
-                    wer_values[name] = float(val)
+            # if "Best WER" in lines[0]:
+            #     for line in lines[1:5]:
+            #         name, val = line.split()
+            #         wer_values[name] = float(val)
 
-            if "Best CALLSIGN WER" in lines[5]:
-                for line in lines[6:]:
-                    name, val = line.split()
-                    callsign_values[name] = float(val)
+            # if "Best CALLSIGN WER" in lines[5]:
+            #     for line in lines[6:]:
+            #         name, val = line.split()
+            #         callsign_values[name] = float(val)
 
             # Compute weighted average
             
-            wer_values["weighted"] = sum(wer_values[k] * weights[k] for k in weights)
-            callsign_values["weighted"] = sum(callsign_values[k] * weights[k] for k in weights)
-
-            wer_data[dirname] = wer_values
-            callsign_data[dirname] = callsign_values
+            # wer_values["weighted"] = sum(wer_values[k] * weights[k] for k in weights)
+            # callsign_values["weighted"] = sum(callsign_values[k] * weights[k] for k in weights)
+            wer_data[dirname] = {
+                'total': lines[1].split()[1],
+                'atco_en_ruzyne': lines[2].split()[1],
+                'atco_en_stefanik': lines[3].split()[1],
+                'atco_en_zurich': lines[4].split()[1],
+            }
+            callsign_data[dirname] = {
+                'total': lines[6].split()[1],
+                'atco_en_ruzyne': lines[7].split()[1],
+                'atco_en_stefanik': lines[8].split()[1],
+                'atco_en_zurich': lines[9].split()[1],
+            }
+            # wer_data[dirname] = wer_values
+            # callsign_data[dirname] = callsign_values
 
 # Sort keys consistently
 systems = sorted(wer_data.keys())
-labels = ['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich', 'weighted']
+labels = ['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich', 'total']
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
 
 # Plotting function
@@ -118,11 +129,11 @@ def plot_metric(data, title, name='wer'):
     fig, ax = plt.subplots(figsize=(10, 6))
     legend_lines = []
     for i, label in enumerate(labels):
-        vals = [data[sys][label] for sys in systems]
+        vals = [float(data[sys][label]) for sys in systems]
         line =ax.bar([p + i * width for p in x], vals, width=width, label=label, color=colors[i])
         legend_lines.append((line, label))
-        if label == 'weighted':
-            vals_zurich = [data[sys]['atco_en_zurich'] for sys in systems]
+        if label == 'total':
+            vals_zurich = [float(data[sys]['atco_en_zurich']) for sys in systems]
             for j, val in enumerate(vals):
                 x_pos = j + i * width
                 y_top = val
@@ -136,7 +147,7 @@ def plot_metric(data, title, name='wer'):
                         fontsize=15, rotation=0)
 
     ax.set_xticks([p + 1.5 * width for p in x])
-    ax.set_ylim(top=max(max(data[sys]['weighted'] for sys in systems) + 5, ax.get_ylim()[1]))
+    ax.set_ylim(top=max(max(float(data[sys]['total']) for sys in systems) + 5, ax.get_ylim()[1]))
     ax.tick_params(axis='x', labelsize=16)
     ax.tick_params(axis='y', labelsize=16)
     
@@ -150,7 +161,7 @@ def plot_metric(data, title, name='wer'):
         'atco_en_ruzyne': 'Ruzyne',
         'atco_en_stefanik': 'Stefanik',
         'atco_en_zurich': 'Zurich',
-        'weighted': 'Total AVG',
+        'total': 'Total AVG',
     }
 
     ax.legend([leg[0] for leg in legend_lines], [legend_dict[leg[1]] if leg[1] in legend_dict else leg[1] for leg in legend_lines], loc='upper center', ncol=4, bbox_to_anchor=(0.5, -0.14),fontsize=19)
