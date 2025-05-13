@@ -16,7 +16,7 @@ args = parser.parse_args()
 
 # Directory with evaluation files
 eval_dir = args.eval_dir  # Change to your folder path
-output_file = os.path.join(args.eval_dir,"summary_results.txt")
+output_file = os.path.join(args.eval_dir,"summary_results2.txt")
 
 # Regex to extract info
 pattern = re.compile(
@@ -146,6 +146,12 @@ if True:
 
                 # Output formatted lines
                 out_f.write(f"===== {file.split('/')[-2]} =====\n")
-                out_f.write(f"Weighted WER: {avg_wer:.2f}%\n")
-                out_f.write(f"Weighted CALLSIGN WER: {avg_callsign_wer:.2f}%\n")
+                out_f.write(f"WER Ruzyne {float(lines[2].split(' ')[1]):.2f}%\n")
+                out_f.write(f"WER Stefanik {float(lines[3].split(' ')[1]):.2f}%\n")
+                out_f.write(f"WER Zurich {float(lines[4].split(' ')[1]):.2f}%\n")
+                out_f.write(f"CALLSIGN WER Ruzyne {float(lines[7].split(' ')[1]):.2f}%\n")
+                out_f.write(f"CALLSIGN WER Stefanik {float(lines[8].split(' ')[1]):.2f}%\n")
+                out_f.write(f"CALLSIGN WER Zurich {float(lines[9].split(' ')[1]):.2f}%\n")
+                out_f.write(f"WER: {avg_wer:.2f}%\n")
+                out_f.write(f"CALLSIGN WER: {avg_callsign_wer:.2f}%\n")
                 out_f.write(f"CALLSIGNS COMPLETELY CORRECT: {total_callsigns}\n\n")

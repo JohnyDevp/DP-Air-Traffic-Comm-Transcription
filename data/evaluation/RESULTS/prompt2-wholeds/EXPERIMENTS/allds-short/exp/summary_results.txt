@@ -1,0 +1,45 @@
+===== noprompt_5B_total.txt =====
+Weighted WER: 33.86%
+Weighted CALLSIGN WER: 55.26%
+CALLSIGNS COMPLETELY CORRECT: 316 (0.41%)
+
+===== noprompt_35B_total.txt =====
+Weighted WER: 34.27%
+Weighted CALLSIGN WER: 54.97%
+CALLSIGNS COMPLETELY CORRECT: 318 (0.42%)
+
+===== noprompt_50CZB_total.txt =====
+Weighted WER: 34.23%
+Weighted CALLSIGN WER: 55.52%
+CALLSIGNS COMPLETELY CORRECT: 315 (0.41%)
+
+===== noprompt_AG_total.txt =====
+Weighted WER: 34.23%
+Weighted CALLSIGN WER: 53.63%
+CALLSIGNS COMPLETELY CORRECT: 324 (0.42%)
+
+===== noprompt_AG35B_shuffled_total.txt =====
+Weighted WER: 33.87%
+Weighted CALLSIGN WER: 54.53%
+CALLSIGNS COMPLETELY CORRECT: 318 (0.42%)
+
+===== noprompt_AG50CZB_total.txt =====
+Weighted WER: 33.66%
+Weighted CALLSIGN WER: 55.22%
+CALLSIGNS COMPLETELY CORRECT: 314 (0.41%)
+
+===== noprompt_AG4B_total.txt =====
+Weighted WER: 34.72%
+Weighted CALLSIGN WER: 55.39%
+CALLSIGNS COMPLETELY CORRECT: 314 (0.41%)
+
+===== AGvsB_total.txt =====
+Weighted WER: 33.74%
+Weighted CALLSIGN WER: 54.69%
+CALLSIGNS COMPLETELY CORRECT: 320 (0.42%)
+
+===== BvsAG_total.txt =====
+Weighted WER: 31.95%
+Weighted CALLSIGN WER: 45.35%
+CALLSIGNS COMPLETELY CORRECT: 393 (0.52%)
+

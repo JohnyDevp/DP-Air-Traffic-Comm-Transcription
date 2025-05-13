@@ -1,0 +1,126 @@
+===== 5B =====
+  | atco_en_ruzyne
+      | WER: 18.92%
+      | CALLSIGN WER: 17.36%
+      | CALLSIGNS COMPLETELY CORRECT: 45 (0.44%)
+  | atco_en_stefanik
+      | WER: 16.06%
+      | CALLSIGN WER: 9.60%
+      | CALLSIGNS COMPLETELY CORRECT: 66 (0.70%)
+  | atco_en_zurich
+      | WER: 25.87%
+      | CALLSIGN WER: 20.00%
+      | CALLSIGNS COMPLETELY CORRECT: 303 (0.54%)
+Total WER: 23.41%
+Total CALLSIGN WER: 18.36%
+Total CALLSIGNS COMPLETELY CORRECT: 414 (54.26%)
+
+
+===== 35B =====
+  | atco_en_ruzyne
+      | WER: 19.03%
+      | CALLSIGN WER: 12.44%
+      | CALLSIGNS COMPLETELY CORRECT: 58 (0.56%)
+  | atco_en_stefanik
+      | WER: 17.91%
+      | CALLSIGN WER: 8.63%
+      | CALLSIGNS COMPLETELY CORRECT: 66 (0.70%)
+  | atco_en_zurich
+      | WER: 23.02%
+      | CALLSIGN WER: 16.85%
+      | CALLSIGNS COMPLETELY CORRECT: 337 (0.60%)
+Total WER: 21.68%
+Total CALLSIGN WER: 15.24%
+Total CALLSIGNS COMPLETELY CORRECT: 461 (60.42%)
+
+
+===== 50CZB =====
+  | atco_en_ruzyne
+      | WER: 20.03%
+      | CALLSIGN WER: 16.57%
+      | CALLSIGNS COMPLETELY CORRECT: 53 (0.51%)
+  | atco_en_stefanik
+      | WER: 16.51%
+      | CALLSIGN WER: 11.29%
+      | CALLSIGNS COMPLETELY CORRECT: 67 (0.71%)
+  | atco_en_zurich
+      | WER: 23.57%
+      | CALLSIGN WER: 20.23%
+      | CALLSIGNS COMPLETELY CORRECT: 299 (0.53%)
+Total WER: 22.03%
+Total CALLSIGN WER: 18.63%
+Total CALLSIGNS COMPLETELY CORRECT: 419 (54.91%)
+
+
+===== AG =====
+  | atco_en_ruzyne
+      | WER: 14.87%
+      | CALLSIGN WER: 0.63%
+      | CALLSIGNS COMPLETELY CORRECT: 100 (0.97%)
+  | atco_en_stefanik
+      | WER: 13.13%
+      | CALLSIGN WER: 2.01%
+      | CALLSIGNS COMPLETELY CORRECT: 89 (0.95%)
+  | atco_en_zurich
+      | WER: 18.16%
+      | CALLSIGN WER: 3.11%
+      | CALLSIGNS COMPLETELY CORRECT: 530 (0.94%)
+Total WER: 16.94%
+Total CALLSIGN WER: 2.64%
+Total CALLSIGNS COMPLETELY CORRECT: 719 (94.23%)
+
+
+===== AG4B =====
+  | atco_en_ruzyne
+      | WER: 16.20%
+      | CALLSIGN WER: 2.86%
+      | CALLSIGNS COMPLETELY CORRECT: 91 (0.88%)
+  | atco_en_stefanik
+      | WER: 14.72%
+      | CALLSIGN WER: 3.32%
+      | CALLSIGNS COMPLETELY CORRECT: 84 (0.89%)
+  | atco_en_zurich
+      | WER: 19.75%
+      | CALLSIGN WER: 7.39%
+      | CALLSIGNS COMPLETELY CORRECT: 482 (0.85%)
+Total WER: 18.49%
+Total CALLSIGN WER: 6.28%
+Total CALLSIGNS COMPLETELY CORRECT: 657 (86.11%)
+
+
+===== AG35B =====
+  | atco_en_ruzyne
+      | WER: 15.70%
+      | CALLSIGN WER: 3.33%
+      | CALLSIGNS COMPLETELY CORRECT: 91 (0.88%)
+  | atco_en_stefanik
+      | WER: 13.70%
+      | CALLSIGN WER: 4.83%
+      | CALLSIGNS COMPLETELY CORRECT: 81 (0.86%)
+  | atco_en_zurich
+      | WER: 20.01%
+      | CALLSIGN WER: 6.18%
+      | CALLSIGNS COMPLETELY CORRECT: 480 (0.85%)
+Total WER: 18.46%
+Total CALLSIGN WER: 5.63%
+Total CALLSIGNS COMPLETELY CORRECT: 652 (85.45%)
+
+
+===== AG50CZB =====
+  | atco_en_ruzyne
+      | WER: 16.70%
+      | CALLSIGN WER: 2.49%
+      | CALLSIGNS COMPLETELY CORRECT: 94 (0.91%)
+  | atco_en_stefanik
+      | WER: 14.53%
+      | CALLSIGN WER: 3.75%
+      | CALLSIGNS COMPLETELY CORRECT: 84 (0.89%)
+  | atco_en_zurich
+      | WER: 18.42%
+      | CALLSIGN WER: 5.07%
+      | CALLSIGNS COMPLETELY CORRECT: 494 (0.87%)
+Total WER: 17.61%
+Total CALLSIGN WER: 4.56%
+Total CALLSIGNS COMPLETELY CORRECT: 672 (88.07%)
+
+
