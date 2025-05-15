@@ -1,47 +1,56 @@
 ## AUTOR
+
 Jan Holáň, xholan11
 xholan11@fit.vutbr.cz
 
 ## SPUŠTĚNÍ
+
 ### makemetadata.py
-- jeho spuštěním se vytvoří soubory obsahující metadata souborů určených k trénování a testování. Ve vyhotovených souborech se bude nacházet pole záznamů ve formátu *json* (pole "prompt" nebylo pro tento dataset vytvořeno):
+
+-   jeho spuštěním se vytvoří soubory obsahující metadata souborů určených k trénování a testování. Ve vyhotovených souborech se bude nacházet pole záznamů ve formátu _json_ (pole "prompt" nebylo pro tento dataset vytvořeno):
+
 ```json
 [
-    {
-        "audio": "UWB_ATCC/audio_split/ACCU-07R4Pv_52.wav",
-        "full_ts": "Lufthansa four juliet alpha one three two .",
-        "short_ts": "Lufthansa 4JA132.",
-        "prompt": null
-    }
+	{
+		"audio": "UWB_ATCC/audio_split/ACCU-07R4Pv_52.wav",
+		"full_ts": "Lufthansa four juliet alpha one three two .",
+		"short_ts": "Lufthansa 4JA132.",
+		"prompt": null
+	}
 ]
 ```
 
-- pro správné spuštění skriptu editujte proměnnou **DISK_ROOT** v sekci pod podmínkou na konci souboru 
+-   pro správné spuštění skriptu editujte proměnnou **DISK_ROOT** v sekci pod podmínkou na konci souboru
+
 ```python
 if __name__ == "__main__":
 ```
+
 , která ukazuje na místo, kde je uložena složka se surovými daty UWB. Je také potřeba zkontrolovat další proměnné v této sekci, které značí cesty k surovým datům UWB, zda skutečně existuje.
-- dále je doporučené spouštět skript v přiloženém prostředí venv312, které obsahuje python3.12 a potřebné balíčky
-- vytvořeny budou soubory:
-    - metadata_test.json
-    - metadata_train.json
+
+-   dále je doporučené spouštět skript v přiloženém prostředí venv312, které obsahuje python3.12 a potřebné balíčky
+-   vytvořeny budou soubory:
+    -   metadata_test.json
+    -   metadata_train.json
+-   **VYTVOŘENÉ SOUBORY JSOU TRUECASE, K JEJICH PŘEVEDENÍ DO LOWERCASE FORMY JE TŘEBA POUŽÍT NÁSTROJ lowercaser.py**, který se nachází ve složce _tools_ (vygenerovaný jazykovým modelem ChatGPT)
 
 ### makedataset.py
-- jeho spuštěním vzniknou datasety, které mohou být načtené knihovnou *datasets* (může být použita funkce tohoto balíčku `load_from_disk()`)
-- editujte proměnnou **DISK_ROOT** aby ukazovala na kořenový adresář se složkou se surovými daty UWB.
-- dále je doporučené spouštět skript v přiloženém prostředí venv312, které obsahuje python3.12 a potřebné balíčky
-- vytvořeny budou soubory:
-    - uwb_test_ds
-    - uwb_train_ds
+
+-   jeho spuštěním vzniknou datasety, které mohou být načtené knihovnou _datasets_ (může být použita funkce tohoto balíčku `load_from_disk()`)
+-   editujte proměnnou **DISK_ROOT** aby ukazovala na kořenový adresář se složkou se surovými daty UWB.
+-   dále je doporučené spouštět skript v přiloženém prostředí venv312, které obsahuje python3.12 a potřebné balíčky
+-   vytvořeny budou soubory:
+    -   uwb_test_ds
+    -   uwb_train_ds
 
 ## ROZDĚLENÍ
 
 -   TEST (3961 řečí, 650 wavů)
 
-    -   v souboru *test_wavs.out* najdete seznam wav souborů (původních) s řečmi, které mají být v testovací sadě; první sloupec ukazuje původní název wav souboru, druhý ukazuje počet použitelných řečí v něm (počet souborů, které budou vytvořeny z původního wavu)
+    -   v souboru _test_wavs.out_ najdete seznam wav souborů (původních) s řečmi, které mají být v testovací sadě; první sloupec ukazuje původní název wav souboru, druhý ukazuje počet použitelných řečí v něm (počet souborů, které budou vytvořeny z původního wavu)
 
 -   TRAIN (10706 řečí, 2006 wavů)
-    -   všechny ostatní soubory, které nejsou v *test_wavs.out*
+    -   všechny ostatní soubory, které nejsou v _test_wavs.out_
 
 ## POPIS
 
@@ -59,4 +68,3 @@ if __name__ == "__main__":
 
     -   problém nastává zejména u desetinných čísel, která mohou být vyslovována mnoha způsoby
     -   u zpětného překladu se očekává angličtina
-

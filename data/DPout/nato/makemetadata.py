@@ -354,7 +354,12 @@ def speakers_split(short_segments):
     print(speaker_groups)
         
 if __name__ == "__main__":
+    #======================================================
+    # CHANGE THIS TO YOUR DISK PATH
     DISK_ROOT = "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
+    #======================================================
+    # IT IS POSSIBLE THAT inputs VARIABLE WILL NEED TO BE CHANGED ACCORDING TO THE 
+    # NATO FOLDER STRUCTURE
     inputs = [
         DISK_ROOT + "n4_nato_speech_LDC2006S13/data/UK/UK_",
         DISK_ROOT + "n4_nato_speech_LDC2006S13/data/CA/CA_",

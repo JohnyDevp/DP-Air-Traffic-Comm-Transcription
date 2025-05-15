@@ -33,6 +33,8 @@ na konci souboru, která ukazuje na místo, kde je uložena složka se surovými
     - metadata_CA_test.json
     - metadata_CA_train.json  
 
+- **VYTVOŘENÉ SOUBORY JSOU TRUECASE, K JEJICH PŘEVEDENÍ DO LOWERCASE FORMY JE TŘEBA POUŽÍT NÁSTROJ lowercaser.py**, který se nachází ve složce *tools* (vygenerovaný jazykovým modelem ChatGPT)
+
 ### makedataset.py
 - jeho spuštěním vzniknou datasety, které mohou být načtené knihovnou *datasets* (může být použita funkce tohoto balíčku `load_from_disk()`)
 - editujte proměnnou **DISK_ROOT** aby ukazovala na kořenový adresář se složkou se surovými daty UWB.

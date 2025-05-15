@@ -410,32 +410,13 @@ def parseStm(path):
     return result
 
 if __name__ == "__main__":
-    parsed_wavs = parseStm('/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/stm/stm')
     
-    # THIS PART IS USED TO FIND OUT HOW MANY WAVS CAN BE USED AND HOW TO SPLIT THE DATASET
-    # dict_wavs = {}
-    # with open('test_wavs.out', "w") as f:
-    #     total_test_speeches = 0
-    #     total_wav_files_test = 0
-    #     total_wav_files = 0
-    #     for pw in parsed_wavs:
-    #         if pw["audio"] in dict_wavs:
-    #             dict_wavs[pw["audio"]] += 1
-    #         else:
-    #             dict_wavs[pw["audio"]] = 1
-        
-    #     for key in dict_wavs:
-    #         if total_test_speeches < 3960: # 27% of 14666 ... usable speeches from wav files
-    #             f.write(f"{key} {dict_wavs[key]}\n")
-    #             total_test_speeches += dict_wavs[key]
-    #             total_wav_files_test += 1
-    #         else: break
-        
-    #     print(total_test_speeches, total_wav_files_test, len(dict_wavs))
-    # exit(3)
-    
+    #======================================================
+    # CHANGE THIS TO YOUR DISK PATH
     DISK_ROOT = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38'
+    #======================================================
     
+    # IT IS POSSIBLE THAT THESE PATH WILL NEED TO BE CHANGED
     path_to_wavs = f'{DISK_ROOT}/UWB_ATCC/audio'
     # there will be stored audio splits, which are made during running of this script
     # WARNING: this folder should exist and be empty
@@ -443,6 +424,8 @@ if __name__ == "__main__":
     replace_path_of_audio = f'{DISK_ROOT}' # this part won't be stored in the metadata
     out_metadata_test = './metadata_test.json'
     out_metadata_train = './metadata_train.json'
+    
+    parsed_wavs = parseStm('/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/stm/stm')
     
     makeMetadata(parsed_wavs, 
                  path_to_wavs, 

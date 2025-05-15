@@ -2,7 +2,11 @@ from datasets import load_dataset, Dataset, DatasetDict, Audio
 import json
 
 # the path to the disk with datasets of wavs and etc..
+#======================================================
+# CHANGE THIS TO YOUR DISK PATH
 DISK_ROOT=""
+#======================================================
+
 METADATA_PATH=["./metadata_train.json", "./metadata_test.json"]
 DATASET_SAVE_PATH=["./uwb_train_ds","./uwb_test_ds"]
 
