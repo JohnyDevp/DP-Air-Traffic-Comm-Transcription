@@ -1,0 +1,1707 @@
+
+
+\chapter{Úvod}
+Letectví provází od počátku nezbytná komunikace. Ať se jedná o přistávání či vzlet, je důležité, aby si pilot byl jistý dráhou pro přistání, povětrnostními podmínkami i třeba možností letadlo zaparkovat. Na druhé straně scény potom stojí řídící na věži, kteří musí mít dokonalý přehled o stavu letiště. U malých letišť nebývá provoz tak hustý, zatímco u letišť velkých, například ve Frankfurtu, mohou přistávat letadla každé dvě minuty. Takový provoz vyžaduje bezchybnou komunikaci s~minimem přeslechů a tedy nutných zopakování. V~dnešní době pro tyto případy přichází na scénu právě automatický přepis letecké komunikace, který by zabezpečil lepší informační přenos.  
+
+Tato práce nachází inspiraci a částečně navazuje na bakalářskou práci Veroniky~Nevařilové \cite{Nevarilova2024thesis}. 
+
+Motivace pro zlepšení výsledků dosavadních modelů vychází z~nutnosti korektně překládat dráhy a volací znaky, jakožto klíčové informace. Dokud nebudou v~této oblasti přepisovací mechanismy pracovat na úrovni velmi blízké sta procentům, bude obtížné se získané transkripce spoléhat.
+
+V této práci je použit model Whisper, vytvořen společností OpenAI \cite{radford2022robustspeechrecognitionlargescale}. Díky velkému datasetu, na kterém byl tento model natrénován, poskytuje solidní základ pro rozpoznávání řeči v~letecké komunikaci. Velkou překážku ovšem tvoří nízká srozumitelnost. 
+
+Pro trénování je použita série datasetů, získaných od vedoucího práce. Práce si klade za cíl vyzkoušet nejen zlepšení přesnosti přepisů nejen díky množství dat, ale také skrz předání tzv. \textit{promptu}, tedy informace, která bude modelu předána jako informace obsahující potenciální možná slova, vyskytující se v~audiu.
+
+
+\chapter{Letecká komunikace a zpracování řeči}
+\section{Letecká komunikace}
+Letecká komunikace je přenášena přes VHF kanál. Jejím specifikem je nízká srozumitelnost způsobená šumem, který je navíc umocněn ze strany pilota letadla. Často dochází k~nedorozuměním, což již mělo za následek v~letecké historii různé nehody, jako například nehodu na letišti v~Linate\footnote{https://www.bestcommunicationsdegrees.com/10-deadliest-air-disasters-caused-by-miscommunication/}. Plno dalších nehod se potom stává jinými chybami, které ovšem nějakým způsobem souvisí s~komunikací, a proto je cílem co nejvíce zabezpečit její srozumitelnost. K~tomu by právě jazykové modely mohly sloužit.
+
+Pro minimalizaci přeslechů je zavedena mezinárodní letecká abeceda, při které se vyslovují celá slova namísto jednotlivých písmen. Jejím prostřednictvím se vyslovují takzvané volací značky, neboli \textit{callsigns}, označující jednotlivá letadla. Dále pak mohou být použity různé speciální zkratky, které mají stanovený přesný význam, mezi něž patří například \textit{QNH} označující tlak ve vzduchu - ty jsou pak vyslovovány přímo po písmenech. Níže je uvedena tabulka \ref{tab:abcd_inter} s~leteckou abecedou:
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|>{\columncolor[gray]{0.9}}c|l|>{\columncolor[gray]{0.9}}c|l|}
+        \hline
+        \rowcolor{gray!30} 
+        \textbf{Písmeno} & \textbf{Slovo} & \textbf{Písmeno} & \textbf{Slovo} \\ \hline
+        A & Alpha    & N & November \\ \hline
+        B & Bravo    & O & Oscar    \\ \hline
+        C & Charlie  & P & Papa     \\ \hline
+        D & Delta    & Q & Quebec   \\ \hline
+        E & Echo     & R & Romeo    \\ \hline
+        F & Foxtrot  & S~& Sierra   \\ \hline
+        G & Golf     & T & Tango    \\ \hline
+        H & Hotel    & U & Uniform  \\ \hline
+        I & India    & V~& Victor   \\ \hline
+        J & Juliett  & W & Whiskey  \\ \hline
+        K & Kilo     & X & Xray     \\ \hline
+        L & Lima     & Y & Yankee   \\ \hline
+        M & Mike     & Z~& Zulu     \\ \hline
+    \end{tabular}
+    \caption{Mezinárodní hláskovací abeceda}
+    \label{tab:abcd_inter}
+\end{table}
+
+Přepis v~takzvané plné formě, tedy text obsahující slova tak, jak jsou vyslovena, je podstatný, nicméně z~hlediska použitelnosti v~praxi (\cite{Nevarilova2024thesis}, kapitola 2.6 Letecká komunikace) se ukazuje jako důležité umět správně tvořit přepisy ve zkrácené podobě. To by mohlo najít větší uplatnění při vyhledávání v~rozpoznávačem přepsaných textech.
+
+Dalším způsobem, jak zabránit chybné interpretaci informací řečených v~dialogu mezi řídícím a věží, je zopakování podstatných údajů pilotem. Pokud je taková hodnota zopakována špatně, je pilot opraven řídícím na věži a pilot by měl údaj znovu zopakovat.
+
+
+\section{Zpracování řeči}
+Řeč je vyjádřitelná posloupností hodnot, ze kterých lze rekonstruovat původní signál. Ten je složený z~mnoha funkcí cosinus, a tedy mnoha různými frekvencemi a amplitudami. Právě jednotlivé funkce cosinus a jejich zastoupení v~signálu nás zajímá. Spektrum, ukazující jednotlivé frekvence v~signálu a spektrogram, vyjadřující zastoupení frekvencí v~signálu v~čase, jsou velmi podstatné při zpracování signálů, řeči a zvuku. Pro jejich získání se využívá takzvaná Fourierova transformace, především ve formě FFT - Fast Fourier Transform - využívané pro výpočet v~praxi.
+
+Lidské ucho vnímá řeč v~rozmezí zhruba 20 Hz - 20 kHz, což se mění vlivem věku a případně okolních podmínek. Charakteristickou vlastností pro náš sluch je, že neslyšíme lineárně, ale logaritmicky. To znamená, že například signály o frekvencích 10 Hz a 50 Hz pro nás budou snadno rozlišitelné, zatímco signály o frekvencích 1000 Hz a 1040 Hz nám budou splývat (uslyšíme prakticky stejný tón).
+
+Model Whisper, který je popsaný dále, očekává jako vstup log Mel spektrogram. Ten se liší od běžného spektrogramu právě tím, že zobrazuje spektrum v~logaritmickém měřítku. Je získán přetvořením běžného spektra skrz takzvané Mel banky, jejichž šířka odpovídá citlivosti lidského ucha v~daném frekvenčním pásmu. Jeho příklad je ukázán na obrázku \ref{fig:log-mel-spektrogram}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/logmel.png}
+    \caption{Příklad Log Mel spektrogramu}
+    \label{fig:log-mel-spektrogram}
+\end{figure}
+
+\subsection{Historie} \cite{juang2005automatic}
+V oboru zpracování řeči docházelo k~rychlým změnám. Od 17. století se lidé snažili o práci s~lidskou mluvou. V prvotních fázích šlo nejdříve spíše o tendenci napodobit lidskou řeč, než ji umět zpracovat. S tímto záměrem byl vytvořen stroj, který dokázal napodobovat člověkem artikulované hlásky. 
+
+Dále se začal zájem ubírat k~nalezení charakteristik řeči a k~schopnostem umět řeč zpracovat. Byl pojmenován základní tón (tón, na kterém se pohybuje přirozená řeč) a formant, charakterizující rezonance v~ústní dutině. V Bellových laboratořích vznikly první rozpoznávače řeči, konkrétně vyslovených číslic.
+
+Následovalo využití dvou klíčových komponent - slovníků, které našly využití v~několika laboratorních pokusech, a u kterých byla tendence je tvořit co největší, a jazykového modelu. Ten byl reprezentován množinou syntaktických pravidel, která popisovala pravděpodobnost výskytu dané posloupnosti slov (či fonémů) pro daný signál. Nejčastěji používanou variantou jazykového modelu byl tzv. \textit{n-gramový} model. Jeho funkcí bylo definovat pravděpodobnost výskytu uspořádané posloupnosti $n$ slov. Byl široce využíván pro svou efektivitu způsobenou vynikající statistickou reprezentací gramatiky. Pro odhad následujícího slova byl počítač za použití tohoto modelu lepší, než člověk, pokud byla posloupnost slov delší než tři.
+
+Před příchodem dalších stochastických metod a různých metod strojového učení přišla na delší dobu na řadu éra skrytých Markovových modelů (HMM - Hidden Markov Models). Jedná se o stochastický model a jeho síla spočívala ve schopnosti přijímat a správně zpracovat variabilní délku signálů. Tedy již nedocházelo k~problémům při například delším vyslovení nějaké hlásky, než bylo očekáváno. HMM využíval Markovův řetězec pro reprezentaci jazykové struktury a soubor pravděpodobnostních rozdělení pro zohlednění různorodosti akustické realizace mluvené řeči.
+
+\chapter{Whisper, neuronové sítě a transformery}
+Tato kapitola vychází především z informací obsažených v \cite{NLPbasic}, \cite{radford2022robustspeechrecognitionlargescale} a \cite{Gandhi_2022}. Text je zaměřen na ASR (Automatic Speech Recognition) model Whisper. Nachází se zde také stručný popis fungování neuronových sítí a transformerů.
+
+\section{Model Whisper}
+Data pro trénování ASR modelů by měla být o velkém objemu, na čemž byl založen model Whisper. Jeho dominantou je, že byl vytrénován na 680 tisíci hodinách audia s~přesnými přepisy. Navíc 170 tisíc hodin z~poskytnutých nahrávek bylo ve více jazycích, což umožňuje používat model na 96 různých jazyků. Použitý objem trénovacích dat jej činí výkonnějším, než je například model Wav2Vec, který byl trénován pouze \textit{bez dozoru} na 60 tisíci hodinách.
+
+\subsection{Struktura}
+Model Whisper je typem \textit{sequence-to-sequence}, což znamená, že převádí řetězec audia přímo na výstupní řetězec tokenů. Dále je založen na takzvané \textbf{encoder-decoder} architektuře. To se projevuje jeho prací se vstupním signálem a textem tak, jak je popsáno níže v~postupu práce modelu Whisper:
+
+\begin{enumerate}
+    \item Surová audio data jsou převedena na log-mel spektrogram skrz takzvaný \textit{Feature extractor}
+    \item Následuje převedení vstupní sekvence signálu v~podobě spektrogramu na sekvenci vnitřních stavů enkodéru.
+    \item Přes takzvanou \textit{cross-attention} vrstvu je spojen výstup enkodéru a dekodéru.
+    \item Dekodér autoregresivně predikuje výstupní tokeny, což znamená, že dochází k~predikci pouze jednoho tokenu jak na základě aktuálního stavu dekodéru, tak na tokenech vygenerovaných v~předchozích krocích (tedy zaručuje dodržení kontextu). V~této fázi je získán řetězec čísel, například \textit{[4545, 7985, 2354]}.
+    \item Tokenizer potom dekóduje vygenerované tokeny na slova.
+\end{enumerate}
+
+Názorně je architektura ukázána na obrázku \ref{fig:whisper-structure}.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/whisper-structure.png}
+    \caption{Architektura modelu Whisper, převzato z \cite{radford2022robustspeechrecognitionlargescale}}
+    \label{fig:whisper-structure}
+\end{figure}
+
+Architektura modelu Whisper odpovídá pojmu \textbf{deep fusion}. Ten označuje zabudování jazykového modelu přímo do celkové architektury modelu, což umožňuje trénování \textbf{end-to-end}, tedy takovým způsobem, kdy se optimalizuje celý proces najednou pomocí jediné loss funkce. Model během své práce generuje tokeny pomocí dekodéru a tyto tokeny jsou následně převedeny na text pomocí tokenizéru. Díky této integraci je dosaženo větší flexibility a celkově lepšího výkonu ve srovnání s~metodami, jako je například \textit{shallow fusion}.
+
+Jako loss funkce byla při trénování (a stejně tak i při finetuning) použitá tzv. Cross Entropy. 
+
+Model Whisper je unikátní v~tom, že není nutné přidávat na vstupu sítě žádnou tzv. \textit{attention mask}\footnote{Při trénování i testování model opakovaně vypisoval zprávu ohledně chybějící attention mask a v kontextu této zprávy upozorňoval na možnou chybovost výstupu. Attention maska sice potom předána byla, nicméně v kódu bylo možné ověřit, že její využití pro maskování vstupních dat je u modelu Whisper nemožné. Její funkce spočívala pouze v možnosti uměle rozšířit (\textit{augmentovat}) data, která byla využita pouze při vyžádání v konfiguraci modelu. V této práci k využití attention masky nedošlo.}. Ta je obecně u jiných modelů nezbytná k~určení, ve kterých místech došlo k~doplnění (tzv. \textit{padding}) vstupu do požadované délky. Tato místa, určená maskou, jsou potom vynechána při evaluaci self-attention mechanismu. Toto chování je odvozeno od možnosti přijímat vstupy rozličných délek. Whisper akceptuje pouze vstupy o délce 30 vteřin - data jsou ponechána, doplněna o nuly nebo zkrácena o přebývající část. Případný padding dokáže model sám vyhodnotit a nezapočítat jej do výpočtu self-attention.
+
+\subsection{Prompt}
+Protože v této práci je cílem vyzkoušet zapojení promptu, je v této kapitole ukázáno, jakým způsobem Whisper s touto možností pracuje. \cite{promptArxiv} Prompt je technika, při které je modelu předán rozšiřující kontext, přičemž se očekává zlepšení jeho výkonnosti. Prompt sám o sobě figuruje i v jiných modelech, například v dnes velmi populárním ChatGPT. Zde má ovšem formu informace, podle které se řídí obsahová forma celého výstupu. Tedy model v tomto případě reaguje následovně:
+\begin{center}
+    \begin{tabular}{r p{12cm}}
+    \textbf{Prompt:} & Jaké barvy jsou v RGB modelu? \\
+    \textbf{ChatGPT:} & \textit{(citace modelu\footnote{https://chatgpt.com})} V RGB modelu jsou tři základní barvy: červená (Red), zelená (Green) a modrá (Blue). Kombinací těchto barev v různých intenzitách vznikají všechny ostatní barvy, které vidíme na obrazovkách a digitálních displejích. Každá barva je určena třemi hodnotami v rozsahu 0–255, kde (0, 0, 0) znamená černou (úplná absence světla) a (255, 255, 255) bílou (plné světlo všech tří barev). \\
+\end{tabular}
+\end{center}
+
+\cite{promptArxiv} Dále se zjišťujeme, že mnoho prací se zabývalo využíváním promptu pro zvýšení výkonnosti modelu Whisper, ať se jednalo o změnu stylu přepisu (z tradiční čínštiny na jednoduchou), přepis textu písně či rozpoznání dialektu.
+
+Zároveň se ukazuje, že i prompt s nesprávnými, či poškozenými, informacemi může mít pozitivní dopad na kvalitu přepisu. To vede k přesvědčení, že v otázce porozumění promptu modelem Whisper není k dispozici jednoznačná odpověď, protože zlepšení jeho výkonnosti nutně neimplikuje porozumění promptu (pokud by kvalita a správnost promptu úměrně ovlivňovala výstup modelu, pak by se s největší pravděpodobností jednalo o situaci, kdy by skutečně Whisper rozuměl promptu). 
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/prompt_whisper.png}
+    \caption{Skladba vstupu dekodéru modelu Whisper, převzato z \cite{radford2022robustspeechrecognitionlargescale}}
+    \label{fig:prompt-whisper}
+\end{figure}
+
+\cite{mediumPromptEngineering} Pro Whisper model má prompt formu doplňujících informací, které vstupují přímo do dekodéru. Jak je ukázáno na obrázku \ref{fig:prompt-whisper}, dekodér Whisperu akceptuje tři hlavní skupiny tokenů. Ta první je označena jako \textit{previous text tokens}, a odpovídá těm, které zastupují prompt. Druhá dává modelu údaje o požadované činnosti (transcribe, translate,...) a jazyku, týkající se vstupního audia. Třetí předaná informace, využívaná zpravidla při trénování, obsahuje přepis vstupních dat, který se má model za úkol naučit. K tomuto přepisu je možné přidat tokeny časových značek, které napomáhají modelu přesně určit místa v audio nahrávce, ke kterým se jednotlivé přepisy vážou.
+
+Vstupní sekvence tokenů při trénování a využití promptu tedy může mít následující formu:
+\begin{verbatim}
+    <|startofprev|> air france one zero eight zulu
+    <|startoftranscript|><|notimestamps|><|en|><|transcribe|> 
+    air france one zero eight zulu standby now descend 
+    to descend flight level seven zero air france one zero eight zulu
+    <|endoftext|>
+\end{verbatim}
+V ní token \verb=<|startofprev|>= uvozuje prompt, sekvence tokenů \\ \[\verb=<|startoftranscript|><|notimestamps|><|en|><|transcribe|>=\] označuje začínající přepis a určuje modelu způsob práce se vstupem, přičemž následují tokeny chtěného přepisu dat, zakončené tokenem \verb=<|endoftext|>=, který celý řetězec uzavírá. Takto vytvořený blok dat vstupuje do dekodéru, kde je zpracováván.
+
+Podle oficiálního příspěvku na stránce github\footnote{https://github.com/openai/whisper/discussions/117}, týkající se přímo modelu Whisper, je k dispozici vysvětlení týkající se \textbf{promptu} a \textbf{prefixu}:
+\begin{itemize}
+    \item \textbf{prompt} - Jedná se, jak již bylo řečeno, o část označenou v obrázku \ref{fig:prompt-whisper} jako \textit{previous text tokens}. Její první možnou úlohou je poskytnout modelu kontext z dříve přepsaných dat. Whisper může najednou akceptovat pouze třiceti vteřinové audio a proto je nezbytné při přepisech delšího audia poskytnout kontext daného rámce, čímž můžeme rozumět přímo přepsaná data v předchozím rámci. 
+    
+    Druhým využitím může být předání slov v promptu, která pomohou modelu dosáhnout požadovaného stylu přepisu, či umožní modelu správně přepsat ta slova z promluvy, která se s těmi předanými shodují.
+    \item \textbf{prefix} - Týká se části označené na obrázku \ref{fig:prompt-whisper} jako \textit{time-aligned transcription}. Autor příspěvku poukazuje na možnost \textit{živého} přepisu dlouhých promluv (představit si můžeme rozhovory v televizi, reportáže,...). Pro tento účel je právě možné předat dekodéru časovými značkami označené přepisy části promluvy, která je modelu předána. Tím by mělo dojít k zajištění udržení kontextu přepisu a zlepšení jeho celkové kvality.  
+\end{itemize}
+
+V této práci se využívá promptu jako přídavné informace, která obsahuje (nebo měla by obsahovat) údaje, které se v datech vyskytují, a tím dosáhnout kvalitnějšího přepisu. V našem případě se bude jednat o prompty obsahující volací znaky jednotlivých letadel. Příprava těchto promptů je popsána v kapitole Příprava dat (\ref{atco2-final-prepare+prompt}).
+
+
+
+\subsection{Verze Whisperu}
+Vytvořeno bylo více verzí modelu Whisper, které se liší počtem parametrů, což je důsledkem různého počtu hlav, vrstev a jejich šířek. Ze všech vytvořených verzí je nejpoužívanější \textit{Medium} se 769 miliony parametrů. Verze Small (a dále všechny menší) je se svými 244 milionů parametrů příliš malá pro lepší výsledky, což lze pozorovat v~oficiálním článku \cite{radford2022robustspeechrecognitionlargescale}. Verze Large je pak dvojnásobná počtem parametrů (1550 milionu) proti Medium, ale její výsledky, kterých dosáhla na různých datasetech ať už v~přepisu nebo překladu, již nejsou o mnoho lepší. Proto je v~této práci pro finetuning použita zmíněná verze Medium. Její trénování proběhlo také v~jiné práci na podobné téma, která rovněž vznikla na fakultě FIT VUT \cite{Nevarilova2024thesis}. 
+
+
+
+
+\section{Neuronové sítě}
+Neuronové sítě prošly dlouhým vývojem - ve druhé polovině dvacátého století začaly vznikat první koncepty. Její základní variantou je $0\dots{n}$ po sobě jdoucích vrstev, kde každá má $0\dots{n}$ neuronů. Každý neuron každé vrstvy je propojen s~každým neuronem z~vrstvy předcházející i následující pomocí hran, které mají váhy. Data jsou následně vkládána na první vrstvu a procházejí celou sítí. Trénování poté probíhá skrz upravování vah podle požadované formy výstupu neuronové sítě. Je možné využít variabilní algoritmy pro učení sítí - společný základ většiny z~nich spočívá v~matematické aplikaci gradientního sestupu (Gradient Descent). S dostatečným množstvím neuronů a díky aktivačním funkcím každé vrstvy, které jsou zpravidla funkcemi nelineárními, je možné síť učit velmi složité vzory.
+
+Výše zmíněná architektura a princip učení, takzvaná \textit{backpropagation}, je využit u řady forem neuronových sítí, mezi které patří mimo jiné:
+\begin{itemize}
+    \item hluboké (DNN - Deep Neural Networks) - mají mnoho vrstev neuronů,
+    \item konvoluční (CNN - Convolutional Neural Networks) - jejich využití se naskýtá zpravidla u zpracování obrazu. Základním stavebním kamenem je konvoluční jádro, díky němuž je možné zpracovávat více hodnot ze vstupu zároveň,
+    \item rekurentní (RNN - Recurrent Neural Networks) - pro tyto sítě je charakteristická zpětná vazba mezi neurony jednotlivých vrstev. Tím je umožněno udržet kontext mezi výstupy sítě, což je žádaná vlastnost pro jazykové modely. Z jejich základu vycházejí, v~následující sekci \ref{section:transformery} zmíněné, transformery. 
+\end{itemize}
+
+Existuje mnoho dalších modifikací a variant neuronových sítí, ty ale nejsou pro tuto práci podstatné.
+
+\subsection{Loss funkce}
+Pro vyhodnocení výkonu neuronové sítě během učení je nutné použít vhodnou metriku, která porovná referenční a predikované hodnoty. Různé loss funkce jsou vhodné pro různé účely, přičemž mezi známé patří:
+\begin{itemize}
+    \item Střední kvadratická chyba (MSE - Mean Square Error)  - vhodné pro regresní účely,
+    \item Křížová entropie (Cross-Entropy) - vhodná například ke klasifikaci (například obrázků). Měří odlišnost predikovaného a referenčního rozdělení pravděpodobnosti. V této práci navíc tato funkce figuruje jako loss pro model Whisper, protože je vhodná a široce používaná právě při trénování takzvaných \textit{sequence-to-sequence} modelů na klasifikačních úlohách \cite{Gandhi_2022}. Její formule \ref{eq:cross-entropy} vypadá následovně:
+    \begin{equation}
+        \label{eq:cross-entropy}
+        \text{Cross-Entropy Loss} = - \sum_{t} y_t \log(\hat{y}_t)
+    \end{equation}
+    
+    kde
+        \begin{itemize}
+            \item $\hat{y}_t$ představuje referenční třídu, do které měla být data (či \textit{token}, v~případě této práce) klasifikována
+            \item $y_t$ je predikovaná pravděpodobnost klasifikace dat do třídy $t$
+        \end{itemize}
+\end{itemize}
+
+\section{Transformery}\label{section:transformery} 
+Architektura tranformerů změnila naprosto přístup ke zpracování jazyka. Na rozdíl od N-gramových a mnoha jiných modelů již nebylo vyžadováno mít extrahované správné informace z~poskytnutých dat, místo toho stačilo předat surová data.
+
+Transformer definujeme jako neuronovou síť se specifickou strukturou, kterou bychom mohli přirovnat k~rekurentním sítím (RNN), které se vyznačují zpětnými vazbami mezi neurony jednotlivých vrstev. Mechanismus, na kterém je založen transformer, se jmenuje \textbf{self-attention} nebo \textbf{multi-head attention} (historicky vyvinuté právě z~RNN).
+
+Pod pojmem \textbf{attention} myslíme způsob, jakým jsme schopni kontextově reprezentovat význam \textit{tokenů} díky udržení pozornosti na okolní tokeny. V~důsledku je potom modelu umožněno naučit se vazby mezi jednotlivými tokeny.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.8\linewidth]{figures/transformer_basic.png}
+    \label{fig:transformer-basic}
+    \caption{Obecná architektura transformeru, převzato z \cite{NLPbasic}.}
+\end{figure}
+
+\subsection{Skladba}
+Obrázek \ref{fig:transformer-basic} ukazuje obecnou strukturu transfomeru, která se skládá ze tří hlavních komponent: \textbf{bloky}, \textbf{input encoding} (komponenta pro kódování vstupu) a \textbf{language modeling head} (dále \textit{hlava}).
+
+Blok je složen z~vícevrstvé sítě, která obsahuje \textbf{multi-head attention} vrstvu, dopředné sítě a normalizační síť. Několik těchto bloků (obvykle 12 a více) tvoří jeden \textit{sloupec}. Každý blok mapuje vstupní vektor $x_{i}$, odpovídající sloupci $i$, na výstupní vektor $h_{i}$. Soubor $n$ bloků pak mapuje vstupní kontextové okno vstupních vektorů $(x_{1},x_{n})$ na výstupní vektory $(h_{1},\dots,h_{n})$ stejné délky.
+
+Před sloupcem bloků se nachází \textit{komponenta pro zpracování vstupu}, která převede vstupní token (například slovo \textit{děkuji}) na reprezentaci kontextového vektoru. K~tomu se používá \textit{embedding} matice E a mechanismus pro zakódování pozice daného tokenu.
+
+Za každým sloupcem se nachází \textit{hlava}, která zpracovává embedding vektor, který je výstupem posledního bloku v~daném sloupci. Na něj aplikuje \textit{unembedding} matici U a následně funkci \textit{softmax}. 
+\begin{equation}
+    \label{softmax1}
+    softmax(u_{j})=\frac{e^{u_{j}}}{\sum_{i}e^{u_{i}}}
+\end{equation}
+
+\subsection{Attention logika}
+Jak bylo řečeno výše, jednotlivé tokeny jsou zpracovávány se znalostí kontextu okolních tokenů. Toho je dosaženo za použití matic, obsažených v~attention hlavě:
+\begin{itemize}
+    \item \textbf{Query} matice - zjišťuje vztah aktuálního elementu k~předešlým vstupům.
+    \item \textbf{Key} matice - určuje podobnostní váhy předešlého vstupu k~aktuálnímu elementu.
+    \item \textbf{Value} matice - váhuje a sčítá hodnoty předcházejících prvků pro výpočet výstupu aktuálního prvku.
+\end{itemize}
+
+
+
+\chapter{Příprava dat, evaluace a prostředí}
+
+\section{Datasety}
+\subsection{Popis dat}
+Data, použitá v~této práci, byla obdržena od vedoucího práce. Jsou získána z~různých zdrojů a jejich struktura je velmi různorodá. Z~toho důvodu bylo potřeba každý dataset zpracovat zvlášť. K~dispozici pro trénování bylo získáno celkem sedm datasetů, z~nichž dva byly bez přepisů. Zbylé ze sedmi datasetů obsahovaly jednak \textit{wav} soubory, jednak jednotlivé přepisy - ty ovšem vždy v~odlišných formátech. Vzhledem k~nejednoznačnosti souborů s~přepisy, jejichž obsah navíc mohl být často rozšířen o další informace, získané z~přiložených souborů, bylo nutné vytvořit pro každý dataset speciální skript pro převedení transkriptů do formátů, které jsou požadovány jako vstup pro trénovací skript modelu Whisper. Z~této formy byla následně vytvořeny datasety, které bylo snadné načíst během trénování. Příklad požadovaného formátu dat je následný:
+\begin{lstlisting}[breaklines]
+{
+    "audio": {
+        "path": "/path/to/audio/LKPR_RUZYNE_Radar_120_520MHz_20201026_161349.wav",
+        "array": array([0.00000000e+00, 0.00000000e+00, ..., -5.18798828e-04]),
+        "sampling_rate": 16000
+    },
+    "full_ts": "Radar CSA One Delta Zulu established\nCSA One Delta Zulu roger contact Ruzyne Tower one three four decimal five six zero\n\nthree four five six zero CSA One Delta Zulu  pekny den",
+    "short_ts": "Radar CSA 1DZ established\nCSA 1DZ roger contact Ruzyne Tower 134.560\n\n34560 CSA 1DZ pekny den"
+}
+\end{lstlisting}
+
+Celkem tvoří použitelná část všech dat dohromady pro testování a trénování přes \textbf{36~hodin}.
+
+V následujících sekcích jsou popsány odlišnosti a specifika jednotlivých datasetů. Názvy odpovídají pojmenováním složek, ve kterých byla data obdržena. Nutno poznamenat, že nebylo možné z~osobních zkušeností ověřovat pravost přepisů, a zpravidla tedy nebyly ani jiným způsobem zdokonalovány. 
+
+Největší dataset, v dodané formě pod názvem DATA-BINS, zatím nebyl použit z~důvodu absence přepisů. Jeho využití je naplánováno pro potenciální učení bez dozoru. Druhá varianta jeho použití je pro učení s dozorem, což by bylo umožněno po vygenerování transkripcí pro tento dataset natrénovaným modelem na již kompletních datech pro trénování.  
+
+\subsection{Obecná úprava datasetů}\label{ts-enhance}
+Jednotlivé přepisy u jednotlivých datasetů nejsou vždy v~žádané podobě. Především se jedná o zajištění takzvané \textit{plné} a \textit{zkrácené} formy přepisu. Tím je myšleno následující: pokud je v~náhravce vyslovena věta \textit{"Oscar Kilo Papa Mike Bravo descend flight level one hundred"}, je toto zároveň její plná forma, zatímco zkrácená bude mít tvar \textit{"OKPMB descend flight level 100"}. Každá z~těchto forem bude následně sloužit pro trénování jiného modelu (kdy každý z~nich bude přepisovat letecké promluvy na tu danou formu).
+
+Prvním stupněm tedy bylo zajištění, že extrahovaný přepis bude v~korektní plné formě. To vyžadovalo, aby žádná jeho část nebyla zkrácená. Tedy například nesmělo dojít ke stavu uložení plné formy ve tvaru \textit{"\textbf{Oscar} KPM \textbf{Bravo} descend flight level 1 \textbf{hundred}"}. Takové chyby by totiž nutně vedly ke zmatení modelu během trénování. Další nezbytností bylo odstranění speciálních značek z~přepisu, které sloužily pro označení různých specifických částí promluvy. Například se jednalo o části obsahující volací značky (\textbf{callsign}), nebo části s~numerickou hodnotou. 
+
+Druhý stupeň přepisu byl věnován zkracování plné formy. K~tomu byl ručně vytvořen slovník číslovek a slov letecké abecedy i s~variantami případných překlepů, tedy slovník obsahoval více klíčů pro jedno písmeno. Jeho forma byla následující:
+\begin{verbatim}
+{
+    "alpha": "A", "alfa": "A", "bravo": "B", "charlie": "C", "charly":"C"
+}
+\end{verbatim}
+Pro nalézání podobností slov ve zkracovaném textu s~klíči tohoto slovníku byla využita knihovna RapidFuzz\footnote{https://github.com/rapidfuzz/RapidFuzz}. Zároveň bylo využíváno \textit{tagů} v~poskytnutých přepisech, díky čemuž mohla být lépe přepisována slova v~částech označených například jako \textit{callsign} nebo \textit{value}.
+
+\subsection{A-PiMod}
+Dataset neobsahoval přímé přepisy, pouze dva wav soubory, které obsahovaly větší množství promluv. Při částečném zjišťování obsahu wav souborů se ukázalo, že se jejich obsah překrývá, a proto byl pro trénování využit pouze větší z~nich. Protože soubor byl příliš velký, bylo nutné jej nastříhat, což bylo provedeno triviálně podle úrovně hlasitosti nahrávky. Celkem bylo použitelných 13 minut a 29 vteřin čisté řeči v~105 promluvách. 
+
+Kvůli absenci přepisů bylo rozhodnuto využít již dříve (bakalářská práce na FIT VUT\footnote{https://huggingface.co/BUT-FIT/whisper-ATC-czech-full}) natrénovaného modelu Whisper pro jejich získání. Nicméně kvalita byla velmi nízká, což bylo způsobeno zřejmě uzpůsobením použitého modelu především na český jazyk. 
+
+Z následně vzniklého datasetu nebyla žádným způsobem vydělena testovací sada a celý obsah byl ponechán pro trénování s~cílem zvýšit základnu dat (i přes nepřesnost přepisů).
+
+\subsection{ATCO2}
+Tento dataset byl vytvořen rovněž z~leteckých dat, ovšem na rozdíl od zbylých datasetů obsahuje více souborů pro detailnější rozbor letecké nahrávky. Jednotlivé přepisy byly získané od lidí a zároveň je k~dispozici automatický přepis (který zde ovšem nebyl použit). Celá datová sada je rozdělena na dvě hlavní části - DATA\_nonEN a DATA. První ze zmíněných je složena převážně z~neanglický dat, zatímco druhá obsahuje cizojazyčná data, především angličtinu a mimořádně jiné jazyky.
+
+Každý \textit{wav} soubor je v~popisovém souboru, příslušném dané nahrávce, rozdělen do segmentů. Každý segment pak obsahuje především přepis, začátek a konec nahrávky, informaci zda je nahrávka v~anglickém jazyce. Můžeme nalézt \textit{tagy} s~dalšími údaji, ty již ale nebyly použity při vytváření cílových datasetů. Jeden wav soubor odpovídá jednomu kontextově souvislému dialogu. Níže je ukázka struktury popisového souboru:
+
+\begin{verbatim}
+<data>
+<segment>
+    <start>0</start>                                                                
+    <end>3.77</end>                                                                 
+    <speaker>A</speaker>                                                            
+    <speaker_label>ATCO2 radar</speaker_label>                                       
+    <text>Oscar Kilo Papa Mike Bravo descend flight level one hundred</text>         
+    <tags>
+        <correct>0</correct>
+        <correct_transcript>1</correct_transcript>
+        <correct_tagging>0</correct_tagging>
+        <non_english>0</non_english>
+    </tags>
+</segment>
+\end{verbatim}
+
+Několik nahrávek muselo projít střihem, protože jejich délka přesahovala 30 vteřin.
+
+Mezi soubory s přídavnými informacemi, existujícími pro většinu nahrávek, patří i seznam předpokládaných leteckých značek (které se vyslovují tak, jak jsou psány, přičemž často jimi nejsou běžná slova) a volacích znaků, které by se mohly vyskytovat v daném komunikačním záznamu. Toto bude využito pro vyzkoušení trénování za pomoci \textit{promptu}, tedy množiny slov, která se hypoteticky mohou v řeči vyskytovat. Zároveň jsou \textit{callsigny} v dodaných seznamech spjaty s konkrétní značkou letecké společnosti, což je využito při vytváření korektních zkrácených přepisů.
+
+\subsubsection*{Rozdělení}
+Složky DATA a DATA\_nonEN byly rozděleny na čistě anglická data a ostatní podle tagu \textit{non\_english}, obsaženém v~popisových souborech každé nahrávky. V~případě, že se v~různých segmentech jedné nahrávky neshodovalo označení jazyka, bylo jeho určení rozhodující většinové zastoupení.
+
+Následovalo nezbytné rozdělení nahrávek na testovací a trénovací sadu (jelikož oficiální rozdělení zde chybělo). Pro \textbf{anglická data} byla zvolena následující strategie: pro testovací sadu byly vybrány nahrávky z~letiště \textbf{Zurich} a téměř $60 \%$ nahrávek pro letiště \textbf{Ruzyně} a \textbf{Štefánik}. Zbytek nahrávek byl použit pro trénování. Toto dělení mělo za úkol poskytnout představu o tom, jak dobře bude model pracovat na nahrávkách, jejichž podmínky při trénování neviděl a na druhou stranu jestli dojde ke zlepšení přepisů v~případě druhých dvou letišť, jejichž nahrávací podmínky (případně i samotné letce či řídící) měl možnost vidět v~trénovací sadě.
+
+Cizojazyčných dat bylo signifikantně méně. Obsaženo bylo 125 promluv ve francouzštině a následně dalších 40 v~jiných jazycích (mezi nimi figurovala zejména čeština). Rozhodnuto bylo vytvořit z~nich \textbf{dvě testovací sady}, z~nichž jedna byla složena z~33 francouzských nahrávek, a druhá ze 40 nahrávek v~jiných jazycích. Jako trénovací sada bylo použito 92 nahrávek opět ve francouzštině. Z~tohoto rozdělení je očekáváno, že bude možné zjistit, jak se model zvládl naučit francouzsky a poté šitě pro orientaci jak si poradí s~jazyky, které pravděpodobně vůbec nemohl vidět během trénování (ani v~jiných datasetech). 
+
+V tabulce \ref{tab:ATCO2_split} níže je přehledně uvedeno rozdělení datasetu ATCO2 na trénovací a testovací sady:
+
+\renewcommand{\arraystretch}{1.5}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|>{\columncolor[gray]{0.9}}l|c|c|}
+\hline
+\rowcolor{gray!30} 
+\textbf{Rozdělení}                 & \textbf{Počet nahrávek} & \textbf{Čas} \\ \hline
+\textbf{FR Train}                & 92                   & 00:10:18                 \\ \hline
+\textbf{FR Test}                 & 33                   & 00:03:39                 \\ \hline
+\textbf{Jiné jazyky Test}         & 40                   & 00:05:02                 \\ \hline
+\textbf{EN Train}                & 1579                 & 03:00:08                 \\ \hline
+\textbf{EN Ruzyne Test}          & 70                   & 00:11:58                 \\ \hline
+\textbf{EN Štefánik Test}        & 53                   & 00:10:29                 \\ \hline
+\textbf{EN Zurich Test}          & 412                  & 00:49:56                 \\ \hline
+\textbf{Celkem}          & 2279                  & 04:21:30                 \\ \hline
+\end{tabular}
+\caption{Tabulka rozdělení datové sady ATCO2}
+\label{tab:ATCO2_split}
+\end{table}
+
+\subsection{HIWIRE}
+Tento dataset je produktem projektu IST-EU STREP HIWIRE. Nebyl poskytnut v~celé velikosti, chyběla zastoupení některých jazyků, popsaných v~dokumentaci k~této datové sadě. 
+
+Zpracovány byly promluvy několika desítek mluvčích z~Francie, Řecka a Španělska (chyběla Itálie). Promluvy byly vždy v~angličtině, pronášeny nerodilými mluvčími. Nejedná se o reálně vedené promluvy mezi letcem a věží. Jednotlivé nahrávky pocházejí ze studia (použití mikrofonu pro \textit{blízkou mluvu}) a následně k~nim byl přidán šum ve třech různých úrovních. Tento šum byl nahrán v~kokpitu letadla Boeing 737 během běžné cesty letadla. Pro tuto práci bylo rovněž umožněno pracovat pouze s~přidanou nízkou hladinou šumu, což způsobuje snadnou srozumitelnost řeči. Přesto by měla data posloužit nejméně pro naučení formy letecké komunikace.
+
+Přepisy všech nahrávek jsou umístěny v~jediném souboru, ze kterého je bylo nutno extrahovat pomocí regulárního výrazu. Zároveň byly přiloženy žádné doplňující informace, a tedy zkrácený přepis byl vytvořen pouze na základě čistého plného přepisu. Všechny nahrávky měli délku pod 30 vteřin, a tedy nebylo nutné dělat žádné úpravy.
+
+\subsubsection*{Rozdělení}
+V datasetu neexistovalo explicitní rozdělení na trénovací a testovací sadu. Vzhledem k~přesně uvedeným informacím o pohlaví řečníka u každé nahrávky, rozdělení dat reflektuje jak pohlaví tak jazyk. V~tabulce \ref{tab:hiwire_split} je výsledek rozdělení (s počty nahrávek) na tři testovací sady (pro detailní informaci o úspěšnosti trénování) a jednu trénovací sadu:
+
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.5} % Adjust row height
+    \begin{tabular}{|>{\columncolor[gray]{0.9}}l|c|c|}
+        \hline
+        \rowcolor{gray!30} 
+        \textbf{Rozdělení} & \textbf{Počet nahrávek}   & \textbf{Čas}                \\ \hline
+        \textbf{Test}  & FR: 800 (4 muži, 4 ženy) & 00:32:05                \\ \cline{2-2}
+                       & GR: 400 (2 muži, 2 ženy) & 00:28:41              \\ \cline{2-2}
+                       & SP: 300 (2 muži, 1 žena)  & 00:13:06                               \\ \hline
+        \textbf{Train} & FR: 2300, GR: 1033, SP: 699 & 03:18:19           \\ \hline
+        \textbf{Celkem}   & 5532 wav souborů     & 04:32:11              \\ \hline
+    \end{tabular}
+    \caption{Tabulka rozdělení datové sady HIWIRE}
+    \label{tab:hiwire_split}
+\end{table}
+
+\subsection{MALORCA}
+Tento dataset obsahoval opět reálná data komunikace mezi letcem a věží. Transkripty byly prováděny profesionály a celý dataset je již rozdělen na trénovací a testovací sadu, díky čemuž již nebylo nutné toto rozdělení vytvářet. Existuje ještě přidaná část dat, ke kterým byly dodány pouze automatické přepisy, a proto nebyla v~této části práce použita.
+
+Jednotlivé nahrávky jsou samostatnými promluvami buď letců, nebo řídících na věži. Ke každé nahrávce je poskytnut soubor s~plným přepisem textu a soubor, ve kterém je tento plný přepis doplněn značkami udávajícím význam částí promluvy. Tento soubor byl opět využit při vytváření zkrácených přepisů.
+
+Níže je opět uvedeno v~tabulce \ref{tab:malorca_split} rozdělení na trénovací a testovací sadu s~počty nahrávek:
+
+\begin{table}[h!]
+    \centering
+    \renewcommand{\arraystretch}{1.5} % Adjust row height
+    \begin{tabular}{|>{\columncolor[gray]{0.9}}l|c|c|}
+        \hline
+        \rowcolor{gray!30} 
+        \textbf{Rozdělení} & \textbf{Počet nahrávek}   & \textbf{Čas} \\ \hline
+        \textbf{Test}  & 1557                          & 01:55:33 \\ \hline
+        \textbf{Train} & 6335                          & 07:56:45 \\ \hline
+        \textbf{Celkem}   & 7892 wav souborů           & 09:52:18 \\ \hline
+    \end{tabular}
+    \caption{Tabulka rozdělení datové sady MALORCA}
+    \label{tab:malorca_split}
+\end{table}
+
+\subsection{NATO}
+Tento dataset byl vyvinut výzkumnou skupinou NATO pro technologii řeči a jazyka s~cílem poskytnout vojensky orientovanou databázi pro studium zpracování vícejazyčné a nerodilé řeči. Data byla nahrána během vojenského námořního cvičení ve čtyřech zemích a obsahují výhradně anglické promluvy. Zeměmi, ve kterých se nahrávalo, jsou: Kanada, Německo, Nizozemsko a Velká Británie. Nahrávky jsou také rozřazeny právě podle těchto zemí, čehož je následně využito pro lepší rozdělení dat. 
+
+Jednotlivé nahrávky jsou relativně dlouhými časovými úseky, a bylo nutné je nastříhat, což bylo možné díky dodaným časovým značkám u každé promluvy. Časové úseky s~delšími promluvami, než 30 vteřin, byly zahozeny. Ke každému wav souboru patří jeden soubor s~přepisy, přičemž ten je opatřen volacími značkami mluvčích, kteří v~dané nahrávce promlouvají. Zároveň se identifikace daných mluvčích nacházejí u každé promluvy - bylo pouze nutné spárovat tyto identifikační značky s~volacími znaky uvedených v~úvodu. 
+
+\subsubsection*{Rozdělení}
+Díky identifikaci jednotlivých mluvčích v~souborech s~přepisy je možné zajistit, aby se mluvčí neopakovali v~trénovací a testovací sadě. Zároveň je zajištěna přibližně stejná množství jak mužských tak ženských promluv v~testovací sadě. U trénovací sady tomu tak není, protože celkově je zastoupení ženských a mužských mluvčích velmi rozdílné. Data z~Německa obsahovala pouze mužské promluvy. V~tomto případě bylo rozhodnuto spojit všechny uvedené země do jedné trénovací a testovací sady. V~tabulce \ref{tab:nato_split} je toto rozdělení uvedeno spolu s~detailní informací o zastoupení jednotlivých zemí.
+
+\renewcommand{\arraystretch}{1.5} % Adjust row height for better spacing
+\begin{table}[ht]
+\centering
+\begin{tabular}{|>{\columncolor[gray]{0.9}}l|c|c|}
+\hline
+\rowcolor{gray!30} 
+\textbf{Rozdělení podle země}       & \textbf{Počet promluv} & \textbf{Čas} \\ \hline
+\textbf{UK Test}       & 98                   & 00:15:02                 \\ \hline
+\textbf{UK Train}      & 259                  & 00:37:53                 \\ \hline
+\textbf{CA Test}       & 237                  & 00:30:36                 \\ \hline
+\textbf{CA Train}      & 614                  & 01:15:52                 \\ \hline
+\textbf{NL Test}       & 97                   & 00:19:02                 \\ \hline
+\textbf{NL Train}      & 272                  & 00:37:21                 \\ \hline
+\textbf{DE Test}       & 60                   & 00:06:41                 \\ \hline
+\textbf{DE Train}      & 228                  & 00:21:14                 \\ \hline
+\textbf{Celkem}      & 1865                  & 04:03:41                 \\ \hline
+\end{tabular}
+\caption{Rozdělení trénovací a testovací sady podle zemí datasetu NATO}
+\label{tab:nato_split}
+\end{table}
+
+\subsection{UWB}
+Tento dataset byl opět dodán bez rozdělení na trénovací a testovací sadu. Obsahuje reálné nahrávky komunikace mezi věží a letcem a přepisy byly získány manuálně s~informací o řečnících v~podobě značek v~přepisech (ovšem bez specifikace, tedy lze pouze rozeznat, zda mluví věž nebo pilot).
+Kromě těchto tagů se v~přepisech vyskytují i mnohé další, označující například nesrozumitelnou část, jazyk konkrétní části nebo označení šumu. V~kulatých závorkách je potom občas uvedena výslovnost nějakého slova, a před nimi se nachází slovo přepsané. 
+
+Žádná z~výše zmíněných značek nebyla využita při extrakci plných přepisů a tedy je bylo nutné regulárním výrazem odstranit. Problém při zpracování činil fakt, že jednotlivé transkripce obsahovaly jak zkrácený zápis některých slov, tak jejich plnou formu. Níže je uveden jeden takový případ, kdy se v~textu vyskytují jak číslice a písmena, která zjevně pocházejí z~vyslovovaných slov letecké abecedy, tak číslovky ve svých plných tvarech (včetně slova \textit{thousand}): 
+\begin{verbatim} 
+    Shamrock 6 7 X keep rate of climb one thousand or more [noise]
+\end{verbatim}
+
+Tedy, jak bylo zmíněno v~sekci Zdokonalení přepisu\ref{ts-enhance}, bylo nezbytné v~první fázi převést transkripce na korektní plné formy, a následně z~nich vytvořit formy zkrácené.
+
+\subsubsection*{Rozdělení}
+V souboru s~přepisy nahrávek se rovněž vyskytují časové značky, a protože jednotlivé nahrávky obsahují celé dialogy mezi letcem a věží a jsou příliš dlouhé, bylo nezbytné je nastříhat.
+Rozdělení nastříhaných nahrávek na testovací a trénovací sadu bylo provedeno dle celkového počtu promluv patřících k~jednotlivým dialogům (kdy dialog patřil jednomu souboru). Vytvořena byla jedna trénovací a jedna testovací sada.
+
+V tabulce \ref{tab:uwb_split} lze vidět rozdělení s~celkovými počty jednotlivých promluv:
+
+\renewcommand{\arraystretch}{1.5} % Adjust row height for better spacing
+\begin{table}[ht]
+\centering
+\begin{tabular}{|>{\columncolor[gray]{0.9}}l|c|c|}
+\hline
+\rowcolor{gray!30} 
+\textbf{Rozdělení}   & \textbf{Počet souborů} & \textbf{Čas} \\ \hline
+\textbf{Train}     & 10536              & 09:26:11                 \\ \hline
+\textbf{Test}      & 3899                & 03:44:25                 \\ \hline
+\textbf{Celkem}      & 14435               & 10:10:36                 \\ \hline
+\end{tabular}
+\caption{Počty nahrávek pro trénovací a testovací sadu datasetu UWB}
+\label{tab:uwb_split}
+\end{table}
+
+
+
+\subsection{Úprava datasetu ATCO2 pro trénování související s využitím promptu} \label{atco2-final-prepare+prompt}
+Tato úprava dat byla využita pro finální natrénování modelů souvisejících s promptem - jedná se o kapitoly Finetuning II., III. ,IV. a V.
+
+Cílem této práce je především vyzkoušet dopad promptu na přepis, nikoli učit model normalizovat text. Z toho důvodu, a také pro zajištění celkové konzistence dat, bylo rozhodnuto nahradit v přepisech veškerá velká písmena malými -- tedy zavedení formy tzv. \textit{lower-case}. Tento krok vedl ke snížení chybovosti modelů popsaných v kapitole Finetuning I. Případná potřeba \textit{true-case} formy by mohla být případně snadno získána využitím jiného modelu, který by takovou konverzi z \textit{lower-case} formy prováděl.
+
+\subsubsection*{Doplnění označení volacích znaků}
+V testovací i trénovací sadě se vyskytovalo mnoho přepisů, ve kterých nebyl označen žádný volací znak. Proto bylo rozhodnuto, že se do jednotlivých souborů ručně doplní značky, označující volací znak, pokud ten bude v souboru obsažen. Tím měla být zajištěna větší relevantnost výsledků testujících dopad promptu (v následujících kapitolách), protože ten se v této práci zaměřuje právě na volací znaky. Přehled volacích znaků před a po doplnění je ukázán v tabulce \ref{tab:callsigs_fill_stats}:
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|>{\columncolor[gray]{0.9}}l|c|c|}
+        \hline
+        \rowcolor{gray!30} 
+        \textbf{Název datasetu}     & \multicolumn{2}{c}{\textbf{Počet volacích znaků}} \\
+                                    &  \textbf{Před doplněním}   & \textbf{Po doplnění} \\ \hline
+        \textbf{Ruzyně}             & 77                 & 103                 \\ \hline
+        \textbf{Štefánik}           & 78                  & 94                 \\ \hline
+        \textbf{Zurich}             & 508                 & 566                 \\ \hline
+        \textbf{Trénovací sada}     & 2213                 &  2352                \\ \hline
+    \end{tabular}
+    \caption{Počty volacích znaků v jednotlivých subsetech ATCO2 před a po doplnění tagů označujících callsigny.}
+    \label{tab:callsigs_fill_stats}
+\end{table}
+
+\subsubsection*{Konstrukce promptu} \label{prompt_construction}
+Příprava promptu zahrnovala extrakci všech volacích znaků. Mimo ně byly extrahovány také čísla ranvejí, ovšem tyto hodnoty nakonec nebyly využity a celá práce se soustředila pouze na volací znaky.
+
+Protože byl použit pro finální trénování pouze dataset ATCO2, bylo možné získat všechny volací znaky v promluvách relativně snadno díky označeným místům v přepisech, kde se údaje vyskytovaly. Níže je k dispozici ukázka přepisu dat s označenými místy volacích znaků a dalších hodnot. Pouze zmiňme, že pozice v textu s tagy \verb|[#value]| označovaly různé detekované hodnoty, přičemž právě zde se mimo jiné nacházela výše zmíněná označení ranvejí.
+
+\begin{verbatim}
+    [#callsign]Air France One Zero Eight Zulu[/#callsign] [#unnamed]
+    standby now[/#unnamed] [#command]descend to[/#command] [hes] 
+    [#command]descend[/#command] [#value]flight level seven zero[/#value]
+\end{verbatim}
+
+Získané volací znaky pak byly převedeny do podoby s malými písmeny a rovněž zkráceny. Samotný proces zkracování volacích znaků obsahoval více kroků:
+\begin{enumerate}
+    \item \textbf{Vytvoření a načtení slovníků}: Pro správné zkrácení volacích znaků byly vytvořeny slovníky. Ze zdroje \cite{wikipedia2025airlinecodes} byl získán seznam ICAO\footnote{ICAO (celým názvem International Civil Aviation Organization) je organizace přidělující čtyřmístné kódy jednotlivým letištím a trojmístné kódy aerolinkám. V této práci se využívají trojmístné kódy, které figurují ve volacích znacích letadel.} kódů a volacích znaků jednotlivých leteckých společností. Slovník, vytvořený z těchto dat, měl následující podobu:
+    \begin{verbatim}
+        "ABAN": {
+            "icao": "ABE",
+            "airline": "Aban Air"
+        },
+    \end{verbatim}
+
+    V něm bylo následně umožněno vyhledávat podle jednotlivých volacích znaků. Obdobně byl vytvořen slovník, ve kterém na místě klíče figuroval přímo název aerolinky. 
+
+    Třetí slovník byl získán přímo ze souboru \textit{.info}, který byl jedinečný pro každou nahrávku. Ten obsahoval jednak volací znaky v plné formě, tak jejich zkrácenou formu. Obsaženy byly callsigny, které se mohly vyskytovat v dané nahrávce. Poslední, čtvrtý, slovník byl vytvořen spojením všech volacích znaků dostupných z info souborů patřících jednotlivým nahrávkám.
+
+    \item \textbf{Využití slovníků s celými volacími znaky}: Extrahované volací znaky z přepisů byly přímo použity jako klíče do třetího (popř. čtvrtého) slovníku. Aby byla minimalizována chybovost vyhledávání, způsobená například větším množstvím mezer, došlo vždy k použití funkce, která normalizovala vyhledávaný volací znak do podoby malých písmen bez mezer (do stejné formy byly analogicky převedeny všechny klíče všech slovníků). Pokud došlo ke shodě nějakého klíče s vyhledávaným řetězcem, byl rovnou získán zkrácený volací znak a proces zkracování byl ukončen.
+
+    \item \textbf{Využití slovníků s ICAO kódy a volacími znaky společností}: Protože každý callsign obsahoval vždy nějaké části z letecké abecedy, byly tyto zkráceny přímou substitucí. Zůstala tak povětšinou nějaká zkrácená část a druhá, obvykle obsahující název společnosti, nezkrácená. Ta byla opět použita jako klíč pro vyhledávání ve první dvou definovaných slovnících. Pokud byla nalezena shoda, nahradil ICAO kód danou část volacího znaku. Následně byl vrácen výsledný volací znak (ať úspěšně či neúspěšně zkrácen).
+    
+\end{enumerate}
+
+Finálním krokem byla konstrukce jednotlivých promptů, tedy informací předávaných modelu za účelem zdokonalení přepisu (více v kapitole \ref{prompt_finetuning}). Celkem bylo vytvořeno sedm verzí s různým poměrem reálně se vyskytujících volacích znaků v dané promluvě a těch, které v promluvě vyřčeny nebyly. Tato sedmice existovala ve verzi s plnými přepisy a zkrácenými. Níže je seznam vytvořených promptů:
+\begin{itemize}
+    \item Všechny správné\footnote{Správným volacím znakem rozumíme takový, který se v promluvě vyskytuje. Špatným potom takový, který v promluvě obsažen není.} volací znaky
+    \item Všechny správné a čtyři špatné volací znaky
+    \item Všechny správné a čtyřicet špatných volacích znaků
+    \item Všechny správné a padesát českých náhodných slov
+    \item Pět špatných volacích znaků
+    \item Čtyřicet špatných volacích znaků
+    \item Padesát českých náhodných slov
+\end{itemize}
+
+Nakonec byly ještě přidány ke každému záznamu informace o vyskytujících se volacích znacích v promluvě a počtu, kolikrát byly zastoupeny. Opět se tato informace vyskytovala pro zkrácenou i plnou formu callsignů.
+
+\subsubsection*{Formy volacích znaků}
+Promluvy, které dispečeři letových věží vedou s piloty by měly obsahovat volací znaky. Ty ovšem bývají občas samotnými mluvčími zkráceny. Toto zkracování má obvykle formu vypuštění nějakých částí volacího znaku. Takže namísto vysloveného \textit{"Hotel Bravo Zulu Hotel Yankee"} už zazní pouze \textit{"Hotel Yankee"}. Protože všechny podobné formy jsou v přepisech označeny pomocí tagů \textit{[\#callsign]}, má pak taková promluva zaregistrovaných více různých volacích znaků, které se potom vyhodnocují v odpověď na otázku kolik volacích znaků je správně přepsaných. 
+
+Při nahlížení výsledků této práce, kterých bylo dosaženo při práci s promptem, je nutné mít výše zmíněné upozornění na paměti, protože právě v promptu se potom vyskytuje více volacích znaků, označených za skutečně se vyskytující v promluvě, přičemž všechny tyto volací znaky jsou pouze různými vyslovenými formami jednoho a téhož znaku.
+
+\subsubsection*{Umělé vyjmutí volacích znaků z promptu}
+Při trénování za použití promptu si lze představit riziko, že si model \textbf{příliš zvykne} na existenci volacího znaku v této přídavné informaci, a mohl by tak zkolabovat, když mu nebude předán správný volací znak. To by bylo nežádoucí chování, pokud bychom jedním a týmž modelem nechávali přepisovat jakékoli promluvy. Z toho důvodu bylo rozhodnuto vyjmout z trénovací sady u pěti procent promluv jejich volací znaky z promptu. V kapitole Finetuning III. v sekci Experiment I. (\ref{finetuning3-experiment1}) jsou obsaženy výsledky testování bez promptu modelů, které byly na něj adaptovány.
+
+\subsubsection*{Statistiky výskytu volacích znaků}
+Základní informací pro vyhodnocování dopadu promptu na přepis jednotlivých promluv je procentuální výskyt callsignů v transkriptech. Protože uvádět tento údaj jenom v absolutních či jen relativních číslech by mohlo být zavádějící, je níže uvedena tabulka\ref{tab:atco2-testset-desc} s počty slov, počty písmen a procentuálním obsahem volacích znaků, přičemž při výpočtu byla využita délka textového řetězce.
+
+\renewcommand{\arraystretch}{1.5} % Adjust row height for better spacing
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|>{\columncolor[gray]{0.9}}p{5.5cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|p{1.8cm}|}
+        \hline
+        \rowcolor{gray!30} 
+        \textbf{Název sady}   & Ruzyně  & Štefánik &  Zurich & Trénovací sada \\ \hline
+        \textbf{Počet promluv\footnote{Počet promluv je zde roven počtu nahrávek v originálním datasetu. Rozdělené nahrávky kvůli délce, jak bylo výše v textu zmíněno, zde tedy spadají pod jednu nahrávku.}}                          & 50               & 53         & 412   & 1554               \\ \hline
+        \textbf{Celková délka promluv (s)\footnote{Během testování jsou tyto hodnoty použity pro vytvoření vážených loss a WER funkcí.}} & 718 & 629 & 2996 \\ \hline
+        \textbf{Celková délka textu bez vol. zn. (slova)} & 1774           & 1554       & 7948  & 28301                 \\ \hline
+        \textbf{Celková délka vol. zn. (slova)}         & 365              & 359        & 1989  & 8470                  \\ \hline
+        \textbf{Celková délka vol. zn. (znaky)}         & 2040             & 1997       & 11188 & 48012                 \\ \hline
+        \textbf{Procentuální obsah vol. zn. (znaky)}    & 19.86\%          & 21.84\%    & 24.61\% &   29.34\%  \\ \hline
+        \textbf{Celkový počet vol. zn. }            &  103 & 94 & 566 & 2352 \\ \hline
+    \end{tabular}
+    \caption{Statistiky týkající se počtu slov a poměru volacích znaků ke zbylému textu pro dataset ATCO2}
+    \label{tab:atco2-testset-desc}
+\end{table}
+
+\section{Prostředí}
+\subsection{Prostředí pro Finetuning I.}
+Trénování modelu Whisper vyžaduje silný výpočetní výkon, a proto v~úvahu přicházela na prvním místě služba Google Colab\footnote{https://colab.research.google.com/}. Ta je dostupná zdarma, ovšem výpočetní doba je omezena na 4 hodiny, což značně omezuje možnosti trénování. Druhou nevýhodou je potom omezená paměť RAM, v~tomto případě s~limitem 15 GB.
+
+Druhou možností bylo potom využití univerzitního clusteru, který bude využit v~hlavních fázích trénování v~této práci. Pro přípravu, zjišťování funkčnosti trénovacích skriptů a prvotní trénování bylo rozhodnuto využít výše zmíněnou službu Google Colab.
+
+Základ trénování tvořil volně dostupný skript\footnote{https://huggingface.co/blog/fine-tune-whisper} z~oficiálních stránek webu Huggingface\footnote{https://huggingface.co/}. V~něm je popsáno natrénování Whisperu pro jazyk hindštinu. Hlavní části skriptu jsou založeny na knihovnách \textbf{datasets} a \textbf{transformers}, které jsou opět dostupné na portálu Huggingface.
+
+V trénovacím skriptu figurují následující kroky:
+\begin{enumerate}
+    \item Načtení dat - ta jsou uložená po jednotlivých datasetech v~\textit{zip} souboru. K~jejich načtení je použita jednořádková funkce \verb|load_from_disk()|.
+    \item Načtení modelu - jako model, jak již bylo zmíněno výše, je použit \textbf{Whisper medium}. Z~něj jsou také vzaty zbylé dva nástroje \textbf{tokenizer a feature extractor}. V~této fázi může být načten i \textbf{checkpoint} z~předešlého trénování, čehož je v~případě využití služby Google Colab hojně využíváno, především kvůli tomu, že většina datasetů je příliš velkých, než aby na nich mohl být model natrénován při rozumném počtu epoch najednou.
+    \item Příprava dat - zde jsou získány \textit{tokeny} z~přepisů audia, a wav soubory jsou převedeny do vstupní podoby pro model. Poté je ze všech dat, zamýšlených k~trénování a testování vytvořen jeden celek, obsahující jednu trénovací a jednu testovací sadu.
+    \item Vytvoření třídy s~názvem \textbf{DataCollatorSpeechSeq2SeqWithPadding}. Vytvořená instance této třídy je následně použita instancí objektu \textbf{Trainer}. Jejím stěžejním úkolem je převedení získaných tokenů na pole o požadované délce přidáním \textit{padding} hodnot $-100$. Tyto hodnoty zajišťují, že při výpočtu loss funkce nebudou zahrnuty, což je nezbytné pro správný výpočet.
+    \item Vytvoření funkce \textbf{compute\_metrics} - slouží na místě evaluace. V~tomto skriptu je zásadně používaná metrika WER.
+    \item Definice argumentů pro trénování - v~rámci třídy \textbf{Seq2SeqTrainingArguments} lze manipulovat se všemi nezbytnými argumenty.
+    \item Vytvoření instance třídy \textbf{Seq2SeqTrainer} s~argumenty zadefinovanými dříve a spuštění trénování. Ve fázi spouštění trénování může být přidán parametr \\ \verb|resume_from_checkpoint|, který zajistí korektní pokračování tréninku modelu od místa, ve kterém byl uložen \textit{checkpoint}. To spočívá především v~načtení předchozího stavu \textit{optimizer} a modelu.
+\end{enumerate}
+
+\subsection{Prostředí pro Finetuning II.,III.,IV.}
+Pro trénování již byl využit školní výpočetní cluster. Všechny experimenty měly vždy alokovány zdroje s grafickou kartou o kapacitě paměti RAM 16GB, čemuž byl i podřízen hyperparametr \textit{batch size}. Díky vysoké kapacitě dočasného úložiště bylo možné nechat si ukládat \textit{checkpointy} během trénování, kde každý odpovídal stavu modelu po jedné dotrénované epoše. To umožnilo snazší testování a vybírání těch checkpointů, u kterých bylo dosaženo nejlepších výsledků.
+
+\subsection{Skripty}
+Z původního vzorového skriptu ve formě python notebook byl vytvořen nový trénovací skript, který usnadňoval načítání a parsování dat pro trénování. Zároveň skrz množství přepínačů bylo možné snadno určovat parametry trénování, jako typ přepisů (plný nebo zkrácený), dále využití promptu (uplatnění v následující kapitole), atd.
+
+Testovací skript umožňoval obdobné usnadnění jako trénovací skript. Část jeho možností byla již vytvořena pro testování promptu, nicméně přidána byla i varianta evaluace volacích znaků. Ta probíhala následujícím způsobem: \label{callsigns_evaluation_script}
+\begin{enumerate}
+    \item Získání přepisu promluvy modelem, získání obsažených volacích znaků v promluvě.
+    \item Postupně pro každý volací znak, obsažený v promluvě:
+    \begin{enumerate}
+        \item Posouvej \textit{okno} s volacím znakem po přepisu
+        \item Pro každý posun si zaznamenej WER hodnotu, kde referencí je volací znak, a predikcí je aktuální sekvence slov v přepisu, na které se nachází okno s volacím znakem. Pokud je WER hodnota rovna 0
+        \item Pokud okno dorazilo na konec přepisu, pokračuj, jinak posuň okno dál
+        \item Seřaď WER hodnoty od nejmenší po největší
+        \item Vrať tolik WER hodnot od počátku pole s WER hodnotami, kolikrát se měl daný volací znak vyskytovat v promluvě. 
+        \item Vrať počet nul v poli s WER hodnotami, jako číslo značící počet zcela správně přepsaných volacích znaků.
+    \end{enumerate}
+\end{enumerate}
+
+Jako pomocný byl navíc sestaven vizualizační skript, skrze který bylo možné nechat přepsat daný dataset zvoleným modelem. Výstupem skriptu byl potom soubor, ve kterém byly pod sebou zobrazeny dvojice přepisů vygenerovaný-referenční. Skript měl sloužit pro částečné ověření, že WER hodnoty, získané během různých evaluací, mohou odpovídat realitě.
+
+
+\section{Evaluační metrika WER}
+\cite{NLPbasic} Během testování v následujících kapitolách je vždy využita metrika WER -- Word Error Rate. Jedná se o standardní metriku využívanou pro vyhodnocování výstupu ASR modelů. Její princip spočívá v porovnání, jak moc se liší textový výstup modelu od referenčního výstupu. Toto porovnání se ovšem děje pouze na základě editační vzdálenosti bez znalosti kontextu a významu slov a tedy může docházet k případům, kdy je WER hodnota nevypovídající. Níže je vzorec pro výpočet WER \ref{eq:wer}
+
+\begin{equation}
+    \label{eq:wer}
+    \text{Word Error Rate (WER)} = 100 \times \frac{\text{Vložení} + \text{Nahrazení} + \text{Vymazání}}{\text{Celkový počet slov ve správném přepisu}}
+\end{equation}
+
+kde 
+\begin{itemize}
+    \item \textit{Vložení} je počet vložených slov navíc oproti referenčnímu textu,
+    \item \textit{Nahrazení} je počet nahrazených slov oproti referenčnímu textu,
+    \item \textit{Vymazání} je počet vymazaných slov oproti referenčnímu textu.
+\end{itemize}
+
+Hodnota WER je obvykle udávána v procentech, což se váže k tomu, že 
+
+Metrika CER, neboli Character
+\chapter{Finetuning I.}
+
+Následující část textu popisuje prvotní fáze trénování modelu Whisper s dostupnými daty. Důležité je podotknout, že při trénování měla data formu \textit{originální} neboli \textit{true case}, tedy byla přítomna velká a malá písmena. Rovněž zde nedocházelo k trénování pomocí \textit{promptu} a nebyla vyhodnocována přesnost přepisu volacích znaků.
+
+
+\section{Trénování}
+
+\subsection{Nastavení parametrů}
+Většina pochází přímo z~nastavení původního trénovacího skriptu, níže je ukázáno nastavení, s kterým probíhalo trénování modelů v této práci.
+\begin{verbatim}
+    per_device_train_batch_size=4,
+    gradient_accumulation_steps=4,
+    learning_rate=1e-5,
+    warmup_ratio=0.12,
+    gradient_checkpointing=True,
+    fp16=True,
+    save_strategy="epoch",
+    num_train_epochs=15,
+    logging_steps=30,
+\end{verbatim}
+
+Velikost dávky (per\_device\_batch\_size) na jedno GPU je nastavena na čtyři. Protože tato hodnota přímo úměrně zvyšuje náročnost na paměť GPU, nelze ji zvýšit, aniž by trénink mohl být v~pořádku dokončen pro 15 GB GPU paměti. Aby bylo možné efektivně pracovat s~většími dávkami, používá se akumulace gradientů přes čtyři kroky. Tímto způsobem se efektivní velikost dávky zvýší, aniž by byla překročena paměťová kapacita GPU. Při tomto nastavení tedy dojde k~aktualizaci vah po šestnácti vzorcích. Poznamenejme, že při nižších hodnotách by docházelo k~prodloužení trénovacího času a k~nepřesnému odhadu gradientu.
+
+Rychlost učení je nastavena na $1e-5$, což je běžná hodnota pro \textit{finetuning} velkých modelů. Stabilitu tréninku v~počátečních fázích zajišťuje \textit{warm-up} fáze, která tvoří 12 \% z~celkového počtu kroků. Tato hodnota byla převzata z~bakalářské práce na FIT VUT \cite{Nevarilova2024thesis}, věnující se rovněž trénování modelu Whisper, kde bylo dosaženo dobrých výsledků. Gradient checkpointing umožňuje snížit paměťové nároky při práci s~velkými modely tím, že ukládá méně mezivýpočtů, což je klíčové pro práci s~omezenou pamětí.
+
+Pro trénování je dále zapnutá optimalizace pro GPU s~podporou \textit{FP16} (přesnost hodnot s~datovým typem \textit{16bit floating point}), což zrychluje výpočty, snižuje paměťovou náročnost a zvyšuje paměťovou propustnost. To vše v~kontrastu s~přesností \textit{FP32}. 
+
+Na konci každé epochy se také ukládají kontrolní body, aby bylo možné tréninkové části zpětně vyhodnocovat. Jak lze totiž pozorovat, není v~parametrech umístěna vyhodnocovací strategie a to z~důvodu, že se trénink při vyhodnocování po každé epoše stával časově neúnosně náročným. Vyhodnocení tedy probíhá pouze u zvolených epoch až po samotném trénování (tedy průběh vyhodnocování testovacích sad lze rekonstruovat). 
+
+Pro podrobné sledování průběhu tréninku se logy generují každých třicet kroků, což poskytuje přehled o aktuálním stavu modelu, aniž by to příliš zatěžovalo proces. Jeden krok znamená zpracování jedné dávky - tedy při výše zmíněném nastavení parametrů to je šestnáct.
+
+Tyto parametry společně zajišťují efektivní využití dostupných zdrojů a optimalizaci výsledků modelu během tréninku.
+\subsection{Základní vyhodnocení datasetů}
+V tabulkách \ref{tab:allds-fullts-on-vanilla-whisper} a \ref{tab:allds-shortts-on-vanilla-whisper} lze pozorovat výsledky metriky WER pro jednotlivé vytvořené testovací datasety, přičemž vyhodnocení probíhalo jak pro \textit{plné} tak pro \textit{zkrácené} přepisy. Vyhodnocení každé sady trvalo přibližně dvě a čtvrt hodiny a v~trénovacím skriptu, který byl pouhou modifikací oficiálního skriptu pro trénování, byl využit parametr \\ \verb|per_device_eval_batch_size=16|, díky němuž bylo testování mnohem rychlejší. 
+
+Z tabulky \ref{tab:allds-fullts-on-vanilla-whisper} s výsledky evaluace pro plné přepisy lze pozorovat, že WER se pohybují na anglických datech - tedy všech kromě subsetů \textit{FR} a \textit{Jiné jazyky} - na nižších hodnotách (kolem 80 \%), než na zmíněných dvou cizojazyčných datasetech. Příčinou jistě bude silná vytrénovanost modelu Whisper na anglických datech, a tedy model si jistým způsobem s~předloženými datasety poradí, přestože obsahují šum.
+
+\begin{table}[h!]
+    \centering
+    \label{tab:allds-fullts-on-vanilla-whisper}
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        \textbf{ATCO2} & \textbf{HIWIRE} & \textbf{MALORCA} & \textbf{NATO} & \textbf{UWB} \\ 
+        \hline
+          Ruzyně: 76.62 \%    & FR: 81.34 \%    &      &     &          \\ \cline{1-2}
+          Štefánik: 75.73 \%  & GR: 82.01 \%    &     &  &     \\ \cline{1-2}
+          Zurich: 80.81 \%    & SP: 83.99 \%    & 86.27 \%  & 81.66 \%  & 89.89 \% \\ \cline{1-2}
+          FR: 96.69 \%       &                  &           &       &             \\ \cline{1-1}
+          Jiné jazyky: 107.49 \% &             &           &       &            \\ \hline
+    \end{tabular}
+    \caption{Procentuálně vyhodnocená metrika WER na čistém modelu Whisper Medium pro každý dataset. Použité transkripty měly formu plných přepisů.}
+\end{table}
+
+V tabulce \ref{tab:allds-shortts-on-vanilla-whisper} s vyhodnocením pro zkrácenou formu přepisů se dle očekávání pohybují hodnoty WER výš, než u plných přepisů.
+
+\begin{table}[h!]
+    \centering
+    \label{tab:allds-shortts-on-vanilla-whisper}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        \textbf{ATCO2} & \textbf{HIWIRE} & \textbf{MALORCA} & \textbf{NATO} & \textbf{UWB} \\ 
+        \hline
+        Ruzyně: 86.82 \%    & FR: 84.15 \%    &    &       &       \\ \cline{1-2}
+        Štefánik: 83.35 \%  & GR: 88.08 \%    &         &          &         \\ \cline{1-2}
+        Zurich: 86.82 \%    & SP: 85.69 \%    & 92.57 \% & 104.73 \% & 94.86 \%         \\ \cline{1-2}
+        FR: 102.51 \%       &                &         &          &         \\ \cline{1-1}
+        Jiné jazyky: 126.43 \% &            &         &          &         \\ \hline
+    \end{tabular}
+    \caption{Procentuálně vyhodnocená metrika WER na čistém modelu Whisper Medium pro každý dataset. Použité transkripty měly formu zkrácených přepisů.}
+\end{table}
+
+
+\subsection{Vzájemná evaluace a trénování modelů na různých datasetech s plnými přepisy}
+V této fázi bylo rozhodnuto natrénovat čistý model Whisper Medium na jednotlivých datasetech zvlášť s~cílem ověřit, jak se budou vyvíjet hodnoty WER. To se podařilo u pěti z~výše zmíněných sedmi datových sad. Nebyl využit dataset \textit{DATA\_BINS} a \textit{UWB}, u kterého se již v~této fázi nedostávalo času pro trénování. Z testovacích i trénovacích sad byly použity pouze varianty s \textit{plnými přepisy}.
+
+Níže jsou ukázány průběhu dvou loss funkcí z~trénování na datech ATCO2 \ref{fig:loss-atco} a HIWIRE \ref{fig:loss-hiwire}. Pozoruhodné je, jak rychle loss funkce klesá, přičemž u sady HIWIRE a MALORCA (není ukázáno) se loss funkce nachází již mezi první a druhou epochou téměř na hodnotě nula (od přibližně desáté epochy je loss rovna nule). U ostatních datasetů se tento jev neděje, hodnoty se ale přesto pohybují velmi blízko nuly. Vzhledem k~tomu, že datasety (kromě A-PiMod) jsou relativně větší, lze tento jev přisuzovat spíš vysoké kapacitě a schopnosti modelu Whisper přizpůsobení se datům, než přetrénovanosti. Tento fakt zlepšení výsledků napříč ostatními datasety během testování, což by se v~případě přetrénování nemělo stát.
+
+
+\begin{figure}[h]
+    \centering
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1.12\linewidth]{figures/atco_loss.png}
+        \label{fig:loss-atco}
+        \caption{Průběh loss funkce při trénování na datasetu ATCO2}
+    \end{minipage}\hfill
+    \begin{minipage}{0.45\textwidth}
+        \centering
+        \includegraphics[width=1.12\linewidth]{figures/hiwire_loss.png}
+        \label{fig:loss-hiwire}
+        \caption{Průběh loss funkce při trénování na datasetu HIWIRE}
+    \end{minipage}
+\end{figure}
+
+
+Vyhodnocení proběhlo na všech vytvořených testovacích sadách, mezi kterými ovšem chybí sada pro dataset A-PiMod. V tabulce \ref{tab:wer-cross-dataset-eval} lze pozorovat procentuální hodnoty WER pro jednotlivé modely natrénované na dané trénovací sadě. Vyznačena je šedě oblast pro datasety, u kterých došlo k~natrénování i testování. Oranžově je pak zbarvena diagonála tam, kde došlo k~testování modelu natrénovaném na sadě pocházející ze shodného datasetu jako testovací sada. Dle očekávání jsou na této diagonále hodnoty nízké, což poukazuje na fakt, že ač je testovací dataset vybrán z~dostupných dat opravdu precizně, stejně dochází k~mnohem lepším výsledkům, pokud trénovací data náleží stejnému zdroji. Velmi pravděpodobně se zde bude projevovat nahrávací prostředí, opakující se slova, která jsou typická pro danou lokalitu (například označení přistávacích drah, označení příletových bodů,...) a nelze vyloučit i opakující se mluvčí.
+
+Dále lze konstatovat, že nejlepšího výsledku celkově dosáhl model natrénovaný i otestovaný na datech sady HIWIRE, přičemž došlo i ke zlepšení u ostatních testovacích sad v~porovnání s~tabulkou \ref{tab:allds-fullts-on-vanilla-whisper} s~hodnotami evaluace čistého modelu Whisper (vůči této tabulce uvažujeme dále veškerá zlepšení nebo zhoršení). Při testování došlo obecně ke zlepšení, kromě testovacích subsetů \textit{Jiné jazyky} a \textit{FR} z~ATCO2. Konkrétně zmíněné sady měli při trénování na datech MALORCA výsledky po řadě 95.04 \% (zde došlo pouze k~nepatrnému zlepšení) a $117.51 \%$ (zhoršení o $9.3 \%$) a pro data NATO výsledky po řadě 98.35 \% a 108.68 \% (zhoršení po řadě o $1.71 \%$ a $1.1 \%$). Celkově nepříliš dobré výsledky na subsetu \textit{Jiné jazyky} jsou očekávatelné, vzhledem k~tomu, že kromě dat ve francouzském jazyce nejsou poskytnuta jiná cizojazyčná data. Velmi dobré hodnoty při trénování a testování na datech sady HIWIRE lze zase vysvětlit nízkou hladinou šumu v~nahrávkách a snadnou srozumitelností řeči (při běžném poslechu lze rozumět zřetelně jednotlivá slova, což u jiných sad říci nelze).
+
+\begin{table}
+    \centering
+    \begin{tabular}{c|c|c|c|c|c|c|c|}
+        \multicolumn{3}{c}{} & \multicolumn{5}{c}{Modely podle trénovací sady} \\
+        \cline{4-8}
+          \multicolumn{3}{c|}{} & \textbf{A-PiMod} & \textbf{ATCO2} & \textbf{HIWIRE} & \textbf{MALORCA} & \textbf{NATO} \\ 
+         \cline{2-8}
+         \multirow{11}{*}{\rotatebox[origin=c]{90}{Testovací sady}} &
+        \multirow{5}{*}{\rotatebox[origin=c]{90}{\textbf{ATCO2}}} 
+                     & Ruzyně        & 43.88 \% & \cellcolor{orange!15} 29.50 \% & \cellcolor{gray!15} 65.59 \% & \cellcolor{gray!15} 60.74 \% & \cellcolor{gray!15} 75.00 \% \\
+                  &  & Štefánik      & 40.98 \% & \cellcolor{orange!15} 25.46 \% & \cellcolor{gray!15} 65.38 \% & \cellcolor{gray!15} 60.81 \% & \cellcolor{gray!15} 72.48 \% \\ 
+                  &  & Zurich        & 49.12 \% & \cellcolor{orange!15} 28.29 \% & \cellcolor{gray!15} 69.41 \% &\cellcolor{gray!15}  65.44 \% &\cellcolor{gray!15}  73.20 \% \\ 
+                  &  & FR            & 74.26 \% & \cellcolor{orange!15} 47.98 \% & \cellcolor{gray!15} 93.01 \% & \cellcolor{gray!15} 95.04 \% &\cellcolor{gray!15}  98.35 \% \\ 
+                  &  & Jiné jazyky   & 79.34 \% & \cellcolor{orange!15} 86.83 \% & \cellcolor{gray!15} 101.80 \% &\cellcolor{gray!15}  117.51 \% & \cellcolor{gray!15} 108.68 \% \\ \cline{2-8}
+        & \multirow{3}{*}{\rotatebox[origin=c]{90}{\textbf{HIWIRE}}} 
+                    & FR            & 38.61 \% & \cellcolor{gray!15}39.40 \% & \cellcolor{orange!15}0.08 \% & \cellcolor{gray!15}40.57 \% &\cellcolor{gray!15} 29.01 \% \\
+                  &  & GR            & 41.24 \% & \cellcolor{gray!15}41.40 \% & \cellcolor{orange!15}0.48 \% & \cellcolor{gray!15}40.92 \% & \cellcolor{gray!15}28.50 \% \\
+                  &  & SP            & 42.41 \% & \cellcolor{gray!15}39.60 \% & \cellcolor{orange!15}0.94 \% &\cellcolor{gray!15} 39.71 \% &\cellcolor{gray!15} 32.74 \% \\ \cline{2-8}
+        & \multicolumn{2}{|c|}{\textbf{MALORCA}}
+                                    & 53.43 \% & \cellcolor{gray!15}54.29 \% & \cellcolor{gray!15}40.93 \% &\cellcolor{orange!15} 5.38 \% &\cellcolor{gray!15} 48.86 \% \\ \cline{2-8}
+        & \multicolumn{2}{|c|}{\textbf{NATO}}    
+                                    & 58.29 \% &\cellcolor{gray!15} 53.17 \% &\cellcolor{gray!15} 37.65 \% & \cellcolor{gray!15}38.84 \% & \cellcolor{orange!15}12.09 \% \\ \cline{2-8}
+        & \multicolumn{2}{|c|}{\textbf{UWB}}   
+                                    & 49.29 \% & 50.95 \% & 44.03 \% & 38.64 \% & 53.55 \% \\ \cline{2-8}
+    \end{tabular}
+    \caption{Procentuální výsledky WER pro modely, natrénované na trénovacích datasetech A-PiMod, ATCO2, HIWIRE, MALORCA a NATO vyhodnocené na každém testovacím subsetu. Oranžově jsou zvýrazněné hodnoty WER tam, kde se shodoval dataset, ze kterého vycházela trénovací i testovací sada. Šedě je pak označeno pole hodnot, kde se nacházejí výsledky vzájemného testování čtyř datasetů (ATCO2, HIWIRE, MALORCA, NATO). Použité transkripty měly formu plných přepisů.}
+    \label{tab:wer-cross-dataset-eval}
+\end{table}
+
+\subsection{Natrénování modelu všemi datasety s plnými přepisy}
+V této části byl vyzkoušen trénink modelu na všech datasetech (opět pouze po stránce \textit{plných přepisů}), vyjma datové sady UWB. To kvůli přílišné časové zátěži, kdy pro natrénování jedné epochy je potřeba dvojnásobek času při použití všech datasetů i s UWB, než tomu je bez zapojení této sady. I přes toto omezení velikosti použité trénovací sady bylo možné natrénovat model pouze na osmi epochách, což vedlo navzdory očekávání k velmi dobrým výsledkům - WER hodnoty všech testovacích sad, získané při evaluaci natrénovaného modelu, předčily téměř vždy nejlepší výsledky v tabulce \ref{tab:wer-cross-dataset-eval}. V následující tabulce \ref{tab:allds-on-all-ex-uwb-trained-model} můžeme pozorovat získané hodnoty WER pro jednotlivé trénovací datasety.
+
+\begin{table}[h!]
+    \centering
+    \label{tab:allds-on-all-ex-uwb-trained-model}
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        \textbf{ATCO2} & \textbf{HIWIRE} & \textbf{MALORCA} & \textbf{NATO} & \textbf{UWB} \\ 
+        \hline
+          Ruzyně: 27.19 \%    & FR: 0.54 \%    &      &     &          \\ \cline{1-2}
+          Štefánik: 25.00 \%  & GR: 1.35 \%    &     &  &     \\ \cline{1-2}
+          Zurich: 26.43 \%    & SP: 1.04 \%    & 5.80 \%  & 11.75 \%  & 33.08 \% \\ \cline{1-2}
+          FR: 51.29 \%       &                  &           &       &             \\ \cline{1-1}
+          Jiné jazyky: 80.24 \% &             &           &       &            \\ \hline
+    \end{tabular}
+    \caption{WER hodnoty modelu natrénovaném na téměř všech dostupných trénovacích sadách - A-PiMod, ATCO2, HIWIRE, MALORCA, NATO - a vyhodnoceném na všech testovacích datových sadách. Použité transkripty měly formu plných přepisů.}
+\end{table}
+
+\subsection{Zhodnocení kvality dat}
+Jak lze pozorovat především z tabulek \ref{tab:allds-on-all-ex-uwb-trained-model} a \ref{tab:wer-cross-dataset-eval}, datasety mají zjevně různou kvalitu. Nejhůře si vede dataset ATCO2, který zdaleka nedosáhl takových výsledků, jako tomu bylo například u dat MALORCA. Přitom obě skupiny dat pocházejí z reálného prostředí, což vede k ještě silnějšímu přesvědčení, že prostředí a kvalita snímaných dat má příliš velkou váhu při přepisování, než aby bylo možné mluvit o generalizaci přepisu. Následující části textu se budou zaměřovat pouze na dataset ATCO2, konkrétně jeho anglickou část.
+
+
+
+
+\chapter{Finetuning II. -- plné přepisy} \label{base_finetuning}
+Datasety použité v této sekci měly formu malých písmen. Pro trénování byly využité různé množiny dat, ale testování už probíhala pouze na anglické části datové sady ATCO2. Tedy obecným kritériem se stala otázka, jak dobře se trénované modely naučí rozpoznávat anglická data z této sady.
+
+Tato sekce zahrnuje trénování výchozího modelu Vanilla Whisper, který je zároveň označen za \textbf{baseline} model, na plných přepisech. Součástí je vyhodnocení testovacích sad ATCO2, přičemž výsledky budou uvedeny pro použití bez promptu i s ním.
+
+Protože testovací sada ATCO2 se skládá ze tří subsetů, jsou některé výsledky uváděny pro větší názornost zvlášť pro každý subset.
+
+
+\section{Nastavení parametrů trénování}
+Motivací této fáze bylo vytvořit  pokud možno co nejpřesnější modely pro přepis, přičemž cílové testovací sady pocházely z datasetu ATCO2. Pro trénování byly využity dvě sady hyperparametrů, u kterých, kromě počtu epoch, nedocházelo k žádným změnám. První byla otestována v rámci bakalářské práce Veroniky Nevařilové a rovněž byla využita v oficiálním skriptu pro \textit{finetuning} modelu Whisper. Její hodnoty jsou následující:
+
+\textbf{I. skupina trénovacích parametrů}
+\begin{verbatim}
+    per_device_train_batch_size=4
+    gradien_accumulation_steps=4
+    learning_rate=1.0e-5
+    warmup_ratio=0.12
+    weight_decay=0.0
+    num_train_epochs=30/8/15
+\end{verbatim}
+
+Druhá trénovací sada hyperparametrů byla vytvořena přímo podle oficiálně dostupných rad týkající se ideálního nastavení. Díky sníženému hyperparametru \textit{learning\_rate} a nastavenému \textit{weight\_decay} lze předpokládat, že její použití bude výhodné především pro trénování, které by mohlo být ohroženo přetrénováním. Hodnoty jsou opět uvedeny níže:
+
+\textbf{II. skupina trénovacích parametrů}
+\begin{verbatim}
+    per_device_train_batch_size=4
+    gradien_accumulation_steps=8
+    learning_rate=6.25e-6
+    warmup_ratio=0.1
+    weight_decay=1.0e-6
+    num_train_epochs=30/8/15
+\end{verbatim}
+
+Velikost dávky a počet kroků, po který se akumuluje gradient, je zmíněn v rámci \textit{Whisper Finetuning Event}\footnote{https://github.com/huggingface/community-events/tree/main/whisper-fine-tuning-event}. Zde bylo uvedeno doporučení pro dostupnou paměť RAM o velikosti 16GB, což byl případ využitý v této práci. Nutné zmínit, že na uvedeném zdroji se nachází doporučení pro mírně odlišné nastavení parametrů, konkrétně:
+\begin{itemize}
+    \item \verb|per_device_train_batch_size=2|, 
+    \item a \verb|gradien_accumulation_steps=16|.
+\end{itemize}
+Nicméně toto odpovídá také odpovídá celkovému počtu vzorků třicet dva, po kterém dojde k aktualizaci vah sítě, a tudíž by toto nastavení mělo odpovídat uvedenému výše.
+
+\textit{Learning rate}, tedy míra učení, vychází z doporučení\footnote{https://huggingface.co/spaces/openai/whisper/discussions/6\#63c5731dfb9a6b829d898bc8} tvůrce oficiálního skriptu pro trénování modelu Whisper, ve kterém je zmíněno, že by tato hodnota měla být čtyřicetkrát menší než hodnota, která byla využita při trénování, kdy v případě Whisper Medium byla použita míra učení $2.5\times10^{-4}$. Toto číslo je pak čtyřicetinásobkem výše zmíněné hodnoty. Poznamenejme, že v témže příspěvku se autor vyjadřuje k využití dropout hodnoty pro malé datasety, přičemž tento parametr nakonec nastaven nebyl (jeho nastavení zůstalo rovno nule), protože ve zmíněné bakalářské práci se stejným tématem nedošlo při nastavení tohoto parametru k pozitivní odezvě.
+
+Stanovení parametru \textit{warmup ratio} se odvíjelo opět od skriptu pro trénování Whisper, kde počet kroků, po které probíhá \textit{zahřívání modelu}, odpovídá deseti procentům jejich celkového počtu.
+
+\textit{Weight decay}, byl nastaven na radu vedoucího práce, přičemž tato hodnota měla pozitivní dopad při jiných experimentech v rámci jeho výzkumné skupiny.
+
+
+
+\section{Konvence pojmenovávání modelů}
+Všechny trénované modely v základu vycházejí z Vanilla Whisper Medium. Ovšem jejich dotrénování už je nejenom prováděno s různými hyperparametry, ale především na různých datových sadách. Získané vlastnosti modelů na základě použité množiny dat mohou mít různý dopad při trénování s promptem v následující kapitole. Z toho důvodu je modelů ponecháno více a jejich pojmenování přímo odráží použité datasety.
+
+\section{Trénování}
+
+Tabulka \ref{tab:base-fullts-trained-models} ukazuje trénované modely. Smyslem zůstalo získat co nejnižší WER hodnotu na ATCO2 datech. Od tohoto cíle se odvíjejí použité datové sady.
+
+\begin{table}[H]
+    \centering
+    \label{tab:base-fullts-trained-models}
+    \begin{tabular}{Q{1.5cm}|Q{2.5cm}|Q{1.5cm}|Q{3.5cm}}
+        \textbf{Výchozí model} & \textbf{Trénovací sada} & \textbf{Počet epoch} & \textbf{Ozn. cíl. modelu}\tablefootnote{Jednotlivá označení slouží pro další odkazování v textu, protože popis založený na použitých datových sadách by byl značně zmatečný. Označení se vždy odkazuje na datasety použité pro trénování, přičemž počátečním modelem je vždy Whisper Medium.} \\ \hline
+        Vanilla Whisper Medium & Všechny datasety, všechny jazyky & 8 & ALLDS \\ \hline
+        Vanilla Whisper Medium & ATCO2, anglická část & 30 & ATCOEN \\ \hline
+        ALLDS & ATCO2, anglická část & 30 & ALLDSATCOEN \\ \hline
+        Vanilla Whisper Medium & - & - & BASELINE
+    \end{tabular}
+    \caption{Tabulka ukazující datasety použité při trénování základních modelů}
+\end{table}
+
+Pokaždé přitom proběhlo trénování zvlášť pro obě skupiny parametrů uvedených výše (I. a II. skupina). Měněny byly pak pouze počty epoch.
+
+Cílem při trénování na \textit{všech datasetech} nebylo získat cílový model, ale pouze \textit{předtrénovat} čitý Whisper Medium, aby došlo k uvedení modelu do kontextu promluv, jaké bude rozpoznávat. Proto byl také zvolený počet epoch pouze osm. Při trénování na datech ATCO2 se zvýšil počet epoch na třicet, aby byla zajištěna dostatečně dlouhá doba pro adaptaci modelu. Dotrénování modelu ALLDS na ATCO2 datech bylo provedeno na třiceti epochách, i když se zdálo zřejmým, že již může docházet ke známkám přetrénování, což se také potvrdilo.
+
+Na obrázku \ref{fig:loss-base} jsou k vidění průběhy hodnot loss funkce pro trénování modelů za použití parametrů zleva: I. skupiny, I. skupiny a II. skupiny. Zvolená skupina parametrů je vždy ta, pro kterou byl nalezen model s nejnižší WER hodnotou, jak bude ukázáno dále. 
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-full/loss.png}
+    \label{fig:loss-base}
+    \caption{Průběh trénovací loss funkce při modelů ATCOEN, ALLDS, ALLDSATCOEN, trénování proběhlo pro plný přepis. Modely ALLDS a ATCOEN mají zobrazenou loss funkci při použití trénovacích parametrů I. skupiny, model ALLDSATCOEN potom za použití parametrů II. skupiny}
+\end{figure}
+
+Z dat lze pozorovat, že pokud se trénovalo na výchozím čistém modelu Whisper Medium, loss funkce klesala žádaným a očekávaným způsobem. Naopak při opětovném dotrénování modelu na datech ATCO2, kdy model již data viděl v rámci trénování na všech datasetech, loss funkce ukazuje přetrénování. Pozoruhodné ovšem je, že dle jejího průběhu by bylo možné usoudit, že model se nakonec na data adaptoval, nicméně velmi pravděpodobně až příliš. 
+
+Tento formát loss funkcí se opakoval i pro další trénování. Tedy, vždy platilo, že loss funkce Vanilla Whisper Medium stabilně klesá, zatímco dotrénování modelů na ATCO2 datech, pokud model již předtím tato data viděl (tzn. jedná se o model ALLDSATCOEN), ovlivnilo loss funkci do podoby ukázané na třetím grafu zprava na obrázku \ref{fig:loss-base}. Proto již dále v textu nebudou loss funkce uváděny.
+
+\section{Testování modelů}
+Testování, podobně jako trénování, se zaměřovalo na anglické části datové sady ATCO2. V této sekci jsou ukázány průběhy a vyhodnocení loss funkcí a WER hodnot testovacích dat. Protože v datové sadě se vyskytují tři podmnožiny, konkrétně letiště Štefánik, Ruzyně a Zurich, jsou místy zobrazeny loss a WER hodnoty pro každou z těchto podmnožin. Zpravidla je však zmíněn především celkový výsledek pro celou testovací sadu, který je vypočítán jako vážený průměr pro jednotlivé podmnožiny podle jejich délky ve vteřinách (viz \ref{tab:atco2-testset-desc}. Dále je vhodné uvést, že množiny Štefánik a Ruzyně jsou letiště, jejichž promluvy již byly viděny v trénovací sadě, a tudíž výsledky na těchto množinách odpovídají na otázku, zda model bude pracovat lépe, pokud bude již adaptován na podmínky daného letiště. Oproti tomu množina dat Zurich v trénovací sadě nebyla obsažena vůbec a závěry z testovacích hodnot odpoví otázku, nakolik lze model přizpůsobit, aby fungoval napříč podmínkami různých letišť.
+
+Na obrázku \ref{fig:valid-losswer-base} lze pozorovat grafické zobrazení průběhu WER hodnot celých přepisů, WER hodnot volacích znaků a loss funkce na testovacích datech pro trojici zmíněný modelů - ALLDS, ATCOEN a ALLDSATCOEN.
+
+\subsection{Testy natrénovaných modelů bez promptu}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-full/wer_loss_total.png}
+    \label{fig:valid-losswer-base}
+    \caption{Průběh validační loss funkce (modrá), WER hodnot celých přepisů (fialová) a WER hodnot volacích znaků (červená) pro modely ATCOEN, ALLDS, ALLDSATCOEN, testování proběhlo pro plný přepis.}
+\end{figure}
+
+WER hodnota pro model ALLDS dokazuje, že se model velmi dobře učí a zřejmě by zde mohl být i potenciál ve vícero epochách. Zajímavé je pozorovat loss funkci, která sice během první a druhé epochy klesá, nicméně není pak dojde k jejímu strmému růstu, zatímco WER hodnoty stále klesají. To ukazuje na nedostatečnost použité loss funkce, která nicméně stále plní úlohu pro učení modelu.
+
+Model ATCOEN již nevykazuje tak jednoznačný pokles WER hodnot. Nicméně jev nesouladu křivky loss a WER, který je popsaný výše, se zde opakuje.
+
+Pro model ALLDSATCOEN se zdá být dotrénování na ATCO2 datech kritické, s téměř žádnou šancí se něco naučit. To lze soudit z prakticky neustále rostoucí hodnoty funkce WER hodnot pro přepisy i pro volací znaky.
+
+Tabulka \ref{tab:base-results} uvádí nejlepší získané modely pro danou skupinu parametrů (každý model z výše uvedených byl trénován na každé z nich). Uvedeny jsou též epochy, ve kterých bylo hodnot dosaženo. Z ukázaných hodnot můžeme vyčíst, že celkově nejnižší WER hodnota pro zvolenou testovací sadu dosáhla hodnoty 20.24\% pro II. skupinu parametrů na modelu ALLDSATCOEN. To bylo částečně očekávané, protože v parametrech této sady figuruje \textit{learning rate} s hodnotou $6.25e-6$ společně s nastaveným \textit{weight decay}. Tyto hyperparametry by měly mít pozitivnější vliv na model v případě, kdy by mohlo hrozit přetrénování, v kontrastu k parametrům první skupiny, kde je \textit{learning rate} nastaven na $1.0e-5$.
+
+\begin{table}[H]
+    \centering
+    \label{tab:base-results}
+    \begin{tabular}{c c c c c c}
+        \hline
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{I. sk. par.}} & \multicolumn{2}{c}{\textbf{II. sk. par.}}  & \textbf{Celkem trénovacích epoch}\\ 
+        \hline
+                       & WER \% & ep       & WER \% & ep & \\ 
+        \hline
+        ALLDS       & \cellcolor{green!25}20.39 & 7  & 21.22 & 6  & 8\\   
+        \hline
+        ATCOEN      & \cellcolor{green!25}22.48 & 22 & 23.55 & 19 & 30\\
+        \hline
+        \multirow{2}{*}{ALLDSATCOEN} & 20.31 & 1       & \cellcolor{green!25}20.24 & 6 & 30\\
+                    & - & -       & \cellcolor{orange!25}20.27 & 8 & 30\\
+        \hline
+    \end{tabular}
+    \caption{Nejlepší získané WER hodnoty modelů pro danou skupinu parametrů s uvedenou epochou, během které bylo hodnot dosaženo. Zvýrazněny jsou nejnižší hodnoty. \textbf{Modely jsou do trénování s promptem převzaté právě v těchto epochách.}}
+\end{table}
+
+Model ALLDSATCOEN má zvýrazněny dvě nejlepší hodnoty pro druhou skupinu parametrů, kdy první, nejlepší, pochází z šesté a druhá z osmé epochy. Jak uvidíme dále v grafech, model ALLDSATCOEN je značně přetrénován a tudíž WER hodnoty se liší jen na nižších desetinných místech. Proto byly ponechány dvě podoby modelu s cílem zjistit, zda může mít na chování později testovaného promptu vliv délka adaptace navzdory téměř shodné WER hodnotě.
+
+Nyní zbývá ukázat jak si model vedl na datech z jednotlivých letišť. Průběh WER hodnot přepisů a volacích znaků a hodnot loss funkce je předveden na grafech na obrázcích \ref{fig:base-wer-partial}, \ref{fig:base-cal-partial}, \ref{fig:base-loss-partial} pro všechny nejlepší modely.
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-full/wer_partial.png}
+    \caption{WER hodnoty přepisů, znázorněné pro jednotlivé subsety testovací sady v kontrastu s celkovou WER hodnotou.}
+    \label{fig:base-wer-partial}
+\end{figure}
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-full/calwer_partial.png}
+    \caption{WER hodnoty volacích znaků, znázorněné pro jednotlivé subsety testovací sady v kontrastu s celkovou WER hodnotou volacích znaků.}
+    \label{fig:base-cal-partial}
+\end{figure}
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-full/loss_partial.png}
+    \caption{Loss funkce znázorněné pro jednotlivé subsety testovací sady v kontrastu s celkovou loss funkcí.}
+    \label{fig:base-loss-partial}
+\end{figure}
+
+Při detailnějším rozboru WER hodnot přepisů lze pozorovat, že model skutečně lépe rozpoznává nahrávky z letišť Štefánik a Ruzyně, od kterých již měl k dispozici vzorky v trénovací sadě. Data z letiště Zurich jsou vždy hůře rozpoznaná. Tabulka \ref{tab:base-partial-results} ukazuje nejlepší dosažené WER hodnoty pro různé části testovací datové sady a průměrný rozdíl během všech epoch mezi viděnými (Štefánik, Ruzyně) a neviděnými daty (Zurich) -- nejdříve byl vypočítán vždy v každé epoše vážený průměr WER pro data Štefánik a Ruzyně a teprve potom počítán rozdíl od dat Zurich.
+
+\begin{table}[H]
+    \centering
+    \label{tab:base-partial-results}
+    \begin{tabular}{c c c c c c c c}
+        \hline
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{Štef.+Ruzyně}} & \multicolumn{2}{c}{\textbf{Zurich}} & \textbf{AVG rozdíl} & \multicolumn{2}{c}{\textbf{Celkem}} \\ 
+        \hline
+                       & WER \% & ep & WER \% & ep & WER \% & WER \% & ep \\
+        \hline
+        ALLDS          & 17.29 & 7  & 21.49 & 8  & 4.54 & 20.39 & 7 \\   
+        \hline
+        ATCOEN         & 18.51 & 12 & 24.01 & 6  & 6.76 & 22.48 & 22 \\
+        \hline
+        \multirow{2}{*}{ALLDSATCOEN}    & \multirow{2}{*}{17.12} & \multirow{2}{*}{6}  & \multirow{2}{*}{21.38} & \multirow{2}{*}{8}  & \multirow{2}{*}{3.99} & 20.24 & 6 \\
+                                        &  &   &  &   &  & 20.27 & 8 \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazující \textbf{nejnižší} dosažené WER hodnoty a epochy, ve kterých jich bylo dosaženo, pro jednotlivé subsety testovací datové sady. Ve třetím sloupci je ukázán průměrný rozdíl WER hodnot mezi sadami Štefanik+Ruzyně (viděná letiště) a Zurich (neviděné letiště). Poslední, čtvrtý, sloupec opět pro přehlednost ukazuje celkově nejlepší WER hodnoty (nejlepší vážený průměr WER hodnot všech subsetů ze všech epoch, během kterých byl model trénován) i s epochami.}
+\end{table}
+
+Na grafech na obrázku \ref{fig:base-wer-partial-and-total} lze sledovat epochu, v jaké se modely dostávaly k nejlepším hodnotám na jednotlivých subsetech testovací sady. Zatímco u modelů ALLDS a ALLDSATCOEN bylo dosaženo nejpřesnějšího rozpoznání promluv téměř ve stejných epochách pro všechny datové podmnožiny, u modelu ATCOEN tomu bylo přesně opačně - nejrychleji se model správně adaptoval na letiště Zurich, o šest epoch později na letiště Ruzyni a Štefánik a až o dalších deset epoch později, tj. ve dvaadvacáté epoše, dosáhl model ideální střední hodnoty metriky WER pro všechny datasety dohromady.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-full/best_wer_partial_and_total.png}
+    \caption{Grafy ukazující rozložený průběh WER hodnot jednotlivých subsetů testovací sady, přičemž jsou zvýrazněné vertikálními čarami ty epochy, během kterých byla získána nejnižší WER hodnota pro danou množinu dat.}
+    \label{fig:base-wer-partial-and-total}
+\end{figure}
+
+Nyní se ještě, vzhledem k následující kapitole, potřebujeme zaměřit na ohodnocení volacích znaků. Algoritmus vyhodnocování callsignů je detailně popsán v kapitole \textit{Finetuning II.} v sekci \textit{Prostředí} \ref{callsigns_evaluation_script}. V tabulce \ref{tab:base-fullts-final-performance} můžeme číst výsledky pro jednotlivé modely.
+
+\newcolumntype{Q}[1]{>{\centering\arraybackslash}m{#1}}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l Q{2.5cm} Q{2.5cm} Q{2.5cm}}
+        \hline
+        \textbf{Model} & \textbf{WER přepisů(\%)} & \textbf{WER volacích zn. (\%)} & \textbf{Správně přepsané vol. zn.} \\
+        \hline
+        ATCOEN      & 22.48 & 19.37                     & 397 / 763 (52.03\%) \\
+        ALLDS       & 20.39 & 14.39                     & 451 / 763 (59.11\%) \\
+        ALLDSATCOEN     &       &       &                        \\
+        \quad - 6. ep   & 20.24 & 15.33 & 456 / 763 (59.76\%) \\
+        \quad - 8. ep   & 20.27 & 14.78 & 459 / 763 (60.15\%) \\
+        BASELINE    & 78.70 & 88.13                     &  12 / 763 (1.57\%)  \\
+        \hline
+    \end{tabular}
+    \caption{Porovnání úspěšnosti vytrénovaných základních modelů na volacích znacích obsažených v datasetu se 763 označenými callsigny. V tabulce pozorujeme i vyhodnocení modelu \textbf{BASELINE}, tedy Vanilla Whisper Medium. Správně přepsaným volacím znakem je myšlena naprostá shoda mezi jeho formou v referenčním a predikovaném přepisu.}
+    \label{tab:base-fullts-final-performance}
+\end{table}
+
+\subsection{Testování dat s promptem}
+
+Přestože modely výše natrénované modely ještě nebyly trénovány s promptem, je důležité je na něm otestovat. Zjistíme tak, zda si modely umí vzít pomocné informace z promptu, aniž by na to byly dříve trénovány. Porovnání probíhá s hodnotami zobrazenými v tabulce \ref{tab:base-fullts-final-performance}. V prvním řádku tabulky navíc figuruje BASELINE, tedy model Vanilla Whisper Medium.
+
+\newcommand{\plus}[1]{\textcolor{red}{\small(+#1)}}
+\newcommand{\minuss}[1]{\textcolor{green!60!black}{\small(-#1)}}
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-base-models-with-prompt-diff}
+    \begin{tabular}{l | c c c c c c c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{2}{*}{BASELINE} 
+            & 53.31 & 49.65 & 48.25 & 62.27 & 59.49 & 49.02 & 80.96 \\
+            & \minuss{25.39} & \minuss{29.05} & \minuss{30.45} & \minuss{16.43} & \minuss{19.21} & \minuss{29.68} & \plus{2.26} \\
+        \hline
+        \multirow{2}{*}{ALLDS} 
+            & 18.00 & 22.95 & 34.64 & 28.79 & 21.51 & 28.43 & 24.62 \\
+            & \minuss{2.39} & \plus{2.56} & \plus{14.25} & \cellcolor{orange!25}\plus{8.40} & \plus{1.12} & \plus{8.04} & \cellcolor{orange!25}\plus{4.23} \\
+        \hline
+        \multirow{2}{*}{ATCOEN} 
+            & 18.81 & 19.42 & 19.63 & 19.73 & 22.25 & 21.69 & 22.97 \\
+            & \minuss{3.67} & \minuss{3.06} & \minuss{2.85} & \minuss{2.75} & \minuss{0.23} & \minuss{0.79} & \plus{0.49} \\
+        \hline
+        ALLDSATCOEN & & & & & & & \\
+           \quad - 6. ep & 17.66 & 22.77 & 35.25 & 29.90 & 21.59 & 29.96 & 25.08 \\
+           \quad - 8. ep & 17.91 & 20.76 & 27.22 & 21.80 & 20.74 & 25.29 & 22.10 \\
+        srov. 8.ep  & \minuss{2.36} & \plus{0.49} & \plus{6.95} & \plus{1.53} & \plus{0.47} & \plus{5.02} & \plus{1.83} \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazující dosažené WER hodnoty celých přepisů pro základní modely, které byly testované na všech typech promptů. Druhý řádek pro každý model obsahuje rozdíl oproti referenční hodnotě daného základního modelu (testovaného bez promptu) -- zeleně zlepšení (nižší WER), červeně zhoršení.}
+\end{table}
+
+Pokud srovnáme osmou a šestou epochu, tak vidíme, že výsledky jsou jednoznačně ve prospěch využití modelu z osmé epochy (kromě evaluace na promptu AG). Konstatovat tedy můžeme, že ačkoli se WER hodnota nemění, či dochází k přetrénování modelu, tak se zcela jistě může lišit reakce na použití promptu. Tedy, jinak řečeno, prompt může přispět lépe modelu, který má jinak horší WER hodnoty na testovací sadě bez použití promptu. \textbf{Jakýkoliv další odkaz na model ALLDSATCOEN bude směřovat a výsledky v jeho osmé epoše.}
+
+Očekávané zlepšení všech modelů se skutečně dostavilo pouze při použití promptu AG. To odpovídá skutečnosti, že modelu předaná slova, která se vyskytují v promluvě, mu pomáhají v přepisu. Na další typy přidaných informací však modely již reagovaly různě. Přičemž překvapivě nejlépe fungovaly prompty pro model ATCOEN. Z takového chování bychom mohli usuzovat, že modelu může pomoct pouhé přidání promptu, pokud byl dříve na datech ze stejného prostředí adaptován. To je potvrzeno i tím, že zcela největšího propadu dosáhl ALLDS, který data ATCO2 viděl pouze ve skupině ostatních datasetů, a tudíž se na ně nemohl zaměřit. 
+
+Zde se vyskytuje ještě jedna zvláštnost, kterou můžeme pozorovat při porovnání dopadu promptu AG50CZB a 50CZB (oranžově zvýrazněná pole v tabulce \ref{tab:prompt-full-base-models-with-prompt-diff}). Předpoklad zcela jistě zní, že výskyt správné sekvence slov v promptu se směsí náhodných slov (AG50CZB) by měl mít lepší či přinejmenším stejný dopad na model, než pouze náhodný řetězec slov (50CZB). Metrika WER nicméně odhaluje, že se model zhoršil více při použití AG50CZB. Náhled na WER metriku spočítaná na volacích znacích sice ukazuje lepší výsledek pro AG50CZB (16.03\%) proti 50CZB (17.12\%), vzhledem k původním hodnotám se však jedná o zhoršení. Jedním z možných vysvětlení je, že model zřejmě zvládl částečně odhalit vyskytující se volací znak v promptu, ale snažil se okolí přepisu přizpůsobit okolí promptu kolem volacího znaku. Ovšem vizuální kontrola přepisů nastíněnou ideu nepotvrdila. Přepisy pod vlivem promptu AG50CZB však obsahovaly násobně větší počet čárek, konkrétně 657 - přitom při použití promptu 50CZB se v přepisu objevilo pouze 252 čárek. Existuje potom ještě druhá možnost vlivu, že typ použitých náhodných slov, byť v promluvě s jistotou neexistujících, ovlivňuje přepis (připomeňme, že náhodná slova vyskytující se v promptu AG50CZB jsou jiná od těch v 50CZB, což by mohlo vést k ovlivnění správnosti přepisu jak je uveden v tabulce). Tuto domněnku však již nelze přímo potvrdit.
+
+Ke zmíněnému problému srovnání AG50CZB a 50CZB zbývá dodat, že modely BASELINE a ATCOEN se zlepšily při použití první promptu a zhoršily při použití druhého. Mode ALLDSATCOEN pak vykazuje alespoň menší zhoršení u AG50CZB, než u 50CZB. Odtud pak můžeme konstatovat, že reakce modelů na diskutované dva prompty je přímo úměrná míře zaměření modelu na ostatní datasety, mimo ATCO2.
+
+Model BASELINE se rovněž zlepšil při použití téměř všech promptů, kromě 50CZB. Navíc zlepšení je přímo úměrné množství předaných použitelných informací a můžeme proto tvrdit, že se BASELINE chová nejvíc předvídatelně.
+
+\subsubsection*{Vyhodnocení kvality přepisu volacích znaků}
+Tabulka \ref{tab:prompt-full-base-models-with-prompt-diff-callsign} poskytuje přehled WER hodnot volacích znaků vyskytujících se v promluvách přepsaných jednotlivými modely.
+
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-base-models-with-prompt-diff-callsign}
+    \begin{tabular}{l | c c c c c c c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{2}{*}{BASELINE} 
+            & 21.75 & 30.06 & 33.82 & 40.33 & 51.50 & 42.43 & 96.01 \\
+            & \minuss{66.38} & \minuss{58.07} & \minuss{54.31} & \minuss{47.80} & \minuss{36.37} & \minuss{46.70} & \plus{7.88} \\ 
+        \hline
+        \multirow{2}{*}{ALLDS}
+            & 6.08 & 14.17 & 26.11 & 18.73 & 15.51 & 24.94 & 19.38 \\
+            & \minuss{8.31} & \minuss{0.22} & \plus{11.72} & \plus{4.34} & \plus{1.12} & \plus{10.55} & \plus{4.99} \\
+        \hline
+        \multirow{2}{*}{ATCOEN} 
+            & 6.29 & 7.72 & 9.98 & 9.81 & 17.78 & 16.08 & 19.91 \\
+            & \minuss{13.08} & \minuss{11.65} & \minuss{9.39} & \minuss{9.56} & \plus{1.59} & \plus{3.29} & \plus{0.54} \\
+        \hline
+        \multirow{2}{*}{ALLDSATCOEN} 
+            & 5.98 & 11.01 & 19.29 & 12.47 & 14.76 & 19.98 & 16.69 \\
+            & \minuss{8.80} & \minuss{3.77} & \plus{4.51} & \minuss{2.31} & \plus{0.02} & \plus{5.20} & \plus{1.91} \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazující dosažené WER hodnoty volacích znaků pro testované prompty na základních modelech. Druhý řádek pro každý model obsahuje rozdíl oproti referenční hodnotě bez promptu — zeleně zlepšení, červeně zhoršení.}
+\end{table}
+
+
+Model BASELINE vykazuje vysoké rozdílové hodnoty a přepis volacích znaků dosahuje velmi dobrých hodnot pro všechny typy promptu, kromě náhodného (50CZB). 
+
+Pozorujeme, že k horším WER hodnotám došlo mnohokrát i v případě, kde v předcházející tabulce s WER hodnotami celých přepisů naopak přišlo zlepšení - úměrné zlepšení nalezneme pouze pro model BASELINE. Model ALLDS zlepšil kvalitu přepisu volacích znaků při použití promptu AG4B, AG35B a AG50CZB, i když po stránce WER celých přepisů se zhoršil. Podobně se vedlo i modelu ALLDSATCOEN. ATCOEN zřejmě dokáže najít v promptu správné volací znaky.
+
+Pozastavit bychom se mohli nad výsledkem modelů při použití promptu 35B, tedy třicet pět v promluvě se nevyskytujících volacích znaků. Zatímco modely ALLDS a ALLDSATCOEN prodělaly zhoršení výsledků jak pro celé přepisy, tak pro volací znaky, tak modelu ATCOEN se zlepšily přepisy a zhoršily volací znaky. Můžeme z toho vyvodit závěr, že použití promptu na přepis promluv, na jejichž typ byl přesně model trénován (v našem případě ATCO2 data), je pro ten daný model užitečnější (přesněji máme na mysli model ATCOEN), než v případě, kdy je model trénován i na jiná data (uvažujeme model ALLDS). Obdobné chování po stránce rozdílů (máme na mysli relativní zlepšení/zhoršení, nikoli absolutní hodnoty, kterých modely dosahovaly) vykazuje trojice modelů i při použití promptu AG35B a obecně pro všechny testované prompty je tento vzorec platný, protože model ALLDS je vždy se svými rozdíly za modelem ALLDSATCOEN, který zase zaostává za ATCOEN.
+
+\subsubsection*{Ohodnocení modelů pouze na datech obsahujících volací znaky}
+Předchozí uvedené výsledky se týkají testování na celém datasetu ATCO2. Nicméně ne všechny promluvy obsahují volací znaky a tak předcházející výsledky sice ukazují porovnatelné hodnoty k předcházejícím trénováním i ostatním modelům, ale nezbytné je též ukázat dopad promptu na promluvy, ve kterých jedině mohl přinést skutečně očekávané zlepšení.
+
+Opět pro srovnání jsou v tabulce \ref{tab:base-fullts-models-onlyTSwCAL} uvedeny výsledky pro všechny základní modely. Všechny \textit{natrénované} modely dosahují zlepšení, mají v tabulce lepší hodnoty, než když na přepisech obsahujících i promluvy bez volacích znaků (tabulka \ref{tab:base-fullts-final-performance}). To ukazuje samo o sobě na fakt, že volací znaky se modely naučily rozpoznávat lépe, než ostatní části promluv.
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{l c}
+        \hline
+        \textbf{Model} & \textbf{WER přepisů(\%)} \\ \hline
+        ATCOEN      & 21.81\\
+        ALLDS       & 19.66 \\
+        ALLDSATCOEN & 19.47 \\
+        BASELINE    & 79.07 \\
+        \hline
+    \end{tabular}
+    \caption{Porovnání úspěšnosti vytrénovaných základních modelů \textbf{pouze} na těch přepisech, které obsahují volací znaky.}
+    \label{tab:base-fullts-models-onlyTSwCAL}
+\end{table}
+
+Tabulka \ref{tab:prompt-full-base-models-diff-onlycallsigns} je významově shodná s tou uvedenou na začátku sekce, pouze datová sada je, jak již bylo zmíněno, omezena na promluvy obsahující volací znaky.
+
+% TOHLE JE TABULKA, KDE BYLY POCITANY HODNOTY PRO AG.. JEN TAM KDE SE VYSKYTOVALY CALLSIGNY, TAKZE SE DA VIDET KDE TY PROMPTY POMOHLY VYLOZENE TEM PROMLUVAM S CALLSIGNY, ALE TY VYSLEDKY JSOU VELMI PODOBNE...
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-base-models-diff-onlycallsigns}
+    \begin{tabular}{l | c c c c c c c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{2}{*}{BASELINE} 
+            & 52.39 & 48.51 & 47.03 & 61.90 & 59.58 & 47.97 & 79.58 \\
+            & \minuss{26.68} & \minuss{30.56} & \minuss{32.04} & \minuss{17.17} & \minuss{19.49} & \minuss{31.06} & \plus{0.51} \\
+        \hline
+        \multirow{2}{*}{ALLDS} 
+            & 17.04 & 22.29 & 34.69 & 28.49 & 20.74 & 28.08 & 24.00 \\
+            & \minuss{2.62} & \plus{2.63} & \plus{15.03} & \plus{8.83} & \plus{1.08} & \plus{8.42} & \plus{4.34} \\
+        \hline
+        \multirow{2}{*}{ATCOEN} 
+            & 17.85 & 18.50 & 18.72 & 18.84 & 21.58 & 21.03 & 22.25 \\
+            & \minuss{3.96} & \minuss{3.31} & \minuss{3.09} & \minuss{2.97} & \plus{0.23} & \minuss{0.78} & \plus{0.44} \\
+        \hline
+        \multirow{2}{*}{ALLDSATCOEN} 
+            & 16.98 & 19.99 & 26.85 & 21.10 & 19.92 & 24.72 & 21.28 \\
+            & \minuss{2.49} & \plus{0.52} & \plus{7.38} & \plus{1.63} & \plus{0.45} & \plus{5.25} & \plus{1.81} \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazující dosažené WER hodnoty základních modelů na promluvách obsahujících volací znaky. Druhý řádek pro každý model obsahuje rozdíl oproti referenční hodnotě bez promptu -- zeleně zlepšení (nižší WER), červeně zhoršení.}
+\end{table}
+
+Jedinou změnou co se týče zlepšení nebo zhoršení oproti tabulce \ref{tab:prompt-full-base-models-with-prompt-diff} je zhoršení modelu ATCOEN na promptu 5B. K tomu lze říci, že obsah tohoto promptu pravděpodobně pomáhal při přepisu jiných částí promluv, než volacích znaků.
+
+
+
+\chapter{Finetuning III. -- prompt na plných přepisech} \label{prompt_finetuning}
+Jako cílová i trénovací byla opět zvolena datová sada ATCO2, přesněji její anglická část.
+
+Předpoklad využití promptu v praxi spočíval v předání hypotetických volacích znaků modelu, mezi kterými by se měl vyskytovat i ten skutečně obsažený v promluvě. Očekávaný dopad, který se měl potvrdit během testování, se měl projevit ve zlepšení přepisu volacích znaků či dalších slov, která se vyskytovala v promptu nebo promluvě.
+
+\section{Použité modely a konvence názvů}
+Pro experimenty byla zvolena trojice modelů: BASELINE, tedy vanilla Whisper Medium, dále nejlepší modely vytrénované v kapitole \ref{base_finetuning} -- jedná se o ALLDS z osmé epochy\footnote{Nejlepší WER bylo dosaženo v šesté epoše, což je i hodnota, od které se zde odvíjí všechna porovnání. Tyto modely ovšem byly trénované, kdy bylo voleno váhování subsetů ATCO2 na základě počtu promluv. Rozdíl WER hodnot} (čistý Whisper Medium dotrénovaný na všech datasetech) a ALLDSATCOEN (čistý Whisper Medium dotrénovaný nejprve na všech datasetech a následně na ATCO2 datech).
+
+Jak bylo zmíněno v kapitole Finetuning II. \ref{base_finetuning}, i zde je zaveden pro větší přehlednost systém označení jednotlivých trénovaných modelů. Protože veškeré dotrénování probíhá s promptem a zároveň data vždy pocházejí z anglické části sady ATCO2, pojmenování modelů odráží pouze jejich výchozí stav pro tuto sekci. Tedy z výše zmíněné trojice modelů budeme i nadále označovat:
+\begin{itemize}
+    \item Model P-ALLDSATCOEN\footnote{\label{note:PjakoPROMPT}K modelům je přidáno na začátek písmeno \textbf{P}, které označuje, že se jedná o modely trénované za použití PROMPTU. }
+    \item Model P-ALLDS\textsuperscript{\ref{note:PjakoPROMPT}}
+    \item Model P-BASELINE\textsuperscript{\ref{note:PjakoPROMPT}}
+\end{itemize}
+
+Pro přehlednost ještě zmiňme, že natrénovaný model ATCOEN, zmíněný v kapitole \ref{base_finetuning}, nebyl vybrán pro další adaptaci na prompt, protože dosahoval nejhorších výsledků (v průměru o více, než 2\% WER). V této kapitole je pouze zmiňován pro srovnání s modelem P-BASELINE, který bude trénován na prompt na ATCO2 datech.
+
+\section{Formát a typy promptů}
+Základní prvek této kapitoly tvořilo přidání promptů, jejichž tvorba je popsána blíže v sekci \textit{Konstrukce promptů} \ref{prompt_construction}. Samotnou množinu promptů, která byla vytvořena pro každou nahrávku, nyní popíšeme blíže:
+
+\begin{itemize}
+    \item Všechny správné\footnote{Správným volacím znakem rozumíme takový, který se v promluvě vyskytuje. Špatným potom takový, který v promluvě není obsažen \textbf{celý}. Tedy pokud promluva obsahuje volací znak například \textit{Air France Bravo Oscar One}, množina správných volacích znaků bude obsahovat přesně toto sousloví a množina špatných volacích znaků může obsahovat vše, kromě této sekvence slov, například by mohla vypadat následovně: \textit{Air France Bravo Charlie Charlie, One One Two Zero Zero}} volací znaky. Označení \textbf{AG}.
+
+    Smyslem tohoto promptu bylo zjistit, zda model začne dokonale přepisovat volací znaky v případě, že bude mít jistotu, že prompt tento volací znak přesně obsahuje. V praxi by toto ovšem nebylo použitelné.
+    
+    \item Všechny správné a čtyři špatné volací znaky. Označení \textbf{AG4B}.
+
+    Cílem bylo ověřit, jestli model opět zvládne správně přepsat volací znak, pokud se ten bude vyskytovat v nějaké menší množině jiných volacích znaků. 
+    
+    \item Všechny správné a třicet pět špatných volacích znaků. Označení \textbf{AG35B}.
+    
+    Stejný cíl jako v bodě výše, nicméně takto vytvořený prompt by skutečně mohl být využít v praxi, kdy jsou modelu předány volací znaky letadel, které se v danou chvíli, kdy se promluva uskutečnila, vyskytovaly v okolí letiště a dispečer je mohl vyslovit.
+    
+    \item Všechny správné a padesát českých náhodných slov. Označení \textbf{AG50CZB}.
+    
+    Pouze experimentální prompt. Množina českých slov má za cíl zmást model, protože je zajištěno, aby se žádné z nich v promluvě nevyskytovalo. 
+    
+    \item Pět špatných volacích znaků. Označení \textbf{5B}.
+    
+    Je dobrý předpoklad, že tento prompt bude obsahovat nějaké slovo, které se v promluvě vyskytuje a zkoumáme dopad této malé jednotky správné informace, předané modelu.
+    
+    \item Třicet pět špatných volacích znaků. Označení \textbf{35B}.
+
+    Podobný smysl jako v bodě výše, s větší pravděpodobností výskytu shodných slov mezi promptem a promluvou.
+    
+    \item Padesát českých náhodných slov. Označení \textbf{50CZB}.
+    Pouze experimentální prompt, který má za cíl ověřit, zda se model kompletně odnaučí využívat prompt v případě, kdy během tréninku v něm nebude obsaženo jediné slovo vyskytující se v promluvě.
+
+\end{itemize}
+
+Je nutné dodat, že veškeré dodané série "špatných" volacích znaků a náhodných slov, byly při tvorbě promptů, které je vyžadovaly, vybírány vždy znova. Tedy žádné z padesáti českých slov, vyskytujících se v promptu typu 50CZB nemusí být obsaženo v typu AG50CZB (podobně pro špatné volací znaky).
+
+Celá množina přídavný informací existovala ve zkrácené a plné formě, tedy ke každé nahrávce existovalo celkem čtrnáct promptů.
+
+
+\section{Trénování}
+
+Každý z modelů byl vytrénován na všech sedm zmíněných typů promptů (jedná se o dataset ATCO2). Pro trénování Whisper Medium (P-BASELINE) bylo využito trénovacích parametrů I. skupiny s nastavením na třicet epoch. Model P-ALLDS, tedy vytrénovaný Whisper Medium na všech datasetech, byl nyní dotrénován s parametry II. skupiny po třicet epoch. Konečně model P-ALLDSATCOEN, což je ALLDS dotrénovaný čistě na ATCO2 datech, prošel trénováním s parametry II. skupiny po dobu patnácti epoch.
+
+\section{Testování}
+Na obrázku \ref{fig:prompt-full-wer-avg-AG-AG35B-50CZB} je ukázán průběh evaluace epoch modelů pro trénování za použití promptů AG, AG35B a 50CZB (stejné byly využity právě i během evaluace). 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/prompt-full/wer_avg_AG_AG35B_50CZB.png}
+    \caption{Evaluace jednotlivých epoch pro vybrané modely}
+    \label{fig:prompt-full-wer-avg-AG-AG35B-50CZB}
+\end{figure}
+
+Z dat grafů vidíme očekávaný strmý pokles hodnot pro model P-BASELINE, který žádná data ATCO2 ještě neviděl. Druhé dva modely zřejmě trpí přetrénováním, u modelu P-ALLDSATCOEN lze odhadnout, že k mírnému zlepšení přesto dochází.
+`
+V tabulce \ref{tab:prompt-full-AG-AG35B-50CZB-bestWER}, korespondující s grafy na obrázku \ref{fig:prompt-full-wer-avg-AG-AG35B-50CZB} můžeme detailně číst nejnižší WER hodnoty, opět vypočítané jako průměr pro všechny subsety testovací sady, kterých bylo během evaluace dosaženo.
+
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-AG-AG35B-50CZB-bestWER}
+    \begin{tabular}{c c c c c c c}
+        \hline
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{AG}} & \multicolumn{2}{c}{\textbf{AG35B}} & \multicolumn{2}{c}{\textbf{50CZB}} \\ 
+        \hline
+                       & WER \% & ep & WER \% & ep & WER \% & ep \\
+        \hline
+        P-BASELINE & 16.94 & 17  & 17.78 & 19 & 21.94 & 22 \\
+        \hline
+        P-ALLDS & 17.85 & 14 & 18.76 & 27 & 20.41 & 10 \\
+        \hline
+        P-ALLDSATCOEN & 17.69 & 13  & 19.24 & 7  & 20.28 & 3 \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazující \textbf{nejnižší} dosažené WER hodnoty pro plné přepisy promluv a epochy, ve kterých jich bylo dosaženo, pro testované prompty AG, AG35B a 50CZB.}
+\end{table}
+
+Nejlepších výsledků obecně při použití promptu dosahuje model P-BASELINE (Vanilla Medium). Pro názornější porovnání jeho chování při použití jednotlivých druhů promptu je k dispozici graf.
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/OUT/prompt-full/baseline_wer_ts.png}
+    \caption{Graf ukazující celkovou úspěšnost přepisu dat modelem P-BASELINE natrénovaném na různých typech promptu, přičemž pro každý prompt se liší epocha modelu, ve které dosahovala metrika WER nejnižších hodnot.}
+    \label{fig:enter-label}
+\end{figure}
+
+Vcelku se model chová předvídatelně. Vezmeme-li v potaz, že model ATCOEN dosahuje celkové WER 22.48\% je jisté, že zavedením trénování s promptem nedojde ke zhoršení kvality rozpoznávání promluv. Zajímavé výsledky jsou zde dva:
+\begin{itemize}
+    \item Při použití promptu \textbf{AG50CZB} vykazuje model při testování druhý nejlepší výsledek ze všech promptů. Pravděpodobně se model naučil v sérii českých slov najít volací znak. To ovšem může být hypoteticky usnadněno jiným jazykem volacího znaku, kdy okolní slova jsou v češtině, zatímco volací znak v angličtině. Druhou možností může být též delší sekvence slov mezi čárkami, na kterou by si mohl model zvyknout a tak automaticky by došlo k výběru slov volacího znaku (volací znak obsahuje obvykle tři a více slov, zatímco česká slova jsou po jednom oddělena čárkami, ukázáno níže \ref{AG50CZB-exampleprompt}).
+
+    \begin{center} \label{AG50CZB-exampleprompt}
+        ahoj, můj, nový, traktor, \colorbox{paleblue}{one zero alpha bravo}, hezký, potravina
+    \end{center}
+        
+    \item Prompt \textbf{50CZB} stále ovlivňuje model pozitivním způsobem. S jistotou lze prohlásit, že žádné slovo v promptu tohoto typu se nevyskytuje v promluvě. Přesto by důvodem zlepšení mohlo být správné rozlišení některých českých slov, které se zřídka v nahrávkách vyskytují, díky tomu, že náhodná slova jsou stále v českém jazyce. 
+\end{itemize}
+
+Vzhledem k tomu, že s jistotou lze prohlásit, že žádné prompty AG50CZB a 50CZB neobsahují žádné slovo, které by bylo řečeno v promluvě, kromě správných callsignů (v případě AG50CZB).
+
+\subsection{Evaluace všech modelů s každým typem promptu}
+V této části se zaměříme na otestování každého modelu natrénovaného na daný typ promptu. Testovací sada rovněž bude prompt obsahovat, tedy testy vypadaly následovně: model, natrénovaný na prompt AG4B je testován na datech ATCO2 za použití promptu typu AG4B,... 
+
+Tabulka \ref{tab:prompt-full-trained-models-with-prompt-diffs} nám ukazuje WER hodnoty na celém datasetu ATCO2 pro jednotlivé modely trénované na daných promptech. U modelů P-BASELINE a P-ALLDSATCOEN navíc můžeme pozorovat, o kolik se získané výsledky liší oproti základnímu modelu trénovaném na stejném datasetu bez a použitým promptem.
+
+\subsubsection*{WER hodnoty celých přepisů}
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-trained-models-with-prompt-diffs}
+    \begin{tabular}{l | a c b c c c c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{5}{*}{\textbf{P-ALLDS}}
+            & 17.85 & 18.70 & 18.76 & 18.40 & 19.95 & 20.10 & 20.41 \\ % WER hodnota přepisu vytrenovaneho modelu
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad– Rozdíl proti ALLDSATCOEN bez promptu (WER = 20.27\%)}} \\
+            & \minuss{2.42} & \minuss{1.57} & \minuss{1.51} & \minuss{1.87} & \minuss{0.32} & \minuss{0.17} & \plus{0.14} \\ % updated diffs
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad– Rozdíl proti ALLDSATCOEN testovanému s promptem (WER viz. \ref{tab:prompt-full-base-models-with-prompt-diff})}} \\
+            & \minuss{0.06} & \minuss{2.06} & \minuss{8.46} & \minuss{3.40} & \minuss{0.79} & \minuss{5.19} & \minuss{1.69} \\
+        \hline
+        \multirow{5}{*}{\textbf{P-BASELINE}} 
+            & \cellcolor{green!25}16.94 & 18.25 & \cellcolor{green!25}17.78 & 17.35 & 21.44 & 21.71 & 21.94 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad– Rozdíl proti ATCOEN bez promptu (WER = 22.48\%)}} \\
+            & \minuss{5.54} & \minuss{4.23} & \minuss{4.70} & \minuss{5.13} & \minuss{1.04} & \minuss{0.77} & \minuss{0.54} \\ % updated diffs
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad– Rozdíl proti ATCOEN testovanému s promptem (WER viz. \ref{tab:prompt-full-base-models-with-prompt-diff})}} \\
+            & \minuss{1.87} & \minuss{1.17} & \minuss{1.85} & \minuss{2.38} & \minuss{0.81} & \plus{0.02} & \minuss{1.03} \\
+        \hline
+        \textbf{P-ALLDSATCOEN}
+            & 17.65 & 18.95 & 19.20 & 19.00 & 19.81 & 19.91 & 20.22 \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazující dosažené WER hodnoty plných přepisů ATCO2 datasetu za použití promptů na modelech adaptovaných na ně. Druhý řádek pro každý model obsahuje rozdíl oproti referenční hodnotě modelu trénovaného bez promptu -- zeleně zlepšení, červeně zhoršení. Pro P-ALLDS je referenční hodnotou WER 20.27\% získaná modelem ALLDSATCOEN, pro P-BASELINE potom WER 22.48\% získaná modelem ATCOEN. \colorbox{softcream}{Oranžově} je označen sloupec pro modely trénované a testované na promptu AG, \colorbox{paleblue}{modře} pak sloupec s modely týkající se promptu AG35B. Třetí řádek srovnává základní modely ALLDSATCOEN a ATCOEN, testovanými s promptem proti P-ALLDS a P-BASELINE. K modelu P-ALLDSATCOEN neexistuje ekvivalentně trénovaný model (model trénovaný na všech dostupných datasetech a poté dvakrát na ATCO2 není dostupný) a tudíž pro něj nejsou zobrazena srovnání.}
+\end{table}
+
+Z dat lze poznat, že po natrénování modelů má nejpozitivnější vliv použití promptu AG. To sice není použitelné v praxi, ale ukazuje, že pokud model ví, že se obsah promptu bude v celé své formě vyskytovat v promluvě, potom jej dokáže zasadit správně do promluvy. Dále si všimněme, že nejlepších hodnot obecně pro prompty, kde se vyskytoval správný volací znak (AG\_), je dosaženo modelem P-BASELINE. 
+
+Tabulka \ref{tab:comparison-p-baseline-atcoen-wer-plus-wercal} nám názorně srovnává dva modely, které prošly adaptací na stejných datech, ale jeden s (P-BASELINE) a druhý bez (ATCOEN) promptu.
+\begin{table}[H]
+    \centering
+    \label{tab:comparison-p-baseline-atcoen-wer-plus-wercal}
+    \begin{tabular}{p{2.5cm} | a c m{3.5cm}}
+        \hline
+        \textbf{Model} & \textbf{WER plných přepisů (\%)} & \textbf{WER vol. zn. (\%)} & \textbf{Správně přepsaných vol. zn.}\\
+        \hline
+        \textbf{P-BASELINE}, adaptovaný na AG & 16.94 & 2.64 & 719\\
+        \hline
+        \textbf{ATCOEN}, adaptovaný bez promptu & 22.48 & 19.37 & 397 \\
+        \hline
+        rozdíl & 5.54 & 16.73 & 322\\
+    \end{tabular}
+    \caption{Tabulka srovnávající WER hodnoty přepisu a volacích znaků v nich pro model ATCOEN a P-BASELINE.}
+\end{table}
+
+Nyní pojďme ověřit, nakolik užití promptu AG ovlivňuje i jiné části přepisu, než jen volací znaky v promluvě. Výpočet vztáhneme k modelu P-BASELINE:
+
+\begin{itemize}
+    \item Obsah volacích znaků v testovací sadě ATCO2 \dotfill 23.42\% \hfill
+    \item Změna WER vol. zn. mezi P-BASELINE a ATCOEN \dotfill 16.73\% \hfill
+\end{itemize}
+
+Potom,
+\begin{equation}
+    \label{eq:easy-computation}
+    \frac{23.42}{100}\times{16.73}=3.92
+\end{equation}
+je výpočet, který lze interpretovat jako: "pokud se 23.42\% přepisu (což jsou volací znaky) zlepší o 16.94\%, potom, pokud by se toto zlepšení týkalo právě pouze volacích znaků v promluvách, tak by rozdíl WER hodnot celých přepisů (100\%) měl být 3.97\%". Vidíme však, že rozdíl mezi P-BASELINE a ATCOEN je tvořen 5.54\%, což ukazuje, že dotrénování na promptu, který obsahuje jen volací znaky, stejně ovlivňuje i jiné části promluvy. To je možné ze dvou důvodů - první, přepis obsahuje slova, která jsou uvedena v samotném volacím znaku. Jednalo by se o případ:
+
+\begin{quote}
+    PROMPT: Alpha Bravo \textbf{Zero} X-Ray \textbf{One} \\
+    PROMLUVA: Hey, here is Alpha Bravo Zero X-Ray One, altitude Three \textbf{One Zero Zero}.
+\end{quote}
+
+Tučně jsou ukázána slova, která jsou předaná jako součást volacího znaku, ale vyskytují se i jinde v přepisu. Druhým důvodem by mohla být adaptace na řečníka. Tu ilustruje následující obrázek \ref{fig:prompt-as-speaker-adapter-explain}.
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/prompt_as_speaker_adapt.png}
+    \caption{Ilustrace ovlivnění přepisu promptem jako nástrojem na adaptaci modelu na řečníka.}
+    \label{fig:prompt-as-speaker-adapter-explain}
+\end{figure}
+
+
+\subsubsection*{WER hodnoty volacích znaků}
+V tabulce \ref{tab:prompt-full-trained-models-with-prompt-diffs-calwer} čteme výsledky WER hodnot pro volací znaky.
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-trained-models-with-prompt-diffs-calwer}
+    \begin{tabular}{l | a c b c c c c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{5}{*}{\textbf{P-ALLDS}}
+            & 7.19 & 9.04 & 10.40 & 9.26 & 13.98 & 14.59 & 15.21 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti ALLDSATCOEN test. bez promptu (WER = 14.78\%) $\downarrow$}} \\
+            & \minuss{7.59} & \minuss{5.74} & \minuss{4.38} & \minuss{5.52} & \minuss{0.80} & \minuss{0.19} & \plus{0.43} \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti ALLDSATCOEN test. s promptem (WER viz. \ref{tab:prompt-full-base-models-with-prompt-diff-callsign}) $\downarrow$}} \\
+            & \plus{1.21} & \minuss{1.97} & \minuss{8.89} & \minuss{3.21} & \minuss{0.78} & \minuss{5.39} & \minuss{1.48} \\
+        \hline
+        \multirow{5}{*}{\textbf{P-BASELINE}}
+            & 2.64 & 5.66 & 5.55 & 4.31 & 17.24 & 15.44 & 18.62 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti ATCOEN test. bez promptu (WER = 19.37\%) $\downarrow$}} \\
+            & \minuss{16.73} & \minuss{13.71} & \minuss{13.82} & \minuss{15.06} & \minuss{2.13} & \minuss{3.93} & \minuss{0.75} \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti ALLDSATCOEN test. s promptem (WER viz. \ref{tab:prompt-full-base-models-with-prompt-diff-callsign}) $\downarrow$}} \\
+            & \minuss{3.65} & \minuss{2.06} & \minuss{4.43} & \minuss{5.50} & \minuss{0.54} & \minuss{0.64} & \minuss{1.29} \\
+        \hline
+        \textbf{P-ALLDSATCOEN}
+            & 7.05 & 10.52 & 12.38 & 10.15 & 14.28 & 14.09 & 15.17 \\
+        \hline
+    \end{tabular}
+
+    \caption{Tabulka ukazující dosažené WER hodnoty transkripce volacích znaků za použití promptů. Druhý řádek pro každý model ukazuje rozdíl oproti referenční hodnotě bez promptu — zeleně zlepšení, červeně zhoršení. Třetí řádek je rozdíl oproti původnímu základnímu modelu (ATCOEN pro P-BASELINE, ALLDSATCOEN pro P-ALLDS).}
+\end{table}
+
+Téměř všude došlo ke zlepšení. Výjimku tvoří prompt AG, kde vidíme, že využití tohoto promptu u modelu ALLDSATCOEN, který na něj adaptován není, je účinnější, než je tomu u P-ALLDS, který na tento typ adaptován byl. Níže na obrázku \ref{fig:prompt-full-baseline-wer-cal} pak můžeme pozorovat rozložení WER hodnot volacích znaků pro jednotlivé subsety ATCO2 pro model P-BASELINE, přes jeho adaptace na všechny typy promptu.
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/OUT/prompt-full/baseline_wer_cal.png}
+    \caption{Přehled úspěšnosti na volacích znacích verzí modelu P-BASELINE vytrénovaných na různé typy promptu.}
+    \label{fig:prompt-full-baseline-wer-cal}
+\end{figure}
+
+Zde si můžeme všimnout, že viděné letiště Štefánik je horší nebo téměř stejné jako Ruzyně, pokud se v promptu vyskytuje správný volací znak (tzn. AG\_). Naopak pokud je celý prompt bez správného volacího znaku, Štefánik začne mít výrazně lepší výsledky, než Ruzyně. Tento výsledek je zvláštní, protože sice obsahuje více volacích znaků, ale pouze o 1.02\%, což neodpovídá tomu, o kolik se zhorší přepis volacích znaků při \textit{špatných} promptech oproti letišti Štefánik.
+
+\subsection{Experiment I. - testování bez promptu} \label{finetuning3-experiment1}
+V následujícím experimentu je cílem zjistit, jak velká je míra závislosti natrénovaných modelů na prompt. Tedy modely P-BASELINE, P-ALLDSATCOEN a P-ATCOEN adaptované na jednotlivé prompty jsou zde otestovány na datasetu ATCO2 bez použití promptu. Výsledky zobrazuje tabulka \ref{tab:prompt-full-noprompttest}.
+
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-noprompttest}
+    \begin{tabular}{l | c c c c c c b}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{3}{*}{\textbf{P-ALLDS}}
+            & 20.26 & 20.81 & 23.71 & 20.41 & 20.17 & 20.28 & 20.47 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti P-ALLDS adapt. na dané typy promptů (\ref{tab:prompt-full-trained-models-with-prompt-diffs})$\downarrow$}} \\
+            & \plus{2.41} & \plus{2.11} & \plus{4.95} & \plus{2.01} & \plus{0.22} & \plus{0.18} & \plus{0.06} \\
+        \hline
+        \multirow{3}{*}{\textbf{P-BASELINE}}
+            & 24.92 & 24.82 & 23.16 & 27.84 & 22.86 & 23.38 & 22.18 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti P-BASELINE adapt. na dané typy promptů (\ref{tab:prompt-full-trained-models-with-prompt-diffs}) $\downarrow$}} \\
+            & \plus{7.98} & \plus{6.57} & \plus{5.38} & \plus{10.49} & \plus{1.42} & \plus{1.67} & \plus{0.24} \\
+        \hline
+        \multirow{3}{*}{\textbf{P-ALLDSATCOEN}}
+            & 20.62 & 21.10 & 20.14 & 21.08 & 19.99 & 20.27 & 20.30 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti P-ALLDSATCOEN adapt. na dané typy promptů (\ref{tab:prompt-full-trained-models-with-prompt-diffs}) $\downarrow$}} \\
+            & \plus{2.97} & \plus{2.15} & \plus{0.94} & \plus{2.08} & \plus{0.18} & \plus{0.36} & \plus{0.08} \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazuje výsledky testování bez promptu modelů, \textbf{adaptovaných na jednotlivé typy promptu}. Druhé číselné řádky ukazují rozdíly oproti testům s promptem.}
+\end{table}
+
+Srovnání modelů adaptovaných na prompty \textbf{AG\_} vykazuje jistou anomálii, totiž že P-BASELINE se zhoršil mnohem více bez využití promptu, než ostatní modely. Zjevně zde tedy existuje korelace mezi použitím promptu a daty, na která je model adaptován. 
+
+Důležitým ukazatelem jsou minimální rozdíly ve sloupci 50CZB (modře označený). Ty dokazují, že si všechny modely správně zvykl na neužitečnost tohoto promptu, a relativně dobře začal ignorovat jeho dopad.
+
+\subsection{Experiment II. - všechny špatné vs všechny dobré vol. zn.} \label{finetuning3-experiment2}
+Experiment ukazuje, co se bude dít s modely, které byly adaptovány s promptem, který obsahoval buď samé v promluvě neexistující volací znaky (35B), nebo jenom existující (AG), pokud budou testovány na komplementárním promptu.
+
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-noprompttest}
+    \begin{tabular}{l | c | c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{35B} \\
+        \hline
+        \multirow{4}{*}{\textbf{P-ALLDS}}
+            & 17.85 & 20.10 \\
+            & \textit{\footnotesize $\downarrow$ Test na promptu 35B $\downarrow$} &  \textit{\footnotesize $\downarrow$ Test na promptu AG $\downarrow$}\\
+            & \cellcolor{blue!25}20.44 & \cellcolor{blue!25}18.45 \\
+            & \plus{2.59} & \minuss{1.65} \\
+        \hline
+        \multirow{4}{*}{\textbf{P-BASELINE}}
+            & 16.94 & 21.71 \\
+            & \textit{\footnotesize $\downarrow$ Test na promptu 35B $\downarrow$} &  \textit{\footnotesize $\downarrow$ Test na promptu AG $\downarrow$}\\
+            & \cellcolor{blue!25}25.78 & \cellcolor{blue!25}19.83 \\
+            & \plus{8.84} & \minuss{1.88} \\
+        \hline
+        \multirow{4}{*}{\textbf{P-ALLDSATCOEN}}
+            & 17.65 & 19.91 \\
+            & \textit{\footnotesize $\downarrow$ Test na promptu 35B $\downarrow$} &  \textit{\footnotesize $\downarrow$ Test na promptu AG $\downarrow$}\\
+            & \cellcolor{blue!25} 20.92 & \cellcolor{blue!25}19.20 \\
+            & \plus{3.27} & \minuss{0.71} \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazuje výsledky testování modelů, které byly adaptované na prompt AG, s promptem 35B a obráceně - tyto hodnoty jsou označeny \colorbox{blue!25}{fialově}. V prvním řádku pro každý model nalezneme hodnoty, kterých dosahoval při trénování i testování na stejném promptu.}
+\end{table}
+
+Očekávaně si pohoršily modely adaptované na prompt AG. Naopak modely trénované na 35B zvládly využít předanou informaci z promptu AG. To svědčí o tom, že prompt 35B obsahuje slova, která se v promluvě vyskytují a tudíž se model naučil prompt nějak využít. Pokud ovšem porovnáme výsledky adaptovaných modelů na 35B při testech bez využití promptu (tabulka \ref{tab:prompt-full-noprompttest}), můžeme pozorovat, že i tam modely reagují jen nepatrným zhoršením WER hodnot, které je sice větší než pro prompt 50CZB, nikoli však výrazně. To by nasvědčovalo hypotéze, že model se nikdy zjevně zcela neodnaučí prompt ignorovat a při předání smysluplné informace v něm ji využije.
+
+\subsection{Experiment III. - stabilní vs nestabilní pozice volacího znaku}
+Trojice modelů P-BASELINE, P-ALLDSATCOEN a P-ALLDS byla experimentálně adaptována na prompt AG35B, který měl vždy následující formu:
+\begin{center}
+    \textcolor{mygreen}{[správné volací znaky]},\textcolor{red}{[špatný volací znak],[špatný volací znak],[špatný volací znak],[špatný volací znak]}
+\end{center} 
+-- tedy správné volací znaky se vyskytovaly na prvním místě v tomto typu promptu. Cílem bylo otestovat, zda si model zvykne na pozici správných volacích znaků a jak bude reagovat v případě změny. To je reflektováno v následující tabulce \ref{tab:prompt-full-AG35BstableVSunstable}:
+
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-AG35BstableVSunstable}
+    \begin{tabular}{p{3.5cm} | Q{5cm} Q{5cm} }
+        \textbf{Modely adapt. na AG35B}  & \textbf{Test na AG35B, stabilní poz. správných vol. zn.} & \textbf{Test na AG35B, randomizovaná poz. správných vol. zn.}  \\
+        \hline
+        P-ALLDS         & 18.11 & 20.14 \\
+        P-BASELINE      &  16.89 &   23.33\\
+        P-ALLDSATCOEN   & 18.83 &  19.48 \\
+        \hline
+    \end{tabular}    
+    \caption{Tabulka ukazuje výsledné \textbf{WER hodnoty celých přepisů} v procentech. Testované modely byly adaptovány na prompt AG35B, ve kterém měly správné callsigny stabilní pozici (nacházely se na začátku promptu). WER hodnoty (\%) v tabulce se pak týkají testů na promptech se stabilní a randomizovanou pozicí správných volacích znaků.}
+\end{table}
+
+\begin{table}[H]
+    \centering
+    \label{tab:}
+    \begin{tabular}{p{3.5cm} | Q{5cm} Q{5cm}}
+        \textbf{Modely adapt. na AG35B}  & \textbf{Test AG35B, stabilní pozice AG} & \textbf{Test AG35B, \textit{randomizovaná pozice AG}}  \\
+        \hline
+        P-ALLDS         & 6.63 & 11.81 \\
+        P-BASELINE      & 3.01 & 18.09 \\
+        P-ALLDSATCOEN   & 10.19 & 12.76 \\
+        \hline
+        
+    \end{tabular}
+    \caption{Tabulka ukazuje výsledné \textbf{WER hodnoty volacích znaků} v procentech. Testované modely byly adaptovány na prompt AG35B, ve kterém měly správné callsigny stabilní pozici (nacházely se na začátku promptu). WER hodnoty (\%) v tabulce se pak týkají testů na promptech se stabilní a randomizovanou pozicí správných volacích znaků.}
+    \label{tab:my_label}
+\end{table}
+
+Pozorovat opět můžeme velké rozdíly pro model P-BASELINE, který se nejvíce přizpůsobil stabilní pozici správných volacích znaků. Proti tomu model P-ALLDSATCOEN vykazuje největší schopnost vzít si z promptu potřebné informace, i když byl naučen na fixní pozici skutečně se vyskytujících volacích znaků v promluvě.
+
+\subsection{Experiment IV. - jiné prompty}
+Protože jednotlivé prompty, vyjma AG, obsahují náhodně vygenerované části, je vhodné otestovat případ změny těchto promptů. Proto byla celá testovací sada ATCO2 vygenerována znovu se stejnými daty, ale novými prompty. Jediným stejným zůstává prompt AG, protože se skládá z reálně se vyskytujících volacích znaků v promluvách, které se nemění. V tabulce \ref{tab:prompt-full-promptdscompare-WER} sledujeme WER hodnoty celých přepisů pro dva prompt-sety.
+
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-promptdscompare-WER}
+    \begin{tabular}{l | c c c c c c c}
+        & \multicolumn{7}{c}{Adaptace modelu P-BASELINE} \\
+        & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \textbf{PROMPT DS I.} & & & & & & & \\
+           \quad Štefánik & 13.13 & 15.49 & 13.58 & \colorbox{red!25}{13.58} & 16.12 & 18.55 & 16.57 \\
+           \quad Ruzyně   & 14.87 & 16.59 & 15.98 & \colorbox{red!25}{15.93} & 18.98 & 18.42 & 19.87 \\
+           \quad Zurich   & 18.16 & 19.16 & 19.02 & 18.41 & 23.05 & 23.07 & 23.46 \\
+           Celkem  WER  & 16.94 & 18.25 & 17.78 & 17.35 & 21.44 & 21.71 & 21.94 \\
+        \hline
+        \textbf{PROMPT DS II.} & & & & & & & \\
+           \quad Štefánik & 13.13 & 14.72 & 13.70 & \colorbox{red!25}{14.53} & 16.06 & 17.91 & 16.51 \\
+           \quad Ruzyně   & 14.87 & 16.20 & 15.70 & \colorbox{red!25}{16.70} & 18.92 & 19.03 & 20.03 \\
+           \quad Zurich   & 18.16 & 19.75 & 20.01 & 18.42 & 25.87 & 23.02 & 23.57 \\
+            Celkem WER   & 16.94 & 18.49 & 18.46 & 17.61 & 23.41 & 21.68 & 22.03 \\
+        \hline
+       \rowcolor{softcream} 
+       \textbf{II. - I.} (pro \textit{Celkem)} &  0.00 &  \plus{0.24} &  \plus{0.68} &  \plus{0.26} &  \plus{1.97} & \minuss{0.03} &  \plus{0.09} \\
+        \hline
+    \end{tabular}
+
+    \caption{Tabulka ukazuje výsledné \textbf{WER hodnoty celých přepisů} po testování adaptací modelu P-BASELINE na různé typy promptu na dvou různých prompt-setech. PROMPT DS I. obsahuje prompty používané na všech ostatních místech v této práci, PROMPT DS II. je použitý pouze zde pro srovnání. \colorbox{softcream}{Oranžově} je označen řádek s rozdílem celkových WER hodnot pro oba sety promptů.}
+\end{table}
+
+Zcela očekávaně došlo k drobným změnám ve WER hodnotách - ty dokazují, že přidané informace v promptu jsou pro model užitečné a do značné míry na nich závisí celková přesnost přepisu. Při podrobnějším prohlížení tabulky vidíme, že někdy dojde ke zlepšení pro jednotlivé subsety, zatímco ostatní prodělají zhoršení. Zmínit také můžeme kontrolní nulu pro rozdíl týkající se testování promptu AG.
+
+Prompt AG50CZB neočekávaným způsobem negativně ovlivňuje přepis týkající se letišť Štefánik a Ruzyně, zatímco Zurich zůstává prakticky nedotčený. Z toho vyplývá odhad, že přestože jsou data označená jako anglická pro všechna tři letiště, Štefánik a Ruzyně obsahují více útržků libovolných českých promluv (\textit{"ahoj", "díky"}, atp.) a díky tomu jsou jejich přepisy ovlivněny i náhodnými slovy, která jsou však v češtině.
+
+Tabulka \ref{tab:prompt-full-promptdscompare-CALWER} zaznamenává výsledné \textbf{WER hodnoty volacích znaků} pro testování na dvou setech promptů modelu P-BASELINE. Pozorovat můžeme také celkový počet zcela správně přepsaných volacích znaků.
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-promptdscompare-CALWER}
+    \begin{tabular}{p{4cm} | c c c c c c c}
+        & \multicolumn{7}{c}{Adaptace modelu P-BASELINE} \\
+         & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \textbf{PROMPT DS I.} & & & & & & & \\
+           \quad Štefánik & 2.01 & 4.47 & 3.35 & 2.22 & 9.54 & 8.49 & 11.82 \\
+           \quad Ruzyně   & 0.63 & 2.25 & 3.88 & 2.20 & 17.12 & 12.09 & 16.38 \\
+           \quad Zurich   & 3.11 & 6.48 & 6.29 & 5.08 & 18.54 & 17.21 & 20.16 \\
+           Celkem WER vol. zn. & 2.64 & 5.66 & 5.55 & 4.31 & 17.24 & 15.44 & 18.62 \\
+           Celkem správně přepsaných vol. zn. & 719 & 656 & 659 & 674 & 422 & 458 & 415 \\
+        \hline
+        \textbf{PROMPT DS II.} & & & & & & & \\
+           \quad Štefánik & 2.01 & 3.32 & 4.83 & 3.75 & 9.60 & 8.63 & 11.29 \\
+           \quad Ruzyně   & 0.63 & 2.86 & 3.33 & 2.49 & 17.36 & 12.44 & 16.57 \\
+           \quad Zurich   & 3.11 & 7.39 & 6.18 & 5.07 & 20.00 & 16.85 & 20.23 \\
+           Celkem  WER vol. zn. & 2.64 & 6.28 & 5.63 & 4.56 & 18.36 & 15.24 & 18.63 \\
+           Celkem správně přepsaných vol. zn. & 719 & 657 & 652 & 672 & 414 & 461 & 419 \\
+        \hline
+        \rowcolor{softcream} 
+        \textbf{II. - I.} (pro \textit{Celkem)} & 0.00 & \plus{0.62} & \plus{0.08} & \plus{0.25} & \plus{1.12} & \minuss{0.20} & \plus{0.01} \\
+        \rowcolor{paleblue}
+        \textbf{II. - I.} (pro \textit{správně přepsané vol. zn.)} & 0 & \textcolor{green!60!black}{+1} & \textcolor{red}{-7} & \textcolor{red}{-2} & \textcolor{red}{-8} & \textcolor{green!60!black}{+3} & \textcolor{green!60!black}{+4} \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazuje výsledné \textbf{WER hodnoty volacích znaků} po testování adaptací modelu P-BASELINE na různé typy promptu na dvou různých prompt-setech. PROMPT DS I. obsahuje prompty používané na všech ostatních místech v této práci, PROMPT DS II. je použitý pouze zde pro srovnání. \colorbox{softcream}{Oranžově} je označen řádek s rozdílem celkových WER hodnot volacích znaků pro oba sety promptů, \colorbox{paleblue}{modře} pak řádek s rozdílem správně přepsaných volacích znaků.}
+\end{table}
+
+Opět pozorujeme drobné změny ve WER hodnotách, které ovšem nekorespondují zcela se změnou počtu správně přepsaných volacích znaků (například vidíme, že pro AG35B je sice rozdíl WER hodnot pouze 0.08, ale pro DS II. je o sedm méně bezchybně přepsaných promptů). Prompt AG35B má, ze všech promptů AG\_, celkem nejvíc negativní vliv na metriku zcela správně přepsaných promptů -- příčinu bychom mohli hledat v tom, že AG35B může obsahovat volací znaky, které se liší například pouze v jednom slově od toho, který se skutečně v promluvě vyskytuje. To by potom mohlo zapříčinit zmatení modelu při přepisu volacích znaků.
+
+\chapter{Finetuning IV. -- zkrácené přepisy}
+Formát zde použitých dat je zkrácený, tzn. všechny volací značky, slova představující leteckou abecedu či číslovky jsou přepsána na zkrácenou formu. Příprava je popsána v kapitole Příprava dat, sekce Úprava datasetu ATCO2 pro trénování související s využitím promptu (\ref{atco2-final-prepare+prompt}). 
+
+Adaptace základních modelů, tj. zatím bez použití promptu, proběhla na stejných typech dat a stejných dvou skupinách parametrů jako tomu bylo u plných přepisů. Rovněž konvence zápisu zůstává pro zkrácené přepisy identická a budeme zde hovořit opět o modelech BASELINE, ALLDS, ATCOEN a ALLDSATCOEN.
+
+Rovněž testovací i trénovací sadou zůstává anglická část datasetu ATCO2 a některé výsledky, obsažené v této sekci ukazují hodnoty WER metriky i pro subsety těchto dat (Ruzyně, Štefánik a Zurich).
+
+\section{Testování modelů na ATCO2 bez promptu}
+Adaptace modelů vykazovala se proti trénování modelů pro plné přepisy lišila v nižším pořadovém čísle epoch, ve kterých modely dosáhly nejlepších výsledků. Tabulka \ref{tab:base-short-results} epochy s nejnižší WER hodnotou, kterých dané modely dosáhly pro zvolené skupiny trénovacích parametrů.
+
+\begin{table}[H]
+    \centering
+    \label{tab:base-short-results}
+    \begin{tabular}{c c c c c c}
+        \hline
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{I. sk. par.}} & \multicolumn{2}{c}{\textbf{II. sk. par.}}  & \textbf{Celkem trénovacích epoch}\\ 
+        \hline
+                       & WER \% & ep       & WER \% & ep & \\ 
+        \hline
+        ALLDS       & \cellcolor{green!25}34.02 & 7  & 35.51 & 6 & 8 \\   
+        \hline
+        ATCOEN      & \cellcolor{green!25}36.48 & 19 & 39.31 & 14  & 30 \\
+        \hline
+        ALLDSATCOEN & 34.02 & 1 & \cellcolor{green!25}33.22 & 7 & 30 \\
+        \hline
+    \end{tabular}
+    \caption{Nejlepší získané WER hodnoty modelů pro danou skupinu parametrů s uvedenou epochou, během které bylo hodnot dosaženo. Zvýrazněny jsou nejnižší hodnoty. \textbf{Modely jsou do trénování s promptem převzaté právě v těchto epochách.}}
+\end{table}
+
+Obdobně jako pro plné přepisy i zde první skupina parametrů dosahuje nejlepších výsledků pro modely ALLDS a ATCOEN. Druhá skupina parametrů s nižší hodnotou hyperparametru \textit{learning rate} se osvědčila pro model ALLDSATCOEN. To opět koresponduje s faktem, že model ALLDSATCOEN dosahuje meze přetrénování vzhledem k použitým datům a epochám, ve kterých dosahuje nejlepších výsledků.
+
+Na následujících grafech \ref{fig:base-short-wer-partial}, \ref{fig:base-short-cal-partial} a \ref{fig:base-short-loss-partial} můžeme pozorovat průběhy WER hodnot a loss funkcí při evaluaci jednotlivých epoch, během kterých probíhalo trénování na jednotlivých modelech. Evaluace je ukázána pro modely ALLDS a ATCOEN trénované s parametry první skupiny a ALLDSATCOEN adaptovaném s parametry druhé skupiny.
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-short/wer_partial.png}
+    \caption{WER hodnoty přepisů, znázorněné pro jednotlivé subsety testovací sady v kontrastu s celkovou WER hodnotou.}
+    \label{fig:base-short-wer-partial}
+\end{figure}
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-short/calwer_partial.png}
+    \caption{WER hodnoty volacích znaků, znázorněné pro jednotlivé subsety testovací sady v kontrastu s celkovou WER hodnotou volacích znaků.}
+    \label{fig:base-short-cal-partial}
+\end{figure}
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-short/loss_partial.png}
+    \caption{Loss funkce znázorněné pro jednotlivé subsety testovací sady v kontrastu s celkovou loss funkcí.}
+    \label{fig:base-short-loss-partial}
+\end{figure}
+
+Chování křivek na zobrazených grafech je obdobné jako pro plné přepisy, modely ALLDS a ATCOEN se učí vcelku konstantním způsobem, zatímco model ALLDSATCOEN se již lépe adaptovat na data nedokáže.
+
+Na následujících grafech lze ještě srovnat projev celkových WER a loss hodnot.
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/base-short/wer_loss_total.png}
+    \caption{Celkový průběh WER hodnot pro model .}
+    \label{fig:base-short-loss-partial}
+\end{figure}
+
+
+V tabulce \ref{tab:base-short-partial-results} nalezneme pro modely ALLDS, ATCOEN a ALLDSATCOEN epochy, ve kterých dosáhly nejnižších WER hodnot během trénování viděná letiště Ruzyně a Štefánik a neviděné letiště Zurich. Pro srovnání je přidán i sloupec s celkově nejlepší WER hodnotou pro celou testovací sadu.
+
+\begin{table}[H]
+    \centering
+    \label{tab:base-short-partial-results}
+    \begin{tabular}{c c c c c c c c}
+        \hline
+        \textbf{Model} & \multicolumn{2}{c}{\textbf{Štef.+Ruzyně}} & \multicolumn{2}{c}{\textbf{Zurich}} & \textbf{AVG rozdíl} & \multicolumn{2}{c}{\textbf{Celkem}} \\ 
+        \hline
+                       & WER \% & ep & WER \% & ep & WER \% & WER \% & ep \\
+        \hline
+        ALLDS          & 30.40 & 7  & 35.29 & 7  & 7.37 & 34.02 & 7 \\   
+        \hline
+        ATCOEN         & 32.62 & 19 & 37.63 & 19  & 5.30 & 36.48 & 19 \\
+        \hline
+        ALLDSATCOEN    & 29.60 & 14  & 34.41 & 7  & 4.86 & 33.22 & 7 \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazující \textbf{nejnižší} dosažené WER hodnoty a epochy, ve kterých jich bylo dosaženo, pro jednotlivé subsety testovací datové sady. Ve třetím sloupci je ukázán průměrný rozdíl WER hodnot mezi sadami Štefánik a Ruzyně (viděná letiště) a Zurich (neviděné letiště). Poslední, čtvrtý, sloupec opět pro přehlednost ukazuje celkově nejlepší WER hodnoty s epochami.}
+\end{table}
+
+Následuje tabulka referenčních hodnot, od kterých budou v dalších krocích a experimentech počítány rozdíly.
+\begin{table}[H]
+    \centering
+    \begin{tabular}{l Q{2.5cm} Q{2.5cm} Q{2.5cm}}
+        \hline
+        \textbf{Model} & \textbf{WER přepisů(\%)} & \textbf{WER volacích zn. (\%)} & \textbf{Správně přepsané vol. zn.} \\
+        \hline
+        ATCOEN      & 36.48 & 69.50 & 210 / 763 (27.52\%) \\
+        ALLDS       & 34.02 & 56.86 & 304 / 763 (39.84\%) \\
+        ALLDSATCOEN & 33.22 & 54.83 & 320 / 763 (41.94\%) \\
+        BASELINE    & 84.74 & 97.01 & 10 / 763 (1.31\%)  \\
+        \hline
+    \end{tabular}
+    \caption{Porovnání úspěšnosti vytrénovaných základních modelů na volacích znacích obsažených v datasetu se 763 označenými callsigny. V tabulce pozorujeme i vyhodnocení modelu \textbf{BASELINE}, tedy Vanilla Whisper Medium. Správně přepsaným volacím znakem je myšlena naprostá shoda mezi jeho formou v referenčním a predikovaném přepisu.}
+    \label{tab:base-shortts-final-performance}
+\end{table}
+
+\section{Testování modelů na ATCO2 s promptem}
+
+Na následujících datech \ref{tab:base-short-on-prompt-eval} vidíme výsledky testování základních modelů na datech ATCO2 s využitím každého druhu promptu. 
+\begin{table}[H]
+    \centering
+    \label{tab:base-short-on-prompt-eval}
+    \begin{tabular}{l | c c c c c c c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{2}{*}{BASELINE} 
+            & 72.37 & 73.42 & 75.15 & 79.87 & 85.69 & 84.26 & 86.14 \\
+            & \minuss{12.37} & \minuss{11.32} & \minuss{9.59} & \minuss{4.87} & \plus{0.95} & \minuss{0.48} & \plus{1.40} \\
+        \hline
+        \multirow{2}{*}{ALLDS} 
+            & 28.91 & 30.59 & 31.68 & 32.02 & 34.26 & 33.91 & 35.77 \\
+            & \minuss{5.11} & \minuss{3.43} & \minuss{2.34} & \minuss{2.00} & \plus{0.24} & \minuss{0.11} & \plus{1.75} \\
+        \hline
+        \multirow{2}{*}{ATCOEN} 
+            & 30.67 & 31.88 & 33.63 & 33.25 & 35.94 & 36.09 & 36.52 \\
+            & \minuss{5.81} & \minuss{4.60} & \minuss{2.85} & \minuss{3.23} & \minuss{0.54} & \minuss{0.39} & \plus{0.04} \\
+        \hline
+        \multirow{2}{*}{ALLDSATCOEN} 
+            & 28.89 & 29.80 & 31.78 & 31.12 & 33.66 & 33.89 & 34.80 \\
+            & \minuss{4.33} & \minuss{3.42} & \minuss{1.44} & \minuss{2.10} & \plus{0.44} & \plus{0.67} & \plus{1.58} \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazující dosažené WER hodnoty celých přepisů pro základní modely, které byly testované na všech typech promptů. Druhý řádek pro každý model obsahuje rozdíl oproti referenční hodnotě: BASELINE (84.74), ALLDS (34.02), ATCOEN (36.48), ALLDSATCOEN (33.22) -- zeleně zlepšení (nižší WER), červeně zhoršení.}
+\end{table}
+
+
+\chapter{Finetuning V. -- prompt na zkrácených přepisech}
+Poslední kapitola se týká nezbytného dotrénování a testování základních modelů, získaných v předchozí kapitole. 
+
+Každý z modelů byl vytrénován na všech sedm zmíněných typů promptů (jedná se o dataset ATCO2). Pro trénování Whisper Medium (P-BASELINE) bylo využito trénovacích parametrů I. skupiny s nastavením na třicet epoch. Model P-ALLDS, tedy vytrénovaný Whisper Medium na všech datasetech, byl nyní dotrénován s parametry II. skupiny po třicet epoch. Konečně model P-ALLDSATCOEN, což je ALLDS dotrénovaný čistě na ATCO2 datech, prošel trénováním s parametry II. skupiny po dobu patnácti epoch.
+
+\section{Testování získaných modelů na ATCO2 s promptem}
+Grafy \ref{fig:prompt-short-continuous-eval} prokázaly stále se opakující vzor průběhu WER hodnot. Adaptace P-BASELINE na prompty AG, AG35B a 50CZB vykazuje pro testovací sadu stabilní průběh. Proti tomu P-ALLDS a P-ALLDSATCOEN se již prakticky nedokáží v průběhu jednotlivých epoch nějak znatelně zlepšit. Naopak u adaptací na prompt AG a AG35B pro model P-ALLDSATCOEN platí, že dochází ke znatelnému růstu (kolem 5\%) WER hodnot. Takové chování nebylo pozorováno pro plné přepisy a tedy je možné, že zkrácené formy přepisů vedou model rychleji k bodu přetrénování, než tomu bylo pro plné přepisy.
+
+\begin{figure} [H]
+    \centering
+    \includegraphics[width=1.0\linewidth]{figures/OUT/prompt-short/wer_avg_AG_AG35B_50CZB.png}
+    \caption{Průběh WER hodnot zkrácených přepisů pro devět modelů, které byly trénované a testované na promptech AG35B, AG a 50CZB.}
+    \label{fig:prompt-short-continuous-eval}
+\end{figure}
+
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-short-trained-models-with-prompt-tested-on-prompt}
+    \begin{tabular}{l | a c b c c c c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{5}{*}{\textbf{P-ALLDS}}
+            & 28.97 & 29.90 & 31.38 & 30.52 & 33.08 & 33.82 & 33.44 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad– Rozdíl proti ALLDSATCOEN bez promptu (WER = 33.22\%)}} \\
+            & \minuss{4.25} & \minuss{3.32} & \minuss{1.84} & \minuss{2.70} & \minuss{0.14} & \plus{0.60} & \plus{0.22} \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad– Rozdíl proti ALLDSATCOEN testovanému s promptem (WER viz. \ref{tab:prompt-full-base-models-with-prompt-diff})}} \\
+            & \plus{0.08} & \plus{0.10} & \minuss{0.40} & \minuss{0.60} & \minuss{0.58} & \minuss{0.07} & \minuss{1.36} \\
+        \hline
+        \multirow{5}{*}{\textbf{P-BASELINE}} 
+            & 26.83 & 28.75 & 30.25 & 28.18 & 36.63 & 36.19 & 37.05 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad– Rozdíl proti ATCOEN bez promptu (WER = 36.48\%)}} \\
+            & \minuss{9.65} & \minuss{7.73} & \minuss{6.23} & \minuss{8.30} & \plus{0.15} & \minuss{0.29} & \plus{0.57} \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad– Rozdíl proti ATCOEN testovanému s promptem (WER viz. \ref{tab:prompt-full-base-models-with-prompt-diff})}} \\
+            & \minuss{3.84} & \minuss{3.13} & \minuss{3.38} & \minuss{5.07} & \plus{0.69} & \plus{0.10} & \plus{0.53} \\
+        \hline
+        \textbf{P-ALLDSATCOEN}
+            & 28.22 & 30.40 & 31.56 & 30.59 & 33.49 & 33.11 & 33.61 \\
+        \hline
+    \end{tabular}
+    \caption{Tabulka ukazuje dosažené WER hodnoty na zkrácených přepisech ATCO2 datasetu při použití promptů. Každý model je testován na tom promptu, na jakém byl trénován. Druhý řádek pro každý model obsahuje rozdíl oproti referenční hodnotě modelu trénovaného bez promptu -- zeleně zlepšení, červeně zhoršení. Pro P-ALLDS je referenční hodnotou WER 33.22\% získaná modelem ALLDSATCOEN, pro P-BASELINE potom WER 36.48\% získaná modelem ATCOEN. \colorbox{softcream}{Oranžově} je označen sloupec pro modely trénované a testované na promptu AG, \colorbox{paleblue}{modře} pak sloupec s modely týkající se promptu AG35B. Třetí řádky srovnávají výsledky testů základních modelů ALLDSATCOEN a ATCOEN na datech s promptem, proti výsledkům P-ALLDS a P-BASELINE. K modelu P-ALLDSATCOEN neexistuje ekvivalentně trénovaný model (model trénovaný na všech dostupných datasetech a poté dvakrát na ATCO2 není dostupný) a tudíž pro něj nejsou zobrazena srovnání.}
+\end{table}
+    
+\section{Testování získaných modelů na ATCO2 bez promptu}
+V této sekci je proveden test vytrénovaných modelů s promptem na datech bez promptu. Důvodem je opět snaha zjistit, jak moc jsou modely závislé na existenci promptu. Výsledky jsou uvedeny v tabulce \ref{}.
+
+\begin{table}[H]
+    \centering
+    \label{tab:prompt-full-noprompttest}
+    \begin{tabular}{l | c c c c c c c}
+        \hline
+        \textbf{Model} & \textbf{AG} & \textbf{AG4B} & \textbf{AG35B} & \textbf{AG50CZB} & \textbf{5B} & \textbf{35B} & \textbf{50CZB} \\
+        \hline
+        \multirow{3}{*}{\textbf{P-ALLDS}}
+            & 34.23 & 34.72 & 33.87 & 33.66 & 33.86 & 34.27 & 34.23 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti P-ALLDS adapt. na dané typy promptů (\ref{tab:prompt-short-trained-models-with-prompt-tested-on-prompt}) $\downarrow$}} \\
+            & \plus{5.26} & \plus{4.82} & \plus{2.49} & \plus{3.14} & \plus{0.78} & \plus{0.45} & \plus{0.79} \\
+        \hline
+        \multirow{3}{*}{\textbf{P-BASELINE}}
+            & 43.33 & 42.61 & 40.93 & 40.39 & 37.40 & 40.44 & 37.91 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti P-BASELINE adapt. na dané typy promptů (\ref{tab:prompt-short-trained-models-with-prompt-tested-on-prompt}) $\downarrow$}} \\
+            & \plus{16.50} & \plus{13.86} & \plus{10.68} & \plus{12.21} & \plus{0.77} & \plus{4.25} & \plus{0.86} \\
+        \hline
+        \multirow{3}{*}{\textbf{P-ALLDSATCOEN}}
+            & 33.78 & 34.09 & 39.53 & 34.21 & 33.76 & 33.36 & 33.82 \\
+            & \multicolumn{7}{c}{\textit{\footnotesize \quad $\downarrow$ Rozdíl proti P-ALLDSATCOEN adapt. na dané typy promptů (\ref{tab:prompt-short-trained-models-with-prompt-tested-on-prompt}) $\downarrow$}} \\
+            & \plus{5.56} & \plus{3.69} & \plus{7.97} & \plus{3.62} & \plus{0.27} & \plus{0.25} & \plus{0.21} \\
+        \hline
+    \end{tabular}
+
+    \caption{Tabulka ukazuje výsledky testování bez promptu modelů \textbf{adaptovaných na jednotlivé typy promptu}. Druhé číselné řádky ukazují rozdíly oproti testům s promptem.}
+\end{table}
+
+\chapter{Závěr}
+V této práci byla popsána stručně teorie zpracování řeči. Dále se text věnoval principu a vysvětlení neuronových sítí a transformerů. Zvlášť je kladen důraz na vysvětlení loss funkce a evaluační metriky WER, která je využita pro vyhodnocování natrénovaných modelů Whisper Medium - na tuto verzi modelu Whisper se odkazuje celá tato práce.
+
+Podrobně je vysvětlena tvorba při trénování a testování použitých datasetů. Celkem bylo k~dispozici pro trénování přes 36 hodin dat. Připravené datasety mají formu plného i zkráceného přepisu, přičemž v~aktuální fázi byla při trénování použita jen plná forma. Datasety jsou ve většině v~anglickém jazyce, pouze jedna trénovací a testovací sada obsahuje francouzštinu a jiná testovací sada obsahuje ojedinělé či v~malém množství přítomné nahrávky v~jiných jazycích. Nutno podotknout, že v~mezi datasety s~anglickými nahrávkami se mohou vyskytovat vzorky v~němčině či francouzštině.
+
+\textit{Vanilla} Whisper Medium (čistý model Whisper Medium) byl evaluován na všech dostupných testovacích datasetech, přičemž hodnota WER se pohybovala kolem $80 \%$ pro plné přepisy, zatímco u zkrácených to bylo o cca $10 \%$ více. Poté byl natrénován Vanilla Whisper zvlášť na všech trénovacích datasetech s transkripty ve formě plných přepisů, přičemž každý z~těchto natrénovaných modelů byl zvlášť vyhodnocen na testovacích sadách. Získané hodnoty prokázaly očekávaný fakt, a to nejnižší hodnoty WER pro každý testovací dataset pro ten model, jehož trénovací sada pocházela ze stejných dat jako daný test-set.
+
+V poslední fázi byl Vanilla Whisper natrénován na téměř všech existujících trénovacích datasetech s plnými přepisy. Nicméně trénování bylo natolik časově náročné, že probíhalo pouze po osm epoch. Hodnoty WER dopadly lépe v porovnání s nejlepšími výsledky u výše zmíněného experimentu a nasvědčovaly, že je nutno umožnit trénování po delší dobu.
+
+
