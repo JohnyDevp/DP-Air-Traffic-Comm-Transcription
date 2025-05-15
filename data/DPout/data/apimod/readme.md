@@ -1,6 +1,6 @@
 ## AUTOR
 Jan Holáň, xholan11
-xholan11@fit.vutbr.cz
+xholan11@stud.fit.vutbr.cz
 
 ## SPUŠTĚNÍ
 ### POSTUP
