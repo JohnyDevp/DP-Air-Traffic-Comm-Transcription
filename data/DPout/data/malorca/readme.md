@@ -2,7 +2,18 @@
 Jan Holáň, xholan11
 xholan11@stud.fit.vutbr.cz
 
+    
+
 ## SPUŠTĚNÍ
+### OBECNÉ UPOZORNĚNÍ
+- Očekává se existence kořenové složky **MALORCA** se surovými daty, ve které je očekávána struktura
+    - **MALORCA/DATA_ATC/VIENNA/DATA/dev12**, složka obsahující informace rozdělení trénovací sady
+    - **MALORCA/DATA_ATC/VIENNA/DATA/test**, složka obsahující informace rozdělení testovací sady  
+    - **MALORCA/DATA_ATC/VIENNA/WAV_FILES**, složka s audii a přepisy
+- za proměnné typu DISK_ROOT se očekává dosazení **path/to/folder/containing/MALORCA_core_folder**, bez MALORCA
+- místo změn proměnné DISK_ROOT přímo ve skriptu je možné použít parametr skriptu
+    - např.: `$ python nazevskriptu.py path/to/folder/containing/MALORCA_core_folder` 
+
 ### makemetadata.py
 - jeho spuštěním se vytvoří soubory obsahující metadata souborů určených k trénování a testování. Ve vyhotovených souborech se bude nacházet pole záznamů ve formátu *json* (pole "prompt" nebylo pro tento dataset vytvořeno):
 ```json

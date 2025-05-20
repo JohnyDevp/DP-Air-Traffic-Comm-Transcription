@@ -3,7 +3,16 @@
 Jan Holáň, xholan11
 xholan11@stud.fit.vutbr.cz
 
+
 ## SPUŠTĚNÍ
+
+### OBECNÉ UPOZORNĚNÍ
+- Očekává se existence kořenové složky **UWB_ATCC** se surovými daty, ve které je očekávána struktura
+    - **UWB_ATCC/audio**, složka obsahující audio 
+    - **UWB_ATCC/stm/stm**, soubor s přepisy
+- za proměnné typu DISK_ROOT se očekává dosazení **path/to/folder/containing/uwb_core_folder**, bez UWB_ATCC
+- místo změn proměnné DISK_ROOT přímo ve skriptu je možné použít parametr skriptu
+    - např.: `$ python nazevskriptu.py path/to/folder/containing/uwb_core_folder` 
 
 ### makemetadata.py
 

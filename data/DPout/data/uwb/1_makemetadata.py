@@ -417,17 +417,17 @@ if __name__ == "__main__":
     #======================================================
     # IT IS POSSIBLE THAT THESE PATH WILL NEED TO BE CHANGED
     FOLDER_NAME = 'UWB_ATCC'
-    path_to_wavs = f'{DISK_ROOT}/UWB_ATCC/audio'
+    path_to_wavs = f'{DISK_ROOT}/{FOLDER_NAME}/audio'
     
     # there will be stored audio splits, which are made during running of this script
     # WARNING: this folder should exist and be empty
-    path_to_save_new_wavs = f'{DISK_ROOT}/UWB_ATCC/audio_split' 
+    path_to_save_new_wavs = f'{DISK_ROOT}/{FOLDER_NAME}/audio_split' 
     os.makedirs(path_to_save_new_wavs, exist_ok=True)
     replace_path_of_audio = f'{DISK_ROOT}' # this part won't be stored in the metadata
     out_metadata_test = './metadata_test.json'
     out_metadata_train = './metadata_train.json'
     
-    parsed_wavs = parseStm('/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/UWB_ATCC/stm/stm')
+    parsed_wavs = parseStm(f'{DISK_ROOT}/{FOLDER_NAME}/stm/stm')
     
     makeMetadata(parsed_wavs, 
                  path_to_wavs, 

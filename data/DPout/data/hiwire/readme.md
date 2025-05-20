@@ -3,8 +3,17 @@
 Jan Holáň, xholan11
 xholan11@stud.fit.vutbr.cz
 
-## SPUŠTĚNÍ
 
+## SPUŠTĚNÍ
+### OBECNÉ UPOZORNĚNÍ
+- Očekává se existence kořenové složky **HIWIRE_ELDA_S0293** se surovými daty, ve které je očekávána struktura
+    - **HIWIRE_ELDA_S0293/speechdata/LN/FR**, složka obsahující anglické promluvy francouzů
+    - **HIWIRE_ELDA_S0293/speechdata/LN/GR**, složka obsahující anglické promluvy řeků  
+    - **HIWIRE_ELDA_S0293/speechdata/LN/SP**, složka obsahující anglické promluvy španělů
+    - **HIWIRE_ELDA_S0293/hiwire.mlf**, soubor s přepisy všech audií
+- za proměnné typu DISK_ROOT se očekává dosazení **path/to/folder/containing/HIWIRE_ELDA_S0293_core_folder**, bez HIWIRE_ELDA_S0293
+- místo změn proměnné DISK_ROOT přímo ve skriptu je možné použít parametr skriptu
+    - např.: `$ python nazevskriptu.py path/to/folder/containing/HIWIRE_ELDA_S0293_core_folder` 
 ### makemetadata.py
 
 -   jeho spuštěním se vytvoří soubory obsahující metadata souborů určených k trénování a testování. Ve vyhotovených souborech se bude nacházet pole záznamů ve formátu _json_ (pole "prompt" nebylo pro tento dataset vytvořeno):
@@ -20,7 +29,7 @@ xholan11@stud.fit.vutbr.cz
 ]
 ```
 
--   pro správné spuštění skriptu editujte proměnnou **ROOT_DIR** v sekci pod podmínkou
+-   pro správné spuštění skriptu editujte proměnnou **DISK_ROOT** v sekci pod podmínkou
 
 ```python
 if __name__ == "__main__":

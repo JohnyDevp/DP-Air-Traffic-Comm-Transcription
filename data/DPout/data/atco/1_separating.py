@@ -1,7 +1,7 @@
 from glob import glob
 from bs4 import BeautifulSoup
 from tqdm import tqdm  
-import shutil, os
+import shutil, os, sys
 
 def is_english_lang(xml_data):
     # returns True if more than 50% of the segments are in English, otherwise False
@@ -22,11 +22,14 @@ def is_english_lang(xml_data):
 
 if __name__ == "__main__":
     # SET ROOT DIR ==============================================================
-    ROOT_DIR = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/TESTING_ENV/'
+    if len(sys.argv) > 1:
+        DISK_ROOT = sys.argv[1]
+    else:
+        DISK_ROOT=""
     FOLDER_NAME = 'ATCO2-ASRdataset-v1_final'
     # ==============================================================
     
-    ATCO_FOLDER_PATH = os.path.join(ROOT_DIR, FOLDER_NAME)
+    ATCO_FOLDER_PATH = os.path.join(DISK_ROOT, FOLDER_NAME)
     # YOU MAY CHANGE NEXT LINES,  BUT IT WILL AFFECT ALL PROCESS IN OTHER SCRIPTS
     # DATA (english) folders ==============================================================
     DATA_EN_DIR = os.path.join(ATCO_FOLDER_PATH, 'DATA') # root folder with all english files

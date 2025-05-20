@@ -272,15 +272,15 @@ def split_wav_files(root : str) -> list:
 if __name__ == "__main__":
     # =======================================================
     # CHANGE THIS TO YOUR DISK PATH
-    ROOT_DIR="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
+    DISK_ROOT="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
     # =======================================================
     # FOLLOWING TWO LINES MAY REQUIRED CHANGES 
-    disk_path_to_be_excluded = ROOT_DIR # THIS PATH WILL BE EXCLUDED FROM THE METADATA
+    disk_path_to_be_excluded = DISK_ROOT # THIS PATH WILL BE EXCLUDED FROM THE METADATA
     FOLDER_NAME="HIWIRE_ELDA_S0293" # THIS FOLDER NAME CONTAINS THE RAW DATA
     
-    files_train, files_test_fr, files_test_gr, files_test_sp = split_wav_files(os.path.join(ROOT_DIR,FOLDER_NAME))
+    files_train, files_test_fr, files_test_gr, files_test_sp = split_wav_files(os.path.join(DISK_ROOT,FOLDER_NAME))
     
-    # files_train, files_test_ruzyne,files_test_stefanik,files_test_zurich = split_wav_files(ROOT_DIR_EN)
+    # files_train, files_test_ruzyne,files_test_stefanik,files_test_zurich = split_wav_files(DISK_ROOT_EN)
     makemetadata(files_train,   disk_path_tb_excluded=disk_path_to_be_excluded, out_file_name="metadata_hwir_train.json")
     makemetadata(files_test_fr, disk_path_tb_excluded=disk_path_to_be_excluded,out_file_name="metadata_hwir_fr_test.json")
     makemetadata(files_test_gr, disk_path_tb_excluded=disk_path_to_be_excluded,out_file_name="metadata_hwir_gr_test.json")

@@ -1,4 +1,4 @@
-import json,os
+import json,os, sys
 from sys import path
 from bs4 import BeautifulSoup
 import re
@@ -467,7 +467,10 @@ def build_random_czech_words_prompt(exclude:str|list[str], n) -> list[str]:
     
 if __name__ == '__main__':
     # SET ROOT DIR =====================================================================
-    ROOT_DIR = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/TESTING_ENV/'
+    if len(sys.argv) > 1:
+        DISK_ROOT = sys.argv[1]
+    else:
+        DISK_ROOT=""
     FOLDER_NAME = 'ATCO2-ASRdataset-v1_final' # CHANGE ONLY IF ATCO FOLDER HAS DIFFERENT NAME
     # ==================================================================================
     
@@ -496,7 +499,7 @@ if __name__ == '__main__':
                 rec_file = os.path.basename(meta['audio']).split('.wav')[0].replace('-longer30s-cuts','')
                 # build up the correct path to the current disk, where the file should be located
                 for fl in FOLDERS_TO_SEARCH:
-                    p = os.path.join(ROOT_DIR,fl,rec_file+'.wav')
+                    p = os.path.join(DISK_ROOT,fl,rec_file+'.wav')
                     if os.path.exists(p):
                         path = p
                         break

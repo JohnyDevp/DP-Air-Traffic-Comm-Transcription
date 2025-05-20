@@ -225,8 +225,11 @@ def do_the_transcriptions(DIR_WITH_WAVS, SAVE_FILE_PATH):
 if __name__ == "__main__":
     # =======================================================
     # CHANGE THIS TO YOUR DISK PATH
-    DISK_ROOT = "/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
-    # CHANGE THIS TO YOUR DIRECTORY, WHERE YOU SAVE SPLITTED WAVS from script splitaudio.py
+    if len(sys.argv) > 1:
+        DISK_ROOT = sys.argv[1]
+    else:
+        DISK_ROOT=""
+    # YOU MAY CHANGE THIS TO YOUR DIRECTORY, WHERE YOU SAVE SPLITTED WAVS from script splitaudio.py IF THE FOLDER WAS DIFFERENT
     DIRS="A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA"
     # =======================================================
     SAVE_FILE_PATH="./metadata_train.json"

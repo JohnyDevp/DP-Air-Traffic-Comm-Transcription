@@ -2,7 +2,16 @@
 Jan Holáň, xholan11
 xholan11@stud.fit.vutbr.cz
 
+
 ## SPUŠTĚNÍ
+
+### OBECNÉ UPOZORNĚNÍ
+- Očekává se existence kořenové složky **A-PiMod** se surovými daty, ve které je očekáván soubor **A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA.wav**
+
+- za proměnné typu DISK_ROOT se očekává dosazení **path/to/folder/containing/A-PiMod_core_folder**, bez A-PiMod
+- místo změn proměnné DISK_ROOT přímo ve skriptu je možné použít parametr skriptu
+    - např.: `$ python nazevskriptu.py path/to/folder/containing/A-PiMod_core_folder` 
+
 ### POSTUP
 Data ve složce A-PiMod byla ve formě dvou wav souborů, z nichž první (01_01_EL_LN_UJ_VV_YADA.wav) byl po prozkoumání takřka identický s druhým (01_02_EL_LN_UN_VV_YADA.wav). Navíc nebyly k dispozici ani žádné transkripce. Z toho důvodu je pro přesnou reprodukci vytváření datasetu nutné:
 1. použít skript splitaudio.py (vygenerovaný ChatGPT)

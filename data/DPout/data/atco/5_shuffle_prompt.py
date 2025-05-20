@@ -1,4 +1,4 @@
-import json, os, re, random
+import json, os, re, random, sys
 
 SAVE_PATH='./'
 files = [

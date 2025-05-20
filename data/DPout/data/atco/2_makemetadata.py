@@ -423,25 +423,28 @@ def load_files_from_lists(split_list : str, ATCO_FOLDER_PATH) -> list:
 if __name__ == "__main__":
     # SET ROOT DIR where ATCO2 FOLDER is stored ==============================================================
     # PATH TO ATCO FOLDER
-    ROOT_DIR = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/ATCO2-ASRdataset-v1_final/TESTING_ENV/'
+    if len(sys.argv) > 1:
+        DISK_ROOT = sys.argv[1]
+    else:
+        DISK_ROOT=""
     split_list = os.path.join("split_atco.json") # file with split files
     FOLDER_NAME = "ATCO2-ASRdataset-v1_final"  # CHANGE ONLY IF ATCO FOLDER NAME IS DIFFERENT
     # =============================================================
-    ATCO_FOLDER_PATH = os.path.join(ROOT_DIR, FOLDER_NAME)
+    ATCO_FOLDER_PATH = os.path.join(DISK_ROOT, FOLDER_NAME)
     files_train, files_test_ruzyne,files_test_stefanik,files_test_zurich, files_train_fr, files_test_fr, files_test_other = load_files_from_lists(split_list, ATCO_FOLDER_PATH)
     
     EN_disk_path_for_cuts = os.path.join(ATCO_FOLDER_PATH,"DATA-longer30s-cuts")
     os.makedirs(EN_disk_path_for_cuts, exist_ok=True)
-    makemetadata(files_train, disk_path_tb_excluded=ROOT_DIR,disk_path_for_cuts=EN_disk_path_for_cuts, out_file_name="metadata_en_train.json")
-    makemetadata(files_test_ruzyne, disk_path_tb_excluded=ROOT_DIR,disk_path_for_cuts=EN_disk_path_for_cuts,out_file_name="metadata_en_ruzyne_test.json")
-    makemetadata(files_test_stefanik, disk_path_tb_excluded=ROOT_DIR,disk_path_for_cuts=EN_disk_path_for_cuts,out_file_name="metadata_en_stefanik_test.json")
-    makemetadata(files_test_zurich, disk_path_tb_excluded=ROOT_DIR,disk_path_for_cuts=EN_disk_path_for_cuts,out_file_name="metadata_en_zurich_test.json")
+    makemetadata(files_train, disk_path_tb_excluded=DISK_ROOT,disk_path_for_cuts=EN_disk_path_for_cuts, out_file_name="metadata_en_train.json")
+    makemetadata(files_test_ruzyne, disk_path_tb_excluded=DISK_ROOT,disk_path_for_cuts=EN_disk_path_for_cuts,out_file_name="metadata_en_ruzyne_test.json")
+    makemetadata(files_test_stefanik, disk_path_tb_excluded=DISK_ROOT,disk_path_for_cuts=EN_disk_path_for_cuts,out_file_name="metadata_en_stefanik_test.json")
+    makemetadata(files_test_zurich, disk_path_tb_excluded=DISK_ROOT,disk_path_for_cuts=EN_disk_path_for_cuts,out_file_name="metadata_en_zurich_test.json")
     
     # for nonEN data
     NONEN_disk_path_for_cuts = os.path.join(ATCO_FOLDER_PATH,"DATA_nonEN-longer30s-cuts")
     os.makedirs(NONEN_disk_path_for_cuts, exist_ok=True)
-    makemetadata(files_train_fr, disk_path_tb_excluded=ROOT_DIR,disk_path_for_cuts=NONEN_disk_path_for_cuts, out_file_name="metadata_fr_train.json")
-    makemetadata(files_test_fr, disk_path_tb_excluded=ROOT_DIR,disk_path_for_cuts=NONEN_disk_path_for_cuts,out_file_name="metadata_fr_test.json")
-    makemetadata(files_test_other, disk_path_tb_excluded=ROOT_DIR,disk_path_for_cuts=NONEN_disk_path_for_cuts,out_file_name="metadata_other_lang_test.json")
+    makemetadata(files_train_fr, disk_path_tb_excluded=DISK_ROOT,disk_path_for_cuts=NONEN_disk_path_for_cuts, out_file_name="metadata_fr_train.json")
+    makemetadata(files_test_fr, disk_path_tb_excluded=DISK_ROOT,disk_path_for_cuts=NONEN_disk_path_for_cuts,out_file_name="metadata_fr_test.json")
+    makemetadata(files_test_other, disk_path_tb_excluded=DISK_ROOT,disk_path_for_cuts=NONEN_disk_path_for_cuts,out_file_name="metadata_other_lang_test.json")
     
     

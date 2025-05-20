@@ -2,7 +2,20 @@
 Jan Holáň, xholan11
 xholan11@stud.fit.vutbr.cz
 
+    
 ## SPUŠTĚNÍ
+
+### OBECNÉ UPOZORNĚNÍ
+- Očekává se existence kořenové složky **n4_nato_speech_LDC2006S13** se surovými daty, ve které je očekávána struktura
+    - **n4_nato_speech_LDC2006S13/data/CA/CA_Audio_Sphere**, složka obsahující audio a přepisy
+    - **n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Sphere**, složka obsahující audio a přepisy
+    - **n4_nato_speech_LDC2006S13/data/NL/NL_Audio_Sphere**, složka obsahující audio a přepisy
+    - **n4_nato_speech_LDC2006S13/data/UK/UK_Audio_Sphere**, složka obsahující audio a přepisy
+
+- za proměnné typu DISK_ROOT se očekává dosazení **path/to/folder/containing/n4_nato_speech_LDC2006S13_core_folder**, bez n4_nato_speech_LDC2006S13
+- místo změn proměnné DISK_ROOT přímo ve skriptu je možné použít parametr skriptu
+    - např.: `$ python nazevskriptu.py path/to/folder/containing/n4_nato_speech_LDC2006S13_core_folder` 
+
 ### makemetadata.py
 - jeho spuštěním se vytvoří soubory obsahující metadata souborů určených k trénování a testování. Ve vyhotovených souborech se bude nacházet pole záznamů ve formátu *json* (pole "prompt" nebylo pro tento dataset vytvořeno):
 ```json
