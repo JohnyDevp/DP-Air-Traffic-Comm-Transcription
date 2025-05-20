@@ -13,7 +13,7 @@ Toto prostředí lze vytvořit skriptem v adresáři *env*.
 
 ./data - obsahuje skripty pro vytvoření všech testovacích a trénovacích sad
 ./env - obsahuje soubor requirements.txt, ve kterém jsou definované balíčky nutné pro spouštění zde obsažených skriptů. Obsahuje též skript pro automatické vytvoření požadovaného prostředí.
-./models - obsahuje jeden ukázkový natrénovaný model AG-BASELINE
+./models - obsahuje jeden ukázkový natrénovaný model AG35B-BASELINE a model ALLDSATCOEN trénovaný bez promptu na plné přepisy
 ./scripts - obsahuje skripty pro trénování a testování jednotlivých modelů
 ./text.zip - obsahuje zdrojový kód textové zprávy diplomové práce
 xholan11.pdf - textová zpráva diplomové práce ve formátu pdf
