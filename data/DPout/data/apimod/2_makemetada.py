@@ -1,4 +1,4 @@
-import os 
+import os, sys 
 import glob as glob
 from rapidfuzz import process
 from tqdm import tqdm
@@ -197,14 +197,14 @@ def airtraffic_transcript_to_code_(transcript : str):
                 
     return result.strip()
 
-def do_the_transcriptions(DIR_WITH_WAVS, SAVE_FILE_PATH):
+def do_the_transcriptions(DIR_WITH_WAVS, SAVE_FILE_PATH,path_to_remove):
     metadata = []
     
     for file_path in tqdm(glob.glob(DIR_WITH_WAVS+"/*.wav")):
         transcription = make_transcription(file_path)
         metadata.append(
             {
-                "audio":file_path,
+                "audio":file_path.replace(path_to_remove,""),
                 "full_ts": transcription,
                 "short_ts":airtraffic_transcript_to_code_(transcription),
                 "prompt": None,
@@ -233,5 +233,5 @@ if __name__ == "__main__":
     DIRS="A-PiMod/2013_10_Christoph/01_02_EL_LN_UN_VV_YADA"
     # =======================================================
     SAVE_FILE_PATH="./metadata_train.json"
-    do_the_transcriptions(os.path.join(DISK_ROOT,DIRS),SAVE_FILE_PATH)
+    do_the_transcriptions(os.path.join(DISK_ROOT,DIRS),SAVE_FILE_PATH,path_to_remove=DISK_ROOT)
     

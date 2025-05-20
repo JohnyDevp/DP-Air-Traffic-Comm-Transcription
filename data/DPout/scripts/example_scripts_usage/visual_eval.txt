@@ -1,0 +1,216 @@
+Evaluating atco_en_ruzyne dataset
+Namespace(model='openai/whisper-tiny', dataset=['atco_en_ruzyne'], dataset_root='../../data/', output_file='visual_eval.txt', use_prompt=True, prompt_name='prompt_fullts_AG', transcription_name='full_ts')
+**************************
+O: radar csa one delta zulu established csa one delta zulu roger contact ruzyne tower one three four decimal five six zero three four five six zero csa one delta zulu pekný deň
+P:  vai ver se o anel se zulu está posto e a zulu é que contactou o zulu em esta 1, 3, 4, 10, 5, 6, 6, 6, 6, 1, 2, 2, 1, 2, 1
+
+O: oscar kilo uniform tango charlie re- release from frequency flying information service available at one two six decimal one praha information dobrý den
+P:  oskar kilo uniform tango charlie ris, reli tvo freikvansi, flajnoj informajšu, se vve boel vatno sivd asil movan, praj in formajšenno vrigen.
+
+O: air france one zero eight zulu standby now descend to descend flight level seven zero air france one zero eight zulu
+P:  france one zero eight zulu stand by now this and two uh this and five or seven zero
+
+O: praha radar oscar kilo uniform tango charlie dobrý den passing three thousand nine hundred climbing flight level seven zero inbound vlasim ready for ifr oscar kilo uniform tango charlie dobrý den praha radar identified climb flight level seven zero and cleared to destination benesov via flight plan route ifr flight starts now time one three one four
+P:  Arraydaro's curricular from the Coachanero Bridema have a 5-3-0-100-2-0-8-0-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-0-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-8-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-1-
+
+O: oscar kilo papa romeo mike turn right heading zero six zero zero six zero right turn oscar papa romeo mike
+P:  oscar kilo papa romeo mike, ten radym 0.0
+
+O: skytravel three five juliett turn right heading one eight zero vectoring for spacing turning right heading one eight zero skytravel three five juliett
+P:  4-3 five juliett, 20-18-18-18
+
+O: air france one zero eight zulu descend to flight level seven zero reduce two four zero knots or less or less and descend flight level seven zero air france one zero eight zulu czech air four six seven five descend to four thousand feet qnh one zero one two and contact kbely tower one two zero decimal eight eight zero descending four thousand feet one zero one two and changing kbely one two zero eight eight zero bye naslysenou(-slysenou)
+P:  Hello friends, I'm Zero In Blue, this is the 2.5-240.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0
+
+O: silesia seven six two continue charlie lima quebec quebec five behind follow me stand mike one bravo
+P:  This is a 56-foot continuous channel we will make a K-BEC 5 bearing for me and my grand-brabble.
+
+O: ruzyne tower oscar victor kilo alpha affirm and continue whiskey two departure continue whiskey two departure oscar victor kilo
+P:  A ryžu nětavoro, z kabrik sevky lovorě toho. Svěván koncím vyskitu, dupáte. Koděkivyskitu, dupáte. Svěviks vyskitu.
+
+O: ruzyne tower oscar kilo alpha victor kilo two thousand three hundred feet qnh one zero one four inbound tango and we will hold on tango oscar kilo alpha victor kilo ruzyne tower dobry den roger continue tango and hold
+P:  kilo alpha victor kilo alpha
+
+O: good evening lufthansa eight hotel romeo passing two thousand five hundred climbing five thousand lufthansa eight hotel romeo praha radar good evening identified climb to flight level one six zero lufthansa eight hotel romeo climb flight level one six zero
+P:  I've already been locked on the way to the Romeo Parking 2.5 on a plumbing cycle. So, can the 8.0 Romeo, per hari down the evening, identify the plan to flight level 1-6-0.
+
+O: dream team four zero four kilo descend four thousand feet qnh one zero zero four one zero zero four dream team four zero four kilo
+P:  13404 kilo, the Sun 4,000 feet, Q and H 1504.
+
+O: zero four two two taxi holding point runway two four via taxiway quebec lima golf bravo
+P:  Ant ir vordu tūteks sei holding pointa, ar ar vai tu forvātaks vēs krabēk, limāk, kolpravu.
+
+O: skytravel two eight two seven and there is closed echo airspace below flight level one hundred so if you wish to avoid class echo airspace next descend in two zero miles
+P:  and there is contact with the law-fleddle 100 so if you wish to avoid cross-acor space next we sent in at 2 0 mile
+
+O: oscar kilo tango uniform romeo approaching to victor lima mike start holding there and remain my frequency and report when ready for come back to prague remain on frequency and hold as published at victor lima mike and we report tango uniform romeo ok
+P:  Thank you for your time. I'm proud to introduce some of my girls that are holding their and remain my frequency and report them and ready for comeback to track.
+
+O: oscar kilo foxtrot charlie alpha you are leaving tma praha switch to praha info one two six decimal one naslysenou one two six decimal one naslysenou dekuji
+P:  of car kilo foxtrot charlie alpha I already been to PMA for a few minutes to get into the full 1, 2, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7,
+
+O: oscar kilo mike charlie charlie praha radar dobry den you are identified flight level seven zero after baltu proceed to benesov
+P:  oskar kilo mike charlie charlie prahrajda rubri den si varý den ty find flight level 70 after ball to profit to banešov
+
+O: oscar mike papa turn right heading zero two zero cleared ils approach runway zero six speed maximum one six zero knots right heading zero two zero cleared ils approach zero six and maximum one six zero speed confirm i do confirm
+P:  Khramé papa ten rád 1020 klída se proksurán vě 1065 maksylvan 600.000 klída, ale se procsurá 1060 maksymom 100.000. Adukonfer.
+
+O: qatari qatari six bravo lima just confirm we are cleared to land qatari six bravo lima affirm runway two four cleared to land wind one nine zero deegres seven knots cleared to land qatari six bravo lima
+P:  Tää tarvitseksi katsotaan. Katsareksi kraboli main saan län liidun fokli tuan, se on näin eri sivän op.
+
+O: dream team four zero four kilo taxi charlie lima and quebec behind follow me car to stand sierra three
+P:  dream team four zero four kilo de kallet och limma. Kabak bianfromika till stämt fjärra tri.
+
+O: csa nine one eight taxi holding point runway two four to the right via delta bravo taxi delta bravo holding point two four csa nine one eight
+P:  it's in the number one eight action rolling from runway two full to the right vertical double double double double the point two four csa nine one eight
+
+O: say again oscar kilo bravo alpha lima oscar kilo bravo alpha lima descend to four thousand feet qnh one zero one two descending four thousand feet qnh one zero one two oscar kilo bravo alpha lima
+P:  os carcilo bravo alpha lima de cento foto dos cíticos, e dejuvento
+
+O: and oscar oscar echo released from my frequency flight information services available on one two six decimal one naslysenou
+P:  really some of my frequency flight information services available on web 2 6.1 on official
+
+O: one zero oscar kilo zero oscar kilo yankee diky naslysenou
+P:  I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I'm so proud of you, I
+
+O: oscar kilo alpha charlie tango praha
+P:  scraccolo faccia l'itango pa
+
+O: go ahead oscar kilo alpha charlie tango
+P:  سوف أكوها تقلفك ريحة
+
+O: contact ostrava one one nine decimal three seven five naslysenou
+P:  Kom te extra van het bar van de eindere de centrie van het faf.
+
+O: one one nine decimal three seven five oscar kilo alpha charlie tango
+P:  1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, 1.5 mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm, mm,
+
+O: can you confirm oscar kilo alpha charlie tango ostrava one one nine three seven five
+P:  kriikon kärbo on kärkello alma kallite goustrava varmaan aina tritä päin
+
+O: affirm correct
+P:  That's from correct
+
+O: oscar kilo alpha charlie tango
+P:  per chi va a faccali tango
+
+O: timeair eight zero four papa contact praha one two zero decimal two seven five naslysenou
+P:  timeair eight zero four papa contact travel on 20.0.0.27.0
+
+O: one two zero decimal two seven five timeair eight zero four papa naslys
+P:  one
+
+O: klm one three five zero sorry go ahead yeah contact radar one two zero two seven five ahoj one two zero two seven five ahoj klm one three five zero
+P:  qui est le monde qui fait le jeu ?
+
+O: ryanair seven three alpha hotel turn left heading three six zero ryanair seven three alpha hotel
+P:  ryanair seven three alpha hotel ten lukt, hadden ik three six zero.
+
+O: heading to three one eight roger continue on present heading vectoring for ils approach runway two four heading and vectoring for ils two four thank you quality four zero nine one proceed to rapet rapet quality four zero nine one
+P:  Thank you for watching
+
+O: ruzyne tower csa one delta zulu dobrý podvečer established localizer two four dobrý den csa one delta zulu ruzyne tower runway two four cleared to land wind two two zero degrees one four knots are cleared to land runway two four csa one delta zulu
+P:  russian is our csa one delta zulu rubri por vecear it's a bit surprised at you for every n csa you want a little zulu rubri no tabra runway two forward quertland 2200 g is one for a little n csa one delta zulu
+
+O: quality four zero eight nine turn right heading two one zero cleared ils approach runway two four report established yes two one zero cleared ils two four report established quality
+P:  What the falls are right now and right heading to 100 clear all the approaches on the A2 for the forest list.
+
+O: i'd suggest deviation to south i'd say but my weather radar is not very precise
+P:  I have such a deviation to solve, I say, but my weather radar is not really precise.
+
+O: and klm seven three whiskey reduce speed one six zero knots till four dme sixty to four dme klm seven three whiskey
+P:  Alltså, kan han stäva en triväskere just beat 1, 6, 0, 0, stå, 4, 7, 4, 7, 8, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11, 11 11, 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11 11
+
+O: tower good day klm four six alfa good day klm four six alfa ruzyne tower klm four six alfa qnh one zero one eight time check four six cleared to amsterdam departure route baltu four alfa initial climb to five thousand feet squawk one thousand the qnh is one zero one eight to destination via baltu four alfa departure five thousand feet and squawk one thousand correct
+P:  Klaar voor Ssofhaar is het niet over. Klaar voor Ssofhaar is het niet over. Klaar voor Ssofhaar 281,8,4,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,
+
+O: oscar kilo triple hotel please confirm one more holding oscar kilo hotel hotel hotel affirm one holding and then it should be possible to follow ils runway zero six roger thank you
+P:  oscar kilo triple hotel, oscar kilo hotel hotel, oscar kilo hotel hotel, oscar kilo hotel hotel, oscar kilo hotel hotel, oscar kilo hotel hotel hotel, oscar kilo hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel hotel
+
+O: oscar kilo kilo uniform november proceed direct baltu proceed direct baltu oscar kilo kilo uniform november
+P:  of de carkele kilo uniform november profinddarekbaltum.
+
+O: oscar kilo kilo echo alfa praha radar identified climb flight level one hundred ifr flight starts now time zero five cleared to destination via flight plan route
+P:  az karakilók alfa a karakarai darra identifált, kont látlavó 100 a farfajt, az 9 a 0 a 5, kött a destének körnbe a farfajtban rót.
+
+O: skytravel four three seven eight roger call tower one three four decimal five six zero naslysenou five six zero skytravel four three seven eight hezky den taky hezky diky
+P:  Zábělíské travvart 3 seven eight roči koltou abrován 3, 2, 10, 1, 5, 6, 0, 5, 6, 0, travvart 3 seven eight, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10
+
+O: qatari eight two three two request taxi qatari eight two three two taxi via zulu tango alfa to holding point runway two four via zulu tango alfa to holding point runway two four qatari eight two three two sorry you are on the othe way so continue straight ahead via only via zulu to holding point runway two four okay yeah via zulu and holding point runway two four qatari eight two three two
+P:  Sorry, I did pretty much a quick take.
+
+O: air france one zero bravo echo we are on stand one eight embraer one seventy to paris air france one zero bravo echo good day ruzyne tower time zero one information lima qnh one zero one seven cleared to paris charles de gaule baltu four alpha departure initial climb five thousand feet and squawk one thousand
+P:  I'm from Santero, Broway, Co. Dea, Lv. Taure, Tanzero, 1-Information, Lemak, UNH1017, K2-Burts, Schalekol, Bouto4, Fully Buncher, In a Shirtline, 5000TS, Co. Quantosite.
+
+O: belavia eight six one now descend four thousand feet qnh one zero one two and via papa romeo five three two cleared ils approach runway two four thousand feet nosig qnh one zero one two proceed papa romeo five three two cleared ils runway two four belavia eight six one
+P:  Vává, it is one now, this and four. Dal zom výt, kějne hvá 012. Vába poromová 32 kví dal a sproučerán Wait 2.4.
+
+O: sky travel four three seven eight descend flight level seven zero flight level seven zero sky travel four three seven eight
+P:  I travel four three seven eight, de San Faita los San Virolă San Virolă, San Virolă, Zcadra, Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr Păr
+
+O: timeair six niner zero juliett contact ruzyne tower one three four decimal five six zero hezký večer ahoj one three four five six zero timeair six niner zero juliett bye díky
+P:  Méj mérest six niner zero juliett kontakru zinětáve zván 3,4,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5
+
+O: ryanair nine two bravo quebec turn right heading zero nine zero nine zero degrees ryanair nine two bravo quebec
+P:  ryanair nine two bravo kebec, tomorrow heading zero, nine zero
+
+O: hi tower good morning fraction one five zero whiskey
+P:  a tower good morning, correct the one five zero whiskey
+
+O: morning fraction one five zero whiskey ruzyne tower go ahead
+P:  1,5 zero whiskey růjíte varkovět
+
+O: good morning we tried to call ground while at the lobby no reply
+P:  We've got a couple of like ground left to the living or a bite.
+
+O: squawk for us to vienna
+P:  You're gonna be prepared for the program.
+
+O: inform that frequencies are closed so just tower and fraction one five zero whiskey time check is two zero information oscar with qnh one zero one three and you are cleared to vienna schwechat vozice three alfa departure initial climb to five thousand feet and squawk is one thousand
+P:  If I'm there to continue our course, so just our adventure on one five zero whiskey tank is through zero information of carpet pure nature one three and to our clear to the international record will visit the Alpary partner in the Chicago 5000 feet and go to this 1000
+
+O: eurowings seven alfa bravo turn right heading two one zero cleared ils approach runway two four report established heading(-ding) two one zero cleared for the ils two four report established eurowings seven alpha bravo
+P:  and a ride heading to one zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero, zero
+
+O: oscar kilo india alpha fox hello
+P:  Ofkár kruv in the alpha folkthelou.
+
+O: oscar kilo india alpha fox tecnam two zero eight two thousand eca echo two five up to two thousand five hundred feet with info oscar qnh one zero one two requesting the echo two arrival and november two departure
+P:  Hello, I'm Kikino with Yavavavavav. It's a second up to 0-8, which is up to us as an ECA Echo 2-5, 1225-513, which is equipped with a full-onster Q&A-2110-12, which is equipped with a full-onster Q&A-2110-12, which is equipped with a full-onster Q&A-12-112-12-112-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-12-
+
+O: roger set squawk three three one seven and say again the type of aircraft please
+P:  Hello Joseph, it's Kokteri 3-1-7 and again a typo for a crop please
+
+O: tecnam two zero eight and squawk three three one seven oscar kilo india alpha fox
+P:  2-0-8-4-3-4-7-6-3-7-6-3-8-8-8-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-7-
+
+O: all is correct and traffic information twelve o'clock distance half a mile same level unverified unknown traffic probably ultralight traffic
+P:  All it's correct and terrific information 12th day clock, this 10th half a mile, same level on very fast, unantrific, probably ultra light-heavy.
+
+O: copy traffic information we are visual oscar kilo india alpha fox
+P:  Copy shopping information we are visual after Kilo is y'all
+
+O: thank you
+P:  Thank you
+
+O: oscar kilo tango oscar papa proceed direct lanux direct lanux oscar kilo tango oscar papa
+P:  oskar kilo tango oskar papa prosidaa ikkulanuksiaa ja direkplanuks oskar kilo tango oskar papa
+
+O: radar dobre odpoledne sky travel four three two papa passing nineteen hundred climbing to five thousand sky travel four three two papa dobre odpoledne praha radar identified climb flight level one six zero climb to flight level one six zero sky travel four three two papa
+P:  We are the Black Hornet Carve of 432 papa 519 had reached public fat us. Carve of 432 papa 124 never had either identified in cloud flight of a bomb to zero. Carve of 116 hours carve of 432 papa
+
+O: ryanair one bravo alfa stand five seven qnh one zero one two request engine start
+P:  by the way, what bravo alfa is that 5-7 can 8-1-3 for the question, got
+
+O: tower good afternoon emirates one three nine runway two four twelve miles out emirates one three nine heavy ruzyne tower continue approach wind one eight zero degrees five knots continue approach emirates one three nine
+P:  A vrhyr, of the known emes 1,39er vám mejtůfor, to velvom jaj, out.
+
+O: one one eight decimal one six five zero that's it bye bye děkujem na slyšenou na slyšenou
+P:  one one eight six five zero that's eight five five
+
+O: oscar kilo papa mike bravo descend flight level one hundred level one hundred oscar kilo papa mike bravo
+P:  oscar kilo papa mike bravo di tangsana lo pukur 100
+
+
+##############################################################
+

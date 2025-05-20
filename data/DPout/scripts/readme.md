@@ -7,6 +7,7 @@ V této složce jsou obsažené skripty pro trénování, testování a vizualiz
 
 Očekává se spuštění v prostředí python3.12 s balíčky definovanými v adresáři *env*
 
+Adresář *example_scripts_usage* obsahuje bash skripty pro názorná spuštění trénovacího, testovacího a vizualizačního skriptu.
 ## eval.py
 Skript pro vyhodnocování úspěšnosti jednotlivých modelů. Jediná implementovaná metrika je wer.
 

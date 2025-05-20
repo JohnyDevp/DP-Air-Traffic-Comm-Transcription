@@ -1,0 +1,22 @@
+python ../training.py \
+  --model_path openai/whisper-tiny \
+  --train_datasets atco_fr \
+  --datasets_root_dir ../../data/atco \
+  --transcription_name_in_ds full_ts \
+  --prompt_name_in_ds prompt_fullts_1G_4B \
+  --output_dir ./example_CHECKPOINTS \
+  --per_device_train_batch_size 4 \
+  --gradient_accumulation_steps 4 \
+  --learning_rate 1e-5 \
+  --warmup_ratio 0.12 \
+  --dropout 0.1 \
+  --gradient_checkpointing \
+  --fp16 \
+  --save_strategy epoch \
+  --num_train_epochs 10 \
+  --per_device_eval_batch_size 4 \
+  --predict_with_generate \
+  --generation_max_length 448 \
+  --logging_steps 30 \
+  --report_to tensorboard 
+
