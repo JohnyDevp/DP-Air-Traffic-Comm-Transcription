@@ -1,4 +1,3 @@
-from calendar import c
 import sys
 import glob as glob
 import os
@@ -272,7 +271,10 @@ def split_wav_files(root : str) -> list:
 if __name__ == "__main__":
     # =======================================================
     # CHANGE THIS TO YOUR DISK PATH
-    DISK_ROOT="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
+    if len(sys.argv) > 1:
+        DISK_ROOT = sys.argv[1]
+    else:
+        DISK_ROOT=""
     # =======================================================
     # FOLLOWING TWO LINES MAY REQUIRED CHANGES 
     disk_path_to_be_excluded = DISK_ROOT # THIS PATH WILL BE EXCLUDED FROM THE METADATA

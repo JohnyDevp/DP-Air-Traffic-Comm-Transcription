@@ -1,4 +1,4 @@
-import re
+import re, sys
 
 from rapidfuzz import process
 from pydub import AudioSegment 
@@ -413,7 +413,10 @@ if __name__ == "__main__":
     
     #======================================================
     # CHANGE THIS TO YOUR DISK PATH
-    DISK_ROOT = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38'
+    if len(sys.argv) > 1:
+        DISK_ROOT = sys.argv[1]
+    else:
+        DISK_ROOT=""
     #======================================================
     # IT IS POSSIBLE THAT THESE PATH WILL NEED TO BE CHANGED
     FOLDER_NAME = 'UWB_ATCC'

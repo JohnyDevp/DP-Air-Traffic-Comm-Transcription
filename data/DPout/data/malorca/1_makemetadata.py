@@ -1,10 +1,3 @@
-# {
-#   "filepath":str,
-#   "full_ts":str,
-#   "short_ts":str,
-#   "language":str     
-# }
-
 import glob as glob
 import os
 from bs4 import BeautifulSoup
@@ -12,7 +5,7 @@ from rapidfuzz import process
 import re
 from tqdm import tqdm
 import json
-import time
+import time, sys
 
 
 units = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -367,7 +360,10 @@ def makemetadata(PATH_TO_LISTINGS_OF_FILES, DISK_PATH, SAVE_PATH):
 if __name__ == "__main__":
     #======================================================
     # CHANGE THIS TO YOUR DISK PATH
-    DISK_PATH="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38"
+    if len(sys.argv) > 1:
+        DISK_ROOT = sys.argv[1]
+    else:
+        DISK_ROOT=""
     #======================================================
     # FOLLOWING LINES MAY REQUIRE CHANGES
     PATH_TO_ROOT = f"{DISK_PATH}/MALORCA/DATA_ATC/VIENNA/DATA/"

@@ -1,11 +1,13 @@
-from re import M
 from datasets import load_dataset, Dataset, DatasetDict, Audio
-import json,os
+import json,os,sys
 
 # the path to the disk with datasets of wavs and etc..
 #======================================================
 # CHANGE THIS TO YOUR DISK PATH
-DISK_DIR="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38/"
+if len(sys.argv) > 1:
+        DISK_ROOT = sys.argv[1]
+    else:
+        DISK_ROOT=""
 #======================================================
 
 METADATA_PATH       =   ["./metadata_hwir_fr_test.json","./metadata_hwir_gr_test.json",'./metadata_hwir_sp_test.json','./metadata_hwir_train.json']
