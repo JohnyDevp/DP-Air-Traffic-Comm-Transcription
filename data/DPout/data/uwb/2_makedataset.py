@@ -5,9 +5,9 @@ import json, sys
 #======================================================
 # CHANGE THIS TO YOUR DISK PATH
 if len(sys.argv) > 1:
-        DISK_ROOT = sys.argv[1]
-    else:
-        DISK_ROOT=""
+    DISK_ROOT = sys.argv[1]
+else:
+    DISK_ROOT=""
 #======================================================
 
 METADATA_PATH=["./metadata_train.json", "./metadata_test.json"]

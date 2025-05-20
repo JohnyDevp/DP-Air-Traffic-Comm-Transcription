@@ -364,12 +364,13 @@ if __name__ == "__main__":
         DISK_ROOT = sys.argv[1]
     else:
         DISK_ROOT=""
+    FOLDER_NAME = "MALORCA"
     #======================================================
     # FOLLOWING LINES MAY REQUIRE CHANGES
-    PATH_TO_ROOT = f"{DISK_PATH}/MALORCA/DATA_ATC/VIENNA/DATA/"
+    PATH_TO_ROOT = os.path.join(DISK_ROOT,f"{FOLDER_NAME}/DATA_ATC/VIENNA/DATA/")
     PATH_TO_LISTINGS_OF_FILES = ["test/wav.scp", "dev12/wav.scp"]
     SAVE_PATH=["./metadata_test.json", "./metadata_dev12.json"] # the order must corresponds to PATH_TO_LISTINGS_OF_FILES
     
     for i in range(len(PATH_TO_LISTINGS_OF_FILES)):
-        makemetadata(os.path.join(PATH_TO_ROOT,PATH_TO_LISTINGS_OF_FILES[i]), DISK_PATH, SAVE_PATH[i])
+        makemetadata(os.path.join(PATH_TO_ROOT,PATH_TO_LISTINGS_OF_FILES[i]), DISK_ROOT, SAVE_PATH[i])
     
