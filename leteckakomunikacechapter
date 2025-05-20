@@ -1,0 +1,49 @@
+
+\chapter{Letecká komunikace a zpracování řeči}
+\section{Letecká komunikace}
+Letecká komunikace je přenášena přes VHF kanál. Jejím specifikem je nízká srozumitelnost způsobená šumem, který je navíc umocněn ze strany pilota letadla. Často dochází k~nedorozuměním, což již mělo za následek v~letecké historii různé nehody, jako například nehodu na letišti v~Linate\footnote{https://www.bestcommunicationsdegrees.com/10-deadliest-air-disasters-caused-by-miscommunication/}. Plno dalších nehod se potom stává jinými chybami, které ovšem nějakým způsobem souvisí s~komunikací, a proto je cílem co nejvíce zabezpečit její srozumitelnost. K~tomu by právě jazykové modely mohly sloužit.
+
+Pro minimalizaci přeslechů je zavedena mezinárodní letecká abeceda, při které se vyslovují celá slova namísto jednotlivých písmen. Jejím prostřednictvím se vyslovují takzvané volací značky, neboli \textit{callsigns}, označující jednotlivá letadla. Dále pak mohou být použity různé speciální zkratky, které mají stanovený přesný význam, mezi něž patří například \textit{QNH} označující tlak ve vzduchu - ty jsou pak vyslovovány přímo po písmenech. Níže je uvedena tabulka \ref{tab:abcd_inter} s~leteckou abecedou:
+\renewcommand{\arraystretch}{1.2}
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|>{\columncolor[gray]{0.9}}c|l|>{\columncolor[gray]{0.9}}c|l|}
+        \hline
+        \rowcolor{gray!30} 
+        \textbf{Písmeno} & \textbf{Slovo} & \textbf{Písmeno} & \textbf{Slovo} \\ \hline
+        A & Alpha    & N & November \\ \hline
+        B & Bravo    & O & Oscar    \\ \hline
+        C & Charlie  & P & Papa     \\ \hline
+        D & Delta    & Q & Quebec   \\ \hline
+        E & Echo     & R & Romeo    \\ \hline
+        F & Foxtrot  & S~& Sierra   \\ \hline
+        G & Golf     & T & Tango    \\ \hline
+        H & Hotel    & U & Uniform  \\ \hline
+        I & India    & V~& Victor   \\ \hline
+        J & Juliett  & W & Whiskey  \\ \hline
+        K & Kilo     & X & Xray     \\ \hline
+        L & Lima     & Y & Yankee   \\ \hline
+        M & Mike     & Z~& Zulu     \\ \hline
+    \end{tabular}
+    \caption{Mezinárodní hláskovací abeceda}
+    \label{tab:abcd_inter}
+\end{table}
+
+Přepis v~takzvané plné formě, tedy text obsahující slova tak, jak jsou vyslovena, je podstatný, nicméně z~hlediska použitelnosti v~praxi (\cite{Nevarilova2024thesis}, kapitola 2.6 Letecká komunikace) se ukazuje jako důležité umět správně tvořit přepisy ve zkrácené podobě. To by mohlo najít větší uplatnění při vyhledávání v~rozpoznávačem přepsaných textech.
+
+Dalším způsobem, jak zabránit chybné interpretaci informací řečených v~dialogu mezi řídícím a věží, je zopakování podstatných údajů pilotem. Pokud je taková hodnota zopakována špatně, je pilot opraven řídícím na věži a pilot by měl údaj znovu zopakovat.
+
+
+\section{Zpracování řeči}
+Pro zpracování řeči je podstatná její signálová forma. Samotný signál již je potom zpracováván ve spektru, ve kterém lze pozorovat zastoupení jednotlivých frekvencí v signálu. Podobnou formou pro zpracování signálu je spektrogram, který udává, jak silně jsou zastoupený jednotlivé frekvence v čase.
+
+Lidské ucho vnímá řeč v~rozmezí zhruba 20 Hz - 20 kHz, což se mění vlivem věku a případně okolních podmínek. Charakteristickou vlastností pro náš sluch je, že neslyšíme lineárně, ale logaritmicky. To znamená, že například signály o frekvencích 10 Hz a 50 Hz pro nás budou snadno rozlišitelné, zatímco signály o frekvencích 1000 Hz a 1040 Hz nám budou splývat (uslyšíme prakticky stejný tón).
+
+Model Whisper, který je popsaný dále, očekává jako vstup log Mel spektrogram. Ten se liší od běžného spektrogramu tím, že zobrazuje spektrum v~logaritmickém měřítku -- to souvisí s lidským vnímáním zvuku. Je získán přetvořením běžného spektra skrz takzvané Mel banky, jejichž šířka odpovídá citlivosti lidského ucha v~daném frekvenčním pásmu. Jeho příklad je ukázán na obrázku \ref{fig:log-mel-spektrogram}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{figures/logmel.png}
+    \caption{Příklad Log Mel spektrogramu}
+    \label{fig:log-mel-spektrogram}
+\end{figure}

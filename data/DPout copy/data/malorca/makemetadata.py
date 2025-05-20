@@ -369,7 +369,7 @@ if __name__ == "__main__":
     # CHANGE THIS TO YOUR DISK PATH
     DISK_PATH="/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38"
     #======================================================
-    
+    # FOLLOWING LINES MAY REQUIRE CHANGES
     PATH_TO_ROOT = f"{DISK_PATH}/MALORCA/DATA_ATC/VIENNA/DATA/"
     PATH_TO_LISTINGS_OF_FILES = ["test/wav.scp", "dev12/wav.scp"]
     SAVE_PATH=["./metadata_test.json", "./metadata_dev12.json"] # the order must corresponds to PATH_TO_LISTINGS_OF_FILES

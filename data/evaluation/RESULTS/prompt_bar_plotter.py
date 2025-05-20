@@ -35,13 +35,13 @@ files = []
 
 if args.eval_files:
     files = [
-        '5B_eval.txt',
-        '35B_eval.txt',
-        '50CZB_eval.txt',
-        'AG_eval.txt',
-        'AG4B_eval.txt',
-        'AG35B_eval.txt',
-        'AG50CZB_eval.txt',
+        'AG/eval.best',
+        'AG4B/eval.best',
+        'AG35B/eval.best',
+        'AG50CZB/eval.best',
+        '5B/eval.best',
+        '35B/eval.best',
+        '50CZB/eval.best',
     ]
     files = [os.path.join(root_dir, f) for f in files]
 else:
@@ -58,8 +58,8 @@ print(files)
 # Traverse directories
 for filepath in files:
     dirpath, filename = os.path.split(filepath)
-    dirname = filename.split("_")[0] if args.eval_files else os.path.basename(dirpath)
-    
+    # dirname = filename.split("_")[0] if args.eval_files else os.path.basename(dirpath)
+    dirname = os.path.basename(dirpath)
     # dirpath = os.path.join(root_dir, dirname)
     # filepath = os.path.join(dirpath, "eval.best")
     
@@ -71,7 +71,7 @@ for filepath in files:
         wer_values = {}
         callsign_values = {}
 
-        if args.eval_files:
+        if False:
             wer_data[dirname] = {}
             callsign_data[dirname] = {}
             for line in lines[8:11]:
@@ -117,7 +117,7 @@ for filepath in files:
             # callsign_data[dirname] = callsign_values
 
 # Sort keys consistently
-systems = sorted(wer_data.keys())
+systems = wer_data.keys()
 labels = ['atco_en_ruzyne', 'atco_en_stefanik', 'atco_en_zurich', 'total']
 colors = ['#1f77b4', '#ff7f0e', '#2ca02c', '#d62728']
 
@@ -158,10 +158,10 @@ def plot_metric(data, title, name='wer'):
 
     
     legend_dict = {
-        'atco_en_ruzyne': 'Ruzyne',
-        'atco_en_stefanik': 'Stefanik',
+        'atco_en_ruzyne': 'Ruzyně',
+        'atco_en_stefanik': 'Štefánik',
         'atco_en_zurich': 'Zurich',
-        'total': 'Total AVG',
+        'total': 'Total WER',
     }
 
     ax.legend([leg[0] for leg in legend_lines], [legend_dict[leg[1]] if leg[1] in legend_dict else leg[1] for leg in legend_lines], loc='upper center', ncol=4, bbox_to_anchor=(0.5, -0.14),fontsize=19)

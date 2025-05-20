@@ -6,6 +6,8 @@ import os, json, time
 
 import tqdm
 
+from data.DPout.data.hiwire.makemetadata import FOLDER_NAME
+
 units = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 tens = ['20', '30', '40', '50', '60', '70', '80', '90'] 
 teens = ['11', '12', '13', '14', '15', '16', '17', '18', '19']
@@ -415,12 +417,14 @@ if __name__ == "__main__":
     # CHANGE THIS TO YOUR DISK PATH
     DISK_ROOT = '/run/media/johnny/31c5407a-2da6-4ef8-95ec-d294c1afec38'
     #======================================================
-    
     # IT IS POSSIBLE THAT THESE PATH WILL NEED TO BE CHANGED
+    FOLDER_NAME = 'UWB_ATCC'
     path_to_wavs = f'{DISK_ROOT}/UWB_ATCC/audio'
+    
     # there will be stored audio splits, which are made during running of this script
     # WARNING: this folder should exist and be empty
     path_to_save_new_wavs = f'{DISK_ROOT}/UWB_ATCC/audio_split' 
+    os.makedirs(path_to_save_new_wavs, exist_ok=True)
     replace_path_of_audio = f'{DISK_ROOT}' # this part won't be stored in the metadata
     out_metadata_test = './metadata_test.json'
     out_metadata_train = './metadata_train.json'

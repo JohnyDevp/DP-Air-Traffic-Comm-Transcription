@@ -18,6 +18,4 @@ python training.py \
   --predict_with_generate \
   --generation_max_length 448 \
   --logging_steps 30 \
-  --report_to tensorboard \
-  --metric_for_best_model wer \
-  # --freeze_encoder 
+  --report_to tensorboard 

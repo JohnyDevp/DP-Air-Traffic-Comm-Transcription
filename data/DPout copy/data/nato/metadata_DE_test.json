@@ -1,0 +1,362 @@
+[
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_2EZ_male.wav",
+        "full_ts": "this is two echo zulu over",
+        "short_ts": "this is 2EZ over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male.wav",
+        "full_ts": "hotel zero oscar this is yankee four bravo cancel my zero nine one four zulu golf four papa over",
+        "short_ts": "H0O this is Y4B cancel my 0914ZG4P over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_A2W_male.wav",
+        "full_ts": "this is alfa two whiskey roger out",
+        "short_ts": "this is A2W roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_0.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male.wav",
+        "full_ts": "this is lima two foxtrot over",
+        "short_ts": "this is L2F over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_A2W_male_0.wav",
+        "full_ts": "this is alfa two whiskey say again over",
+        "short_ts": "this is A2W say again over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_0.wav",
+        "full_ts": "this is lima two foxtrot roger out",
+        "short_ts": "this is L2F roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_1.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male_0.wav",
+        "full_ts": "papa three this is yankee four bravo standby standby standby execute out",
+        "short_ts": "P3 this is Y4B standby standby standby execute out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_2.wav",
+        "full_ts": "hotel zero oscar this is bravo six juliett negat formation six alfa seven mike over",
+        "short_ts": "H0O this is B6J negat formation 6A7M over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_A2W_male_1.wav",
+        "full_ts": "this is alfa two whiskey roger out",
+        "short_ts": "this is A2W roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_7KD_male.wav",
+        "full_ts": "lima eight hotel this is seven kilo delta say again from break to break over",
+        "short_ts": "L8H this is 7KD say again from break to break over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_3.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_2.wav",
+        "full_ts": "six kilo hotel this is lima two foxtrot correction my zero nine two eight zulu word after at zero three three zero zulu over",
+        "short_ts": "6KH this is L2F correction my 0928Z word after at 0330Z over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_2EZ_male_0.wav",
+        "full_ts": "this is two echo zulu roger out",
+        "short_ts": "this is 2EZ roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_3.wav",
+        "full_ts": "hotel zero oscar this is lima two foxtrot negat romeo sierra eight tack four break time zero niner three four zulu victor one quebec over",
+        "short_ts": "H0O this is L2F negat RS8 tack 4 break time 0 niner 34ZV1Q over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male_1.wav",
+        "full_ts": "du musst mir sagen , wann ich loslegen darf [atmen]",
+        "short_ts": "du musst mir sagen, wann ich loslegen darf",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_4.wav",
+        "full_ts": "hotel zero oscar this is bravo six juliett over",
+        "short_ts": "H0O this is B6J over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_4.wav",
+        "full_ts": "hotel zero oscar this is lima two foxtrot standby standby standby execute out",
+        "short_ts": "H0O this is L2F standby standby standby execute out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male_3.wav",
+        "full_ts": "this is yankee four bravo roger out",
+        "short_ts": "this is Y4B roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_0.wav",
+        "full_ts": "this is victor one quebec roger out",
+        "short_ts": "this is V1Q roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_A2W_male_2.wav",
+        "full_ts": "this is alfa two whiskey roger out",
+        "short_ts": "this is A2W roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_1.wav",
+        "full_ts": "hotel zero oscar this is victor one quebec standby standby execute out",
+        "short_ts": "H0O this is V1Q standby standby execute out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male_4.wav",
+        "full_ts": "this is yankee four bravo roger out",
+        "short_ts": "this is Y4B roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_A2W_male_3.wav",
+        "full_ts": "hotel zero oscar this is alfa two whiskey standby standby execute out",
+        "short_ts": "H0O this is A2W standby standby execute out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_5.wav",
+        "full_ts": "this is lima two foxtrot roger out",
+        "short_ts": "this is L2F roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_2.wav",
+        "full_ts": "this is victor one quebec over",
+        "short_ts": "this is V1Q over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_3.wav",
+        "full_ts": "this is victor one quebec roger out",
+        "short_ts": "this is V1Q roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_5.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_A2W_male_4.wav",
+        "full_ts": "this is alfa two whiskey roger out",
+        "short_ts": "this is A2W roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_6.wav",
+        "full_ts": "this is echo three mike roger out",
+        "short_ts": "this is E3M roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_6.wav",
+        "full_ts": "alfa seven mike this is bravo six juliett verify your zero seven five niner zulu, over",
+        "short_ts": "A7M this is B6J verify your 075 niner Z, over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_2EZ_male_1.wav",
+        "full_ts": "this is two echo zulu roger out",
+        "short_ts": "this is 2EZ roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male_5.wav",
+        "full_ts": "this is yankee four bravo roger out",
+        "short_ts": "this is Y4B roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_7.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male_6.wav",
+        "full_ts": "this is yankee four bravo over",
+        "short_ts": "this is Y4B over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_7.wav",
+        "full_ts": "this is lima two foxtrot roger out",
+        "short_ts": "this is L2F roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_4.wav",
+        "full_ts": "hotel zero oscar this is victor one quebec silence silence silence time zero nine four zero zulu authentication is echo november out",
+        "short_ts": "H0O this is V1Q silence silence silence time 0940Z authentication is EN out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_8.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_8.wav",
+        "full_ts": "this lima two foxtrot roger out",
+        "short_ts": "this L2F roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_7KD_male_0.wav",
+        "full_ts": "this is seven kilo delta roger out",
+        "short_ts": "this is 7KD roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male_7.wav",
+        "full_ts": "papa three mike this is yankee four bravo negat turn starboard four answer break time zero nine four four zulu over",
+        "short_ts": "P3M this is Y4B negat turn starboard 4 answer break time 0944Z over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_5.wav",
+        "full_ts": "this is victor one quebec roger out",
+        "short_ts": "this is V1Q roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_10.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_Y4B_male_8.wav",
+        "full_ts": "this is yankee four bravo roger out",
+        "short_ts": "this is Y4B roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_7KD_male_1.wav",
+        "full_ts": "this is seven kilo delta roger out",
+        "short_ts": "this is 7KD roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_L2F_male_9.wav",
+        "full_ts": "mike three romeo this is lima two foxtrot correction my zero niner three eight zulu word after until one five three zero zulu over",
+        "short_ts": "M3R this is L2F correction my 0 niner 38Z word after until 1530Z over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_11.wav",
+        "full_ts": "charlie one juliett this bravo six juliett from sierra three zulu to charlie one juliett break echo delta two break time zero eight one seven zulu over",
+        "short_ts": "C1J this B6J from S3Z to C1J break ED2 break time 0817Z over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_12.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_13.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_7KD_male_2.wav",
+        "full_ts": "this is seven kilo delta roger out",
+        "short_ts": "this is 7KD roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_7.wav",
+        "full_ts": "victor one quebec roger out",
+        "short_ts": "V1Q roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_A2W_male_6.wav",
+        "full_ts": "this is alfa two whiskey over",
+        "short_ts": "this is A2W over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_8.wav",
+        "full_ts": "this is victor one quebec roger out",
+        "short_ts": "this is V1Q roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_14.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_A2W_male_7.wav",
+        "full_ts": "this is alfa two whiskey say again",
+        "short_ts": "this is A2W say again",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_15.wav",
+        "full_ts": "alfa seven mike this is bravo six juliett cancel my zero eight one six zulu over",
+        "short_ts": "A7M this is B6J cancel my 0816Z over",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_B6J_male_16.wav",
+        "full_ts": "this is bravo six juliett roger out",
+        "short_ts": "this is B6J roger out",
+        "prompt": null
+    },
+    {
+        "audio": "n4_nato_speech_LDC2006S13/data/DE/DE_Audio_Speech_Segments/0_V1Q_male_9.wav",
+        "full_ts": "hotel zero oscar this is victor one quebec negat speed whiskey yankee four bravo over",
+        "short_ts": "H0O this is V1Q negat speed WY4B over",
+        "prompt": null
+    }
+]
